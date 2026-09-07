@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="bc977195-5e3a-4d19-aa3e-b47e20a3b153" name="local-validation-run" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-09-07T14:25:29.3781290+09:00" queuing="2026-09-07T14:25:29.3781290+09:00" start="2026-09-07T14:25:29.0049610+09:00" finish="2026-09-07T14:25:29.3811900+09:00" />
+  <TestSettings name="default" id="7987e027-5043-4aa2-b81c-670e99ce85ae">
+    <Deployment runDeploymentRoot="_guoxundeMBP_2026-09-07_14_25_29" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="34e700c6-01e0-4814-8acf-991ecd5802fb" testId="574fa511-12af-0799-7e60-aac2dadc3a79" testName="WorkflowRunsForPushPullRequestAndManualDispatchWithReadOnlyAccess" computerName="local-machine" duration="00:00:00.0002930" startTime="2026-09-07T14:25:29.3254760+09:00" endTime="2026-09-07T14:25:29.3257690+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="34e700c6-01e0-4814-8acf-991ecd5802fb">
+      <Output>
+        <ErrorInfo>
+          <Message>  CI workflow must exist before it can enforce rules.
+Assert.That(File.Exists(path), Is.True)
+  Expected: True
+  But was:  False
+</Message>
+          <StackTrace>   at LethalDungeon.ArchitectureTests.CiWorkflowTests.Workflow() in /workspace/lethal-dungeon/tests/Architecture.Tests/CiWorkflowTests.cs:line 18
+   at LethalDungeon.ArchitectureTests.CiWorkflowTests.WorkflowRunsForPushPullRequestAndManualDispatchWithReadOnlyAccess() in /workspace/lethal-dungeon/tests/Architecture.Tests/CiWorkflowTests.cs:line 26
+
+1)    at LethalDungeon.ArchitectureTests.CiWorkflowTests.Workflow() in /workspace/lethal-dungeon/tests/Architecture.Tests/CiWorkflowTests.cs:line 18
+   at LethalDungeon.ArchitectureTests.CiWorkflowTests.WorkflowRunsForPushPullRequestAndManualDispatchWithReadOnlyAccess() in /workspace/lethal-dungeon/tests/Architecture.Tests/CiWorkflowTests.cs:line 26
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3c090f65-0a6b-4ba7-abf8-366b24ad4e28" testId="bb174fa2-4f2d-317c-47d6-f0209edbe2b3" testName="WorkflowPreservesFailureAndUploadsResultsEvenWhenTestsFail" computerName="local-machine" duration="00:00:00.0003669" startTime="2026-09-07T14:25:29.3251040+09:00" endTime="2026-09-07T14:25:29.3254710+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3c090f65-0a6b-4ba7-abf8-366b24ad4e28">
+      <Output>
+        <ErrorInfo>
+          <Message>  CI workflow must exist before it can enforce rules.
+Assert.That(File.Exists(path), Is.True)
+  Expected: True
+  But was:  False
+</Message>
+          <StackTrace>   at LethalDungeon.ArchitectureTests.CiWorkflowTests.Workflow() in /workspace/lethal-dungeon/tests/Architecture.Tests/CiWorkflowTests.cs:line 18
+   at LethalDungeon.ArchitectureTests.CiWorkflowTests.WorkflowPreservesFailureAndUploadsResultsEvenWhenTestsFail() in /workspace/lethal-dungeon/tests/Architecture.Tests/CiWorkflowTests.cs:line 52
+
+1)    at LethalDungeon.ArchitectureTests.CiWorkflowTests.Workflow() in /workspace/lethal-dungeon/tests/Architecture.Tests/CiWorkflowTests.cs:line 18
+   at LethalDungeon.ArchitectureTests.CiWorkflowTests.WorkflowPreservesFailureAndUploadsResultsEvenWhenTestsFail() in /workspace/lethal-dungeon/tests/Architecture.Tests/CiWorkflowTests.cs:line 52
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f6f92b16-90b1-4314-8597-21d3c271e8fe" testId="c009bb38-0985-7a6e-11cf-137b6fe6d532" testName="WorkflowBuildsAndExecutesBothSuitesWithPinnedSdkAndLockedRestore" computerName="local-machine" duration="00:00:00.0148140" startTime="2026-09-07T14:25:29.3087980+09:00" endTime="2026-09-07T14:25:29.3235820+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f6f92b16-90b1-4314-8597-21d3c271e8fe">
+      <Output>
+        <ErrorInfo>
+          <Message>  CI workflow must exist before it can enforce rules.
+Assert.That(File.Exists(path), Is.True)
+  Expected: True
+  But was:  False
+</Message>
+          <StackTrace>   at LethalDungeon.ArchitectureTests.CiWorkflowTests.Workflow() in /workspace/lethal-dungeon/tests/Architecture.Tests/CiWorkflowTests.cs:line 18
+   at LethalDungeon.ArchitectureTests.CiWorkflowTests.WorkflowBuildsAndExecutesBothSuitesWithPinnedSdkAndLockedRestore() in /workspace/lethal-dungeon/tests/Architecture.Tests/CiWorkflowTests.cs:line 38
+
+1)    at LethalDungeon.ArchitectureTests.CiWorkflowTests.Workflow() in /workspace/lethal-dungeon/tests/Architecture.Tests/CiWorkflowTests.cs:line 18
+   at LethalDungeon.ArchitectureTests.CiWorkflowTests.WorkflowBuildsAndExecutesBothSuitesWithPinnedSdkAndLockedRestore() in /workspace/lethal-dungeon/tests/Architecture.Tests/CiWorkflowTests.cs:line 38
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7782fde2-b510-4533-a76f-c475547816c4" testId="3a544a23-ab08-83eb-2fc1-8e30939ddef0" testName="WorkflowPinsOfficialActionsAndBoundsExecution" computerName="local-machine" duration="00:00:00.0007090" startTime="2026-09-07T14:25:29.3243100+09:00" endTime="2026-09-07T14:25:29.3250190+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7782fde2-b510-4533-a76f-c475547816c4">
+      <Output>
+        <ErrorInfo>
+          <Message>  CI workflow must exist before it can enforce rules.
+Assert.That(File.Exists(path), Is.True)
+  Expected: True
+  But was:  False
+</Message>
+          <StackTrace>   at LethalDungeon.ArchitectureTests.CiWorkflowTests.Workflow() in /workspace/lethal-dungeon/tests/Architecture.Tests/CiWorkflowTests.cs:line 18
+   at LethalDungeon.ArchitectureTests.CiWorkflowTests.WorkflowPinsOfficialActionsAndBoundsExecution() in /workspace/lethal-dungeon/tests/Architecture.Tests/CiWorkflowTests.cs:line 64
+
+1)    at LethalDungeon.ArchitectureTests.CiWorkflowTests.Workflow() in /workspace/lethal-dungeon/tests/Architecture.Tests/CiWorkflowTests.cs:line 18
+   at LethalDungeon.ArchitectureTests.CiWorkflowTests.WorkflowPinsOfficialActionsAndBoundsExecution() in /workspace/lethal-dungeon/tests/Architecture.Tests/CiWorkflowTests.cs:line 64
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="WorkflowRunsForPushPullRequestAndManualDispatchWithReadOnlyAccess" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/architecture.tests/bin/debug/net10.0/architecture.tests.dll" id="574fa511-12af-0799-7e60-aac2dadc3a79">
+      <Execution id="34e700c6-01e0-4814-8acf-991ecd5802fb" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Architecture.Tests/bin/Debug/net10.0/Architecture.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.ArchitectureTests.CiWorkflowTests" name="WorkflowRunsForPushPullRequestAndManualDispatchWithReadOnlyAccess" />
+    </UnitTest>
+    <UnitTest name="WorkflowPreservesFailureAndUploadsResultsEvenWhenTestsFail" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/architecture.tests/bin/debug/net10.0/architecture.tests.dll" id="bb174fa2-4f2d-317c-47d6-f0209edbe2b3">
+      <Execution id="3c090f65-0a6b-4ba7-abf8-366b24ad4e28" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Architecture.Tests/bin/Debug/net10.0/Architecture.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.ArchitectureTests.CiWorkflowTests" name="WorkflowPreservesFailureAndUploadsResultsEvenWhenTestsFail" />
+    </UnitTest>
+    <UnitTest name="WorkflowBuildsAndExecutesBothSuitesWithPinnedSdkAndLockedRestore" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/architecture.tests/bin/debug/net10.0/architecture.tests.dll" id="c009bb38-0985-7a6e-11cf-137b6fe6d532">
+      <Execution id="f6f92b16-90b1-4314-8597-21d3c271e8fe" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Architecture.Tests/bin/Debug/net10.0/Architecture.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.ArchitectureTests.CiWorkflowTests" name="WorkflowBuildsAndExecutesBothSuitesWithPinnedSdkAndLockedRestore" />
+    </UnitTest>
+    <UnitTest name="WorkflowPinsOfficialActionsAndBoundsExecution" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/architecture.tests/bin/debug/net10.0/architecture.tests.dll" id="3a544a23-ab08-83eb-2fc1-8e30939ddef0">
+      <Execution id="7782fde2-b510-4533-a76f-c475547816c4" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Architecture.Tests/bin/Debug/net10.0/Architecture.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.ArchitectureTests.CiWorkflowTests" name="WorkflowPinsOfficialActionsAndBoundsExecution" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="574fa511-12af-0799-7e60-aac2dadc3a79" executionId="34e700c6-01e0-4814-8acf-991ecd5802fb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bb174fa2-4f2d-317c-47d6-f0209edbe2b3" executionId="3c090f65-0a6b-4ba7-abf8-366b24ad4e28" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c009bb38-0985-7a6e-11cf-137b6fe6d532" executionId="f6f92b16-90b1-4314-8597-21d3c271e8fe" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3a544a23-ab08-83eb-2fc1-8e30939ddef0" executionId="7782fde2-b510-4533-a76f-c475547816c4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="4" executed="4" passed="0" failed="4" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 6.3.0.0: Test execution started
+Running selected tests in /workspace/lethal-dungeon/tests/Architecture.Tests/bin/Debug/net10.0/Architecture.Tests.dll
+   NUnit3TestExecutor discovered 4 of 4 NUnit test cases using Current Discovery mode, Non-Explicit run
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

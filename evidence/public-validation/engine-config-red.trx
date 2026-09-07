@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="8193e563-e24f-46cf-b1d3-8bc5d772aeb1" name="local-validation-run" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-09-07T14:32:26.1989700+09:00" queuing="2026-09-07T14:32:26.1989700+09:00" start="2026-09-07T14:32:25.7886580+09:00" finish="2026-09-07T14:32:26.2018070+09:00" />
+  <TestSettings name="default" id="bd9209ea-32d7-4186-891c-53d2e05ef0ca">
+    <Deployment runDeploymentRoot="_guoxundeMBP_2026-09-07_14_32_26" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="ce14c571-8809-41d7-a8ba-31b7b2cc01ce" testId="3fd2ff77-bd6f-c689-50a7-65afd8701942" testName="EnginePackagesHaveFixedVersions" computerName="local-machine" duration="00:00:00.0005580" startTime="2026-09-07T14:32:26.1437600+09:00" endTime="2026-09-07T14:32:26.1443180+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ce14c571-8809-41d7-a8ba-31b7b2cc01ce">
+      <Output>
+        <ErrorInfo>
+          <Message>  Required engine configuration: Packages/manifest.json
+Assert.That(File.Exists(file), Is.True)
+  Expected: True
+  But was:  False
+</Message>
+          <StackTrace>   at LethalDungeon.ArchitectureTests.EngineProjectTests.Read(String path) in /workspace/lethal-dungeon/tests/Architecture.Tests/EngineProjectTests.cs:line 17
+   at LethalDungeon.ArchitectureTests.EngineProjectTests.EnginePackagesHaveFixedVersions() in /workspace/lethal-dungeon/tests/Architecture.Tests/EngineProjectTests.cs:line 34
+
+1)    at LethalDungeon.ArchitectureTests.EngineProjectTests.Read(String path) in /workspace/lethal-dungeon/tests/Architecture.Tests/EngineProjectTests.cs:line 17
+   at LethalDungeon.ArchitectureTests.EngineProjectTests.EnginePackagesHaveFixedVersions() in /workspace/lethal-dungeon/tests/Architecture.Tests/EngineProjectTests.cs:line 34
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="137579fc-1329-4983-adb9-221520c3cbf5" testId="74aec3a8-6dd0-e900-9e6d-c1cc6c49b7ef" testName="EditorVersionIsPinnedToTheVerifiedDownloadMetadata" computerName="local-machine" duration="00:00:00.0146780" startTime="2026-09-07T14:32:26.1283760+09:00" endTime="2026-09-07T14:32:26.1430250+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="137579fc-1329-4983-adb9-221520c3cbf5">
+      <Output>
+        <ErrorInfo>
+          <Message>  Required engine configuration: ProjectSettings/ProjectVersion.txt
+Assert.That(File.Exists(file), Is.True)
+  Expected: True
+  But was:  False
+</Message>
+          <StackTrace>   at LethalDungeon.ArchitectureTests.EngineProjectTests.Read(String path) in /workspace/lethal-dungeon/tests/Architecture.Tests/EngineProjectTests.cs:line 17
+   at LethalDungeon.ArchitectureTests.EngineProjectTests.EditorVersionIsPinnedToTheVerifiedDownloadMetadata() in /workspace/lethal-dungeon/tests/Architecture.Tests/EngineProjectTests.cs:line 25
+
+1)    at LethalDungeon.ArchitectureTests.EngineProjectTests.Read(String path) in /workspace/lethal-dungeon/tests/Architecture.Tests/EngineProjectTests.cs:line 17
+   at LethalDungeon.ArchitectureTests.EngineProjectTests.EditorVersionIsPinnedToTheVerifiedDownloadMetadata() in /workspace/lethal-dungeon/tests/Architecture.Tests/EngineProjectTests.cs:line 25
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a4336acb-0c32-4f95-ad30-d9096d0162db" testId="13a7d931-2113-c630-b6a4-62259a9ad327" testName="ImportTestsAreEditorOnlyAndReferenceOnlyTheRequiredPrecompiledAssemblies" computerName="local-machine" duration="00:00:00.0005550" startTime="2026-09-07T14:32:26.1443320+09:00" endTime="2026-09-07T14:32:26.1448870+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a4336acb-0c32-4f95-ad30-d9096d0162db">
+      <Output>
+        <ErrorInfo>
+          <Message>  Required engine configuration: Assets/Tests/LethalDungeon.ImportTests.asmdef
+Assert.That(File.Exists(file), Is.True)
+  Expected: True
+  But was:  False
+</Message>
+          <StackTrace>   at LethalDungeon.ArchitectureTests.EngineProjectTests.Read(String path) in /workspace/lethal-dungeon/tests/Architecture.Tests/EngineProjectTests.cs:line 17
+   at LethalDungeon.ArchitectureTests.EngineProjectTests.ImportTestsAreEditorOnlyAndReferenceOnlyTheRequiredPrecompiledAssemblies() in /workspace/lethal-dungeon/tests/Architecture.Tests/EngineProjectTests.cs:line 45
+
+1)    at LethalDungeon.ArchitectureTests.EngineProjectTests.Read(String path) in /workspace/lethal-dungeon/tests/Architecture.Tests/EngineProjectTests.cs:line 17
+   at LethalDungeon.ArchitectureTests.EngineProjectTests.ImportTestsAreEditorOnlyAndReferenceOnlyTheRequiredPrecompiledAssemblies() in /workspace/lethal-dungeon/tests/Architecture.Tests/EngineProjectTests.cs:line 45
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="EditorVersionIsPinnedToTheVerifiedDownloadMetadata" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/architecture.tests/bin/debug/net10.0/architecture.tests.dll" id="74aec3a8-6dd0-e900-9e6d-c1cc6c49b7ef">
+      <Execution id="137579fc-1329-4983-adb9-221520c3cbf5" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Architecture.Tests/bin/Debug/net10.0/Architecture.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.ArchitectureTests.EngineProjectTests" name="EditorVersionIsPinnedToTheVerifiedDownloadMetadata" />
+    </UnitTest>
+    <UnitTest name="ImportTestsAreEditorOnlyAndReferenceOnlyTheRequiredPrecompiledAssemblies" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/architecture.tests/bin/debug/net10.0/architecture.tests.dll" id="13a7d931-2113-c630-b6a4-62259a9ad327">
+      <Execution id="a4336acb-0c32-4f95-ad30-d9096d0162db" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Architecture.Tests/bin/Debug/net10.0/Architecture.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.ArchitectureTests.EngineProjectTests" name="ImportTestsAreEditorOnlyAndReferenceOnlyTheRequiredPrecompiledAssemblies" />
+    </UnitTest>
+    <UnitTest name="EnginePackagesHaveFixedVersions" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/architecture.tests/bin/debug/net10.0/architecture.tests.dll" id="3fd2ff77-bd6f-c689-50a7-65afd8701942">
+      <Execution id="ce14c571-8809-41d7-a8ba-31b7b2cc01ce" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Architecture.Tests/bin/Debug/net10.0/Architecture.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.ArchitectureTests.EngineProjectTests" name="EnginePackagesHaveFixedVersions" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="3fd2ff77-bd6f-c689-50a7-65afd8701942" executionId="ce14c571-8809-41d7-a8ba-31b7b2cc01ce" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="74aec3a8-6dd0-e900-9e6d-c1cc6c49b7ef" executionId="137579fc-1329-4983-adb9-221520c3cbf5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="13a7d931-2113-c630-b6a4-62259a9ad327" executionId="a4336acb-0c32-4f95-ad30-d9096d0162db" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="3" executed="3" passed="0" failed="3" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 6.3.0.0: Test execution started
+Running selected tests in /workspace/lethal-dungeon/tests/Architecture.Tests/bin/Debug/net10.0/Architecture.Tests.dll
+   NUnit3TestExecutor discovered 3 of 3 NUnit test cases using Current Discovery mode, Non-Explicit run
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

@@ -30,7 +30,7 @@ macOS arm64；SDK 10.0.400；测试宿主net10.0；Domain为netstandard2.1/C#9�
 
 ## 尚未执行
 
-团结引擎导入、真实服务端时钟适配、房间到达屏障、联机与微信真机测试、远程CI。以上都不能从本次纯规则测试推导为完成。
+团结引擎导入、真实服务端时钟适配、房间到达屏障、联机与微信真机测试、远程CI实际执行。以上都不能从本次纯规则测试推导为完成。
 
 ## 公开仓库处理
 
@@ -43,3 +43,12 @@ public-red是实际Red报告的脱敏副本：本机工程绝对路径替换为`
 命令：`dotnet test LethalDungeon.sln --no-restore --logger "trx;LogFilePrefix=green" --results-directory <本地报告目录>`，使用前述工作目录SDK及包缓存。发布副本为[domain.trx](public-green/domain.trx)和[architecture.trx](public-green/architecture.trx)。脱敏方式与Red一致。
 
 实现保持公开接口和所有原断言不变；简单逻辑未作额外结构重构。真实服务端时间源、加载屏障和引擎运行仍未验证。
+
+## CI与引擎配置验证（2026-09-07）
+
+- CI配置：先运行4个检查，均因工作流缺失而失败；再新增ci.yml，4个检查通过。actionlint 1.7.12语法检查通过，退出码0。
+- 引擎配置：先运行3个检查，均因必需配置文件缺失而失败；再新增候选编辑器版本、包manifest和测试asmdef，3个检查通过。
+- 最终Release回归：42个Domain测试、13个Architecture测试全部通过，0跳过。报告在public-validation；其中不含3个尚未运行的引擎导入测试。
+- CI在提交18027e1首次触发：[Actions运行](https://github.com/PerfectBroken/lethal-dungeon/actions/runs/34087217947)。结论failure，job没有steps、runner未分配。GitHub check-run 101633448040的annotation原文：`The job was not started because your account is locked due to a billing issue.` 此结果不是测试失败或测试通过，需账号问题解除后重新执行。
+
+新的配置代码未修改42个原规则用例。引擎工程仅完成静态配置检查和插件准备；未启动编辑器，未产生引擎包解析锁文件，也未执行微信构建。

@@ -9,6 +9,8 @@ HARNESS-004：每个子模块规范ID在对应测试类文本中有映射；这�
 
 CI规范见 `.github/workflows/README.md`；CiWorkflowTests先验证workflow的触发、命令、权限和失败处理，再由GitHub实际运行验证平台兼容性。
 
+引擎配置规范见engine/Validation/README.md；EngineProjectTests只检查固定版本、JSON配置和测试程序集边界，不声称运行了团结编辑器。
+
 ## 接口与依赖
 
 测试读取工程内文档和项目文件并反射Domain程序集。只允许测试层依赖文件系统；生产层禁止。

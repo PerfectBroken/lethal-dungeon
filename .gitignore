@@ -9,3 +9,11 @@ evidence/setup/
 !.env.example
 *.user
 *.suo
+engine/**/Library/
+engine/**/Temp/
+engine/**/Logs/
+engine/**/Obj/
+engine/**/UserSettings/
+engine/**/Builds/
+engine/Validation/Assets/Plugins/Domain/*.dll
+engine/Validation/Assets/Plugins/Domain/*.pdb
