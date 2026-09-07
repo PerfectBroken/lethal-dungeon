@@ -86,3 +86,11 @@ public-red是实际Red报告的脱敏副本：本机工程绝对路径替换为`
 - 种子0～99全部成功：1/2/3/4环分别24/24/26/26次；种子86重试一次后仍为3环，最大累计20235步。新批量用例复用既有长支线图结构检查，覆盖无小环捷径与真实空间连接。
 - 最终Release：125规则+14规范检查全部通过，0跳过，退出码0。报告public-seeds/domain-green.trx、architecture-green.trx；命令dotnet test LethalDungeon.sln --no-restore -c Release --logger 'trx;LogFilePrefix=seed-final' --results-directory <本地报告目录>。SDK及脱敏方式同前。
 - 房间规模映射是原型默认，不代表正式关卡难度、探索时长或微信性能定稿。未新增引擎、网络、真机或云端CI验收。
+
+## 探索支路预算（2026-09-07）
+
+- MAP-020～023规范先行，14个用例在编译桩上全部因未实现有效Red（public-exploration/exploration-red.trx），之后实现并通过；另补3个保护ID与显式配置用例。
+- 默认升级seed-rules-v2；先抽取探索支路深度并预留房间，环生成后建立独立链，后续填充保护这些链。旧种子测试显式选择v1，原断言未放宽。
+- 100种子均满足环数、完整长环、无短环、几何、跨层和每环2条2～4房间独立死路。最大20690次尝试，预算100000。真实样例docs/examples/exploration-layouts.json。
+- Release全量142规则+14规范检查通过，0跳过；public-exploration/domain-green.trx、architecture-green.trx。命令dotnet test LethalDungeon.sln --no-restore -c Release --logger trx --results-directory <本地报告目录>。公开报告仅脱敏路径、用户名、主机名，不修改断言或结果。
+- 预览40种离线脚本状态检查通过，覆盖两种宽度、全图/单环、空间/俯视及支路显隐；这不是浏览器视觉验证。未绕过此前浏览器安全策略。引擎、导航、网络、微信性能和云端CI状态不变。

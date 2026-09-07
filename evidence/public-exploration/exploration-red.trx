@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="479e328a-add7-4d88-9151-e1c31980a3ee" name="local-validation" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-09-07T16:32:31.1404420+09:00" queuing="2026-09-07T16:32:31.1404420+09:00" start="2026-09-07T16:32:30.7583430+09:00" finish="2026-09-07T16:32:31.1556490+09:00" />
+  <TestSettings name="default" id="45071522-0831-4cb0-822c-92370024fc39">
+    <Deployment runDeploymentRoot="local-validation" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="4cb49cc6-2068-4437-a99d-37ec96811e27" testId="d049b6cb-f878-556a-f07b-13558193b49e" testName="InvalidBranchConfigurationRejected(0,2,4)" computerName="local-machine" duration="00:00:00.0095530" startTime="2026-09-07T16:32:31.1031750+09:00" endTime="2026-09-07T16:32:31.1127270+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4cb49cc6-2068-4437-a99d-37ec96811e27">
+      <Output>
+        <ErrorInfo>
+          <Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentOutOfRangeException&gt;
+  But was:  &lt;System.NotImplementedException: The method or operation is not implemented.
+   at LethalDungeon.Domain.Dungeons.ExplorationBranchOptions..ctor(Int32 branchesPerLoop, Int32 minDepth, Int32 maxDepth) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/ExplorationBranches.cs:line 13
+   at LethalDungeon.Tests.DungeonExplorationBranchTests.&lt;&gt;c__DisplayClass2_0.&lt;InvalidBranchConfigurationRejected&gt;b__0() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonExplorationBranchTests.cs:line 25
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, Action code, String message, Object[] args)&gt;
+</Message>
+          <StackTrace>   at LethalDungeon.Tests.DungeonExplorationBranchTests.InvalidBranchConfigurationRejected(Int32 count, Int32 min, Int32 max) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonExplorationBranchTests.cs:line 25
+
+1)    at LethalDungeon.Tests.DungeonExplorationBranchTests.InvalidBranchConfigurationRejected(Int32 count, Int32 min, Int32 max) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonExplorationBranchTests.cs:line 25
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0364ec50-a1ad-4f22-8975-ce8242b2fc4e" testId="c52580ae-1d6f-dba6-aab6-e648fa28845a" testName="UnknownRuleVersionRejected" computerName="local-machine" duration="00:00:00.0002620" startTime="2026-09-07T16:32:31.1136980+09:00" endTime="2026-09-07T16:32:31.1139600+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0364ec50-a1ad-4f22-8975-ce8242b2fc4e">
+      <Output>
+        <ErrorInfo>
+          <Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentException&gt;
+  But was:  &lt;System.NotImplementedException: The method or operation is not implemented.
+   at LethalDungeon.Domain.Dungeons.SeededDungeon.Resolve(UInt32 worldSeed, String ruleVersion) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 38
+   at LethalDungeon.Tests.DungeonExplorationBranchTests.&lt;&gt;c.&lt;UnknownRuleVersionRejected&gt;b__1_0() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonExplorationBranchTests.cs:line 22
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, Action code, String message, Object[] args)&gt;
+</Message>
+          <StackTrace>   at LethalDungeon.Tests.DungeonExplorationBranchTests.UnknownRuleVersionRejected() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonExplorationBranchTests.cs:line 22
+
+1)    at LethalDungeon.Tests.DungeonExplorationBranchTests.UnknownRuleVersionRejected() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonExplorationBranchTests.cs:line 22
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5625bfb6-f21a-4b5f-9832-d18db7472062" testId="f21777d1-a310-a89d-0d74-e2b08bbed9c9" testName="InvalidBranchConfigurationRejected(5,2,4)" computerName="local-machine" duration="00:00:00.0003120" startTime="2026-09-07T16:32:31.1127490+09:00" endTime="2026-09-07T16:32:31.1130610+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5625bfb6-f21a-4b5f-9832-d18db7472062">
+      <Output>
+        <ErrorInfo>
+          <Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentOutOfRangeException&gt;
+  But was:  &lt;System.NotImplementedException: The method or operation is not implemented.
+   at LethalDungeon.Domain.Dungeons.ExplorationBranchOptions..ctor(Int32 branchesPerLoop, Int32 minDepth, Int32 maxDepth) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/ExplorationBranches.cs:line 13
+   at LethalDungeon.Tests.DungeonExplorationBranchTests.&lt;&gt;c__DisplayClass2_0.&lt;InvalidBranchConfigurationRejected&gt;b__0() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonExplorationBranchTests.cs:line 25
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, Action code, String message, Object[] args)&gt;
+</Message>
+          <StackTrace>   at LethalDungeon.Tests.DungeonExplorationBranchTests.InvalidBranchConfigurationRejected(Int32 count, Int32 min, Int32 max) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonExplorationBranchTests.cs:line 25
+   at InvokeStub_DungeonExplorationBranchTests.InvalidBranchConfigurationRejected(Object, Span`1)
+
+1)    at LethalDungeon.Tests.DungeonExplorationBranchTests.InvalidBranchConfigurationRejected(Int32 count, Int32 min, Int32 max) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonExplorationBranchTests.cs:line 25
+   at InvokeStub_DungeonExplorationBranchTests.InvalidBranchConfigurationRejected(Object, Span`1)
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="884ffdb8-ed69-452b-be0d-0a85fca9e147" testId="7ed2c5e9-f64c-1c2c-9ae7-6a7a54799d42" testName="DefaultPlanReservesExplorationScale(uint.MinValue,2,56)" computerName="local-machine" duration="00:00:00.0003460" startTime="2026-09-07T16:32:31.1003800+09:00" endTime="2026-09-07T16:32:31.1007260+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="884ffdb8-ed69-452b-be0d-0a85fca9e147">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : The method or operation is not implemented.</Message>
+          <StackTrace>   at LethalDungeon.Domain.Dungeons.SeededDungeon.Resolve(UInt32 worldSeed, String ruleVersion) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 38
+   at LethalDungeon.Tests.DungeonExplorationBranchTests.DefaultPlanReservesExplorationScale(UInt32 seed, Int32 loops, Int32 rooms) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonExplorationBranchTests.cs:line 16
+   at InvokeStub_DungeonExplorationBranchTests.DefaultPlanReservesExplorationScale(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.Dungeons.SeededDungeon.Resolve(UInt32 worldSeed, String ruleVersion) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 38
+   at LethalDungeon.Tests.DungeonExplorationBranchTests.DefaultPlanReservesExplorationScale(UInt32 seed, Int32 loops, Int32 rooms) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonExplorationBranchTests.cs:line 16
+   at InvokeStub_DungeonExplorationBranchTests.DefaultPlanReservesExplorationScale(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2f3b36c7-83a7-4ebd-ad2d-665d9baa84e5" testId="5e03cf32-096e-0254-16ff-ea5d16d0ca18" testName="DefaultPlanReservesExplorationScale(4,4,104)" computerName="local-machine" duration="00:00:00.0000770" startTime="2026-09-07T16:32:31.1008080+09:00" endTime="2026-09-07T16:32:31.1008850+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2f3b36c7-83a7-4ebd-ad2d-665d9baa84e5">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : The method or operation is not implemented.</Message>
+          <StackTrace>   at LethalDungeon.Domain.Dungeons.SeededDungeon.Resolve(UInt32 worldSeed, String ruleVersion) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 38
+   at LethalDungeon.Tests.DungeonExplorationBranchTests.DefaultPlanReservesExplorationScale(UInt32 seed, Int32 loops, Int32 rooms) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonExplorationBranchTests.cs:line 16
+   at InvokeStub_DungeonExplorationBranchTests.DefaultPlanReservesExplorationScale(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.Dungeons.SeededDungeon.Resolve(UInt32 worldSeed, String ruleVersion) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 38
+   at LethalDungeon.Tests.DungeonExplorationBranchTests.DefaultPlanReservesExplorationScale(UInt32 seed, Int32 loops, Int32 rooms) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonExplorationBranchTests.cs:line 16
+   at InvokeStub_DungeonExplorationBranchTests.DefaultPlanReservesExplorationScale(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8c499008-370f-434d-aacc-7b992c6d88c7" testId="f3666346-e4e9-3ecc-23a4-c7785bd534a9" testName="InvalidBranchConfigurationRejected(2,2,9)" computerName="local-machine" duration="00:00:00.0001370" startTime="2026-09-07T16:32:31.1133650+09:00" endTime="2026-09-07T16:32:31.1135020+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8c499008-370f-434d-aacc-7b992c6d88c7">
+      <Output>
+        <ErrorInfo>
+          <Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentOutOfRangeException&gt;
+  But was:  &lt;System.NotImplementedException: The method or operation is not implemented.
+   at LethalDungeon.Domain.Dungeons.ExplorationBranchOptions..ctor(Int32 branchesPerLoop, Int32 minDepth, Int32 maxDepth) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/ExplorationBranches.cs:line 13
+   at LethalDungeon.Tests.DungeonExplorationBranchTests.&lt;&gt;c__DisplayClass2_0.&lt;InvalidBranchConfigurationRejected&gt;b__0() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonExplorationBranchTests.cs:line 25
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, Action code, String message, Object[] args)&gt;
+</Message>
+          <StackTrace>   at LethalDungeon.Tests.DungeonExplorationBranchTests.InvalidBranchConfigurationRejected(Int32 count, Int32 min, Int32 max) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonExplorationBranchTests.cs:line 25
+   at InvokeStub_DungeonExplorationBranchTests.InvalidBranchConfigurationRejected(Object, Span`1)
+
+1)    at LethalDungeon.Tests.DungeonExplorationBranchTests.InvalidBranchConfigurationRejected(Int32 count, Int32 min, Int32 max) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonExplorationBranchTests.cs:line 25
+   at InvokeStub_DungeonExplorationBranchTests.InvalidBranchConfigurationRejected(Object, Span`1)
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6f73a41d-eefc-4324-832f-939877876f15" testId="34b1bfeb-9820-c625-87ea-68ec53a5c072" testName="InvalidBranchConfigurationRejected(2,0,4)" computerName="local-machine" duration="00:00:00.0001499" startTime="2026-09-07T16:32:31.1130650+09:00" endTime="2026-09-07T16:32:31.1132150+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6f73a41d-eefc-4324-832f-939877876f15">
+      <Output>
+        <ErrorInfo>
+          <Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentOutOfRangeException&gt;
+  But was:  &lt;System.NotImplementedException: The method or operation is not implemented.
+   at LethalDungeon.Domain.Dungeons.ExplorationBranchOptions..ctor(Int32 branchesPerLoop, Int32 minDepth, Int32 maxDepth) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/ExplorationBranches.cs:line 13
+   at LethalDungeon.Tests.DungeonExplorationBranchTests.&lt;&gt;c__DisplayClass2_0.&lt;InvalidBranchConfigurationRejected&gt;b__0() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonExplorationBranchTests.cs:line 25
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, Action code, String message, Object[] args)&gt;
+</Message>
+          <StackTrace>   at LethalDungeon.Tests.DungeonExplorationBranchTests.InvalidBranchConfigurationRejected(Int32 count, Int32 min, Int32 max) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonExplorationBranchTests.cs:line 25
+   at InvokeStub_DungeonExplorationBranchTests.InvalidBranchConfigurationRejected(Object, Span`1)
+
+1)    at LethalDungeon.Tests.DungeonExplorationBranchTests.InvalidBranchConfigurationRejected(Int32 count, Int32 min, Int32 max) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonExplorationBranchTests.cs:line 25
+   at InvokeStub_DungeonExplorationBranchTests.InvalidBranchConfigurationRejected(Object, Span`1)
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="887f5322-e693-40d0-9802-2a5f455682a8" testId="78859563-0bb5-041c-def4-0000f9ca9d21" testName="DefaultPlanReservesExplorationScale(1,3,80)" computerName="local-machine" duration="00:00:00.0000540" startTime="2026-09-07T16:32:31.1007360+09:00" endTime="2026-09-07T16:32:31.1007900+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="887f5322-e693-40d0-9802-2a5f455682a8">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : The method or operation is not implemented.</Message>
+          <StackTrace>   at LethalDungeon.Domain.Dungeons.SeededDungeon.Resolve(UInt32 worldSeed, String ruleVersion) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 38
+   at LethalDungeon.Tests.DungeonExplorationBranchTests.DefaultPlanReservesExplorationScale(UInt32 seed, Int32 loops, Int32 rooms) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonExplorationBranchTests.cs:line 16
+   at InvokeStub_DungeonExplorationBranchTests.DefaultPlanReservesExplorationScale(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.Dungeons.SeededDungeon.Resolve(UInt32 worldSeed, String ruleVersion) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 38
+   at LethalDungeon.Tests.DungeonExplorationBranchTests.DefaultPlanReservesExplorationScale(UInt32 seed, Int32 loops, Int32 rooms) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonExplorationBranchTests.cs:line 16
+   at InvokeStub_DungeonExplorationBranchTests.DefaultPlanReservesExplorationScale(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="fd81f04e-238d-4e14-9695-db5a80e6ae4e" testId="6830dd38-dd31-44cb-0b27-6413faf13d73" testName="DefaultPlanReservesExplorationScale(3,1,32)" computerName="local-machine" duration="00:00:00.0071690" startTime="2026-09-07T16:32:31.0924770+09:00" endTime="2026-09-07T16:32:31.0996100+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fd81f04e-238d-4e14-9695-db5a80e6ae4e">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : The method or operation is not implemented.</Message>
+          <StackTrace>   at LethalDungeon.Domain.Dungeons.SeededDungeon.Resolve(UInt32 worldSeed, String ruleVersion) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 38
+   at LethalDungeon.Tests.DungeonExplorationBranchTests.DefaultPlanReservesExplorationScale(UInt32 seed, Int32 loops, Int32 rooms) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonExplorationBranchTests.cs:line 16
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.SeededDungeon.Resolve(UInt32 worldSeed, String ruleVersion) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 38
+   at LethalDungeon.Tests.DungeonExplorationBranchTests.DefaultPlanReservesExplorationScale(UInt32 seed, Int32 loops, Int32 rooms) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonExplorationBranchTests.cs:line 16
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="dd40817d-594f-4e31-a99c-8d00d7a02027" testId="5cde4125-7a02-a888-9fa9-f3eb6cc8290d" testName="ExhaustionReturnsNoPartialExplorationTrace" computerName="local-machine" duration="00:00:00.0005800" startTime="2026-09-07T16:32:31.1016080+09:00" endTime="2026-09-07T16:32:31.1021880+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dd40817d-594f-4e31-a99c-8d00d7a02027">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : The method or operation is not implemented.</Message>
+          <StackTrace>   at LethalDungeon.Domain.Dungeons.SeededDungeon.Resolve(UInt32 worldSeed, String ruleVersion) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 38
+   at LethalDungeon.Domain.Dungeons.SeededDungeon.Generate(UInt32 worldSeed, Int32 maxAttempts, String ruleVersion) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 46
+   at LethalDungeon.Tests.DungeonExplorationBranchTests.ExhaustionReturnsNoPartialExplorationTrace() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonExplorationBranchTests.cs:line 35
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.SeededDungeon.Resolve(UInt32 worldSeed, String ruleVersion) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 38
+   at LethalDungeon.Domain.Dungeons.SeededDungeon.Generate(UInt32 worldSeed, Int32 maxAttempts, String ruleVersion) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 46
+   at LethalDungeon.Tests.DungeonExplorationBranchTests.ExhaustionReturnsNoPartialExplorationTrace() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonExplorationBranchTests.cs:line 35
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3f85e865-b896-448d-91f2-bbf60e75332a" testId="bfeebbc5-fcc2-da11-511b-245d05e19e03" testName="NewModeIsReproducible" computerName="local-machine" duration="00:00:00.0001730" startTime="2026-09-07T16:32:31.1135230+09:00" endTime="2026-09-07T16:32:31.1136960+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3f85e865-b896-448d-91f2-bbf60e75332a">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : The method or operation is not implemented.</Message>
+          <StackTrace>   at LethalDungeon.Domain.Dungeons.SeededDungeon.Resolve(UInt32 worldSeed, String ruleVersion) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 38
+   at LethalDungeon.Domain.Dungeons.SeededDungeon.Generate(UInt32 worldSeed, Int32 maxAttempts, String ruleVersion) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 46
+   at LethalDungeon.Tests.DungeonExplorationBranchTests.NewModeIsReproducible() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonExplorationBranchTests.cs:line 40
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.SeededDungeon.Resolve(UInt32 worldSeed, String ruleVersion) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 38
+   at LethalDungeon.Domain.Dungeons.SeededDungeon.Generate(UInt32 worldSeed, Int32 maxAttempts, String ruleVersion) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 46
+   at LethalDungeon.Tests.DungeonExplorationBranchTests.NewModeIsReproducible() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonExplorationBranchTests.cs:line 40
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="28a26dea-7d93-4974-ab38-e74aeb5422e5" testId="4aac55ce-f67e-dd59-3d6a-3d163a81593e" testName="HundredSeedsHaveReservedBranchesAndRealDeadEnds" computerName="local-machine" duration="00:00:00.0005730" startTime="2026-09-07T16:32:31.1021940+09:00" endTime="2026-09-07T16:32:31.1027670+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="28a26dea-7d93-4974-ab38-e74aeb5422e5">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : The method or operation is not implemented.</Message>
+          <StackTrace>   at LethalDungeon.Domain.Dungeons.SeededDungeon.Resolve(UInt32 worldSeed, String ruleVersion) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 38
+   at LethalDungeon.Domain.Dungeons.SeededDungeon.Generate(UInt32 worldSeed, Int32 maxAttempts, String ruleVersion) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 46
+   at LethalDungeon.Tests.DungeonExplorationBranchTests.HundredSeedsHaveReservedBranchesAndRealDeadEnds() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonExplorationBranchTests.cs:line 69
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.SeededDungeon.Resolve(UInt32 worldSeed, String ruleVersion) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 38
+   at LethalDungeon.Domain.Dungeons.SeededDungeon.Generate(UInt32 worldSeed, Int32 maxAttempts, String ruleVersion) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 46
+   at LethalDungeon.Tests.DungeonExplorationBranchTests.HundredSeedsHaveReservedBranchesAndRealDeadEnds() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonExplorationBranchTests.cs:line 69
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="cbcbfc3e-b4a8-40b6-a51c-d0a3b5750f8d" testId="599db8e9-dfa2-8ee2-b70c-f6faf843e5dd" testName="InsufficientRoomBudgetCannotSilentlyOmitBranches" computerName="local-machine" duration="00:00:00.0003860" startTime="2026-09-07T16:32:31.1027740+09:00" endTime="2026-09-07T16:32:31.1031600+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cbcbfc3e-b4a8-40b6-a51c-d0a3b5750f8d">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : The method or operation is not implemented.</Message>
+          <StackTrace>   at LethalDungeon.Domain.Dungeons.ExplorationBranchOptions..ctor(Int32 branchesPerLoop, Int32 minDepth, Int32 maxDepth) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/ExplorationBranches.cs:line 13
+   at LethalDungeon.Tests.DungeonExplorationBranchTests.InsufficientRoomBudgetCannotSilentlyOmitBranches() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonExplorationBranchTests.cs:line 29
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.ExplorationBranchOptions..ctor(Int32 branchesPerLoop, Int32 minDepth, Int32 maxDepth) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/ExplorationBranches.cs:line 13
+   at LethalDungeon.Tests.DungeonExplorationBranchTests.InsufficientRoomBudgetCannotSilentlyOmitBranches() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonExplorationBranchTests.cs:line 29
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="58d15aed-f67b-495d-b1ba-872c175c5792" testId="f3413d70-b334-d82d-9728-8190a3ed7d5f" testName="InvalidBranchConfigurationRejected(2,4,2)" computerName="local-machine" duration="00:00:00.0001430" startTime="2026-09-07T16:32:31.1132180+09:00" endTime="2026-09-07T16:32:31.1133620+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="58d15aed-f67b-495d-b1ba-872c175c5792">
+      <Output>
+        <ErrorInfo>
+          <Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentOutOfRangeException&gt;
+  But was:  &lt;System.NotImplementedException: The method or operation is not implemented.
+   at LethalDungeon.Domain.Dungeons.ExplorationBranchOptions..ctor(Int32 branchesPerLoop, Int32 minDepth, Int32 maxDepth) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/ExplorationBranches.cs:line 13
+   at LethalDungeon.Tests.DungeonExplorationBranchTests.&lt;&gt;c__DisplayClass2_0.&lt;InvalidBranchConfigurationRejected&gt;b__0() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonExplorationBranchTests.cs:line 25
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, Action code, String message, Object[] args)&gt;
+</Message>
+          <StackTrace>   at LethalDungeon.Tests.DungeonExplorationBranchTests.InvalidBranchConfigurationRejected(Int32 count, Int32 min, Int32 max) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonExplorationBranchTests.cs:line 25
+   at InvokeStub_DungeonExplorationBranchTests.InvalidBranchConfigurationRejected(Object, Span`1)
+
+1)    at LethalDungeon.Tests.DungeonExplorationBranchTests.InvalidBranchConfigurationRejected(Int32 count, Int32 min, Int32 max) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonExplorationBranchTests.cs:line 25
+   at InvokeStub_DungeonExplorationBranchTests.InvalidBranchConfigurationRejected(Object, Span`1)
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="DefaultPlanReservesExplorationScale(3,1,32)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="6830dd38-dd31-44cb-0b27-6413faf13d73">
+      <Execution id="fd81f04e-238d-4e14-9695-db5a80e6ae4e" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonExplorationBranchTests" name="DefaultPlanReservesExplorationScale(3,1,32)" />
+    </UnitTest>
+    <UnitTest name="InvalidBranchConfigurationRejected(2,4,2)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="f3413d70-b334-d82d-9728-8190a3ed7d5f">
+      <Execution id="58d15aed-f67b-495d-b1ba-872c175c5792" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonExplorationBranchTests" name="InvalidBranchConfigurationRejected(2,4,2)" />
+    </UnitTest>
+    <UnitTest name="NewModeIsReproducible" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="bfeebbc5-fcc2-da11-511b-245d05e19e03">
+      <Execution id="3f85e865-b896-448d-91f2-bbf60e75332a" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonExplorationBranchTests" name="NewModeIsReproducible" />
+    </UnitTest>
+    <UnitTest name="DefaultPlanReservesExplorationScale(uint.MinValue,2,56)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="7ed2c5e9-f64c-1c2c-9ae7-6a7a54799d42">
+      <Execution id="884ffdb8-ed69-452b-be0d-0a85fca9e147" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonExplorationBranchTests" name="DefaultPlanReservesExplorationScale(uint.MinValue,2,56)" />
+    </UnitTest>
+    <UnitTest name="DefaultPlanReservesExplorationScale(4,4,104)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="5e03cf32-096e-0254-16ff-ea5d16d0ca18">
+      <Execution id="2f3b36c7-83a7-4ebd-ad2d-665d9baa84e5" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonExplorationBranchTests" name="DefaultPlanReservesExplorationScale(4,4,104)" />
+    </UnitTest>
+    <UnitTest name="InvalidBranchConfigurationRejected(2,2,9)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="f3666346-e4e9-3ecc-23a4-c7785bd534a9">
+      <Execution id="8c499008-370f-434d-aacc-7b992c6d88c7" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonExplorationBranchTests" name="InvalidBranchConfigurationRejected(2,2,9)" />
+    </UnitTest>
+    <UnitTest name="InvalidBranchConfigurationRejected(5,2,4)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="f21777d1-a310-a89d-0d74-e2b08bbed9c9">
+      <Execution id="5625bfb6-f21a-4b5f-9832-d18db7472062" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonExplorationBranchTests" name="InvalidBranchConfigurationRejected(5,2,4)" />
+    </UnitTest>
+    <UnitTest name="ExhaustionReturnsNoPartialExplorationTrace" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="5cde4125-7a02-a888-9fa9-f3eb6cc8290d">
+      <Execution id="dd40817d-594f-4e31-a99c-8d00d7a02027" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonExplorationBranchTests" name="ExhaustionReturnsNoPartialExplorationTrace" />
+    </UnitTest>
+    <UnitTest name="DefaultPlanReservesExplorationScale(1,3,80)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="78859563-0bb5-041c-def4-0000f9ca9d21">
+      <Execution id="887f5322-e693-40d0-9802-2a5f455682a8" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonExplorationBranchTests" name="DefaultPlanReservesExplorationScale(1,3,80)" />
+    </UnitTest>
+    <UnitTest name="InvalidBranchConfigurationRejected(0,2,4)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="d049b6cb-f878-556a-f07b-13558193b49e">
+      <Execution id="4cb49cc6-2068-4437-a99d-37ec96811e27" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonExplorationBranchTests" name="InvalidBranchConfigurationRejected(0,2,4)" />
+    </UnitTest>
+    <UnitTest name="UnknownRuleVersionRejected" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="c52580ae-1d6f-dba6-aab6-e648fa28845a">
+      <Execution id="0364ec50-a1ad-4f22-8975-ce8242b2fc4e" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonExplorationBranchTests" name="UnknownRuleVersionRejected" />
+    </UnitTest>
+    <UnitTest name="InsufficientRoomBudgetCannotSilentlyOmitBranches" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="599db8e9-dfa2-8ee2-b70c-f6faf843e5dd">
+      <Execution id="cbcbfc3e-b4a8-40b6-a51c-d0a3b5750f8d" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonExplorationBranchTests" name="InsufficientRoomBudgetCannotSilentlyOmitBranches" />
+    </UnitTest>
+    <UnitTest name="HundredSeedsHaveReservedBranchesAndRealDeadEnds" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="4aac55ce-f67e-dd59-3d6a-3d163a81593e">
+      <Execution id="28a26dea-7d93-4974-ab38-e74aeb5422e5" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonExplorationBranchTests" name="HundredSeedsHaveReservedBranchesAndRealDeadEnds" />
+    </UnitTest>
+    <UnitTest name="InvalidBranchConfigurationRejected(2,0,4)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="34b1bfeb-9820-c625-87ea-68ec53a5c072">
+      <Execution id="6f73a41d-eefc-4324-832f-939877876f15" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonExplorationBranchTests" name="InvalidBranchConfigurationRejected(2,0,4)" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="d049b6cb-f878-556a-f07b-13558193b49e" executionId="4cb49cc6-2068-4437-a99d-37ec96811e27" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c52580ae-1d6f-dba6-aab6-e648fa28845a" executionId="0364ec50-a1ad-4f22-8975-ce8242b2fc4e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f21777d1-a310-a89d-0d74-e2b08bbed9c9" executionId="5625bfb6-f21a-4b5f-9832-d18db7472062" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7ed2c5e9-f64c-1c2c-9ae7-6a7a54799d42" executionId="884ffdb8-ed69-452b-be0d-0a85fca9e147" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5e03cf32-096e-0254-16ff-ea5d16d0ca18" executionId="2f3b36c7-83a7-4ebd-ad2d-665d9baa84e5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f3666346-e4e9-3ecc-23a4-c7785bd534a9" executionId="8c499008-370f-434d-aacc-7b992c6d88c7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="34b1bfeb-9820-c625-87ea-68ec53a5c072" executionId="6f73a41d-eefc-4324-832f-939877876f15" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="78859563-0bb5-041c-def4-0000f9ca9d21" executionId="887f5322-e693-40d0-9802-2a5f455682a8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6830dd38-dd31-44cb-0b27-6413faf13d73" executionId="fd81f04e-238d-4e14-9695-db5a80e6ae4e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5cde4125-7a02-a888-9fa9-f3eb6cc8290d" executionId="dd40817d-594f-4e31-a99c-8d00d7a02027" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bfeebbc5-fcc2-da11-511b-245d05e19e03" executionId="3f85e865-b896-448d-91f2-bbf60e75332a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4aac55ce-f67e-dd59-3d6a-3d163a81593e" executionId="28a26dea-7d93-4974-ab38-e74aeb5422e5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="599db8e9-dfa2-8ee2-b70c-f6faf843e5dd" executionId="cbcbfc3e-b4a8-40b6-a51c-d0a3b5750f8d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f3413d70-b334-d82d-9728-8190a3ed7d5f" executionId="58d15aed-f67b-495d-b1ba-872c175c5792" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="14" executed="14" passed="0" failed="14" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 6.3.0.0: Test execution started
+Running selected tests in /workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll
+   NUnit3TestExecutor discovered 14 of 14 NUnit test cases using Current Discovery mode, Non-Explicit run
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

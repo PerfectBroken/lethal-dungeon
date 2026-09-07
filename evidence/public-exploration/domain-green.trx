@@ -1,0 +1,917 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="19aa7a76-edc6-4fdd-b4bc-5e88d0741f4a" name="local-validation" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-09-07T16:35:43.7688280+09:00" queuing="2026-09-07T16:35:43.7688290+09:00" start="2026-09-07T16:35:43.3764840+09:00" finish="2026-09-07T16:35:49.7880590+09:00" />
+  <TestSettings name="default" id="fa97b204-272e-4b35-af55-43d6b7af4ec9">
+    <Deployment runDeploymentRoot="local-validation" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="d3b25b3f-42f2-432d-b62c-83450064acc0" testId="96ceb0ed-c761-1a0d-37a0-141c7bb7e1c4" testName="EverySlotHasSpecifiedMultiplier(4,&quot;1.08&quot;)" computerName="local-machine" duration="00:00:00.0000020" startTime="2026-09-07T16:35:43.7355070+09:00" endTime="2026-09-07T16:35:43.7355090+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d3b25b3f-42f2-432d-b62c-83450064acc0" />
+    <UnitTestResult executionId="bf36eaa9-ed26-4be1-a3f4-d7ce692fca4d" testId="4f9d0374-ab0c-b9c0-8844-143c8f63034c" testName="InvalidGenerationRequestsAreRejected(2,0)" computerName="local-machine" duration="00:00:00.0000520" startTime="2026-09-07T16:35:47.8333270+09:00" endTime="2026-09-07T16:35:47.8333800+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bf36eaa9-ed26-4be1-a3f4-d7ce692fca4d" />
+    <UnitTestResult executionId="d107508c-be80-4d50-8c77-46f9275d38b1" testId="b8018349-648e-ffdf-058a-de9a64b7b574" testName="InvalidApertureIsRejected(0,3,2,2,2)" computerName="local-machine" duration="00:00:00.0000210" startTime="2026-09-07T16:35:47.8329530+09:00" endTime="2026-09-07T16:35:47.8329730+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d107508c-be80-4d50-8c77-46f9275d38b1" />
+    <UnitTestResult executionId="22b46e00-8592-4847-adec-369fb115f348" testId="c5ee6491-dc37-436b-70d7-c2fa02ad3a3f" testName="UnknownProtectedRoomIsRejected" computerName="local-machine" duration="00:00:00.0002910" startTime="2026-09-07T16:35:47.8258260+09:00" endTime="2026-09-07T16:35:47.8261170+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="22b46e00-8592-4847-adec-369fb115f348" />
+    <UnitTestResult executionId="3bbe6ce6-6e27-47ac-a196-aead02ac0c2c" testId="12d3c84d-5242-f5bf-cf0c-d87e6919da01" testName="DeadEndIsBacktrackedBeforeSuccessfulCompletion" computerName="local-machine" duration="00:00:00.0002560" startTime="2026-09-07T16:35:47.8307570+09:00" endTime="2026-09-07T16:35:47.8310140+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3bbe6ce6-6e27-47ac-a196-aead02ac0c2c" />
+    <UnitTestResult executionId="4e3da8e9-89ae-4d4c-bfa6-0ff237154ba5" testId="ccf10703-bb0c-d997-654c-471b21e78183" testName="ParallelDoorsBetweenTwoRoomsDoNotCountAsAUsefulLoop" computerName="local-machine" duration="00:00:00.0003950" startTime="2026-09-07T16:35:48.5033560+09:00" endTime="2026-09-07T16:35:48.5037510+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4e3da8e9-89ae-4d4c-bfa6-0ff237154ba5" />
+    <UnitTestResult executionId="755002b7-279d-4cd8-bcba-5bf8d32a9f27" testId="bed63545-fd72-e992-4053-7dbf75260d60" testName="NegativeStartIsRejectedAndCanRetry" computerName="local-machine" duration="00:00:00.0002900" startTime="2026-09-07T16:35:49.7531410+09:00" endTime="2026-09-07T16:35:49.7534310+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="755002b7-279d-4cd8-bcba-5bf8d32a9f27" />
+    <UnitTestResult executionId="f7da3395-10e7-46a2-9174-acc98fd76559" testId="652714b7-8705-bf5b-158d-1036995300cb" testName="ImpossibleRequestDoesNotSilentlyReturnTree" computerName="local-machine" duration="00:00:00.0048740" startTime="2026-09-07T16:35:48.1618800+09:00" endTime="2026-09-07T16:35:48.1667540+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f7da3395-10e7-46a2-9174-acc98fd76559" />
+    <UnitTestResult executionId="93b89901-5e92-461e-9239-9710aa2e083c" testId="c52580ae-1d6f-dba6-aab6-e648fa28845a" testName="UnknownRuleVersionRejected" computerName="local-machine" duration="00:00:00.0000740" startTime="2026-09-07T16:35:47.8261310+09:00" endTime="2026-09-07T16:35:47.8262050+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="93b89901-5e92-461e-9239-9710aa2e083c" />
+    <UnitTestResult executionId="d60dcb35-79d9-4d98-b82a-ca2ad6a07a6e" testId="50d29d9c-c03e-5a1f-d19f-b5e757561525" testName="BeforeStartDoesNotConsumeLoadingTime" computerName="local-machine" duration="00:00:00.0001940" startTime="2026-09-07T16:35:49.7520150+09:00" endTime="2026-09-07T16:35:49.7522080+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d60dcb35-79d9-4d98-b82a-ca2ad6a07a6e" />
+    <UnitTestResult executionId="af71b0c3-464e-414a-8053-f9aa8b486a6d" testId="f21777d1-a310-a89d-0d74-e2b08bbed9c9" testName="InvalidBranchConfigurationRejected(5,2,4)" computerName="local-machine" duration="00:00:00.0001850" startTime="2026-09-07T16:35:47.7707060+09:00" endTime="2026-09-07T16:35:47.7708910+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="af71b0c3-464e-414a-8053-f9aa8b486a6d" />
+    <UnitTestResult executionId="6c10e6e3-991c-4153-a12e-b0ff7464f625" testId="ac3679a7-45b0-ba8f-2944-69ebdf2a33a3" testName="InvalidRotationIsRejected(-1)" computerName="local-machine" duration="00:00:00.0000770" startTime="2026-09-07T16:35:47.8336420+09:00" endTime="2026-09-07T16:35:47.8337200+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6c10e6e3-991c-4153-a12e-b0ff7464f625" />
+    <UnitTestResult executionId="f8f1940a-7222-4d46-bc90-3a49f52bc071" testId="ae4f97cb-f9e5-1513-cfb7-9ec469edf629" testName="PrototypeHasSixSpecifiedModulesAndVerticalSockets" computerName="local-machine" duration="00:00:00.0039970" startTime="2026-09-07T16:35:48.1535120+09:00" endTime="2026-09-07T16:35:48.1575090+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f8f1940a-7222-4d46-bc90-3a49f52bc071" />
+    <UnitTestResult executionId="a3058e73-47be-4e35-815e-2ef68afdfee1" testId="57b9f78e-370f-ae5f-2818-5ebe605539db" testName="EverySlotHasSpecifiedMultiplier(5,&quot;1.05&quot;)" computerName="local-machine" duration="00:00:00.0000020" startTime="2026-09-07T16:35:43.7355110+09:00" endTime="2026-09-07T16:35:43.7355130+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a3058e73-47be-4e35-815e-2ef68afdfee1" />
+    <UnitTestResult executionId="b6c2af3b-71de-45db-9e1a-20a8ece90fe0" testId="f3d7b960-3a10-800e-8dfb-3bea242a2942" testName="UpperStairDoorPlacesTheNextRoomOnTheUpperFloor" computerName="local-machine" duration="00:00:00.0001210" startTime="2026-09-07T16:35:48.1613200+09:00" endTime="2026-09-07T16:35:48.1614410+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b6c2af3b-71de-45db-9e1a-20a8ece90fe0" />
+    <UnitTestResult executionId="7f8ee96a-05d6-47c7-ae7e-4dcdec7e39e2" testId="a28cd960-5d18-c4c9-960d-a8887d3faeb1" testName="TimelineHasSpecifiedBoundaries(10800000000L,1440,True)" computerName="local-machine" duration="00:00:00.0000080" startTime="2026-09-07T16:35:49.7556980+09:00" endTime="2026-09-07T16:35:49.7557060+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7f8ee96a-05d6-47c7-ae7e-4dcdec7e39e2" />
+    <UnitTestResult executionId="37a39503-6d3c-44cb-9b78-7bc5010d9fc7" testId="fab9da53-ce03-f3d2-a257-44e061b292bc" testName="EverySlotHasSpecifiedMultiplier(8,&quot;0.96&quot;)" computerName="local-machine" duration="00:00:00.0000020" startTime="2026-09-07T16:35:43.7355230+09:00" endTime="2026-09-07T16:35:43.7355250+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="37a39503-6d3c-44cb-9b78-7bc5010d9fc7" />
+    <UnitTestResult executionId="11897716-7b4e-4b5b-af10-36032a046a7a" testId="29bff684-bee0-23de-e4d4-ccb6ffe35a00" testName="PlacementAndClosureShareBudget" computerName="local-machine" duration="00:00:00.0003470" startTime="2026-09-07T16:35:48.5038080+09:00" endTime="2026-09-07T16:35:48.5041540+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="11897716-7b4e-4b5b-af10-36032a046a7a" />
+    <UnitTestResult executionId="4fe99d06-bbbe-4893-a0d0-4d875343d9af" testId="62c98249-7257-69da-3f46-5bb075e25fd3" testName="PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(0,3,0,True)" computerName="local-machine" duration="00:00:00.0000060" startTime="2026-09-07T16:35:48.1534640+09:00" endTime="2026-09-07T16:35:48.1534700+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4fe99d06-bbbe-4893-a0d0-4d875343d9af" />
+    <UnitTestResult executionId="599c726c-0158-4f22-9705-346412590472" testId="78859563-0bb5-041c-def4-0000f9ca9d21" testName="DefaultPlanReservesExplorationScale(1,3,80)" computerName="local-machine" duration="00:00:00.0000110" startTime="2026-09-07T16:35:45.5946550+09:00" endTime="2026-09-07T16:35:45.5946670+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="599c726c-0158-4f22-9705-346412590472" />
+    <UnitTestResult executionId="965272c8-6a9a-4ba9-8a41-c944ec435fb9" testId="4e797172-6aa6-f38b-28ff-f57f7d6f9044" testName="DeadlinePulseOccursOnce" computerName="local-machine" duration="00:00:00.0000970" startTime="2026-09-07T16:35:49.7522180+09:00" endTime="2026-09-07T16:35:49.7523140+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="965272c8-6a9a-4ba9-8a41-c944ec435fb9" />
+    <UnitTestResult executionId="dff5d042-7d47-40df-86e5-0b5146f270a1" testId="fd6c9c48-a52d-66fd-a6eb-c40049ec1004" testName="SameSeedRepeatsBranchAndBridgeLayout" computerName="local-machine" duration="00:00:00.0149930" startTime="2026-09-07T16:35:45.5736560+09:00" endTime="2026-09-07T16:35:45.5886480+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dff5d042-7d47-40df-86e5-0b5146f270a1" />
+    <UnitTestResult executionId="e2c2bc43-9e87-4185-821a-e2f70be0a6ec" testId="d049b6cb-f878-556a-f07b-13558193b49e" testName="InvalidBranchConfigurationRejected(0,2,4)" computerName="local-machine" duration="00:00:00.0001890" startTime="2026-09-07T16:35:47.7705020+09:00" endTime="2026-09-07T16:35:47.7706910+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e2c2bc43-9e87-4185-821a-e2f70be0a6ec" />
+    <UnitTestResult executionId="705a1047-a731-490f-af40-15768b738d55" testId="cc861560-ee36-84d1-8544-e87c7500ca3b" testName="OldSnapshotRemainsUnchanged" computerName="local-machine" duration="00:00:00.0001090" startTime="2026-09-07T16:35:49.7536900+09:00" endTime="2026-09-07T16:35:49.7537990+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="705a1047-a731-490f-af40-15768b738d55" />
+    <UnitTestResult executionId="1479df6b-343d-4a90-a03f-be842c3ff2c9" testId="2ebc06d0-816f-73a2-d18a-52a4704d48d4" testName="InvalidRotationIsRejected(4)" computerName="local-machine" duration="00:00:00.0000720" startTime="2026-09-07T16:35:47.8337250+09:00" endTime="2026-09-07T16:35:47.8337960+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1479df6b-343d-4a90-a03f-be842c3ff2c9" />
+    <UnitTestResult executionId="2ddf494f-d5fa-46e0-aa1b-c792a61de0a5" testId="aebf8c36-53ed-817d-9521-9778a67f6914" testName="EverySlotHasSpecifiedMultiplier(1,&quot;1.17&quot;)" computerName="local-machine" duration="00:00:00.0001180" startTime="2026-09-07T16:35:43.7353710+09:00" endTime="2026-09-07T16:35:43.7354890+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2ddf494f-d5fa-46e0-aa1b-c792a61de0a5" />
+    <UnitTestResult executionId="ab340459-691b-418f-b5a3-3a76426bd1ba" testId="bf364881-7fe8-85f2-3159-a2d3a2ca7c3b" testName="SeedRuleHasStableGoldenMapping(uint.MaxValue,1,306079645)" computerName="local-machine" duration="00:00:00.0000020" startTime="2026-09-07T16:35:49.7508390+09:00" endTime="2026-09-07T16:35:49.7508410+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ab340459-691b-418f-b5a3-3a76426bd1ba" />
+    <UnitTestResult executionId="01a37731-11be-42d6-aedf-a0c23e1a2da1" testId="96db1c11-b41d-1902-cdeb-1a84aff63543" testName="EverySlotHasSpecifiedMultiplier(10,&quot;0.90&quot;)" computerName="local-machine" duration="00:00:00.0000020" startTime="2026-09-07T16:35:43.7355340+09:00" endTime="2026-09-07T16:35:43.7355360+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="01a37731-11be-42d6-aedf-a0c23e1a2da1" />
+    <UnitTestResult executionId="a7fb3afd-b36c-458f-bfe2-121e832c6872" testId="df20cd30-bd7e-2064-8b30-8e13d75becc0" testName="PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(0,4,0,False)" computerName="local-machine" duration="00:00:00.0000160" startTime="2026-09-07T16:35:48.1534430+09:00" endTime="2026-09-07T16:35:48.1534600+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a7fb3afd-b36c-458f-bfe2-121e832c6872" />
+    <UnitTestResult executionId="b48485ae-65ab-44c2-9fed-096867acf043" testId="e2cf17c7-6185-71cc-b7b3-dcf97bc6edc7" testName="InvalidBudget(100001)" computerName="local-machine" duration="00:00:00.0000830" startTime="2026-09-07T16:35:45.5735560+09:00" endTime="2026-09-07T16:35:45.5736390+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b48485ae-65ab-44c2-9fed-096867acf043" />
+    <UnitTestResult executionId="959caa6c-e092-4024-a73d-b9427a95ee3a" testId="43edd6a3-ca7b-56b8-2079-322a3759ef2d" testName="RotatedBoxHasCorrectExtents" computerName="local-machine" duration="00:00:00.0001020" startTime="2026-09-07T16:35:48.1581060+09:00" endTime="2026-09-07T16:35:48.1582080+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="959caa6c-e092-4024-a73d-b9427a95ee3a" />
+    <UnitTestResult executionId="5ccaf67d-6406-464e-9d10-662761f4c926" testId="39a07caa-253e-fecf-f724-b2c328d00d84" testName="PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(4,0,0,False)" computerName="local-machine" duration="00:00:00.0003660" startTime="2026-09-07T16:35:48.1530400+09:00" endTime="2026-09-07T16:35:48.1534060+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5ccaf67d-6406-464e-9d10-662761f4c926" />
+    <UnitTestResult executionId="ad5903b3-356e-4225-898d-b5b9441e2d6a" testId="418ec0ad-4e79-fc80-e2c4-19e2b917f388" testName="SeedRuleHasStableGoldenMapping(uint.MinValue,2,521625886)" computerName="local-machine" duration="00:00:00.0001360" startTime="2026-09-07T16:35:49.7505030+09:00" endTime="2026-09-07T16:35:49.7506390+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ad5903b3-356e-4225-898d-b5b9441e2d6a" />
+    <UnitTestResult executionId="2b8a278f-9e5a-4d68-ab51-56168b3f205c" testId="09c3853b-83f4-69a1-7a60-b70081644238" testName="LoopSeedIsReproducible" computerName="local-machine" duration="00:00:00.0062260" startTime="2026-09-07T16:35:48.1671060+09:00" endTime="2026-09-07T16:35:48.1733290+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2b8a278f-9e5a-4d68-ab51-56168b3f205c" />
+    <UnitTestResult executionId="7b925560-7afc-452f-b01b-348deb09ac80" testId="204c8c09-3050-c0fb-662e-d75d286916ed" testName="PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(4,4,4,False)" computerName="local-machine" duration="00:00:00.0000050" startTime="2026-09-07T16:35:48.1534720+09:00" endTime="2026-09-07T16:35:48.1534770+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7b925560-7afc-452f-b01b-348deb09ac80" />
+    <UnitTestResult executionId="58b090bb-3bbe-40a4-92bc-b16b2f50d067" testId="0ac377dc-425a-f8db-d6c9-8ed448dfe590" testName="InvalidApertureIsRejected(0,0,2,2,0)" computerName="local-machine" duration="00:00:00.0000120" startTime="2026-09-07T16:35:47.8329970+09:00" endTime="2026-09-07T16:35:47.8330090+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="58b090bb-3bbe-40a4-92bc-b16b2f50d067" />
+    <UnitTestResult executionId="d0939edb-9e8c-468e-a6dc-edf9f2393cbb" testId="43651b83-927a-6391-76bd-efac584252fd" testName="DisconnectedRoomsAreRejected" computerName="local-machine" duration="00:00:00.0001200" startTime="2026-09-07T16:35:47.8311620+09:00" endTime="2026-09-07T16:35:47.8312820+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d0939edb-9e8c-468e-a6dc-edf9f2393cbb" />
+    <UnitTestResult executionId="c9b5470c-b851-46fc-9c7a-0e6637e02ea3" testId="fb024014-2de7-fc2d-0d91-a48ba75b1800" testName="BackwardTimeIsRejectedWithoutChangingState" computerName="local-machine" duration="00:00:00.0010760" startTime="2026-09-07T16:35:49.7509220+09:00" endTime="2026-09-07T16:35:49.7519970+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c9b5470c-b851-46fc-9c7a-0e6637e02ea3" />
+    <UnitTestResult executionId="178ac68d-5ae6-4c9c-bbbb-05a28a4f7dd4" testId="07faffe3-a9e7-1fc8-b619-c54d070c20c8" testName="RemoteOrInvalidLayoutCannotCreateVirtualLoop" computerName="local-machine" duration="00:00:00.0003280" startTime="2026-09-07T16:35:48.5041740+09:00" endTime="2026-09-07T16:35:48.5045010+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="178ac68d-5ae6-4c9c-bbbb-05a28a4f7dd4" />
+    <UnitTestResult executionId="9e9f4e97-4340-425b-834b-d64d7cdf80db" testId="b09c53f3-d5e4-0fdf-41d6-2d374e1a293d" testName="ValidatorAcceptsAConnectedNonOverlappingPair" computerName="local-machine" duration="00:00:00.0000800" startTime="2026-09-07T16:35:48.1614490+09:00" endTime="2026-09-07T16:35:48.1615280+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9e9f4e97-4340-425b-834b-d64d7cdf80db" />
+    <UnitTestResult executionId="b1af98c2-3b2b-42e9-88da-6dbe508804b3" testId="9cabd7e3-f97b-bb08-661f-e120f06be10a" testName="PollFrequencyDoesNotChangeElapsedTime" computerName="local-machine" duration="00:00:00.0001120" startTime="2026-09-07T16:35:49.7538080+09:00" endTime="2026-09-07T16:35:49.7539200+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b1af98c2-3b2b-42e9-88da-6dbe508804b3" />
+    <UnitTestResult executionId="de1d41cc-353d-4d7e-920c-279dde2fce8d" testId="e06a7b8d-e510-3f6e-3130-5ab6215cd7a0" testName="TimelineHasSpecifiedBoundaries(10000000L,361,False)" computerName="local-machine" duration="00:00:00.0000300" startTime="2026-09-07T16:35:49.7555770+09:00" endTime="2026-09-07T16:35:49.7556070+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="de1d41cc-353d-4d7e-920c-279dde2fce8d" />
+    <UnitTestResult executionId="956170c0-d16d-4e17-87a1-7f32a1ec72a5" testId="235dd92a-9b3a-fc0f-335c-1f0b1df297c1" testName="RoomScaleMatchesSelectedLoopCount(4,64)" computerName="local-machine" duration="00:00:00.0000020" startTime="2026-09-07T16:35:49.7504800+09:00" endTime="2026-09-07T16:35:49.7504830+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="956170c0-d16d-4e17-87a1-7f32a1ec72a5" />
+    <UnitTestResult executionId="0ca63e16-b40f-4c60-8180-0ae25b27c3ab" testId="0bf40de3-576f-0989-6ee2-d03c741a45bf" testName="JumpAcrossDeadlineEmitsPulse" computerName="local-machine" duration="00:00:00.0001520" startTime="2026-09-07T16:35:49.7527970+09:00" endTime="2026-09-07T16:35:49.7529500+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0ca63e16-b40f-4c60-8180-0ae25b27c3ab" />
+    <UnitTestResult executionId="226ca282-20c8-40e8-aa99-cab671c19c32" testId="0f3a485c-762c-a241-25c3-6af4ac08c026" testName="InvalidCallDoesNotAffectLaterValidCall" computerName="local-machine" duration="00:00:00.0026120" startTime="2026-09-07T16:35:43.7361990+09:00" endTime="2026-09-07T16:35:43.7388110+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="226ca282-20c8-40e8-aa99-cab671c19c32" />
+    <UnitTestResult executionId="c126b8ba-9192-4ab4-b7cf-8d34819c172e" testId="47bdca46-de3a-52ae-af97-3bc948192248" testName="FullResultIsReproducible" computerName="local-machine" duration="00:00:00.0930110" startTime="2026-09-07T16:35:48.5055730+09:00" endTime="2026-09-07T16:35:48.5985840+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c126b8ba-9192-4ab4-b7cf-8d34819c172e" />
+    <UnitTestResult executionId="c2003f3c-a19b-4a13-85e8-7a67f30cf8d0" testId="08b763b4-92ae-e308-aeb6-779d89c54015" testName="SameSeedProducesIdenticalManifest" computerName="local-machine" duration="00:00:00.0026610" startTime="2026-09-07T16:35:48.1582120+09:00" endTime="2026-09-07T16:35:48.1608730+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c2003f3c-a19b-4a13-85e8-7a67f30cf8d0" />
+    <UnitTestResult executionId="69d5a8a7-1565-4ca2-a8b3-0bdd3dee0e7e" testId="97c80239-cc3f-86b5-c5d8-381273940796" testName="QuarterTurnsHaveExactCoordinates(3,-3,2)" computerName="local-machine" duration="00:00:00.0000040" startTime="2026-09-07T16:35:48.1577480+09:00" endTime="2026-09-07T16:35:48.1577520+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="69d5a8a7-1565-4ca2-a8b3-0bdd3dee0e7e" />
+    <UnitTestResult executionId="27b8c9e0-930e-4acf-89e0-8954b0093f0e" testId="36265d70-6ce9-504b-db8f-cf8f9709e004" testName="InvalidGenerationRequestsAreRejected(65,100)" computerName="local-machine" duration="00:00:00.0001310" startTime="2026-09-07T16:35:47.8331890+09:00" endTime="2026-09-07T16:35:47.8333200+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="27b8c9e0-930e-4acf-89e0-8954b0093f0e" />
+    <UnitTestResult executionId="00ca8f28-a627-4773-a880-27b87b5ec67d" testId="11a0707f-6eec-1381-3084-d95f89365bc3" testName="StartAfterExpiryCannotRestart" computerName="local-machine" duration="00:00:00.0000850" startTime="2026-09-07T16:35:49.7539290+09:00" endTime="2026-09-07T16:35:49.7540140+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="00ca8f28-a627-4773-a880-27b87b5ec67d" />
+    <UnitTestResult executionId="331748d9-1c4f-4ba9-a15c-51cc870bf369" testId="34b1bfeb-9820-c625-87ea-68ec53a5c072" testName="InvalidBranchConfigurationRejected(2,0,4)" computerName="local-machine" duration="00:00:00.0000200" startTime="2026-09-07T16:35:47.7708990+09:00" endTime="2026-09-07T16:35:47.7709180+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="331748d9-1c4f-4ba9-a15c-51cc870bf369" />
+    <UnitTestResult executionId="ecde1c57-b323-437e-a511-7fef7188b28f" testId="03720b16-6f13-fe5a-3af2-53fce49ef3a4" testName="CycleRequestRequiresExplicitConnectorModule" computerName="local-machine" duration="00:00:00.0001600" startTime="2026-09-07T16:35:48.1617110+09:00" endTime="2026-09-07T16:35:48.1618700+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ecde1c57-b323-437e-a511-7fef7188b28f" />
+    <UnitTestResult executionId="25c3a7ba-ab07-4da8-af0f-c55ce444e4df" testId="c88de2a1-5b73-2d92-9898-04bab29dae87" testName="InvalidSlotsAreRejected(11)" computerName="local-machine" duration="00:00:00.0001100" startTime="2026-09-07T16:35:43.7394560+09:00" endTime="2026-09-07T16:35:43.7395660+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="25c3a7ba-ab07-4da8-af0f-c55ce444e4df" />
+    <UnitTestResult executionId="cc7f38c5-03e8-4670-ac2d-97e0df72e9f4" testId="bfeebbc5-fcc2-da11-511b-245d05e19e03" testName="NewModeIsReproducible" computerName="local-machine" duration="00:00:00.0548050" startTime="2026-09-07T16:35:47.7709840+09:00" endTime="2026-09-07T16:35:47.8257890+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cc7f38c5-03e8-4670-ac2d-97e0df72e9f4" />
+    <UnitTestResult executionId="aef296d5-8f52-4247-9ed4-a121594e11e1" testId="8b589130-3a4c-9190-e67d-78ae77122b2c" testName="ThirdRoomCannotBlockDoorApproachEvenWithoutEnvelopeOverlap" computerName="local-machine" duration="00:00:00.0002210" startTime="2026-09-07T16:35:48.1609930+09:00" endTime="2026-09-07T16:35:48.1612140+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="aef296d5-8f52-4247-9ed4-a121594e11e1" />
+    <UnitTestResult executionId="26e67730-fc87-4899-b5d1-9afd6e4e4639" testId="2c6dcc88-9efe-d785-0cd6-a2f00ae6367b" testName="TimelineHasSpecifiedBoundaries(7200000001L,1080,False)" computerName="local-machine" duration="00:00:00.0000060" startTime="2026-09-07T16:35:49.7556820+09:00" endTime="2026-09-07T16:35:49.7556880+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="26e67730-fc87-4899-b5d1-9afd6e4e4639" />
+    <UnitTestResult executionId="18211062-9ba6-498e-8607-c0a6fd62899c" testId="ee9afc5e-35e4-64c2-3d18-a4ad897688f0" testName="MissingEnvelopeIsRejected" computerName="local-machine" duration="00:00:00.0001390" startTime="2026-09-07T16:35:47.8357970+09:00" endTime="2026-09-07T16:35:47.8359360+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="18211062-9ba6-498e-8607-c0a6fd62899c" />
+    <UnitTestResult executionId="efe3c302-1a57-4ca3-b637-62a4c42f0f54" testId="6830dd38-dd31-44cb-0b27-6413faf13d73" testName="DefaultPlanReservesExplorationScale(3,1,32)" computerName="local-machine" duration="00:00:00.0008110" startTime="2026-09-07T16:35:45.5936160+09:00" endTime="2026-09-07T16:35:45.5944280+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="efe3c302-1a57-4ca3-b637-62a4c42f0f54" />
+    <UnitTestResult executionId="01c873af-abb7-490b-8da1-114d318be874" testId="aa8952e6-4ded-3046-a7d3-f7c0f99e0dea" testName="SeedRuleHasStableGoldenMapping(2,2,3397078639)" computerName="local-machine" duration="00:00:00.0000060" startTime="2026-09-07T16:35:49.7508190+09:00" endTime="2026-09-07T16:35:49.7508250+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="01c873af-abb7-490b-8da1-114d318be874" />
+    <UnitTestResult executionId="8ef16240-19ec-416c-93cc-e405fbdd291c" testId="9dcf8846-bdeb-b3eb-1193-8cacae7a95f6" testName="RemoteDoorReferenceDoesNotCreateATeleportConnection" computerName="local-machine" duration="00:00:00.0001020" startTime="2026-09-07T16:35:48.1580000+09:00" endTime="2026-09-07T16:35:48.1581020+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8ef16240-19ec-416c-93cc-e405fbdd291c" />
+    <UnitTestResult executionId="6a217fc2-9c88-42bc-aaa8-9a51e45f004d" testId="a4e12100-edf2-8d15-455f-66d638d82eb1" testName="UnknownModuleAndSocketReferencesAreRejected" computerName="local-machine" duration="00:00:00.0000950" startTime="2026-09-07T16:35:48.1612200+09:00" endTime="2026-09-07T16:35:48.1613160+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6a217fc2-9c88-42bc-aaa8-9a51e45f004d" />
+    <UnitTestResult executionId="9bc5069c-9c4a-4c20-b154-0a65eb2c0d93" testId="d2341cd5-b066-3dc4-836f-853a20e39c17" testName="RandomAlgorithmHasStableGoldenSequence" computerName="local-machine" duration="00:00:00.0002280" startTime="2026-09-07T16:35:48.1577640+09:00" endTime="2026-09-07T16:35:48.1579920+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9bc5069c-9c4a-4c20-b154-0a65eb2c0d93" />
+    <UnitTestResult executionId="13effdf2-a254-4362-bc2d-6b9314e01a97" testId="78a9a989-456e-f6cb-825e-92ee5ab47ab8" testName="SeedRuleHasStableGoldenMapping(3,1,543629138)" computerName="local-machine" duration="00:00:00.0000030" startTime="2026-09-07T16:35:49.7508280+09:00" endTime="2026-09-07T16:35:49.7508310+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="13effdf2-a254-4362-bc2d-6b9314e01a97" />
+    <UnitTestResult executionId="f0b950f6-97dd-4313-aab2-d7697dd43015" testId="8acbbce1-a922-bf45-6609-d3f81a5ec3e9" testName="InvalidBudgetRejected(100001)" computerName="local-machine" duration="00:00:00.0001430" startTime="2026-09-07T16:35:49.7500820+09:00" endTime="2026-09-07T16:35:49.7502250+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f0b950f6-97dd-4313-aab2-d7697dd43015" />
+    <UnitTestResult executionId="0c040087-d2f0-4758-86c2-92fbb37dec69" testId="7abfec6e-3735-a2ec-a079-0e3180cedd78" testName="QuarterTurnsHaveExactCoordinates(1,3,-2)" computerName="local-machine" duration="00:00:00.0001150" startTime="2026-09-07T16:35:48.1576190+09:00" endTime="2026-09-07T16:35:48.1577330+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0c040087-d2f0-4758-86c2-92fbb37dec69" />
+    <UnitTestResult executionId="c156c095-7dff-4335-b77f-d3fd8c062c67" testId="916f0cb0-47b0-bc8f-a96b-9a4e900559b7" testName="InvalidApertureIsRejected(0,0,0,2,2)" computerName="local-machine" duration="00:00:00.0001840" startTime="2026-09-07T16:35:47.8325080+09:00" endTime="2026-09-07T16:35:47.8326920+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c156c095-7dff-4335-b77f-d3fd8c062c67" />
+    <UnitTestResult executionId="4b907ce8-de85-4c1d-9dfe-c4ef36d74a35" testId="d261bab6-ed72-e46d-f683-2a774bb0dea4" testName="AttachmentSolvesTranslationAndRotationFromDoorFrames" computerName="local-machine" duration="00:00:00.0025530" startTime="2026-09-07T16:35:47.8262930+09:00" endTime="2026-09-07T16:35:47.8288460+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4b907ce8-de85-4c1d-9dfe-c4ef36d74a35" />
+    <UnitTestResult executionId="4dbbc3be-eaaf-475b-a215-e1a75ba2c860" testId="eacd923a-22d8-177f-6e1c-6dec90a2e0a0" testName="EverySlotHasSpecifiedMultiplier(3,&quot;1.11&quot;)" computerName="local-machine" duration="00:00:00.0000020" startTime="2026-09-07T16:35:43.7354990+09:00" endTime="2026-09-07T16:35:43.7355010+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4dbbc3be-eaaf-475b-a215-e1a75ba2c860" />
+    <UnitTestResult executionId="6df9fc9a-560a-4e7f-ba30-17ff0b064a4e" testId="22c75b8e-2625-b979-925d-bd6a48009d43" testName="HundredSeedsHaveLongCyclesAndPreviewTraces" computerName="local-machine" duration="00:00:01.8062290" startTime="2026-09-07T16:35:43.7670980+09:00" endTime="2026-09-07T16:35:45.5733280+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6df9fc9a-560a-4e7f-ba30-17ff0b064a4e">
+      <Output>
+        <StdOut>Maximum attempts: 8374</StdOut>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="local-machine/dungeon-branch-loops.json" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="2f35b0fd-002a-490c-98a3-c64493612bbe" testId="599db8e9-dfa2-8ee2-b70c-f6faf843e5dd" testName="InsufficientRoomBudgetCannotSilentlyOmitBranches" computerName="local-machine" duration="00:00:00.0003650" startTime="2026-09-07T16:35:47.7700720+09:00" endTime="2026-09-07T16:35:47.7704370+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2f35b0fd-002a-490c-98a3-c64493612bbe" />
+    <UnitTestResult executionId="e069ec73-aed7-4369-9fae-b885db0f6b4f" testId="bf1e1d3b-0903-a1ad-0ae5-6accaa9b4d77" testName="LShapedNotchRemainsAvailableButItsLegIsSolid" computerName="local-machine" duration="00:00:00.0012600" startTime="2026-09-07T16:35:47.8338060+09:00" endTime="2026-09-07T16:35:47.8350660+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e069ec73-aed7-4369-9fae-b885db0f6b4f" />
+    <UnitTestResult executionId="c4f5e7eb-fcae-40cb-9848-2ecb393097d1" testId="a18125e2-cd83-2ef2-96f5-6b0e23a3fc9d" testName="TimelineHasSpecifiedBoundaries(0L,360,False)" computerName="local-machine" duration="00:00:00.0012300" startTime="2026-09-07T16:35:49.7541500+09:00" endTime="2026-09-07T16:35:49.7553800+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c4f5e7eb-fcae-40cb-9848-2ecb393097d1" />
+    <UnitTestResult executionId="32fdbcd7-3e8f-40e6-9058-19890ae07287" testId="6584b83b-016c-e9bb-c4da-6830fe156edd" testName="OneHundredSeedsProduceValidMultiLevelLayoutsAndPreviewFixtures" computerName="local-machine" duration="00:00:00.3162120" startTime="2026-09-07T16:35:47.8359470+09:00" endTime="2026-09-07T16:35:48.1521590+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="32fdbcd7-3e8f-40e6-9058-19890ae07287">
+      <ResultFiles>
+        <ResultFile path="local-machine/dungeon-preview.json" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="f7b8fe2c-923d-45d9-a391-0f60daa247f2" testId="be3bcca0-325c-8a22-2bc6-a6900a639a9c" testName="ExplicitBranchConfigurationIsHonoured(1,2,2)" computerName="local-machine" duration="00:00:00.0314740" startTime="2026-09-07T16:35:45.5966610+09:00" endTime="2026-09-07T16:35:45.6281350+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f7b8fe2c-923d-45d9-a391-0f60daa247f2" />
+    <UnitTestResult executionId="34b81dc0-1117-4d93-9fa8-fa339eadf658" testId="7ed2c5e9-f64c-1c2c-9ae7-6a7a54799d42" testName="DefaultPlanReservesExplorationScale(uint.MinValue,2,56)" computerName="local-machine" duration="00:00:00.0001530" startTime="2026-09-07T16:35:45.5944650+09:00" endTime="2026-09-07T16:35:45.5946180+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="34b81dc0-1117-4d93-9fa8-fa339eadf658" />
+    <UnitTestResult executionId="cc84ea42-8aa3-45f2-a75a-57a7c5b1ef1d" testId="978d8c1b-3691-549c-3f91-5840187b3f04" testName="EverySlotHasSpecifiedMultiplier(0,&quot;1.20&quot;)" computerName="local-machine" duration="00:00:00.0001200" startTime="2026-09-07T16:35:43.7352440+09:00" endTime="2026-09-07T16:35:43.7353630+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cc84ea42-8aa3-45f2-a75a-57a7c5b1ef1d" />
+    <UnitTestResult executionId="2bc3bb0b-86d6-42b7-9d1e-bdb25be75fbb" testId="712ab7f4-ac9f-b779-85bb-2fa0a5418865" testName="ExtensionRejectsInvalidSeedLayout" computerName="local-machine" duration="00:00:00.0007100" startTime="2026-09-07T16:35:43.7591100+09:00" endTime="2026-09-07T16:35:43.7598200+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2bc3bb0b-86d6-42b7-9d1e-bdb25be75fbb" />
+    <UnitTestResult executionId="c81d6b91-d365-4fc9-9319-dbe78b24b061" testId="ffcb9f2d-c651-6b29-7f84-0c0bd75c01f5" testName="DuplicateDoorEntitiesAreRejected" computerName="local-machine" duration="00:00:00.0000880" startTime="2026-09-07T16:35:47.8314310+09:00" endTime="2026-09-07T16:35:47.8315190+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c81d6b91-d365-4fc9-9319-dbe78b24b061" />
+    <UnitTestResult executionId="ab4e9097-e916-47a6-82f0-abaeb2c5c91b" testId="046feb69-46e1-64c8-b604-38e34a949fcb" testName="InvalidApertureIsRejected(2,0,2,2,2)" computerName="local-machine" duration="00:00:00.0002340" startTime="2026-09-07T16:35:47.8327040+09:00" endTime="2026-09-07T16:35:47.8329370+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ab4e9097-e916-47a6-82f0-abaeb2c5c91b" />
+    <UnitTestResult executionId="981014a2-dd2d-4f09-a91d-bfe5d2b4486c" testId="3970b5a8-02b8-a296-28ec-1f1917261c54" testName="EverySlotHasSpecifiedMultiplier(6,&quot;1.02&quot;)" computerName="local-machine" duration="00:00:00.0000020" startTime="2026-09-07T16:35:43.7355150+09:00" endTime="2026-09-07T16:35:43.7355170+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="981014a2-dd2d-4f09-a91d-bfe5d2b4486c" />
+    <UnitTestResult executionId="2759a7fb-ddff-4344-a3de-a9b6deb816a8" testId="94251ab9-5604-74fb-7019-16d948d3cd0f" testName="DuplicateInstancesAndContentVersionMismatchAreRejected" computerName="local-machine" duration="00:00:00.0001140" startTime="2026-09-07T16:35:47.8315260+09:00" endTime="2026-09-07T16:35:47.8316400+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2759a7fb-ddff-4344-a3de-a9b6deb816a8" />
+    <UnitTestResult executionId="d3e0514d-a6b0-42e3-94fd-fd7d7135120e" testId="630c7528-38ae-a0a5-d52f-56760bb82841" testName="TimelineHasSpecifiedBoundaries(7200000000L,1080,False)" computerName="local-machine" duration="00:00:00.0000380" startTime="2026-09-07T16:35:49.7556370+09:00" endTime="2026-09-07T16:35:49.7556750+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d3e0514d-a6b0-42e3-94fd-fd7d7135120e" />
+    <UnitTestResult executionId="1dc34328-52fd-4ce5-9c4e-5d7125ccc668" testId="dff29c43-32e4-e09a-0ac7-59949ff07bdf" testName="VeryLargeElapsedTimeExpiresSafely" computerName="local-machine" duration="00:00:00.0001000" startTime="2026-09-07T16:35:49.7557380+09:00" endTime="2026-09-07T16:35:49.7558370+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1dc34328-52fd-4ce5-9c4e-5d7125ccc668" />
+    <UnitTestResult executionId="eaceef30-054c-4719-86bc-2ce3d1340ac4" testId="4e6aa2f5-d3d8-bba2-f0b7-558ee836d3c2" testName="ExtensionPreservesExistingIdsWithoutNamingCollisions" computerName="local-machine" duration="00:00:00.0188750" startTime="2026-09-07T16:35:43.7402030+09:00" endTime="2026-09-07T16:35:43.7590780+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="eaceef30-054c-4719-86bc-2ce3d1340ac4" />
+    <UnitTestResult executionId="4c7f7bff-aeea-4980-8472-c534de5c0efa" testId="757602ba-4a05-c2c7-53e4-72cb2418df82" testName="TimelineHasSpecifiedBoundaries(7199999999L,1079,False)" computerName="local-machine" duration="00:00:00.0000180" startTime="2026-09-07T16:35:49.7556170+09:00" endTime="2026-09-07T16:35:49.7556340+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4c7f7bff-aeea-4980-8472-c534de5c0efa" />
+    <UnitTestResult executionId="1b884fe8-f055-4fe7-b634-4ce7856ed3ff" testId="18f60614-466a-220f-204c-feb6daed5f74" testName="InvalidBudget(0)" computerName="local-machine" duration="00:00:00.0001490" startTime="2026-09-07T16:35:45.5734000+09:00" endTime="2026-09-07T16:35:45.5735490+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1b884fe8-f055-4fe7-b634-4ce7856ed3ff" />
+    <UnitTestResult executionId="5556b522-9686-4c80-8d11-afc7d7554098" testId="675a4566-e636-a417-104e-246d2c7b372e" testName="InvalidSlotsAreRejected(int.MinValue)" computerName="local-machine" duration="00:00:00.0000180" startTime="2026-09-07T16:35:43.7395690+09:00" endTime="2026-09-07T16:35:43.7395870+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5556b522-9686-4c80-8d11-afc7d7554098" />
+    <UnitTestResult executionId="7471e4fb-f15e-4cf8-a51c-a7160176e89a" testId="7a8ab3c2-44ea-55e8-0d16-9b06dcaec979" testName="RoomScaleMatchesSelectedLoopCount(3,24)" computerName="local-machine" duration="00:00:00.0000640" startTime="2026-09-07T16:35:49.7502800+09:00" endTime="2026-09-07T16:35:49.7503450+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7471e4fb-f15e-4cf8-a51c-a7160176e89a" />
+    <UnitTestResult executionId="e6ebdb70-96e2-4a32-9b67-c5497af2f4e8" testId="4dfc6e05-f038-cb26-9be7-a1074995a6ea" testName="InvalidCycleCountIsRejected(9)" computerName="local-machine" duration="00:00:00.0001600" startTime="2026-09-07T16:35:48.1669340+09:00" endTime="2026-09-07T16:35:48.1670950+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e6ebdb70-96e2-4a32-9b67-c5497af2f4e8" />
+    <UnitTestResult executionId="234722f8-a3e5-43d7-bc9b-a2ef81946f8a" testId="6a299a05-0d6b-05aa-c2ee-dd21f459b190" testName="NegativePollIsRejectedWithoutChangingState" computerName="local-machine" duration="00:00:00.0001230" startTime="2026-09-07T16:35:49.7529860+09:00" endTime="2026-09-07T16:35:49.7531090+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="234722f8-a3e5-43d7-bc9b-a2ef81946f8a" />
+    <UnitTestResult executionId="b2e021dd-dc49-44d9-a7e9-f1782861eacd" testId="4eada1c8-9c5f-b85a-89b0-7e53d5f56764" testName="InvalidInjectedRandomSourceIsRejected" computerName="local-machine" duration="00:00:00.0001770" startTime="2026-09-07T16:35:47.8334490+09:00" endTime="2026-09-07T16:35:47.8336260+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b2e021dd-dc49-44d9-a7e9-f1782861eacd" />
+    <UnitTestResult executionId="82f6a4c8-f6b8-4be4-be13-99b33100a62e" testId="3f089275-7a3b-4302-7b55-3ca2a69fcd02" testName="DefaultBoxCannotBypassPositiveVolumeContract" computerName="local-machine" duration="00:00:00.0001260" startTime="2026-09-07T16:35:47.8310290+09:00" endTime="2026-09-07T16:35:47.8311560+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="82f6a4c8-f6b8-4be4-be13-99b33100a62e" />
+    <UnitTestResult executionId="0747dbe9-8947-434f-b0c7-92671d1cb64c" testId="186954d1-e6f3-b066-9489-c2480786770c" testName="InvalidApertureIsRejected(0,0,2,3,2)" computerName="local-machine" duration="00:00:00.0000160" startTime="2026-09-07T16:35:47.8329780+09:00" endTime="2026-09-07T16:35:47.8329930+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0747dbe9-8947-434f-b0c7-92671d1cb64c" />
+    <UnitTestResult executionId="7b4762a0-7849-45df-a6d0-35f7684e341a" testId="65cf01ee-d0c6-31e8-5dbf-bd2e0d9105f1" testName="SeedRuleHasStableGoldenMapping(4,4,488595076)" computerName="local-machine" duration="00:00:00.0000020" startTime="2026-09-07T16:35:49.7508330+09:00" endTime="2026-09-07T16:35:49.7508350+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7b4762a0-7849-45df-a6d0-35f7684e341a" />
+    <UnitTestResult executionId="1334d9cb-8e12-4d1b-9ad9-d0f27dd918d7" testId="cd7b81ab-e4bf-d97c-af1e-f7fc146e090e" testName="EverySlotHasSpecifiedMultiplier(2,&quot;1.14&quot;)" computerName="local-machine" duration="00:00:00.0000040" startTime="2026-09-07T16:35:43.7354930+09:00" endTime="2026-09-07T16:35:43.7354970+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1334d9cb-8e12-4d1b-9ad9-d0f27dd918d7" />
+    <UnitTestResult executionId="7654dbd2-5b70-4271-a6ac-336e148c2d69" testId="5ba5d75b-1e57-ff8b-dde5-dea8fc9d9266" testName="DoorFacingIntoTheRoomIsRejected" computerName="local-machine" duration="00:00:00.0001290" startTime="2026-09-07T16:35:47.8312930+09:00" endTime="2026-09-07T16:35:47.8314210+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7654dbd2-5b70-4271-a6ac-336e148c2d69" />
+    <UnitTestResult executionId="cba7a3d6-a008-41eb-9705-32330b050ef3" testId="ad717d24-5104-eaa5-eba1-14e8b5f4aea1" testName="HundredSeedsGenerateTheirSelectedLoopCounts" computerName="local-machine" duration="00:00:01.1511640" startTime="2026-09-07T16:35:48.5986300+09:00" endTime="2026-09-07T16:35:49.7497940+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cba7a3d6-a008-41eb-9705-32330b050ef3">
+      <Output>
+        <StdOut>Retry seed: 86, loops: 3, variant: 1
+Distribution: {"2":24,"3":26,"1":24,"4":26}; retried seeds: 1; max attempts: 20235</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="42c48c64-5b78-4f8d-8b31-2dde8aa86c3d" testId="094c34d8-064c-346f-ff81-c48ca9d50326" testName="ZeroVolumeBoxIsRejected" computerName="local-machine" duration="00:00:00.0000870" startTime="2026-09-07T16:35:48.1615500+09:00" endTime="2026-09-07T16:35:48.1616360+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="42c48c64-5b78-4f8d-8b31-2dde8aa86c3d" />
+    <UnitTestResult executionId="8a632314-d698-4c86-91bb-72125b3a5628" testId="1593e9c8-ac14-26e6-345c-50d7c4891280" testName="ExpiredClockStopsSampling" computerName="local-machine" duration="00:00:00.0000580" startTime="2026-09-07T16:35:49.7523890+09:00" endTime="2026-09-07T16:35:49.7524470+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8a632314-d698-4c86-91bb-72125b3a5628" />
+    <UnitTestResult executionId="d56b2bfa-b2cb-4e29-a210-6c107876ad5a" testId="3d1499ca-5575-581b-d5f2-44de1ad4953f" testName="EverySlotHasSpecifiedMultiplier(7,&quot;0.99&quot;)" computerName="local-machine" duration="00:00:00.0000020" startTime="2026-09-07T16:35:43.7355190+09:00" endTime="2026-09-07T16:35:43.7355210+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d56b2bfa-b2cb-4e29-a210-6c107876ad5a" />
+    <UnitTestResult executionId="0643d9ab-4379-436d-9053-d96d1c9187f7" testId="e0ae7b68-b9ce-b395-eabd-829fb98e48e3" testName="EverySlotHasSpecifiedMultiplier(9,&quot;0.93&quot;)" computerName="local-machine" duration="00:00:00.0000020" startTime="2026-09-07T16:35:43.7355280+09:00" endTime="2026-09-07T16:35:43.7355300+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0643d9ab-4379-436d-9053-d96d1c9187f7" />
+    <UnitTestResult executionId="a77a817b-cd7c-4213-9dd2-0891552410b9" testId="ecf28c70-d14b-76cb-0833-0813ab5c4117" testName="RepeatedAndInterleavedCallsAreStable" computerName="local-machine" duration="00:00:00.0001120" startTime="2026-09-07T16:35:43.7396280+09:00" endTime="2026-09-07T16:35:43.7397400+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a77a817b-cd7c-4213-9dd2-0891552410b9" />
+    <UnitTestResult executionId="25fa6549-be3f-4bc8-84b9-14e777e7e835" testId="e4ff89e8-d73d-1ccd-61d6-7ba5fac01621" testName="PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(3,0,0,True)" computerName="local-machine" duration="00:00:00.0006740" startTime="2026-09-07T16:35:48.1523250+09:00" endTime="2026-09-07T16:35:48.1529980+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="25fa6549-be3f-4bc8-84b9-14e777e7e835" />
+    <UnitTestResult executionId="99384347-39e2-4c43-9112-da168d3a5ad2" testId="c11f95b7-fa26-1dff-a8bb-0fcd9f7a7ab0" testName="ImpossibleCatalogTerminatesWithoutClaimingSuccess" computerName="local-machine" duration="00:00:00.0004510" startTime="2026-09-07T16:35:47.8320230+09:00" endTime="2026-09-07T16:35:47.8324740+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="99384347-39e2-4c43-9112-da168d3a5ad2" />
+    <UnitTestResult executionId="3fbcfdb9-98e8-4324-ad01-bb0f61e7e165" testId="f0bb7086-c9f8-f75d-349a-a8e767b0720e" testName="InvalidBudgetRejected(0)" computerName="local-machine" duration="00:00:00.0001860" startTime="2026-09-07T16:35:49.7498900+09:00" endTime="2026-09-07T16:35:49.7500770+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3fbcfdb9-98e8-4324-ad01-bb0f61e7e165" />
+    <UnitTestResult executionId="e593233f-0132-488e-a05a-cd30f7a5acf6" testId="7ea91493-05b0-e94f-4c1f-dd00cd8168d5" testName="NullSourceIsRejected" computerName="local-machine" duration="00:00:00.0002080" startTime="2026-09-07T16:35:49.7534680+09:00" endTime="2026-09-07T16:35:49.7536750+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e593233f-0132-488e-a05a-cd30f7a5acf6" />
+    <UnitTestResult executionId="a3209009-0e50-4739-b637-2db5b652db51" testId="92133105-665c-4d07-ecdd-6f470d389b19" testName="FractionalTimeIsPreserved" computerName="local-machine" duration="00:00:00.0003310" startTime="2026-09-07T16:35:49.7524520+09:00" endTime="2026-09-07T16:35:49.7527830+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a3209009-0e50-4739-b637-2db5b652db51" />
+    <UnitTestResult executionId="5d8010b3-09ce-44b9-b097-d9fd24e9b33c" testId="30f9a80c-99be-b175-0c19-aeec585e990e" testName="ExhaustionKeepsSeedPlanWithoutPartialMap" computerName="local-machine" duration="00:00:00.0001610" startTime="2026-09-07T16:35:48.5054030+09:00" endTime="2026-09-07T16:35:48.5055640+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5d8010b3-09ce-44b9-b097-d9fd24e9b33c" />
+    <UnitTestResult executionId="6cd569be-4e5d-453a-b1d0-f765d5c25e46" testId="ac4bb0cb-c010-1436-2969-4ae5e61f287b" testName="ConnectionDoesNotExemptOverlappingRooms" computerName="local-machine" duration="00:00:00.0016310" startTime="2026-09-07T16:35:47.8290440+09:00" endTime="2026-09-07T16:35:47.8306750+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6cd569be-4e5d-453a-b1d0-f765d5c25e46" />
+    <UnitTestResult executionId="66f3e695-9ec3-43a4-890e-19efbb9ca006" testId="f3413d70-b334-d82d-9728-8190a3ed7d5f" testName="InvalidBranchConfigurationRejected(2,4,2)" computerName="local-machine" duration="00:00:00.0000150" startTime="2026-09-07T16:35:47.7709220+09:00" endTime="2026-09-07T16:35:47.7709370+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="66f3e695-9ec3-43a4-890e-19efbb9ca006" />
+    <UnitTestResult executionId="449543d8-1314-4d87-be2e-c993f210fae6" testId="13d4a2c6-1ba7-d147-89df-16cfd3d2a7a9" testName="QuarterTurnsHaveExactCoordinates(2,-2,-3)" computerName="local-machine" duration="00:00:00.0000050" startTime="2026-09-07T16:35:48.1577390+09:00" endTime="2026-09-07T16:35:48.1577440+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="449543d8-1314-4d87-be2e-c993f210fae6" />
+    <UnitTestResult executionId="df965d61-902c-4883-b514-a920cf12b31b" testId="f5955af5-42b8-e7d4-64af-0e13bbea6451" testName="SeedRuleHasStableGoldenMapping(1,3,2679961916)" computerName="local-machine" duration="00:00:00.0001030" startTime="2026-09-07T16:35:49.7506840+09:00" endTime="2026-09-07T16:35:49.7507870+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="df965d61-902c-4883-b514-a920cf12b31b" />
+    <UnitTestResult executionId="6f941c2a-d46a-4e44-93ae-f97769a2bd48" testId="f81df55a-afbf-0260-7c45-8b851b44308d" testName="OneHundredSeedsContainRealLoopsAndHeightChanges" computerName="local-machine" duration="00:00:00.3299329" startTime="2026-09-07T16:35:48.1733510+09:00" endTime="2026-09-07T16:35:48.5032840+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6f941c2a-d46a-4e44-93ae-f97769a2bd48">
+      <Output>
+        <StdOut>Maximum attempts across 100 seeds: 39</StdOut>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="local-machine/dungeon-loops.json" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="24cedbe0-d3d6-4eac-aed8-e57eb9a3b49d" testId="732806cf-17c3-73f7-b115-9b5efcbd1d90" testName="DuplicateModuleIdsAreRejected" computerName="local-machine" duration="00:00:00.0000910" startTime="2026-09-07T16:35:47.8316450+09:00" endTime="2026-09-07T16:35:47.8317360+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="24cedbe0-d3d6-4eac-aed8-e57eb9a3b49d" />
+    <UnitTestResult executionId="3522a328-1375-46bd-8e6d-534447b1a4be" testId="bfb4830a-a07c-2f99-f44a-caabc7d02f84" testName="InvalidSlotsAreRejected(int.MaxValue)" computerName="local-machine" duration="00:00:00.0000120" startTime="2026-09-07T16:35:43.7395980+09:00" endTime="2026-09-07T16:35:43.7396100+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3522a328-1375-46bd-8e6d-534447b1a4be" />
+    <UnitTestResult executionId="9d77e4cf-c83b-409f-bd04-7c9ea4a848ad" testId="69a63d18-0f2d-72f5-cba3-b5f30ad5526a" testName="InvalidSlotsAreRejected(-1)" computerName="local-machine" duration="00:00:00.0005760" startTime="2026-09-07T16:35:43.7388730+09:00" endTime="2026-09-07T16:35:43.7394490+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9d77e4cf-c83b-409f-bd04-7c9ea4a848ad" />
+    <UnitTestResult executionId="f170acae-784b-4b1c-bcdb-060a3b68e7ae" testId="fd033443-b3b1-b481-0fbd-010fe2231fc9" testName="RoomScaleMatchesSelectedLoopCount(1,56)" computerName="local-machine" duration="00:00:00.0000070" startTime="2026-09-07T16:35:49.7504680+09:00" endTime="2026-09-07T16:35:49.7504760+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f170acae-784b-4b1c-bcdb-060a3b68e7ae" />
+    <UnitTestResult executionId="fc09120a-55de-4833-babf-eab3570c29be" testId="3215a759-5cbc-97f5-66c3-f1443319e825" testName="SquareClosesExactlyOnePhysicalLoop" computerName="local-machine" duration="00:00:00.0008020" startTime="2026-09-07T16:35:48.5045180+09:00" endTime="2026-09-07T16:35:48.5053200+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fc09120a-55de-4833-babf-eab3570c29be" />
+    <UnitTestResult executionId="71d35a08-6218-4df3-aaac-9b9f128ae46c" testId="d42d8322-b074-f711-1286-64688d8e608d" testName="ManifestCopiesCollectionsAndDoesNotExposeMutableLists" computerName="local-machine" duration="00:00:00.0004690" startTime="2026-09-07T16:35:47.8351160+09:00" endTime="2026-09-07T16:35:47.8355850+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="71d35a08-6218-4df3-aaac-9b9f128ae46c" />
+    <UnitTestResult executionId="e5ebc1bf-a473-4d53-8b6b-09d607bf6231" testId="ffa1f592-36af-fdc7-d20c-f5fbe6ac8aec" testName="InvalidGenerationRequestsAreRejected(2,100001)" computerName="local-machine" duration="00:00:00.0000510" startTime="2026-09-07T16:35:47.8333870+09:00" endTime="2026-09-07T16:35:47.8334370+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e5ebc1bf-a473-4d53-8b6b-09d607bf6231" />
+    <UnitTestResult executionId="b1e3ac9c-7fe0-4d51-8082-ae7b09929b91" testId="8e4d1240-9486-5c92-6843-44e2412b84cc" testName="TwoLongBranchEndsAreJoinedThroughARealBridge" computerName="local-machine" duration="00:00:00.0046750" startTime="2026-09-07T16:35:45.5886980+09:00" endTime="2026-09-07T16:35:45.5933720+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b1e3ac9c-7fe0-4d51-8082-ae7b09929b91" />
+    <UnitTestResult executionId="98493240-5133-4467-b657-7b39920fc189" testId="ebece4c5-856e-6a19-dddf-6404e8c0a72a" testName="SocketCannotBeUsedTwice" computerName="local-machine" duration="00:00:00.0001050" startTime="2026-09-07T16:35:48.1608840+09:00" endTime="2026-09-07T16:35:48.1609890+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="98493240-5133-4467-b657-7b39920fc189" />
+    <UnitTestResult executionId="f88bae32-0e95-4470-875a-bca9cfd2e367" testId="5cde4125-7a02-a888-9fa9-f3eb6cc8290d" testName="ExhaustionReturnsNoPartialExplorationTrace" computerName="local-machine" duration="00:00:00.0019040" startTime="2026-09-07T16:35:45.5946860+09:00" endTime="2026-09-07T16:35:45.5965910+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f88bae32-0e95-4470-875a-bca9cfd2e367" />
+    <UnitTestResult executionId="6e71d118-e894-4e36-a28f-5bd0639e9974" testId="e71b9417-8716-e188-224c-5504f3697c36" testName="EachAdditionalSlotReducesSpeed" computerName="local-machine" duration="00:00:00.0026400" startTime="2026-09-07T16:35:43.7320140+09:00" endTime="2026-09-07T16:35:43.7346280+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6e71d118-e894-4e36-a28f-5bd0639e9974" />
+    <UnitTestResult executionId="44360893-334d-4499-a240-6b5a2860301d" testId="68d39926-60bb-ca92-ddd7-224b6317b17e" testName="DuplicateSocketIdsAreRejected" computerName="local-machine" duration="00:00:00.0001120" startTime="2026-09-07T16:35:47.8317400+09:00" endTime="2026-09-07T16:35:47.8318520+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="44360893-334d-4499-a240-6b5a2860301d" />
+    <UnitTestResult executionId="8f470211-7fd6-4824-b7f5-fa90e6a8e984" testId="860c2b37-8df9-67cb-36e9-5352fd4e3a80" testName="InvalidGenerationRequestsAreRejected(0,100)" computerName="local-machine" duration="00:00:00.0001470" startTime="2026-09-07T16:35:47.8330370+09:00" endTime="2026-09-07T16:35:47.8331840+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8f470211-7fd6-4824-b7f5-fa90e6a8e984" />
+    <UnitTestResult executionId="fe9b2049-96ef-4a0b-8f45-539989b201d8" testId="4870df8d-8f5a-6318-7fd4-01dc3f75b0c2" testName="HeightRequirementMeansConnectedFloorsNotJustTallRooms" computerName="local-machine" duration="00:00:00.0001190" startTime="2026-09-07T16:35:47.8318550+09:00" endTime="2026-09-07T16:35:47.8319750+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fe9b2049-96ef-4a0b-8f45-539989b201d8" />
+    <UnitTestResult executionId="db2bf755-31a4-4acc-b614-aa94b768acfd" testId="1358d641-b7ee-224e-f8e7-1b617e78224f" testName="RoomScaleMatchesSelectedLoopCount(uint.MinValue,40)" computerName="local-machine" duration="00:00:00.0001010" startTime="2026-09-07T16:35:49.7503490+09:00" endTime="2026-09-07T16:35:49.7504500+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="db2bf755-31a4-4acc-b614-aa94b768acfd" />
+    <UnitTestResult executionId="5a4f87f0-6104-42ce-92e3-26d0ad2b6bf1" testId="44a27c32-5b8c-ff1a-a55b-2078713f3219" testName="MismatchedDoorDimensionsAreRejected" computerName="local-machine" duration="00:00:00.0001860" startTime="2026-09-07T16:35:47.8356000+09:00" endTime="2026-09-07T16:35:47.8357860+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5a4f87f0-6104-42ce-92e3-26d0ad2b6bf1" />
+    <UnitTestResult executionId="f14cecb0-fc7b-422c-bec8-499c400bbc0e" testId="187c9aa3-72e1-6941-5f4b-18884611b00d" testName="TimelineHasSpecifiedBoundaries(10799999999L,1439,False)" computerName="local-machine" duration="00:00:00.0000060" startTime="2026-09-07T16:35:49.7556910+09:00" endTime="2026-09-07T16:35:49.7556960+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f14cecb0-fc7b-422c-bec8-499c400bbc0e" />
+    <UnitTestResult executionId="d3bda7f7-2572-481a-9462-738b9ff0d342" testId="f3666346-e4e9-3ecc-23a4-c7785bd534a9" testName="InvalidBranchConfigurationRejected(2,2,9)" computerName="local-machine" duration="00:00:00.0000130" startTime="2026-09-07T16:35:47.7709410+09:00" endTime="2026-09-07T16:35:47.7709540+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d3bda7f7-2572-481a-9462-738b9ff0d342" />
+    <UnitTestResult executionId="9a06bd39-5bcf-4046-86b9-599f941fd01d" testId="76f12e4d-af92-6d94-770e-74387b5aa078" testName="FailureHasNoPartialMapOrTrace" computerName="local-machine" duration="00:00:00.0072340" startTime="2026-09-07T16:35:43.7598310+09:00" endTime="2026-09-07T16:35:43.7670650+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9a06bd39-5bcf-4046-86b9-599f941fd01d" />
+    <UnitTestResult executionId="7316325f-8013-4b20-b5d3-55c56b654641" testId="679bcf5e-0e7d-0572-d0bb-6f7b6884a3b3" testName="TimelineHasSpecifiedBoundaries(10800000001L,1440,True)" computerName="local-machine" duration="00:00:00.0000130" startTime="2026-09-07T16:35:49.7557090+09:00" endTime="2026-09-07T16:35:49.7557220+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7316325f-8013-4b20-b5d3-55c56b654641" />
+    <UnitTestResult executionId="7f3709f4-4b93-4552-af20-d0e3ca176b10" testId="7d742c39-474c-b6bd-3a1f-9e33fba489ec" testName="QuarterTurnsHaveExactCoordinates(0,2,3)" computerName="local-machine" duration="00:00:00.0000770" startTime="2026-09-07T16:35:48.1575360+09:00" endTime="2026-09-07T16:35:48.1576130+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7f3709f4-4b93-4552-af20-d0e3ca176b10" />
+    <UnitTestResult executionId="08960206-eeef-44dd-867e-e01b664e3f6f" testId="b76dc182-98c8-c712-af5d-9fc648872c46" testName="AttemptBudgetFailureNeverReturnsAPartialMap" computerName="local-machine" duration="00:00:00.0001660" startTime="2026-09-07T16:35:47.8288610+09:00" endTime="2026-09-07T16:35:47.8290260+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="08960206-eeef-44dd-867e-e01b664e3f6f" />
+    <UnitTestResult executionId="3626a1e2-5583-4fbf-a7a5-ed49fdeefa76" testId="5e03cf32-096e-0254-16ff-ea5d16d0ca18" testName="DefaultPlanReservesExplorationScale(4,4,104)" computerName="local-machine" duration="00:00:00.0000060" startTime="2026-09-07T16:35:45.5946710+09:00" endTime="2026-09-07T16:35:45.5946770+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3626a1e2-5583-4fbf-a7a5-ed49fdeefa76" />
+    <UnitTestResult executionId="9c078ca8-ad56-4d60-ab69-e11b71136e63" testId="2ea8d800-04b4-8aa8-9263-38236716e616" testName="InvalidCycleCountIsRejected(-1)" computerName="local-machine" duration="00:00:00.0001499" startTime="2026-09-07T16:35:48.1667800+09:00" endTime="2026-09-07T16:35:48.1669300+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9c078ca8-ad56-4d60-ab69-e11b71136e63" />
+    <UnitTestResult executionId="01f684c6-a2cb-472f-af34-63b13c1099c6" testId="eb973647-d0a3-a813-886c-a1f075da46e6" testName="StartUsesArrivalAsOrigin" computerName="local-machine" duration="00:00:00.0000940" startTime="2026-09-07T16:35:49.7540270+09:00" endTime="2026-09-07T16:35:49.7541210+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="01f684c6-a2cb-472f-af34-63b13c1099c6" />
+    <UnitTestResult executionId="6107d5a6-293d-450d-9129-0a948ab6435c" testId="ad1a519d-0f28-1f25-dc44-89b7aa32a8ec" testName="TimelineHasSpecifiedBoundaries(9999999L,360,False)" computerName="local-machine" duration="00:00:00.0001270" startTime="2026-09-07T16:35:49.7554160+09:00" endTime="2026-09-07T16:35:49.7555430+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6107d5a6-293d-450d-9129-0a948ab6435c" />
+    <UnitTestResult executionId="12e44ba5-4380-4b2d-8190-64b20f1535b7" testId="4aac55ce-f67e-dd59-3d6a-3d163a81593e" testName="HundredSeedsHaveReservedBranchesAndRealDeadEnds" computerName="local-machine" duration="00:00:02.1318290" startTime="2026-09-07T16:35:45.6381740+09:00" endTime="2026-09-07T16:35:47.7700050+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="12e44ba5-4380-4b2d-8190-64b20f1535b7">
+      <Output>
+        <StdOut>Maximum attempts: 20690</StdOut>
+      </Output>
+      <ResultFiles>
+        <ResultFile path="local-machine/dungeon-exploration.json" />
+      </ResultFiles>
+    </UnitTestResult>
+    <UnitTestResult executionId="bc308947-0c4c-4a0a-993d-636921f197ac" testId="a1e5ba0a-8ac8-5b75-a857-3cba6da30143" testName="DuplicateStartCannotResetTime" computerName="local-machine" duration="00:00:00.0000550" startTime="2026-09-07T16:35:49.7523260+09:00" endTime="2026-09-07T16:35:49.7523810+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bc308947-0c4c-4a0a-993d-636921f197ac" />
+    <UnitTestResult executionId="75636856-a615-4ceb-b8ce-bc1bb90893a6" testId="de929856-d418-2af0-5be0-be3e8385c6fa" testName="ExplicitBranchConfigurationIsHonoured(3,2,3)" computerName="local-machine" duration="00:00:00.0098930" startTime="2026-09-07T16:35:45.6281940+09:00" endTime="2026-09-07T16:35:45.6380870+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="75636856-a615-4ceb-b8ce-bc1bb90893a6" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="DisconnectedRoomsAreRejected" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="43651b83-927a-6391-76bd-efac584252fd">
+      <Execution id="d0939edb-9e8c-468e-a6dc-edf9f2393cbb" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="DisconnectedRoomsAreRejected" />
+    </UnitTest>
+    <UnitTest name="FractionalTimeIsPreserved" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="92133105-665c-4d07-ecdd-6f470d389b19">
+      <Execution id="a3209009-0e50-4739-b637-2db5b652db51" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="FractionalTimeIsPreserved" />
+    </UnitTest>
+    <UnitTest name="JumpAcrossDeadlineEmitsPulse" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="0bf40de3-576f-0989-6ee2-d03c741a45bf">
+      <Execution id="0ca63e16-b40f-4c60-8180-0ae25b27c3ab" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="JumpAcrossDeadlineEmitsPulse" />
+    </UnitTest>
+    <UnitTest name="DeadlinePulseOccursOnce" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="4e797172-6aa6-f38b-28ff-f57f7d6f9044">
+      <Execution id="965272c8-6a9a-4ba9-8a41-c944ec435fb9" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="DeadlinePulseOccursOnce" />
+    </UnitTest>
+    <UnitTest name="UpperStairDoorPlacesTheNextRoomOnTheUpperFloor" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="f3d7b960-3a10-800e-8dfb-3bea242a2942">
+      <Execution id="b6c2af3b-71de-45db-9e1a-20a8ece90fe0" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="UpperStairDoorPlacesTheNextRoomOnTheUpperFloor" />
+    </UnitTest>
+    <UnitTest name="SeedRuleHasStableGoldenMapping(uint.MinValue,2,521625886)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="418ec0ad-4e79-fc80-e2c4-19e2b917f388">
+      <Execution id="ad5903b3-356e-4225-898d-b5b9441e2d6a" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonSeedTests" name="SeedRuleHasStableGoldenMapping(uint.MinValue,2,521625886)" />
+    </UnitTest>
+    <UnitTest name="NegativePollIsRejectedWithoutChangingState" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="6a299a05-0d6b-05aa-c2ee-dd21f459b190">
+      <Execution id="234722f8-a3e5-43d7-bc9b-a2ef81946f8a" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="NegativePollIsRejectedWithoutChangingState" />
+    </UnitTest>
+    <UnitTest name="InvalidBudgetRejected(100001)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="8acbbce1-a922-bf45-6609-d3f81a5ec3e9">
+      <Execution id="f0b950f6-97dd-4313-aab2-d7697dd43015" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonSeedTests" name="InvalidBudgetRejected(100001)" />
+    </UnitTest>
+    <UnitTest name="InvalidRotationIsRejected(-1)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="ac3679a7-45b0-ba8f-2944-69ebdf2a33a3">
+      <Execution id="6c10e6e3-991c-4153-a12e-b0ff7464f625" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="InvalidRotationIsRejected(-1)" />
+    </UnitTest>
+    <UnitTest name="InvalidBranchConfigurationRejected(2,4,2)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="f3413d70-b334-d82d-9728-8190a3ed7d5f">
+      <Execution id="66f3e695-9ec3-43a4-890e-19efbb9ca006" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonExplorationBranchTests" name="InvalidBranchConfigurationRejected(2,4,2)" />
+    </UnitTest>
+    <UnitTest name="TwoLongBranchEndsAreJoinedThroughARealBridge" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="8e4d1240-9486-5c92-6843-44e2412b84cc">
+      <Execution id="b1e3ac9c-7fe0-4d51-8082-ae7b09929b91" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonBranchLoopTests" name="TwoLongBranchEndsAreJoinedThroughARealBridge" />
+    </UnitTest>
+    <UnitTest name="HundredSeedsHaveLongCyclesAndPreviewTraces" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="22c75b8e-2625-b979-925d-bd6a48009d43">
+      <Execution id="6df9fc9a-560a-4e7f-ba30-17ff0b064a4e" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonBranchLoopTests" name="HundredSeedsHaveLongCyclesAndPreviewTraces" />
+    </UnitTest>
+    <UnitTest name="ExhaustionReturnsNoPartialExplorationTrace" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="5cde4125-7a02-a888-9fa9-f3eb6cc8290d">
+      <Execution id="f88bae32-0e95-4470-875a-bca9cfd2e367" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonExplorationBranchTests" name="ExhaustionReturnsNoPartialExplorationTrace" />
+    </UnitTest>
+    <UnitTest name="InvalidGenerationRequestsAreRejected(2,0)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="4f9d0374-ab0c-b9c0-8844-143c8f63034c">
+      <Execution id="bf36eaa9-ed26-4be1-a3f4-d7ce692fca4d" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="InvalidGenerationRequestsAreRejected(2,0)" />
+    </UnitTest>
+    <UnitTest name="FailureHasNoPartialMapOrTrace" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="76f12e4d-af92-6d94-770e-74387b5aa078">
+      <Execution id="9a06bd39-5bcf-4046-86b9-599f941fd01d" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonBranchLoopTests" name="FailureHasNoPartialMapOrTrace" />
+    </UnitTest>
+    <UnitTest name="RoomScaleMatchesSelectedLoopCount(3,24)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="7a8ab3c2-44ea-55e8-0d16-9b06dcaec979">
+      <Execution id="7471e4fb-f15e-4cf8-a51c-a7160176e89a" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonSeedTests" name="RoomScaleMatchesSelectedLoopCount(3,24)" />
+    </UnitTest>
+    <UnitTest name="ParallelDoorsBetweenTwoRoomsDoNotCountAsAUsefulLoop" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="ccf10703-bb0c-d997-654c-471b21e78183">
+      <Execution id="4e3da8e9-89ae-4d4c-bfa6-0ff237154ba5" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLoopTests" name="ParallelDoorsBetweenTwoRoomsDoNotCountAsAUsefulLoop" />
+    </UnitTest>
+    <UnitTest name="InvalidSlotsAreRejected(int.MaxValue)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="bfb4830a-a07c-2f99-f44a-caabc7d02f84">
+      <Execution id="3522a328-1375-46bd-8e6d-534447b1a4be" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.BackpackLoadTests" name="InvalidSlotsAreRejected(int.MaxValue)" />
+    </UnitTest>
+    <UnitTest name="InvalidBranchConfigurationRejected(2,2,9)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="f3666346-e4e9-3ecc-23a4-c7785bd534a9">
+      <Execution id="d3bda7f7-2572-481a-9462-738b9ff0d342" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonExplorationBranchTests" name="InvalidBranchConfigurationRejected(2,2,9)" />
+    </UnitTest>
+    <UnitTest name="InvalidBranchConfigurationRejected(2,0,4)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="34b1bfeb-9820-c625-87ea-68ec53a5c072">
+      <Execution id="331748d9-1c4f-4ba9-a15c-51cc870bf369" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonExplorationBranchTests" name="InvalidBranchConfigurationRejected(2,0,4)" />
+    </UnitTest>
+    <UnitTest name="SeedRuleHasStableGoldenMapping(uint.MaxValue,1,306079645)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="bf364881-7fe8-85f2-3159-a2d3a2ca7c3b">
+      <Execution id="ab340459-691b-418f-b5a3-3a76426bd1ba" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonSeedTests" name="SeedRuleHasStableGoldenMapping(uint.MaxValue,1,306079645)" />
+    </UnitTest>
+    <UnitTest name="PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(0,4,0,False)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="df20cd30-bd7e-2064-8b30-8e13d75becc0">
+      <Execution id="a7fb3afd-b36c-458f-bfe2-121e832c6872" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(0,4,0,False)" />
+    </UnitTest>
+    <UnitTest name="ExpiredClockStopsSampling" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="1593e9c8-ac14-26e6-345c-50d7c4891280">
+      <Execution id="8a632314-d698-4c86-91bb-72125b3a5628" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="ExpiredClockStopsSampling" />
+    </UnitTest>
+    <UnitTest name="OldSnapshotRemainsUnchanged" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="cc861560-ee36-84d1-8544-e87c7500ca3b">
+      <Execution id="705a1047-a731-490f-af40-15768b738d55" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="OldSnapshotRemainsUnchanged" />
+    </UnitTest>
+    <UnitTest name="InvalidCallDoesNotAffectLaterValidCall" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="0f3a485c-762c-a241-25c3-6af4ac08c026">
+      <Execution id="226ca282-20c8-40e8-aa99-cab671c19c32" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.BackpackLoadTests" name="InvalidCallDoesNotAffectLaterValidCall" />
+    </UnitTest>
+    <UnitTest name="LoopSeedIsReproducible" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="09c3853b-83f4-69a1-7a60-b70081644238">
+      <Execution id="2b8a278f-9e5a-4d68-ab51-56168b3f205c" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLoopTests" name="LoopSeedIsReproducible" />
+    </UnitTest>
+    <UnitTest name="InvalidApertureIsRejected(0,0,2,2,0)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="0ac377dc-425a-f8db-d6c9-8ed448dfe590">
+      <Execution id="58b090bb-3bbe-40a4-92bc-b16b2f50d067" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="InvalidApertureIsRejected(0,0,2,2,0)" />
+    </UnitTest>
+    <UnitTest name="ExplicitBranchConfigurationIsHonoured(3,2,3)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="de929856-d418-2af0-5be0-be3e8385c6fa">
+      <Execution id="75636856-a615-4ceb-b8ce-bc1bb90893a6" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonExplorationBranchTests" name="ExplicitBranchConfigurationIsHonoured(3,2,3)" />
+    </UnitTest>
+    <UnitTest name="NewModeIsReproducible" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="bfeebbc5-fcc2-da11-511b-245d05e19e03">
+      <Execution id="cc7f38c5-03e8-4670-ac2d-97e0df72e9f4" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonExplorationBranchTests" name="NewModeIsReproducible" />
+    </UnitTest>
+    <UnitTest name="ImpossibleRequestDoesNotSilentlyReturnTree" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="652714b7-8705-bf5b-158d-1036995300cb">
+      <Execution id="f7da3395-10e7-46a2-9174-acc98fd76559" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLoopTests" name="ImpossibleRequestDoesNotSilentlyReturnTree" />
+    </UnitTest>
+    <UnitTest name="EverySlotHasSpecifiedMultiplier(9,&quot;0.93&quot;)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="e0ae7b68-b9ce-b395-eabd-829fb98e48e3">
+      <Execution id="0643d9ab-4379-436d-9053-d96d1c9187f7" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.BackpackLoadTests" name="EverySlotHasSpecifiedMultiplier(9,&quot;0.93&quot;)" />
+    </UnitTest>
+    <UnitTest name="EverySlotHasSpecifiedMultiplier(6,&quot;1.02&quot;)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="3970b5a8-02b8-a296-28ec-1f1917261c54">
+      <Execution id="981014a2-dd2d-4f09-a91d-bfe5d2b4486c" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.BackpackLoadTests" name="EverySlotHasSpecifiedMultiplier(6,&quot;1.02&quot;)" />
+    </UnitTest>
+    <UnitTest name="BackwardTimeIsRejectedWithoutChangingState" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="fb024014-2de7-fc2d-0d91-a48ba75b1800">
+      <Execution id="c9b5470c-b851-46fc-9c7a-0e6637e02ea3" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="BackwardTimeIsRejectedWithoutChangingState" />
+    </UnitTest>
+    <UnitTest name="DuplicateInstancesAndContentVersionMismatchAreRejected" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="94251ab9-5604-74fb-7019-16d948d3cd0f">
+      <Execution id="2759a7fb-ddff-4344-a3de-a9b6deb816a8" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="DuplicateInstancesAndContentVersionMismatchAreRejected" />
+    </UnitTest>
+    <UnitTest name="ExplicitBranchConfigurationIsHonoured(1,2,2)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="be3bcca0-325c-8a22-2bc6-a6900a639a9c">
+      <Execution id="f7b8fe2c-923d-45d9-a391-0f60daa247f2" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonExplorationBranchTests" name="ExplicitBranchConfigurationIsHonoured(1,2,2)" />
+    </UnitTest>
+    <UnitTest name="TimelineHasSpecifiedBoundaries(7200000000L,1080,False)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="630c7528-38ae-a0a5-d52f-56760bb82841">
+      <Execution id="d3e0514d-a6b0-42e3-94fd-fd7d7135120e" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="TimelineHasSpecifiedBoundaries(7200000000L,1080,False)" />
+    </UnitTest>
+    <UnitTest name="DefaultPlanReservesExplorationScale(1,3,80)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="78859563-0bb5-041c-def4-0000f9ca9d21">
+      <Execution id="599c726c-0158-4f22-9705-346412590472" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonExplorationBranchTests" name="DefaultPlanReservesExplorationScale(1,3,80)" />
+    </UnitTest>
+    <UnitTest name="InvalidApertureIsRejected(0,0,0,2,2)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="916f0cb0-47b0-bc8f-a96b-9a4e900559b7">
+      <Execution id="c156c095-7dff-4335-b77f-d3fd8c062c67" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="InvalidApertureIsRejected(0,0,0,2,2)" />
+    </UnitTest>
+    <UnitTest name="QuarterTurnsHaveExactCoordinates(3,-3,2)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="97c80239-cc3f-86b5-c5d8-381273940796">
+      <Execution id="69d5a8a7-1565-4ca2-a8b3-0bdd3dee0e7e" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="QuarterTurnsHaveExactCoordinates(3,-3,2)" />
+    </UnitTest>
+    <UnitTest name="PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(0,3,0,True)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="62c98249-7257-69da-3f46-5bb075e25fd3">
+      <Execution id="4fe99d06-bbbe-4893-a0d0-4d875343d9af" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(0,3,0,True)" />
+    </UnitTest>
+    <UnitTest name="RoomScaleMatchesSelectedLoopCount(1,56)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="fd033443-b3b1-b481-0fbd-010fe2231fc9">
+      <Execution id="f170acae-784b-4b1c-bcdb-060a3b68e7ae" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonSeedTests" name="RoomScaleMatchesSelectedLoopCount(1,56)" />
+    </UnitTest>
+    <UnitTest name="QuarterTurnsHaveExactCoordinates(2,-2,-3)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="13d4a2c6-1ba7-d147-89df-16cfd3d2a7a9">
+      <Execution id="449543d8-1314-4d87-be2e-c993f210fae6" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="QuarterTurnsHaveExactCoordinates(2,-2,-3)" />
+    </UnitTest>
+    <UnitTest name="DuplicateDoorEntitiesAreRejected" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="ffcb9f2d-c651-6b29-7f84-0c0bd75c01f5">
+      <Execution id="c81d6b91-d365-4fc9-9319-dbe78b24b061" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="DuplicateDoorEntitiesAreRejected" />
+    </UnitTest>
+    <UnitTest name="EverySlotHasSpecifiedMultiplier(0,&quot;1.20&quot;)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="978d8c1b-3691-549c-3f91-5840187b3f04">
+      <Execution id="cc84ea42-8aa3-45f2-a75a-57a7c5b1ef1d" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.BackpackLoadTests" name="EverySlotHasSpecifiedMultiplier(0,&quot;1.20&quot;)" />
+    </UnitTest>
+    <UnitTest name="SeedRuleHasStableGoldenMapping(2,2,3397078639)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="aa8952e6-4ded-3046-a7d3-f7c0f99e0dea">
+      <Execution id="01c873af-abb7-490b-8da1-114d318be874" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonSeedTests" name="SeedRuleHasStableGoldenMapping(2,2,3397078639)" />
+    </UnitTest>
+    <UnitTest name="RemoteDoorReferenceDoesNotCreateATeleportConnection" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="9dcf8846-bdeb-b3eb-1193-8cacae7a95f6">
+      <Execution id="8ef16240-19ec-416c-93cc-e405fbdd291c" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="RemoteDoorReferenceDoesNotCreateATeleportConnection" />
+    </UnitTest>
+    <UnitTest name="LShapedNotchRemainsAvailableButItsLegIsSolid" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="bf1e1d3b-0903-a1ad-0ae5-6accaa9b4d77">
+      <Execution id="e069ec73-aed7-4369-9fae-b885db0f6b4f" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="LShapedNotchRemainsAvailableButItsLegIsSolid" />
+    </UnitTest>
+    <UnitTest name="TimelineHasSpecifiedBoundaries(7200000001L,1080,False)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="2c6dcc88-9efe-d785-0cd6-a2f00ae6367b">
+      <Execution id="26e67730-fc87-4899-b5d1-9afd6e4e4639" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="TimelineHasSpecifiedBoundaries(7200000001L,1080,False)" />
+    </UnitTest>
+    <UnitTest name="InvalidGenerationRequestsAreRejected(2,100001)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="ffa1f592-36af-fdc7-d20c-f5fbe6ac8aec">
+      <Execution id="e5ebc1bf-a473-4d53-8b6b-09d607bf6231" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="InvalidGenerationRequestsAreRejected(2,100001)" />
+    </UnitTest>
+    <UnitTest name="HeightRequirementMeansConnectedFloorsNotJustTallRooms" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="4870df8d-8f5a-6318-7fd4-01dc3f75b0c2">
+      <Execution id="fe9b2049-96ef-4a0b-8f45-539989b201d8" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="HeightRequirementMeansConnectedFloorsNotJustTallRooms" />
+    </UnitTest>
+    <UnitTest name="InvalidBudgetRejected(0)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="f0bb7086-c9f8-f75d-349a-a8e767b0720e">
+      <Execution id="3fbcfdb9-98e8-4324-ad01-bb0f61e7e165" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonSeedTests" name="InvalidBudgetRejected(0)" />
+    </UnitTest>
+    <UnitTest name="PollFrequencyDoesNotChangeElapsedTime" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="9cabd7e3-f97b-bb08-661f-e120f06be10a">
+      <Execution id="b1af98c2-3b2b-42e9-88da-6dbe508804b3" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="PollFrequencyDoesNotChangeElapsedTime" />
+    </UnitTest>
+    <UnitTest name="SeedRuleHasStableGoldenMapping(1,3,2679961916)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="f5955af5-42b8-e7d4-64af-0e13bbea6451">
+      <Execution id="df965d61-902c-4883-b514-a920cf12b31b" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonSeedTests" name="SeedRuleHasStableGoldenMapping(1,3,2679961916)" />
+    </UnitTest>
+    <UnitTest name="CycleRequestRequiresExplicitConnectorModule" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="03720b16-6f13-fe5a-3af2-53fce49ef3a4">
+      <Execution id="ecde1c57-b323-437e-a511-7fef7188b28f" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLoopTests" name="CycleRequestRequiresExplicitConnectorModule" />
+    </UnitTest>
+    <UnitTest name="ThirdRoomCannotBlockDoorApproachEvenWithoutEnvelopeOverlap" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="8b589130-3a4c-9190-e67d-78ae77122b2c">
+      <Execution id="aef296d5-8f52-4247-9ed4-a121594e11e1" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="ThirdRoomCannotBlockDoorApproachEvenWithoutEnvelopeOverlap" />
+    </UnitTest>
+    <UnitTest name="PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(3,0,0,True)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="e4ff89e8-d73d-1ccd-61d6-7ba5fac01621">
+      <Execution id="25fa6549-be3f-4bc8-84b9-14e777e7e835" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(3,0,0,True)" />
+    </UnitTest>
+    <UnitTest name="InsufficientRoomBudgetCannotSilentlyOmitBranches" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="599db8e9-dfa2-8ee2-b70c-f6faf843e5dd">
+      <Execution id="2f35b0fd-002a-490c-98a3-c64493612bbe" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonExplorationBranchTests" name="InsufficientRoomBudgetCannotSilentlyOmitBranches" />
+    </UnitTest>
+    <UnitTest name="ExhaustionKeepsSeedPlanWithoutPartialMap" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="30f9a80c-99be-b175-0c19-aeec585e990e">
+      <Execution id="5d8010b3-09ce-44b9-b097-d9fd24e9b33c" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonSeedTests" name="ExhaustionKeepsSeedPlanWithoutPartialMap" />
+    </UnitTest>
+    <UnitTest name="InvalidBudget(0)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="18f60614-466a-220f-204c-feb6daed5f74">
+      <Execution id="1b884fe8-f055-4fe7-b634-4ce7856ed3ff" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonBranchLoopTests" name="InvalidBudget(0)" />
+    </UnitTest>
+    <UnitTest name="InvalidApertureIsRejected(2,0,2,2,2)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="046feb69-46e1-64c8-b604-38e34a949fcb">
+      <Execution id="ab4e9097-e916-47a6-82f0-abaeb2c5c91b" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="InvalidApertureIsRejected(2,0,2,2,2)" />
+    </UnitTest>
+    <UnitTest name="ValidatorAcceptsAConnectedNonOverlappingPair" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="b09c53f3-d5e4-0fdf-41d6-2d374e1a293d">
+      <Execution id="9e9f4e97-4340-425b-834b-d64d7cdf80db" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="ValidatorAcceptsAConnectedNonOverlappingPair" />
+    </UnitTest>
+    <UnitTest name="EverySlotHasSpecifiedMultiplier(3,&quot;1.11&quot;)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="eacd923a-22d8-177f-6e1c-6dec90a2e0a0">
+      <Execution id="4dbbc3be-eaaf-475b-a215-e1a75ba2c860" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.BackpackLoadTests" name="EverySlotHasSpecifiedMultiplier(3,&quot;1.11&quot;)" />
+    </UnitTest>
+    <UnitTest name="PrototypeHasSixSpecifiedModulesAndVerticalSockets" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="ae4f97cb-f9e5-1513-cfb7-9ec469edf629">
+      <Execution id="f8f1940a-7222-4d46-bc90-3a49f52bc071" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="PrototypeHasSixSpecifiedModulesAndVerticalSockets" />
+    </UnitTest>
+    <UnitTest name="ConnectionDoesNotExemptOverlappingRooms" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="ac4bb0cb-c010-1436-2969-4ae5e61f287b">
+      <Execution id="6cd569be-4e5d-453a-b1d0-f765d5c25e46" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="ConnectionDoesNotExemptOverlappingRooms" />
+    </UnitTest>
+    <UnitTest name="DefaultPlanReservesExplorationScale(uint.MinValue,2,56)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="7ed2c5e9-f64c-1c2c-9ae7-6a7a54799d42">
+      <Execution id="34b81dc0-1117-4d93-9fa8-fa339eadf658" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonExplorationBranchTests" name="DefaultPlanReservesExplorationScale(uint.MinValue,2,56)" />
+    </UnitTest>
+    <UnitTest name="QuarterTurnsHaveExactCoordinates(0,2,3)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="7d742c39-474c-b6bd-3a1f-9e33fba489ec">
+      <Execution id="7f3709f4-4b93-4552-af20-d0e3ca176b10" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="QuarterTurnsHaveExactCoordinates(0,2,3)" />
+    </UnitTest>
+    <UnitTest name="DoorFacingIntoTheRoomIsRejected" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="5ba5d75b-1e57-ff8b-dde5-dea8fc9d9266">
+      <Execution id="7654dbd2-5b70-4271-a6ac-336e148c2d69" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="DoorFacingIntoTheRoomIsRejected" />
+    </UnitTest>
+    <UnitTest name="EverySlotHasSpecifiedMultiplier(1,&quot;1.17&quot;)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="aebf8c36-53ed-817d-9521-9778a67f6914">
+      <Execution id="2ddf494f-d5fa-46e0-aa1b-c792a61de0a5" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.BackpackLoadTests" name="EverySlotHasSpecifiedMultiplier(1,&quot;1.17&quot;)" />
+    </UnitTest>
+    <UnitTest name="EverySlotHasSpecifiedMultiplier(4,&quot;1.08&quot;)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="96ceb0ed-c761-1a0d-37a0-141c7bb7e1c4">
+      <Execution id="d3b25b3f-42f2-432d-b62c-83450064acc0" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.BackpackLoadTests" name="EverySlotHasSpecifiedMultiplier(4,&quot;1.08&quot;)" />
+    </UnitTest>
+    <UnitTest name="InvalidCycleCountIsRejected(9)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="4dfc6e05-f038-cb26-9be7-a1074995a6ea">
+      <Execution id="e6ebdb70-96e2-4a32-9b67-c5497af2f4e8" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLoopTests" name="InvalidCycleCountIsRejected(9)" />
+    </UnitTest>
+    <UnitTest name="DeadEndIsBacktrackedBeforeSuccessfulCompletion" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="12d3c84d-5242-f5bf-cf0c-d87e6919da01">
+      <Execution id="3bbe6ce6-6e27-47ac-a196-aead02ac0c2c" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="DeadEndIsBacktrackedBeforeSuccessfulCompletion" />
+    </UnitTest>
+    <UnitTest name="InvalidGenerationRequestsAreRejected(65,100)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="36265d70-6ce9-504b-db8f-cf8f9709e004">
+      <Execution id="27b8c9e0-930e-4acf-89e0-8954b0093f0e" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="InvalidGenerationRequestsAreRejected(65,100)" />
+    </UnitTest>
+    <UnitTest name="FullResultIsReproducible" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="47bdca46-de3a-52ae-af97-3bc948192248">
+      <Execution id="c126b8ba-9192-4ab4-b7cf-8d34819c172e" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonSeedTests" name="FullResultIsReproducible" />
+    </UnitTest>
+    <UnitTest name="HundredSeedsGenerateTheirSelectedLoopCounts" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="ad717d24-5104-eaa5-eba1-14e8b5f4aea1">
+      <Execution id="cba7a3d6-a008-41eb-9705-32330b050ef3" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonSeedTests" name="HundredSeedsGenerateTheirSelectedLoopCounts" />
+    </UnitTest>
+    <UnitTest name="TimelineHasSpecifiedBoundaries(10799999999L,1439,False)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="187c9aa3-72e1-6941-5f4b-18884611b00d">
+      <Execution id="f14cecb0-fc7b-422c-bec8-499c400bbc0e" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="TimelineHasSpecifiedBoundaries(10799999999L,1439,False)" />
+    </UnitTest>
+    <UnitTest name="RotatedBoxHasCorrectExtents" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="43edd6a3-ca7b-56b8-2079-322a3759ef2d">
+      <Execution id="959caa6c-e092-4024-a73d-b9427a95ee3a" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="RotatedBoxHasCorrectExtents" />
+    </UnitTest>
+    <UnitTest name="DuplicateStartCannotResetTime" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="a1e5ba0a-8ac8-5b75-a857-3cba6da30143">
+      <Execution id="bc308947-0c4c-4a0a-993d-636921f197ac" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="DuplicateStartCannotResetTime" />
+    </UnitTest>
+    <UnitTest name="AttachmentSolvesTranslationAndRotationFromDoorFrames" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="d261bab6-ed72-e46d-f683-2a774bb0dea4">
+      <Execution id="4b907ce8-de85-4c1d-9dfe-c4ef36d74a35" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="AttachmentSolvesTranslationAndRotationFromDoorFrames" />
+    </UnitTest>
+    <UnitTest name="MismatchedDoorDimensionsAreRejected" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="44a27c32-5b8c-ff1a-a55b-2078713f3219">
+      <Execution id="5a4f87f0-6104-42ce-92e3-26d0ad2b6bf1" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="MismatchedDoorDimensionsAreRejected" />
+    </UnitTest>
+    <UnitTest name="NullSourceIsRejected" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="7ea91493-05b0-e94f-4c1f-dd00cd8168d5">
+      <Execution id="e593233f-0132-488e-a05a-cd30f7a5acf6" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="NullSourceIsRejected" />
+    </UnitTest>
+    <UnitTest name="DefaultPlanReservesExplorationScale(3,1,32)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="6830dd38-dd31-44cb-0b27-6413faf13d73">
+      <Execution id="efe3c302-1a57-4ca3-b637-62a4c42f0f54" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonExplorationBranchTests" name="DefaultPlanReservesExplorationScale(3,1,32)" />
+    </UnitTest>
+    <UnitTest name="DefaultBoxCannotBypassPositiveVolumeContract" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="3f089275-7a3b-4302-7b55-3ca2a69fcd02">
+      <Execution id="82f6a4c8-f6b8-4be4-be13-99b33100a62e" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="DefaultBoxCannotBypassPositiveVolumeContract" />
+    </UnitTest>
+    <UnitTest name="MissingEnvelopeIsRejected" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="ee9afc5e-35e4-64c2-3d18-a4ad897688f0">
+      <Execution id="18211062-9ba6-498e-8607-c0a6fd62899c" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="MissingEnvelopeIsRejected" />
+    </UnitTest>
+    <UnitTest name="PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(4,0,0,False)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="39a07caa-253e-fecf-f724-b2c328d00d84">
+      <Execution id="5ccaf67d-6406-464e-9d10-662761f4c926" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(4,0,0,False)" />
+    </UnitTest>
+    <UnitTest name="TimelineHasSpecifiedBoundaries(9999999L,360,False)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="ad1a519d-0f28-1f25-dc44-89b7aa32a8ec">
+      <Execution id="6107d5a6-293d-450d-9129-0a948ab6435c" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="TimelineHasSpecifiedBoundaries(9999999L,360,False)" />
+    </UnitTest>
+    <UnitTest name="SeedRuleHasStableGoldenMapping(3,1,543629138)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="78a9a989-456e-f6cb-825e-92ee5ab47ab8">
+      <Execution id="13effdf2-a254-4362-bc2d-6b9314e01a97" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonSeedTests" name="SeedRuleHasStableGoldenMapping(3,1,543629138)" />
+    </UnitTest>
+    <UnitTest name="SeedRuleHasStableGoldenMapping(4,4,488595076)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="65cf01ee-d0c6-31e8-5dbf-bd2e0d9105f1">
+      <Execution id="7b4762a0-7849-45df-a6d0-35f7684e341a" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonSeedTests" name="SeedRuleHasStableGoldenMapping(4,4,488595076)" />
+    </UnitTest>
+    <UnitTest name="HundredSeedsHaveReservedBranchesAndRealDeadEnds" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="4aac55ce-f67e-dd59-3d6a-3d163a81593e">
+      <Execution id="12e44ba5-4380-4b2d-8190-64b20f1535b7" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonExplorationBranchTests" name="HundredSeedsHaveReservedBranchesAndRealDeadEnds" />
+    </UnitTest>
+    <UnitTest name="RandomAlgorithmHasStableGoldenSequence" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="d2341cd5-b066-3dc4-836f-853a20e39c17">
+      <Execution id="9bc5069c-9c4a-4c20-b154-0a65eb2c0d93" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="RandomAlgorithmHasStableGoldenSequence" />
+    </UnitTest>
+    <UnitTest name="InvalidBudget(100001)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="e2cf17c7-6185-71cc-b7b3-dcf97bc6edc7">
+      <Execution id="b48485ae-65ab-44c2-9fed-096867acf043" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonBranchLoopTests" name="InvalidBudget(100001)" />
+    </UnitTest>
+    <UnitTest name="InvalidSlotsAreRejected(int.MinValue)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="675a4566-e636-a417-104e-246d2c7b372e">
+      <Execution id="5556b522-9686-4c80-8d11-afc7d7554098" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.BackpackLoadTests" name="InvalidSlotsAreRejected(int.MinValue)" />
+    </UnitTest>
+    <UnitTest name="SameSeedProducesIdenticalManifest" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="08b763b4-92ae-e308-aeb6-779d89c54015">
+      <Execution id="c2003f3c-a19b-4a13-85e8-7a67f30cf8d0" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="SameSeedProducesIdenticalManifest" />
+    </UnitTest>
+    <UnitTest name="TimelineHasSpecifiedBoundaries(10800000001L,1440,True)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="679bcf5e-0e7d-0572-d0bb-6f7b6884a3b3">
+      <Execution id="7316325f-8013-4b20-b5d3-55c56b654641" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="TimelineHasSpecifiedBoundaries(10800000001L,1440,True)" />
+    </UnitTest>
+    <UnitTest name="InvalidBranchConfigurationRejected(0,2,4)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="d049b6cb-f878-556a-f07b-13558193b49e">
+      <Execution id="e2c2bc43-9e87-4185-821a-e2f70be0a6ec" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonExplorationBranchTests" name="InvalidBranchConfigurationRejected(0,2,4)" />
+    </UnitTest>
+    <UnitTest name="InvalidApertureIsRejected(0,0,2,3,2)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="186954d1-e6f3-b066-9489-c2480786770c">
+      <Execution id="0747dbe9-8947-434f-b0c7-92671d1cb64c" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="InvalidApertureIsRejected(0,0,2,3,2)" />
+    </UnitTest>
+    <UnitTest name="EverySlotHasSpecifiedMultiplier(10,&quot;0.90&quot;)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="96db1c11-b41d-1902-cdeb-1a84aff63543">
+      <Execution id="01a37731-11be-42d6-aedf-a0c23e1a2da1" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.BackpackLoadTests" name="EverySlotHasSpecifiedMultiplier(10,&quot;0.90&quot;)" />
+    </UnitTest>
+    <UnitTest name="InvalidApertureIsRejected(0,3,2,2,2)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="b8018349-648e-ffdf-058a-de9a64b7b574">
+      <Execution id="d107508c-be80-4d50-8c77-46f9275d38b1" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="InvalidApertureIsRejected(0,3,2,2,2)" />
+    </UnitTest>
+    <UnitTest name="ExtensionPreservesExistingIdsWithoutNamingCollisions" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="4e6aa2f5-d3d8-bba2-f0b7-558ee836d3c2">
+      <Execution id="eaceef30-054c-4719-86bc-2ce3d1340ac4" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonBranchLoopTests" name="ExtensionPreservesExistingIdsWithoutNamingCollisions" />
+    </UnitTest>
+    <UnitTest name="StartAfterExpiryCannotRestart" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="11a0707f-6eec-1381-3084-d95f89365bc3">
+      <Execution id="00ca8f28-a627-4773-a880-27b87b5ec67d" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="StartAfterExpiryCannotRestart" />
+    </UnitTest>
+    <UnitTest name="DuplicateSocketIdsAreRejected" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="68d39926-60bb-ca92-ddd7-224b6317b17e">
+      <Execution id="44360893-334d-4499-a240-6b5a2860301d" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="DuplicateSocketIdsAreRejected" />
+    </UnitTest>
+    <UnitTest name="PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(4,4,4,False)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="204c8c09-3050-c0fb-662e-d75d286916ed">
+      <Execution id="7b925560-7afc-452f-b01b-348deb09ac80" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(4,4,4,False)" />
+    </UnitTest>
+    <UnitTest name="QuarterTurnsHaveExactCoordinates(1,3,-2)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="7abfec6e-3735-a2ec-a079-0e3180cedd78">
+      <Execution id="0c040087-d2f0-4758-86c2-92fbb37dec69" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="QuarterTurnsHaveExactCoordinates(1,3,-2)" />
+    </UnitTest>
+    <UnitTest name="InvalidSlotsAreRejected(-1)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="69a63d18-0f2d-72f5-cba3-b5f30ad5526a">
+      <Execution id="9d77e4cf-c83b-409f-bd04-7c9ea4a848ad" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.BackpackLoadTests" name="InvalidSlotsAreRejected(-1)" />
+    </UnitTest>
+    <UnitTest name="UnknownRuleVersionRejected" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="c52580ae-1d6f-dba6-aab6-e648fa28845a">
+      <Execution id="93b89901-5e92-461e-9239-9710aa2e083c" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonExplorationBranchTests" name="UnknownRuleVersionRejected" />
+    </UnitTest>
+    <UnitTest name="EverySlotHasSpecifiedMultiplier(5,&quot;1.05&quot;)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="57b9f78e-370f-ae5f-2818-5ebe605539db">
+      <Execution id="a3058e73-47be-4e35-815e-2ef68afdfee1" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.BackpackLoadTests" name="EverySlotHasSpecifiedMultiplier(5,&quot;1.05&quot;)" />
+    </UnitTest>
+    <UnitTest name="DuplicateModuleIdsAreRejected" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="732806cf-17c3-73f7-b115-9b5efcbd1d90">
+      <Execution id="24cedbe0-d3d6-4eac-aed8-e57eb9a3b49d" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="DuplicateModuleIdsAreRejected" />
+    </UnitTest>
+    <UnitTest name="EachAdditionalSlotReducesSpeed" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="e71b9417-8716-e188-224c-5504f3697c36">
+      <Execution id="6e71d118-e894-4e36-a28f-5bd0639e9974" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.BackpackLoadTests" name="EachAdditionalSlotReducesSpeed" />
+    </UnitTest>
+    <UnitTest name="SameSeedRepeatsBranchAndBridgeLayout" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="fd6c9c48-a52d-66fd-a6eb-c40049ec1004">
+      <Execution id="dff5d042-7d47-40df-86e5-0b5146f270a1" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonBranchLoopTests" name="SameSeedRepeatsBranchAndBridgeLayout" />
+    </UnitTest>
+    <UnitTest name="UnknownModuleAndSocketReferencesAreRejected" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="a4e12100-edf2-8d15-455f-66d638d82eb1">
+      <Execution id="6a217fc2-9c88-42bc-aaa8-9a51e45f004d" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="UnknownModuleAndSocketReferencesAreRejected" />
+    </UnitTest>
+    <UnitTest name="OneHundredSeedsContainRealLoopsAndHeightChanges" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="f81df55a-afbf-0260-7c45-8b851b44308d">
+      <Execution id="6f941c2a-d46a-4e44-93ae-f97769a2bd48" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLoopTests" name="OneHundredSeedsContainRealLoopsAndHeightChanges" />
+    </UnitTest>
+    <UnitTest name="OneHundredSeedsProduceValidMultiLevelLayoutsAndPreviewFixtures" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="6584b83b-016c-e9bb-c4da-6830fe156edd">
+      <Execution id="32fdbcd7-3e8f-40e6-9058-19890ae07287" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="OneHundredSeedsProduceValidMultiLevelLayoutsAndPreviewFixtures" />
+    </UnitTest>
+    <UnitTest name="VeryLargeElapsedTimeExpiresSafely" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="dff29c43-32e4-e09a-0ac7-59949ff07bdf">
+      <Execution id="1dc34328-52fd-4ce5-9c4e-5d7125ccc668" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="VeryLargeElapsedTimeExpiresSafely" />
+    </UnitTest>
+    <UnitTest name="EverySlotHasSpecifiedMultiplier(7,&quot;0.99&quot;)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="3d1499ca-5575-581b-d5f2-44de1ad4953f">
+      <Execution id="d56b2bfa-b2cb-4e29-a210-6c107876ad5a" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.BackpackLoadTests" name="EverySlotHasSpecifiedMultiplier(7,&quot;0.99&quot;)" />
+    </UnitTest>
+    <UnitTest name="InvalidRotationIsRejected(4)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="2ebc06d0-816f-73a2-d18a-52a4704d48d4">
+      <Execution id="1479df6b-343d-4a90-a03f-be842c3ff2c9" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="InvalidRotationIsRejected(4)" />
+    </UnitTest>
+    <UnitTest name="ImpossibleCatalogTerminatesWithoutClaimingSuccess" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="c11f95b7-fa26-1dff-a8bb-0fcd9f7a7ab0">
+      <Execution id="99384347-39e2-4c43-9112-da168d3a5ad2" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="ImpossibleCatalogTerminatesWithoutClaimingSuccess" />
+    </UnitTest>
+    <UnitTest name="NegativeStartIsRejectedAndCanRetry" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="bed63545-fd72-e992-4053-7dbf75260d60">
+      <Execution id="755002b7-279d-4cd8-bcba-5bf8d32a9f27" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="NegativeStartIsRejectedAndCanRetry" />
+    </UnitTest>
+    <UnitTest name="EverySlotHasSpecifiedMultiplier(2,&quot;1.14&quot;)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="cd7b81ab-e4bf-d97c-af1e-f7fc146e090e">
+      <Execution id="1334d9cb-8e12-4d1b-9ad9-d0f27dd918d7" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.BackpackLoadTests" name="EverySlotHasSpecifiedMultiplier(2,&quot;1.14&quot;)" />
+    </UnitTest>
+    <UnitTest name="StartUsesArrivalAsOrigin" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="eb973647-d0a3-a813-886c-a1f075da46e6">
+      <Execution id="01f684c6-a2cb-472f-af34-63b13c1099c6" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="StartUsesArrivalAsOrigin" />
+    </UnitTest>
+    <UnitTest name="RoomScaleMatchesSelectedLoopCount(4,64)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="235dd92a-9b3a-fc0f-335c-1f0b1df297c1">
+      <Execution id="956170c0-d16d-4e17-87a1-7f32a1ec72a5" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonSeedTests" name="RoomScaleMatchesSelectedLoopCount(4,64)" />
+    </UnitTest>
+    <UnitTest name="ManifestCopiesCollectionsAndDoesNotExposeMutableLists" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="d42d8322-b074-f711-1286-64688d8e608d">
+      <Execution id="71d35a08-6218-4df3-aaac-9b9f128ae46c" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="ManifestCopiesCollectionsAndDoesNotExposeMutableLists" />
+    </UnitTest>
+    <UnitTest name="ExtensionRejectsInvalidSeedLayout" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="712ab7f4-ac9f-b779-85bb-2fa0a5418865">
+      <Execution id="2bc3bb0b-86d6-42b7-9d1e-bdb25be75fbb" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonBranchLoopTests" name="ExtensionRejectsInvalidSeedLayout" />
+    </UnitTest>
+    <UnitTest name="RemoteOrInvalidLayoutCannotCreateVirtualLoop" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="07faffe3-a9e7-1fc8-b619-c54d070c20c8">
+      <Execution id="178ac68d-5ae6-4c9c-bbbb-05a28a4f7dd4" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLoopTests" name="RemoteOrInvalidLayoutCannotCreateVirtualLoop" />
+    </UnitTest>
+    <UnitTest name="UnknownProtectedRoomIsRejected" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="c5ee6491-dc37-436b-70d7-c2fa02ad3a3f">
+      <Execution id="22b46e00-8592-4847-adec-369fb115f348" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonExplorationBranchTests" name="UnknownProtectedRoomIsRejected" />
+    </UnitTest>
+    <UnitTest name="RepeatedAndInterleavedCallsAreStable" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="ecf28c70-d14b-76cb-0833-0813ab5c4117">
+      <Execution id="a77a817b-cd7c-4213-9dd2-0891552410b9" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.BackpackLoadTests" name="RepeatedAndInterleavedCallsAreStable" />
+    </UnitTest>
+    <UnitTest name="TimelineHasSpecifiedBoundaries(10800000000L,1440,True)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="a28cd960-5d18-c4c9-960d-a8887d3faeb1">
+      <Execution id="7f8ee96a-05d6-47c7-ae7e-4dcdec7e39e2" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="TimelineHasSpecifiedBoundaries(10800000000L,1440,True)" />
+    </UnitTest>
+    <UnitTest name="PlacementAndClosureShareBudget" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="29bff684-bee0-23de-e4d4-ccb6ffe35a00">
+      <Execution id="11897716-7b4e-4b5b-af10-36032a046a7a" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLoopTests" name="PlacementAndClosureShareBudget" />
+    </UnitTest>
+    <UnitTest name="TimelineHasSpecifiedBoundaries(7199999999L,1079,False)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="757602ba-4a05-c2c7-53e4-72cb2418df82">
+      <Execution id="4c7f7bff-aeea-4980-8472-c534de5c0efa" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="TimelineHasSpecifiedBoundaries(7199999999L,1079,False)" />
+    </UnitTest>
+    <UnitTest name="TimelineHasSpecifiedBoundaries(10000000L,361,False)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="e06a7b8d-e510-3f6e-3130-5ab6215cd7a0">
+      <Execution id="de1d41cc-353d-4d7e-920c-279dde2fce8d" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="TimelineHasSpecifiedBoundaries(10000000L,361,False)" />
+    </UnitTest>
+    <UnitTest name="AttemptBudgetFailureNeverReturnsAPartialMap" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="b76dc182-98c8-c712-af5d-9fc648872c46">
+      <Execution id="08960206-eeef-44dd-867e-e01b664e3f6f" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="AttemptBudgetFailureNeverReturnsAPartialMap" />
+    </UnitTest>
+    <UnitTest name="RoomScaleMatchesSelectedLoopCount(uint.MinValue,40)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="1358d641-b7ee-224e-f8e7-1b617e78224f">
+      <Execution id="db2bf755-31a4-4acc-b614-aa94b768acfd" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonSeedTests" name="RoomScaleMatchesSelectedLoopCount(uint.MinValue,40)" />
+    </UnitTest>
+    <UnitTest name="BeforeStartDoesNotConsumeLoadingTime" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="50d29d9c-c03e-5a1f-d19f-b5e757561525">
+      <Execution id="d60dcb35-79d9-4d98-b82a-ca2ad6a07a6e" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="BeforeStartDoesNotConsumeLoadingTime" />
+    </UnitTest>
+    <UnitTest name="DefaultPlanReservesExplorationScale(4,4,104)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="5e03cf32-096e-0254-16ff-ea5d16d0ca18">
+      <Execution id="3626a1e2-5583-4fbf-a7a5-ed49fdeefa76" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonExplorationBranchTests" name="DefaultPlanReservesExplorationScale(4,4,104)" />
+    </UnitTest>
+    <UnitTest name="EverySlotHasSpecifiedMultiplier(8,&quot;0.96&quot;)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="fab9da53-ce03-f3d2-a257-44e061b292bc">
+      <Execution id="37a39503-6d3c-44cb-9b78-7bc5010d9fc7" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.BackpackLoadTests" name="EverySlotHasSpecifiedMultiplier(8,&quot;0.96&quot;)" />
+    </UnitTest>
+    <UnitTest name="InvalidBranchConfigurationRejected(5,2,4)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="f21777d1-a310-a89d-0d74-e2b08bbed9c9">
+      <Execution id="af71b0c3-464e-414a-8053-f9aa8b486a6d" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonExplorationBranchTests" name="InvalidBranchConfigurationRejected(5,2,4)" />
+    </UnitTest>
+    <UnitTest name="InvalidSlotsAreRejected(11)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="c88de2a1-5b73-2d92-9898-04bab29dae87">
+      <Execution id="25c3a7ba-ab07-4da8-af0f-c55ce444e4df" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.BackpackLoadTests" name="InvalidSlotsAreRejected(11)" />
+    </UnitTest>
+    <UnitTest name="InvalidInjectedRandomSourceIsRejected" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="4eada1c8-9c5f-b85a-89b0-7e53d5f56764">
+      <Execution id="b2e021dd-dc49-44d9-a7e9-f1782861eacd" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="InvalidInjectedRandomSourceIsRejected" />
+    </UnitTest>
+    <UnitTest name="TimelineHasSpecifiedBoundaries(0L,360,False)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="a18125e2-cd83-2ef2-96f5-6b0e23a3fc9d">
+      <Execution id="c4f5e7eb-fcae-40cb-9848-2ecb393097d1" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="TimelineHasSpecifiedBoundaries(0L,360,False)" />
+    </UnitTest>
+    <UnitTest name="InvalidCycleCountIsRejected(-1)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="2ea8d800-04b4-8aa8-9263-38236716e616">
+      <Execution id="9c078ca8-ad56-4d60-ab69-e11b71136e63" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLoopTests" name="InvalidCycleCountIsRejected(-1)" />
+    </UnitTest>
+    <UnitTest name="SquareClosesExactlyOnePhysicalLoop" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="3215a759-5cbc-97f5-66c3-f1443319e825">
+      <Execution id="fc09120a-55de-4833-babf-eab3570c29be" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLoopTests" name="SquareClosesExactlyOnePhysicalLoop" />
+    </UnitTest>
+    <UnitTest name="ZeroVolumeBoxIsRejected" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="094c34d8-064c-346f-ff81-c48ca9d50326">
+      <Execution id="42c48c64-5b78-4f8d-8b31-2dde8aa86c3d" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="ZeroVolumeBoxIsRejected" />
+    </UnitTest>
+    <UnitTest name="InvalidGenerationRequestsAreRejected(0,100)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="860c2b37-8df9-67cb-36e9-5352fd4e3a80">
+      <Execution id="8f470211-7fd6-4824-b7f5-fa90e6a8e984" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="InvalidGenerationRequestsAreRejected(0,100)" />
+    </UnitTest>
+    <UnitTest name="SocketCannotBeUsedTwice" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="ebece4c5-856e-6a19-dddf-6404e8c0a72a">
+      <Execution id="98493240-5133-4467-b657-7b39920fc189" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="SocketCannotBeUsedTwice" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="96ceb0ed-c761-1a0d-37a0-141c7bb7e1c4" executionId="d3b25b3f-42f2-432d-b62c-83450064acc0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4f9d0374-ab0c-b9c0-8844-143c8f63034c" executionId="bf36eaa9-ed26-4be1-a3f4-d7ce692fca4d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b8018349-648e-ffdf-058a-de9a64b7b574" executionId="d107508c-be80-4d50-8c77-46f9275d38b1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c5ee6491-dc37-436b-70d7-c2fa02ad3a3f" executionId="22b46e00-8592-4847-adec-369fb115f348" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="12d3c84d-5242-f5bf-cf0c-d87e6919da01" executionId="3bbe6ce6-6e27-47ac-a196-aead02ac0c2c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ccf10703-bb0c-d997-654c-471b21e78183" executionId="4e3da8e9-89ae-4d4c-bfa6-0ff237154ba5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bed63545-fd72-e992-4053-7dbf75260d60" executionId="755002b7-279d-4cd8-bcba-5bf8d32a9f27" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="652714b7-8705-bf5b-158d-1036995300cb" executionId="f7da3395-10e7-46a2-9174-acc98fd76559" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c52580ae-1d6f-dba6-aab6-e648fa28845a" executionId="93b89901-5e92-461e-9239-9710aa2e083c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="50d29d9c-c03e-5a1f-d19f-b5e757561525" executionId="d60dcb35-79d9-4d98-b82a-ca2ad6a07a6e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f21777d1-a310-a89d-0d74-e2b08bbed9c9" executionId="af71b0c3-464e-414a-8053-f9aa8b486a6d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ac3679a7-45b0-ba8f-2944-69ebdf2a33a3" executionId="6c10e6e3-991c-4153-a12e-b0ff7464f625" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ae4f97cb-f9e5-1513-cfb7-9ec469edf629" executionId="f8f1940a-7222-4d46-bc90-3a49f52bc071" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="57b9f78e-370f-ae5f-2818-5ebe605539db" executionId="a3058e73-47be-4e35-815e-2ef68afdfee1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f3d7b960-3a10-800e-8dfb-3bea242a2942" executionId="b6c2af3b-71de-45db-9e1a-20a8ece90fe0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a28cd960-5d18-c4c9-960d-a8887d3faeb1" executionId="7f8ee96a-05d6-47c7-ae7e-4dcdec7e39e2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fab9da53-ce03-f3d2-a257-44e061b292bc" executionId="37a39503-6d3c-44cb-9b78-7bc5010d9fc7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="29bff684-bee0-23de-e4d4-ccb6ffe35a00" executionId="11897716-7b4e-4b5b-af10-36032a046a7a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="62c98249-7257-69da-3f46-5bb075e25fd3" executionId="4fe99d06-bbbe-4893-a0d0-4d875343d9af" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="78859563-0bb5-041c-def4-0000f9ca9d21" executionId="599c726c-0158-4f22-9705-346412590472" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4e797172-6aa6-f38b-28ff-f57f7d6f9044" executionId="965272c8-6a9a-4ba9-8a41-c944ec435fb9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fd6c9c48-a52d-66fd-a6eb-c40049ec1004" executionId="dff5d042-7d47-40df-86e5-0b5146f270a1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d049b6cb-f878-556a-f07b-13558193b49e" executionId="e2c2bc43-9e87-4185-821a-e2f70be0a6ec" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cc861560-ee36-84d1-8544-e87c7500ca3b" executionId="705a1047-a731-490f-af40-15768b738d55" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2ebc06d0-816f-73a2-d18a-52a4704d48d4" executionId="1479df6b-343d-4a90-a03f-be842c3ff2c9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="aebf8c36-53ed-817d-9521-9778a67f6914" executionId="2ddf494f-d5fa-46e0-aa1b-c792a61de0a5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bf364881-7fe8-85f2-3159-a2d3a2ca7c3b" executionId="ab340459-691b-418f-b5a3-3a76426bd1ba" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="96db1c11-b41d-1902-cdeb-1a84aff63543" executionId="01a37731-11be-42d6-aedf-a0c23e1a2da1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="df20cd30-bd7e-2064-8b30-8e13d75becc0" executionId="a7fb3afd-b36c-458f-bfe2-121e832c6872" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e2cf17c7-6185-71cc-b7b3-dcf97bc6edc7" executionId="b48485ae-65ab-44c2-9fed-096867acf043" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="43edd6a3-ca7b-56b8-2079-322a3759ef2d" executionId="959caa6c-e092-4024-a73d-b9427a95ee3a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="39a07caa-253e-fecf-f724-b2c328d00d84" executionId="5ccaf67d-6406-464e-9d10-662761f4c926" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="418ec0ad-4e79-fc80-e2c4-19e2b917f388" executionId="ad5903b3-356e-4225-898d-b5b9441e2d6a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="09c3853b-83f4-69a1-7a60-b70081644238" executionId="2b8a278f-9e5a-4d68-ab51-56168b3f205c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="204c8c09-3050-c0fb-662e-d75d286916ed" executionId="7b925560-7afc-452f-b01b-348deb09ac80" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0ac377dc-425a-f8db-d6c9-8ed448dfe590" executionId="58b090bb-3bbe-40a4-92bc-b16b2f50d067" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="43651b83-927a-6391-76bd-efac584252fd" executionId="d0939edb-9e8c-468e-a6dc-edf9f2393cbb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fb024014-2de7-fc2d-0d91-a48ba75b1800" executionId="c9b5470c-b851-46fc-9c7a-0e6637e02ea3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="07faffe3-a9e7-1fc8-b619-c54d070c20c8" executionId="178ac68d-5ae6-4c9c-bbbb-05a28a4f7dd4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b09c53f3-d5e4-0fdf-41d6-2d374e1a293d" executionId="9e9f4e97-4340-425b-834b-d64d7cdf80db" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9cabd7e3-f97b-bb08-661f-e120f06be10a" executionId="b1af98c2-3b2b-42e9-88da-6dbe508804b3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e06a7b8d-e510-3f6e-3130-5ab6215cd7a0" executionId="de1d41cc-353d-4d7e-920c-279dde2fce8d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="235dd92a-9b3a-fc0f-335c-1f0b1df297c1" executionId="956170c0-d16d-4e17-87a1-7f32a1ec72a5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0bf40de3-576f-0989-6ee2-d03c741a45bf" executionId="0ca63e16-b40f-4c60-8180-0ae25b27c3ab" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0f3a485c-762c-a241-25c3-6af4ac08c026" executionId="226ca282-20c8-40e8-aa99-cab671c19c32" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="47bdca46-de3a-52ae-af97-3bc948192248" executionId="c126b8ba-9192-4ab4-b7cf-8d34819c172e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="08b763b4-92ae-e308-aeb6-779d89c54015" executionId="c2003f3c-a19b-4a13-85e8-7a67f30cf8d0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="97c80239-cc3f-86b5-c5d8-381273940796" executionId="69d5a8a7-1565-4ca2-a8b3-0bdd3dee0e7e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="36265d70-6ce9-504b-db8f-cf8f9709e004" executionId="27b8c9e0-930e-4acf-89e0-8954b0093f0e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="11a0707f-6eec-1381-3084-d95f89365bc3" executionId="00ca8f28-a627-4773-a880-27b87b5ec67d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="34b1bfeb-9820-c625-87ea-68ec53a5c072" executionId="331748d9-1c4f-4ba9-a15c-51cc870bf369" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="03720b16-6f13-fe5a-3af2-53fce49ef3a4" executionId="ecde1c57-b323-437e-a511-7fef7188b28f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c88de2a1-5b73-2d92-9898-04bab29dae87" executionId="25c3a7ba-ab07-4da8-af0f-c55ce444e4df" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bfeebbc5-fcc2-da11-511b-245d05e19e03" executionId="cc7f38c5-03e8-4670-ac2d-97e0df72e9f4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8b589130-3a4c-9190-e67d-78ae77122b2c" executionId="aef296d5-8f52-4247-9ed4-a121594e11e1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2c6dcc88-9efe-d785-0cd6-a2f00ae6367b" executionId="26e67730-fc87-4899-b5d1-9afd6e4e4639" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ee9afc5e-35e4-64c2-3d18-a4ad897688f0" executionId="18211062-9ba6-498e-8607-c0a6fd62899c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6830dd38-dd31-44cb-0b27-6413faf13d73" executionId="efe3c302-1a57-4ca3-b637-62a4c42f0f54" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="aa8952e6-4ded-3046-a7d3-f7c0f99e0dea" executionId="01c873af-abb7-490b-8da1-114d318be874" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9dcf8846-bdeb-b3eb-1193-8cacae7a95f6" executionId="8ef16240-19ec-416c-93cc-e405fbdd291c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a4e12100-edf2-8d15-455f-66d638d82eb1" executionId="6a217fc2-9c88-42bc-aaa8-9a51e45f004d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d2341cd5-b066-3dc4-836f-853a20e39c17" executionId="9bc5069c-9c4a-4c20-b154-0a65eb2c0d93" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="78a9a989-456e-f6cb-825e-92ee5ab47ab8" executionId="13effdf2-a254-4362-bc2d-6b9314e01a97" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8acbbce1-a922-bf45-6609-d3f81a5ec3e9" executionId="f0b950f6-97dd-4313-aab2-d7697dd43015" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7abfec6e-3735-a2ec-a079-0e3180cedd78" executionId="0c040087-d2f0-4758-86c2-92fbb37dec69" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="916f0cb0-47b0-bc8f-a96b-9a4e900559b7" executionId="c156c095-7dff-4335-b77f-d3fd8c062c67" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d261bab6-ed72-e46d-f683-2a774bb0dea4" executionId="4b907ce8-de85-4c1d-9dfe-c4ef36d74a35" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="eacd923a-22d8-177f-6e1c-6dec90a2e0a0" executionId="4dbbc3be-eaaf-475b-a215-e1a75ba2c860" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="22c75b8e-2625-b979-925d-bd6a48009d43" executionId="6df9fc9a-560a-4e7f-ba30-17ff0b064a4e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="599db8e9-dfa2-8ee2-b70c-f6faf843e5dd" executionId="2f35b0fd-002a-490c-98a3-c64493612bbe" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bf1e1d3b-0903-a1ad-0ae5-6accaa9b4d77" executionId="e069ec73-aed7-4369-9fae-b885db0f6b4f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a18125e2-cd83-2ef2-96f5-6b0e23a3fc9d" executionId="c4f5e7eb-fcae-40cb-9848-2ecb393097d1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6584b83b-016c-e9bb-c4da-6830fe156edd" executionId="32fdbcd7-3e8f-40e6-9058-19890ae07287" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="be3bcca0-325c-8a22-2bc6-a6900a639a9c" executionId="f7b8fe2c-923d-45d9-a391-0f60daa247f2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7ed2c5e9-f64c-1c2c-9ae7-6a7a54799d42" executionId="34b81dc0-1117-4d93-9fa8-fa339eadf658" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="978d8c1b-3691-549c-3f91-5840187b3f04" executionId="cc84ea42-8aa3-45f2-a75a-57a7c5b1ef1d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="712ab7f4-ac9f-b779-85bb-2fa0a5418865" executionId="2bc3bb0b-86d6-42b7-9d1e-bdb25be75fbb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ffcb9f2d-c651-6b29-7f84-0c0bd75c01f5" executionId="c81d6b91-d365-4fc9-9319-dbe78b24b061" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="046feb69-46e1-64c8-b604-38e34a949fcb" executionId="ab4e9097-e916-47a6-82f0-abaeb2c5c91b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3970b5a8-02b8-a296-28ec-1f1917261c54" executionId="981014a2-dd2d-4f09-a91d-bfe5d2b4486c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="94251ab9-5604-74fb-7019-16d948d3cd0f" executionId="2759a7fb-ddff-4344-a3de-a9b6deb816a8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="630c7528-38ae-a0a5-d52f-56760bb82841" executionId="d3e0514d-a6b0-42e3-94fd-fd7d7135120e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dff29c43-32e4-e09a-0ac7-59949ff07bdf" executionId="1dc34328-52fd-4ce5-9c4e-5d7125ccc668" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4e6aa2f5-d3d8-bba2-f0b7-558ee836d3c2" executionId="eaceef30-054c-4719-86bc-2ce3d1340ac4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="757602ba-4a05-c2c7-53e4-72cb2418df82" executionId="4c7f7bff-aeea-4980-8472-c534de5c0efa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="18f60614-466a-220f-204c-feb6daed5f74" executionId="1b884fe8-f055-4fe7-b634-4ce7856ed3ff" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="675a4566-e636-a417-104e-246d2c7b372e" executionId="5556b522-9686-4c80-8d11-afc7d7554098" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7a8ab3c2-44ea-55e8-0d16-9b06dcaec979" executionId="7471e4fb-f15e-4cf8-a51c-a7160176e89a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4dfc6e05-f038-cb26-9be7-a1074995a6ea" executionId="e6ebdb70-96e2-4a32-9b67-c5497af2f4e8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6a299a05-0d6b-05aa-c2ee-dd21f459b190" executionId="234722f8-a3e5-43d7-bc9b-a2ef81946f8a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4eada1c8-9c5f-b85a-89b0-7e53d5f56764" executionId="b2e021dd-dc49-44d9-a7e9-f1782861eacd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3f089275-7a3b-4302-7b55-3ca2a69fcd02" executionId="82f6a4c8-f6b8-4be4-be13-99b33100a62e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="186954d1-e6f3-b066-9489-c2480786770c" executionId="0747dbe9-8947-434f-b0c7-92671d1cb64c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="65cf01ee-d0c6-31e8-5dbf-bd2e0d9105f1" executionId="7b4762a0-7849-45df-a6d0-35f7684e341a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cd7b81ab-e4bf-d97c-af1e-f7fc146e090e" executionId="1334d9cb-8e12-4d1b-9ad9-d0f27dd918d7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5ba5d75b-1e57-ff8b-dde5-dea8fc9d9266" executionId="7654dbd2-5b70-4271-a6ac-336e148c2d69" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ad717d24-5104-eaa5-eba1-14e8b5f4aea1" executionId="cba7a3d6-a008-41eb-9705-32330b050ef3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="094c34d8-064c-346f-ff81-c48ca9d50326" executionId="42c48c64-5b78-4f8d-8b31-2dde8aa86c3d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1593e9c8-ac14-26e6-345c-50d7c4891280" executionId="8a632314-d698-4c86-91bb-72125b3a5628" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3d1499ca-5575-581b-d5f2-44de1ad4953f" executionId="d56b2bfa-b2cb-4e29-a210-6c107876ad5a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e0ae7b68-b9ce-b395-eabd-829fb98e48e3" executionId="0643d9ab-4379-436d-9053-d96d1c9187f7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ecf28c70-d14b-76cb-0833-0813ab5c4117" executionId="a77a817b-cd7c-4213-9dd2-0891552410b9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e4ff89e8-d73d-1ccd-61d6-7ba5fac01621" executionId="25fa6549-be3f-4bc8-84b9-14e777e7e835" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c11f95b7-fa26-1dff-a8bb-0fcd9f7a7ab0" executionId="99384347-39e2-4c43-9112-da168d3a5ad2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f0bb7086-c9f8-f75d-349a-a8e767b0720e" executionId="3fbcfdb9-98e8-4324-ad01-bb0f61e7e165" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7ea91493-05b0-e94f-4c1f-dd00cd8168d5" executionId="e593233f-0132-488e-a05a-cd30f7a5acf6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="92133105-665c-4d07-ecdd-6f470d389b19" executionId="a3209009-0e50-4739-b637-2db5b652db51" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="30f9a80c-99be-b175-0c19-aeec585e990e" executionId="5d8010b3-09ce-44b9-b097-d9fd24e9b33c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ac4bb0cb-c010-1436-2969-4ae5e61f287b" executionId="6cd569be-4e5d-453a-b1d0-f765d5c25e46" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f3413d70-b334-d82d-9728-8190a3ed7d5f" executionId="66f3e695-9ec3-43a4-890e-19efbb9ca006" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="13d4a2c6-1ba7-d147-89df-16cfd3d2a7a9" executionId="449543d8-1314-4d87-be2e-c993f210fae6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f5955af5-42b8-e7d4-64af-0e13bbea6451" executionId="df965d61-902c-4883-b514-a920cf12b31b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f81df55a-afbf-0260-7c45-8b851b44308d" executionId="6f941c2a-d46a-4e44-93ae-f97769a2bd48" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="732806cf-17c3-73f7-b115-9b5efcbd1d90" executionId="24cedbe0-d3d6-4eac-aed8-e57eb9a3b49d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bfb4830a-a07c-2f99-f44a-caabc7d02f84" executionId="3522a328-1375-46bd-8e6d-534447b1a4be" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="69a63d18-0f2d-72f5-cba3-b5f30ad5526a" executionId="9d77e4cf-c83b-409f-bd04-7c9ea4a848ad" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fd033443-b3b1-b481-0fbd-010fe2231fc9" executionId="f170acae-784b-4b1c-bcdb-060a3b68e7ae" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3215a759-5cbc-97f5-66c3-f1443319e825" executionId="fc09120a-55de-4833-babf-eab3570c29be" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d42d8322-b074-f711-1286-64688d8e608d" executionId="71d35a08-6218-4df3-aaac-9b9f128ae46c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ffa1f592-36af-fdc7-d20c-f5fbe6ac8aec" executionId="e5ebc1bf-a473-4d53-8b6b-09d607bf6231" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8e4d1240-9486-5c92-6843-44e2412b84cc" executionId="b1e3ac9c-7fe0-4d51-8082-ae7b09929b91" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ebece4c5-856e-6a19-dddf-6404e8c0a72a" executionId="98493240-5133-4467-b657-7b39920fc189" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5cde4125-7a02-a888-9fa9-f3eb6cc8290d" executionId="f88bae32-0e95-4470-875a-bca9cfd2e367" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e71b9417-8716-e188-224c-5504f3697c36" executionId="6e71d118-e894-4e36-a28f-5bd0639e9974" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="68d39926-60bb-ca92-ddd7-224b6317b17e" executionId="44360893-334d-4499-a240-6b5a2860301d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="860c2b37-8df9-67cb-36e9-5352fd4e3a80" executionId="8f470211-7fd6-4824-b7f5-fa90e6a8e984" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4870df8d-8f5a-6318-7fd4-01dc3f75b0c2" executionId="fe9b2049-96ef-4a0b-8f45-539989b201d8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1358d641-b7ee-224e-f8e7-1b617e78224f" executionId="db2bf755-31a4-4acc-b614-aa94b768acfd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="44a27c32-5b8c-ff1a-a55b-2078713f3219" executionId="5a4f87f0-6104-42ce-92e3-26d0ad2b6bf1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="187c9aa3-72e1-6941-5f4b-18884611b00d" executionId="f14cecb0-fc7b-422c-bec8-499c400bbc0e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f3666346-e4e9-3ecc-23a4-c7785bd534a9" executionId="d3bda7f7-2572-481a-9462-738b9ff0d342" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="76f12e4d-af92-6d94-770e-74387b5aa078" executionId="9a06bd39-5bcf-4046-86b9-599f941fd01d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="679bcf5e-0e7d-0572-d0bb-6f7b6884a3b3" executionId="7316325f-8013-4b20-b5d3-55c56b654641" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7d742c39-474c-b6bd-3a1f-9e33fba489ec" executionId="7f3709f4-4b93-4552-af20-d0e3ca176b10" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b76dc182-98c8-c712-af5d-9fc648872c46" executionId="08960206-eeef-44dd-867e-e01b664e3f6f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5e03cf32-096e-0254-16ff-ea5d16d0ca18" executionId="3626a1e2-5583-4fbf-a7a5-ed49fdeefa76" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2ea8d800-04b4-8aa8-9263-38236716e616" executionId="9c078ca8-ad56-4d60-ab69-e11b71136e63" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="eb973647-d0a3-a813-886c-a1f075da46e6" executionId="01f684c6-a2cb-472f-af34-63b13c1099c6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ad1a519d-0f28-1f25-dc44-89b7aa32a8ec" executionId="6107d5a6-293d-450d-9129-0a948ab6435c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4aac55ce-f67e-dd59-3d6a-3d163a81593e" executionId="12e44ba5-4380-4b2d-8190-64b20f1535b7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a1e5ba0a-8ac8-5b75-a857-3cba6da30143" executionId="bc308947-0c4c-4a0a-993d-636921f197ac" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="de929856-d418-2af0-5be0-be3e8385c6fa" executionId="75636856-a615-4ceb-b8ce-bc1bb90893a6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="142" executed="142" passed="142" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 6.3.0.0: Test execution started
+Running all tests in /workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll
+   NUnit3TestExecutor discovered 142 of 142 NUnit test cases using Current Discovery mode, Non-Explicit run
+Maximum attempts: 8374
+
+Maximum attempts: 20690
+
+Maximum attempts across 100 seeds: 39
+
+Retry seed: 86, loops: 3, variant: 1
+Distribution: {"2":24,"3":26,"1":24,"4":26}; retried seeds: 1; max attempts: 20235
+
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

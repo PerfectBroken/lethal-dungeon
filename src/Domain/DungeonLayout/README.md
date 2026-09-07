@@ -132,3 +132,20 @@ var result = SeededDungeon.Generate(worldSeed: 86);
 规则复现需同时固定RuleVersion、目录/生成器版本和maxAttempts；日志应保存调用预算与返回的Plan、AttemptIndex、ActualLayoutSeed及最终清单。总预算用尽返回BudgetExceeded，5种布局尝试均失败且尚有预算时返回LayoutVariantsExhausted。显式参数入口仍可用于设计测试，不改变自动入口规则。
 
 最新验证：新增15用例先全部有效Red，后全部通过。种子0～99分别生成1/2/3/4环24/24/26/26次；种子86在布局变体1成功，始终保持3环，总工作量最高20235步。每张结果复用长支线全图最短环检查，无四房间捷径。125规则+14规范检查通过，0跳过。证据见evidence/public-seeds。现有40房间双环预览保留作结构示例，不代表自动入口仍固定双环。
+
+## 独立探索支路与预算 v0.4 / seed-rules-v2
+
+用户已授权修复大环耗尽空间的问题。默认种子规则升级v2，旧v1可显式选择；同版本、目录、生成配置仍可复现。原型地图规模随1/2/3/4环改为32/56/80/104房间，新增模式最多128房间；旧显式接口未开启支路配置时仍限64房间。
+
+| ID | 规范 |
+|---|---|
+| MAP-020 | 每环指定数量的独立探索支路，原型默认2条；每条随机2～4房间。各支路从对应大环不同房间出发，支路房间不属于任何大环且互不复用。出口只连回原锚点，末端度数1，不计入口 |
+| MAP-021 | 在大环生成前抽取全部支路深度，预留它们的实际房间总数，再留跨层空间与未生成大环最小用量；不能让大环消耗该预算。生成结束必须完整拥有指定支路，否则返回失败、不返回部分布局和轨迹 |
+| MAP-022 | ExplorationBranchTrace包含LoopIndex、AnchorRoom、Rooms有序链。最终每条内部节点度数2、末端度数1，锚点在指定环且至少3路；树形补充禁止从受保护的支路房间继续扩展，不能吞掉死路或缩短其深度 |
+| MAP-023 | SeededDungeon.Resolve/Generate可指定ruleVersion，默认seed-rules-v2，保留seed-rules-v1。v2的Plan披露每环支路数、最小/最大深度和新房间数；环数和LayoutSeed派生算法不变。成功/失败/重试仍共用原预算，重试不得降低支路要求 |
+
+ExplorationBranchOptions(branchesPerLoop=2,minDepth=2,maxDepth=4)：每环1～4条，深度1～8且min≤max；非法值拒绝。BranchLoopGenerator.Generate新增可选exploration，null保留旧行为；显式选项激活128房间上限。低层DungeonGenerator允许显式maxRoomCount（1～128，默认64）和protectedRoomIds，验证受保护ID属于初始布局。所有实际占用/门口/长环/连通检查保持。
+
+房间数是技术验证配置，不代表最终探索时长或微信内存预算已确定。新模式使用exploration-branches-v0.4清单版本，旧模式保持branch-routing-v0.3。新测试类DungeonExplorationBranchTests覆盖MAP-020～023：预算不足、支路深度及隔离、度数保护、环上分布、种子版本兼容、100种子全图和失败无部分结果。
+
+验证结果：新增17个用例通过，包含100个种子的最终支路链、环上锚点、无短环、空间占用、连通和跨层验收；最高20690次尝试，未降低100000总预算。最终142规则+14规范检查通过，0跳过。旧版15个种子测试显式选择v1，原断言保持。种子5在v2中104房间、4环（20/14/14/24房间）、8条保障支路（深度2/3/2/3/4/4/3/4），额外填充后共13个非入口死路、19处分叉。支路总数可以多于保障数量。证据见evidence/public-exploration，实际清单见docs/examples/exploration-layouts.json。

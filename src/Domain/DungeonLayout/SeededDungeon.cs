@@ -4,12 +4,15 @@ namespace LethalDungeon.Domain.Dungeons
     public sealed class DungeonSeedPlan
     {
         public uint WorldSeed { get; }
-        public string RuleVersion => "seed-rules-v1";
+        public string RuleVersion { get; }
         public int LoopCount { get; }
         public int TargetRooms { get; }
+        public int BranchesPerLoop => RuleVersion=="seed-rules-v2"?2:0;
+        public int MinBranchDepth => RuleVersion=="seed-rules-v2"?2:0;
+        public int MaxBranchDepth => RuleVersion=="seed-rules-v2"?4:0;
         public uint LayoutSeed { get; }
-        internal DungeonSeedPlan(uint worldSeed,int loops,int rooms,uint layoutSeed)
-        {WorldSeed=worldSeed;LoopCount=loops;TargetRooms=rooms;LayoutSeed=layoutSeed;}
+        internal DungeonSeedPlan(uint worldSeed,int loops,int rooms,uint layoutSeed,string ruleVersion)
+        {RuleVersion=ruleVersion;WorldSeed=worldSeed;LoopCount=loops;TargetRooms=rooms;LayoutSeed=layoutSeed;}
     }
     public sealed class SeededDungeonResult
     {
@@ -30,24 +33,25 @@ namespace LethalDungeon.Domain.Dungeons
                 return value ^ (value >> 16);
             }
         }
-        public static DungeonSeedPlan Resolve(uint worldSeed)
+        public static DungeonSeedPlan Resolve(uint worldSeed,string ruleVersion="seed-rules-v2")
         {
+            if(ruleVersion!="seed-rules-v1"&&ruleVersion!="seed-rules-v2")throw new ArgumentException("Unknown seed rule version.",nameof(ruleVersion));
             int loops=1+(int)(Mix(worldSeed^0x4C4F4F50u)&3u);
-            int rooms=loops==1?24:loops==2?40:loops==3?56:64;
-            return new DungeonSeedPlan(worldSeed,loops,rooms,Mix(worldSeed^0x4C41594Fu));
+            int rooms=ruleVersion=="seed-rules-v2"?8+24*loops:loops==1?24:loops==2?40:loops==3?56:64;
+            return new DungeonSeedPlan(worldSeed,loops,rooms,Mix(worldSeed^0x4C41594Fu),ruleVersion);
         }
-        public static SeededDungeonResult Generate(uint worldSeed,int maxAttempts=100000)
+        public static SeededDungeonResult Generate(uint worldSeed,int maxAttempts=100000,string ruleVersion="seed-rules-v2")
         {
             if(maxAttempts<1||maxAttempts>100000)throw new ArgumentOutOfRangeException(nameof(maxAttempts));
-            var plan=Resolve(worldSeed);int used=0,backtracks=0,index=0;uint actual=plan.LayoutSeed;
+            var plan=Resolve(worldSeed,ruleVersion);int used=0,backtracks=0,index=0;uint actual=plan.LayoutSeed;
             for(index=0;index<5;index++)
             {
                 actual=index==0?plan.LayoutSeed:Mix(plan.LayoutSeed^unchecked((uint)index*0x9E3779B9u));
-                var result=BranchLoopGenerator.Generate(new XorShiftRandom(actual),plan.TargetRooms,plan.LoopCount,Math.Min(20000,maxAttempts-used),true);
+                var result=BranchLoopGenerator.Generate(new XorShiftRandom(actual),plan.TargetRooms,plan.LoopCount,Math.Min(20000,maxAttempts-used),true,plan.BranchesPerLoop==0?null:new ExplorationBranchOptions(plan.BranchesPerLoop,plan.MinBranchDepth,plan.MaxBranchDepth));
                 used+=result.Layout.Attempts;backtracks+=result.Layout.Backtracks;
                 if(result.Layout.Succeeded)
                 {
-                    var aggregate=new BranchLoopResult(new GenerationResult(result.Layout.Manifest,string.Empty,used,backtracks),result.Loops);
+                    var aggregate=new BranchLoopResult(new GenerationResult(result.Layout.Manifest,string.Empty,used,backtracks),result.Loops,result.ExplorationBranches);
                     return new SeededDungeonResult(plan,aggregate,index,actual);
                 }
                 if(used>=maxAttempts||index==4)break;

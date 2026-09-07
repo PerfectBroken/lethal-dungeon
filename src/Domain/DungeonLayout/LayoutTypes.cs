@@ -134,13 +134,13 @@ namespace LethalDungeon.Domain.Dungeons
 
     public sealed class DungeonManifest
     {
-        public string GeneratorVersion => "branch-routing-v0.3";
+        public string GeneratorVersion { get; }
         public string ContentVersion { get; }
         public decimal MetresPerUnit => 0.5m;
         public ReadOnlyCollection<PlacedRoom> Rooms { get; }
         public ReadOnlyCollection<DoorConnection> Connections { get; }
-        public DungeonManifest(string contentVersion, IEnumerable<PlacedRoom> rooms, IEnumerable<DoorConnection> connections)
-        { ContentVersion = contentVersion; Rooms = rooms.ToList().AsReadOnly(); Connections = connections.ToList().AsReadOnly(); }
+        public DungeonManifest(string contentVersion, IEnumerable<PlacedRoom> rooms, IEnumerable<DoorConnection> connections, string generatorVersion = "branch-routing-v0.3")
+        { GeneratorVersion = generatorVersion; ContentVersion = contentVersion; Rooms = rooms.ToList().AsReadOnly(); Connections = connections.ToList().AsReadOnly(); }
     }
 
     public sealed class ValidationResult

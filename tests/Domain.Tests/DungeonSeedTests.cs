@@ -17,26 +17,26 @@ namespace LethalDungeon.Tests
         [TestCase(uint.MaxValue,1,306079645u)]
         public void SeedRuleHasStableGoldenMapping(uint seed,int loops,uint layout)
         {
-            var plan=SeededDungeon.Resolve(seed);
+            var plan=SeededDungeon.Resolve(seed,ruleVersion:"seed-rules-v1");
             Assert.That(plan.WorldSeed,Is.EqualTo(seed));Assert.That(plan.RuleVersion,Is.EqualTo("seed-rules-v1"));
             Assert.That(plan.LoopCount,Is.EqualTo(loops));Assert.That(plan.LayoutSeed,Is.EqualTo(layout));
         }
         // MAP-018
         [TestCase(3u,24)] [TestCase(0u,40)] [TestCase(1u,56)] [TestCase(4u,64)]
         public void RoomScaleMatchesSelectedLoopCount(uint seed,int rooms)
-        {Assert.That(SeededDungeon.Resolve(seed).TargetRooms,Is.EqualTo(rooms));}
+        {Assert.That(SeededDungeon.Resolve(seed,ruleVersion:"seed-rules-v1").TargetRooms,Is.EqualTo(rooms));}
         // MAP-019
         [TestCase(0)] [TestCase(100001)] public void InvalidBudgetRejected(int budget)
-        {Assert.Throws<ArgumentOutOfRangeException>(new Action(()=>SeededDungeon.Generate(1,budget)));}
+        {Assert.Throws<ArgumentOutOfRangeException>(new Action(()=>SeededDungeon.Generate(1,budget,ruleVersion:"seed-rules-v1")));}
         [Test] public void ExhaustionKeepsSeedPlanWithoutPartialMap()
         {
-            var result=SeededDungeon.Generate(4,1);
+            var result=SeededDungeon.Generate(4,1,ruleVersion:"seed-rules-v1");
             Assert.That(result.Plan.LoopCount,Is.EqualTo(4));Assert.That(result.Result.Layout.Manifest,Is.Null);
             Assert.That(result.Result.Loops,Is.Empty);Assert.That(result.Result.Layout.Attempts,Is.EqualTo(1));
         }
         [Test] public void FullResultIsReproducible()
         {
-            var a=SeededDungeon.Generate(4);var b=SeededDungeon.Generate(4);
+            var a=SeededDungeon.Generate(4,ruleVersion:"seed-rules-v1");var b=SeededDungeon.Generate(4,ruleVersion:"seed-rules-v1");
             Assert.That(a.Result.Layout.Succeeded,Is.True);
             Assert.That(JsonSerializer.Serialize(a),Is.EqualTo(JsonSerializer.Serialize(b)));
         }
@@ -44,7 +44,7 @@ namespace LethalDungeon.Tests
         {
             var counts=new Dictionary<int,int>();int retries=0,maxWork=0;
             for(uint seed=0;seed<100;seed++){
-                var result=SeededDungeon.Generate(seed);var plan=result.Plan;var generated=result.Result;
+                var result=SeededDungeon.Generate(seed,ruleVersion:"seed-rules-v1");var plan=result.Plan;var generated=result.Result;
                 Assert.That(generated.Layout.Succeeded,Is.True,$"seed {seed}, loops {plan.LoopCount}, {generated.Layout.Failure}");
                 Assert.That(generated.Loops.Count,Is.EqualTo(plan.LoopCount));
                 DungeonBranchLoopTests.Check(generated);

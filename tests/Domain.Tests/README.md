@@ -24,3 +24,5 @@ BackpackLoadTests、WorldClockTests、DungeonLayoutTests与DungeonLoopTests分�
 DungeonBranchLoopTests对应MAP-013～016，重建支线、连接段及完整图，逐边检查替代路径，防止统计大环却夹带小环捷径。批量用例输出dungeon-branch-loops.json与生成轨迹；此文件只由测试层写入。
 
 DungeonSeedTests覆盖MAP-017～019：固定黄金种子、0/uint边界、环数与房间规模、预算失败、完整复现和100种子验证；复用DungeonBranchLoopTests的图结构断言，确认全部环数模式保持长环。
+
+DungeonExplorationBranchTests覆盖MAP-020～023，共17用例：版本与配置边界、预算不足、失败无部分输出、保护ID、显式配置、确定性复现及100种子完整验收。对最终布局检查支路内部度数2、末端度数1、锚点在对应大环且互异；复用长环与几何检查。DungeonSeedTests显式使用seed-rules-v1，保留原预期。

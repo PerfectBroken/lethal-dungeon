@@ -7,12 +7,13 @@ namespace LethalDungeon.Domain.Dungeons
     public static class DungeonGenerator
     {
         public static GenerationResult Generate(RoomCatalog catalog, string rootModuleId, int targetRooms,
-            IRandomSource random, int maxAttempts = 3000, bool requireHeightChange = false, int minimumCycles = 0, string? cycleModuleId = null, DungeonManifest? initialLayout = null)
+            IRandomSource random, int maxAttempts = 3000, bool requireHeightChange = false, int minimumCycles = 0, string? cycleModuleId = null, DungeonManifest? initialLayout = null, IEnumerable<string>? protectedRoomIds = null, int maxRoomCount = 64)
         {
             if (minimumCycles < 0 || minimumCycles > 8) throw new ArgumentOutOfRangeException(nameof(minimumCycles));
             if (catalog == null) throw new ArgumentNullException(nameof(catalog));
             if (random == null) throw new ArgumentNullException(nameof(random));
-            if (targetRooms < 1 || targetRooms > 64) throw new ArgumentOutOfRangeException(nameof(targetRooms));
+            if (maxRoomCount < 1 || maxRoomCount > 128) throw new ArgumentOutOfRangeException(nameof(maxRoomCount));
+            if (targetRooms < 1 || targetRooms > maxRoomCount) throw new ArgumentOutOfRangeException(nameof(targetRooms));
             if (maxAttempts < 1 || maxAttempts > 100000) throw new ArgumentOutOfRangeException(nameof(maxAttempts));
             catalog.Get(rootModuleId);
             if (minimumCycles > 0)
@@ -25,8 +26,10 @@ namespace LethalDungeon.Domain.Dungeons
                 throw new ArgumentException("Invalid initial layout, root or target count.");
             var rooms = initialLayout == null ? new List<PlacedRoom> { new PlacedRoom("room_000",rootModuleId,new GridPoint(0,0,0)) } : initialLayout.Rooms.ToList();
             var links = initialLayout == null ? new List<DoorConnection>() : initialLayout.Connections.ToList();
+            var protectedRooms = new HashSet<string>(protectedRoomIds ?? Array.Empty<string>());
+            if (protectedRooms.Any(id => !rooms.Any(r => r.InstanceId == id))) throw new ArgumentException("Unknown protected room.");
             int attempts = 0, backtracks = 0;
-            DungeonManifest Snapshot() => new DungeonManifest(catalog.Version,rooms,links);
+            DungeonManifest Snapshot() => new DungeonManifest(catalog.Version,rooms,links,initialLayout?.GeneratorVersion ?? "branch-routing-v0.3");
             bool Search()
             {
                 if (rooms.Count == targetRooms)
@@ -37,7 +40,7 @@ namespace LethalDungeon.Domain.Dungeons
                 bool needsLoops = links.Count-rooms.Count+1 < minimumCycles;
                 var used = new HashSet<(string,string)>(links.SelectMany(c => new[] { (c.FromRoom,c.FromSocket),(c.ToRoom,c.ToSocket) }));
                 var candidates = new List<(PlacedRoom Parent,DoorSocket From,RoomDefinition Child,DoorSocket To)>();
-                foreach (var parent in rooms)
+                foreach (var parent in rooms.Where(r => !protectedRooms.Contains(r.InstanceId)))
                 foreach (var from in catalog.Get(parent.ModuleId).Sockets.OrderBy(s => s.Id,StringComparer.Ordinal))
                 {
                     if (used.Contains((parent.InstanceId,from.Id))) continue;
