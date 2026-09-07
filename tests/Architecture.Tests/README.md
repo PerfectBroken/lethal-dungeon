@@ -7,6 +7,8 @@ HARNESS-002：Domain没有包引用和项目引用；目标netstandard2.1、C# 9
 HARNESS-003：Domain程序集只依赖标准程序集；源代码不直接调用墙上时钟、IO、网络或引擎API。
 HARNESS-004：每个子模块规范ID在对应测试类文本中有映射；这只能验证映射存在，仍需人工审查断言意义。
 
+CI规范见 `.github/workflows/README.md`；CiWorkflowTests先验证workflow的触发、命令、权限和失败处理，再由GitHub实际运行验证平台兼容性。
+
 ## 接口与依赖
 
 测试读取工程内文档和项目文件并反射Domain程序集。只允许测试层依赖文件系统；生产层禁止。
