@@ -20,3 +20,5 @@ BackpackLoadTests、WorldClockTests、DungeonLayoutTests与DungeonLoopTests分�
 地图批量用例在所有断言通过后，将目录及6份实际布局导出为测试附件dungeon-preview.json，供预览使用；文件写入仅在测试宿主，不进入Domain。
 
 环路用例对应MAP-011/012，输出dungeon-loops.json；目录包含新增四向连接房，前6份布局供预览。新增10个用例先运行有效Red，再实现闭环与共享预算；最终结果见evidence/public-loops。
+
+DungeonBranchLoopTests对应MAP-013～016，重建支线、连接段及完整图，逐边检查替代路径，防止统计大环却夹带小环捷径。批量用例输出dungeon-branch-loops.json与生成轨迹；此文件只由测试层写入。

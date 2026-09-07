@@ -1,0 +1,48 @@
+<ns0:TestRun xmlns:ns0="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" id="b401e419-3c11-4e89-91af-f1f80cab286d" name="local-validation">
+  <ns0:Times creation="2026-09-07T16:01:18.7594830+09:00" queuing="2026-09-07T16:01:18.7594830+09:00" start="2026-09-07T16:01:18.2823660+09:00" finish="2026-09-07T16:01:18.7624290+09:00" />
+  <ns0:TestSettings name="default" id="53ab3f8a-1792-4012-a3dd-e9b0f585a4c6">
+    <ns0:Deployment runDeploymentRoot="local-validation" />
+  </ns0:TestSettings>
+  <ns0:Results>
+    <ns0:UnitTestResult executionId="de22ed01-d0cd-456f-8854-f71167a1110c" testId="712ab7f4-ac9f-b779-85bb-2fa0a5418865" testName="ExtensionRejectsInvalidSeedLayout" computerName="local-machine" duration="00:00:00.0180570" startTime="2026-09-07T16:01:18.6856120+09:00" endTime="2026-09-07T16:01:18.7036350+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="de22ed01-d0cd-456f-8854-f71167a1110c">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentException&gt;
+  But was:  &lt;System.NotImplementedException: The method or operation is not implemented.
+   at LethalDungeon.Domain.Dungeons.DungeonGenerator.Generate(RoomCatalog catalog, String rootModuleId, Int32 targetRooms, IRandomSource random, Int32 maxAttempts, Boolean requireHeightChange, Int32 minimumCycles, String cycleModuleId, DungeonManifest initialLayout) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/DungeonGenerator.cs:line 23
+   at LethalDungeon.Tests.DungeonBranchLoopTests.&lt;&gt;c__DisplayClass3_0.&lt;ExtensionRejectsInvalidSeedLayout&gt;b__0() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonBranchLoopTests.cs:line 63
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, Action code, String message, Object[] args)&gt;
+</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Tests.DungeonBranchLoopTests.ExtensionRejectsInvalidSeedLayout() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonBranchLoopTests.cs:line 63
+
+1)    at LethalDungeon.Tests.DungeonBranchLoopTests.ExtensionRejectsInvalidSeedLayout() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonBranchLoopTests.cs:line 63
+
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+  </ns0:Results>
+  <ns0:TestDefinitions>
+    <ns0:UnitTest name="ExtensionRejectsInvalidSeedLayout" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="712ab7f4-ac9f-b779-85bb-2fa0a5418865">
+      <ns0:Execution id="de22ed01-d0cd-456f-8854-f71167a1110c" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonBranchLoopTests" name="ExtensionRejectsInvalidSeedLayout" />
+    </ns0:UnitTest>
+  </ns0:TestDefinitions>
+  <ns0:TestEntries>
+    <ns0:TestEntry testId="712ab7f4-ac9f-b779-85bb-2fa0a5418865" executionId="de22ed01-d0cd-456f-8854-f71167a1110c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </ns0:TestEntries>
+  <ns0:TestLists>
+    <ns0:TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </ns0:TestLists>
+  <ns0:ResultSummary outcome="Failed">
+    <ns0:Counters total="1" executed="1" passed="0" failed="1" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <ns0:Output>
+      <ns0:StdOut>NUnit Adapter 6.3.0.0: Test execution started
+Running selected tests in /workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll
+   NUnit3TestExecutor discovered 1 of 1 NUnit test cases using Current Discovery mode, Non-Explicit run
+</ns0:StdOut>
+    </ns0:Output>
+  </ns0:ResultSummary>
+</ns0:TestRun>

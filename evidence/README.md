@@ -69,3 +69,12 @@ public-red是实际Red报告的脱敏副本：本机工程绝对路径替换为`
 - 批量100种子，全部18房间且具有2个独立环路、跨层连接；最少4房间成环、完整几何与图校验通过。最高尝试39次。前6份真实输出为docs/examples/loop-layouts.json。
 - 最终Release：102个规则测试和14个规范检查通过，0跳过，退出码0；报告为public-loops/domain-green.trx、architecture-green.trx。命令dotnet test LethalDungeon.sln --no-restore -c Release --logger 'trx;LogFilePrefix=loops-final' --results-directory <本地报告目录>。
 - 公开报告按此前方式脱敏。预览脚本语法检查通过；未重复尝试此前被浏览器安全策略拒绝的本地预览动作，未声称完成浏览器视觉实测。引擎、导航、网络、微信真机和CI云端执行状态不变。
+
+## 长支线末端连接（2026-09-07）
+
+- 用户否定局部四房间环，规范新增MAP-013～016，BranchLoopGenerator改为先生成两条长支线、再在空闲格中BFS路由连接段。原局部环算法仅保留兼容和历史样例。
+- 先行6个新用例全部因NotImplementedException有效失败（branches-red.trx）；初始清单扩展参数另有1个有效Red（extension-red.trx）。随后发现非默认初始ID与自动命名冲突，补1个测试确认失败后修复（extension-ids-red.trx）。8个新增用例通过。
+- 100种子均通过：40房间、两个长环、跨层连接、支线叶端与深度、连接段、完整几何及逐边替代路径检查。全图最短环不少于11房间；最高8374次尝试，预算10000。前6份实际输出与轨迹为docs/examples/branch-loop-layouts.json。
+- Release回归110个规则测试通过，0跳过（domain-green.trx）。规范检查首次发现测试注释缩写MAP-013/015没有完整列出MAP-015；补全文字映射后14个规范检查通过（architecture-green.trx），没有放宽检查。
+- 执行命令：dotnet test LethalDungeon.sln --no-restore -c Release --logger 'trx;LogFilePrefix=branches-final' --results-directory <本地报告目录>；修正文档映射后单独重跑Architecture.Tests。SDK与脱敏策略同前。
+- 新预览脚本通过node --check；未绕过此前浏览器URL安全策略，未声称完成浏览器视觉实测。真实素材、引擎导航、跨层长环、微信及云端CI没有新增验收结果。

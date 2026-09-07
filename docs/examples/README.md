@@ -7,3 +7,5 @@ prototype-layouts.json由DungeonLayoutTests.OneHundredSeedsProduceValidMultiLeve
 重新生成：运行Domain.Tests，将测试输出目录的dungeon-preview.json复制到此处。样例用于审阅；不是正式网络序列化协议，也不包含真实模型或导航。参数与契约见src/Domain/DungeonLayout/README.md。
 
 loop-layouts.json为v0.2环路目录和6份18房间清单；来自DungeonLoopTests批量用例，使用minimumCycles=2、cycleModuleId=junction、requireHeightChange=true、预算10000。每张为19条连接，独立环路数E−V+1=2。loop_前缀标记生成时用于闭环的连接，其物理表示仍与普通门相同，不是单向门或传送。旧prototype-layouts.json保留旧版本结果作为历史样例。
+
+branch-loop-layouts.json为最新长支线模式：6份40房间、2大环样例。Loops轨迹标明ForkRoom、BranchA、BranchB、Bridge及ClosingConnection，可检查连接前的两条叶端支线及连接后的大环。新主预览使用此文件，原loop-layouts.json保留作四房间小环历史对照。

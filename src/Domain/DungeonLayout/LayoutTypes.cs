@@ -134,7 +134,7 @@ namespace LethalDungeon.Domain.Dungeons
 
     public sealed class DungeonManifest
     {
-        public string GeneratorVersion => "socket-graph-v0.2";
+        public string GeneratorVersion => "branch-routing-v0.3";
         public string ContentVersion { get; }
         public decimal MetresPerUnit => 0.5m;
         public ReadOnlyCollection<PlacedRoom> Rooms { get; }

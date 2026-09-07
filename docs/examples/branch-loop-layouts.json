@@ -1,0 +1,5264 @@
+{
+  "Catalog": {
+    "Version": "prototype-rooms-v0.2",
+    "Rooms": [
+      {
+        "Id": "entry",
+        "Name": "\u5165\u53E3\u623F",
+        "Boxes": [
+          {
+            "Min": {
+              "X": -8,
+              "Y": 0,
+              "Z": -8
+            },
+            "Max": {
+              "X": 8,
+              "Y": 8,
+              "Z": 8
+            }
+          }
+        ],
+        "Sockets": [
+          {
+            "Id": "north_01",
+            "Position": {
+              "X": -4,
+              "Y": 0,
+              "Z": 8
+            },
+            "Facing": 0,
+            "Width": 4,
+            "Height": 6,
+            "Kind": "standard"
+          },
+          {
+            "Id": "north_02",
+            "Position": {
+              "X": 4,
+              "Y": 0,
+              "Z": 8
+            },
+            "Facing": 0,
+            "Width": 4,
+            "Height": 6,
+            "Kind": "standard"
+          },
+          {
+            "Id": "east",
+            "Position": {
+              "X": 8,
+              "Y": 0,
+              "Z": 0
+            },
+            "Facing": 1,
+            "Width": 4,
+            "Height": 6,
+            "Kind": "standard"
+          },
+          {
+            "Id": "south",
+            "Position": {
+              "X": 0,
+              "Y": 0,
+              "Z": -8
+            },
+            "Facing": 2,
+            "Width": 4,
+            "Height": 6,
+            "Kind": "standard"
+          },
+          {
+            "Id": "west",
+            "Position": {
+              "X": -8,
+              "Y": 0,
+              "Z": 0
+            },
+            "Facing": 3,
+            "Width": 4,
+            "Height": 6,
+            "Kind": "standard"
+          }
+        ],
+        "IsRootOnly": true
+      },
+      {
+        "Id": "hall",
+        "Name": "\u5927\u5385",
+        "Boxes": [
+          {
+            "Min": {
+              "X": -12,
+              "Y": 0,
+              "Z": -10
+            },
+            "Max": {
+              "X": 12,
+              "Y": 8,
+              "Z": 10
+            }
+          }
+        ],
+        "Sockets": [
+          {
+            "Id": "north_01",
+            "Position": {
+              "X": -6,
+              "Y": 0,
+              "Z": 10
+            },
+            "Facing": 0,
+            "Width": 4,
+            "Height": 6,
+            "Kind": "standard"
+          },
+          {
+            "Id": "north_02",
+            "Position": {
+              "X": 6,
+              "Y": 0,
+              "Z": 10
+            },
+            "Facing": 0,
+            "Width": 4,
+            "Height": 6,
+            "Kind": "standard"
+          },
+          {
+            "Id": "east_01",
+            "Position": {
+              "X": 12,
+              "Y": 0,
+              "Z": -4
+            },
+            "Facing": 1,
+            "Width": 4,
+            "Height": 6,
+            "Kind": "standard"
+          },
+          {
+            "Id": "east_02",
+            "Position": {
+              "X": 12,
+              "Y": 0,
+              "Z": 4
+            },
+            "Facing": 1,
+            "Width": 4,
+            "Height": 6,
+            "Kind": "standard"
+          },
+          {
+            "Id": "south_01",
+            "Position": {
+              "X": -6,
+              "Y": 0,
+              "Z": -10
+            },
+            "Facing": 2,
+            "Width": 4,
+            "Height": 6,
+            "Kind": "standard"
+          },
+          {
+            "Id": "south_02",
+            "Position": {
+              "X": 6,
+              "Y": 0,
+              "Z": -10
+            },
+            "Facing": 2,
+            "Width": 4,
+            "Height": 6,
+            "Kind": "standard"
+          },
+          {
+            "Id": "west_01",
+            "Position": {
+              "X": -12,
+              "Y": 0,
+              "Z": -4
+            },
+            "Facing": 3,
+            "Width": 4,
+            "Height": 6,
+            "Kind": "standard"
+          },
+          {
+            "Id": "west_02",
+            "Position": {
+              "X": -12,
+              "Y": 0,
+              "Z": 4
+            },
+            "Facing": 3,
+            "Width": 4,
+            "Height": 6,
+            "Kind": "standard"
+          }
+        ],
+        "IsRootOnly": false
+      },
+      {
+        "Id": "corridor",
+        "Name": "\u76F4\u8D70\u5ECA",
+        "Boxes": [
+          {
+            "Min": {
+              "X": -3,
+              "Y": 0,
+              "Z": -8
+            },
+            "Max": {
+              "X": 3,
+              "Y": 8,
+              "Z": 8
+            }
+          }
+        ],
+        "Sockets": [
+          {
+            "Id": "north",
+            "Position": {
+              "X": 0,
+              "Y": 0,
+              "Z": 8
+            },
+            "Facing": 0,
+            "Width": 4,
+            "Height": 6,
+            "Kind": "standard"
+          },
+          {
+            "Id": "south",
+            "Position": {
+              "X": 0,
+              "Y": 0,
+              "Z": -8
+            },
+            "Facing": 2,
+            "Width": 4,
+            "Height": 6,
+            "Kind": "standard"
+          }
+        ],
+        "IsRootOnly": false
+      },
+      {
+        "Id": "elbow",
+        "Name": "L\u5F62\u623F",
+        "Boxes": [
+          {
+            "Min": {
+              "X": -8,
+              "Y": 0,
+              "Z": -8
+            },
+            "Max": {
+              "X": 0,
+              "Y": 8,
+              "Z": 8
+            }
+          },
+          {
+            "Min": {
+              "X": 0,
+              "Y": 0,
+              "Z": -8
+            },
+            "Max": {
+              "X": 8,
+              "Y": 8,
+              "Z": 0
+            }
+          }
+        ],
+        "Sockets": [
+          {
+            "Id": "north",
+            "Position": {
+              "X": -4,
+              "Y": 0,
+              "Z": 8
+            },
+            "Facing": 0,
+            "Width": 4,
+            "Height": 6,
+            "Kind": "standard"
+          },
+          {
+            "Id": "east",
+            "Position": {
+              "X": 8,
+              "Y": 0,
+              "Z": -4
+            },
+            "Facing": 1,
+            "Width": 4,
+            "Height": 6,
+            "Kind": "standard"
+          },
+          {
+            "Id": "south",
+            "Position": {
+              "X": 0,
+              "Y": 0,
+              "Z": -8
+            },
+            "Facing": 2,
+            "Width": 4,
+            "Height": 6,
+            "Kind": "standard"
+          },
+          {
+            "Id": "west",
+            "Position": {
+              "X": -8,
+              "Y": 0,
+              "Z": 0
+            },
+            "Facing": 3,
+            "Width": 4,
+            "Height": 6,
+            "Kind": "standard"
+          }
+        ],
+        "IsRootOnly": false
+      },
+      {
+        "Id": "stairs",
+        "Name": "\u697C\u68AF\u95F4",
+        "Boxes": [
+          {
+            "Min": {
+              "X": -4,
+              "Y": 0,
+              "Z": -10
+            },
+            "Max": {
+              "X": 4,
+              "Y": 16,
+              "Z": 10
+            }
+          }
+        ],
+        "Sockets": [
+          {
+            "Id": "lower",
+            "Position": {
+              "X": 0,
+              "Y": 0,
+              "Z": -10
+            },
+            "Facing": 2,
+            "Width": 4,
+            "Height": 6,
+            "Kind": "standard"
+          },
+          {
+            "Id": "upper",
+            "Position": {
+              "X": 0,
+              "Y": 8,
+              "Z": 10
+            },
+            "Facing": 0,
+            "Width": 4,
+            "Height": 6,
+            "Kind": "standard"
+          }
+        ],
+        "IsRootOnly": false
+      },
+      {
+        "Id": "ramp",
+        "Name": "\u5761\u9053\u95F4",
+        "Boxes": [
+          {
+            "Min": {
+              "X": -4,
+              "Y": 0,
+              "Z": -16
+            },
+            "Max": {
+              "X": 4,
+              "Y": 16,
+              "Z": 16
+            }
+          }
+        ],
+        "Sockets": [
+          {
+            "Id": "lower",
+            "Position": {
+              "X": 0,
+              "Y": 0,
+              "Z": -16
+            },
+            "Facing": 2,
+            "Width": 4,
+            "Height": 6,
+            "Kind": "standard"
+          },
+          {
+            "Id": "upper",
+            "Position": {
+              "X": 0,
+              "Y": 8,
+              "Z": 16
+            },
+            "Facing": 0,
+            "Width": 4,
+            "Height": 6,
+            "Kind": "standard"
+          }
+        ],
+        "IsRootOnly": false
+      },
+      {
+        "Id": "junction",
+        "Name": "\u56DB\u5411\u8FDE\u63A5\u623F",
+        "Boxes": [
+          {
+            "Min": {
+              "X": -8,
+              "Y": 0,
+              "Z": -8
+            },
+            "Max": {
+              "X": 8,
+              "Y": 8,
+              "Z": 8
+            }
+          }
+        ],
+        "Sockets": [
+          {
+            "Id": "north",
+            "Position": {
+              "X": 0,
+              "Y": 0,
+              "Z": 8
+            },
+            "Facing": 0,
+            "Width": 4,
+            "Height": 6,
+            "Kind": "standard"
+          },
+          {
+            "Id": "east",
+            "Position": {
+              "X": 8,
+              "Y": 0,
+              "Z": 0
+            },
+            "Facing": 1,
+            "Width": 4,
+            "Height": 6,
+            "Kind": "standard"
+          },
+          {
+            "Id": "south",
+            "Position": {
+              "X": 0,
+              "Y": 0,
+              "Z": -8
+            },
+            "Facing": 2,
+            "Width": 4,
+            "Height": 6,
+            "Kind": "standard"
+          },
+          {
+            "Id": "west",
+            "Position": {
+              "X": -8,
+              "Y": 0,
+              "Z": 0
+            },
+            "Facing": 3,
+            "Width": 4,
+            "Height": 6,
+            "Kind": "standard"
+          }
+        ],
+        "IsRootOnly": false
+      }
+    ]
+  },
+  "Examples": [
+    {
+      "Seed": 1,
+      "Manifest": {
+        "GeneratorVersion": "branch-routing-v0.3",
+        "ContentVersion": "prototype-rooms-v0.2",
+        "MetresPerUnit": 0.5,
+        "Rooms": [
+          {
+            "InstanceId": "room_000",
+            "ModuleId": "entry",
+            "Position": {
+              "X": 0,
+              "Y": 0,
+              "Z": 0
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_001",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 16,
+              "Y": 0,
+              "Z": 0
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_002",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 16,
+              "Y": 0,
+              "Z": 16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_003",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 32,
+              "Y": 0,
+              "Z": 16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_004",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 32,
+              "Y": 0,
+              "Z": 32
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_005",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 32,
+              "Y": 0,
+              "Z": 48
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_006",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 16,
+              "Y": 0,
+              "Z": 48
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_007",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 16,
+              "Y": 0,
+              "Z": -16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_008",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 16,
+              "Y": 0,
+              "Z": -32
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_009",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 0,
+              "Y": 0,
+              "Z": -32
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_010",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 0,
+              "Y": 0,
+              "Z": -48
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_011",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 16,
+              "Y": 0,
+              "Z": 32
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_012",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 0,
+              "Y": 0,
+              "Z": 32
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_013",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 0,
+              "Y": 0,
+              "Z": 16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_014",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -16,
+              "Y": 0,
+              "Z": 16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_015",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -16,
+              "Y": 0,
+              "Z": 0
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_016",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -16,
+              "Y": 0,
+              "Z": -16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_017",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -16,
+              "Y": 0,
+              "Z": -32
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_018",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -16,
+              "Y": 0,
+              "Z": -48
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_019",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 48,
+              "Y": 0,
+              "Z": 48
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_020",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 64,
+              "Y": 0,
+              "Z": 48
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_021",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 64,
+              "Y": 0,
+              "Z": 32
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_022",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 64,
+              "Y": 0,
+              "Z": 16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_023",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 80,
+              "Y": 0,
+              "Z": 16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_024",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 48,
+              "Y": 0,
+              "Z": 64
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_025",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 48,
+              "Y": 0,
+              "Z": 80
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_026",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 32,
+              "Y": 0,
+              "Z": 80
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_027",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 16,
+              "Y": 0,
+              "Z": 80
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_028",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 80,
+              "Y": 0,
+              "Z": 32
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_029",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 80,
+              "Y": 0,
+              "Z": 48
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_030",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 80,
+              "Y": 0,
+              "Z": 64
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_031",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 80,
+              "Y": 0,
+              "Z": 80
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_032",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 80,
+              "Y": 0,
+              "Z": 96
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_033",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 64,
+              "Y": 0,
+              "Z": 96
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_034",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 48,
+              "Y": 0,
+              "Z": 96
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_035",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 32,
+              "Y": 0,
+              "Z": 96
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_036",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 16,
+              "Y": 0,
+              "Z": 96
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_037",
+            "ModuleId": "ramp",
+            "Position": {
+              "X": 0,
+              "Y": 0,
+              "Z": -72
+            },
+            "QuarterTurns": 2
+          },
+          {
+            "InstanceId": "room_038",
+            "ModuleId": "elbow",
+            "Position": {
+              "X": 0,
+              "Y": 8,
+              "Z": -96
+            },
+            "QuarterTurns": 2
+          },
+          {
+            "InstanceId": "room_039",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 0,
+              "Y": 0,
+              "Z": -16
+            },
+            "QuarterTurns": 0
+          }
+        ],
+        "Connections": [
+          {
+            "Id": "connection_001",
+            "FromRoom": "room_000",
+            "FromSocket": "east",
+            "ToRoom": "room_001",
+            "ToSocket": "west",
+            "DoorId": "door_001"
+          },
+          {
+            "Id": "connection_002",
+            "FromRoom": "room_001",
+            "FromSocket": "north",
+            "ToRoom": "room_002",
+            "ToSocket": "south",
+            "DoorId": "door_002"
+          },
+          {
+            "Id": "connection_003",
+            "FromRoom": "room_002",
+            "FromSocket": "east",
+            "ToRoom": "room_003",
+            "ToSocket": "west",
+            "DoorId": "door_003"
+          },
+          {
+            "Id": "connection_004",
+            "FromRoom": "room_003",
+            "FromSocket": "north",
+            "ToRoom": "room_004",
+            "ToSocket": "south",
+            "DoorId": "door_004"
+          },
+          {
+            "Id": "connection_005",
+            "FromRoom": "room_004",
+            "FromSocket": "north",
+            "ToRoom": "room_005",
+            "ToSocket": "south",
+            "DoorId": "door_005"
+          },
+          {
+            "Id": "connection_006",
+            "FromRoom": "room_005",
+            "FromSocket": "west",
+            "ToRoom": "room_006",
+            "ToSocket": "east",
+            "DoorId": "door_006"
+          },
+          {
+            "Id": "connection_007",
+            "FromRoom": "room_001",
+            "FromSocket": "south",
+            "ToRoom": "room_007",
+            "ToSocket": "north",
+            "DoorId": "door_007"
+          },
+          {
+            "Id": "connection_008",
+            "FromRoom": "room_007",
+            "FromSocket": "south",
+            "ToRoom": "room_008",
+            "ToSocket": "north",
+            "DoorId": "door_008"
+          },
+          {
+            "Id": "connection_009",
+            "FromRoom": "room_008",
+            "FromSocket": "west",
+            "ToRoom": "room_009",
+            "ToSocket": "east",
+            "DoorId": "door_009"
+          },
+          {
+            "Id": "connection_010",
+            "FromRoom": "room_009",
+            "FromSocket": "south",
+            "ToRoom": "room_010",
+            "ToSocket": "north",
+            "DoorId": "door_010"
+          },
+          {
+            "Id": "connection_011",
+            "FromRoom": "room_006",
+            "FromSocket": "south",
+            "ToRoom": "room_011",
+            "ToSocket": "north",
+            "DoorId": "door_011"
+          },
+          {
+            "Id": "connection_012",
+            "FromRoom": "room_011",
+            "FromSocket": "west",
+            "ToRoom": "room_012",
+            "ToSocket": "east",
+            "DoorId": "door_012"
+          },
+          {
+            "Id": "connection_013",
+            "FromRoom": "room_012",
+            "FromSocket": "south",
+            "ToRoom": "room_013",
+            "ToSocket": "north",
+            "DoorId": "door_013"
+          },
+          {
+            "Id": "connection_014",
+            "FromRoom": "room_013",
+            "FromSocket": "west",
+            "ToRoom": "room_014",
+            "ToSocket": "east",
+            "DoorId": "door_014"
+          },
+          {
+            "Id": "connection_015",
+            "FromRoom": "room_014",
+            "FromSocket": "south",
+            "ToRoom": "room_015",
+            "ToSocket": "north",
+            "DoorId": "door_015"
+          },
+          {
+            "Id": "connection_016",
+            "FromRoom": "room_015",
+            "FromSocket": "south",
+            "ToRoom": "room_016",
+            "ToSocket": "north",
+            "DoorId": "door_016"
+          },
+          {
+            "Id": "connection_017",
+            "FromRoom": "room_016",
+            "FromSocket": "south",
+            "ToRoom": "room_017",
+            "ToSocket": "north",
+            "DoorId": "door_017"
+          },
+          {
+            "Id": "connection_018",
+            "FromRoom": "room_017",
+            "FromSocket": "south",
+            "ToRoom": "room_018",
+            "ToSocket": "north",
+            "DoorId": "door_018"
+          },
+          {
+            "Id": "loop_branch_0",
+            "FromRoom": "room_018",
+            "FromSocket": "east",
+            "ToRoom": "room_010",
+            "ToSocket": "west",
+            "DoorId": "door_loop_branch_0"
+          },
+          {
+            "Id": "connection_019",
+            "FromRoom": "room_005",
+            "FromSocket": "east",
+            "ToRoom": "room_019",
+            "ToSocket": "west",
+            "DoorId": "door_019"
+          },
+          {
+            "Id": "connection_020",
+            "FromRoom": "room_019",
+            "FromSocket": "east",
+            "ToRoom": "room_020",
+            "ToSocket": "west",
+            "DoorId": "door_020"
+          },
+          {
+            "Id": "connection_021",
+            "FromRoom": "room_020",
+            "FromSocket": "south",
+            "ToRoom": "room_021",
+            "ToSocket": "north",
+            "DoorId": "door_021"
+          },
+          {
+            "Id": "connection_022",
+            "FromRoom": "room_021",
+            "FromSocket": "south",
+            "ToRoom": "room_022",
+            "ToSocket": "north",
+            "DoorId": "door_022"
+          },
+          {
+            "Id": "connection_023",
+            "FromRoom": "room_022",
+            "FromSocket": "east",
+            "ToRoom": "room_023",
+            "ToSocket": "west",
+            "DoorId": "door_023"
+          },
+          {
+            "Id": "connection_024",
+            "FromRoom": "room_019",
+            "FromSocket": "north",
+            "ToRoom": "room_024",
+            "ToSocket": "south",
+            "DoorId": "door_024"
+          },
+          {
+            "Id": "connection_025",
+            "FromRoom": "room_024",
+            "FromSocket": "north",
+            "ToRoom": "room_025",
+            "ToSocket": "south",
+            "DoorId": "door_025"
+          },
+          {
+            "Id": "connection_026",
+            "FromRoom": "room_025",
+            "FromSocket": "west",
+            "ToRoom": "room_026",
+            "ToSocket": "east",
+            "DoorId": "door_026"
+          },
+          {
+            "Id": "connection_027",
+            "FromRoom": "room_026",
+            "FromSocket": "west",
+            "ToRoom": "room_027",
+            "ToSocket": "east",
+            "DoorId": "door_027"
+          },
+          {
+            "Id": "connection_028",
+            "FromRoom": "room_023",
+            "FromSocket": "north",
+            "ToRoom": "room_028",
+            "ToSocket": "south",
+            "DoorId": "door_028"
+          },
+          {
+            "Id": "connection_029",
+            "FromRoom": "room_028",
+            "FromSocket": "north",
+            "ToRoom": "room_029",
+            "ToSocket": "south",
+            "DoorId": "door_029"
+          },
+          {
+            "Id": "connection_030",
+            "FromRoom": "room_029",
+            "FromSocket": "north",
+            "ToRoom": "room_030",
+            "ToSocket": "south",
+            "DoorId": "door_030"
+          },
+          {
+            "Id": "connection_031",
+            "FromRoom": "room_030",
+            "FromSocket": "north",
+            "ToRoom": "room_031",
+            "ToSocket": "south",
+            "DoorId": "door_031"
+          },
+          {
+            "Id": "connection_032",
+            "FromRoom": "room_031",
+            "FromSocket": "north",
+            "ToRoom": "room_032",
+            "ToSocket": "south",
+            "DoorId": "door_032"
+          },
+          {
+            "Id": "connection_033",
+            "FromRoom": "room_032",
+            "FromSocket": "west",
+            "ToRoom": "room_033",
+            "ToSocket": "east",
+            "DoorId": "door_033"
+          },
+          {
+            "Id": "connection_034",
+            "FromRoom": "room_033",
+            "FromSocket": "west",
+            "ToRoom": "room_034",
+            "ToSocket": "east",
+            "DoorId": "door_034"
+          },
+          {
+            "Id": "connection_035",
+            "FromRoom": "room_034",
+            "FromSocket": "west",
+            "ToRoom": "room_035",
+            "ToSocket": "east",
+            "DoorId": "door_035"
+          },
+          {
+            "Id": "connection_036",
+            "FromRoom": "room_035",
+            "FromSocket": "west",
+            "ToRoom": "room_036",
+            "ToSocket": "east",
+            "DoorId": "door_036"
+          },
+          {
+            "Id": "loop_branch_1",
+            "FromRoom": "room_036",
+            "FromSocket": "south",
+            "ToRoom": "room_027",
+            "ToSocket": "north",
+            "DoorId": "door_loop_branch_1"
+          },
+          {
+            "Id": "connection_037",
+            "FromRoom": "room_010",
+            "FromSocket": "south",
+            "ToRoom": "room_037",
+            "ToSocket": "lower",
+            "DoorId": "door_037"
+          },
+          {
+            "Id": "connection_038",
+            "FromRoom": "room_037",
+            "FromSocket": "upper",
+            "ToRoom": "room_038",
+            "ToSocket": "south",
+            "DoorId": "door_038"
+          },
+          {
+            "Id": "connection_039",
+            "FromRoom": "room_009",
+            "FromSocket": "north",
+            "ToRoom": "room_039",
+            "ToSocket": "south",
+            "DoorId": "door_039"
+          }
+        ]
+      },
+      "Loops": [
+        {
+          "ForkRoom": "room_001",
+          "BranchA": [
+            "room_002",
+            "room_003",
+            "room_004",
+            "room_005",
+            "room_006"
+          ],
+          "BranchB": [
+            "room_007",
+            "room_008",
+            "room_009",
+            "room_010"
+          ],
+          "Bridge": [
+            "room_011",
+            "room_012",
+            "room_013",
+            "room_014",
+            "room_015",
+            "room_016",
+            "room_017",
+            "room_018"
+          ],
+          "ClosingConnection": "loop_branch_0"
+        },
+        {
+          "ForkRoom": "room_019",
+          "BranchA": [
+            "room_020",
+            "room_021",
+            "room_022",
+            "room_023"
+          ],
+          "BranchB": [
+            "room_024",
+            "room_025",
+            "room_026",
+            "room_027"
+          ],
+          "Bridge": [
+            "room_028",
+            "room_029",
+            "room_030",
+            "room_031",
+            "room_032",
+            "room_033",
+            "room_034",
+            "room_035",
+            "room_036"
+          ],
+          "ClosingConnection": "loop_branch_1"
+        }
+      ],
+      "Attempts": 427
+    },
+    {
+      "Seed": 2,
+      "Manifest": {
+        "GeneratorVersion": "branch-routing-v0.3",
+        "ContentVersion": "prototype-rooms-v0.2",
+        "MetresPerUnit": 0.5,
+        "Rooms": [
+          {
+            "InstanceId": "room_000",
+            "ModuleId": "entry",
+            "Position": {
+              "X": 0,
+              "Y": 0,
+              "Z": 0
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_001",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 16,
+              "Y": 0,
+              "Z": 0
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_002",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 16,
+              "Y": 0,
+              "Z": 16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_003",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 16,
+              "Y": 0,
+              "Z": 32
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_004",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 32,
+              "Y": 0,
+              "Z": 32
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_005",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 32,
+              "Y": 0,
+              "Z": 48
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_006",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 32,
+              "Y": 0,
+              "Z": 0
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_007",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 32,
+              "Y": 0,
+              "Z": -16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_008",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 48,
+              "Y": 0,
+              "Z": -16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_009",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 64,
+              "Y": 0,
+              "Z": -16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_010",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 64,
+              "Y": 0,
+              "Z": 0
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_011",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 64,
+              "Y": 0,
+              "Z": 16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_012",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 48,
+              "Y": 0,
+              "Z": 48
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_013",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 64,
+              "Y": 0,
+              "Z": 48
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_014",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 64,
+              "Y": 0,
+              "Z": 32
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_015",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 0,
+              "Y": 0,
+              "Z": 32
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_016",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 0,
+              "Y": 0,
+              "Z": 48
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_017",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 0,
+              "Y": 0,
+              "Z": 64
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_018",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -16,
+              "Y": 0,
+              "Z": 64
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_019",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -32,
+              "Y": 0,
+              "Z": 64
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_020",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -16,
+              "Y": 0,
+              "Z": 32
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_021",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -16,
+              "Y": 0,
+              "Z": 16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_022",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -32,
+              "Y": 0,
+              "Z": 16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_023",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -32,
+              "Y": 0,
+              "Z": 0
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_024",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -48,
+              "Y": 0,
+              "Z": 0
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_025",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -64,
+              "Y": 0,
+              "Z": 0
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_026",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -48,
+              "Y": 0,
+              "Z": 64
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_027",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -64,
+              "Y": 0,
+              "Z": 64
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_028",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -64,
+              "Y": 0,
+              "Z": 48
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_029",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -64,
+              "Y": 0,
+              "Z": 32
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_030",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -64,
+              "Y": 0,
+              "Z": 16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_031",
+            "ModuleId": "stairs",
+            "Position": {
+              "X": -32,
+              "Y": 0,
+              "Z": 82
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_032",
+            "ModuleId": "hall",
+            "Position": {
+              "X": -82,
+              "Y": 0,
+              "Z": 22
+            },
+            "QuarterTurns": 1
+          },
+          {
+            "InstanceId": "room_033",
+            "ModuleId": "elbow",
+            "Position": {
+              "X": 0,
+              "Y": 0,
+              "Z": 16
+            },
+            "QuarterTurns": 2
+          },
+          {
+            "InstanceId": "room_034",
+            "ModuleId": "hall",
+            "Position": {
+              "X": 42,
+              "Y": 0,
+              "Z": 66
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_035",
+            "ModuleId": "ramp",
+            "Position": {
+              "X": -48,
+              "Y": 0,
+              "Z": -24
+            },
+            "QuarterTurns": 2
+          },
+          {
+            "InstanceId": "room_036",
+            "ModuleId": "stairs",
+            "Position": {
+              "X": 48,
+              "Y": -8,
+              "Z": 86
+            },
+            "QuarterTurns": 2
+          },
+          {
+            "InstanceId": "room_037",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -32,
+              "Y": 0,
+              "Z": 32
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_038",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -48,
+              "Y": 8,
+              "Z": -48
+            },
+            "QuarterTurns": 3
+          },
+          {
+            "InstanceId": "room_039",
+            "ModuleId": "hall",
+            "Position": {
+              "X": -12,
+              "Y": 0,
+              "Z": 84
+            },
+            "QuarterTurns": 1
+          }
+        ],
+        "Connections": [
+          {
+            "Id": "connection_001",
+            "FromRoom": "room_000",
+            "FromSocket": "east",
+            "ToRoom": "room_001",
+            "ToSocket": "west",
+            "DoorId": "door_001"
+          },
+          {
+            "Id": "connection_002",
+            "FromRoom": "room_001",
+            "FromSocket": "north",
+            "ToRoom": "room_002",
+            "ToSocket": "south",
+            "DoorId": "door_002"
+          },
+          {
+            "Id": "connection_003",
+            "FromRoom": "room_002",
+            "FromSocket": "north",
+            "ToRoom": "room_003",
+            "ToSocket": "south",
+            "DoorId": "door_003"
+          },
+          {
+            "Id": "connection_004",
+            "FromRoom": "room_003",
+            "FromSocket": "east",
+            "ToRoom": "room_004",
+            "ToSocket": "west",
+            "DoorId": "door_004"
+          },
+          {
+            "Id": "connection_005",
+            "FromRoom": "room_004",
+            "FromSocket": "north",
+            "ToRoom": "room_005",
+            "ToSocket": "south",
+            "DoorId": "door_005"
+          },
+          {
+            "Id": "connection_006",
+            "FromRoom": "room_001",
+            "FromSocket": "east",
+            "ToRoom": "room_006",
+            "ToSocket": "west",
+            "DoorId": "door_006"
+          },
+          {
+            "Id": "connection_007",
+            "FromRoom": "room_006",
+            "FromSocket": "south",
+            "ToRoom": "room_007",
+            "ToSocket": "north",
+            "DoorId": "door_007"
+          },
+          {
+            "Id": "connection_008",
+            "FromRoom": "room_007",
+            "FromSocket": "east",
+            "ToRoom": "room_008",
+            "ToSocket": "west",
+            "DoorId": "door_008"
+          },
+          {
+            "Id": "connection_009",
+            "FromRoom": "room_008",
+            "FromSocket": "east",
+            "ToRoom": "room_009",
+            "ToSocket": "west",
+            "DoorId": "door_009"
+          },
+          {
+            "Id": "connection_010",
+            "FromRoom": "room_009",
+            "FromSocket": "north",
+            "ToRoom": "room_010",
+            "ToSocket": "south",
+            "DoorId": "door_010"
+          },
+          {
+            "Id": "connection_011",
+            "FromRoom": "room_010",
+            "FromSocket": "north",
+            "ToRoom": "room_011",
+            "ToSocket": "south",
+            "DoorId": "door_011"
+          },
+          {
+            "Id": "connection_012",
+            "FromRoom": "room_005",
+            "FromSocket": "east",
+            "ToRoom": "room_012",
+            "ToSocket": "west",
+            "DoorId": "door_012"
+          },
+          {
+            "Id": "connection_013",
+            "FromRoom": "room_012",
+            "FromSocket": "east",
+            "ToRoom": "room_013",
+            "ToSocket": "west",
+            "DoorId": "door_013"
+          },
+          {
+            "Id": "connection_014",
+            "FromRoom": "room_013",
+            "FromSocket": "south",
+            "ToRoom": "room_014",
+            "ToSocket": "north",
+            "DoorId": "door_014"
+          },
+          {
+            "Id": "loop_branch_0",
+            "FromRoom": "room_014",
+            "FromSocket": "south",
+            "ToRoom": "room_011",
+            "ToSocket": "north",
+            "DoorId": "door_loop_branch_0"
+          },
+          {
+            "Id": "connection_015",
+            "FromRoom": "room_003",
+            "FromSocket": "west",
+            "ToRoom": "room_015",
+            "ToSocket": "east",
+            "DoorId": "door_015"
+          },
+          {
+            "Id": "connection_016",
+            "FromRoom": "room_015",
+            "FromSocket": "north",
+            "ToRoom": "room_016",
+            "ToSocket": "south",
+            "DoorId": "door_016"
+          },
+          {
+            "Id": "connection_017",
+            "FromRoom": "room_016",
+            "FromSocket": "north",
+            "ToRoom": "room_017",
+            "ToSocket": "south",
+            "DoorId": "door_017"
+          },
+          {
+            "Id": "connection_018",
+            "FromRoom": "room_017",
+            "FromSocket": "west",
+            "ToRoom": "room_018",
+            "ToSocket": "east",
+            "DoorId": "door_018"
+          },
+          {
+            "Id": "connection_019",
+            "FromRoom": "room_018",
+            "FromSocket": "west",
+            "ToRoom": "room_019",
+            "ToSocket": "east",
+            "DoorId": "door_019"
+          },
+          {
+            "Id": "connection_020",
+            "FromRoom": "room_015",
+            "FromSocket": "west",
+            "ToRoom": "room_020",
+            "ToSocket": "east",
+            "DoorId": "door_020"
+          },
+          {
+            "Id": "connection_021",
+            "FromRoom": "room_020",
+            "FromSocket": "south",
+            "ToRoom": "room_021",
+            "ToSocket": "north",
+            "DoorId": "door_021"
+          },
+          {
+            "Id": "connection_022",
+            "FromRoom": "room_021",
+            "FromSocket": "west",
+            "ToRoom": "room_022",
+            "ToSocket": "east",
+            "DoorId": "door_022"
+          },
+          {
+            "Id": "connection_023",
+            "FromRoom": "room_022",
+            "FromSocket": "south",
+            "ToRoom": "room_023",
+            "ToSocket": "north",
+            "DoorId": "door_023"
+          },
+          {
+            "Id": "connection_024",
+            "FromRoom": "room_023",
+            "FromSocket": "west",
+            "ToRoom": "room_024",
+            "ToSocket": "east",
+            "DoorId": "door_024"
+          },
+          {
+            "Id": "connection_025",
+            "FromRoom": "room_024",
+            "FromSocket": "west",
+            "ToRoom": "room_025",
+            "ToSocket": "east",
+            "DoorId": "door_025"
+          },
+          {
+            "Id": "connection_026",
+            "FromRoom": "room_019",
+            "FromSocket": "west",
+            "ToRoom": "room_026",
+            "ToSocket": "east",
+            "DoorId": "door_026"
+          },
+          {
+            "Id": "connection_027",
+            "FromRoom": "room_026",
+            "FromSocket": "west",
+            "ToRoom": "room_027",
+            "ToSocket": "east",
+            "DoorId": "door_027"
+          },
+          {
+            "Id": "connection_028",
+            "FromRoom": "room_027",
+            "FromSocket": "south",
+            "ToRoom": "room_028",
+            "ToSocket": "north",
+            "DoorId": "door_028"
+          },
+          {
+            "Id": "connection_029",
+            "FromRoom": "room_028",
+            "FromSocket": "south",
+            "ToRoom": "room_029",
+            "ToSocket": "north",
+            "DoorId": "door_029"
+          },
+          {
+            "Id": "connection_030",
+            "FromRoom": "room_029",
+            "FromSocket": "south",
+            "ToRoom": "room_030",
+            "ToSocket": "north",
+            "DoorId": "door_030"
+          },
+          {
+            "Id": "loop_branch_1",
+            "FromRoom": "room_030",
+            "FromSocket": "south",
+            "ToRoom": "room_025",
+            "ToSocket": "north",
+            "DoorId": "door_loop_branch_1"
+          },
+          {
+            "Id": "connection_031",
+            "FromRoom": "room_019",
+            "FromSocket": "north",
+            "ToRoom": "room_031",
+            "ToSocket": "lower",
+            "DoorId": "door_031"
+          },
+          {
+            "Id": "connection_032",
+            "FromRoom": "room_030",
+            "FromSocket": "west",
+            "ToRoom": "room_032",
+            "ToSocket": "north_02",
+            "DoorId": "door_032"
+          },
+          {
+            "Id": "connection_033",
+            "FromRoom": "room_002",
+            "FromSocket": "west",
+            "ToRoom": "room_033",
+            "ToSocket": "west",
+            "DoorId": "door_033"
+          },
+          {
+            "Id": "connection_034",
+            "FromRoom": "room_012",
+            "FromSocket": "north",
+            "ToRoom": "room_034",
+            "ToSocket": "south_02",
+            "DoorId": "door_034"
+          },
+          {
+            "Id": "connection_035",
+            "FromRoom": "room_024",
+            "FromSocket": "south",
+            "ToRoom": "room_035",
+            "ToSocket": "lower",
+            "DoorId": "door_035"
+          },
+          {
+            "Id": "connection_036",
+            "FromRoom": "room_034",
+            "FromSocket": "north_02",
+            "ToRoom": "room_036",
+            "ToSocket": "upper",
+            "DoorId": "door_036"
+          },
+          {
+            "Id": "connection_037",
+            "FromRoom": "room_020",
+            "FromSocket": "west",
+            "ToRoom": "room_037",
+            "ToSocket": "east",
+            "DoorId": "door_037"
+          },
+          {
+            "Id": "connection_038",
+            "FromRoom": "room_035",
+            "FromSocket": "upper",
+            "ToRoom": "room_038",
+            "ToSocket": "east",
+            "DoorId": "door_038"
+          },
+          {
+            "Id": "connection_039",
+            "FromRoom": "room_018",
+            "FromSocket": "north",
+            "ToRoom": "room_039",
+            "ToSocket": "east_01",
+            "DoorId": "door_039"
+          }
+        ]
+      },
+      "Loops": [
+        {
+          "ForkRoom": "room_001",
+          "BranchA": [
+            "room_002",
+            "room_003",
+            "room_004",
+            "room_005"
+          ],
+          "BranchB": [
+            "room_006",
+            "room_007",
+            "room_008",
+            "room_009",
+            "room_010",
+            "room_011"
+          ],
+          "Bridge": [
+            "room_012",
+            "room_013",
+            "room_014"
+          ],
+          "ClosingConnection": "loop_branch_0"
+        },
+        {
+          "ForkRoom": "room_015",
+          "BranchA": [
+            "room_016",
+            "room_017",
+            "room_018",
+            "room_019"
+          ],
+          "BranchB": [
+            "room_020",
+            "room_021",
+            "room_022",
+            "room_023",
+            "room_024",
+            "room_025"
+          ],
+          "Bridge": [
+            "room_026",
+            "room_027",
+            "room_028",
+            "room_029",
+            "room_030"
+          ],
+          "ClosingConnection": "loop_branch_1"
+        }
+      ],
+      "Attempts": 481
+    },
+    {
+      "Seed": 3,
+      "Manifest": {
+        "GeneratorVersion": "branch-routing-v0.3",
+        "ContentVersion": "prototype-rooms-v0.2",
+        "MetresPerUnit": 0.5,
+        "Rooms": [
+          {
+            "InstanceId": "room_000",
+            "ModuleId": "entry",
+            "Position": {
+              "X": 0,
+              "Y": 0,
+              "Z": 0
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_001",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 16,
+              "Y": 0,
+              "Z": 0
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_002",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 16,
+              "Y": 0,
+              "Z": -16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_003",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 16,
+              "Y": 0,
+              "Z": -32
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_004",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 32,
+              "Y": 0,
+              "Z": -32
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_005",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 48,
+              "Y": 0,
+              "Z": -32
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_006",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 48,
+              "Y": 0,
+              "Z": -48
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_007",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 64,
+              "Y": 0,
+              "Z": -48
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_008",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 16,
+              "Y": 0,
+              "Z": 16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_009",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 16,
+              "Y": 0,
+              "Z": 32
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_010",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 0,
+              "Y": 0,
+              "Z": 32
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_011",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -16,
+              "Y": 0,
+              "Z": 32
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_012",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -16,
+              "Y": 0,
+              "Z": 16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_013",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 64,
+              "Y": 0,
+              "Z": -64
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_014",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 48,
+              "Y": 0,
+              "Z": -64
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_015",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 32,
+              "Y": 0,
+              "Z": -64
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_016",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 16,
+              "Y": 0,
+              "Z": -64
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_017",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 0,
+              "Y": 0,
+              "Z": -64
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_018",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -16,
+              "Y": 0,
+              "Z": -64
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_019",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -16,
+              "Y": 0,
+              "Z": -48
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_020",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -16,
+              "Y": 0,
+              "Z": -32
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_021",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -16,
+              "Y": 0,
+              "Z": -16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_022",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -16,
+              "Y": 0,
+              "Z": 0
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_023",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 16,
+              "Y": 0,
+              "Z": 48
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_024",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 32,
+              "Y": 0,
+              "Z": 48
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_025",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 48,
+              "Y": 0,
+              "Z": 48
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_026",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 48,
+              "Y": 0,
+              "Z": 64
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_027",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 64,
+              "Y": 0,
+              "Z": 64
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_028",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 80,
+              "Y": 0,
+              "Z": 64
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_029",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 80,
+              "Y": 0,
+              "Z": 80
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_030",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 16,
+              "Y": 0,
+              "Z": 64
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_031",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 16,
+              "Y": 0,
+              "Z": 80
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_032",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 16,
+              "Y": 0,
+              "Z": 96
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_033",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 32,
+              "Y": 0,
+              "Z": 96
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_034",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 80,
+              "Y": 0,
+              "Z": 96
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_035",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 64,
+              "Y": 0,
+              "Z": 96
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_036",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 48,
+              "Y": 0,
+              "Z": 96
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_037",
+            "ModuleId": "elbow",
+            "Position": {
+              "X": 36,
+              "Y": 0,
+              "Z": 80
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_038",
+            "ModuleId": "stairs",
+            "Position": {
+              "X": 16,
+              "Y": -8,
+              "Z": 114
+            },
+            "QuarterTurns": 2
+          },
+          {
+            "InstanceId": "room_039",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 16,
+              "Y": -8,
+              "Z": 132
+            },
+            "QuarterTurns": 3
+          }
+        ],
+        "Connections": [
+          {
+            "Id": "connection_001",
+            "FromRoom": "room_000",
+            "FromSocket": "east",
+            "ToRoom": "room_001",
+            "ToSocket": "west",
+            "DoorId": "door_001"
+          },
+          {
+            "Id": "connection_002",
+            "FromRoom": "room_001",
+            "FromSocket": "south",
+            "ToRoom": "room_002",
+            "ToSocket": "north",
+            "DoorId": "door_002"
+          },
+          {
+            "Id": "connection_003",
+            "FromRoom": "room_002",
+            "FromSocket": "south",
+            "ToRoom": "room_003",
+            "ToSocket": "north",
+            "DoorId": "door_003"
+          },
+          {
+            "Id": "connection_004",
+            "FromRoom": "room_003",
+            "FromSocket": "east",
+            "ToRoom": "room_004",
+            "ToSocket": "west",
+            "DoorId": "door_004"
+          },
+          {
+            "Id": "connection_005",
+            "FromRoom": "room_004",
+            "FromSocket": "east",
+            "ToRoom": "room_005",
+            "ToSocket": "west",
+            "DoorId": "door_005"
+          },
+          {
+            "Id": "connection_006",
+            "FromRoom": "room_005",
+            "FromSocket": "south",
+            "ToRoom": "room_006",
+            "ToSocket": "north",
+            "DoorId": "door_006"
+          },
+          {
+            "Id": "connection_007",
+            "FromRoom": "room_006",
+            "FromSocket": "east",
+            "ToRoom": "room_007",
+            "ToSocket": "west",
+            "DoorId": "door_007"
+          },
+          {
+            "Id": "connection_008",
+            "FromRoom": "room_001",
+            "FromSocket": "north",
+            "ToRoom": "room_008",
+            "ToSocket": "south",
+            "DoorId": "door_008"
+          },
+          {
+            "Id": "connection_009",
+            "FromRoom": "room_008",
+            "FromSocket": "north",
+            "ToRoom": "room_009",
+            "ToSocket": "south",
+            "DoorId": "door_009"
+          },
+          {
+            "Id": "connection_010",
+            "FromRoom": "room_009",
+            "FromSocket": "west",
+            "ToRoom": "room_010",
+            "ToSocket": "east",
+            "DoorId": "door_010"
+          },
+          {
+            "Id": "connection_011",
+            "FromRoom": "room_010",
+            "FromSocket": "west",
+            "ToRoom": "room_011",
+            "ToSocket": "east",
+            "DoorId": "door_011"
+          },
+          {
+            "Id": "connection_012",
+            "FromRoom": "room_011",
+            "FromSocket": "south",
+            "ToRoom": "room_012",
+            "ToSocket": "north",
+            "DoorId": "door_012"
+          },
+          {
+            "Id": "connection_013",
+            "FromRoom": "room_007",
+            "FromSocket": "south",
+            "ToRoom": "room_013",
+            "ToSocket": "north",
+            "DoorId": "door_013"
+          },
+          {
+            "Id": "connection_014",
+            "FromRoom": "room_013",
+            "FromSocket": "west",
+            "ToRoom": "room_014",
+            "ToSocket": "east",
+            "DoorId": "door_014"
+          },
+          {
+            "Id": "connection_015",
+            "FromRoom": "room_014",
+            "FromSocket": "west",
+            "ToRoom": "room_015",
+            "ToSocket": "east",
+            "DoorId": "door_015"
+          },
+          {
+            "Id": "connection_016",
+            "FromRoom": "room_015",
+            "FromSocket": "west",
+            "ToRoom": "room_016",
+            "ToSocket": "east",
+            "DoorId": "door_016"
+          },
+          {
+            "Id": "connection_017",
+            "FromRoom": "room_016",
+            "FromSocket": "west",
+            "ToRoom": "room_017",
+            "ToSocket": "east",
+            "DoorId": "door_017"
+          },
+          {
+            "Id": "connection_018",
+            "FromRoom": "room_017",
+            "FromSocket": "west",
+            "ToRoom": "room_018",
+            "ToSocket": "east",
+            "DoorId": "door_018"
+          },
+          {
+            "Id": "connection_019",
+            "FromRoom": "room_018",
+            "FromSocket": "north",
+            "ToRoom": "room_019",
+            "ToSocket": "south",
+            "DoorId": "door_019"
+          },
+          {
+            "Id": "connection_020",
+            "FromRoom": "room_019",
+            "FromSocket": "north",
+            "ToRoom": "room_020",
+            "ToSocket": "south",
+            "DoorId": "door_020"
+          },
+          {
+            "Id": "connection_021",
+            "FromRoom": "room_020",
+            "FromSocket": "north",
+            "ToRoom": "room_021",
+            "ToSocket": "south",
+            "DoorId": "door_021"
+          },
+          {
+            "Id": "connection_022",
+            "FromRoom": "room_021",
+            "FromSocket": "north",
+            "ToRoom": "room_022",
+            "ToSocket": "south",
+            "DoorId": "door_022"
+          },
+          {
+            "Id": "loop_branch_0",
+            "FromRoom": "room_022",
+            "FromSocket": "north",
+            "ToRoom": "room_012",
+            "ToSocket": "south",
+            "DoorId": "door_loop_branch_0"
+          },
+          {
+            "Id": "connection_023",
+            "FromRoom": "room_009",
+            "FromSocket": "north",
+            "ToRoom": "room_023",
+            "ToSocket": "south",
+            "DoorId": "door_023"
+          },
+          {
+            "Id": "connection_024",
+            "FromRoom": "room_023",
+            "FromSocket": "east",
+            "ToRoom": "room_024",
+            "ToSocket": "west",
+            "DoorId": "door_024"
+          },
+          {
+            "Id": "connection_025",
+            "FromRoom": "room_024",
+            "FromSocket": "east",
+            "ToRoom": "room_025",
+            "ToSocket": "west",
+            "DoorId": "door_025"
+          },
+          {
+            "Id": "connection_026",
+            "FromRoom": "room_025",
+            "FromSocket": "north",
+            "ToRoom": "room_026",
+            "ToSocket": "south",
+            "DoorId": "door_026"
+          },
+          {
+            "Id": "connection_027",
+            "FromRoom": "room_026",
+            "FromSocket": "east",
+            "ToRoom": "room_027",
+            "ToSocket": "west",
+            "DoorId": "door_027"
+          },
+          {
+            "Id": "connection_028",
+            "FromRoom": "room_027",
+            "FromSocket": "east",
+            "ToRoom": "room_028",
+            "ToSocket": "west",
+            "DoorId": "door_028"
+          },
+          {
+            "Id": "connection_029",
+            "FromRoom": "room_028",
+            "FromSocket": "north",
+            "ToRoom": "room_029",
+            "ToSocket": "south",
+            "DoorId": "door_029"
+          },
+          {
+            "Id": "connection_030",
+            "FromRoom": "room_023",
+            "FromSocket": "north",
+            "ToRoom": "room_030",
+            "ToSocket": "south",
+            "DoorId": "door_030"
+          },
+          {
+            "Id": "connection_031",
+            "FromRoom": "room_030",
+            "FromSocket": "north",
+            "ToRoom": "room_031",
+            "ToSocket": "south",
+            "DoorId": "door_031"
+          },
+          {
+            "Id": "connection_032",
+            "FromRoom": "room_031",
+            "FromSocket": "north",
+            "ToRoom": "room_032",
+            "ToSocket": "south",
+            "DoorId": "door_032"
+          },
+          {
+            "Id": "connection_033",
+            "FromRoom": "room_032",
+            "FromSocket": "east",
+            "ToRoom": "room_033",
+            "ToSocket": "west",
+            "DoorId": "door_033"
+          },
+          {
+            "Id": "connection_034",
+            "FromRoom": "room_029",
+            "FromSocket": "north",
+            "ToRoom": "room_034",
+            "ToSocket": "south",
+            "DoorId": "door_034"
+          },
+          {
+            "Id": "connection_035",
+            "FromRoom": "room_034",
+            "FromSocket": "west",
+            "ToRoom": "room_035",
+            "ToSocket": "east",
+            "DoorId": "door_035"
+          },
+          {
+            "Id": "connection_036",
+            "FromRoom": "room_035",
+            "FromSocket": "west",
+            "ToRoom": "room_036",
+            "ToSocket": "east",
+            "DoorId": "door_036"
+          },
+          {
+            "Id": "loop_branch_1",
+            "FromRoom": "room_036",
+            "FromSocket": "west",
+            "ToRoom": "room_033",
+            "ToSocket": "east",
+            "DoorId": "door_loop_branch_1"
+          },
+          {
+            "Id": "connection_037",
+            "FromRoom": "room_033",
+            "FromSocket": "south",
+            "ToRoom": "room_037",
+            "ToSocket": "north",
+            "DoorId": "door_037"
+          },
+          {
+            "Id": "connection_038",
+            "FromRoom": "room_032",
+            "FromSocket": "north",
+            "ToRoom": "room_038",
+            "ToSocket": "upper",
+            "DoorId": "door_038"
+          },
+          {
+            "Id": "connection_039",
+            "FromRoom": "room_038",
+            "FromSocket": "lower",
+            "ToRoom": "room_039",
+            "ToSocket": "west",
+            "DoorId": "door_039"
+          }
+        ]
+      },
+      "Loops": [
+        {
+          "ForkRoom": "room_001",
+          "BranchA": [
+            "room_002",
+            "room_003",
+            "room_004",
+            "room_005",
+            "room_006",
+            "room_007"
+          ],
+          "BranchB": [
+            "room_008",
+            "room_009",
+            "room_010",
+            "room_011",
+            "room_012"
+          ],
+          "Bridge": [
+            "room_013",
+            "room_014",
+            "room_015",
+            "room_016",
+            "room_017",
+            "room_018",
+            "room_019",
+            "room_020",
+            "room_021",
+            "room_022"
+          ],
+          "ClosingConnection": "loop_branch_0"
+        },
+        {
+          "ForkRoom": "room_023",
+          "BranchA": [
+            "room_024",
+            "room_025",
+            "room_026",
+            "room_027",
+            "room_028",
+            "room_029"
+          ],
+          "BranchB": [
+            "room_030",
+            "room_031",
+            "room_032",
+            "room_033"
+          ],
+          "Bridge": [
+            "room_034",
+            "room_035",
+            "room_036"
+          ],
+          "ClosingConnection": "loop_branch_1"
+        }
+      ],
+      "Attempts": 329
+    },
+    {
+      "Seed": 4,
+      "Manifest": {
+        "GeneratorVersion": "branch-routing-v0.3",
+        "ContentVersion": "prototype-rooms-v0.2",
+        "MetresPerUnit": 0.5,
+        "Rooms": [
+          {
+            "InstanceId": "room_000",
+            "ModuleId": "entry",
+            "Position": {
+              "X": 0,
+              "Y": 0,
+              "Z": 0
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_001",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 16,
+              "Y": 0,
+              "Z": 0
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_002",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 32,
+              "Y": 0,
+              "Z": 0
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_003",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 32,
+              "Y": 0,
+              "Z": 16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_004",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 48,
+              "Y": 0,
+              "Z": 16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_005",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 64,
+              "Y": 0,
+              "Z": 16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_006",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 16,
+              "Y": 0,
+              "Z": -16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_007",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 16,
+              "Y": 0,
+              "Z": -32
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_008",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 0,
+              "Y": 0,
+              "Z": -32
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_009",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 0,
+              "Y": 0,
+              "Z": -48
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_010",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 64,
+              "Y": 0,
+              "Z": 0
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_011",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 48,
+              "Y": 0,
+              "Z": 0
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_012",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 48,
+              "Y": 0,
+              "Z": -16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_013",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 32,
+              "Y": 0,
+              "Z": -16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_014",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 32,
+              "Y": 0,
+              "Z": -32
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_015",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 32,
+              "Y": 0,
+              "Z": -48
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_016",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 16,
+              "Y": 0,
+              "Z": -48
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_017",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 80,
+              "Y": 0,
+              "Z": 16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_018",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 96,
+              "Y": 0,
+              "Z": 16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_019",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 96,
+              "Y": 0,
+              "Z": 0
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_020",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 96,
+              "Y": 0,
+              "Z": -16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_021",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 112,
+              "Y": 0,
+              "Z": -16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_022",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 128,
+              "Y": 0,
+              "Z": -16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_023",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 128,
+              "Y": 0,
+              "Z": 0
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_024",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 80,
+              "Y": 0,
+              "Z": 32
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_025",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 80,
+              "Y": 0,
+              "Z": 48
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_026",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 64,
+              "Y": 0,
+              "Z": 48
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_027",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 48,
+              "Y": 0,
+              "Z": 48
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_028",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 128,
+              "Y": 0,
+              "Z": 16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_029",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 128,
+              "Y": 0,
+              "Z": 32
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_030",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 128,
+              "Y": 0,
+              "Z": 48
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_031",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 128,
+              "Y": 0,
+              "Z": 64
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_032",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 112,
+              "Y": 0,
+              "Z": 64
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_033",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 96,
+              "Y": 0,
+              "Z": 64
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_034",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 80,
+              "Y": 0,
+              "Z": 64
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_035",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 64,
+              "Y": 0,
+              "Z": 64
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_036",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 48,
+              "Y": 0,
+              "Z": 64
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_037",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -4,
+              "Y": 0,
+              "Z": 16
+            },
+            "QuarterTurns": 3
+          },
+          {
+            "InstanceId": "room_038",
+            "ModuleId": "stairs",
+            "Position": {
+              "X": 128,
+              "Y": -8,
+              "Z": -34
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_039",
+            "ModuleId": "stairs",
+            "Position": {
+              "X": 128,
+              "Y": -8,
+              "Z": -54
+            },
+            "QuarterTurns": 2
+          }
+        ],
+        "Connections": [
+          {
+            "Id": "connection_001",
+            "FromRoom": "room_000",
+            "FromSocket": "east",
+            "ToRoom": "room_001",
+            "ToSocket": "west",
+            "DoorId": "door_001"
+          },
+          {
+            "Id": "connection_002",
+            "FromRoom": "room_001",
+            "FromSocket": "east",
+            "ToRoom": "room_002",
+            "ToSocket": "west",
+            "DoorId": "door_002"
+          },
+          {
+            "Id": "connection_003",
+            "FromRoom": "room_002",
+            "FromSocket": "north",
+            "ToRoom": "room_003",
+            "ToSocket": "south",
+            "DoorId": "door_003"
+          },
+          {
+            "Id": "connection_004",
+            "FromRoom": "room_003",
+            "FromSocket": "east",
+            "ToRoom": "room_004",
+            "ToSocket": "west",
+            "DoorId": "door_004"
+          },
+          {
+            "Id": "connection_005",
+            "FromRoom": "room_004",
+            "FromSocket": "east",
+            "ToRoom": "room_005",
+            "ToSocket": "west",
+            "DoorId": "door_005"
+          },
+          {
+            "Id": "connection_006",
+            "FromRoom": "room_001",
+            "FromSocket": "south",
+            "ToRoom": "room_006",
+            "ToSocket": "north",
+            "DoorId": "door_006"
+          },
+          {
+            "Id": "connection_007",
+            "FromRoom": "room_006",
+            "FromSocket": "south",
+            "ToRoom": "room_007",
+            "ToSocket": "north",
+            "DoorId": "door_007"
+          },
+          {
+            "Id": "connection_008",
+            "FromRoom": "room_007",
+            "FromSocket": "west",
+            "ToRoom": "room_008",
+            "ToSocket": "east",
+            "DoorId": "door_008"
+          },
+          {
+            "Id": "connection_009",
+            "FromRoom": "room_008",
+            "FromSocket": "south",
+            "ToRoom": "room_009",
+            "ToSocket": "north",
+            "DoorId": "door_009"
+          },
+          {
+            "Id": "connection_010",
+            "FromRoom": "room_005",
+            "FromSocket": "south",
+            "ToRoom": "room_010",
+            "ToSocket": "north",
+            "DoorId": "door_010"
+          },
+          {
+            "Id": "connection_011",
+            "FromRoom": "room_010",
+            "FromSocket": "west",
+            "ToRoom": "room_011",
+            "ToSocket": "east",
+            "DoorId": "door_011"
+          },
+          {
+            "Id": "connection_012",
+            "FromRoom": "room_011",
+            "FromSocket": "south",
+            "ToRoom": "room_012",
+            "ToSocket": "north",
+            "DoorId": "door_012"
+          },
+          {
+            "Id": "connection_013",
+            "FromRoom": "room_012",
+            "FromSocket": "west",
+            "ToRoom": "room_013",
+            "ToSocket": "east",
+            "DoorId": "door_013"
+          },
+          {
+            "Id": "connection_014",
+            "FromRoom": "room_013",
+            "FromSocket": "south",
+            "ToRoom": "room_014",
+            "ToSocket": "north",
+            "DoorId": "door_014"
+          },
+          {
+            "Id": "connection_015",
+            "FromRoom": "room_014",
+            "FromSocket": "south",
+            "ToRoom": "room_015",
+            "ToSocket": "north",
+            "DoorId": "door_015"
+          },
+          {
+            "Id": "connection_016",
+            "FromRoom": "room_015",
+            "FromSocket": "west",
+            "ToRoom": "room_016",
+            "ToSocket": "east",
+            "DoorId": "door_016"
+          },
+          {
+            "Id": "loop_branch_0",
+            "FromRoom": "room_016",
+            "FromSocket": "west",
+            "ToRoom": "room_009",
+            "ToSocket": "east",
+            "DoorId": "door_loop_branch_0"
+          },
+          {
+            "Id": "connection_017",
+            "FromRoom": "room_005",
+            "FromSocket": "east",
+            "ToRoom": "room_017",
+            "ToSocket": "west",
+            "DoorId": "door_017"
+          },
+          {
+            "Id": "connection_018",
+            "FromRoom": "room_017",
+            "FromSocket": "east",
+            "ToRoom": "room_018",
+            "ToSocket": "west",
+            "DoorId": "door_018"
+          },
+          {
+            "Id": "connection_019",
+            "FromRoom": "room_018",
+            "FromSocket": "south",
+            "ToRoom": "room_019",
+            "ToSocket": "north",
+            "DoorId": "door_019"
+          },
+          {
+            "Id": "connection_020",
+            "FromRoom": "room_019",
+            "FromSocket": "south",
+            "ToRoom": "room_020",
+            "ToSocket": "north",
+            "DoorId": "door_020"
+          },
+          {
+            "Id": "connection_021",
+            "FromRoom": "room_020",
+            "FromSocket": "east",
+            "ToRoom": "room_021",
+            "ToSocket": "west",
+            "DoorId": "door_021"
+          },
+          {
+            "Id": "connection_022",
+            "FromRoom": "room_021",
+            "FromSocket": "east",
+            "ToRoom": "room_022",
+            "ToSocket": "west",
+            "DoorId": "door_022"
+          },
+          {
+            "Id": "connection_023",
+            "FromRoom": "room_022",
+            "FromSocket": "north",
+            "ToRoom": "room_023",
+            "ToSocket": "south",
+            "DoorId": "door_023"
+          },
+          {
+            "Id": "connection_024",
+            "FromRoom": "room_017",
+            "FromSocket": "north",
+            "ToRoom": "room_024",
+            "ToSocket": "south",
+            "DoorId": "door_024"
+          },
+          {
+            "Id": "connection_025",
+            "FromRoom": "room_024",
+            "FromSocket": "north",
+            "ToRoom": "room_025",
+            "ToSocket": "south",
+            "DoorId": "door_025"
+          },
+          {
+            "Id": "connection_026",
+            "FromRoom": "room_025",
+            "FromSocket": "west",
+            "ToRoom": "room_026",
+            "ToSocket": "east",
+            "DoorId": "door_026"
+          },
+          {
+            "Id": "connection_027",
+            "FromRoom": "room_026",
+            "FromSocket": "west",
+            "ToRoom": "room_027",
+            "ToSocket": "east",
+            "DoorId": "door_027"
+          },
+          {
+            "Id": "connection_028",
+            "FromRoom": "room_023",
+            "FromSocket": "north",
+            "ToRoom": "room_028",
+            "ToSocket": "south",
+            "DoorId": "door_028"
+          },
+          {
+            "Id": "connection_029",
+            "FromRoom": "room_028",
+            "FromSocket": "north",
+            "ToRoom": "room_029",
+            "ToSocket": "south",
+            "DoorId": "door_029"
+          },
+          {
+            "Id": "connection_030",
+            "FromRoom": "room_029",
+            "FromSocket": "north",
+            "ToRoom": "room_030",
+            "ToSocket": "south",
+            "DoorId": "door_030"
+          },
+          {
+            "Id": "connection_031",
+            "FromRoom": "room_030",
+            "FromSocket": "north",
+            "ToRoom": "room_031",
+            "ToSocket": "south",
+            "DoorId": "door_031"
+          },
+          {
+            "Id": "connection_032",
+            "FromRoom": "room_031",
+            "FromSocket": "west",
+            "ToRoom": "room_032",
+            "ToSocket": "east",
+            "DoorId": "door_032"
+          },
+          {
+            "Id": "connection_033",
+            "FromRoom": "room_032",
+            "FromSocket": "west",
+            "ToRoom": "room_033",
+            "ToSocket": "east",
+            "DoorId": "door_033"
+          },
+          {
+            "Id": "connection_034",
+            "FromRoom": "room_033",
+            "FromSocket": "west",
+            "ToRoom": "room_034",
+            "ToSocket": "east",
+            "DoorId": "door_034"
+          },
+          {
+            "Id": "connection_035",
+            "FromRoom": "room_034",
+            "FromSocket": "west",
+            "ToRoom": "room_035",
+            "ToSocket": "east",
+            "DoorId": "door_035"
+          },
+          {
+            "Id": "connection_036",
+            "FromRoom": "room_035",
+            "FromSocket": "west",
+            "ToRoom": "room_036",
+            "ToSocket": "east",
+            "DoorId": "door_036"
+          },
+          {
+            "Id": "loop_branch_1",
+            "FromRoom": "room_036",
+            "FromSocket": "south",
+            "ToRoom": "room_027",
+            "ToSocket": "north",
+            "DoorId": "door_loop_branch_1"
+          },
+          {
+            "Id": "connection_037",
+            "FromRoom": "room_000",
+            "FromSocket": "north_01",
+            "ToRoom": "room_037",
+            "ToSocket": "west",
+            "DoorId": "door_037"
+          },
+          {
+            "Id": "connection_038",
+            "FromRoom": "room_022",
+            "FromSocket": "south",
+            "ToRoom": "room_038",
+            "ToSocket": "upper",
+            "DoorId": "door_038"
+          },
+          {
+            "Id": "connection_039",
+            "FromRoom": "room_038",
+            "FromSocket": "lower",
+            "ToRoom": "room_039",
+            "ToSocket": "lower",
+            "DoorId": "door_039"
+          }
+        ]
+      },
+      "Loops": [
+        {
+          "ForkRoom": "room_001",
+          "BranchA": [
+            "room_002",
+            "room_003",
+            "room_004",
+            "room_005"
+          ],
+          "BranchB": [
+            "room_006",
+            "room_007",
+            "room_008",
+            "room_009"
+          ],
+          "Bridge": [
+            "room_010",
+            "room_011",
+            "room_012",
+            "room_013",
+            "room_014",
+            "room_015",
+            "room_016"
+          ],
+          "ClosingConnection": "loop_branch_0"
+        },
+        {
+          "ForkRoom": "room_017",
+          "BranchA": [
+            "room_018",
+            "room_019",
+            "room_020",
+            "room_021",
+            "room_022",
+            "room_023"
+          ],
+          "BranchB": [
+            "room_024",
+            "room_025",
+            "room_026",
+            "room_027"
+          ],
+          "Bridge": [
+            "room_028",
+            "room_029",
+            "room_030",
+            "room_031",
+            "room_032",
+            "room_033",
+            "room_034",
+            "room_035",
+            "room_036"
+          ],
+          "ClosingConnection": "loop_branch_1"
+        }
+      ],
+      "Attempts": 305
+    },
+    {
+      "Seed": 5,
+      "Manifest": {
+        "GeneratorVersion": "branch-routing-v0.3",
+        "ContentVersion": "prototype-rooms-v0.2",
+        "MetresPerUnit": 0.5,
+        "Rooms": [
+          {
+            "InstanceId": "room_000",
+            "ModuleId": "entry",
+            "Position": {
+              "X": 0,
+              "Y": 0,
+              "Z": 0
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_001",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 16,
+              "Y": 0,
+              "Z": 0
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_002",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 16,
+              "Y": 0,
+              "Z": -16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_003",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 32,
+              "Y": 0,
+              "Z": -16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_004",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 32,
+              "Y": 0,
+              "Z": -32
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_005",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 32,
+              "Y": 0,
+              "Z": -48
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_006",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 48,
+              "Y": 0,
+              "Z": -48
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_007",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 16,
+              "Y": 0,
+              "Z": 16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_008",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 32,
+              "Y": 0,
+              "Z": 16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_009",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 48,
+              "Y": 0,
+              "Z": 16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_010",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 48,
+              "Y": 0,
+              "Z": 32
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_011",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 64,
+              "Y": 0,
+              "Z": -48
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_012",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 64,
+              "Y": 0,
+              "Z": -32
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_013",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 64,
+              "Y": 0,
+              "Z": -16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_014",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 64,
+              "Y": 0,
+              "Z": 0
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_015",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 64,
+              "Y": 0,
+              "Z": 16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_016",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 64,
+              "Y": 0,
+              "Z": 32
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_017",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 48,
+              "Y": 0,
+              "Z": 48
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_018",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 32,
+              "Y": 0,
+              "Z": 48
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_019",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 16,
+              "Y": 0,
+              "Z": 48
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_020",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 0,
+              "Y": 0,
+              "Z": 48
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_021",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 0,
+              "Y": 0,
+              "Z": 32
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_022",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 48,
+              "Y": 0,
+              "Z": 64
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_023",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 48,
+              "Y": 0,
+              "Z": 80
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_024",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 48,
+              "Y": 0,
+              "Z": 96
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_025",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 32,
+              "Y": 0,
+              "Z": 96
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_026",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 16,
+              "Y": 0,
+              "Z": 96
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_027",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 0,
+              "Y": 0,
+              "Z": 96
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_028",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -16,
+              "Y": 0,
+              "Z": 32
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_029",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -16,
+              "Y": 0,
+              "Z": 48
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_030",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -16,
+              "Y": 0,
+              "Z": 64
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_031",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -16,
+              "Y": 0,
+              "Z": 80
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_032",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -16,
+              "Y": 0,
+              "Z": 96
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_033",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 48,
+              "Y": 0,
+              "Z": 0
+            },
+            "QuarterTurns": 3
+          },
+          {
+            "InstanceId": "room_034",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 64,
+              "Y": 0,
+              "Z": 80
+            },
+            "QuarterTurns": 1
+          },
+          {
+            "InstanceId": "room_035",
+            "ModuleId": "elbow",
+            "Position": {
+              "X": 32,
+              "Y": 0,
+              "Z": 32
+            },
+            "QuarterTurns": 1
+          },
+          {
+            "InstanceId": "room_036",
+            "ModuleId": "corridor",
+            "Position": {
+              "X": -4,
+              "Y": 0,
+              "Z": 16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_037",
+            "ModuleId": "stairs",
+            "Position": {
+              "X": 32,
+              "Y": 0,
+              "Z": -66
+            },
+            "QuarterTurns": 2
+          },
+          {
+            "InstanceId": "room_038",
+            "ModuleId": "elbow",
+            "Position": {
+              "X": 36,
+              "Y": 8,
+              "Z": -84
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_039",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 80,
+              "Y": 0,
+              "Z": -32
+            },
+            "QuarterTurns": 3
+          }
+        ],
+        "Connections": [
+          {
+            "Id": "connection_001",
+            "FromRoom": "room_000",
+            "FromSocket": "east",
+            "ToRoom": "room_001",
+            "ToSocket": "west",
+            "DoorId": "door_001"
+          },
+          {
+            "Id": "connection_002",
+            "FromRoom": "room_001",
+            "FromSocket": "south",
+            "ToRoom": "room_002",
+            "ToSocket": "north",
+            "DoorId": "door_002"
+          },
+          {
+            "Id": "connection_003",
+            "FromRoom": "room_002",
+            "FromSocket": "east",
+            "ToRoom": "room_003",
+            "ToSocket": "west",
+            "DoorId": "door_003"
+          },
+          {
+            "Id": "connection_004",
+            "FromRoom": "room_003",
+            "FromSocket": "south",
+            "ToRoom": "room_004",
+            "ToSocket": "north",
+            "DoorId": "door_004"
+          },
+          {
+            "Id": "connection_005",
+            "FromRoom": "room_004",
+            "FromSocket": "south",
+            "ToRoom": "room_005",
+            "ToSocket": "north",
+            "DoorId": "door_005"
+          },
+          {
+            "Id": "connection_006",
+            "FromRoom": "room_005",
+            "FromSocket": "east",
+            "ToRoom": "room_006",
+            "ToSocket": "west",
+            "DoorId": "door_006"
+          },
+          {
+            "Id": "connection_007",
+            "FromRoom": "room_001",
+            "FromSocket": "north",
+            "ToRoom": "room_007",
+            "ToSocket": "south",
+            "DoorId": "door_007"
+          },
+          {
+            "Id": "connection_008",
+            "FromRoom": "room_007",
+            "FromSocket": "east",
+            "ToRoom": "room_008",
+            "ToSocket": "west",
+            "DoorId": "door_008"
+          },
+          {
+            "Id": "connection_009",
+            "FromRoom": "room_008",
+            "FromSocket": "east",
+            "ToRoom": "room_009",
+            "ToSocket": "west",
+            "DoorId": "door_009"
+          },
+          {
+            "Id": "connection_010",
+            "FromRoom": "room_009",
+            "FromSocket": "north",
+            "ToRoom": "room_010",
+            "ToSocket": "south",
+            "DoorId": "door_010"
+          },
+          {
+            "Id": "connection_011",
+            "FromRoom": "room_006",
+            "FromSocket": "east",
+            "ToRoom": "room_011",
+            "ToSocket": "west",
+            "DoorId": "door_011"
+          },
+          {
+            "Id": "connection_012",
+            "FromRoom": "room_011",
+            "FromSocket": "north",
+            "ToRoom": "room_012",
+            "ToSocket": "south",
+            "DoorId": "door_012"
+          },
+          {
+            "Id": "connection_013",
+            "FromRoom": "room_012",
+            "FromSocket": "north",
+            "ToRoom": "room_013",
+            "ToSocket": "south",
+            "DoorId": "door_013"
+          },
+          {
+            "Id": "connection_014",
+            "FromRoom": "room_013",
+            "FromSocket": "north",
+            "ToRoom": "room_014",
+            "ToSocket": "south",
+            "DoorId": "door_014"
+          },
+          {
+            "Id": "connection_015",
+            "FromRoom": "room_014",
+            "FromSocket": "north",
+            "ToRoom": "room_015",
+            "ToSocket": "south",
+            "DoorId": "door_015"
+          },
+          {
+            "Id": "connection_016",
+            "FromRoom": "room_015",
+            "FromSocket": "north",
+            "ToRoom": "room_016",
+            "ToSocket": "south",
+            "DoorId": "door_016"
+          },
+          {
+            "Id": "loop_branch_0",
+            "FromRoom": "room_016",
+            "FromSocket": "west",
+            "ToRoom": "room_010",
+            "ToSocket": "east",
+            "DoorId": "door_loop_branch_0"
+          },
+          {
+            "Id": "connection_017",
+            "FromRoom": "room_010",
+            "FromSocket": "north",
+            "ToRoom": "room_017",
+            "ToSocket": "south",
+            "DoorId": "door_017"
+          },
+          {
+            "Id": "connection_018",
+            "FromRoom": "room_017",
+            "FromSocket": "west",
+            "ToRoom": "room_018",
+            "ToSocket": "east",
+            "DoorId": "door_018"
+          },
+          {
+            "Id": "connection_019",
+            "FromRoom": "room_018",
+            "FromSocket": "west",
+            "ToRoom": "room_019",
+            "ToSocket": "east",
+            "DoorId": "door_019"
+          },
+          {
+            "Id": "connection_020",
+            "FromRoom": "room_019",
+            "FromSocket": "west",
+            "ToRoom": "room_020",
+            "ToSocket": "east",
+            "DoorId": "door_020"
+          },
+          {
+            "Id": "connection_021",
+            "FromRoom": "room_020",
+            "FromSocket": "south",
+            "ToRoom": "room_021",
+            "ToSocket": "north",
+            "DoorId": "door_021"
+          },
+          {
+            "Id": "connection_022",
+            "FromRoom": "room_017",
+            "FromSocket": "north",
+            "ToRoom": "room_022",
+            "ToSocket": "south",
+            "DoorId": "door_022"
+          },
+          {
+            "Id": "connection_023",
+            "FromRoom": "room_022",
+            "FromSocket": "north",
+            "ToRoom": "room_023",
+            "ToSocket": "south",
+            "DoorId": "door_023"
+          },
+          {
+            "Id": "connection_024",
+            "FromRoom": "room_023",
+            "FromSocket": "north",
+            "ToRoom": "room_024",
+            "ToSocket": "south",
+            "DoorId": "door_024"
+          },
+          {
+            "Id": "connection_025",
+            "FromRoom": "room_024",
+            "FromSocket": "west",
+            "ToRoom": "room_025",
+            "ToSocket": "east",
+            "DoorId": "door_025"
+          },
+          {
+            "Id": "connection_026",
+            "FromRoom": "room_025",
+            "FromSocket": "west",
+            "ToRoom": "room_026",
+            "ToSocket": "east",
+            "DoorId": "door_026"
+          },
+          {
+            "Id": "connection_027",
+            "FromRoom": "room_026",
+            "FromSocket": "west",
+            "ToRoom": "room_027",
+            "ToSocket": "east",
+            "DoorId": "door_027"
+          },
+          {
+            "Id": "connection_028",
+            "FromRoom": "room_021",
+            "FromSocket": "west",
+            "ToRoom": "room_028",
+            "ToSocket": "east",
+            "DoorId": "door_028"
+          },
+          {
+            "Id": "connection_029",
+            "FromRoom": "room_028",
+            "FromSocket": "north",
+            "ToRoom": "room_029",
+            "ToSocket": "south",
+            "DoorId": "door_029"
+          },
+          {
+            "Id": "connection_030",
+            "FromRoom": "room_029",
+            "FromSocket": "north",
+            "ToRoom": "room_030",
+            "ToSocket": "south",
+            "DoorId": "door_030"
+          },
+          {
+            "Id": "connection_031",
+            "FromRoom": "room_030",
+            "FromSocket": "north",
+            "ToRoom": "room_031",
+            "ToSocket": "south",
+            "DoorId": "door_031"
+          },
+          {
+            "Id": "connection_032",
+            "FromRoom": "room_031",
+            "FromSocket": "north",
+            "ToRoom": "room_032",
+            "ToSocket": "south",
+            "DoorId": "door_032"
+          },
+          {
+            "Id": "loop_branch_1",
+            "FromRoom": "room_032",
+            "FromSocket": "east",
+            "ToRoom": "room_027",
+            "ToSocket": "west",
+            "DoorId": "door_loop_branch_1"
+          },
+          {
+            "Id": "connection_033",
+            "FromRoom": "room_009",
+            "FromSocket": "south",
+            "ToRoom": "room_033",
+            "ToSocket": "east",
+            "DoorId": "door_033"
+          },
+          {
+            "Id": "connection_034",
+            "FromRoom": "room_023",
+            "FromSocket": "east",
+            "ToRoom": "room_034",
+            "ToSocket": "south",
+            "DoorId": "door_034"
+          },
+          {
+            "Id": "connection_035",
+            "FromRoom": "room_018",
+            "FromSocket": "south",
+            "ToRoom": "room_035",
+            "ToSocket": "west",
+            "DoorId": "door_035"
+          },
+          {
+            "Id": "connection_036",
+            "FromRoom": "room_000",
+            "FromSocket": "north_01",
+            "ToRoom": "room_036",
+            "ToSocket": "south",
+            "DoorId": "door_036"
+          },
+          {
+            "Id": "connection_037",
+            "FromRoom": "room_005",
+            "FromSocket": "south",
+            "ToRoom": "room_037",
+            "ToSocket": "lower",
+            "DoorId": "door_037"
+          },
+          {
+            "Id": "connection_038",
+            "FromRoom": "room_037",
+            "FromSocket": "upper",
+            "ToRoom": "room_038",
+            "ToSocket": "north",
+            "DoorId": "door_038"
+          },
+          {
+            "Id": "connection_039",
+            "FromRoom": "room_012",
+            "FromSocket": "east",
+            "ToRoom": "room_039",
+            "ToSocket": "north",
+            "DoorId": "door_039"
+          }
+        ]
+      },
+      "Loops": [
+        {
+          "ForkRoom": "room_001",
+          "BranchA": [
+            "room_002",
+            "room_003",
+            "room_004",
+            "room_005",
+            "room_006"
+          ],
+          "BranchB": [
+            "room_007",
+            "room_008",
+            "room_009",
+            "room_010"
+          ],
+          "Bridge": [
+            "room_011",
+            "room_012",
+            "room_013",
+            "room_014",
+            "room_015",
+            "room_016"
+          ],
+          "ClosingConnection": "loop_branch_0"
+        },
+        {
+          "ForkRoom": "room_017",
+          "BranchA": [
+            "room_018",
+            "room_019",
+            "room_020",
+            "room_021"
+          ],
+          "BranchB": [
+            "room_022",
+            "room_023",
+            "room_024",
+            "room_025",
+            "room_026",
+            "room_027"
+          ],
+          "Bridge": [
+            "room_028",
+            "room_029",
+            "room_030",
+            "room_031",
+            "room_032"
+          ],
+          "ClosingConnection": "loop_branch_1"
+        }
+      ],
+      "Attempts": 197
+    },
+    {
+      "Seed": 6,
+      "Manifest": {
+        "GeneratorVersion": "branch-routing-v0.3",
+        "ContentVersion": "prototype-rooms-v0.2",
+        "MetresPerUnit": 0.5,
+        "Rooms": [
+          {
+            "InstanceId": "room_000",
+            "ModuleId": "entry",
+            "Position": {
+              "X": 0,
+              "Y": 0,
+              "Z": 0
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_001",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 16,
+              "Y": 0,
+              "Z": 0
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_002",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 32,
+              "Y": 0,
+              "Z": 0
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_003",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 32,
+              "Y": 0,
+              "Z": -16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_004",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 48,
+              "Y": 0,
+              "Z": -16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_005",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 64,
+              "Y": 0,
+              "Z": -16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_006",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 64,
+              "Y": 0,
+              "Z": -32
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_007",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 80,
+              "Y": 0,
+              "Z": -32
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_008",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 16,
+              "Y": 0,
+              "Z": 16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_009",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 16,
+              "Y": 0,
+              "Z": 32
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_010",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 32,
+              "Y": 0,
+              "Z": 32
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_011",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 32,
+              "Y": 0,
+              "Z": 48
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_012",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 32,
+              "Y": 0,
+              "Z": 64
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_013",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 48,
+              "Y": 0,
+              "Z": 64
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_014",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 80,
+              "Y": 0,
+              "Z": -16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_015",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 80,
+              "Y": 0,
+              "Z": 0
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_016",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 64,
+              "Y": 0,
+              "Z": 0
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_017",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 48,
+              "Y": 0,
+              "Z": 0
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_018",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 48,
+              "Y": 0,
+              "Z": 16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_019",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 48,
+              "Y": 0,
+              "Z": 32
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_020",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 48,
+              "Y": 0,
+              "Z": 48
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_021",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 0,
+              "Y": 0,
+              "Z": 32
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_022",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 0,
+              "Y": 0,
+              "Z": 48
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_023",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 0,
+              "Y": 0,
+              "Z": 64
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_024",
+            "ModuleId": "junction",
+            "Position": {
+              "X": 0,
+              "Y": 0,
+              "Z": 80
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_025",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -16,
+              "Y": 0,
+              "Z": 80
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_026",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -32,
+              "Y": 0,
+              "Z": 80
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_027",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -16,
+              "Y": 0,
+              "Z": 32
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_028",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -16,
+              "Y": 0,
+              "Z": 16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_029",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -32,
+              "Y": 0,
+              "Z": 16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_030",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -32,
+              "Y": 0,
+              "Z": 0
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_031",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -48,
+              "Y": 0,
+              "Z": 80
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_032",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -48,
+              "Y": 0,
+              "Z": 64
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_033",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -48,
+              "Y": 0,
+              "Z": 48
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_034",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -48,
+              "Y": 0,
+              "Z": 32
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_035",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -48,
+              "Y": 0,
+              "Z": 16
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_036",
+            "ModuleId": "junction",
+            "Position": {
+              "X": -48,
+              "Y": 0,
+              "Z": 0
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_037",
+            "ModuleId": "corridor",
+            "Position": {
+              "X": 64,
+              "Y": 0,
+              "Z": -48
+            },
+            "QuarterTurns": 0
+          },
+          {
+            "InstanceId": "room_038",
+            "ModuleId": "ramp",
+            "Position": {
+              "X": -24,
+              "Y": -8,
+              "Z": 64
+            },
+            "QuarterTurns": 1
+          },
+          {
+            "InstanceId": "room_039",
+            "ModuleId": "hall",
+            "Position": {
+              "X": -52,
+              "Y": -8,
+              "Z": 68
+            },
+            "QuarterTurns": 0
+          }
+        ],
+        "Connections": [
+          {
+            "Id": "connection_001",
+            "FromRoom": "room_000",
+            "FromSocket": "east",
+            "ToRoom": "room_001",
+            "ToSocket": "west",
+            "DoorId": "door_001"
+          },
+          {
+            "Id": "connection_002",
+            "FromRoom": "room_001",
+            "FromSocket": "east",
+            "ToRoom": "room_002",
+            "ToSocket": "west",
+            "DoorId": "door_002"
+          },
+          {
+            "Id": "connection_003",
+            "FromRoom": "room_002",
+            "FromSocket": "south",
+            "ToRoom": "room_003",
+            "ToSocket": "north",
+            "DoorId": "door_003"
+          },
+          {
+            "Id": "connection_004",
+            "FromRoom": "room_003",
+            "FromSocket": "east",
+            "ToRoom": "room_004",
+            "ToSocket": "west",
+            "DoorId": "door_004"
+          },
+          {
+            "Id": "connection_005",
+            "FromRoom": "room_004",
+            "FromSocket": "east",
+            "ToRoom": "room_005",
+            "ToSocket": "west",
+            "DoorId": "door_005"
+          },
+          {
+            "Id": "connection_006",
+            "FromRoom": "room_005",
+            "FromSocket": "south",
+            "ToRoom": "room_006",
+            "ToSocket": "north",
+            "DoorId": "door_006"
+          },
+          {
+            "Id": "connection_007",
+            "FromRoom": "room_006",
+            "FromSocket": "east",
+            "ToRoom": "room_007",
+            "ToSocket": "west",
+            "DoorId": "door_007"
+          },
+          {
+            "Id": "connection_008",
+            "FromRoom": "room_001",
+            "FromSocket": "north",
+            "ToRoom": "room_008",
+            "ToSocket": "south",
+            "DoorId": "door_008"
+          },
+          {
+            "Id": "connection_009",
+            "FromRoom": "room_008",
+            "FromSocket": "north",
+            "ToRoom": "room_009",
+            "ToSocket": "south",
+            "DoorId": "door_009"
+          },
+          {
+            "Id": "connection_010",
+            "FromRoom": "room_009",
+            "FromSocket": "east",
+            "ToRoom": "room_010",
+            "ToSocket": "west",
+            "DoorId": "door_010"
+          },
+          {
+            "Id": "connection_011",
+            "FromRoom": "room_010",
+            "FromSocket": "north",
+            "ToRoom": "room_011",
+            "ToSocket": "south",
+            "DoorId": "door_011"
+          },
+          {
+            "Id": "connection_012",
+            "FromRoom": "room_011",
+            "FromSocket": "north",
+            "ToRoom": "room_012",
+            "ToSocket": "south",
+            "DoorId": "door_012"
+          },
+          {
+            "Id": "connection_013",
+            "FromRoom": "room_012",
+            "FromSocket": "east",
+            "ToRoom": "room_013",
+            "ToSocket": "west",
+            "DoorId": "door_013"
+          },
+          {
+            "Id": "connection_014",
+            "FromRoom": "room_007",
+            "FromSocket": "north",
+            "ToRoom": "room_014",
+            "ToSocket": "south",
+            "DoorId": "door_014"
+          },
+          {
+            "Id": "connection_015",
+            "FromRoom": "room_014",
+            "FromSocket": "north",
+            "ToRoom": "room_015",
+            "ToSocket": "south",
+            "DoorId": "door_015"
+          },
+          {
+            "Id": "connection_016",
+            "FromRoom": "room_015",
+            "FromSocket": "west",
+            "ToRoom": "room_016",
+            "ToSocket": "east",
+            "DoorId": "door_016"
+          },
+          {
+            "Id": "connection_017",
+            "FromRoom": "room_016",
+            "FromSocket": "west",
+            "ToRoom": "room_017",
+            "ToSocket": "east",
+            "DoorId": "door_017"
+          },
+          {
+            "Id": "connection_018",
+            "FromRoom": "room_017",
+            "FromSocket": "north",
+            "ToRoom": "room_018",
+            "ToSocket": "south",
+            "DoorId": "door_018"
+          },
+          {
+            "Id": "connection_019",
+            "FromRoom": "room_018",
+            "FromSocket": "north",
+            "ToRoom": "room_019",
+            "ToSocket": "south",
+            "DoorId": "door_019"
+          },
+          {
+            "Id": "connection_020",
+            "FromRoom": "room_019",
+            "FromSocket": "north",
+            "ToRoom": "room_020",
+            "ToSocket": "south",
+            "DoorId": "door_020"
+          },
+          {
+            "Id": "loop_branch_0",
+            "FromRoom": "room_020",
+            "FromSocket": "north",
+            "ToRoom": "room_013",
+            "ToSocket": "south",
+            "DoorId": "door_loop_branch_0"
+          },
+          {
+            "Id": "connection_021",
+            "FromRoom": "room_009",
+            "FromSocket": "west",
+            "ToRoom": "room_021",
+            "ToSocket": "east",
+            "DoorId": "door_021"
+          },
+          {
+            "Id": "connection_022",
+            "FromRoom": "room_021",
+            "FromSocket": "north",
+            "ToRoom": "room_022",
+            "ToSocket": "south",
+            "DoorId": "door_022"
+          },
+          {
+            "Id": "connection_023",
+            "FromRoom": "room_022",
+            "FromSocket": "north",
+            "ToRoom": "room_023",
+            "ToSocket": "south",
+            "DoorId": "door_023"
+          },
+          {
+            "Id": "connection_024",
+            "FromRoom": "room_023",
+            "FromSocket": "north",
+            "ToRoom": "room_024",
+            "ToSocket": "south",
+            "DoorId": "door_024"
+          },
+          {
+            "Id": "connection_025",
+            "FromRoom": "room_024",
+            "FromSocket": "west",
+            "ToRoom": "room_025",
+            "ToSocket": "east",
+            "DoorId": "door_025"
+          },
+          {
+            "Id": "connection_026",
+            "FromRoom": "room_025",
+            "FromSocket": "west",
+            "ToRoom": "room_026",
+            "ToSocket": "east",
+            "DoorId": "door_026"
+          },
+          {
+            "Id": "connection_027",
+            "FromRoom": "room_021",
+            "FromSocket": "west",
+            "ToRoom": "room_027",
+            "ToSocket": "east",
+            "DoorId": "door_027"
+          },
+          {
+            "Id": "connection_028",
+            "FromRoom": "room_027",
+            "FromSocket": "south",
+            "ToRoom": "room_028",
+            "ToSocket": "north",
+            "DoorId": "door_028"
+          },
+          {
+            "Id": "connection_029",
+            "FromRoom": "room_028",
+            "FromSocket": "west",
+            "ToRoom": "room_029",
+            "ToSocket": "east",
+            "DoorId": "door_029"
+          },
+          {
+            "Id": "connection_030",
+            "FromRoom": "room_029",
+            "FromSocket": "south",
+            "ToRoom": "room_030",
+            "ToSocket": "north",
+            "DoorId": "door_030"
+          },
+          {
+            "Id": "connection_031",
+            "FromRoom": "room_026",
+            "FromSocket": "west",
+            "ToRoom": "room_031",
+            "ToSocket": "east",
+            "DoorId": "door_031"
+          },
+          {
+            "Id": "connection_032",
+            "FromRoom": "room_031",
+            "FromSocket": "south",
+            "ToRoom": "room_032",
+            "ToSocket": "north",
+            "DoorId": "door_032"
+          },
+          {
+            "Id": "connection_033",
+            "FromRoom": "room_032",
+            "FromSocket": "south",
+            "ToRoom": "room_033",
+            "ToSocket": "north",
+            "DoorId": "door_033"
+          },
+          {
+            "Id": "connection_034",
+            "FromRoom": "room_033",
+            "FromSocket": "south",
+            "ToRoom": "room_034",
+            "ToSocket": "north",
+            "DoorId": "door_034"
+          },
+          {
+            "Id": "connection_035",
+            "FromRoom": "room_034",
+            "FromSocket": "south",
+            "ToRoom": "room_035",
+            "ToSocket": "north",
+            "DoorId": "door_035"
+          },
+          {
+            "Id": "connection_036",
+            "FromRoom": "room_035",
+            "FromSocket": "south",
+            "ToRoom": "room_036",
+            "ToSocket": "north",
+            "DoorId": "door_036"
+          },
+          {
+            "Id": "loop_branch_1",
+            "FromRoom": "room_036",
+            "FromSocket": "east",
+            "ToRoom": "room_030",
+            "ToSocket": "west",
+            "DoorId": "door_loop_branch_1"
+          },
+          {
+            "Id": "connection_037",
+            "FromRoom": "room_006",
+            "FromSocket": "south",
+            "ToRoom": "room_037",
+            "ToSocket": "north",
+            "DoorId": "door_037"
+          },
+          {
+            "Id": "connection_038",
+            "FromRoom": "room_023",
+            "FromSocket": "west",
+            "ToRoom": "room_038",
+            "ToSocket": "upper",
+            "DoorId": "door_038"
+          },
+          {
+            "Id": "connection_039",
+            "FromRoom": "room_038",
+            "FromSocket": "lower",
+            "ToRoom": "room_039",
+            "ToSocket": "east_01",
+            "DoorId": "door_039"
+          }
+        ]
+      },
+      "Loops": [
+        {
+          "ForkRoom": "room_001",
+          "BranchA": [
+            "room_002",
+            "room_003",
+            "room_004",
+            "room_005",
+            "room_006",
+            "room_007"
+          ],
+          "BranchB": [
+            "room_008",
+            "room_009",
+            "room_010",
+            "room_011",
+            "room_012",
+            "room_013"
+          ],
+          "Bridge": [
+            "room_014",
+            "room_015",
+            "room_016",
+            "room_017",
+            "room_018",
+            "room_019",
+            "room_020"
+          ],
+          "ClosingConnection": "loop_branch_0"
+        },
+        {
+          "ForkRoom": "room_021",
+          "BranchA": [
+            "room_022",
+            "room_023",
+            "room_024",
+            "room_025",
+            "room_026"
+          ],
+          "BranchB": [
+            "room_027",
+            "room_028",
+            "room_029",
+            "room_030"
+          ],
+          "Bridge": [
+            "room_031",
+            "room_032",
+            "room_033",
+            "room_034",
+            "room_035",
+            "room_036"
+          ],
+          "ClosingConnection": "loop_branch_1"
+        }
+      ],
+      "Attempts": 602
+    }
+  ]
+}

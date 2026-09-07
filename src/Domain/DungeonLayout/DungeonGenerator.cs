@@ -7,7 +7,7 @@ namespace LethalDungeon.Domain.Dungeons
     public static class DungeonGenerator
     {
         public static GenerationResult Generate(RoomCatalog catalog, string rootModuleId, int targetRooms,
-            IRandomSource random, int maxAttempts = 3000, bool requireHeightChange = false, int minimumCycles = 0, string? cycleModuleId = null)
+            IRandomSource random, int maxAttempts = 3000, bool requireHeightChange = false, int minimumCycles = 0, string? cycleModuleId = null, DungeonManifest? initialLayout = null)
         {
             if (minimumCycles < 0 || minimumCycles > 8) throw new ArgumentOutOfRangeException(nameof(minimumCycles));
             if (catalog == null) throw new ArgumentNullException(nameof(catalog));
@@ -20,8 +20,11 @@ namespace LethalDungeon.Domain.Dungeons
                 if (string.IsNullOrWhiteSpace(cycleModuleId)) throw new ArgumentException("A connector module is required for loop growth.");
                 if (catalog.Get(cycleModuleId!).IsRootOnly) throw new ArgumentException("Connector module cannot be root-only.");
             }
-            var rooms = new List<PlacedRoom> { new PlacedRoom("room_000",rootModuleId,new GridPoint(0,0,0)) };
-            var links = new List<DoorConnection>();
+            if (initialLayout != null && (!LayoutValidator.Validate(catalog,initialLayout).IsValid ||
+                initialLayout.Rooms.Count > targetRooms || initialLayout.Rooms[0].ModuleId != rootModuleId))
+                throw new ArgumentException("Invalid initial layout, root or target count.");
+            var rooms = initialLayout == null ? new List<PlacedRoom> { new PlacedRoom("room_000",rootModuleId,new GridPoint(0,0,0)) } : initialLayout.Rooms.ToList();
+            var links = initialLayout == null ? new List<DoorConnection>() : initialLayout.Connections.ToList();
             int attempts = 0, backtracks = 0;
             DungeonManifest Snapshot() => new DungeonManifest(catalog.Version,rooms,links);
             bool Search()
@@ -78,7 +81,11 @@ namespace LethalDungeon.Domain.Dungeons
                 {
                     if (attempts >= maxAttempts) return false;
                     attempts++;
-                    string suffix = rooms.Count.ToString("000",System.Globalization.CultureInfo.InvariantCulture);
+                    int nextId = rooms.Count;
+                    string suffix;
+                    do { suffix = nextId.ToString("000",System.Globalization.CultureInfo.InvariantCulture); nextId++; }
+                    while (rooms.Any(r => r.InstanceId == "room_"+suffix) ||
+                        links.Any(e => e.Id == "connection_"+suffix || e.DoorId == "door_"+suffix));
                     var child = LayoutGeometry.Attach(catalog.Get(candidate.Parent.ModuleId),candidate.Parent,candidate.From.Id,
                         candidate.Child,candidate.To.Id,"room_"+suffix);
                     int oldLinkCount = links.Count;

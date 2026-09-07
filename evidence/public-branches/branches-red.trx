@@ -1,0 +1,157 @@
+<ns0:TestRun xmlns:ns0="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" id="562b5543-aad5-41e8-a06e-d1581e9d42c6" name="local-validation">
+  <ns0:Times creation="2026-09-07T16:00:02.1019770+09:00" queuing="2026-09-07T16:00:02.1019770+09:00" start="2026-09-07T16:00:01.6704740+09:00" finish="2026-09-07T16:00:02.1051310+09:00" />
+  <ns0:TestSettings name="default" id="3bac81d8-c0ae-4339-a9db-490384ad2f19">
+    <ns0:Deployment runDeploymentRoot="local-validation" />
+  </ns0:TestSettings>
+  <ns0:Results>
+    <ns0:UnitTestResult executionId="45bff881-30f3-4a99-bac6-7279d3261783" testId="22c75b8e-2625-b979-925d-bd6a48009d43" testName="HundredSeedsHaveLongCyclesAndPreviewTraces" computerName="local-machine" duration="00:00:00.0007670" startTime="2026-09-07T16:00:02.0392020+09:00" endTime="2026-09-07T16:00:02.0399690+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="45bff881-30f3-4a99-bac6-7279d3261783">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.BranchLoopGenerator.Generate(IRandomSource random, Int32 targetRooms, Int32 loopCount, Int32 maxAttempts, Boolean requireHeightChange) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/BranchLoopGenerator.cs:line 27
+   at LethalDungeon.Tests.DungeonBranchLoopTests.HundredSeedsHaveLongCyclesAndPreviewTraces() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonBranchLoopTests.cs:line 79
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.BranchLoopGenerator.Generate(IRandomSource random, Int32 targetRooms, Int32 loopCount, Int32 maxAttempts, Boolean requireHeightChange) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/BranchLoopGenerator.cs:line 27
+   at LethalDungeon.Tests.DungeonBranchLoopTests.HundredSeedsHaveLongCyclesAndPreviewTraces() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonBranchLoopTests.cs:line 79
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="4260df9b-4616-42f7-b498-b290f5a801d8" testId="fd6c9c48-a52d-66fd-a6eb-c40049ec1004" testName="SameSeedRepeatsBranchAndBridgeLayout" computerName="local-machine" duration="00:00:00.0002200" startTime="2026-09-07T16:00:02.0509190+09:00" endTime="2026-09-07T16:00:02.0511390+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4260df9b-4616-42f7-b498-b290f5a801d8">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.BranchLoopGenerator.Generate(IRandomSource random, Int32 targetRooms, Int32 loopCount, Int32 maxAttempts, Boolean requireHeightChange) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/BranchLoopGenerator.cs:line 27
+   at LethalDungeon.Tests.DungeonBranchLoopTests.SameSeedRepeatsBranchAndBridgeLayout() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonBranchLoopTests.cs:line 71
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.BranchLoopGenerator.Generate(IRandomSource random, Int32 targetRooms, Int32 loopCount, Int32 maxAttempts, Boolean requireHeightChange) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/BranchLoopGenerator.cs:line 27
+   at LethalDungeon.Tests.DungeonBranchLoopTests.SameSeedRepeatsBranchAndBridgeLayout() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonBranchLoopTests.cs:line 71
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="40f548a6-634f-4bc8-8d11-f53632575a62" testId="76f12e4d-af92-6d94-770e-74387b5aa078" testName="FailureHasNoPartialMapOrTrace" computerName="local-machine" duration="00:00:00.0062160" startTime="2026-09-07T16:00:02.0323450+09:00" endTime="2026-09-07T16:00:02.0385320+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="40f548a6-634f-4bc8-8d11-f53632575a62">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.BranchLoopGenerator.Generate(IRandomSource random, Int32 targetRooms, Int32 loopCount, Int32 maxAttempts, Boolean requireHeightChange) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/BranchLoopGenerator.cs:line 27
+   at LethalDungeon.Tests.DungeonBranchLoopTests.FailureHasNoPartialMapOrTrace() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonBranchLoopTests.cs:line 64
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.BranchLoopGenerator.Generate(IRandomSource random, Int32 targetRooms, Int32 loopCount, Int32 maxAttempts, Boolean requireHeightChange) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/BranchLoopGenerator.cs:line 27
+   at LethalDungeon.Tests.DungeonBranchLoopTests.FailureHasNoPartialMapOrTrace() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonBranchLoopTests.cs:line 64
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="7c1fd96c-db49-446b-b515-752116e871b8" testId="e2cf17c7-6185-71cc-b7b3-dcf97bc6edc7" testName="InvalidBudget(100001)" computerName="local-machine" duration="00:00:00.0003940" startTime="2026-09-07T16:00:02.0497750+09:00" endTime="2026-09-07T16:00:02.0501690+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7c1fd96c-db49-446b-b515-752116e871b8">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentOutOfRangeException&gt;
+  But was:  &lt;System.NotImplementedException: The method or operation is not implemented.
+   at LethalDungeon.Domain.Dungeons.BranchLoopGenerator.Generate(IRandomSource random, Int32 targetRooms, Int32 loopCount, Int32 maxAttempts, Boolean requireHeightChange) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/BranchLoopGenerator.cs:line 27
+   at LethalDungeon.Tests.DungeonBranchLoopTests.&lt;&gt;c__DisplayClass5_0.&lt;InvalidBudget&gt;b__0() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonBranchLoopTests.cs:line 68
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, Action code, String message, Object[] args)&gt;
+</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Tests.DungeonBranchLoopTests.InvalidBudget(Int32 budget) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonBranchLoopTests.cs:line 68
+   at InvokeStub_DungeonBranchLoopTests.InvalidBudget(Object, Span`1)
+
+1)    at LethalDungeon.Tests.DungeonBranchLoopTests.InvalidBudget(Int32 budget) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonBranchLoopTests.cs:line 68
+   at InvokeStub_DungeonBranchLoopTests.InvalidBudget(Object, Span`1)
+
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="777f4b8c-6e50-44d1-9719-a776f95d13e4" testId="8e4d1240-9486-5c92-6843-44e2412b84cc" testName="TwoLongBranchEndsAreJoinedThroughARealBridge" computerName="local-machine" duration="00:00:00.0001190" startTime="2026-09-07T16:00:02.0511450+09:00" endTime="2026-09-07T16:00:02.0512640+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="777f4b8c-6e50-44d1-9719-a776f95d13e4">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.BranchLoopGenerator.Generate(IRandomSource random, Int32 targetRooms, Int32 loopCount, Int32 maxAttempts, Boolean requireHeightChange) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/BranchLoopGenerator.cs:line 27
+   at LethalDungeon.Tests.DungeonBranchLoopTests.TwoLongBranchEndsAreJoinedThroughARealBridge() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonBranchLoopTests.cs:line 60
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.BranchLoopGenerator.Generate(IRandomSource random, Int32 targetRooms, Int32 loopCount, Int32 maxAttempts, Boolean requireHeightChange) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/BranchLoopGenerator.cs:line 27
+   at LethalDungeon.Tests.DungeonBranchLoopTests.TwoLongBranchEndsAreJoinedThroughARealBridge() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonBranchLoopTests.cs:line 60
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="3aa606c3-70ba-44cb-aa03-7ff1d7655f83" testId="18f60614-466a-220f-204c-feb6daed5f74" testName="InvalidBudget(0)" computerName="local-machine" duration="00:00:00.0097160" startTime="2026-09-07T16:00:02.0400020+09:00" endTime="2026-09-07T16:00:02.0497170+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3aa606c3-70ba-44cb-aa03-7ff1d7655f83">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentOutOfRangeException&gt;
+  But was:  &lt;System.NotImplementedException: The method or operation is not implemented.
+   at LethalDungeon.Domain.Dungeons.BranchLoopGenerator.Generate(IRandomSource random, Int32 targetRooms, Int32 loopCount, Int32 maxAttempts, Boolean requireHeightChange) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/BranchLoopGenerator.cs:line 27
+   at LethalDungeon.Tests.DungeonBranchLoopTests.&lt;&gt;c__DisplayClass5_0.&lt;InvalidBudget&gt;b__0() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonBranchLoopTests.cs:line 68
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, Action code, String message, Object[] args)&gt;
+</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Tests.DungeonBranchLoopTests.InvalidBudget(Int32 budget) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonBranchLoopTests.cs:line 68
+
+1)    at LethalDungeon.Tests.DungeonBranchLoopTests.InvalidBudget(Int32 budget) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonBranchLoopTests.cs:line 68
+
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+  </ns0:Results>
+  <ns0:TestDefinitions>
+    <ns0:UnitTest name="HundredSeedsHaveLongCyclesAndPreviewTraces" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="22c75b8e-2625-b979-925d-bd6a48009d43">
+      <ns0:Execution id="45bff881-30f3-4a99-bac6-7279d3261783" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonBranchLoopTests" name="HundredSeedsHaveLongCyclesAndPreviewTraces" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="FailureHasNoPartialMapOrTrace" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="76f12e4d-af92-6d94-770e-74387b5aa078">
+      <ns0:Execution id="40f548a6-634f-4bc8-8d11-f53632575a62" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonBranchLoopTests" name="FailureHasNoPartialMapOrTrace" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="SameSeedRepeatsBranchAndBridgeLayout" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="fd6c9c48-a52d-66fd-a6eb-c40049ec1004">
+      <ns0:Execution id="4260df9b-4616-42f7-b498-b290f5a801d8" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonBranchLoopTests" name="SameSeedRepeatsBranchAndBridgeLayout" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="InvalidBudget(100001)" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="e2cf17c7-6185-71cc-b7b3-dcf97bc6edc7">
+      <ns0:Execution id="7c1fd96c-db49-446b-b515-752116e871b8" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonBranchLoopTests" name="InvalidBudget(100001)" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="InvalidBudget(0)" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="18f60614-466a-220f-204c-feb6daed5f74">
+      <ns0:Execution id="3aa606c3-70ba-44cb-aa03-7ff1d7655f83" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonBranchLoopTests" name="InvalidBudget(0)" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="TwoLongBranchEndsAreJoinedThroughARealBridge" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="8e4d1240-9486-5c92-6843-44e2412b84cc">
+      <ns0:Execution id="777f4b8c-6e50-44d1-9719-a776f95d13e4" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonBranchLoopTests" name="TwoLongBranchEndsAreJoinedThroughARealBridge" />
+    </ns0:UnitTest>
+  </ns0:TestDefinitions>
+  <ns0:TestEntries>
+    <ns0:TestEntry testId="22c75b8e-2625-b979-925d-bd6a48009d43" executionId="45bff881-30f3-4a99-bac6-7279d3261783" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="fd6c9c48-a52d-66fd-a6eb-c40049ec1004" executionId="4260df9b-4616-42f7-b498-b290f5a801d8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="76f12e4d-af92-6d94-770e-74387b5aa078" executionId="40f548a6-634f-4bc8-8d11-f53632575a62" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="e2cf17c7-6185-71cc-b7b3-dcf97bc6edc7" executionId="7c1fd96c-db49-446b-b515-752116e871b8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="8e4d1240-9486-5c92-6843-44e2412b84cc" executionId="777f4b8c-6e50-44d1-9719-a776f95d13e4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="18f60614-466a-220f-204c-feb6daed5f74" executionId="3aa606c3-70ba-44cb-aa03-7ff1d7655f83" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </ns0:TestEntries>
+  <ns0:TestLists>
+    <ns0:TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </ns0:TestLists>
+  <ns0:ResultSummary outcome="Failed">
+    <ns0:Counters total="6" executed="6" passed="0" failed="6" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <ns0:Output>
+      <ns0:StdOut>NUnit Adapter 6.3.0.0: Test execution started
+Running selected tests in /workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll
+   NUnit3TestExecutor discovered 6 of 6 NUnit test cases using Current Discovery mode, Non-Explicit run
+</ns0:StdOut>
+    </ns0:Output>
+  </ns0:ResultSummary>
+</ns0:TestRun>
