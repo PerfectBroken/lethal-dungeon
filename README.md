@@ -8,6 +8,7 @@
 - [Domain](src/Domain/README.md)：纯规则程序集。
 - [背包倍率](src/Domain/BackpackLoad/README.md)：已确认0～10格线性减速。
 - [探险时钟](src/Domain/WorldClock/README.md)：已确认时间换算；房间加载屏障另属后续模块。
+- [探险启动编排](src/Server/ExpeditionStartup/README.md)：地图生成、客户端搭建、全员到达及统一开局的流程归属；当前为模块规范，未实现。
 - [规则测试](tests/Domain.Tests/README.md)：规则与边界测试。
 - [规范检查](tests/Architecture.Tests/README.md)：README与依赖约束检查。
 - [执行证据](evidence/README.md)：真实运行结果及限制。
