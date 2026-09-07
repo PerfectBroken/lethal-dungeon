@@ -13,7 +13,7 @@ namespace LethalDungeon.Tests
         [TestCase(3u,1,32)] [TestCase(0u,2,56)] [TestCase(1u,3,80)] [TestCase(4u,4,104)]
         public void DefaultPlanReservesExplorationScale(uint seed,int loops,int rooms)
         {
-            var p=SeededDungeon.Resolve(seed);var old=SeededDungeon.Resolve(seed,"seed-rules-v1");
+            var p=SeededDungeon.Resolve(seed,"seed-rules-v2");var old=SeededDungeon.Resolve(seed,"seed-rules-v1");
             Assert.That(p.RuleVersion,Is.EqualTo("seed-rules-v2"));Assert.That(p.LoopCount,Is.EqualTo(loops));Assert.That(p.TargetRooms,Is.EqualTo(rooms));
             Assert.That(p.LayoutSeed,Is.EqualTo(old.LayoutSeed));Assert.That(p.BranchesPerLoop,Is.EqualTo(2));
             Assert.That(p.MinBranchDepth,Is.EqualTo(2));Assert.That(p.MaxBranchDepth,Is.EqualTo(4));
@@ -32,12 +32,12 @@ namespace LethalDungeon.Tests
         }
         [Test] public void ExhaustionReturnsNoPartialExplorationTrace()
         {
-            var r=SeededDungeon.Generate(4,1);Assert.That(r.Result.Layout.Manifest,Is.Null);Assert.That(r.Result.ExplorationBranches,Is.Empty);
+            var r=SeededDungeon.Generate(4,1,ruleVersion:"seed-rules-v2");Assert.That(r.Result.Layout.Manifest,Is.Null);Assert.That(r.Result.ExplorationBranches,Is.Empty);
             Assert.That(r.Result.Layout.Attempts,Is.EqualTo(1));Assert.That(r.Plan.BranchesPerLoop,Is.EqualTo(2));
         }
         [Test] public void NewModeIsReproducible()
         {
-            var a=SeededDungeon.Generate(5);var b=SeededDungeon.Generate(5);Assert.That(a.Result.Layout.Succeeded,Is.True);
+            var a=SeededDungeon.Generate(5,ruleVersion:"seed-rules-v2");var b=SeededDungeon.Generate(5,ruleVersion:"seed-rules-v2");Assert.That(a.Result.Layout.Succeeded,Is.True);
             Assert.That(JsonSerializer.Serialize(a),Is.EqualTo(JsonSerializer.Serialize(b)));
         }
         [Test] public void UnknownProtectedRoomIsRejected()
@@ -80,7 +80,7 @@ namespace LethalDungeon.Tests
         {
             var examples=new List<object>();int max=0;
             for(uint seed=0;seed<100;seed++){
-                var g=SeededDungeon.Generate(seed);Assert.That(g.Result.Layout.Succeeded,Is.True,$"seed {seed}: {g.Result.Layout.Failure}, attempts {g.Result.Layout.Attempts}");Check(g);
+                var g=SeededDungeon.Generate(seed,ruleVersion:"seed-rules-v2");Assert.That(g.Result.Layout.Succeeded,Is.True,$"seed {seed}: {g.Result.Layout.Failure}, attempts {g.Result.Layout.Attempts}");Check(g);
                 Assert.That(g.Result.Layout.Manifest!.Rooms.Count,Is.EqualTo(g.Plan.TargetRooms));
                 var map=g.Result.Layout.Manifest!;var catalog=PrototypeCatalog.CreateLoopReady();
                 Assert.That(map.Connections.Select(e=>{var room=map.Rooms.Single(r=>r.InstanceId==e.FromRoom);return LayoutGeometry.WorldSocket(catalog.Get(room.ModuleId),room,e.FromSocket).Position.Y;}).Distinct().Count(),Is.GreaterThanOrEqualTo(2));

@@ -126,6 +126,13 @@ namespace LethalDungeon.Domain.Dungeons
 
     public static class PrototypeCatalog
     {
+        public static RoomCatalog CreateSpatial()
+        {
+            RoomDefinition Transition(string id,string name) => new RoomDefinition(id,name,
+                new[]{new GridBox(new GridPoint(-8,0,-8),new GridPoint(8,16,8))},
+                new[]{new DoorSocket("lower",new GridPoint(0,0,-8),Direction.South),new DoorSocket("upper",new GridPoint(0,8,8),Direction.North)});
+            return new RoomCatalog("prototype-spatial-v0.3",CreateLoopReady().Rooms.Concat(new[]{Transition("routing_stairs","主路楼梯"),Transition("routing_ramp","主路坡道")}));
+        }
         public static RoomCatalog CreateLoopReady()
         {
             var junction = new RoomDefinition("junction","四向连接房",new[] {new GridBox(new GridPoint(-8,0,-8),new GridPoint(8,8,8))},new[] {

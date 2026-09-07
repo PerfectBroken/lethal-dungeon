@@ -94,3 +94,11 @@ public-red是实际Red报告的脱敏副本：本机工程绝对路径替换为`
 - 100种子均满足环数、完整长环、无短环、几何、跨层和每环2条2～4房间独立死路。最大20690次尝试，预算100000。真实样例docs/examples/exploration-layouts.json。
 - Release全量142规则+14规范检查通过，0跳过；public-exploration/domain-green.trx、architecture-green.trx。命令dotnet test LethalDungeon.sln --no-restore -c Release --logger trx --results-directory <本地报告目录>。公开报告仅脱敏路径、用户名、主机名，不修改断言或结果。
 - 预览40种离线脚本状态检查通过，覆盖两种宽度、全图/单环、空间/俯视及支路显隐；这不是浏览器视觉验证。未绕过此前浏览器安全策略。引擎、导航、网络、微信性能和云端CI状态不变。
+
+## 主路径跨层（2026-09-07）
+
+- MAP-024～027规范与8个新测试先行；CreateSpatial编译桩先建。首次8例均有效Red，直接失败于尚未提供默认v3规则，报告public-spatial/spatial-red.trx。实现后8例通过，已执行完整高度、过渡门、图与空间断言。
+- 每环在主路骨架阶段求解两个过渡模块及抬升区域，探索支路与填充在其后生成；保持共享预算、旧版入口与原测试断言。新目录加入8×8×8米主路楼梯/坡道原型。
+- 100种子成功，逐环至少两层各2间普通房、楼梯/坡道两端实际接通且高差4米、至少一条高层保障支路；长环与无短路、空间、全图连通通过。最大40873步，预算100000。示例docs/examples/spatial-layouts.json。
+- Release全量150规则+14规范检查通过，0跳过，退出码0；public-spatial/domain-green.trx、architecture-green.trx。执行dotnet test LethalDungeon.sln --no-restore -c Release --logger trx --results-directory <本地报告目录>。报告仅脱敏个人路径及主机标识。
+- 预览60种离线脚本状态检查通过：两种宽度、全图/单环、真实比例/高度×3/俯视、支路显隐；未进行浏览器视觉实测。没有绕过此前浏览器安全策略；引擎台阶、坡面通行、导航、微信真机及云端CI状态不变。

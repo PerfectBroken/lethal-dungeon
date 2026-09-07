@@ -11,3 +11,5 @@ loop-layouts.json为v0.2环路目录和6份18房间清单；来自DungeonLoopTes
 branch-loop-layouts.json为最新长支线模式：6份40房间、2大环样例。Loops轨迹标明ForkRoom、BranchA、BranchB、Bridge及ClosingConnection，可检查连接前的两条叶端支线及连接后的大环。新主预览使用此文件，原loop-layouts.json保留作四房间小环历史对照。
 
 exploration-layouts.json：seed-rules-v2种子4、5的实际生成结果，包含目录、Plan、最终Manifest、长环轨迹和ExplorationBranches。来自100种子测试导出，均为104房间/4环/8条保障支路；额外填充可能产生更多死路。
+
+spatial-layouts.json：seed-rules-v3种子4、5的实际生成清单与目录，每个大环都通过主路楼梯和坡道跨层。种子5房间底面位于0/4/8米，104房间、4环、8条保障支路、14个非入口死路。旧exploration-layouts.json保留作为v2历史平面主路结果。

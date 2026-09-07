@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="346ddd9a-6271-4cc8-93dc-b46a4a2f4efa" name="local-validation" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-09-07T16:47:54.0923380+09:00" queuing="2026-09-07T16:47:54.0923380+09:00" start="2026-09-07T16:47:53.2412880+09:00" finish="2026-09-07T16:47:54.0964130+09:00" />
+  <TestSettings name="default" id="aa48a709-cbde-483d-bd99-1dbbd5c1293d">
+    <Deployment runDeploymentRoot="local-validation" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="e8a54f21-b460-40d8-8c51-ab554e0d82d9" testId="12fc1353-f4c8-5ad8-85e6-a2cafb8c545b" testName="EveryMainRingCrossesFloors(3)" computerName="local-machine" duration="00:00:00.0288700" startTime="2026-09-07T16:47:53.6077150+09:00" endTime="2026-09-07T16:47:53.6365850+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e8a54f21-b460-40d8-8c51-ab554e0d82d9">
+      <Output>
+        <ErrorInfo>
+          <Message>  Assert.That(g.Plan.RuleVersion, Is.EqualTo("seed-rules-v3"))
+  String lengths are both 13. Strings differ at index 12.
+  Expected: "seed-rules-v3"
+  But was:  "seed-rules-v2"
+  -----------------------^
+</Message>
+          <StackTrace>   at LethalDungeon.Tests.DungeonSpatialTests.Check(SeededDungeonResult g) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSpatialTests.cs:line 18
+   at LethalDungeon.Tests.DungeonSpatialTests.EveryMainRingCrossesFloors(UInt32 seed) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSpatialTests.cs:line 14
+
+1)    at LethalDungeon.Tests.DungeonSpatialTests.Check(SeededDungeonResult g) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSpatialTests.cs:line 18
+   at LethalDungeon.Tests.DungeonSpatialTests.EveryMainRingCrossesFloors(UInt32 seed) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSpatialTests.cs:line 14
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2d4061b4-edd3-428c-9bc4-4f82d0c84c78" testId="d575fc74-2fce-6ce9-7ee8-77335f48cc16" testName="EveryMainRingCrossesFloors(5)" computerName="local-machine" duration="00:00:00.0816520" startTime="2026-09-07T16:47:53.8417980+09:00" endTime="2026-09-07T16:47:53.9234510+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2d4061b4-edd3-428c-9bc4-4f82d0c84c78">
+      <Output>
+        <ErrorInfo>
+          <Message>  Assert.That(g.Plan.RuleVersion, Is.EqualTo("seed-rules-v3"))
+  String lengths are both 13. Strings differ at index 12.
+  Expected: "seed-rules-v3"
+  But was:  "seed-rules-v2"
+  -----------------------^
+</Message>
+          <StackTrace>   at LethalDungeon.Tests.DungeonSpatialTests.Check(SeededDungeonResult g) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSpatialTests.cs:line 18
+   at LethalDungeon.Tests.DungeonSpatialTests.EveryMainRingCrossesFloors(UInt32 seed) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSpatialTests.cs:line 14
+   at InvokeStub_DungeonSpatialTests.EveryMainRingCrossesFloors(Object, Span`1)
+
+1)    at LethalDungeon.Tests.DungeonSpatialTests.Check(SeededDungeonResult g) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSpatialTests.cs:line 18
+   at LethalDungeon.Tests.DungeonSpatialTests.EveryMainRingCrossesFloors(UInt32 seed) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSpatialTests.cs:line 14
+   at InvokeStub_DungeonSpatialTests.EveryMainRingCrossesFloors(Object, Span`1)
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b1f93a7d-c8d7-4a61-87b2-d49de666202b" testId="5e1f32c2-99b8-b7d0-2ed7-8b2e424b01a0" testName="EveryMainRingCrossesFloors(4)" computerName="local-machine" duration="00:00:00.0932320" startTime="2026-09-07T16:47:53.7485410+09:00" endTime="2026-09-07T16:47:53.8417730+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b1f93a7d-c8d7-4a61-87b2-d49de666202b">
+      <Output>
+        <ErrorInfo>
+          <Message>  Assert.That(g.Plan.RuleVersion, Is.EqualTo("seed-rules-v3"))
+  String lengths are both 13. Strings differ at index 12.
+  Expected: "seed-rules-v3"
+  But was:  "seed-rules-v2"
+  -----------------------^
+</Message>
+          <StackTrace>   at LethalDungeon.Tests.DungeonSpatialTests.Check(SeededDungeonResult g) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSpatialTests.cs:line 18
+   at LethalDungeon.Tests.DungeonSpatialTests.EveryMainRingCrossesFloors(UInt32 seed) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSpatialTests.cs:line 14
+   at InvokeStub_DungeonSpatialTests.EveryMainRingCrossesFloors(Object, Span`1)
+
+1)    at LethalDungeon.Tests.DungeonSpatialTests.Check(SeededDungeonResult g) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSpatialTests.cs:line 18
+   at LethalDungeon.Tests.DungeonSpatialTests.EveryMainRingCrossesFloors(UInt32 seed) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSpatialTests.cs:line 14
+   at InvokeStub_DungeonSpatialTests.EveryMainRingCrossesFloors(Object, Span`1)
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ea587d7c-4a4e-4cbf-85f4-ab6260e2eca6" testId="8671818a-beec-d4e8-6bd8-d1f792ab31c4" testName="HundredSpatialSeeds" computerName="local-machine" duration="00:00:00.0434320" startTime="2026-09-07T16:47:53.9244680+09:00" endTime="2026-09-07T16:47:53.9679010+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ea587d7c-4a4e-4cbf-85f4-ab6260e2eca6">
+      <Output>
+        <ErrorInfo>
+          <Message>  Assert.That(g.Plan.RuleVersion, Is.EqualTo("seed-rules-v3"))
+  String lengths are both 13. Strings differ at index 12.
+  Expected: "seed-rules-v3"
+  But was:  "seed-rules-v2"
+  -----------------------^
+</Message>
+          <StackTrace>   at LethalDungeon.Tests.DungeonSpatialTests.Check(SeededDungeonResult g) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSpatialTests.cs:line 18
+   at LethalDungeon.Tests.DungeonSpatialTests.HundredSpatialSeeds() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSpatialTests.cs:line 56
+
+1)    at LethalDungeon.Tests.DungeonSpatialTests.Check(SeededDungeonResult g) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSpatialTests.cs:line 18
+   at LethalDungeon.Tests.DungeonSpatialTests.HundredSpatialSeeds() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSpatialTests.cs:line 56
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="bef10759-a9e0-43bf-a1ed-37b2f3812a21" testId="659dbe73-2332-2437-96dd-f29ce6884761" testName="BudgetFailureHasNoMapOrTraces" computerName="local-machine" duration="00:00:00.0277850" startTime="2026-09-07T16:47:53.5792080+09:00" endTime="2026-09-07T16:47:53.6069620+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bef10759-a9e0-43bf-a1ed-37b2f3812a21">
+      <Output>
+        <ErrorInfo>
+          <Message>  Assert.That(g.Plan.RuleVersion, Is.EqualTo("seed-rules-v3"))
+  String lengths are both 13. Strings differ at index 12.
+  Expected: "seed-rules-v3"
+  But was:  "seed-rules-v2"
+  -----------------------^
+</Message>
+          <StackTrace>   at LethalDungeon.Tests.DungeonSpatialTests.BudgetFailureHasNoMapOrTraces() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSpatialTests.cs:line 51
+
+1)    at LethalDungeon.Tests.DungeonSpatialTests.BudgetFailureHasNoMapOrTraces() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSpatialTests.cs:line 51
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="53308fe6-7063-4c72-b849-b6e25612d9e3" testId="f5c47057-efe2-9b7b-ace9-c057e9c71157" testName="SpatialSeedRepeatsExactly" computerName="local-machine" duration="00:00:00.0721870" startTime="2026-09-07T16:47:53.9679450+09:00" endTime="2026-09-07T16:47:54.0401320+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="53308fe6-7063-4c72-b849-b6e25612d9e3">
+      <Output>
+        <ErrorInfo>
+          <Message>  Assert.That(g.Plan.RuleVersion, Is.EqualTo("seed-rules-v3"))
+  String lengths are both 13. Strings differ at index 12.
+  Expected: "seed-rules-v3"
+  But was:  "seed-rules-v2"
+  -----------------------^
+</Message>
+          <StackTrace>   at LethalDungeon.Tests.DungeonSpatialTests.Check(SeededDungeonResult g) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSpatialTests.cs:line 18
+   at LethalDungeon.Tests.DungeonSpatialTests.SpatialSeedRepeatsExactly() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSpatialTests.cs:line 49
+
+1)    at LethalDungeon.Tests.DungeonSpatialTests.Check(SeededDungeonResult g) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSpatialTests.cs:line 18
+   at LethalDungeon.Tests.DungeonSpatialTests.SpatialSeedRepeatsExactly() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSpatialTests.cs:line 49
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f32a8e2b-1397-4bb5-ad2d-49a71436bc75" testId="eb34241c-b2bf-c30a-7307-dac612d302f0" testName="EveryMainRingCrossesFloors(uint.MinValue)" computerName="local-machine" duration="00:00:00.0706320" startTime="2026-09-07T16:47:53.6366140+09:00" endTime="2026-09-07T16:47:53.7072430+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f32a8e2b-1397-4bb5-ad2d-49a71436bc75">
+      <Output>
+        <ErrorInfo>
+          <Message>  Assert.That(g.Plan.RuleVersion, Is.EqualTo("seed-rules-v3"))
+  String lengths are both 13. Strings differ at index 12.
+  Expected: "seed-rules-v3"
+  But was:  "seed-rules-v2"
+  -----------------------^
+</Message>
+          <StackTrace>   at LethalDungeon.Tests.DungeonSpatialTests.Check(SeededDungeonResult g) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSpatialTests.cs:line 18
+   at LethalDungeon.Tests.DungeonSpatialTests.EveryMainRingCrossesFloors(UInt32 seed) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSpatialTests.cs:line 14
+   at InvokeStub_DungeonSpatialTests.EveryMainRingCrossesFloors(Object, Span`1)
+
+1)    at LethalDungeon.Tests.DungeonSpatialTests.Check(SeededDungeonResult g) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSpatialTests.cs:line 18
+   at LethalDungeon.Tests.DungeonSpatialTests.EveryMainRingCrossesFloors(UInt32 seed) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSpatialTests.cs:line 14
+   at InvokeStub_DungeonSpatialTests.EveryMainRingCrossesFloors(Object, Span`1)
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3255c25b-e833-472e-8274-81ce1e702705" testId="3f6aaa27-bdb1-e25e-c423-0f00f84598c1" testName="EveryMainRingCrossesFloors(1)" computerName="local-machine" duration="00:00:00.0411890" startTime="2026-09-07T16:47:53.7072990+09:00" endTime="2026-09-07T16:47:53.7484880+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3255c25b-e833-472e-8274-81ce1e702705">
+      <Output>
+        <ErrorInfo>
+          <Message>  Assert.That(g.Plan.RuleVersion, Is.EqualTo("seed-rules-v3"))
+  String lengths are both 13. Strings differ at index 12.
+  Expected: "seed-rules-v3"
+  But was:  "seed-rules-v2"
+  -----------------------^
+</Message>
+          <StackTrace>   at LethalDungeon.Tests.DungeonSpatialTests.Check(SeededDungeonResult g) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSpatialTests.cs:line 18
+   at LethalDungeon.Tests.DungeonSpatialTests.EveryMainRingCrossesFloors(UInt32 seed) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSpatialTests.cs:line 14
+   at InvokeStub_DungeonSpatialTests.EveryMainRingCrossesFloors(Object, Span`1)
+
+1)    at LethalDungeon.Tests.DungeonSpatialTests.Check(SeededDungeonResult g) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSpatialTests.cs:line 18
+   at LethalDungeon.Tests.DungeonSpatialTests.EveryMainRingCrossesFloors(UInt32 seed) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSpatialTests.cs:line 14
+   at InvokeStub_DungeonSpatialTests.EveryMainRingCrossesFloors(Object, Span`1)
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="BudgetFailureHasNoMapOrTraces" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="659dbe73-2332-2437-96dd-f29ce6884761">
+      <Execution id="bef10759-a9e0-43bf-a1ed-37b2f3812a21" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonSpatialTests" name="BudgetFailureHasNoMapOrTraces" />
+    </UnitTest>
+    <UnitTest name="EveryMainRingCrossesFloors(3)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="12fc1353-f4c8-5ad8-85e6-a2cafb8c545b">
+      <Execution id="e8a54f21-b460-40d8-8c51-ab554e0d82d9" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonSpatialTests" name="EveryMainRingCrossesFloors(3)" />
+    </UnitTest>
+    <UnitTest name="EveryMainRingCrossesFloors(5)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="d575fc74-2fce-6ce9-7ee8-77335f48cc16">
+      <Execution id="2d4061b4-edd3-428c-9bc4-4f82d0c84c78" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonSpatialTests" name="EveryMainRingCrossesFloors(5)" />
+    </UnitTest>
+    <UnitTest name="SpatialSeedRepeatsExactly" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="f5c47057-efe2-9b7b-ace9-c057e9c71157">
+      <Execution id="53308fe6-7063-4c72-b849-b6e25612d9e3" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonSpatialTests" name="SpatialSeedRepeatsExactly" />
+    </UnitTest>
+    <UnitTest name="EveryMainRingCrossesFloors(1)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="3f6aaa27-bdb1-e25e-c423-0f00f84598c1">
+      <Execution id="3255c25b-e833-472e-8274-81ce1e702705" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonSpatialTests" name="EveryMainRingCrossesFloors(1)" />
+    </UnitTest>
+    <UnitTest name="EveryMainRingCrossesFloors(4)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="5e1f32c2-99b8-b7d0-2ed7-8b2e424b01a0">
+      <Execution id="b1f93a7d-c8d7-4a61-87b2-d49de666202b" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonSpatialTests" name="EveryMainRingCrossesFloors(4)" />
+    </UnitTest>
+    <UnitTest name="HundredSpatialSeeds" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="8671818a-beec-d4e8-6bd8-d1f792ab31c4">
+      <Execution id="ea587d7c-4a4e-4cbf-85f4-ab6260e2eca6" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonSpatialTests" name="HundredSpatialSeeds" />
+    </UnitTest>
+    <UnitTest name="EveryMainRingCrossesFloors(uint.MinValue)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="eb34241c-b2bf-c30a-7307-dac612d302f0">
+      <Execution id="f32a8e2b-1397-4bb5-ad2d-49a71436bc75" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonSpatialTests" name="EveryMainRingCrossesFloors(uint.MinValue)" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="12fc1353-f4c8-5ad8-85e6-a2cafb8c545b" executionId="e8a54f21-b460-40d8-8c51-ab554e0d82d9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d575fc74-2fce-6ce9-7ee8-77335f48cc16" executionId="2d4061b4-edd3-428c-9bc4-4f82d0c84c78" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5e1f32c2-99b8-b7d0-2ed7-8b2e424b01a0" executionId="b1f93a7d-c8d7-4a61-87b2-d49de666202b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8671818a-beec-d4e8-6bd8-d1f792ab31c4" executionId="ea587d7c-4a4e-4cbf-85f4-ab6260e2eca6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="659dbe73-2332-2437-96dd-f29ce6884761" executionId="bef10759-a9e0-43bf-a1ed-37b2f3812a21" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f5c47057-efe2-9b7b-ace9-c057e9c71157" executionId="53308fe6-7063-4c72-b849-b6e25612d9e3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="eb34241c-b2bf-c30a-7307-dac612d302f0" executionId="f32a8e2b-1397-4bb5-ad2d-49a71436bc75" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3f6aaa27-bdb1-e25e-c423-0f00f84598c1" executionId="3255c25b-e833-472e-8274-81ce1e702705" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="8" executed="8" passed="0" failed="8" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 6.3.0.0: Test execution started
+Running selected tests in /workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll
+   NUnit3TestExecutor discovered 8 of 8 NUnit test cases using Current Discovery mode, Non-Explicit run
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

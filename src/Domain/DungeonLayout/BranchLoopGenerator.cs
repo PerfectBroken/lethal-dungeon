@@ -26,13 +26,13 @@ namespace LethalDungeon.Domain.Dungeons
     {
         private static readonly GridPoint[] Steps = {new GridPoint(0,0,1),new GridPoint(1,0,0),new GridPoint(0,0,-1),new GridPoint(-1,0,0)};
         private static GridPoint Add(GridPoint a,GridPoint b) => new GridPoint(a.X+b.X,0,a.Z+b.Z);
-        public static BranchLoopResult Generate(IRandomSource random,int targetRooms=40,int loopCount=2,int maxAttempts=10000,bool requireHeightChange=true,ExplorationBranchOptions? exploration=null)
+        public static BranchLoopResult Generate(IRandomSource random,int targetRooms=40,int loopCount=2,int maxAttempts=10000,bool requireHeightChange=true,ExplorationBranchOptions? exploration=null,bool spatialMainPaths=false)
         {
             if(random==null)throw new ArgumentNullException(nameof(random));
             if(targetRooms<1||targetRooms>(exploration==null?64:128))throw new ArgumentOutOfRangeException(nameof(targetRooms));
             if(loopCount<1||loopCount>4)throw new ArgumentOutOfRangeException(nameof(loopCount));
             if(maxAttempts<1||maxAttempts>100000)throw new ArgumentOutOfRangeException(nameof(maxAttempts));
-            var catalog=PrototypeCatalog.CreateLoopReady();int attempts=0,retries=0;
+            var catalog=spatialMainPaths?PrototypeCatalog.CreateSpatial():PrototypeCatalog.CreateLoopReady();int attempts=0,retries=0;
             var rooms=new List<PlacedRoom>{new PlacedRoom("room_000","entry",new GridPoint(0,0,0))};
             var links=new List<DoorConnection>();var traces=new List<BranchLoopTrace>();var branches=new List<ExplorationBranchTrace>();
             var cells=new Dictionary<GridPoint,string>{{new GridPoint(0,0,0),"room_000"}};
@@ -43,7 +43,7 @@ namespace LethalDungeon.Domain.Dungeons
             if(exploration!=null)for(int i=0;i<loopCount;i++)
                 plannedDepths.Add(Enumerable.Range(0,exploration.BranchesPerLoop).Select(_=>exploration.MinDepth+Next(exploration.MaxDepth-exploration.MinDepth+1)).ToArray());
             int branchReserve=plannedDepths.Sum(depths=>depths.Sum());
-            DungeonManifest Snapshot()=>new DungeonManifest(catalog.Version,rooms,links,exploration==null?"branch-routing-v0.3":"exploration-branches-v0.4");
+            DungeonManifest Snapshot()=>new DungeonManifest(catalog.Version,rooms,links,spatialMainPaths?"spatial-main-paths-v0.5":exploration==null?"branch-routing-v0.3":"exploration-branches-v0.4");
             BranchLoopResult Fail()=>new BranchLoopResult(new GenerationResult(null,attempts>=maxAttempts?"BudgetExceeded":"NoLayout",attempts,retries),Array.Empty<BranchLoopTrace>());
             List<GridPoint>? Walk(GridPoint fork,int length,HashSet<GridPoint> occupied)
             {
@@ -127,6 +127,7 @@ namespace LethalDungeon.Domain.Dungeons
                 }
                 if(!built)return Fail();
             }
+            if(spatialMainPaths && !SpatialMainPaths.Elevate(catalog,rooms,links,traces,Spend,Next))return Fail();
             var usedAnchors=new HashSet<string>();
             for(int loopIndex=0;loopIndex<plannedDepths.Count;loopIndex++)
             foreach(int depth in plannedDepths[loopIndex])
@@ -137,10 +138,14 @@ namespace LethalDungeon.Domain.Dungeons
                 while(!built && attempts<maxAttempts)
                 {
                     if(!Spend())return Fail();
-                    var possible=ring.Where(id=>!usedAnchors.Contains(id)).Where(id=>{
+                    var possible=ring.Where(id=>rooms.Single(r=>r.InstanceId==id).ModuleId=="junction"&&!usedAnchors.Contains(id)).Where(id=>{
                         var cell=cells.Single(p=>p.Value==id).Key;
                         return Steps.Any(d=>!cells.ContainsKey(Add(cell,d))&&Steps.Count(other=>cells.ContainsKey(Add(Add(cell,d),other)))==1);
                     }).ToArray();
+                    if(spatialMainPaths && !branches.Any(b=>b.LoopIndex==loopIndex)) {
+                        int bottom=rooms.Where(r=>ring.Contains(r.InstanceId)&&r.ModuleId=="junction").Min(r=>r.Position.Y);
+                        possible=possible.Where(id=>rooms.Single(r=>r.InstanceId==id).Position.Y>bottom).ToArray();
+                    }
                     if(possible.Length==0)return Fail();
                     var anchor=possible[Next(possible.Length)];var at=cells.Single(p=>p.Value==anchor).Key;
                     var path=Walk(at,depth,new HashSet<GridPoint>(cells.Keys));
