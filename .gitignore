@@ -1,0 +1,11 @@
+**/bin/
+**/obj/
+evidence/latest/
+.DS_Store
+evidence/red/
+evidence/setup/
+.env
+.env.*
+!.env.example
+*.user
+*.suo

@@ -1,0 +1,7 @@
+  Domain -> /workspace/lethal-dungeon/src/Domain/bin/Debug/netstandard2.1/LethalDungeon.Domain.dll
+  Architecture.Tests -> /workspace/lethal-dungeon/tests/Architecture.Tests/bin/Debug/net10.0/Architecture.Tests.dll
+Test run for /workspace/lethal-dungeon/tests/Architecture.Tests/bin/Debug/net10.0/Architecture.Tests.dll (.NETCoreApp,Version=v10.0)
+A total of 1 test files matched the specified pattern.
+Results File: /workspace/lethal-dungeon/evidence/red/architecture.trx
+
+Passed!  - Failed:     0, Passed:     6, Skipped:     0, Total:     6, Duration: 20 ms - Architecture.Tests.dll (net10.0)

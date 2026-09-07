@@ -1,0 +1,925 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="f6489492-a7e8-4d9f-8c9d-ea6da4a0feae" name="local-red-run" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-09-07T13:58:42.2074540+09:00" queuing="2026-09-07T13:58:42.2074540+09:00" start="2026-09-07T13:58:41.8515390+09:00" finish="2026-09-07T13:58:42.2320020+09:00" />
+  <TestSettings name="default" id="1f1595cb-6e44-49f9-b689-0eaca9699479">
+    <Deployment runDeploymentRoot="_guoxundeMBP_2026-09-07_13_58_42" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="9d52c2f9-a407-4b8c-ae9f-7c81180e6d64" testId="0f3a485c-762c-a241-25c3-6af4ac08c026" testName="InvalidCallDoesNotAffectLaterValidCall" computerName="local-machine" duration="00:00:00.0130750" startTime="2026-09-07T13:58:42.1725010+09:00" endTime="2026-09-07T13:58:42.1855760+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9d52c2f9-a407-4b8c-ae9f-7c81180e6d64">
+      <Output>
+        <ErrorInfo>
+          <Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentOutOfRangeException&gt;
+  But was:  &lt;System.NotImplementedException: LOAD rules await Green implementation.
+   at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.&lt;&gt;c.&lt;InvalidCallDoesNotAffectLaterValidCall&gt;b__4_0() in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 64
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, Action code, String message, Object[] args)&gt;
+</Message>
+          <StackTrace>   at LethalDungeon.Tests.BackpackLoadTests.InvalidCallDoesNotAffectLaterValidCall() in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 64
+
+1)    at LethalDungeon.Tests.BackpackLoadTests.InvalidCallDoesNotAffectLaterValidCall() in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 64
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="927fcb5c-ec8c-4106-9c36-94660f1816c7" testId="6a299a05-0d6b-05aa-c2ee-dd21f459b190" testName="NegativePollIsRejectedWithoutChangingState" computerName="local-machine" duration="00:00:00.0002410" startTime="2026-09-07T13:58:42.1918190+09:00" endTime="2026-09-07T13:58:42.1920600+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="927fcb5c-ec8c-4106-9c36-94660f1816c7">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : CLOCK start rules await Green implementation.</Message>
+          <StackTrace>   at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.NegativePollIsRejectedWithoutChangingState() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 271
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.NegativePollIsRejectedWithoutChangingState() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 271
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="831472aa-c083-4eab-90f4-f7cd96ee19cc" testId="630c7528-38ae-a0a5-d52f-56760bb82841" testName="TimelineHasSpecifiedBoundaries(7200000000L,1080,False)" computerName="local-machine" duration="00:00:00.0000370" startTime="2026-09-07T13:58:42.1940770+09:00" endTime="2026-09-07T13:58:42.1941140+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="831472aa-c083-4eab-90f4-f7cd96ee19cc">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : CLOCK start rules await Green implementation.</Message>
+          <StackTrace>   at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.TimelineHasSpecifiedBoundaries(Int64 ticks, Int32 minute, Boolean expired) in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 71
+   at InvokeStub_WorldClockTests.TimelineHasSpecifiedBoundaries(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.TimelineHasSpecifiedBoundaries(Int64 ticks, Int32 minute, Boolean expired) in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 71
+   at InvokeStub_WorldClockTests.TimelineHasSpecifiedBoundaries(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1907272a-7be9-4209-ae78-037130f2727f" testId="1593e9c8-ac14-26e6-345c-50d7c4891280" testName="ExpiredClockStopsSampling" computerName="local-machine" duration="00:00:00.0001270" startTime="2026-09-07T13:58:42.1911870+09:00" endTime="2026-09-07T13:58:42.1913130+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1907272a-7be9-4209-ae78-037130f2727f">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : CLOCK start rules await Green implementation.</Message>
+          <StackTrace>   at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.ExpiredClockStopsSampling() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 185
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.ExpiredClockStopsSampling() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 185
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="db363c5c-b8d6-4de8-89b8-91ae4c51ff27" testId="dff29c43-32e4-e09a-0ac7-59949ff07bdf" testName="VeryLargeElapsedTimeExpiresSafely" computerName="local-machine" duration="00:00:00.0001460" startTime="2026-09-07T13:58:42.1942860+09:00" endTime="2026-09-07T13:58:42.1944320+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="db363c5c-b8d6-4de8-89b8-91ae4c51ff27">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : CLOCK start rules await Green implementation.</Message>
+          <StackTrace>   at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.VeryLargeElapsedTimeExpiresSafely() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 200
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.VeryLargeElapsedTimeExpiresSafely() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 200
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="91d92505-be6f-48d6-82b0-970d4cf49230" testId="ecf28c70-d14b-76cb-0833-0813ab5c4117" testName="RepeatedAndInterleavedCallsAreStable" computerName="local-machine" duration="00:00:00.0002640" startTime="2026-09-07T13:58:42.1868340+09:00" endTime="2026-09-07T13:58:42.1870980+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="91d92505-be6f-48d6-82b0-970d4cf49230">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : LOAD rules await Green implementation.</Message>
+          <StackTrace>   at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.RepeatedAndInterleavedCallsAreStable() in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 46
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.RepeatedAndInterleavedCallsAreStable() in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 46
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2af00221-339c-4157-bd9a-19b5702200d5" testId="69a63d18-0f2d-72f5-cba3-b5f30ad5526a" testName="InvalidSlotsAreRejected(-1)" computerName="local-machine" duration="00:00:00.0005350" startTime="2026-09-07T13:58:42.1856220+09:00" endTime="2026-09-07T13:58:42.1861570+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2af00221-339c-4157-bd9a-19b5702200d5">
+      <Output>
+        <ErrorInfo>
+          <Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentOutOfRangeException&gt;
+  But was:  &lt;System.NotImplementedException: LOAD rules await Green implementation.
+   at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.&lt;&gt;c__DisplayClass3_0.&lt;InvalidSlotsAreRejected&gt;b__0() in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 57
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, Action code, String message, Object[] args)&gt;
+</Message>
+          <StackTrace>   at LethalDungeon.Tests.BackpackLoadTests.InvalidSlotsAreRejected(Int32 slots) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 57
+
+1)    at LethalDungeon.Tests.BackpackLoadTests.InvalidSlotsAreRejected(Int32 slots) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 57
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="16451f10-7002-41e2-9080-7787de7d245f" testId="50d29d9c-c03e-5a1f-d19f-b5e757561525" testName="BeforeStartDoesNotConsumeLoadingTime" computerName="local-machine" duration="00:00:00.0002770" startTime="2026-09-07T13:58:42.1906090+09:00" endTime="2026-09-07T13:58:42.1908860+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="16451f10-7002-41e2-9080-7787de7d245f">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : CLOCK polling rules await Green implementation.</Message>
+          <StackTrace>   at LethalDungeon.Domain.ExpeditionClock.Poll() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 39
+   at LethalDungeon.Tests.WorldClockTests.BeforeStartDoesNotConsumeLoadingTime() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 33
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.ExpeditionClock.Poll() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 39
+   at LethalDungeon.Tests.WorldClockTests.BeforeStartDoesNotConsumeLoadingTime() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 33
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1351391a-b8a1-4ff1-8a45-35b28855f3a4" testId="a18125e2-cd83-2ef2-96f5-6b0e23a3fc9d" testName="TimelineHasSpecifiedBoundaries(0L,360,False)" computerName="local-machine" duration="00:00:00.0002620" startTime="2026-09-07T13:58:42.1935480+09:00" endTime="2026-09-07T13:58:42.1938100+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1351391a-b8a1-4ff1-8a45-35b28855f3a4">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : CLOCK start rules await Green implementation.</Message>
+          <StackTrace>   at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.TimelineHasSpecifiedBoundaries(Int64 ticks, Int32 minute, Boolean expired) in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 71
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.TimelineHasSpecifiedBoundaries(Int64 ticks, Int32 minute, Boolean expired) in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 71
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="fb347423-7743-48b4-9257-583331df961e" testId="c88de2a1-5b73-2d92-9898-04bab29dae87" testName="InvalidSlotsAreRejected(11)" computerName="local-machine" duration="00:00:00.0003330" startTime="2026-09-07T13:58:42.1861680+09:00" endTime="2026-09-07T13:58:42.1865010+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fb347423-7743-48b4-9257-583331df961e">
+      <Output>
+        <ErrorInfo>
+          <Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentOutOfRangeException&gt;
+  But was:  &lt;System.NotImplementedException: LOAD rules await Green implementation.
+   at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.&lt;&gt;c__DisplayClass3_0.&lt;InvalidSlotsAreRejected&gt;b__0() in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 57
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, Action code, String message, Object[] args)&gt;
+</Message>
+          <StackTrace>   at LethalDungeon.Tests.BackpackLoadTests.InvalidSlotsAreRejected(Int32 slots) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 57
+   at InvokeStub_BackpackLoadTests.InvalidSlotsAreRejected(Object, Span`1)
+
+1)    at LethalDungeon.Tests.BackpackLoadTests.InvalidSlotsAreRejected(Int32 slots) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 57
+   at InvokeStub_BackpackLoadTests.InvalidSlotsAreRejected(Object, Span`1)
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b3444dd3-c824-466d-95d5-938b199daeb9" testId="187c9aa3-72e1-6941-5f4b-18884611b00d" testName="TimelineHasSpecifiedBoundaries(10799999999L,1439,False)" computerName="local-machine" duration="00:00:00.0000380" startTime="2026-09-07T13:58:42.1941600+09:00" endTime="2026-09-07T13:58:42.1941980+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b3444dd3-c824-466d-95d5-938b199daeb9">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : CLOCK start rules await Green implementation.</Message>
+          <StackTrace>   at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.TimelineHasSpecifiedBoundaries(Int64 ticks, Int32 minute, Boolean expired) in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 71
+   at InvokeStub_WorldClockTests.TimelineHasSpecifiedBoundaries(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.TimelineHasSpecifiedBoundaries(Int64 ticks, Int32 minute, Boolean expired) in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 71
+   at InvokeStub_WorldClockTests.TimelineHasSpecifiedBoundaries(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="07914c16-9bfa-449f-8c8e-924bb9c8ef7f" testId="4e797172-6aa6-f38b-28ff-f57f7d6f9044" testName="DeadlinePulseOccursOnce" computerName="local-machine" duration="00:00:00.0001680" startTime="2026-09-07T13:58:42.1908900+09:00" endTime="2026-09-07T13:58:42.1910580+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="07914c16-9bfa-449f-8c8e-924bb9c8ef7f">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : CLOCK start rules await Green implementation.</Message>
+          <StackTrace>   at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.DeadlinePulseOccursOnce() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 152
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.DeadlinePulseOccursOnce() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 152
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="fcf861a9-da7d-456b-85a2-8eedf4b09c39" testId="3d1499ca-5575-581b-d5f2-44de1ad4953f" testName="EverySlotHasSpecifiedMultiplier(7,&quot;0.99&quot;)" computerName="local-machine" duration="00:00:00.0000370" startTime="2026-09-07T13:58:42.1717840+09:00" endTime="2026-09-07T13:58:42.1718210+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fcf861a9-da7d-456b-85a2-8eedf4b09c39">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : LOAD rules await Green implementation.</Message>
+          <StackTrace>   at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at InvokeStub_BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at InvokeStub_BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9cc2a91b-1a20-487a-8075-f55781927a0f" testId="3970b5a8-02b8-a296-28ec-1f1917261c54" testName="EverySlotHasSpecifiedMultiplier(6,&quot;1.02&quot;)" computerName="local-machine" duration="00:00:00.0000390" startTime="2026-09-07T13:58:42.1717430+09:00" endTime="2026-09-07T13:58:42.1717820+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9cc2a91b-1a20-487a-8075-f55781927a0f">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : LOAD rules await Green implementation.</Message>
+          <StackTrace>   at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at InvokeStub_BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at InvokeStub_BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="64c54e5e-77ce-4cd2-80e4-58eb207bac2c" testId="675a4566-e636-a417-104e-246d2c7b372e" testName="InvalidSlotsAreRejected(int.MinValue)" computerName="local-machine" duration="00:00:00.0001550" startTime="2026-09-07T13:58:42.1865070+09:00" endTime="2026-09-07T13:58:42.1866610+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="64c54e5e-77ce-4cd2-80e4-58eb207bac2c">
+      <Output>
+        <ErrorInfo>
+          <Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentOutOfRangeException&gt;
+  But was:  &lt;System.NotImplementedException: LOAD rules await Green implementation.
+   at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.&lt;&gt;c__DisplayClass3_0.&lt;InvalidSlotsAreRejected&gt;b__0() in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 57
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, Action code, String message, Object[] args)&gt;
+</Message>
+          <StackTrace>   at LethalDungeon.Tests.BackpackLoadTests.InvalidSlotsAreRejected(Int32 slots) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 57
+   at InvokeStub_BackpackLoadTests.InvalidSlotsAreRejected(Object, Span`1)
+
+1)    at LethalDungeon.Tests.BackpackLoadTests.InvalidSlotsAreRejected(Int32 slots) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 57
+   at InvokeStub_BackpackLoadTests.InvalidSlotsAreRejected(Object, Span`1)
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d97ef5d8-3aa9-4ef5-a8c7-87aa9d6fd83e" testId="aebf8c36-53ed-817d-9521-9778a67f6914" testName="EverySlotHasSpecifiedMultiplier(1,&quot;1.17&quot;)" computerName="local-machine" duration="00:00:00.0002320" startTime="2026-09-07T13:58:42.1712900+09:00" endTime="2026-09-07T13:58:42.1715220+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d97ef5d8-3aa9-4ef5-a8c7-87aa9d6fd83e">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : LOAD rules await Green implementation.</Message>
+          <StackTrace>   at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at InvokeStub_BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at InvokeStub_BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8383b3f1-6469-45b6-846c-4fb15bb48ac1" testId="2c6dcc88-9efe-d785-0cd6-a2f00ae6367b" testName="TimelineHasSpecifiedBoundaries(7200000001L,1080,False)" computerName="local-machine" duration="00:00:00.0000410" startTime="2026-09-07T13:58:42.1941170+09:00" endTime="2026-09-07T13:58:42.1941580+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8383b3f1-6469-45b6-846c-4fb15bb48ac1">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : CLOCK start rules await Green implementation.</Message>
+          <StackTrace>   at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.TimelineHasSpecifiedBoundaries(Int64 ticks, Int32 minute, Boolean expired) in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 71
+   at InvokeStub_WorldClockTests.TimelineHasSpecifiedBoundaries(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.TimelineHasSpecifiedBoundaries(Int64 ticks, Int32 minute, Boolean expired) in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 71
+   at InvokeStub_WorldClockTests.TimelineHasSpecifiedBoundaries(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f153f9e6-fed0-4e59-859f-f30f6d08746f" testId="fb024014-2de7-fc2d-0d91-a48ba75b1800" testName="BackwardTimeIsRejectedWithoutChangingState" computerName="local-machine" duration="00:00:00.0004870" startTime="2026-09-07T13:58:42.1901150+09:00" endTime="2026-09-07T13:58:42.1906020+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f153f9e6-fed0-4e59-859f-f30f6d08746f">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : CLOCK start rules await Green implementation.</Message>
+          <StackTrace>   at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.BackwardTimeIsRejectedWithoutChangingState() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 254
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.BackwardTimeIsRejectedWithoutChangingState() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 254
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="773f1cf0-c0ea-4db0-854c-2b262e05efc0" testId="757602ba-4a05-c2c7-53e4-72cb2418df82" testName="TimelineHasSpecifiedBoundaries(7199999999L,1079,False)" computerName="local-machine" duration="00:00:00.0000390" startTime="2026-09-07T13:58:42.1940360+09:00" endTime="2026-09-07T13:58:42.1940750+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="773f1cf0-c0ea-4db0-854c-2b262e05efc0">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : CLOCK start rules await Green implementation.</Message>
+          <StackTrace>   at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.TimelineHasSpecifiedBoundaries(Int64 ticks, Int32 minute, Boolean expired) in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 71
+   at InvokeStub_WorldClockTests.TimelineHasSpecifiedBoundaries(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.TimelineHasSpecifiedBoundaries(Int64 ticks, Int32 minute, Boolean expired) in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 71
+   at InvokeStub_WorldClockTests.TimelineHasSpecifiedBoundaries(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="935ef7ee-411c-4483-a416-3d3f4655aea6" testId="bed63545-fd72-e992-4053-7dbf75260d60" testName="NegativeStartIsRejectedAndCanRetry" computerName="local-machine" duration="00:00:00.0003990" startTime="2026-09-07T13:58:42.1920690+09:00" endTime="2026-09-07T13:58:42.1924680+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="935ef7ee-411c-4483-a416-3d3f4655aea6">
+      <Output>
+        <ErrorInfo>
+          <Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.InvalidOperationException&gt;
+  But was:  &lt;System.NotImplementedException: CLOCK start rules await Green implementation.
+   at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.&lt;&gt;c__DisplayClass14_0.&lt;NegativeStartIsRejectedAndCanRetry&gt;b__0() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 241
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, Action code, String message, Object[] args)&gt;
+</Message>
+          <StackTrace>   at LethalDungeon.Tests.WorldClockTests.NegativeStartIsRejectedAndCanRetry() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 241
+
+1)    at LethalDungeon.Tests.WorldClockTests.NegativeStartIsRejectedAndCanRetry() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 241
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6bc28524-48a9-404a-8d1e-30b9ba554eaa" testId="a28cd960-5d18-c4c9-960d-a8887d3faeb1" testName="TimelineHasSpecifiedBoundaries(10800000000L,1440,True)" computerName="local-machine" duration="00:00:00.0000370" startTime="2026-09-07T13:58:42.1942000+09:00" endTime="2026-09-07T13:58:42.1942380+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6bc28524-48a9-404a-8d1e-30b9ba554eaa">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : CLOCK start rules await Green implementation.</Message>
+          <StackTrace>   at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.TimelineHasSpecifiedBoundaries(Int64 ticks, Int32 minute, Boolean expired) in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 71
+   at InvokeStub_WorldClockTests.TimelineHasSpecifiedBoundaries(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.TimelineHasSpecifiedBoundaries(Int64 ticks, Int32 minute, Boolean expired) in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 71
+   at InvokeStub_WorldClockTests.TimelineHasSpecifiedBoundaries(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="28a76e02-f83c-4441-88b7-07c884b85c20" testId="96db1c11-b41d-1902-cdeb-1a84aff63543" testName="EverySlotHasSpecifiedMultiplier(10,&quot;0.90&quot;)" computerName="local-machine" duration="00:00:00.0000370" startTime="2026-09-07T13:58:42.1719060+09:00" endTime="2026-09-07T13:58:42.1719430+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="28a76e02-f83c-4441-88b7-07c884b85c20">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : LOAD rules await Green implementation.</Message>
+          <StackTrace>   at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at InvokeStub_BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at InvokeStub_BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="985868ed-2372-41c1-aaab-3ddd038824a9" testId="a1e5ba0a-8ac8-5b75-a857-3cba6da30143" testName="DuplicateStartCannotResetTime" computerName="local-machine" duration="00:00:00.0001230" startTime="2026-09-07T13:58:42.1910610+09:00" endTime="2026-09-07T13:58:42.1911840+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="985868ed-2372-41c1-aaab-3ddd038824a9">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : CLOCK start rules await Green implementation.</Message>
+          <StackTrace>   at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.DuplicateStartCannotResetTime() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 87
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.DuplicateStartCannotResetTime() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 87
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="bcfe967e-598a-4729-a493-06aa73d76a7e" testId="e06a7b8d-e510-3f6e-3130-5ab6215cd7a0" testName="TimelineHasSpecifiedBoundaries(10000000L,361,False)" computerName="local-machine" duration="00:00:00.0000410" startTime="2026-09-07T13:58:42.1939910+09:00" endTime="2026-09-07T13:58:42.1940330+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bcfe967e-598a-4729-a493-06aa73d76a7e">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : CLOCK start rules await Green implementation.</Message>
+          <StackTrace>   at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.TimelineHasSpecifiedBoundaries(Int64 ticks, Int32 minute, Boolean expired) in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 71
+   at InvokeStub_WorldClockTests.TimelineHasSpecifiedBoundaries(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.TimelineHasSpecifiedBoundaries(Int64 ticks, Int32 minute, Boolean expired) in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 71
+   at InvokeStub_WorldClockTests.TimelineHasSpecifiedBoundaries(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d0678f8a-386b-48aa-bdc0-71e596bb6efa" testId="eacd923a-22d8-177f-6e1c-6dec90a2e0a0" testName="EverySlotHasSpecifiedMultiplier(3,&quot;1.11&quot;)" computerName="local-machine" duration="00:00:00.0000780" startTime="2026-09-07T13:58:42.1715740+09:00" endTime="2026-09-07T13:58:42.1716520+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d0678f8a-386b-48aa-bdc0-71e596bb6efa">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : LOAD rules await Green implementation.</Message>
+          <StackTrace>   at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at InvokeStub_BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at InvokeStub_BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ef037ec7-1528-4076-8a8c-710f224ecc22" testId="eb973647-d0a3-a813-886c-a1f075da46e6" testName="StartUsesArrivalAsOrigin" computerName="local-machine" duration="00:00:00.0001660" startTime="2026-09-07T13:58:42.1933620+09:00" endTime="2026-09-07T13:58:42.1935280+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ef037ec7-1528-4076-8a8c-710f224ecc22">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : CLOCK start rules await Green implementation.</Message>
+          <StackTrace>   at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.StartUsesArrivalAsOrigin() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 48
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.StartUsesArrivalAsOrigin() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 48
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ccd486ea-0045-45c3-b354-5b2ff15d4651" testId="7ea91493-05b0-e94f-4c1f-dd00cd8168d5" testName="NullSourceIsRejected" computerName="local-machine" duration="00:00:00.0003250" startTime="2026-09-07T13:58:42.1924760+09:00" endTime="2026-09-07T13:58:42.1928010+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ccd486ea-0045-45c3-b354-5b2ff15d4651">
+      <Output>
+        <ErrorInfo>
+          <Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentNullException&gt;
+  But was:  null
+</Message>
+          <StackTrace>   at LethalDungeon.Tests.WorldClockTests.NullSourceIsRejected() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 232
+
+1)    at LethalDungeon.Tests.WorldClockTests.NullSourceIsRejected() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 232
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="df833172-babf-47b9-af6a-17bc02f546b7" testId="e0ae7b68-b9ce-b395-eabd-829fb98e48e3" testName="EverySlotHasSpecifiedMultiplier(9,&quot;0.93&quot;)" computerName="local-machine" duration="00:00:00.0000400" startTime="2026-09-07T13:58:42.1718630+09:00" endTime="2026-09-07T13:58:42.1719040+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="df833172-babf-47b9-af6a-17bc02f546b7">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : LOAD rules await Green implementation.</Message>
+          <StackTrace>   at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at InvokeStub_BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at InvokeStub_BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1625c0f4-3e0a-43a0-a38c-09764abf7f98" testId="57b9f78e-370f-ae5f-2818-5ebe605539db" testName="EverySlotHasSpecifiedMultiplier(5,&quot;1.05&quot;)" computerName="local-machine" duration="00:00:00.0000450" startTime="2026-09-07T13:58:42.1716960+09:00" endTime="2026-09-07T13:58:42.1717410+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1625c0f4-3e0a-43a0-a38c-09764abf7f98">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : LOAD rules await Green implementation.</Message>
+          <StackTrace>   at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at InvokeStub_BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at InvokeStub_BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8bf2fce4-41b1-4d76-bd2e-6163d9e7231f" testId="96ceb0ed-c761-1a0d-37a0-141c7bb7e1c4" testName="EverySlotHasSpecifiedMultiplier(4,&quot;1.08&quot;)" computerName="local-machine" duration="00:00:00.0000390" startTime="2026-09-07T13:58:42.1716550+09:00" endTime="2026-09-07T13:58:42.1716940+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8bf2fce4-41b1-4d76-bd2e-6163d9e7231f">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : LOAD rules await Green implementation.</Message>
+          <StackTrace>   at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at InvokeStub_BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at InvokeStub_BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c231a530-4b22-4c1c-aa16-3a242f58c63f" testId="e71b9417-8716-e188-224c-5504f3697c36" testName="EachAdditionalSlotReducesSpeed" computerName="local-machine" duration="00:00:00.0066020" startTime="2026-09-07T13:58:42.1638680+09:00" endTime="2026-09-07T13:58:42.1704410+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c231a530-4b22-4c1c-aa16-3a242f58c63f">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : LOAD rules await Green implementation.</Message>
+          <StackTrace>   at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EachAdditionalSlotReducesSpeed() in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 33
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EachAdditionalSlotReducesSpeed() in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 33
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a670ca5e-3bca-49b7-8c1e-8f86d20f4ea0" testId="ad1a519d-0f28-1f25-dc44-89b7aa32a8ec" testName="TimelineHasSpecifiedBoundaries(9999999L,360,False)" computerName="local-machine" duration="00:00:00.0001640" startTime="2026-09-07T13:58:42.1938190+09:00" endTime="2026-09-07T13:58:42.1939830+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a670ca5e-3bca-49b7-8c1e-8f86d20f4ea0">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : CLOCK start rules await Green implementation.</Message>
+          <StackTrace>   at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.TimelineHasSpecifiedBoundaries(Int64 ticks, Int32 minute, Boolean expired) in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 71
+   at InvokeStub_WorldClockTests.TimelineHasSpecifiedBoundaries(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.TimelineHasSpecifiedBoundaries(Int64 ticks, Int32 minute, Boolean expired) in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 71
+   at InvokeStub_WorldClockTests.TimelineHasSpecifiedBoundaries(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ce56d75b-5bc1-4cb5-8b76-a74051bca4b1" testId="cd7b81ab-e4bf-d97c-af1e-f7fc146e090e" testName="EverySlotHasSpecifiedMultiplier(2,&quot;1.14&quot;)" computerName="local-machine" duration="00:00:00.0000460" startTime="2026-09-07T13:58:42.1715260+09:00" endTime="2026-09-07T13:58:42.1715720+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ce56d75b-5bc1-4cb5-8b76-a74051bca4b1">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : LOAD rules await Green implementation.</Message>
+          <StackTrace>   at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at InvokeStub_BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at InvokeStub_BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e7e1b544-033f-4a43-85e4-d99d193acd4d" testId="bfb4830a-a07c-2f99-f44a-caabc7d02f84" testName="InvalidSlotsAreRejected(int.MaxValue)" computerName="local-machine" duration="00:00:00.0001450" startTime="2026-09-07T13:58:42.1866670+09:00" endTime="2026-09-07T13:58:42.1868120+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e7e1b544-033f-4a43-85e4-d99d193acd4d">
+      <Output>
+        <ErrorInfo>
+          <Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentOutOfRangeException&gt;
+  But was:  &lt;System.NotImplementedException: LOAD rules await Green implementation.
+   at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.&lt;&gt;c__DisplayClass3_0.&lt;InvalidSlotsAreRejected&gt;b__0() in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 57
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, Action code, String message, Object[] args)&gt;
+</Message>
+          <StackTrace>   at LethalDungeon.Tests.BackpackLoadTests.InvalidSlotsAreRejected(Int32 slots) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 57
+   at InvokeStub_BackpackLoadTests.InvalidSlotsAreRejected(Object, Span`1)
+
+1)    at LethalDungeon.Tests.BackpackLoadTests.InvalidSlotsAreRejected(Int32 slots) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 57
+   at InvokeStub_BackpackLoadTests.InvalidSlotsAreRejected(Object, Span`1)
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="45580d0e-6bb7-449e-81d6-10327f9d7f21" testId="fab9da53-ce03-f3d2-a257-44e061b292bc" testName="EverySlotHasSpecifiedMultiplier(8,&quot;0.96&quot;)" computerName="local-machine" duration="00:00:00.0000380" startTime="2026-09-07T13:58:42.1718230+09:00" endTime="2026-09-07T13:58:42.1718610+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="45580d0e-6bb7-449e-81d6-10327f9d7f21">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : LOAD rules await Green implementation.</Message>
+          <StackTrace>   at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at InvokeStub_BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at InvokeStub_BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="88347fe1-b8bb-44b5-9080-ae8e1dcedc9d" testId="679bcf5e-0e7d-0572-d0bb-6f7b6884a3b3" testName="TimelineHasSpecifiedBoundaries(10800000001L,1440,True)" computerName="local-machine" duration="00:00:00.0000370" startTime="2026-09-07T13:58:42.1942400+09:00" endTime="2026-09-07T13:58:42.1942760+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="88347fe1-b8bb-44b5-9080-ae8e1dcedc9d">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : CLOCK start rules await Green implementation.</Message>
+          <StackTrace>   at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.TimelineHasSpecifiedBoundaries(Int64 ticks, Int32 minute, Boolean expired) in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 71
+   at InvokeStub_WorldClockTests.TimelineHasSpecifiedBoundaries(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.TimelineHasSpecifiedBoundaries(Int64 ticks, Int32 minute, Boolean expired) in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 71
+   at InvokeStub_WorldClockTests.TimelineHasSpecifiedBoundaries(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="09ba7b44-ce82-47b1-b013-dbdc8d26be31" testId="cc861560-ee36-84d1-8544-e87c7500ca3b" testName="OldSnapshotRemainsUnchanged" computerName="local-machine" duration="00:00:00.0001970" startTime="2026-09-07T13:58:42.1928050+09:00" endTime="2026-09-07T13:58:42.1930020+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="09ba7b44-ce82-47b1-b013-dbdc8d26be31">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : CLOCK polling rules await Green implementation.</Message>
+          <StackTrace>   at LethalDungeon.Domain.ExpeditionClock.Poll() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 39
+   at LethalDungeon.Tests.WorldClockTests.OldSnapshotRemainsUnchanged() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 213
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.ExpeditionClock.Poll() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 39
+   at LethalDungeon.Tests.WorldClockTests.OldSnapshotRemainsUnchanged() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 213
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7fca9ec5-4a46-498e-a86c-8e3f7e457208" testId="11a0707f-6eec-1381-3084-d95f89365bc3" testName="StartAfterExpiryCannotRestart" computerName="local-machine" duration="00:00:00.0001520" startTime="2026-09-07T13:58:42.1931960+09:00" endTime="2026-09-07T13:58:42.1933480+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7fca9ec5-4a46-498e-a86c-8e3f7e457208">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : CLOCK start rules await Green implementation.</Message>
+          <StackTrace>   at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.StartAfterExpiryCannotRestart() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 100
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.StartAfterExpiryCannotRestart() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 100
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7f7b4a04-d7f1-4e66-b6c8-0224844f9ea8" testId="0bf40de3-576f-0989-6ee2-d03c741a45bf" testName="JumpAcrossDeadlineEmitsPulse" computerName="local-machine" duration="00:00:00.0002520" startTime="2026-09-07T13:58:42.1915100+09:00" endTime="2026-09-07T13:58:42.1917610+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7f7b4a04-d7f1-4e66-b6c8-0224844f9ea8">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : CLOCK start rules await Green implementation.</Message>
+          <StackTrace>   at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.JumpAcrossDeadlineEmitsPulse() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 170
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.JumpAcrossDeadlineEmitsPulse() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 170
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="936704e3-0cad-4b66-bf4a-0ab16bcad90d" testId="9cabd7e3-f97b-bb08-661f-e120f06be10a" testName="PollFrequencyDoesNotChangeElapsedTime" computerName="local-machine" duration="00:00:00.0001880" startTime="2026-09-07T13:58:42.1930050+09:00" endTime="2026-09-07T13:58:42.1931930+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="936704e3-0cad-4b66-bf4a-0ab16bcad90d">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : CLOCK start rules await Green implementation.</Message>
+          <StackTrace>   at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.PollFrequencyDoesNotChangeElapsedTime() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 118
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.PollFrequencyDoesNotChangeElapsedTime() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 118
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="88299cf0-c909-4091-af54-9ce9a4e42b7d" testId="92133105-665c-4d07-ecdd-6f470d389b19" testName="FractionalTimeIsPreserved" computerName="local-machine" duration="00:00:00.0001540" startTime="2026-09-07T13:58:42.1913170+09:00" endTime="2026-09-07T13:58:42.1914700+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="88299cf0-c909-4091-af54-9ce9a4e42b7d">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : CLOCK start rules await Green implementation.</Message>
+          <StackTrace>   at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.FractionalTimeIsPreserved() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 137
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.FractionalTimeIsPreserved() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 137
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="334bec5f-4593-49b9-897e-f2104979ea1e" testId="978d8c1b-3691-549c-3f91-5840187b3f04" testName="EverySlotHasSpecifiedMultiplier(0,&quot;1.20&quot;)" computerName="local-machine" duration="00:00:00.0002090" startTime="2026-09-07T13:58:42.1710740+09:00" endTime="2026-09-07T13:58:42.1712830+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="334bec5f-4593-49b9-897e-f2104979ea1e">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : LOAD rules await Green implementation.</Message>
+          <StackTrace>   at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="RepeatedAndInterleavedCallsAreStable" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="ecf28c70-d14b-76cb-0833-0813ab5c4117">
+      <Execution id="91d92505-be6f-48d6-82b0-970d4cf49230" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.BackpackLoadTests" name="RepeatedAndInterleavedCallsAreStable" />
+    </UnitTest>
+    <UnitTest name="TimelineHasSpecifiedBoundaries(7199999999L,1079,False)" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="757602ba-4a05-c2c7-53e4-72cb2418df82">
+      <Execution id="773f1cf0-c0ea-4db0-854c-2b262e05efc0" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="TimelineHasSpecifiedBoundaries(7199999999L,1079,False)" />
+    </UnitTest>
+    <UnitTest name="FractionalTimeIsPreserved" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="92133105-665c-4d07-ecdd-6f470d389b19">
+      <Execution id="88299cf0-c909-4091-af54-9ce9a4e42b7d" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="FractionalTimeIsPreserved" />
+    </UnitTest>
+    <UnitTest name="TimelineHasSpecifiedBoundaries(10000000L,361,False)" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="e06a7b8d-e510-3f6e-3130-5ab6215cd7a0">
+      <Execution id="bcfe967e-598a-4729-a493-06aa73d76a7e" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="TimelineHasSpecifiedBoundaries(10000000L,361,False)" />
+    </UnitTest>
+    <UnitTest name="BeforeStartDoesNotConsumeLoadingTime" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="50d29d9c-c03e-5a1f-d19f-b5e757561525">
+      <Execution id="16451f10-7002-41e2-9080-7787de7d245f" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="BeforeStartDoesNotConsumeLoadingTime" />
+    </UnitTest>
+    <UnitTest name="StartAfterExpiryCannotRestart" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="11a0707f-6eec-1381-3084-d95f89365bc3">
+      <Execution id="7fca9ec5-4a46-498e-a86c-8e3f7e457208" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="StartAfterExpiryCannotRestart" />
+    </UnitTest>
+    <UnitTest name="PollFrequencyDoesNotChangeElapsedTime" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="9cabd7e3-f97b-bb08-661f-e120f06be10a">
+      <Execution id="936704e3-0cad-4b66-bf4a-0ab16bcad90d" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="PollFrequencyDoesNotChangeElapsedTime" />
+    </UnitTest>
+    <UnitTest name="EverySlotHasSpecifiedMultiplier(6,&quot;1.02&quot;)" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="3970b5a8-02b8-a296-28ec-1f1917261c54">
+      <Execution id="9cc2a91b-1a20-487a-8075-f55781927a0f" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.BackpackLoadTests" name="EverySlotHasSpecifiedMultiplier(6,&quot;1.02&quot;)" />
+    </UnitTest>
+    <UnitTest name="DuplicateStartCannotResetTime" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="a1e5ba0a-8ac8-5b75-a857-3cba6da30143">
+      <Execution id="985868ed-2372-41c1-aaab-3ddd038824a9" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="DuplicateStartCannotResetTime" />
+    </UnitTest>
+    <UnitTest name="TimelineHasSpecifiedBoundaries(10800000001L,1440,True)" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="679bcf5e-0e7d-0572-d0bb-6f7b6884a3b3">
+      <Execution id="88347fe1-b8bb-44b5-9080-ae8e1dcedc9d" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="TimelineHasSpecifiedBoundaries(10800000001L,1440,True)" />
+    </UnitTest>
+    <UnitTest name="TimelineHasSpecifiedBoundaries(9999999L,360,False)" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="ad1a519d-0f28-1f25-dc44-89b7aa32a8ec">
+      <Execution id="a670ca5e-3bca-49b7-8c1e-8f86d20f4ea0" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="TimelineHasSpecifiedBoundaries(9999999L,360,False)" />
+    </UnitTest>
+    <UnitTest name="InvalidCallDoesNotAffectLaterValidCall" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="0f3a485c-762c-a241-25c3-6af4ac08c026">
+      <Execution id="9d52c2f9-a407-4b8c-ae9f-7c81180e6d64" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.BackpackLoadTests" name="InvalidCallDoesNotAffectLaterValidCall" />
+    </UnitTest>
+    <UnitTest name="OldSnapshotRemainsUnchanged" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="cc861560-ee36-84d1-8544-e87c7500ca3b">
+      <Execution id="09ba7b44-ce82-47b1-b013-dbdc8d26be31" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="OldSnapshotRemainsUnchanged" />
+    </UnitTest>
+    <UnitTest name="NullSourceIsRejected" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="7ea91493-05b0-e94f-4c1f-dd00cd8168d5">
+      <Execution id="ccd486ea-0045-45c3-b354-5b2ff15d4651" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="NullSourceIsRejected" />
+    </UnitTest>
+    <UnitTest name="VeryLargeElapsedTimeExpiresSafely" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="dff29c43-32e4-e09a-0ac7-59949ff07bdf">
+      <Execution id="db363c5c-b8d6-4de8-89b8-91ae4c51ff27" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="VeryLargeElapsedTimeExpiresSafely" />
+    </UnitTest>
+    <UnitTest name="JumpAcrossDeadlineEmitsPulse" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="0bf40de3-576f-0989-6ee2-d03c741a45bf">
+      <Execution id="7f7b4a04-d7f1-4e66-b6c8-0224844f9ea8" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="JumpAcrossDeadlineEmitsPulse" />
+    </UnitTest>
+    <UnitTest name="NegativePollIsRejectedWithoutChangingState" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="6a299a05-0d6b-05aa-c2ee-dd21f459b190">
+      <Execution id="927fcb5c-ec8c-4106-9c36-94660f1816c7" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="NegativePollIsRejectedWithoutChangingState" />
+    </UnitTest>
+    <UnitTest name="ExpiredClockStopsSampling" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="1593e9c8-ac14-26e6-345c-50d7c4891280">
+      <Execution id="1907272a-7be9-4209-ae78-037130f2727f" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="ExpiredClockStopsSampling" />
+    </UnitTest>
+    <UnitTest name="InvalidSlotsAreRejected(-1)" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="69a63d18-0f2d-72f5-cba3-b5f30ad5526a">
+      <Execution id="2af00221-339c-4157-bd9a-19b5702200d5" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.BackpackLoadTests" name="InvalidSlotsAreRejected(-1)" />
+    </UnitTest>
+    <UnitTest name="InvalidSlotsAreRejected(int.MaxValue)" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="bfb4830a-a07c-2f99-f44a-caabc7d02f84">
+      <Execution id="e7e1b544-033f-4a43-85e4-d99d193acd4d" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.BackpackLoadTests" name="InvalidSlotsAreRejected(int.MaxValue)" />
+    </UnitTest>
+    <UnitTest name="EachAdditionalSlotReducesSpeed" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="e71b9417-8716-e188-224c-5504f3697c36">
+      <Execution id="c231a530-4b22-4c1c-aa16-3a242f58c63f" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.BackpackLoadTests" name="EachAdditionalSlotReducesSpeed" />
+    </UnitTest>
+    <UnitTest name="BackwardTimeIsRejectedWithoutChangingState" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="fb024014-2de7-fc2d-0d91-a48ba75b1800">
+      <Execution id="f153f9e6-fed0-4e59-859f-f30f6d08746f" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="BackwardTimeIsRejectedWithoutChangingState" />
+    </UnitTest>
+    <UnitTest name="EverySlotHasSpecifiedMultiplier(2,&quot;1.14&quot;)" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="cd7b81ab-e4bf-d97c-af1e-f7fc146e090e">
+      <Execution id="ce56d75b-5bc1-4cb5-8b76-a74051bca4b1" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.BackpackLoadTests" name="EverySlotHasSpecifiedMultiplier(2,&quot;1.14&quot;)" />
+    </UnitTest>
+    <UnitTest name="TimelineHasSpecifiedBoundaries(10799999999L,1439,False)" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="187c9aa3-72e1-6941-5f4b-18884611b00d">
+      <Execution id="b3444dd3-c824-466d-95d5-938b199daeb9" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="TimelineHasSpecifiedBoundaries(10799999999L,1439,False)" />
+    </UnitTest>
+    <UnitTest name="TimelineHasSpecifiedBoundaries(0L,360,False)" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="a18125e2-cd83-2ef2-96f5-6b0e23a3fc9d">
+      <Execution id="1351391a-b8a1-4ff1-8a45-35b28855f3a4" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="TimelineHasSpecifiedBoundaries(0L,360,False)" />
+    </UnitTest>
+    <UnitTest name="EverySlotHasSpecifiedMultiplier(4,&quot;1.08&quot;)" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="96ceb0ed-c761-1a0d-37a0-141c7bb7e1c4">
+      <Execution id="8bf2fce4-41b1-4d76-bd2e-6163d9e7231f" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.BackpackLoadTests" name="EverySlotHasSpecifiedMultiplier(4,&quot;1.08&quot;)" />
+    </UnitTest>
+    <UnitTest name="InvalidSlotsAreRejected(int.MinValue)" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="675a4566-e636-a417-104e-246d2c7b372e">
+      <Execution id="64c54e5e-77ce-4cd2-80e4-58eb207bac2c" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.BackpackLoadTests" name="InvalidSlotsAreRejected(int.MinValue)" />
+    </UnitTest>
+    <UnitTest name="TimelineHasSpecifiedBoundaries(7200000001L,1080,False)" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="2c6dcc88-9efe-d785-0cd6-a2f00ae6367b">
+      <Execution id="8383b3f1-6469-45b6-846c-4fb15bb48ac1" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="TimelineHasSpecifiedBoundaries(7200000001L,1080,False)" />
+    </UnitTest>
+    <UnitTest name="StartUsesArrivalAsOrigin" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="eb973647-d0a3-a813-886c-a1f075da46e6">
+      <Execution id="ef037ec7-1528-4076-8a8c-710f224ecc22" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="StartUsesArrivalAsOrigin" />
+    </UnitTest>
+    <UnitTest name="EverySlotHasSpecifiedMultiplier(1,&quot;1.17&quot;)" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="aebf8c36-53ed-817d-9521-9778a67f6914">
+      <Execution id="d97ef5d8-3aa9-4ef5-a8c7-87aa9d6fd83e" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.BackpackLoadTests" name="EverySlotHasSpecifiedMultiplier(1,&quot;1.17&quot;)" />
+    </UnitTest>
+    <UnitTest name="EverySlotHasSpecifiedMultiplier(7,&quot;0.99&quot;)" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="3d1499ca-5575-581b-d5f2-44de1ad4953f">
+      <Execution id="fcf861a9-da7d-456b-85a2-8eedf4b09c39" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.BackpackLoadTests" name="EverySlotHasSpecifiedMultiplier(7,&quot;0.99&quot;)" />
+    </UnitTest>
+    <UnitTest name="TimelineHasSpecifiedBoundaries(10800000000L,1440,True)" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="a28cd960-5d18-c4c9-960d-a8887d3faeb1">
+      <Execution id="6bc28524-48a9-404a-8d1e-30b9ba554eaa" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="TimelineHasSpecifiedBoundaries(10800000000L,1440,True)" />
+    </UnitTest>
+    <UnitTest name="EverySlotHasSpecifiedMultiplier(5,&quot;1.05&quot;)" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="57b9f78e-370f-ae5f-2818-5ebe605539db">
+      <Execution id="1625c0f4-3e0a-43a0-a38c-09764abf7f98" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.BackpackLoadTests" name="EverySlotHasSpecifiedMultiplier(5,&quot;1.05&quot;)" />
+    </UnitTest>
+    <UnitTest name="TimelineHasSpecifiedBoundaries(7200000000L,1080,False)" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="630c7528-38ae-a0a5-d52f-56760bb82841">
+      <Execution id="831472aa-c083-4eab-90f4-f7cd96ee19cc" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="TimelineHasSpecifiedBoundaries(7200000000L,1080,False)" />
+    </UnitTest>
+    <UnitTest name="EverySlotHasSpecifiedMultiplier(0,&quot;1.20&quot;)" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="978d8c1b-3691-549c-3f91-5840187b3f04">
+      <Execution id="334bec5f-4593-49b9-897e-f2104979ea1e" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.BackpackLoadTests" name="EverySlotHasSpecifiedMultiplier(0,&quot;1.20&quot;)" />
+    </UnitTest>
+    <UnitTest name="EverySlotHasSpecifiedMultiplier(8,&quot;0.96&quot;)" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="fab9da53-ce03-f3d2-a257-44e061b292bc">
+      <Execution id="45580d0e-6bb7-449e-81d6-10327f9d7f21" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.BackpackLoadTests" name="EverySlotHasSpecifiedMultiplier(8,&quot;0.96&quot;)" />
+    </UnitTest>
+    <UnitTest name="DeadlinePulseOccursOnce" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="4e797172-6aa6-f38b-28ff-f57f7d6f9044">
+      <Execution id="07914c16-9bfa-449f-8c8e-924bb9c8ef7f" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="DeadlinePulseOccursOnce" />
+    </UnitTest>
+    <UnitTest name="EverySlotHasSpecifiedMultiplier(3,&quot;1.11&quot;)" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="eacd923a-22d8-177f-6e1c-6dec90a2e0a0">
+      <Execution id="d0678f8a-386b-48aa-bdc0-71e596bb6efa" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.BackpackLoadTests" name="EverySlotHasSpecifiedMultiplier(3,&quot;1.11&quot;)" />
+    </UnitTest>
+    <UnitTest name="NegativeStartIsRejectedAndCanRetry" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="bed63545-fd72-e992-4053-7dbf75260d60">
+      <Execution id="935ef7ee-411c-4483-a416-3d3f4655aea6" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.WorldClockTests" name="NegativeStartIsRejectedAndCanRetry" />
+    </UnitTest>
+    <UnitTest name="EverySlotHasSpecifiedMultiplier(9,&quot;0.93&quot;)" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="e0ae7b68-b9ce-b395-eabd-829fb98e48e3">
+      <Execution id="df833172-babf-47b9-af6a-17bc02f546b7" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.BackpackLoadTests" name="EverySlotHasSpecifiedMultiplier(9,&quot;0.93&quot;)" />
+    </UnitTest>
+    <UnitTest name="InvalidSlotsAreRejected(11)" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="c88de2a1-5b73-2d92-9898-04bab29dae87">
+      <Execution id="fb347423-7743-48b4-9257-583331df961e" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.BackpackLoadTests" name="InvalidSlotsAreRejected(11)" />
+    </UnitTest>
+    <UnitTest name="EverySlotHasSpecifiedMultiplier(10,&quot;0.90&quot;)" storage="/users/guoxun/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="96db1c11-b41d-1902-cdeb-1a84aff63543">
+      <Execution id="28a76e02-f83c-4441-88b7-07c884b85c20" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.BackpackLoadTests" name="EverySlotHasSpecifiedMultiplier(10,&quot;0.90&quot;)" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="0f3a485c-762c-a241-25c3-6af4ac08c026" executionId="9d52c2f9-a407-4b8c-ae9f-7c81180e6d64" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6a299a05-0d6b-05aa-c2ee-dd21f459b190" executionId="927fcb5c-ec8c-4106-9c36-94660f1816c7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="630c7528-38ae-a0a5-d52f-56760bb82841" executionId="831472aa-c083-4eab-90f4-f7cd96ee19cc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1593e9c8-ac14-26e6-345c-50d7c4891280" executionId="1907272a-7be9-4209-ae78-037130f2727f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dff29c43-32e4-e09a-0ac7-59949ff07bdf" executionId="db363c5c-b8d6-4de8-89b8-91ae4c51ff27" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ecf28c70-d14b-76cb-0833-0813ab5c4117" executionId="91d92505-be6f-48d6-82b0-970d4cf49230" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="69a63d18-0f2d-72f5-cba3-b5f30ad5526a" executionId="2af00221-339c-4157-bd9a-19b5702200d5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="50d29d9c-c03e-5a1f-d19f-b5e757561525" executionId="16451f10-7002-41e2-9080-7787de7d245f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a18125e2-cd83-2ef2-96f5-6b0e23a3fc9d" executionId="1351391a-b8a1-4ff1-8a45-35b28855f3a4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c88de2a1-5b73-2d92-9898-04bab29dae87" executionId="fb347423-7743-48b4-9257-583331df961e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="187c9aa3-72e1-6941-5f4b-18884611b00d" executionId="b3444dd3-c824-466d-95d5-938b199daeb9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4e797172-6aa6-f38b-28ff-f57f7d6f9044" executionId="07914c16-9bfa-449f-8c8e-924bb9c8ef7f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3d1499ca-5575-581b-d5f2-44de1ad4953f" executionId="fcf861a9-da7d-456b-85a2-8eedf4b09c39" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3970b5a8-02b8-a296-28ec-1f1917261c54" executionId="9cc2a91b-1a20-487a-8075-f55781927a0f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="675a4566-e636-a417-104e-246d2c7b372e" executionId="64c54e5e-77ce-4cd2-80e4-58eb207bac2c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="aebf8c36-53ed-817d-9521-9778a67f6914" executionId="d97ef5d8-3aa9-4ef5-a8c7-87aa9d6fd83e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2c6dcc88-9efe-d785-0cd6-a2f00ae6367b" executionId="8383b3f1-6469-45b6-846c-4fb15bb48ac1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fb024014-2de7-fc2d-0d91-a48ba75b1800" executionId="f153f9e6-fed0-4e59-859f-f30f6d08746f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="757602ba-4a05-c2c7-53e4-72cb2418df82" executionId="773f1cf0-c0ea-4db0-854c-2b262e05efc0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bed63545-fd72-e992-4053-7dbf75260d60" executionId="935ef7ee-411c-4483-a416-3d3f4655aea6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a28cd960-5d18-c4c9-960d-a8887d3faeb1" executionId="6bc28524-48a9-404a-8d1e-30b9ba554eaa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="96db1c11-b41d-1902-cdeb-1a84aff63543" executionId="28a76e02-f83c-4441-88b7-07c884b85c20" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a1e5ba0a-8ac8-5b75-a857-3cba6da30143" executionId="985868ed-2372-41c1-aaab-3ddd038824a9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e06a7b8d-e510-3f6e-3130-5ab6215cd7a0" executionId="bcfe967e-598a-4729-a493-06aa73d76a7e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="eacd923a-22d8-177f-6e1c-6dec90a2e0a0" executionId="d0678f8a-386b-48aa-bdc0-71e596bb6efa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="eb973647-d0a3-a813-886c-a1f075da46e6" executionId="ef037ec7-1528-4076-8a8c-710f224ecc22" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7ea91493-05b0-e94f-4c1f-dd00cd8168d5" executionId="ccd486ea-0045-45c3-b354-5b2ff15d4651" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e0ae7b68-b9ce-b395-eabd-829fb98e48e3" executionId="df833172-babf-47b9-af6a-17bc02f546b7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="57b9f78e-370f-ae5f-2818-5ebe605539db" executionId="1625c0f4-3e0a-43a0-a38c-09764abf7f98" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="96ceb0ed-c761-1a0d-37a0-141c7bb7e1c4" executionId="8bf2fce4-41b1-4d76-bd2e-6163d9e7231f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e71b9417-8716-e188-224c-5504f3697c36" executionId="c231a530-4b22-4c1c-aa16-3a242f58c63f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ad1a519d-0f28-1f25-dc44-89b7aa32a8ec" executionId="a670ca5e-3bca-49b7-8c1e-8f86d20f4ea0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cd7b81ab-e4bf-d97c-af1e-f7fc146e090e" executionId="ce56d75b-5bc1-4cb5-8b76-a74051bca4b1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bfb4830a-a07c-2f99-f44a-caabc7d02f84" executionId="e7e1b544-033f-4a43-85e4-d99d193acd4d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fab9da53-ce03-f3d2-a257-44e061b292bc" executionId="45580d0e-6bb7-449e-81d6-10327f9d7f21" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="679bcf5e-0e7d-0572-d0bb-6f7b6884a3b3" executionId="88347fe1-b8bb-44b5-9080-ae8e1dcedc9d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cc861560-ee36-84d1-8544-e87c7500ca3b" executionId="09ba7b44-ce82-47b1-b013-dbdc8d26be31" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="11a0707f-6eec-1381-3084-d95f89365bc3" executionId="7fca9ec5-4a46-498e-a86c-8e3f7e457208" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0bf40de3-576f-0989-6ee2-d03c741a45bf" executionId="7f7b4a04-d7f1-4e66-b6c8-0224844f9ea8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9cabd7e3-f97b-bb08-661f-e120f06be10a" executionId="936704e3-0cad-4b66-bf4a-0ab16bcad90d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="92133105-665c-4d07-ecdd-6f470d389b19" executionId="88299cf0-c909-4091-af54-9ce9a4e42b7d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="978d8c1b-3691-549c-3f91-5840187b3f04" executionId="334bec5f-4593-49b9-897e-f2104979ea1e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="42" executed="42" passed="0" failed="42" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 6.3.0.0: Test execution started
+Running all tests in /workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll
+   NUnit3TestExecutor discovered 42 of 42 NUnit test cases using Current Discovery mode, Non-Explicit run
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

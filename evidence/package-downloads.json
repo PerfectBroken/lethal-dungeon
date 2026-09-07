@@ -1,0 +1,92 @@
+[
+  {
+    "file": "microsoft.applicationinsights.2.23.0.nupkg",
+    "sha256": "e6c7f76e0ec26598c7b1e2be1777e839c84486655e8a878fc4c655bd2e918dbd",
+    "bytes": 1737910
+  },
+  {
+    "file": "microsoft.codecoverage.18.9.0.nupkg",
+    "sha256": "7ee6dac4627c176d819db2467f1f41ec355970a3ea1e8a6b8ba783ea072fc33d",
+    "bytes": 11261098
+  },
+  {
+    "file": "microsoft.extensions.dependencymodel.8.0.2.nupkg",
+    "sha256": "3f2b8efccc8247d26d62aa40d65fe75c687e58b282ab7e10b805cdf6a3736bd4",
+    "bytes": 262269
+  },
+  {
+    "file": "microsoft.net.test.sdk.18.9.0.nupkg",
+    "sha256": "3c19312754a299160bafcb192104c57719849f05589b3ae5fed2e21dbcf4f5b0",
+    "bytes": 40379
+  },
+  {
+    "file": "microsoft.testing.extensions.telemetry.2.3.3.nupkg",
+    "sha256": "0e8a35200c270e56eaca0d90ea9f3646e618010ed59099d8e0f9fd30366a08eb",
+    "bytes": 510877
+  },
+  {
+    "file": "microsoft.testing.extensions.trxreport.abstractions.2.3.3.nupkg",
+    "sha256": "6008074b70742f046f2077abdbce50b92ad808ee45712a405daccbe693470786",
+    "bytes": 112303
+  },
+  {
+    "file": "microsoft.testing.extensions.vstestbridge.2.3.3.nupkg",
+    "sha256": "fd4970504230432359c5d0f48cd715df8649db468b7b6916413bc7dcb3881deb",
+    "bytes": 698749
+  },
+  {
+    "file": "microsoft.testing.platform.2.3.3.nupkg",
+    "sha256": "b07d00cab5f49f2d0981592044baef3d720a079e6941601c7790044584b3174a",
+    "bytes": 2607555
+  },
+  {
+    "file": "microsoft.testing.platform.msbuild.2.3.3.nupkg",
+    "sha256": "25e537fbc39e6ce0c0da4e8a4a8ae6d8fee98ae41945d4b586124a03075f4890",
+    "bytes": 1793122
+  },
+  {
+    "file": "microsoft.testplatform.objectmodel.18.4.0.nupkg",
+    "sha256": "1112f68280da334bd41255b6e4333fe652365a9944e44ea0f668537a06346c2f",
+    "bytes": 1661459
+  },
+  {
+    "file": "microsoft.testplatform.objectmodel.18.9.0.nupkg",
+    "sha256": "fd124e525502283802d2a67d00b7379d39bb9c66ba84592dcf19b73900ec708a",
+    "bytes": 1812592
+  },
+  {
+    "file": "microsoft.testplatform.testhost.18.9.0.nupkg",
+    "sha256": "452242a8c198a1a4f45e54a28fa3c4ca3a80b9249bbcdf2c02fd9b818c02d1ee",
+    "bytes": 5701178
+  },
+  {
+    "file": "netstandard.library.ref.2.1.0.nupkg",
+    "sha256": "46ea2fcbd10a817685b85af7ce0c397d12944bdc81209e272de1e05efd33c78a",
+    "bytes": 2955681
+  },
+  {
+    "file": "nunit.4.6.1.nupkg",
+    "sha256": "30b7225b4723f4e3b7809e858ea0ff2a9a744b9c8f62c4e9496b514d81b43efa",
+    "bytes": 1254495
+  },
+  {
+    "file": "nunit3testadapter.6.3.0.nupkg",
+    "sha256": "d5a85ac17eac5d1d6083dcb3862d3709679805e0ad4acaee2028d66099d56cf9",
+    "bytes": 581248
+  },
+  {
+    "file": "system.collections.immutable.8.0.0.nupkg",
+    "sha256": "17b3958ca370a6a6d487c95389d6ea256622e3bea7b2af67fba934f90551a37c",
+    "bytes": 787241
+  },
+  {
+    "file": "system.diagnostics.diagnosticsource.5.0.0.nupkg",
+    "sha256": "ea65b737a16f71d347fe9079f2997ea4548219683268fe217d5b42fd23160d5e",
+    "bytes": 306864
+  },
+  {
+    "file": "system.reflection.metadata.8.0.0.nupkg",
+    "sha256": "750182df425ab880d63565ccad234e2677156b5ba6475b228dacd8c140dd4881",
+    "bytes": 1307788
+  }
+]

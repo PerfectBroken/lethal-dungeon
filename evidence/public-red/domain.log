@@ -1,0 +1,570 @@
+  Domain -> /workspace/lethal-dungeon/src/Domain/bin/Debug/netstandard2.1/LethalDungeon.Domain.dll
+  Domain.Tests -> /workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll
+Test run for /workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll (.NETCoreApp,Version=v10.0)
+A total of 1 test files matched the specified pattern.
+  Failed EachAdditionalSlotReducesSpeed [6 ms]
+  Error Message:
+   System.NotImplementedException : LOAD rules await Green implementation.
+  Stack Trace:
+     at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EachAdditionalSlotReducesSpeed() in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 33
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EachAdditionalSlotReducesSpeed() in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 33
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+
+  Failed EverySlotHasSpecifiedMultiplier(0,"1.20") [< 1 ms]
+  Error Message:
+   System.NotImplementedException : LOAD rules await Green implementation.
+  Stack Trace:
+     at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+
+  Failed EverySlotHasSpecifiedMultiplier(1,"1.17") [< 1 ms]
+  Error Message:
+   System.NotImplementedException : LOAD rules await Green implementation.
+  Stack Trace:
+     at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at InvokeStub_BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at InvokeStub_BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+
+  Failed EverySlotHasSpecifiedMultiplier(2,"1.14") [< 1 ms]
+  Error Message:
+   System.NotImplementedException : LOAD rules await Green implementation.
+  Stack Trace:
+     at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at InvokeStub_BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at InvokeStub_BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+
+  Failed EverySlotHasSpecifiedMultiplier(3,"1.11") [< 1 ms]
+  Error Message:
+   System.NotImplementedException : LOAD rules await Green implementation.
+  Stack Trace:
+     at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at InvokeStub_BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at InvokeStub_BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+
+  Failed EverySlotHasSpecifiedMultiplier(4,"1.08") [< 1 ms]
+  Error Message:
+   System.NotImplementedException : LOAD rules await Green implementation.
+  Stack Trace:
+     at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at InvokeStub_BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at InvokeStub_BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+
+  Failed EverySlotHasSpecifiedMultiplier(5,"1.05") [< 1 ms]
+  Error Message:
+   System.NotImplementedException : LOAD rules await Green implementation.
+  Stack Trace:
+     at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at InvokeStub_BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at InvokeStub_BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+
+  Failed EverySlotHasSpecifiedMultiplier(6,"1.02") [< 1 ms]
+  Error Message:
+   System.NotImplementedException : LOAD rules await Green implementation.
+  Stack Trace:
+     at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at InvokeStub_BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at InvokeStub_BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+
+  Failed EverySlotHasSpecifiedMultiplier(7,"0.99") [< 1 ms]
+  Error Message:
+   System.NotImplementedException : LOAD rules await Green implementation.
+  Stack Trace:
+     at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at InvokeStub_BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at InvokeStub_BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+
+  Failed EverySlotHasSpecifiedMultiplier(8,"0.96") [< 1 ms]
+  Error Message:
+   System.NotImplementedException : LOAD rules await Green implementation.
+  Stack Trace:
+     at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at InvokeStub_BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at InvokeStub_BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+
+  Failed EverySlotHasSpecifiedMultiplier(9,"0.93") [< 1 ms]
+  Error Message:
+   System.NotImplementedException : LOAD rules await Green implementation.
+  Stack Trace:
+     at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at InvokeStub_BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at InvokeStub_BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+
+  Failed EverySlotHasSpecifiedMultiplier(10,"0.90") [< 1 ms]
+  Error Message:
+   System.NotImplementedException : LOAD rules await Green implementation.
+  Stack Trace:
+     at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at InvokeStub_BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Int32 slots, String expected) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 23
+   at InvokeStub_BackpackLoadTests.EverySlotHasSpecifiedMultiplier(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+
+  Failed InvalidCallDoesNotAffectLaterValidCall [13 ms]
+  Error Message:
+     Assert.That(caughtException, expression)
+  Expected: <System.ArgumentOutOfRangeException>
+  But was:  <System.NotImplementedException: LOAD rules await Green implementation.
+   at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.<>c.<InvalidCallDoesNotAffectLaterValidCall>b__4_0() in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 64
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, Action code, String message, Object[] args)>
+
+  Stack Trace:
+     at LethalDungeon.Tests.BackpackLoadTests.InvalidCallDoesNotAffectLaterValidCall() in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 64
+
+1)    at LethalDungeon.Tests.BackpackLoadTests.InvalidCallDoesNotAffectLaterValidCall() in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 64
+
+
+  Failed InvalidSlotsAreRejected(-1) [< 1 ms]
+  Error Message:
+     Assert.That(caughtException, expression)
+  Expected: <System.ArgumentOutOfRangeException>
+  But was:  <System.NotImplementedException: LOAD rules await Green implementation.
+   at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.<>c__DisplayClass3_0.<InvalidSlotsAreRejected>b__0() in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 57
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, Action code, String message, Object[] args)>
+
+  Stack Trace:
+     at LethalDungeon.Tests.BackpackLoadTests.InvalidSlotsAreRejected(Int32 slots) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 57
+
+1)    at LethalDungeon.Tests.BackpackLoadTests.InvalidSlotsAreRejected(Int32 slots) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 57
+
+
+  Failed InvalidSlotsAreRejected(11) [< 1 ms]
+  Error Message:
+     Assert.That(caughtException, expression)
+  Expected: <System.ArgumentOutOfRangeException>
+  But was:  <System.NotImplementedException: LOAD rules await Green implementation.
+   at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.<>c__DisplayClass3_0.<InvalidSlotsAreRejected>b__0() in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 57
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, Action code, String message, Object[] args)>
+
+  Stack Trace:
+     at LethalDungeon.Tests.BackpackLoadTests.InvalidSlotsAreRejected(Int32 slots) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 57
+   at InvokeStub_BackpackLoadTests.InvalidSlotsAreRejected(Object, Span`1)
+
+1)    at LethalDungeon.Tests.BackpackLoadTests.InvalidSlotsAreRejected(Int32 slots) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 57
+   at InvokeStub_BackpackLoadTests.InvalidSlotsAreRejected(Object, Span`1)
+
+
+  Failed InvalidSlotsAreRejected(int.MinValue) [< 1 ms]
+  Error Message:
+     Assert.That(caughtException, expression)
+  Expected: <System.ArgumentOutOfRangeException>
+  But was:  <System.NotImplementedException: LOAD rules await Green implementation.
+   at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.<>c__DisplayClass3_0.<InvalidSlotsAreRejected>b__0() in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 57
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, Action code, String message, Object[] args)>
+
+  Stack Trace:
+     at LethalDungeon.Tests.BackpackLoadTests.InvalidSlotsAreRejected(Int32 slots) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 57
+   at InvokeStub_BackpackLoadTests.InvalidSlotsAreRejected(Object, Span`1)
+
+1)    at LethalDungeon.Tests.BackpackLoadTests.InvalidSlotsAreRejected(Int32 slots) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 57
+   at InvokeStub_BackpackLoadTests.InvalidSlotsAreRejected(Object, Span`1)
+
+
+  Failed InvalidSlotsAreRejected(int.MaxValue) [< 1 ms]
+  Error Message:
+     Assert.That(caughtException, expression)
+  Expected: <System.ArgumentOutOfRangeException>
+  But was:  <System.NotImplementedException: LOAD rules await Green implementation.
+   at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.<>c__DisplayClass3_0.<InvalidSlotsAreRejected>b__0() in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 57
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, Action code, String message, Object[] args)>
+
+  Stack Trace:
+     at LethalDungeon.Tests.BackpackLoadTests.InvalidSlotsAreRejected(Int32 slots) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 57
+   at InvokeStub_BackpackLoadTests.InvalidSlotsAreRejected(Object, Span`1)
+
+1)    at LethalDungeon.Tests.BackpackLoadTests.InvalidSlotsAreRejected(Int32 slots) in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 57
+   at InvokeStub_BackpackLoadTests.InvalidSlotsAreRejected(Object, Span`1)
+
+
+  Failed RepeatedAndInterleavedCallsAreStable [< 1 ms]
+  Error Message:
+   System.NotImplementedException : LOAD rules await Green implementation.
+  Stack Trace:
+     at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.RepeatedAndInterleavedCallsAreStable() in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 46
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.BackpackLoad.SpeedMultiplier(Int32 occupiedSlots) in /workspace/lethal-dungeon/src/Domain/BackpackLoad/BackpackLoad.cs:line 9
+   at LethalDungeon.Tests.BackpackLoadTests.RepeatedAndInterleavedCallsAreStable() in /workspace/lethal-dungeon/tests/Domain.Tests/BackpackLoadTests.cs:line 46
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+
+  Failed BackwardTimeIsRejectedWithoutChangingState [< 1 ms]
+  Error Message:
+   System.NotImplementedException : CLOCK start rules await Green implementation.
+  Stack Trace:
+     at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.BackwardTimeIsRejectedWithoutChangingState() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 254
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.BackwardTimeIsRejectedWithoutChangingState() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 254
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+
+  Failed BeforeStartDoesNotConsumeLoadingTime [< 1 ms]
+  Error Message:
+   System.NotImplementedException : CLOCK polling rules await Green implementation.
+  Stack Trace:
+     at LethalDungeon.Domain.ExpeditionClock.Poll() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 39
+   at LethalDungeon.Tests.WorldClockTests.BeforeStartDoesNotConsumeLoadingTime() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 33
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.ExpeditionClock.Poll() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 39
+   at LethalDungeon.Tests.WorldClockTests.BeforeStartDoesNotConsumeLoadingTime() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 33
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+
+  Failed DeadlinePulseOccursOnce [< 1 ms]
+  Error Message:
+   System.NotImplementedException : CLOCK start rules await Green implementation.
+  Stack Trace:
+     at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.DeadlinePulseOccursOnce() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 152
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.DeadlinePulseOccursOnce() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 152
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+
+  Failed DuplicateStartCannotResetTime [< 1 ms]
+  Error Message:
+   System.NotImplementedException : CLOCK start rules await Green implementation.
+  Stack Trace:
+     at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.DuplicateStartCannotResetTime() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 87
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.DuplicateStartCannotResetTime() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 87
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+
+  Failed ExpiredClockStopsSampling [< 1 ms]
+  Error Message:
+   System.NotImplementedException : CLOCK start rules await Green implementation.
+  Stack Trace:
+     at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.ExpiredClockStopsSampling() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 185
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.ExpiredClockStopsSampling() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 185
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+
+  Failed FractionalTimeIsPreserved [< 1 ms]
+  Error Message:
+   System.NotImplementedException : CLOCK start rules await Green implementation.
+  Stack Trace:
+     at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.FractionalTimeIsPreserved() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 137
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.FractionalTimeIsPreserved() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 137
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+
+  Failed JumpAcrossDeadlineEmitsPulse [< 1 ms]
+  Error Message:
+   System.NotImplementedException : CLOCK start rules await Green implementation.
+  Stack Trace:
+     at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.JumpAcrossDeadlineEmitsPulse() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 170
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.JumpAcrossDeadlineEmitsPulse() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 170
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+
+  Failed NegativePollIsRejectedWithoutChangingState [< 1 ms]
+  Error Message:
+   System.NotImplementedException : CLOCK start rules await Green implementation.
+  Stack Trace:
+     at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.NegativePollIsRejectedWithoutChangingState() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 271
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.NegativePollIsRejectedWithoutChangingState() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 271
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+
+  Failed NegativeStartIsRejectedAndCanRetry [< 1 ms]
+  Error Message:
+     Assert.That(caughtException, expression)
+  Expected: <System.InvalidOperationException>
+  But was:  <System.NotImplementedException: CLOCK start rules await Green implementation.
+   at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.<>c__DisplayClass14_0.<NegativeStartIsRejectedAndCanRetry>b__0() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 241
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, Action code, String message, Object[] args)>
+
+  Stack Trace:
+     at LethalDungeon.Tests.WorldClockTests.NegativeStartIsRejectedAndCanRetry() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 241
+
+1)    at LethalDungeon.Tests.WorldClockTests.NegativeStartIsRejectedAndCanRetry() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 241
+
+
+  Failed NullSourceIsRejected [< 1 ms]
+  Error Message:
+     Assert.That(caughtException, expression)
+  Expected: <System.ArgumentNullException>
+  But was:  null
+
+  Stack Trace:
+     at LethalDungeon.Tests.WorldClockTests.NullSourceIsRejected() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 232
+
+1)    at LethalDungeon.Tests.WorldClockTests.NullSourceIsRejected() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 232
+
+
+  Failed OldSnapshotRemainsUnchanged [< 1 ms]
+  Error Message:
+   System.NotImplementedException : CLOCK polling rules await Green implementation.
+  Stack Trace:
+     at LethalDungeon.Domain.ExpeditionClock.Poll() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 39
+   at LethalDungeon.Tests.WorldClockTests.OldSnapshotRemainsUnchanged() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 213
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.ExpeditionClock.Poll() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 39
+   at LethalDungeon.Tests.WorldClockTests.OldSnapshotRemainsUnchanged() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 213
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+
+  Failed PollFrequencyDoesNotChangeElapsedTime [< 1 ms]
+  Error Message:
+   System.NotImplementedException : CLOCK start rules await Green implementation.
+  Stack Trace:
+     at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.PollFrequencyDoesNotChangeElapsedTime() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 118
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.PollFrequencyDoesNotChangeElapsedTime() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 118
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+
+  Failed StartAfterExpiryCannotRestart [< 1 ms]
+  Error Message:
+   System.NotImplementedException : CLOCK start rules await Green implementation.
+  Stack Trace:
+     at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.StartAfterExpiryCannotRestart() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 100
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.StartAfterExpiryCannotRestart() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 100
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+
+  Failed StartUsesArrivalAsOrigin [< 1 ms]
+  Error Message:
+   System.NotImplementedException : CLOCK start rules await Green implementation.
+  Stack Trace:
+     at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.StartUsesArrivalAsOrigin() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 48
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.StartUsesArrivalAsOrigin() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 48
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+
+  Failed TimelineHasSpecifiedBoundaries(0L,360,False) [< 1 ms]
+  Error Message:
+   System.NotImplementedException : CLOCK start rules await Green implementation.
+  Stack Trace:
+     at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.TimelineHasSpecifiedBoundaries(Int64 ticks, Int32 minute, Boolean expired) in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 71
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.TimelineHasSpecifiedBoundaries(Int64 ticks, Int32 minute, Boolean expired) in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 71
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+
+  Failed TimelineHasSpecifiedBoundaries(9999999L,360,False) [< 1 ms]
+  Error Message:
+   System.NotImplementedException : CLOCK start rules await Green implementation.
+  Stack Trace:
+     at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.TimelineHasSpecifiedBoundaries(Int64 ticks, Int32 minute, Boolean expired) in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 71
+   at InvokeStub_WorldClockTests.TimelineHasSpecifiedBoundaries(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.TimelineHasSpecifiedBoundaries(Int64 ticks, Int32 minute, Boolean expired) in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 71
+   at InvokeStub_WorldClockTests.TimelineHasSpecifiedBoundaries(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+
+  Failed TimelineHasSpecifiedBoundaries(10000000L,361,False) [< 1 ms]
+  Error Message:
+   System.NotImplementedException : CLOCK start rules await Green implementation.
+  Stack Trace:
+     at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.TimelineHasSpecifiedBoundaries(Int64 ticks, Int32 minute, Boolean expired) in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 71
+   at InvokeStub_WorldClockTests.TimelineHasSpecifiedBoundaries(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.TimelineHasSpecifiedBoundaries(Int64 ticks, Int32 minute, Boolean expired) in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 71
+   at InvokeStub_WorldClockTests.TimelineHasSpecifiedBoundaries(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+
+  Failed TimelineHasSpecifiedBoundaries(7199999999L,1079,False) [< 1 ms]
+  Error Message:
+   System.NotImplementedException : CLOCK start rules await Green implementation.
+  Stack Trace:
+     at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.TimelineHasSpecifiedBoundaries(Int64 ticks, Int32 minute, Boolean expired) in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 71
+   at InvokeStub_WorldClockTests.TimelineHasSpecifiedBoundaries(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.TimelineHasSpecifiedBoundaries(Int64 ticks, Int32 minute, Boolean expired) in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 71
+   at InvokeStub_WorldClockTests.TimelineHasSpecifiedBoundaries(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+
+  Failed TimelineHasSpecifiedBoundaries(7200000000L,1080,False) [< 1 ms]
+  Error Message:
+   System.NotImplementedException : CLOCK start rules await Green implementation.
+  Stack Trace:
+     at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.TimelineHasSpecifiedBoundaries(Int64 ticks, Int32 minute, Boolean expired) in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 71
+   at InvokeStub_WorldClockTests.TimelineHasSpecifiedBoundaries(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.TimelineHasSpecifiedBoundaries(Int64 ticks, Int32 minute, Boolean expired) in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 71
+   at InvokeStub_WorldClockTests.TimelineHasSpecifiedBoundaries(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+
+  Failed TimelineHasSpecifiedBoundaries(7200000001L,1080,False) [< 1 ms]
+  Error Message:
+   System.NotImplementedException : CLOCK start rules await Green implementation.
+  Stack Trace:
+     at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.TimelineHasSpecifiedBoundaries(Int64 ticks, Int32 minute, Boolean expired) in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 71
+   at InvokeStub_WorldClockTests.TimelineHasSpecifiedBoundaries(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.TimelineHasSpecifiedBoundaries(Int64 ticks, Int32 minute, Boolean expired) in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 71
+   at InvokeStub_WorldClockTests.TimelineHasSpecifiedBoundaries(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+
+  Failed TimelineHasSpecifiedBoundaries(10799999999L,1439,False) [< 1 ms]
+  Error Message:
+   System.NotImplementedException : CLOCK start rules await Green implementation.
+  Stack Trace:
+     at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.TimelineHasSpecifiedBoundaries(Int64 ticks, Int32 minute, Boolean expired) in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 71
+   at InvokeStub_WorldClockTests.TimelineHasSpecifiedBoundaries(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.TimelineHasSpecifiedBoundaries(Int64 ticks, Int32 minute, Boolean expired) in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 71
+   at InvokeStub_WorldClockTests.TimelineHasSpecifiedBoundaries(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+
+  Failed TimelineHasSpecifiedBoundaries(10800000000L,1440,True) [< 1 ms]
+  Error Message:
+   System.NotImplementedException : CLOCK start rules await Green implementation.
+  Stack Trace:
+     at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.TimelineHasSpecifiedBoundaries(Int64 ticks, Int32 minute, Boolean expired) in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 71
+   at InvokeStub_WorldClockTests.TimelineHasSpecifiedBoundaries(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.TimelineHasSpecifiedBoundaries(Int64 ticks, Int32 minute, Boolean expired) in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 71
+   at InvokeStub_WorldClockTests.TimelineHasSpecifiedBoundaries(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+
+  Failed TimelineHasSpecifiedBoundaries(10800000001L,1440,True) [< 1 ms]
+  Error Message:
+   System.NotImplementedException : CLOCK start rules await Green implementation.
+  Stack Trace:
+     at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.TimelineHasSpecifiedBoundaries(Int64 ticks, Int32 minute, Boolean expired) in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 71
+   at InvokeStub_WorldClockTests.TimelineHasSpecifiedBoundaries(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.TimelineHasSpecifiedBoundaries(Int64 ticks, Int32 minute, Boolean expired) in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 71
+   at InvokeStub_WorldClockTests.TimelineHasSpecifiedBoundaries(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+
+  Failed VeryLargeElapsedTimeExpiresSafely [< 1 ms]
+  Error Message:
+   System.NotImplementedException : CLOCK start rules await Green implementation.
+  Stack Trace:
+     at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.VeryLargeElapsedTimeExpiresSafely() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 200
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.ExpeditionClock.Start() in /workspace/lethal-dungeon/src/Domain/WorldClock/ExpeditionClock.cs:line 36
+   at LethalDungeon.Tests.WorldClockTests.VeryLargeElapsedTimeExpiresSafely() in /workspace/lethal-dungeon/tests/Domain.Tests/WorldClockTests.cs:line 200
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+
+Results File: /workspace/lethal-dungeon/evidence/red/domain.trx
+
+Failed!  - Failed:    42, Passed:     0, Skipped:     0, Total:    42, Duration: 30 ms - Domain.Tests.dll (net10.0)

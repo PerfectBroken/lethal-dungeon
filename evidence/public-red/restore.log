@@ -1,0 +1,4 @@
+  Determining projects to restore...
+CSSM_ModuleLoad(): CSSMERR_DL_MDS_ERROR
+  Restored /workspace/lethal-dungeon/src/Domain/Domain.csproj (in 137 ms).
+  2 of 3 projects are up-to-date for restore.

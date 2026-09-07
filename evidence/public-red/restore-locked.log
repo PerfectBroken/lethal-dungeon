@@ -1,0 +1,5 @@
+  Determining projects to restore...
+CSSM_ModuleLoad(): CSSMERR_DL_MDS_ERROR
+  Restored /workspace/lethal-dungeon/src/Domain/Domain.csproj (in 52 ms).
+  Restored /workspace/lethal-dungeon/tests/Architecture.Tests/Architecture.Tests.csproj (in 66 ms).
+  Restored /workspace/lethal-dungeon/tests/Domain.Tests/Domain.Tests.csproj (in 66 ms).
