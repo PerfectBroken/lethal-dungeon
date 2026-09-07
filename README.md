@@ -1,6 +1,6 @@
 # 《致命地下城》规范与测试工程
 
-当前进度：背包负重倍率与探险时钟已完成Green实现。42个规则测试和13个规范/配置检查全部通过，0跳过；原始Red记录保留。CI已上传，云端运行被GitHub账号账单锁阻止；团结验证工程已准备，编辑器与真机尚未运行。
+当前进度：背包负重倍率、探险时钟与三维模块布局核心已完成Green实现。92个规则测试和14个规范/配置检查全部通过，0跳过；原始Red记录保留。CI已上传，云端运行被GitHub账号账单锁阻止；团结验证工程已准备，编辑器与真机尚未运行。
 
 ## 规范与模块
 
@@ -8,6 +8,7 @@
 - [Domain](src/Domain/README.md)：纯规则程序集。
 - [背包倍率](src/Domain/BackpackLoad/README.md)：已确认0～10格线性减速。
 - [探险时钟](src/Domain/WorldClock/README.md)：已确认时间换算；房间加载屏障另属后续模块。
+- [三维模块布局](src/Domain/DungeonLayout/README.md)：6种原型、门位对接、三维占用检查、有限回退生成与独立校验；尚未接入引擎。
 - [探险启动编排](src/Server/ExpeditionStartup/README.md)：地图生成、客户端搭建、全员到达及统一开局的流程归属；当前为模块规范，未实现。
 - [规则测试](tests/Domain.Tests/README.md)：规则与边界测试。
 - [规范检查](tests/Architecture.Tests/README.md)：README与依赖约束检查。
@@ -43,4 +44,4 @@ dotnet test tests/Domain.Tests/Domain.Tests.csproj --no-restore --logger 'trx;Lo
 
 用户已授权按顺序推进基础规则、CI、团结/微信验证和灰盒闭环。财宝规则等待用户设计；世界绝对移动速度、人数屏障异常、撤离读条、经济结算、怪物及战斗细节仍需在对应模块前明确。12分钟到18:00，18分钟到午夜；不得改成12分钟强制结束。
 
-尚未创建团结工程、安装微信SDK或验证引擎/真机。目标仓库为 https://github.com/PerfectBroken/lethal-dungeon 。CI已配置并触发，但GitHub账号账单锁阻止job启动，尚无远程测试通过结果。
+已准备团结验证工程与微信SDK配置，尚未验证引擎导入或真机。目标仓库为 https://github.com/PerfectBroken/lethal-dungeon 。CI已配置并触发，但GitHub账号账单锁阻止job启动，尚无远程测试通过结果。

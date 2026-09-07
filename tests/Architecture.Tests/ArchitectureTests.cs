@@ -83,6 +83,7 @@ namespace LethalDungeon.ArchitectureTests
         // HARNESS-004: Traceability presence, not a substitute for assertion review.
         [TestCase("BackpackLoad", "BackpackLoadTests.cs", "LOAD-")]
         [TestCase("WorldClock", "WorldClockTests.cs", "CLOCK-")]
+        [TestCase("DungeonLayout", "DungeonLayoutTests.cs", "MAP-")]
         public void EveryRuleIdIsMappedInTests(string module, string testFile, string prefix)
         {
             string spec = File.ReadAllText(Path.Combine(Root, "src", "Domain", module, "README.md"));

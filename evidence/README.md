@@ -52,3 +52,12 @@ public-red是实际Red报告的脱敏副本：本机工程绝对路径替换为`
 - CI在提交18027e1首次触发：[Actions运行](https://github.com/PerfectBroken/lethal-dungeon/actions/runs/34087217947)。结论failure，job没有steps、runner未分配。GitHub check-run 101633448040的annotation原文：`The job was not started because your account is locked due to a billing issue.` 此结果不是测试失败或测试通过，需账号问题解除后重新执行。
 
 新的配置代码未修改42个原规则用例。引擎工程仅完成静态配置检查和插件准备；未启动编辑器，未产生引擎包解析锁文件，也未执行微信构建。
+
+## 三维模块布局核心（2026-09-07）
+
+- 规范与47个地图用例先于实现。编译桩运行：46失败、1通过、0跳过，退出码1；只读集合容器检查通过，其余因行为未实现失败。记录为public-dungeon/dungeon-red.trx。
+- 几何、目录、生成与独立校验实现后47个用例通过。随后补充门洞尺寸不匹配、重复门实体及默认结构体盒验证；默认盒测试有效Red后修复目录入口校验，记录为default-box-red.trx。
+- 最终Release：92个规则用例、14个规范/配置用例通过，0跳过，退出码0；报告为public-dungeon/domain-green.trx与architecture-green.trx。未改变已有背包和时钟断言。
+- 一个批量用例实际生成并检查100个种子的12房间跨层地图；前6份结果及目录导出到docs/examples/prototype-layouts.json。预览读取这些结果，不另写随机布局算法。
+- 命令：dotnet test LethalDungeon.sln --no-restore -c Release --logger 'trx;LogFilePrefix=final' --results-directory <本地报告目录>。本机SDK与缓存位置同前。公开TRX替换本机路径、机器名及运行用户名，断言与结果未改。
+- 这些结果只证明当前元数据几何与连接规则；真实预制件通行、服务端传输、客户端搭建、引擎导航、微信性能尚未验证。CI账号账单阻塞未解决。

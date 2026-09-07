@@ -1,0 +1,1017 @@
+<ns0:TestRun xmlns:ns0="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" id="5bf5fff9-ca05-419f-b8b2-ffcf3705bb18" name="local-validation">
+  <ns0:Times creation="2026-09-07T15:30:08.0428980+09:00" queuing="2026-09-07T15:30:08.0428980+09:00" start="2026-09-07T15:30:07.6462390+09:00" finish="2026-09-07T15:30:08.0634480+09:00" />
+  <ns0:TestSettings name="default" id="2e6fed99-7c26-4141-ba69-e1776dcc9b7c">
+    <ns0:Deployment runDeploymentRoot="local-validation" />
+  </ns0:TestSettings>
+  <ns0:Results>
+    <ns0:UnitTestResult executionId="ab4429a2-b9c4-44bc-9f4d-ff8dbb6f023e" testId="9dcf8846-bdeb-b3eb-1193-8cacae7a95f6" testName="RemoteDoorReferenceDoesNotCreateATeleportConnection" computerName="local-machine" duration="00:00:00.0001890" startTime="2026-09-07T15:30:08.0263260+09:00" endTime="2026-09-07T15:30:08.0265140+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ab4429a2-b9c4-44bc-9f4d-ff8dbb6f023e">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.LayoutValidator.Validate(RoomCatalog catalog, DungeonManifest manifest) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/LayoutValidator.cs:line 7
+   at LethalDungeon.Tests.DungeonLayoutTests.RemoteDoorReferenceDoesNotCreateATeleportConnection() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 173
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.LayoutValidator.Validate(RoomCatalog catalog, DungeonManifest manifest) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/LayoutValidator.cs:line 7
+   at LethalDungeon.Tests.DungeonLayoutTests.RemoteDoorReferenceDoesNotCreateATeleportConnection() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 173
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="071e9649-3ba4-4c59-a883-157fc79bcd5a" testId="094c34d8-064c-346f-ff81-c48ca9d50326" testName="ZeroVolumeBoxIsRejected" computerName="local-machine" duration="00:00:00.0002370" startTime="2026-09-07T15:30:08.0279070+09:00" endTime="2026-09-07T15:30:08.0281440+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="071e9649-3ba4-4c59-a883-157fc79bcd5a">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentException&gt;
+  But was:  null
+</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Tests.DungeonLayoutTests.ZeroVolumeBoxIsRejected() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 70
+
+1)    at LethalDungeon.Tests.DungeonLayoutTests.ZeroVolumeBoxIsRejected() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 70
+
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="709deca4-cfc8-4a6f-ae6a-6a9f8d3a66df" testId="e4ff89e8-d73d-1ccd-61d6-7ba5fac01621" testName="PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(3,0,0,True)" computerName="local-machine" duration="00:00:00.0002060" startTime="2026-09-07T15:30:08.0237680+09:00" endTime="2026-09-07T15:30:08.0239750+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="709deca4-cfc8-4a6f-ae6a-6a9f8d3a66df">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.LayoutGeometry.Overlaps(GridBox a, GridBox b) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/LayoutGeometry.cs:line 13
+   at LethalDungeon.Tests.DungeonLayoutTests.PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(Int32 x, Int32 y, Int32 z, Boolean overlap) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 143
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.LayoutGeometry.Overlaps(GridBox a, GridBox b) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/LayoutGeometry.cs:line 13
+   at LethalDungeon.Tests.DungeonLayoutTests.PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(Int32 x, Int32 y, Int32 z, Boolean overlap) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 143
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="50a8990e-df35-4fe0-bd52-88ff19e87c30" testId="13d4a2c6-1ba7-d147-89df-16cfd3d2a7a9" testName="QuarterTurnsHaveExactCoordinates(2,-2,-3)" computerName="local-machine" duration="00:00:00.0000400" startTime="2026-09-07T15:30:08.0251600+09:00" endTime="2026-09-07T15:30:08.0252000+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="50a8990e-df35-4fe0-bd52-88ff19e87c30">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.LayoutGeometry.Rotate(GridPoint point, Int32 quarterTurns) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/LayoutGeometry.cs:line 8
+   at LethalDungeon.Tests.DungeonLayoutTests.QuarterTurnsHaveExactCoordinates(Int32 turn, Int32 x, Int32 z) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 38
+   at InvokeStub_DungeonLayoutTests.QuarterTurnsHaveExactCoordinates(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.Dungeons.LayoutGeometry.Rotate(GridPoint point, Int32 quarterTurns) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/LayoutGeometry.cs:line 8
+   at LethalDungeon.Tests.DungeonLayoutTests.QuarterTurnsHaveExactCoordinates(Int32 turn, Int32 x, Int32 z) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 38
+   at InvokeStub_DungeonLayoutTests.QuarterTurnsHaveExactCoordinates(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="e361d776-f6b1-4946-a4b9-f2345edb2519" testId="4eada1c8-9c5f-b85a-89b0-7e53d5f56764" testName="InvalidInjectedRandomSourceIsRejected" computerName="local-machine" duration="00:00:00.0002890" startTime="2026-09-07T15:30:08.0174350+09:00" endTime="2026-09-07T15:30:08.0177240+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e361d776-f6b1-4946-a4b9-f2345edb2519">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.InvalidOperationException&gt;
+  But was:  &lt;System.NotImplementedException: The method or operation is not implemented.
+   at LethalDungeon.Domain.Dungeons.PrototypeCatalog.Create() in /workspace/lethal-dungeon/src/Domain/DungeonLayout/DungeonGenerator.cs:line 12
+   at LethalDungeon.Tests.DungeonLayoutTests.&lt;&gt;c.&lt;InvalidInjectedRandomSourceIsRejected&gt;b__37_0() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 280
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, Action code, String message, Object[] args)&gt;
+</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Tests.DungeonLayoutTests.InvalidInjectedRandomSourceIsRejected() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 280
+
+1)    at LethalDungeon.Tests.DungeonLayoutTests.InvalidInjectedRandomSourceIsRejected() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 280
+
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="679a1af0-3202-4eed-a000-d9f306570c46" testId="62c98249-7257-69da-3f46-5bb075e25fd3" testName="PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(0,3,0,True)" computerName="local-machine" duration="00:00:00.0000440" startTime="2026-09-07T15:30:08.0242350+09:00" endTime="2026-09-07T15:30:08.0242780+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="679a1af0-3202-4eed-a000-d9f306570c46">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.LayoutGeometry.Overlaps(GridBox a, GridBox b) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/LayoutGeometry.cs:line 13
+   at LethalDungeon.Tests.DungeonLayoutTests.PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(Int32 x, Int32 y, Int32 z, Boolean overlap) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 143
+   at InvokeStub_DungeonLayoutTests.PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.Dungeons.LayoutGeometry.Overlaps(GridBox a, GridBox b) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/LayoutGeometry.cs:line 13
+   at LethalDungeon.Tests.DungeonLayoutTests.PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(Int32 x, Int32 y, Int32 z, Boolean overlap) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 143
+   at InvokeStub_DungeonLayoutTests.PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="32ac9099-8a47-48da-a2a7-6b5aabb8ff13" testId="7d742c39-474c-b6bd-3a1f-9e33fba489ec" testName="QuarterTurnsHaveExactCoordinates(0,2,3)" computerName="local-machine" duration="00:00:00.0001530" startTime="2026-09-07T15:30:08.0248560+09:00" endTime="2026-09-07T15:30:08.0250080+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="32ac9099-8a47-48da-a2a7-6b5aabb8ff13">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.LayoutGeometry.Rotate(GridPoint point, Int32 quarterTurns) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/LayoutGeometry.cs:line 8
+   at LethalDungeon.Tests.DungeonLayoutTests.QuarterTurnsHaveExactCoordinates(Int32 turn, Int32 x, Int32 z) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 38
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.LayoutGeometry.Rotate(GridPoint point, Int32 quarterTurns) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/LayoutGeometry.cs:line 8
+   at LethalDungeon.Tests.DungeonLayoutTests.QuarterTurnsHaveExactCoordinates(Int32 turn, Int32 x, Int32 z) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 38
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="0488fecd-dc40-46f1-aa3c-70a7f93d3329" testId="b76dc182-98c8-c712-af5d-9fc648872c46" testName="AttemptBudgetFailureNeverReturnsAPartialMap" computerName="local-machine" duration="00:00:00.0002680" startTime="2026-09-07T15:30:07.9991930+09:00" endTime="2026-09-07T15:30:07.9994610+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0488fecd-dc40-46f1-aa3c-70a7f93d3329">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.PrototypeCatalog.Create() in /workspace/lethal-dungeon/src/Domain/DungeonLayout/DungeonGenerator.cs:line 12
+   at LethalDungeon.Tests.DungeonLayoutTests.AttemptBudgetFailureNeverReturnsAPartialMap() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 234
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.PrototypeCatalog.Create() in /workspace/lethal-dungeon/src/Domain/DungeonLayout/DungeonGenerator.cs:line 12
+   at LethalDungeon.Tests.DungeonLayoutTests.AttemptBudgetFailureNeverReturnsAPartialMap() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 234
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="87f4075c-6cbc-4243-b923-aadcc0ae740c" testId="f3d7b960-3a10-800e-8dfb-3bea242a2942" testName="UpperStairDoorPlacesTheNextRoomOnTheUpperFloor" computerName="local-machine" duration="00:00:00.0001420" startTime="2026-09-07T15:30:08.0276110+09:00" endTime="2026-09-07T15:30:08.0277540+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="87f4075c-6cbc-4243-b923-aadcc0ae740c">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.PrototypeCatalog.Create() in /workspace/lethal-dungeon/src/Domain/DungeonLayout/DungeonGenerator.cs:line 12
+   at LethalDungeon.Tests.DungeonLayoutTests.UpperStairDoorPlacesTheNextRoomOnTheUpperFloor() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 130
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.PrototypeCatalog.Create() in /workspace/lethal-dungeon/src/Domain/DungeonLayout/DungeonGenerator.cs:line 12
+   at LethalDungeon.Tests.DungeonLayoutTests.UpperStairDoorPlacesTheNextRoomOnTheUpperFloor() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 130
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="4a5d6a98-cf6f-4930-b554-f3c745dd344f" testId="8b589130-3a4c-9190-e67d-78ae77122b2c" testName="ThirdRoomCannotBlockDoorApproachEvenWithoutEnvelopeOverlap" computerName="local-machine" duration="00:00:00.0003160" startTime="2026-09-07T15:30:08.0270940+09:00" endTime="2026-09-07T15:30:08.0274100+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4a5d6a98-cf6f-4930-b554-f3c745dd344f">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.LayoutValidator.Validate(RoomCatalog catalog, DungeonManifest manifest) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/LayoutValidator.cs:line 7
+   at LethalDungeon.Tests.DungeonLayoutTests.ThirdRoomCannotBlockDoorApproachEvenWithoutEnvelopeOverlap() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 214
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.LayoutValidator.Validate(RoomCatalog catalog, DungeonManifest manifest) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/LayoutValidator.cs:line 7
+   at LethalDungeon.Tests.DungeonLayoutTests.ThirdRoomCannotBlockDoorApproachEvenWithoutEnvelopeOverlap() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 214
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="f8db49ab-9875-44dd-a9ab-2411ee5b3c3a" testId="bf1e1d3b-0903-a1ad-0ae5-6accaa9b4d77" testName="LShapedNotchRemainsAvailableButItsLegIsSolid" computerName="local-machine" duration="00:00:00.0008780" startTime="2026-09-07T15:30:08.0205020+09:00" endTime="2026-09-07T15:30:08.0213800+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f8db49ab-9875-44dd-a9ab-2411ee5b3c3a">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.PrototypeCatalog.Create() in /workspace/lethal-dungeon/src/Domain/DungeonLayout/DungeonGenerator.cs:line 12
+   at LethalDungeon.Tests.DungeonLayoutTests.LShapedNotchRemainsAvailableButItsLegIsSolid() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 148
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.PrototypeCatalog.Create() in /workspace/lethal-dungeon/src/Domain/DungeonLayout/DungeonGenerator.cs:line 12
+   at LethalDungeon.Tests.DungeonLayoutTests.LShapedNotchRemainsAvailableButItsLegIsSolid() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 148
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="8fd93619-b1e1-44a5-8ea3-51947d6ea7d3" testId="08b763b4-92ae-e308-aeb6-779d89c54015" testName="SameSeedProducesIdenticalManifest" computerName="local-machine" duration="00:00:00.0001910" startTime="2026-09-07T15:30:08.0267380+09:00" endTime="2026-09-07T15:30:08.0269290+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8fd93619-b1e1-44a5-8ea3-51947d6ea7d3">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.PrototypeCatalog.Create() in /workspace/lethal-dungeon/src/Domain/DungeonLayout/DungeonGenerator.cs:line 12
+   at LethalDungeon.Tests.DungeonLayoutTests.SameSeedProducesIdenticalManifest() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 285
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.PrototypeCatalog.Create() in /workspace/lethal-dungeon/src/Domain/DungeonLayout/DungeonGenerator.cs:line 12
+   at LethalDungeon.Tests.DungeonLayoutTests.SameSeedProducesIdenticalManifest() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 285
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="d450baee-41bb-466c-9d77-b50a448f1e6b" testId="df20cd30-bd7e-2064-8b30-8e13d75becc0" testName="PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(0,4,0,False)" computerName="local-machine" duration="00:00:00.0000470" startTime="2026-09-07T15:30:08.0241850+09:00" endTime="2026-09-07T15:30:08.0242320+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d450baee-41bb-466c-9d77-b50a448f1e6b">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.LayoutGeometry.Overlaps(GridBox a, GridBox b) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/LayoutGeometry.cs:line 13
+   at LethalDungeon.Tests.DungeonLayoutTests.PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(Int32 x, Int32 y, Int32 z, Boolean overlap) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 143
+   at InvokeStub_DungeonLayoutTests.PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.Dungeons.LayoutGeometry.Overlaps(GridBox a, GridBox b) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/LayoutGeometry.cs:line 13
+   at LethalDungeon.Tests.DungeonLayoutTests.PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(Int32 x, Int32 y, Int32 z, Boolean overlap) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 143
+   at InvokeStub_DungeonLayoutTests.PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="1566a263-ed52-4a8d-a5fb-8b82465d8695" testId="4f9d0374-ab0c-b9c0-8844-143c8f63034c" testName="InvalidGenerationRequestsAreRejected(2,0)" computerName="local-machine" duration="00:00:00.0001499" startTime="2026-09-07T15:30:08.0170930+09:00" endTime="2026-09-07T15:30:08.0172430+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1566a263-ed52-4a8d-a5fb-8b82465d8695">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentOutOfRangeException&gt;
+  But was:  &lt;System.NotImplementedException: The method or operation is not implemented.
+   at LethalDungeon.Domain.Dungeons.PrototypeCatalog.Create() in /workspace/lethal-dungeon/src/Domain/DungeonLayout/DungeonGenerator.cs:line 12
+   at LethalDungeon.Tests.DungeonLayoutTests.&lt;&gt;c__DisplayClass35_0.&lt;InvalidGenerationRequestsAreRejected&gt;b__0() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 267
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, Action code, String message, Object[] args)&gt;
+</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Tests.DungeonLayoutTests.InvalidGenerationRequestsAreRejected(Int32 count, Int32 budget) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 267
+   at InvokeStub_DungeonLayoutTests.InvalidGenerationRequestsAreRejected(Object, Span`1)
+
+1)    at LethalDungeon.Tests.DungeonLayoutTests.InvalidGenerationRequestsAreRejected(Int32 count, Int32 budget) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 267
+   at InvokeStub_DungeonLayoutTests.InvalidGenerationRequestsAreRejected(Object, Span`1)
+
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="bed6c0a6-9488-453f-8715-6ffefd049e65" testId="94251ab9-5604-74fb-7019-16d948d3cd0f" testName="DuplicateInstancesAndContentVersionMismatchAreRejected" computerName="local-machine" duration="00:00:00.0002999" startTime="2026-09-07T15:30:08.0130470+09:00" endTime="2026-09-07T15:30:08.0133470+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bed6c0a6-9488-453f-8715-6ffefd049e65">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.LayoutValidator.Validate(RoomCatalog catalog, DungeonManifest manifest) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/LayoutValidator.cs:line 7
+   at LethalDungeon.Tests.DungeonLayoutTests.DuplicateInstancesAndContentVersionMismatchAreRejected() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 203
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.LayoutValidator.Validate(RoomCatalog catalog, DungeonManifest manifest) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/LayoutValidator.cs:line 7
+   at LethalDungeon.Tests.DungeonLayoutTests.DuplicateInstancesAndContentVersionMismatchAreRejected() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 203
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="7a935d2f-15a4-4a98-a5a5-a80994cd135e" testId="97c80239-cc3f-86b5-c5d8-381273940796" testName="QuarterTurnsHaveExactCoordinates(3,-3,2)" computerName="local-machine" duration="00:00:00.0000380" startTime="2026-09-07T15:30:08.0252020+09:00" endTime="2026-09-07T15:30:08.0252400+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7a935d2f-15a4-4a98-a5a5-a80994cd135e">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.LayoutGeometry.Rotate(GridPoint point, Int32 quarterTurns) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/LayoutGeometry.cs:line 8
+   at LethalDungeon.Tests.DungeonLayoutTests.QuarterTurnsHaveExactCoordinates(Int32 turn, Int32 x, Int32 z) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 38
+   at InvokeStub_DungeonLayoutTests.QuarterTurnsHaveExactCoordinates(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.Dungeons.LayoutGeometry.Rotate(GridPoint point, Int32 quarterTurns) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/LayoutGeometry.cs:line 8
+   at LethalDungeon.Tests.DungeonLayoutTests.QuarterTurnsHaveExactCoordinates(Int32 turn, Int32 x, Int32 z) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 38
+   at InvokeStub_DungeonLayoutTests.QuarterTurnsHaveExactCoordinates(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="97ed9e71-3d37-41b3-8941-07ab0dd992e0" testId="ac3679a7-45b0-ba8f-2944-69ebdf2a33a3" testName="InvalidRotationIsRejected(-1)" computerName="local-machine" duration="00:00:00.0002860" startTime="2026-09-07T15:30:08.0177370+09:00" endTime="2026-09-07T15:30:08.0180230+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="97ed9e71-3d37-41b3-8941-07ab0dd992e0">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentOutOfRangeException&gt;
+  But was:  null
+</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Tests.DungeonLayoutTests.InvalidRotationIsRejected(Int32 turn) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 43
+
+1)    at LethalDungeon.Tests.DungeonLayoutTests.InvalidRotationIsRejected(Int32 turn) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 43
+
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="616bde7a-4514-45f0-83a3-101019fa0745" testId="916f0cb0-47b0-bc8f-a96b-9a4e900559b7" testName="InvalidApertureIsRejected(0,0,0,2,2)" computerName="local-machine" duration="00:00:00.0003460" startTime="2026-09-07T15:30:08.0144940+09:00" endTime="2026-09-07T15:30:08.0148400+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="616bde7a-4514-45f0-83a3-101019fa0745">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentException&gt;
+  But was:  null
+</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Tests.DungeonLayoutTests.InvalidApertureIsRejected(Int32 x, Int32 y, Int32 z, Int32 width, Int32 height) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 94
+
+1)    at LethalDungeon.Tests.DungeonLayoutTests.InvalidApertureIsRejected(Int32 x, Int32 y, Int32 z, Int32 width, Int32 height) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 94
+
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="0b33be79-de34-47e6-a0e5-c92789a5578e" testId="186954d1-e6f3-b066-9489-c2480786770c" testName="InvalidApertureIsRejected(0,0,2,3,2)" computerName="local-machine" duration="00:00:00.0001280" startTime="2026-09-07T15:30:08.0153820+09:00" endTime="2026-09-07T15:30:08.0155100+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0b33be79-de34-47e6-a0e5-c92789a5578e">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentException&gt;
+  But was:  null
+</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Tests.DungeonLayoutTests.InvalidApertureIsRejected(Int32 x, Int32 y, Int32 z, Int32 width, Int32 height) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 94
+   at InvokeStub_DungeonLayoutTests.InvalidApertureIsRejected(Object, Span`1)
+
+1)    at LethalDungeon.Tests.DungeonLayoutTests.InvalidApertureIsRejected(Int32 x, Int32 y, Int32 z, Int32 width, Int32 height) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 94
+   at InvokeStub_DungeonLayoutTests.InvalidApertureIsRejected(Object, Span`1)
+
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="bc462beb-a57e-4020-a8b6-87f8d695c695" testId="860c2b37-8df9-67cb-36e9-5352fd4e3a80" testName="InvalidGenerationRequestsAreRejected(0,100)" computerName="local-machine" duration="00:00:00.0004410" startTime="2026-09-07T15:30:08.0163560+09:00" endTime="2026-09-07T15:30:08.0167970+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bc462beb-a57e-4020-a8b6-87f8d695c695">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentOutOfRangeException&gt;
+  But was:  &lt;System.NotImplementedException: The method or operation is not implemented.
+   at LethalDungeon.Domain.Dungeons.PrototypeCatalog.Create() in /workspace/lethal-dungeon/src/Domain/DungeonLayout/DungeonGenerator.cs:line 12
+   at LethalDungeon.Tests.DungeonLayoutTests.&lt;&gt;c__DisplayClass35_0.&lt;InvalidGenerationRequestsAreRejected&gt;b__0() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 267
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, Action code, String message, Object[] args)&gt;
+</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Tests.DungeonLayoutTests.InvalidGenerationRequestsAreRejected(Int32 count, Int32 budget) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 267
+
+1)    at LethalDungeon.Tests.DungeonLayoutTests.InvalidGenerationRequestsAreRejected(Int32 count, Int32 budget) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 267
+
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="50385b19-0108-43e7-9624-593b9e8d413d" testId="a4e12100-edf2-8d15-455f-66d638d82eb1" testName="UnknownModuleAndSocketReferencesAreRejected" computerName="local-machine" duration="00:00:00.0001960" startTime="2026-09-07T15:30:08.0274130+09:00" endTime="2026-09-07T15:30:08.0276090+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="50385b19-0108-43e7-9624-593b9e8d413d">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.LayoutValidator.Validate(RoomCatalog catalog, DungeonManifest manifest) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/LayoutValidator.cs:line 7
+   at LethalDungeon.Tests.DungeonLayoutTests.UnknownModuleAndSocketReferencesAreRejected() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 195
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.LayoutValidator.Validate(RoomCatalog catalog, DungeonManifest manifest) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/LayoutValidator.cs:line 7
+   at LethalDungeon.Tests.DungeonLayoutTests.UnknownModuleAndSocketReferencesAreRejected() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 195
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="fe6d49ec-e99f-4454-80b8-f4aec560b0a1" testId="c11f95b7-fa26-1dff-a8bb-0fcd9f7a7ab0" testName="ImpossibleCatalogTerminatesWithoutClaimingSuccess" computerName="local-machine" duration="00:00:00.0003190" startTime="2026-09-07T15:30:08.0141600+09:00" endTime="2026-09-07T15:30:08.0144780+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fe6d49ec-e99f-4454-80b8-f4aec560b0a1">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.DungeonGenerator.Generate(RoomCatalog catalog, String rootModuleId, Int32 targetRooms, IRandomSource random, Int32 maxAttempts, Boolean requireHeightChange) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/DungeonGenerator.cs:line 8
+   at LethalDungeon.Tests.DungeonLayoutTests.ImpossibleCatalogTerminatesWithoutClaimingSuccess() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 246
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.DungeonGenerator.Generate(RoomCatalog catalog, String rootModuleId, Int32 targetRooms, IRandomSource random, Int32 maxAttempts, Boolean requireHeightChange) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/DungeonGenerator.cs:line 8
+   at LethalDungeon.Tests.DungeonLayoutTests.ImpossibleCatalogTerminatesWithoutClaimingSuccess() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 246
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="e142427c-3cf4-493b-a080-f597fb414ab5" testId="d42d8322-b074-f711-1286-64688d8e608d" testName="ManifestCopiesCollectionsAndDoesNotExposeMutableLists" computerName="local-machine" duration="00:00:00.0011600" startTime="2026-09-07T15:30:08.0213990+09:00" endTime="2026-09-07T15:30:08.0225580+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e142427c-3cf4-493b-a080-f597fb414ab5" />
+    <ns0:UnitTestResult executionId="317da827-39ef-42c9-9d76-4c2dca502734" testId="ffa1f592-36af-fdc7-d20c-f5fbe6ac8aec" testName="InvalidGenerationRequestsAreRejected(2,100001)" computerName="local-machine" duration="00:00:00.0001620" startTime="2026-09-07T15:30:08.0172460+09:00" endTime="2026-09-07T15:30:08.0174080+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="317da827-39ef-42c9-9d76-4c2dca502734">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentOutOfRangeException&gt;
+  But was:  &lt;System.NotImplementedException: The method or operation is not implemented.
+   at LethalDungeon.Domain.Dungeons.PrototypeCatalog.Create() in /workspace/lethal-dungeon/src/Domain/DungeonLayout/DungeonGenerator.cs:line 12
+   at LethalDungeon.Tests.DungeonLayoutTests.&lt;&gt;c__DisplayClass35_0.&lt;InvalidGenerationRequestsAreRejected&gt;b__0() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 267
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, Action code, String message, Object[] args)&gt;
+</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Tests.DungeonLayoutTests.InvalidGenerationRequestsAreRejected(Int32 count, Int32 budget) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 267
+   at InvokeStub_DungeonLayoutTests.InvalidGenerationRequestsAreRejected(Object, Span`1)
+
+1)    at LethalDungeon.Tests.DungeonLayoutTests.InvalidGenerationRequestsAreRejected(Int32 count, Int32 budget) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 267
+   at InvokeStub_DungeonLayoutTests.InvalidGenerationRequestsAreRejected(Object, Span`1)
+
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="69b0f4b0-ebae-4703-8206-040ae0949146" testId="b09c53f3-d5e4-0fdf-41d6-2d374e1a293d" testName="ValidatorAcceptsAConnectedNonOverlappingPair" computerName="local-machine" duration="00:00:00.0001490" startTime="2026-09-07T15:30:08.0277560+09:00" endTime="2026-09-07T15:30:08.0279050+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="69b0f4b0-ebae-4703-8206-040ae0949146">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.LayoutValidator.Validate(RoomCatalog catalog, DungeonManifest manifest) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/LayoutValidator.cs:line 7
+   at LethalDungeon.Tests.DungeonLayoutTests.ValidatorAcceptsAConnectedNonOverlappingPair() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 159
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.LayoutValidator.Validate(RoomCatalog catalog, DungeonManifest manifest) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/LayoutValidator.cs:line 7
+   at LethalDungeon.Tests.DungeonLayoutTests.ValidatorAcceptsAConnectedNonOverlappingPair() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 159
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="31115288-e4c0-44b2-aff9-3d987840c359" testId="39a07caa-253e-fecf-f724-b2c328d00d84" testName="PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(4,0,0,False)" computerName="local-machine" duration="00:00:00.0002030" startTime="2026-09-07T15:30:08.0239790+09:00" endTime="2026-09-07T15:30:08.0241820+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="31115288-e4c0-44b2-aff9-3d987840c359">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.LayoutGeometry.Overlaps(GridBox a, GridBox b) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/LayoutGeometry.cs:line 13
+   at LethalDungeon.Tests.DungeonLayoutTests.PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(Int32 x, Int32 y, Int32 z, Boolean overlap) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 143
+   at InvokeStub_DungeonLayoutTests.PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.Dungeons.LayoutGeometry.Overlaps(GridBox a, GridBox b) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/LayoutGeometry.cs:line 13
+   at LethalDungeon.Tests.DungeonLayoutTests.PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(Int32 x, Int32 y, Int32 z, Boolean overlap) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 143
+   at InvokeStub_DungeonLayoutTests.PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="5034530d-9c67-4b50-90e9-35dd81cf2289" testId="6584b83b-016c-e9bb-c4da-6830fe156edd" testName="OneHundredSeedsProduceValidMultiLevelLayoutsAndPreviewFixtures" computerName="local-machine" duration="00:00:00.0008330" startTime="2026-09-07T15:30:08.0229170+09:00" endTime="2026-09-07T15:30:08.0237490+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5034530d-9c67-4b50-90e9-35dd81cf2289">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.PrototypeCatalog.Create() in /workspace/lethal-dungeon/src/Domain/DungeonLayout/DungeonGenerator.cs:line 12
+   at LethalDungeon.Tests.DungeonLayoutTests.OneHundredSeedsProduceValidMultiLevelLayoutsAndPreviewFixtures() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 307
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.PrototypeCatalog.Create() in /workspace/lethal-dungeon/src/Domain/DungeonLayout/DungeonGenerator.cs:line 12
+   at LethalDungeon.Tests.DungeonLayoutTests.OneHundredSeedsProduceValidMultiLevelLayoutsAndPreviewFixtures() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 307
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="cc56d65e-e934-4797-81bf-f25bb8cfc8cb" testId="d261bab6-ed72-e46d-f683-2a774bb0dea4" testName="AttachmentSolvesTranslationAndRotationFromDoorFrames" computerName="local-machine" duration="00:00:00.0068610" startTime="2026-09-07T15:30:07.9917780+09:00" endTime="2026-09-07T15:30:07.9986130+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cc56d65e-e934-4797-81bf-f25bb8cfc8cb">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.PrototypeCatalog.Create() in /workspace/lethal-dungeon/src/Domain/DungeonLayout/DungeonGenerator.cs:line 12
+   at LethalDungeon.Tests.DungeonLayoutTests.AttachmentSolvesTranslationAndRotationFromDoorFrames() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 114
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.PrototypeCatalog.Create() in /workspace/lethal-dungeon/src/Domain/DungeonLayout/DungeonGenerator.cs:line 12
+   at LethalDungeon.Tests.DungeonLayoutTests.AttachmentSolvesTranslationAndRotationFromDoorFrames() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 114
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="5e3b766b-f2fb-4497-9867-1115d4ab1a84" testId="0ac377dc-425a-f8db-d6c9-8ed448dfe590" testName="InvalidApertureIsRejected(0,0,2,2,0)" computerName="local-machine" duration="00:00:00.0001190" startTime="2026-09-07T15:30:08.0155120+09:00" endTime="2026-09-07T15:30:08.0156310+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5e3b766b-f2fb-4497-9867-1115d4ab1a84">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentException&gt;
+  But was:  null
+</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Tests.DungeonLayoutTests.InvalidApertureIsRejected(Int32 x, Int32 y, Int32 z, Int32 width, Int32 height) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 94
+   at InvokeStub_DungeonLayoutTests.InvalidApertureIsRejected(Object, Span`1)
+
+1)    at LethalDungeon.Tests.DungeonLayoutTests.InvalidApertureIsRejected(Int32 x, Int32 y, Int32 z, Int32 width, Int32 height) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 94
+   at InvokeStub_DungeonLayoutTests.InvalidApertureIsRejected(Object, Span`1)
+
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="a1a04a8b-24b7-43fa-9130-707968dc0bcb" testId="046feb69-46e1-64c8-b604-38e34a949fcb" testName="InvalidApertureIsRejected(2,0,2,2,2)" computerName="local-machine" duration="00:00:00.0004000" startTime="2026-09-07T15:30:08.0148440+09:00" endTime="2026-09-07T15:30:08.0152430+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a1a04a8b-24b7-43fa-9130-707968dc0bcb">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentException&gt;
+  But was:  null
+</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Tests.DungeonLayoutTests.InvalidApertureIsRejected(Int32 x, Int32 y, Int32 z, Int32 width, Int32 height) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 94
+   at InvokeStub_DungeonLayoutTests.InvalidApertureIsRejected(Object, Span`1)
+
+1)    at LethalDungeon.Tests.DungeonLayoutTests.InvalidApertureIsRejected(Int32 x, Int32 y, Int32 z, Int32 width, Int32 height) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 94
+   at InvokeStub_DungeonLayoutTests.InvalidApertureIsRejected(Object, Span`1)
+
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="5a0548a9-0ccf-4db0-8625-b1e3b4018ccd" testId="4870df8d-8f5a-6318-7fd4-01dc3f75b0c2" testName="HeightRequirementMeansConnectedFloorsNotJustTallRooms" computerName="local-machine" duration="00:00:00.0001810" startTime="2026-09-07T15:30:08.0139740+09:00" endTime="2026-09-07T15:30:08.0141550+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5a0548a9-0ccf-4db0-8625-b1e3b4018ccd">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.DungeonGenerator.Generate(RoomCatalog catalog, String rootModuleId, Int32 targetRooms, IRandomSource random, Int32 maxAttempts, Boolean requireHeightChange) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/DungeonGenerator.cs:line 8
+   at LethalDungeon.Tests.DungeonLayoutTests.HeightRequirementMeansConnectedFloorsNotJustTallRooms() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 257
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.DungeonGenerator.Generate(RoomCatalog catalog, String rootModuleId, Int32 targetRooms, IRandomSource random, Int32 maxAttempts, Boolean requireHeightChange) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/DungeonGenerator.cs:line 8
+   at LethalDungeon.Tests.DungeonLayoutTests.HeightRequirementMeansConnectedFloorsNotJustTallRooms() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 257
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="62491edf-80c3-497a-9c5d-2c2b98259685" testId="43651b83-927a-6391-76bd-efac584252fd" testName="DisconnectedRoomsAreRejected" computerName="local-machine" duration="00:00:00.0002470" startTime="2026-09-07T15:30:08.0024820+09:00" endTime="2026-09-07T15:30:08.0027290+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="62491edf-80c3-497a-9c5d-2c2b98259685">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.LayoutValidator.Validate(RoomCatalog catalog, DungeonManifest manifest) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/LayoutValidator.cs:line 7
+   at LethalDungeon.Tests.DungeonLayoutTests.DisconnectedRoomsAreRejected() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 180
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.LayoutValidator.Validate(RoomCatalog catalog, DungeonManifest manifest) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/LayoutValidator.cs:line 7
+   at LethalDungeon.Tests.DungeonLayoutTests.DisconnectedRoomsAreRejected() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 180
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="b7438601-1ef0-482a-a4ff-40ea6e13b589" testId="2ebc06d0-816f-73a2-d18a-52a4704d48d4" testName="InvalidRotationIsRejected(4)" computerName="local-machine" duration="00:00:00.0024550" startTime="2026-09-07T15:30:08.0180260+09:00" endTime="2026-09-07T15:30:08.0204800+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b7438601-1ef0-482a-a4ff-40ea6e13b589">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentOutOfRangeException&gt;
+  But was:  null
+</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Tests.DungeonLayoutTests.InvalidRotationIsRejected(Int32 turn) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 43
+   at InvokeStub_DungeonLayoutTests.InvalidRotationIsRejected(Object, Span`1)
+
+1)    at LethalDungeon.Tests.DungeonLayoutTests.InvalidRotationIsRejected(Int32 turn) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 43
+   at InvokeStub_DungeonLayoutTests.InvalidRotationIsRejected(Object, Span`1)
+
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="c74b9b5f-45c7-4f3a-bff7-4a162abb3cb8" testId="b8018349-648e-ffdf-058a-de9a64b7b574" testName="InvalidApertureIsRejected(0,3,2,2,2)" computerName="local-machine" duration="00:00:00.0001320" startTime="2026-09-07T15:30:08.0152470+09:00" endTime="2026-09-07T15:30:08.0153790+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c74b9b5f-45c7-4f3a-bff7-4a162abb3cb8">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentException&gt;
+  But was:  null
+</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Tests.DungeonLayoutTests.InvalidApertureIsRejected(Int32 x, Int32 y, Int32 z, Int32 width, Int32 height) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 94
+   at InvokeStub_DungeonLayoutTests.InvalidApertureIsRejected(Object, Span`1)
+
+1)    at LethalDungeon.Tests.DungeonLayoutTests.InvalidApertureIsRejected(Int32 x, Int32 y, Int32 z, Int32 width, Int32 height) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 94
+   at InvokeStub_DungeonLayoutTests.InvalidApertureIsRejected(Object, Span`1)
+
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="594c5870-8cd5-4606-b9a3-bbf25b04946f" testId="ae4f97cb-f9e5-1513-cfb7-9ec469edf629" testName="PrototypeHasSixSpecifiedModulesAndVerticalSockets" computerName="local-machine" duration="00:00:00.0004700" startTime="2026-09-07T15:30:08.0243760+09:00" endTime="2026-09-07T15:30:08.0248460+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="594c5870-8cd5-4606-b9a3-bbf25b04946f">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.PrototypeCatalog.Create() in /workspace/lethal-dungeon/src/Domain/DungeonLayout/DungeonGenerator.cs:line 12
+   at LethalDungeon.Tests.DungeonLayoutTests.PrototypeHasSixSpecifiedModulesAndVerticalSockets() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 58
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.PrototypeCatalog.Create() in /workspace/lethal-dungeon/src/Domain/DungeonLayout/DungeonGenerator.cs:line 12
+   at LethalDungeon.Tests.DungeonLayoutTests.PrototypeHasSixSpecifiedModulesAndVerticalSockets() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 58
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="c619a983-fc29-420a-a6a3-44887081cd4a" testId="68d39926-60bb-ca92-ddd7-224b6317b17e" testName="DuplicateSocketIdsAreRejected" computerName="local-machine" duration="00:00:00.0002910" startTime="2026-09-07T15:30:08.0136770+09:00" endTime="2026-09-07T15:30:08.0139680+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c619a983-fc29-420a-a6a3-44887081cd4a">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentException&gt;
+  But was:  null
+</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Tests.DungeonLayoutTests.DuplicateSocketIdsAreRejected() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 84
+
+1)    at LethalDungeon.Tests.DungeonLayoutTests.DuplicateSocketIdsAreRejected() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 84
+
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="0d994f33-bf97-41f8-984a-62d62e2411ad" testId="ebece4c5-856e-6a19-dddf-6404e8c0a72a" testName="SocketCannotBeUsedTwice" computerName="local-machine" duration="00:00:00.0001570" startTime="2026-09-07T15:30:08.0269340+09:00" endTime="2026-09-07T15:30:08.0270910+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0d994f33-bf97-41f8-984a-62d62e2411ad">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.LayoutValidator.Validate(RoomCatalog catalog, DungeonManifest manifest) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/LayoutValidator.cs:line 7
+   at LethalDungeon.Tests.DungeonLayoutTests.SocketCannotBeUsedTwice() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 188
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.LayoutValidator.Validate(RoomCatalog catalog, DungeonManifest manifest) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/LayoutValidator.cs:line 7
+   at LethalDungeon.Tests.DungeonLayoutTests.SocketCannotBeUsedTwice() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 188
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="52618f16-f45c-458c-b1c7-8bc4aac97935" testId="ee9afc5e-35e4-64c2-3d18-a4ad897688f0" testName="MissingEnvelopeIsRejected" computerName="local-machine" duration="00:00:00.0003510" startTime="2026-09-07T15:30:08.0225630+09:00" endTime="2026-09-07T15:30:08.0229140+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="52618f16-f45c-458c-b1c7-8bc4aac97935">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentException&gt;
+  But was:  null
+</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Tests.DungeonLayoutTests.MissingEnvelopeIsRejected() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 108
+
+1)    at LethalDungeon.Tests.DungeonLayoutTests.MissingEnvelopeIsRejected() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 108
+
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="0ee530f4-5f3d-4c9c-8cea-f45547e12a6f" testId="732806cf-17c3-73f7-b115-9b5efcbd1d90" testName="DuplicateModuleIdsAreRejected" computerName="local-machine" duration="00:00:00.0003160" startTime="2026-09-07T15:30:08.0133550+09:00" endTime="2026-09-07T15:30:08.0136710+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0ee530f4-5f3d-4c9c-8cea-f45547e12a6f">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentException&gt;
+  But was:  null
+</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Tests.DungeonLayoutTests.DuplicateModuleIdsAreRejected() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 76
+
+1)    at LethalDungeon.Tests.DungeonLayoutTests.DuplicateModuleIdsAreRejected() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 76
+
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="ede6e2ec-3854-4e08-ba96-44fcf173a33e" testId="43edd6a3-ca7b-56b8-2079-322a3759ef2d" testName="RotatedBoxHasCorrectExtents" computerName="local-machine" duration="00:00:00.0002180" startTime="2026-09-07T15:30:08.0265170+09:00" endTime="2026-09-07T15:30:08.0267350+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ede6e2ec-3854-4e08-ba96-44fcf173a33e">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.LayoutGeometry.WorldBoxes(RoomDefinition definition, PlacedRoom room) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/LayoutGeometry.cs:line 9
+   at LethalDungeon.Tests.DungeonLayoutTests.RotatedBoxHasCorrectExtents() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 49
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.LayoutGeometry.WorldBoxes(RoomDefinition definition, PlacedRoom room) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/LayoutGeometry.cs:line 9
+   at LethalDungeon.Tests.DungeonLayoutTests.RotatedBoxHasCorrectExtents() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 49
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="87d256fc-f4df-4458-97ae-4dceb410c17a" testId="ac4bb0cb-c010-1436-2969-4ae5e61f287b" testName="ConnectionDoesNotExemptOverlappingRooms" computerName="local-machine" duration="00:00:00.0025890" startTime="2026-09-07T15:30:07.9994720+09:00" endTime="2026-09-07T15:30:08.0020600+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="87d256fc-f4df-4458-97ae-4dceb410c17a">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.LayoutValidator.Validate(RoomCatalog catalog, DungeonManifest manifest) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/LayoutValidator.cs:line 7
+   at LethalDungeon.Tests.DungeonLayoutTests.ConnectionDoesNotExemptOverlappingRooms() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 166
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.LayoutValidator.Validate(RoomCatalog catalog, DungeonManifest manifest) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/LayoutValidator.cs:line 7
+   at LethalDungeon.Tests.DungeonLayoutTests.ConnectionDoesNotExemptOverlappingRooms() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 166
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="ba2ddd50-dac6-4613-bc5f-9311c575d643" testId="12d3c84d-5242-f5bf-cf0c-d87e6919da01" testName="DeadEndIsBacktrackedBeforeSuccessfulCompletion" computerName="local-machine" duration="00:00:00.0003990" startTime="2026-09-07T15:30:08.0020780+09:00" endTime="2026-09-07T15:30:08.0024770+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ba2ddd50-dac6-4613-bc5f-9311c575d643">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.DungeonGenerator.Generate(RoomCatalog catalog, String rootModuleId, Int32 targetRooms, IRandomSource random, Int32 maxAttempts, Boolean requireHeightChange) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/DungeonGenerator.cs:line 8
+   at LethalDungeon.Tests.DungeonLayoutTests.DeadEndIsBacktrackedBeforeSuccessfulCompletion() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 224
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.DungeonGenerator.Generate(RoomCatalog catalog, String rootModuleId, Int32 targetRooms, IRandomSource random, Int32 maxAttempts, Boolean requireHeightChange) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/DungeonGenerator.cs:line 8
+   at LethalDungeon.Tests.DungeonLayoutTests.DeadEndIsBacktrackedBeforeSuccessfulCompletion() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 224
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="049a0043-d10d-4820-9f4f-c196e734f768" testId="36265d70-6ce9-504b-db8f-cf8f9709e004" testName="InvalidGenerationRequestsAreRejected(65,100)" computerName="local-machine" duration="00:00:00.0002870" startTime="2026-09-07T15:30:08.0168010+09:00" endTime="2026-09-07T15:30:08.0170880+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="049a0043-d10d-4820-9f4f-c196e734f768">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentOutOfRangeException&gt;
+  But was:  &lt;System.NotImplementedException: The method or operation is not implemented.
+   at LethalDungeon.Domain.Dungeons.PrototypeCatalog.Create() in /workspace/lethal-dungeon/src/Domain/DungeonLayout/DungeonGenerator.cs:line 12
+   at LethalDungeon.Tests.DungeonLayoutTests.&lt;&gt;c__DisplayClass35_0.&lt;InvalidGenerationRequestsAreRejected&gt;b__0() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 267
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, Action code, String message, Object[] args)&gt;
+</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Tests.DungeonLayoutTests.InvalidGenerationRequestsAreRejected(Int32 count, Int32 budget) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 267
+   at InvokeStub_DungeonLayoutTests.InvalidGenerationRequestsAreRejected(Object, Span`1)
+
+1)    at LethalDungeon.Tests.DungeonLayoutTests.InvalidGenerationRequestsAreRejected(Int32 count, Int32 budget) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 267
+   at InvokeStub_DungeonLayoutTests.InvalidGenerationRequestsAreRejected(Object, Span`1)
+
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="41945645-f2ab-43c7-b00c-9e7026c10c4f" testId="5ba5d75b-1e57-ff8b-dde5-dea8fc9d9266" testName="DoorFacingIntoTheRoomIsRejected" computerName="local-machine" duration="00:00:00.0102710" startTime="2026-09-07T15:30:08.0027330+09:00" endTime="2026-09-07T15:30:08.0130040+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="41945645-f2ab-43c7-b00c-9e7026c10c4f">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentException&gt;
+  But was:  null
+</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Tests.DungeonLayoutTests.DoorFacingIntoTheRoomIsRejected() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 103
+
+1)    at LethalDungeon.Tests.DungeonLayoutTests.DoorFacingIntoTheRoomIsRejected() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 103
+
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="e0424a08-306c-4b8e-b0d9-ad44a30de393" testId="204c8c09-3050-c0fb-662e-d75d286916ed" testName="PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(4,4,4,False)" computerName="local-machine" duration="00:00:00.0000630" startTime="2026-09-07T15:30:08.0242910+09:00" endTime="2026-09-07T15:30:08.0243540+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e0424a08-306c-4b8e-b0d9-ad44a30de393">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.LayoutGeometry.Overlaps(GridBox a, GridBox b) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/LayoutGeometry.cs:line 13
+   at LethalDungeon.Tests.DungeonLayoutTests.PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(Int32 x, Int32 y, Int32 z, Boolean overlap) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 143
+   at InvokeStub_DungeonLayoutTests.PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.Dungeons.LayoutGeometry.Overlaps(GridBox a, GridBox b) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/LayoutGeometry.cs:line 13
+   at LethalDungeon.Tests.DungeonLayoutTests.PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(Int32 x, Int32 y, Int32 z, Boolean overlap) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 143
+   at InvokeStub_DungeonLayoutTests.PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="74abb047-6a14-4bc3-8a2f-9ad8d289138e" testId="7abfec6e-3735-a2ec-a079-0e3180cedd78" testName="QuarterTurnsHaveExactCoordinates(1,3,-2)" computerName="local-machine" duration="00:00:00.0001410" startTime="2026-09-07T15:30:08.0250150+09:00" endTime="2026-09-07T15:30:08.0251550+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="74abb047-6a14-4bc3-8a2f-9ad8d289138e">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.LayoutGeometry.Rotate(GridPoint point, Int32 quarterTurns) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/LayoutGeometry.cs:line 8
+   at LethalDungeon.Tests.DungeonLayoutTests.QuarterTurnsHaveExactCoordinates(Int32 turn, Int32 x, Int32 z) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 38
+   at InvokeStub_DungeonLayoutTests.QuarterTurnsHaveExactCoordinates(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.Dungeons.LayoutGeometry.Rotate(GridPoint point, Int32 quarterTurns) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/LayoutGeometry.cs:line 8
+   at LethalDungeon.Tests.DungeonLayoutTests.QuarterTurnsHaveExactCoordinates(Int32 turn, Int32 x, Int32 z) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 38
+   at InvokeStub_DungeonLayoutTests.QuarterTurnsHaveExactCoordinates(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="c08d19ea-a044-4413-b87e-76512ecd2136" testId="d2341cd5-b066-3dc4-836f-853a20e39c17" testName="RandomAlgorithmHasStableGoldenSequence" computerName="local-machine" duration="00:00:00.0010690" startTime="2026-09-07T15:30:08.0252480+09:00" endTime="2026-09-07T15:30:08.0263170+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c08d19ea-a044-4413-b87e-76512ecd2136">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.XorShiftRandom.Next(Int32 exclusiveMax) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/LayoutTypes.cs:line 113
+   at LethalDungeon.Tests.DungeonLayoutTests.&lt;&gt;c__DisplayClass36_0.&lt;RandomAlgorithmHasStableGoldenSequence&gt;b__0(Int32 _) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 274
+   at System.Linq.Enumerable.RangeSelectIterator`2.Fill(Span`1 results, T start, Func`2 func)
+   at System.Linq.Enumerable.RangeSelectIterator`2.ToArray()
+   at LethalDungeon.Tests.DungeonLayoutTests.RandomAlgorithmHasStableGoldenSequence() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 274
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.XorShiftRandom.Next(Int32 exclusiveMax) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/LayoutTypes.cs:line 113
+   at LethalDungeon.Tests.DungeonLayoutTests.&lt;&gt;c__DisplayClass36_0.&lt;RandomAlgorithmHasStableGoldenSequence&gt;b__0(Int32 _) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 274
+   at System.Linq.Enumerable.RangeSelectIterator`2.Fill(Span`1 results, T start, Func`2 func)
+   at System.Linq.Enumerable.RangeSelectIterator`2.ToArray()
+   at LethalDungeon.Tests.DungeonLayoutTests.RandomAlgorithmHasStableGoldenSequence() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLayoutTests.cs:line 274
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+  </ns0:Results>
+  <ns0:TestDefinitions>
+    <ns0:UnitTest name="InvalidGenerationRequestsAreRejected(65,100)" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="36265d70-6ce9-504b-db8f-cf8f9709e004">
+      <ns0:Execution id="049a0043-d10d-4820-9f4f-c196e734f768" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="InvalidGenerationRequestsAreRejected(65,100)" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="InvalidRotationIsRejected(-1)" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="ac3679a7-45b0-ba8f-2944-69ebdf2a33a3">
+      <ns0:Execution id="97ed9e71-3d37-41b3-8941-07ab0dd992e0" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="InvalidRotationIsRejected(-1)" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="InvalidGenerationRequestsAreRejected(2,0)" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="4f9d0374-ab0c-b9c0-8844-143c8f63034c">
+      <ns0:Execution id="1566a263-ed52-4a8d-a5fb-8b82465d8695" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="InvalidGenerationRequestsAreRejected(2,0)" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="DuplicateModuleIdsAreRejected" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="732806cf-17c3-73f7-b115-9b5efcbd1d90">
+      <ns0:Execution id="0ee530f4-5f3d-4c9c-8cea-f45547e12a6f" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="DuplicateModuleIdsAreRejected" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="LShapedNotchRemainsAvailableButItsLegIsSolid" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="bf1e1d3b-0903-a1ad-0ae5-6accaa9b4d77">
+      <ns0:Execution id="f8db49ab-9875-44dd-a9ab-2411ee5b3c3a" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="LShapedNotchRemainsAvailableButItsLegIsSolid" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="ImpossibleCatalogTerminatesWithoutClaimingSuccess" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="c11f95b7-fa26-1dff-a8bb-0fcd9f7a7ab0">
+      <ns0:Execution id="fe6d49ec-e99f-4454-80b8-f4aec560b0a1" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="ImpossibleCatalogTerminatesWithoutClaimingSuccess" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(0,3,0,True)" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="62c98249-7257-69da-3f46-5bb075e25fd3">
+      <ns0:Execution id="679a1af0-3202-4eed-a000-d9f306570c46" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(0,3,0,True)" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="MissingEnvelopeIsRejected" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="ee9afc5e-35e4-64c2-3d18-a4ad897688f0">
+      <ns0:Execution id="52618f16-f45c-458c-b1c7-8bc4aac97935" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="MissingEnvelopeIsRejected" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="InvalidGenerationRequestsAreRejected(0,100)" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="860c2b37-8df9-67cb-36e9-5352fd4e3a80">
+      <ns0:Execution id="bc462beb-a57e-4020-a8b6-87f8d695c695" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="InvalidGenerationRequestsAreRejected(0,100)" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(4,0,0,False)" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="39a07caa-253e-fecf-f724-b2c328d00d84">
+      <ns0:Execution id="31115288-e4c0-44b2-aff9-3d987840c359" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(4,0,0,False)" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="DuplicateSocketIdsAreRejected" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="68d39926-60bb-ca92-ddd7-224b6317b17e">
+      <ns0:Execution id="c619a983-fc29-420a-a6a3-44887081cd4a" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="DuplicateSocketIdsAreRejected" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="ZeroVolumeBoxIsRejected" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="094c34d8-064c-346f-ff81-c48ca9d50326">
+      <ns0:Execution id="071e9649-3ba4-4c59-a883-157fc79bcd5a" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="ZeroVolumeBoxIsRejected" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="ThirdRoomCannotBlockDoorApproachEvenWithoutEnvelopeOverlap" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="8b589130-3a4c-9190-e67d-78ae77122b2c">
+      <ns0:Execution id="4a5d6a98-cf6f-4930-b554-f3c745dd344f" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="ThirdRoomCannotBlockDoorApproachEvenWithoutEnvelopeOverlap" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="PrototypeHasSixSpecifiedModulesAndVerticalSockets" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="ae4f97cb-f9e5-1513-cfb7-9ec469edf629">
+      <ns0:Execution id="594c5870-8cd5-4606-b9a3-bbf25b04946f" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="PrototypeHasSixSpecifiedModulesAndVerticalSockets" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="InvalidApertureIsRejected(0,0,0,2,2)" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="916f0cb0-47b0-bc8f-a96b-9a4e900559b7">
+      <ns0:Execution id="616bde7a-4514-45f0-83a3-101019fa0745" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="InvalidApertureIsRejected(0,0,0,2,2)" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="DoorFacingIntoTheRoomIsRejected" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="5ba5d75b-1e57-ff8b-dde5-dea8fc9d9266">
+      <ns0:Execution id="41945645-f2ab-43c7-b00c-9e7026c10c4f" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="DoorFacingIntoTheRoomIsRejected" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="AttachmentSolvesTranslationAndRotationFromDoorFrames" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="d261bab6-ed72-e46d-f683-2a774bb0dea4">
+      <ns0:Execution id="cc56d65e-e934-4797-81bf-f25bb8cfc8cb" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="AttachmentSolvesTranslationAndRotationFromDoorFrames" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="QuarterTurnsHaveExactCoordinates(0,2,3)" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="7d742c39-474c-b6bd-3a1f-9e33fba489ec">
+      <ns0:Execution id="32ac9099-8a47-48da-a2a7-6b5aabb8ff13" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="QuarterTurnsHaveExactCoordinates(0,2,3)" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(0,4,0,False)" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="df20cd30-bd7e-2064-8b30-8e13d75becc0">
+      <ns0:Execution id="d450baee-41bb-466c-9d77-b50a448f1e6b" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(0,4,0,False)" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="OneHundredSeedsProduceValidMultiLevelLayoutsAndPreviewFixtures" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="6584b83b-016c-e9bb-c4da-6830fe156edd">
+      <ns0:Execution id="5034530d-9c67-4b50-90e9-35dd81cf2289" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="OneHundredSeedsProduceValidMultiLevelLayoutsAndPreviewFixtures" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="SocketCannotBeUsedTwice" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="ebece4c5-856e-6a19-dddf-6404e8c0a72a">
+      <ns0:Execution id="0d994f33-bf97-41f8-984a-62d62e2411ad" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="SocketCannotBeUsedTwice" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="InvalidApertureIsRejected(0,0,2,3,2)" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="186954d1-e6f3-b066-9489-c2480786770c">
+      <ns0:Execution id="0b33be79-de34-47e6-a0e5-c92789a5578e" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="InvalidApertureIsRejected(0,0,2,3,2)" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="InvalidApertureIsRejected(0,3,2,2,2)" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="b8018349-648e-ffdf-058a-de9a64b7b574">
+      <ns0:Execution id="c74b9b5f-45c7-4f3a-bff7-4a162abb3cb8" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="InvalidApertureIsRejected(0,3,2,2,2)" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="QuarterTurnsHaveExactCoordinates(3,-3,2)" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="97c80239-cc3f-86b5-c5d8-381273940796">
+      <ns0:Execution id="7a935d2f-15a4-4a98-a5a5-a80994cd135e" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="QuarterTurnsHaveExactCoordinates(3,-3,2)" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="DuplicateInstancesAndContentVersionMismatchAreRejected" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="94251ab9-5604-74fb-7019-16d948d3cd0f">
+      <ns0:Execution id="bed6c0a6-9488-453f-8715-6ffefd049e65" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="DuplicateInstancesAndContentVersionMismatchAreRejected" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="DisconnectedRoomsAreRejected" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="43651b83-927a-6391-76bd-efac584252fd">
+      <ns0:Execution id="62491edf-80c3-497a-9c5d-2c2b98259685" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="DisconnectedRoomsAreRejected" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="AttemptBudgetFailureNeverReturnsAPartialMap" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="b76dc182-98c8-c712-af5d-9fc648872c46">
+      <ns0:Execution id="0488fecd-dc40-46f1-aa3c-70a7f93d3329" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="AttemptBudgetFailureNeverReturnsAPartialMap" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="UnknownModuleAndSocketReferencesAreRejected" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="a4e12100-edf2-8d15-455f-66d638d82eb1">
+      <ns0:Execution id="50385b19-0108-43e7-9624-593b9e8d413d" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="UnknownModuleAndSocketReferencesAreRejected" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="QuarterTurnsHaveExactCoordinates(2,-2,-3)" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="13d4a2c6-1ba7-d147-89df-16cfd3d2a7a9">
+      <ns0:Execution id="50a8990e-df35-4fe0-bd52-88ff19e87c30" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="QuarterTurnsHaveExactCoordinates(2,-2,-3)" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(4,4,4,False)" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="204c8c09-3050-c0fb-662e-d75d286916ed">
+      <ns0:Execution id="e0424a08-306c-4b8e-b0d9-ad44a30de393" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(4,4,4,False)" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="InvalidApertureIsRejected(2,0,2,2,2)" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="046feb69-46e1-64c8-b604-38e34a949fcb">
+      <ns0:Execution id="a1a04a8b-24b7-43fa-9130-707968dc0bcb" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="InvalidApertureIsRejected(2,0,2,2,2)" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="HeightRequirementMeansConnectedFloorsNotJustTallRooms" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="4870df8d-8f5a-6318-7fd4-01dc3f75b0c2">
+      <ns0:Execution id="5a0548a9-0ccf-4db0-8625-b1e3b4018ccd" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="HeightRequirementMeansConnectedFloorsNotJustTallRooms" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="RotatedBoxHasCorrectExtents" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="43edd6a3-ca7b-56b8-2079-322a3759ef2d">
+      <ns0:Execution id="ede6e2ec-3854-4e08-ba96-44fcf173a33e" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="RotatedBoxHasCorrectExtents" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="InvalidRotationIsRejected(4)" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="2ebc06d0-816f-73a2-d18a-52a4704d48d4">
+      <ns0:Execution id="b7438601-1ef0-482a-a4ff-40ea6e13b589" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="InvalidRotationIsRejected(4)" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="UpperStairDoorPlacesTheNextRoomOnTheUpperFloor" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="f3d7b960-3a10-800e-8dfb-3bea242a2942">
+      <ns0:Execution id="87f4075c-6cbc-4243-b923-aadcc0ae740c" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="UpperStairDoorPlacesTheNextRoomOnTheUpperFloor" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="ManifestCopiesCollectionsAndDoesNotExposeMutableLists" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="d42d8322-b074-f711-1286-64688d8e608d">
+      <ns0:Execution id="e142427c-3cf4-493b-a080-f597fb414ab5" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="ManifestCopiesCollectionsAndDoesNotExposeMutableLists" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="InvalidInjectedRandomSourceIsRejected" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="4eada1c8-9c5f-b85a-89b0-7e53d5f56764">
+      <ns0:Execution id="e361d776-f6b1-4946-a4b9-f2345edb2519" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="InvalidInjectedRandomSourceIsRejected" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="DeadEndIsBacktrackedBeforeSuccessfulCompletion" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="12d3c84d-5242-f5bf-cf0c-d87e6919da01">
+      <ns0:Execution id="ba2ddd50-dac6-4613-bc5f-9311c575d643" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="DeadEndIsBacktrackedBeforeSuccessfulCompletion" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="ValidatorAcceptsAConnectedNonOverlappingPair" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="b09c53f3-d5e4-0fdf-41d6-2d374e1a293d">
+      <ns0:Execution id="69b0f4b0-ebae-4703-8206-040ae0949146" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="ValidatorAcceptsAConnectedNonOverlappingPair" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="RemoteDoorReferenceDoesNotCreateATeleportConnection" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="9dcf8846-bdeb-b3eb-1193-8cacae7a95f6">
+      <ns0:Execution id="ab4429a2-b9c4-44bc-9f4d-ff8dbb6f023e" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="RemoteDoorReferenceDoesNotCreateATeleportConnection" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="ConnectionDoesNotExemptOverlappingRooms" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="ac4bb0cb-c010-1436-2969-4ae5e61f287b">
+      <ns0:Execution id="87d256fc-f4df-4458-97ae-4dceb410c17a" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="ConnectionDoesNotExemptOverlappingRooms" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="QuarterTurnsHaveExactCoordinates(1,3,-2)" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="7abfec6e-3735-a2ec-a079-0e3180cedd78">
+      <ns0:Execution id="74abb047-6a14-4bc3-8a2f-9ad8d289138e" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="QuarterTurnsHaveExactCoordinates(1,3,-2)" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(3,0,0,True)" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="e4ff89e8-d73d-1ccd-61d6-7ba5fac01621">
+      <ns0:Execution id="709deca4-cfc8-4a6f-ae6a-6a9f8d3a66df" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="PositiveIntersectionIsRejectedButTouchingAndStackingAreAllowed(3,0,0,True)" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="SameSeedProducesIdenticalManifest" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="08b763b4-92ae-e308-aeb6-779d89c54015">
+      <ns0:Execution id="8fd93619-b1e1-44a5-8ea3-51947d6ea7d3" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="SameSeedProducesIdenticalManifest" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="RandomAlgorithmHasStableGoldenSequence" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="d2341cd5-b066-3dc4-836f-853a20e39c17">
+      <ns0:Execution id="c08d19ea-a044-4413-b87e-76512ecd2136" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="RandomAlgorithmHasStableGoldenSequence" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="InvalidGenerationRequestsAreRejected(2,100001)" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="ffa1f592-36af-fdc7-d20c-f5fbe6ac8aec">
+      <ns0:Execution id="317da827-39ef-42c9-9d76-4c2dca502734" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="InvalidGenerationRequestsAreRejected(2,100001)" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="InvalidApertureIsRejected(0,0,2,2,0)" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/debug/net10.0/domain.tests.dll" id="0ac377dc-425a-f8db-d6c9-8ed448dfe590">
+      <ns0:Execution id="5e3b766b-f2fb-4497-9867-1115d4ab1a84" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLayoutTests" name="InvalidApertureIsRejected(0,0,2,2,0)" />
+    </ns0:UnitTest>
+  </ns0:TestDefinitions>
+  <ns0:TestEntries>
+    <ns0:TestEntry testId="9dcf8846-bdeb-b3eb-1193-8cacae7a95f6" executionId="ab4429a2-b9c4-44bc-9f4d-ff8dbb6f023e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="094c34d8-064c-346f-ff81-c48ca9d50326" executionId="071e9649-3ba4-4c59-a883-157fc79bcd5a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="e4ff89e8-d73d-1ccd-61d6-7ba5fac01621" executionId="709deca4-cfc8-4a6f-ae6a-6a9f8d3a66df" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="13d4a2c6-1ba7-d147-89df-16cfd3d2a7a9" executionId="50a8990e-df35-4fe0-bd52-88ff19e87c30" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="4eada1c8-9c5f-b85a-89b0-7e53d5f56764" executionId="e361d776-f6b1-4946-a4b9-f2345edb2519" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="62c98249-7257-69da-3f46-5bb075e25fd3" executionId="679a1af0-3202-4eed-a000-d9f306570c46" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="7d742c39-474c-b6bd-3a1f-9e33fba489ec" executionId="32ac9099-8a47-48da-a2a7-6b5aabb8ff13" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="b76dc182-98c8-c712-af5d-9fc648872c46" executionId="0488fecd-dc40-46f1-aa3c-70a7f93d3329" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="f3d7b960-3a10-800e-8dfb-3bea242a2942" executionId="87f4075c-6cbc-4243-b923-aadcc0ae740c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="8b589130-3a4c-9190-e67d-78ae77122b2c" executionId="4a5d6a98-cf6f-4930-b554-f3c745dd344f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="bf1e1d3b-0903-a1ad-0ae5-6accaa9b4d77" executionId="f8db49ab-9875-44dd-a9ab-2411ee5b3c3a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="08b763b4-92ae-e308-aeb6-779d89c54015" executionId="8fd93619-b1e1-44a5-8ea3-51947d6ea7d3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="df20cd30-bd7e-2064-8b30-8e13d75becc0" executionId="d450baee-41bb-466c-9d77-b50a448f1e6b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="4f9d0374-ab0c-b9c0-8844-143c8f63034c" executionId="1566a263-ed52-4a8d-a5fb-8b82465d8695" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="94251ab9-5604-74fb-7019-16d948d3cd0f" executionId="bed6c0a6-9488-453f-8715-6ffefd049e65" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="97c80239-cc3f-86b5-c5d8-381273940796" executionId="7a935d2f-15a4-4a98-a5a5-a80994cd135e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="ac3679a7-45b0-ba8f-2944-69ebdf2a33a3" executionId="97ed9e71-3d37-41b3-8941-07ab0dd992e0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="916f0cb0-47b0-bc8f-a96b-9a4e900559b7" executionId="616bde7a-4514-45f0-83a3-101019fa0745" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="186954d1-e6f3-b066-9489-c2480786770c" executionId="0b33be79-de34-47e6-a0e5-c92789a5578e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="860c2b37-8df9-67cb-36e9-5352fd4e3a80" executionId="bc462beb-a57e-4020-a8b6-87f8d695c695" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="a4e12100-edf2-8d15-455f-66d638d82eb1" executionId="50385b19-0108-43e7-9624-593b9e8d413d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="c11f95b7-fa26-1dff-a8bb-0fcd9f7a7ab0" executionId="fe6d49ec-e99f-4454-80b8-f4aec560b0a1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="d42d8322-b074-f711-1286-64688d8e608d" executionId="e142427c-3cf4-493b-a080-f597fb414ab5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="ffa1f592-36af-fdc7-d20c-f5fbe6ac8aec" executionId="317da827-39ef-42c9-9d76-4c2dca502734" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="b09c53f3-d5e4-0fdf-41d6-2d374e1a293d" executionId="69b0f4b0-ebae-4703-8206-040ae0949146" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="39a07caa-253e-fecf-f724-b2c328d00d84" executionId="31115288-e4c0-44b2-aff9-3d987840c359" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="6584b83b-016c-e9bb-c4da-6830fe156edd" executionId="5034530d-9c67-4b50-90e9-35dd81cf2289" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="d261bab6-ed72-e46d-f683-2a774bb0dea4" executionId="cc56d65e-e934-4797-81bf-f25bb8cfc8cb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="0ac377dc-425a-f8db-d6c9-8ed448dfe590" executionId="5e3b766b-f2fb-4497-9867-1115d4ab1a84" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="046feb69-46e1-64c8-b604-38e34a949fcb" executionId="a1a04a8b-24b7-43fa-9130-707968dc0bcb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="4870df8d-8f5a-6318-7fd4-01dc3f75b0c2" executionId="5a0548a9-0ccf-4db0-8625-b1e3b4018ccd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="43651b83-927a-6391-76bd-efac584252fd" executionId="62491edf-80c3-497a-9c5d-2c2b98259685" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="2ebc06d0-816f-73a2-d18a-52a4704d48d4" executionId="b7438601-1ef0-482a-a4ff-40ea6e13b589" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="b8018349-648e-ffdf-058a-de9a64b7b574" executionId="c74b9b5f-45c7-4f3a-bff7-4a162abb3cb8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="ae4f97cb-f9e5-1513-cfb7-9ec469edf629" executionId="594c5870-8cd5-4606-b9a3-bbf25b04946f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="68d39926-60bb-ca92-ddd7-224b6317b17e" executionId="c619a983-fc29-420a-a6a3-44887081cd4a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="ebece4c5-856e-6a19-dddf-6404e8c0a72a" executionId="0d994f33-bf97-41f8-984a-62d62e2411ad" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="ee9afc5e-35e4-64c2-3d18-a4ad897688f0" executionId="52618f16-f45c-458c-b1c7-8bc4aac97935" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="732806cf-17c3-73f7-b115-9b5efcbd1d90" executionId="0ee530f4-5f3d-4c9c-8cea-f45547e12a6f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="43edd6a3-ca7b-56b8-2079-322a3759ef2d" executionId="ede6e2ec-3854-4e08-ba96-44fcf173a33e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="ac4bb0cb-c010-1436-2969-4ae5e61f287b" executionId="87d256fc-f4df-4458-97ae-4dceb410c17a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="12d3c84d-5242-f5bf-cf0c-d87e6919da01" executionId="ba2ddd50-dac6-4613-bc5f-9311c575d643" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="36265d70-6ce9-504b-db8f-cf8f9709e004" executionId="049a0043-d10d-4820-9f4f-c196e734f768" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="5ba5d75b-1e57-ff8b-dde5-dea8fc9d9266" executionId="41945645-f2ab-43c7-b00c-9e7026c10c4f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="204c8c09-3050-c0fb-662e-d75d286916ed" executionId="e0424a08-306c-4b8e-b0d9-ad44a30de393" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="7abfec6e-3735-a2ec-a079-0e3180cedd78" executionId="74abb047-6a14-4bc3-8a2f-9ad8d289138e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="d2341cd5-b066-3dc4-836f-853a20e39c17" executionId="c08d19ea-a044-4413-b87e-76512ecd2136" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </ns0:TestEntries>
+  <ns0:TestLists>
+    <ns0:TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </ns0:TestLists>
+  <ns0:ResultSummary outcome="Failed">
+    <ns0:Counters total="47" executed="47" passed="1" failed="46" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <ns0:Output>
+      <ns0:StdOut>NUnit Adapter 6.3.0.0: Test execution started
+Running selected tests in /workspace/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll
+   NUnit3TestExecutor discovered 47 of 47 NUnit test cases using Current Discovery mode, Non-Explicit run
+</ns0:StdOut>
+    </ns0:Output>
+  </ns0:ResultSummary>
+</ns0:TestRun>

@@ -1,0 +1,96 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace LethalDungeon.Domain.Dungeons
+{
+    public static class DungeonGenerator
+    {
+        public static GenerationResult Generate(RoomCatalog catalog, string rootModuleId, int targetRooms,
+            IRandomSource random, int maxAttempts = 3000, bool requireHeightChange = false)
+        {
+            if (catalog == null) throw new ArgumentNullException(nameof(catalog));
+            if (random == null) throw new ArgumentNullException(nameof(random));
+            if (targetRooms < 1 || targetRooms > 64) throw new ArgumentOutOfRangeException(nameof(targetRooms));
+            if (maxAttempts < 1 || maxAttempts > 100000) throw new ArgumentOutOfRangeException(nameof(maxAttempts));
+            catalog.Get(rootModuleId);
+            var rooms = new List<PlacedRoom> { new PlacedRoom("room_000",rootModuleId,new GridPoint(0,0,0)) };
+            var links = new List<DoorConnection>();
+            int attempts = 0, backtracks = 0;
+            DungeonManifest Snapshot() => new DungeonManifest(catalog.Version,rooms,links);
+            bool Search()
+            {
+                if (rooms.Count == targetRooms)
+                    return !requireHeightChange || links.Select(c => {
+                        var p = rooms.Single(r => r.InstanceId == c.FromRoom);
+                        return LayoutGeometry.WorldSocket(catalog.Get(p.ModuleId),p,c.FromSocket).Position.Y;
+                    }).Distinct().Take(2).Count() == 2;
+                var used = new HashSet<(string,string)>(links.SelectMany(c => new[] { (c.FromRoom,c.FromSocket),(c.ToRoom,c.ToSocket) }));
+                var candidates = new List<(PlacedRoom Parent,DoorSocket From,RoomDefinition Child,DoorSocket To)>();
+                foreach (var parent in rooms)
+                foreach (var from in catalog.Get(parent.ModuleId).Sockets.OrderBy(s => s.Id,StringComparer.Ordinal))
+                {
+                    if (used.Contains((parent.InstanceId,from.Id))) continue;
+                    foreach (var child in catalog.Rooms.Where(r => !r.IsRootOnly).OrderBy(r => r.Id,StringComparer.Ordinal))
+                    foreach (var to in child.Sockets.OrderBy(s => s.Id,StringComparer.Ordinal))
+                        if (from.Width == to.Width && from.Height == to.Height && from.Kind == to.Kind) candidates.Add((parent,from,child,to));
+                }
+                for (int i = candidates.Count-1; i > 0; i--)
+                {
+                    int j = random.Next(i+1);
+                    if (j < 0 || j > i) throw new InvalidOperationException("Random source returned an out-of-range index.");
+                    var swap = candidates[i]; candidates[i] = candidates[j]; candidates[j] = swap;
+                }
+                foreach (var candidate in candidates)
+                {
+                    if (attempts >= maxAttempts) return false;
+                    attempts++;
+                    string suffix = rooms.Count.ToString("000",System.Globalization.CultureInfo.InvariantCulture);
+                    var child = LayoutGeometry.Attach(catalog.Get(candidate.Parent.ModuleId),candidate.Parent,candidate.From.Id,
+                        candidate.Child,candidate.To.Id,"room_"+suffix);
+                    rooms.Add(child);
+                    links.Add(new DoorConnection("connection_"+suffix,candidate.Parent.InstanceId,candidate.From.Id,child.InstanceId,candidate.To.Id,"door_"+suffix));
+                    if (LayoutValidator.Validate(catalog,Snapshot()).IsValid)
+                    {
+                        if (Search()) return true;
+                        backtracks++;
+                    }
+                    links.RemoveAt(links.Count-1); rooms.RemoveAt(rooms.Count-1);
+                }
+                return false;
+            }
+            if (!Search()) return new GenerationResult(null,attempts >= maxAttempts ? "BudgetExceeded" : "NoLayout",attempts,backtracks);
+            var manifest = Snapshot();
+            if (!LayoutValidator.Validate(catalog,manifest).IsValid) throw new InvalidOperationException("Generator produced an invalid manifest.");
+            return new GenerationResult(manifest,string.Empty,attempts,backtracks);
+        }
+    }
+
+    public static class PrototypeCatalog
+    {
+        public static RoomCatalog Create()
+        {
+            GridPoint P(int x,int y,int z) => new GridPoint(x,y,z);
+            GridBox B(int x0,int y0,int z0,int x1,int y1,int z1) => new GridBox(P(x0,y0,z0),P(x1,y1,z1));
+            DoorSocket S(string id,int x,int y,int z,Direction facing) => new DoorSocket(id,P(x,y,z),facing);
+            return new RoomCatalog("prototype-rooms-v0.1",new[] {
+                new RoomDefinition("entry","入口房",new[] {B(-8,0,-8,8,8,8)},new[] {
+                    S("north_01",-4,0,8,Direction.North),S("north_02",4,0,8,Direction.North),
+                    S("east",8,0,0,Direction.East),S("south",0,0,-8,Direction.South),S("west",-8,0,0,Direction.West)},true),
+                new RoomDefinition("hall","大厅",new[] {B(-12,0,-10,12,8,10)},new[] {
+                    S("north_01",-6,0,10,Direction.North),S("north_02",6,0,10,Direction.North),
+                    S("east_01",12,0,-4,Direction.East),S("east_02",12,0,4,Direction.East),
+                    S("south_01",-6,0,-10,Direction.South),S("south_02",6,0,-10,Direction.South),
+                    S("west_01",-12,0,-4,Direction.West),S("west_02",-12,0,4,Direction.West)}),
+                new RoomDefinition("corridor","直走廊",new[] {B(-3,0,-8,3,8,8)},new[] {
+                    S("north",0,0,8,Direction.North),S("south",0,0,-8,Direction.South)}),
+                new RoomDefinition("elbow","L形房",new[] {B(-8,0,-8,0,8,8),B(0,0,-8,8,8,0)},new[] {
+                    S("north",-4,0,8,Direction.North),S("east",8,0,-4,Direction.East),S("south",0,0,-8,Direction.South),S("west",-8,0,0,Direction.West)}),
+                new RoomDefinition("stairs","楼梯间",new[] {B(-4,0,-10,4,16,10)},new[] {
+                    S("lower",0,0,-10,Direction.South),S("upper",0,8,10,Direction.North)}),
+                new RoomDefinition("ramp","坡道间",new[] {B(-4,0,-16,4,16,16)},new[] {
+                    S("lower",0,0,-16,Direction.South),S("upper",0,8,16,Direction.North)})
+            });
+        }
+    }
+}

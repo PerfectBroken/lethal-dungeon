@@ -99,7 +99,7 @@ START-004由地图生成/资源模块的三维布局及不可破坏约束测试�
 ## AI修改约束
 
 - 先更新本README和受影响协议规范，再编写可执行测试；看到有效Red后再实现。
-- 本次只归档流程与模块职责，不扩大到地图生成、网络、怪物或财宝代码实现。
+- 本模块只承担启动编排；地图几何委托给Domain/DungeonLayout，不混入网络、怪物或财宝实现。
 - 不能将所有协作者的代码塞进本模块；不能绕过到达屏障直接调用WorldClock.Start。
 - 财宝占格、内容、分配等等待用户设计；加载超时、断线恢复、生成失败处置仍待定。
 
@@ -108,3 +108,5 @@ START-004由地图生成/资源模块的三维布局及不可破坏约束测试�
 已完成流程归属和规范整理；尚未建立Server程序集、对应自动测试或服务器实例。团结支持服务端构建、运行时预制件实例化与资源加载，是方案的基础能力；并不等于本项目已验证联机、导航或微信性能。
 
 参考：[服务端构建](https://docs.unity.cn/cn/tuanjiemanual/Manual/dedicated-server-build.html)、[运行时实例化预制件](https://docs.unity.cn/cn/tuanjiemanual/Manual/InstantiatingPrefabs.html)、[AssetBundle](https://docs.unity.cn/cn/tuanjiemanual/Manual/AssetBundlesIntro.html)、[NavMesh连接](https://docs.unity3d.com/Packages/com.unity.ai.navigation@1.1/manual/NavMeshLink.html)。
+
+地图核心现已实现于[DungeonLayout](../../Domain/DungeonLayout/README.md)。Generate返回成功布局后仍需编排层执行资源与服务端就绪流程；几何成功不能直接启动时钟。

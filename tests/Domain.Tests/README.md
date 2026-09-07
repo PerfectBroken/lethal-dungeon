@@ -2,11 +2,11 @@
 
 ## 用途、规范与依赖
 
-TEST-001：通过公开接口验证LOAD与CLOCK规则；显式边界预期，不复制实现公式作为唯一判断。
+TEST-001：通过公开接口验证LOAD、CLOCK与MAP规则；显式边界预期，不复制实现公式作为唯一判断。
 TEST-002：不Skip、不等待、不联网；只依赖Domain、NUnit及测试适配器。
 TEST-003：有效Red要求成功还原、编译、发现并执行测试，因缺少行为失败。
 
-BackpackLoadTests与WorldClockTests分别映射子模块README。手动时钟作为本测试模块内的替身，不是生产时钟实现。
+BackpackLoadTests、WorldClockTests与DungeonLayoutTests分别映射子模块README。手动时钟作为本测试模块内的替身，不是生产时钟实现。
 
 ## 接口与执行
 
@@ -16,3 +16,5 @@ BackpackLoadTests与WorldClockTests分别映射子模块README。手动时钟作
 
 只能按已披露规范新增或修改预期；不得为了通过NotImplemented桩而断言它抛异常。桩异常是Red失败原因而非最终正确行为。
 此层不是引擎、网络、资产事务或真机测试。实际结果见evidence。
+
+地图批量用例在所有断言通过后，将目录及6份实际布局导出为测试附件dungeon-preview.json，供预览使用；文件写入仅在测试宿主，不进入Domain。
