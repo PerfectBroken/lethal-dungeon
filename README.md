@@ -1,6 +1,6 @@
 # 《致命地下城》规范与测试工程
 
-当前范围：背包负重倍率与探险时钟的规范、可执行测试和最小编译桩。已完成首批Red验证：42个规则用例按预期失败，6个规范检查通过，0跳过。业务实现留到下一阶段。
+当前进度：背包负重倍率与探险时钟已完成Green实现。42个规则测试和6个规范检查全部通过，0跳过；原始Red记录保留。下一步建立CI与团结/微信最小验证。
 
 ## 规范与模块
 
@@ -30,7 +30,7 @@ dotnet test tests/Architecture.Tests/Architecture.Tests.csproj --no-restore --lo
 dotnet test tests/Domain.Tests/Domain.Tests.csproj --no-restore --logger 'trx;LogFileName=domain.trx' --results-directory evidence/latest
 ```
 
-Red阶段规则测试应失败（退出码1）；规范检查应通过（退出码0）。不要将预期Red伪装成全部通过。原始运行环境及结果见[evidence](evidence/README.md)，公开日志在evidence/public-red。
+当前规则测试与规范检查都应通过（退出码0）。原始Red记录在evidence/public-red，Green结果在evidence/public-green；运行环境见[evidence](evidence/README.md)。
 
 原开发机器的SDK位于工程外 `../../work/tooling/dotnet/dotnet`，本地包源为 `../../work/tooling/nuget-feed`。由于该机器.NET证书读取异常，实际还原使用此本地源；公开工程保留官方NuGet源。SDK、包缓存及构建产物不纳入仓库。
 

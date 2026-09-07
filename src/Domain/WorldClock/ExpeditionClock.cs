@@ -7,7 +7,7 @@ namespace LethalDungeon.Domain
         TimeSpan Now { get; }
     }
 
-    // Data-only contract. No time calculation or state transition is implemented here.
+    // Immutable observations remain valid after subsequent polls.
     public sealed class ClockSnapshot
     {
         public bool HasStarted { get; }
@@ -29,13 +29,54 @@ namespace LethalDungeon.Domain
 
     public sealed class ExpeditionClock
     {
-        // Intentionally no validation/state yet; null-source test must also be Red.
-        public ExpeditionClock(IMonotonicTimeSource source) { }
+        private static readonly TimeSpan Deadline = TimeSpan.FromSeconds(1080);
+        private readonly IMonotonicTimeSource source;
+        private TimeSpan origin;
+        private TimeSpan lastObserved;
+        private bool hasStarted;
+        private bool hasExpired;
+
+        public ExpeditionClock(IMonotonicTimeSource source)
+        {
+            this.source = source ?? throw new ArgumentNullException(nameof(source));
+        }
 
         public void Start()
-            => throw new NotImplementedException("CLOCK start rules await Green implementation.");
+        {
+            if (hasStarted) return;
+
+            TimeSpan now = source.Now;
+            if (now < TimeSpan.Zero)
+                throw new InvalidOperationException("Monotonic time cannot be negative.");
+
+            origin = now;
+            lastObserved = now;
+            hasStarted = true;
+        }
 
         public ClockSnapshot Poll()
-            => throw new NotImplementedException("CLOCK polling rules await Green implementation.");
+        {
+            if (!hasStarted)
+                return new ClockSnapshot(false, TimeSpan.Zero, 360, false, false);
+
+            if (hasExpired)
+                return new ClockSnapshot(true, Deadline, 1440, true, false);
+
+            TimeSpan now = source.Now;
+            if (now < TimeSpan.Zero || now < lastObserved)
+                throw new InvalidOperationException("Monotonic time cannot move backward.");
+
+            // Validate before accepting the observation so a failed poll changes no state.
+            lastObserved = now;
+            TimeSpan elapsed = now - origin;
+            if (elapsed >= Deadline)
+            {
+                hasExpired = true;
+                return new ClockSnapshot(true, Deadline, 1440, true, true);
+            }
+
+            int gameMinute = 360 + (int)(elapsed.Ticks / TimeSpan.TicksPerSecond);
+            return new ClockSnapshot(true, elapsed, gameMinute, false, false);
+        }
     }
 }

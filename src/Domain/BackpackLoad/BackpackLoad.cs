@@ -4,8 +4,12 @@ namespace LethalDungeon.Domain
 {
     public static class BackpackLoad
     {
-        // Compilation stub for Red. Implement only after reviewing the failing tests.
         public static decimal SpeedMultiplier(int occupiedSlots)
-            => throw new NotImplementedException("LOAD rules await Green implementation.");
+        {
+            if (occupiedSlots < 0 || occupiedSlots > 10)
+                throw new ArgumentOutOfRangeException(nameof(occupiedSlots));
+
+            return 1.2m - 0.03m * occupiedSlots;
+        }
     }
 }

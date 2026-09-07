@@ -30,8 +30,16 @@ macOS arm64；SDK 10.0.400；测试宿主net10.0；Domain为netstandard2.1/C#9�
 
 ## 尚未执行
 
-Green实现、团结引擎导入、真实服务端时钟适配、房间到达屏障、联机与微信真机测试、远程CI。以上都不能从本次纯规则测试推导为完成。
+团结引擎导入、真实服务端时钟适配、房间到达屏障、联机与微信真机测试、远程CI。以上都不能从本次纯规则测试推导为完成。
 
 ## 公开仓库处理
 
 public-red是实际Red报告的脱敏副本：本机工程绝对路径替换为`/workspace/lethal-dungeon`，工具目录替换为`/workspace/tooling`，计算机名统一为`local-machine`。测试结果、预期、异常和退出码保持不变。本地red/setup原始文件由.gitignore排除。
+
+## 首批Green实现（2026-09-07）
+
+先重新运行原42个用例，确认全部Red；未修改原测试期望。实现背包公式与输入校验后18个用例通过，再实现时钟状态与边界。完整回归42个规则测试与6个规范检查全部通过，0跳过，退出码0。
+
+命令：`dotnet test LethalDungeon.sln --no-restore --logger "trx;LogFilePrefix=green" --results-directory <本地报告目录>`，使用前述工作目录SDK及包缓存。发布副本为[domain.trx](public-green/domain.trx)和[architecture.trx](public-green/architecture.trx)。脱敏方式与Red一致。
+
+实现保持公开接口和所有原断言不变；简单逻辑未作额外结构重构。真实服务端时间源、加载屏障和引擎运行仍未验证。
