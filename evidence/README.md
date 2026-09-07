@@ -61,3 +61,11 @@ public-red是实际Red报告的脱敏副本：本机工程绝对路径替换为`
 - 一个批量用例实际生成并检查100个种子的12房间跨层地图；前6份结果及目录导出到docs/examples/prototype-layouts.json。预览读取这些结果，不另写随机布局算法。
 - 命令：dotnet test LethalDungeon.sln --no-restore -c Release --logger 'trx;LogFilePrefix=final' --results-directory <本地报告目录>。本机SDK与缓存位置同前。公开TRX替换本机路径、机器名及运行用户名，断言与结果未改。
 - 这些结果只证明当前元数据几何与连接规则；真实预制件通行、服务端传输、客户端搭建、引擎导航、微信性能尚未验证。CI账号账单阻塞未解决。
+
+## 环路扩展（2026-09-07）
+
+- 规范新增MAP-011/012，10个环路用例及编译桩先行；实际Red为10失败、0通过、0跳过，退出码1，失败来自未实现行为。报告public-loops/loops-red.trx。
+- 初次实现后9通过、1失败：批量种子33未在10000次内完成环路和跨层要求。保持全部断言与预算不变，增加最后两房间优先建立高差、最后一房间剔除不能完成高差的候选后通过。
+- 批量100种子，全部18房间且具有2个独立环路、跨层连接；最少4房间成环、完整几何与图校验通过。最高尝试39次。前6份真实输出为docs/examples/loop-layouts.json。
+- 最终Release：102个规则测试和14个规范检查通过，0跳过，退出码0；报告为public-loops/domain-green.trx、architecture-green.trx。命令dotnet test LethalDungeon.sln --no-restore -c Release --logger 'trx;LogFilePrefix=loops-final' --results-directory <本地报告目录>。
+- 公开报告按此前方式脱敏。预览脚本语法检查通过；未重复尝试此前被浏览器安全策略拒绝的本地预览动作，未声称完成浏览器视觉实测。引擎、导航、网络、微信真机和CI云端执行状态不变。

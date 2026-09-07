@@ -1,0 +1,243 @@
+<ns0:TestRun xmlns:ns0="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" id="2081c687-1ebe-4cc8-83b6-23fa68217c91" name="local-validation">
+  <ns0:Times creation="2026-09-07T15:48:34.5647990+09:00" queuing="2026-09-07T15:48:34.5647990+09:00" start="2026-09-07T15:48:34.1492210+09:00" finish="2026-09-07T15:48:34.5811150+09:00" />
+  <ns0:TestSettings name="default" id="f99aa6df-25ff-4101-b8f9-252dbefa5230">
+    <ns0:Deployment runDeploymentRoot="local-validation" />
+  </ns0:TestSettings>
+  <ns0:Results>
+    <ns0:UnitTestResult executionId="7163a785-098d-4ab1-be8e-df47baa32c22" testId="29bff684-bee0-23de-e4d4-ccb6ffe35a00" testName="PlacementAndClosureShareBudget" computerName="local-machine" duration="00:00:00.0001610" startTime="2026-09-07T15:48:34.5361130+09:00" endTime="2026-09-07T15:48:34.5362740+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7163a785-098d-4ab1-be8e-df47baa32c22">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.PrototypeCatalog.CreateLoopReady() in /workspace/lethal-dungeon/src/Domain/DungeonLayout/DungeonGenerator.cs:line 72
+   at LethalDungeon.Tests.DungeonLoopTests.PlacementAndClosureShareBudget() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLoopTests.cs:line 70
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.PrototypeCatalog.CreateLoopReady() in /workspace/lethal-dungeon/src/Domain/DungeonLayout/DungeonGenerator.cs:line 72
+   at LethalDungeon.Tests.DungeonLoopTests.PlacementAndClosureShareBudget() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLoopTests.cs:line 70
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="a6ea2d6f-87f8-464b-81ac-9b3a7f0316c0" testId="4dfc6e05-f038-cb26-9be7-a1074995a6ea" testName="InvalidCycleCountIsRejected(9)" computerName="local-machine" duration="00:00:00.0006470" startTime="2026-09-07T15:48:34.5283790+09:00" endTime="2026-09-07T15:48:34.5290260+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a6ea2d6f-87f8-464b-81ac-9b3a7f0316c0">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentOutOfRangeException&gt;
+  But was:  &lt;System.NotImplementedException: The method or operation is not implemented.
+   at LethalDungeon.Domain.Dungeons.DungeonGenerator.Generate(RoomCatalog catalog, String rootModuleId, Int32 targetRooms, IRandomSource random, Int32 maxAttempts, Boolean requireHeightChange, Int32 minimumCycles, String cycleModuleId) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/DungeonGenerator.cs:line 12
+   at LethalDungeon.Tests.DungeonLoopTests.&lt;&gt;c__DisplayClass6_0.&lt;InvalidCycleCountIsRejected&gt;b__0() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLoopTests.cs:line 52
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, Action code, String message, Object[] args)&gt;
+</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Tests.DungeonLoopTests.InvalidCycleCountIsRejected(Int32 count) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLoopTests.cs:line 52
+   at InvokeStub_DungeonLoopTests.InvalidCycleCountIsRejected(Object, Span`1)
+
+1)    at LethalDungeon.Tests.DungeonLoopTests.InvalidCycleCountIsRejected(Int32 count) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLoopTests.cs:line 52
+   at InvokeStub_DungeonLoopTests.InvalidCycleCountIsRejected(Object, Span`1)
+
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="625ca051-6d82-4639-871f-c9ad60d02c49" testId="07faffe3-a9e7-1fc8-b619-c54d070c20c8" testName="RemoteOrInvalidLayoutCannotCreateVirtualLoop" computerName="local-machine" duration="00:00:00.0001100" startTime="2026-09-07T15:48:34.5362780+09:00" endTime="2026-09-07T15:48:34.5363880+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="625ca051-6d82-4639-871f-c9ad60d02c49">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.PrototypeCatalog.CreateLoopReady() in /workspace/lethal-dungeon/src/Domain/DungeonLayout/DungeonGenerator.cs:line 72
+   at LethalDungeon.Tests.DungeonLoopTests.RemoteOrInvalidLayoutCannotCreateVirtualLoop() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLoopTests.cs:line 35
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.PrototypeCatalog.CreateLoopReady() in /workspace/lethal-dungeon/src/Domain/DungeonLayout/DungeonGenerator.cs:line 72
+   at LethalDungeon.Tests.DungeonLoopTests.RemoteOrInvalidLayoutCannotCreateVirtualLoop() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLoopTests.cs:line 35
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="42a9e2dd-7528-4167-ac51-e051bb17414c" testId="ccf10703-bb0c-d997-654c-471b21e78183" testName="ParallelDoorsBetweenTwoRoomsDoNotCountAsAUsefulLoop" computerName="local-machine" duration="00:00:00.0051860" startTime="2026-09-07T15:48:34.5309070+09:00" endTime="2026-09-07T15:48:34.5360930+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="42a9e2dd-7528-4167-ac51-e051bb17414c">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.LoopConnections.Find(RoomCatalog catalog, DungeonManifest manifest) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/LoopConnections.cs:line 7
+   at LethalDungeon.Tests.DungeonLoopTests.ParallelDoorsBetweenTwoRoomsDoNotCountAsAUsefulLoop() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLoopTests.cs:line 47
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.LoopConnections.Find(RoomCatalog catalog, DungeonManifest manifest) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/LoopConnections.cs:line 7
+   at LethalDungeon.Tests.DungeonLoopTests.ParallelDoorsBetweenTwoRoomsDoNotCountAsAUsefulLoop() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLoopTests.cs:line 47
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="60ce48bd-f95a-4332-a196-4a29cdc6e9d8" testId="f81df55a-afbf-0260-7c45-8b851b44308d" testName="OneHundredSeedsContainRealLoopsAndHeightChanges" computerName="local-machine" duration="00:00:00.0008880" startTime="2026-09-07T15:48:34.5300150+09:00" endTime="2026-09-07T15:48:34.5309030+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="60ce48bd-f95a-4332-a196-4a29cdc6e9d8">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.PrototypeCatalog.CreateLoopReady() in /workspace/lethal-dungeon/src/Domain/DungeonLayout/DungeonGenerator.cs:line 72
+   at LethalDungeon.Tests.DungeonLoopTests.OneHundredSeedsContainRealLoopsAndHeightChanges() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLoopTests.cs:line 89
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.PrototypeCatalog.CreateLoopReady() in /workspace/lethal-dungeon/src/Domain/DungeonLayout/DungeonGenerator.cs:line 72
+   at LethalDungeon.Tests.DungeonLoopTests.OneHundredSeedsContainRealLoopsAndHeightChanges() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLoopTests.cs:line 89
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="7f51256a-4ac0-4dd0-a018-baa2904440aa" testId="3215a759-5cbc-97f5-66c3-f1443319e825" testName="SquareClosesExactlyOnePhysicalLoop" computerName="local-machine" duration="00:00:00.0001740" startTime="2026-09-07T15:48:34.5363920+09:00" endTime="2026-09-07T15:48:34.5365660+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7f51256a-4ac0-4dd0-a018-baa2904440aa">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.PrototypeCatalog.CreateLoopReady() in /workspace/lethal-dungeon/src/Domain/DungeonLayout/DungeonGenerator.cs:line 72
+   at LethalDungeon.Tests.DungeonLoopTests.SquareClosesExactlyOnePhysicalLoop() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLoopTests.cs:line 23
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.PrototypeCatalog.CreateLoopReady() in /workspace/lethal-dungeon/src/Domain/DungeonLayout/DungeonGenerator.cs:line 72
+   at LethalDungeon.Tests.DungeonLoopTests.SquareClosesExactlyOnePhysicalLoop() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLoopTests.cs:line 23
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="f9c1d266-43ed-4455-b7b5-9d5eb318be44" testId="03720b16-6f13-fe5a-3af2-53fce49ef3a4" testName="CycleRequestRequiresExplicitConnectorModule" computerName="local-machine" duration="00:00:00.0192980" startTime="2026-09-07T15:48:34.5059870+09:00" endTime="2026-09-07T15:48:34.5252480+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f9c1d266-43ed-4455-b7b5-9d5eb318be44">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentException&gt;
+  But was:  &lt;System.NotImplementedException: The method or operation is not implemented.
+   at LethalDungeon.Domain.Dungeons.DungeonGenerator.Generate(RoomCatalog catalog, String rootModuleId, Int32 targetRooms, IRandomSource random, Int32 maxAttempts, Boolean requireHeightChange, Int32 minimumCycles, String cycleModuleId) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/DungeonGenerator.cs:line 12
+   at LethalDungeon.Tests.DungeonLoopTests.&lt;&gt;c.&lt;CycleRequestRequiresExplicitConnectorModule&gt;b__7_0() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLoopTests.cs:line 56
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, Action code, String message, Object[] args)&gt;
+</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Tests.DungeonLoopTests.CycleRequestRequiresExplicitConnectorModule() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLoopTests.cs:line 56
+
+1)    at LethalDungeon.Tests.DungeonLoopTests.CycleRequestRequiresExplicitConnectorModule() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLoopTests.cs:line 56
+
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="bdc6f334-ba4d-433e-9d03-48f4c7d6f0f1" testId="09c3853b-83f4-69a1-7a60-b70081644238" testName="LoopSeedIsReproducible" computerName="local-machine" duration="00:00:00.0002820" startTime="2026-09-07T15:48:34.5297270+09:00" endTime="2026-09-07T15:48:34.5300100+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bdc6f334-ba4d-433e-9d03-48f4c7d6f0f1">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.PrototypeCatalog.CreateLoopReady() in /workspace/lethal-dungeon/src/Domain/DungeonLayout/DungeonGenerator.cs:line 72
+   at LethalDungeon.Tests.DungeonLoopTests.LoopSeedIsReproducible() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLoopTests.cs:line 78
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.PrototypeCatalog.CreateLoopReady() in /workspace/lethal-dungeon/src/Domain/DungeonLayout/DungeonGenerator.cs:line 72
+   at LethalDungeon.Tests.DungeonLoopTests.LoopSeedIsReproducible() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLoopTests.cs:line 78
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="0d114691-f973-4817-a751-8b6759ae7002" testId="2ea8d800-04b4-8aa8-9263-38236716e616" testName="InvalidCycleCountIsRejected(-1)" computerName="local-machine" duration="00:00:00.0006880" startTime="2026-09-07T15:48:34.5276830+09:00" endTime="2026-09-07T15:48:34.5283710+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0d114691-f973-4817-a751-8b6759ae7002">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentOutOfRangeException&gt;
+  But was:  &lt;System.NotImplementedException: The method or operation is not implemented.
+   at LethalDungeon.Domain.Dungeons.DungeonGenerator.Generate(RoomCatalog catalog, String rootModuleId, Int32 targetRooms, IRandomSource random, Int32 maxAttempts, Boolean requireHeightChange, Int32 minimumCycles, String cycleModuleId) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/DungeonGenerator.cs:line 12
+   at LethalDungeon.Tests.DungeonLoopTests.&lt;&gt;c__DisplayClass6_0.&lt;InvalidCycleCountIsRejected&gt;b__0() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLoopTests.cs:line 52
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, Action code, String message, Object[] args)&gt;
+</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Tests.DungeonLoopTests.InvalidCycleCountIsRejected(Int32 count) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLoopTests.cs:line 52
+
+1)    at LethalDungeon.Tests.DungeonLoopTests.InvalidCycleCountIsRejected(Int32 count) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLoopTests.cs:line 52
+
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="0979c66b-ee3d-4c7f-9868-30a56ae0ac1b" testId="652714b7-8705-bf5b-158d-1036995300cb" testName="ImpossibleRequestDoesNotSilentlyReturnTree" computerName="local-machine" duration="00:00:00.0016730" startTime="2026-09-07T15:48:34.5259790+09:00" endTime="2026-09-07T15:48:34.5276530+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0979c66b-ee3d-4c7f-9868-30a56ae0ac1b">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.PrototypeCatalog.CreateLoopReady() in /workspace/lethal-dungeon/src/Domain/DungeonLayout/DungeonGenerator.cs:line 72
+   at LethalDungeon.Tests.DungeonLoopTests.ImpossibleRequestDoesNotSilentlyReturnTree() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLoopTests.cs:line 62
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.PrototypeCatalog.CreateLoopReady() in /workspace/lethal-dungeon/src/Domain/DungeonLayout/DungeonGenerator.cs:line 72
+   at LethalDungeon.Tests.DungeonLoopTests.ImpossibleRequestDoesNotSilentlyReturnTree() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonLoopTests.cs:line 62
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+  </ns0:Results>
+  <ns0:TestDefinitions>
+    <ns0:UnitTest name="InvalidCycleCountIsRejected(9)" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="4dfc6e05-f038-cb26-9be7-a1074995a6ea">
+      <ns0:Execution id="a6ea2d6f-87f8-464b-81ac-9b3a7f0316c0" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLoopTests" name="InvalidCycleCountIsRejected(9)" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="PlacementAndClosureShareBudget" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="29bff684-bee0-23de-e4d4-ccb6ffe35a00">
+      <ns0:Execution id="7163a785-098d-4ab1-be8e-df47baa32c22" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLoopTests" name="PlacementAndClosureShareBudget" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="RemoteOrInvalidLayoutCannotCreateVirtualLoop" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="07faffe3-a9e7-1fc8-b619-c54d070c20c8">
+      <ns0:Execution id="625ca051-6d82-4639-871f-c9ad60d02c49" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLoopTests" name="RemoteOrInvalidLayoutCannotCreateVirtualLoop" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="ParallelDoorsBetweenTwoRoomsDoNotCountAsAUsefulLoop" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="ccf10703-bb0c-d997-654c-471b21e78183">
+      <ns0:Execution id="42a9e2dd-7528-4167-ac51-e051bb17414c" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLoopTests" name="ParallelDoorsBetweenTwoRoomsDoNotCountAsAUsefulLoop" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="InvalidCycleCountIsRejected(-1)" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="2ea8d800-04b4-8aa8-9263-38236716e616">
+      <ns0:Execution id="0d114691-f973-4817-a751-8b6759ae7002" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLoopTests" name="InvalidCycleCountIsRejected(-1)" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="ImpossibleRequestDoesNotSilentlyReturnTree" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="652714b7-8705-bf5b-158d-1036995300cb">
+      <ns0:Execution id="0979c66b-ee3d-4c7f-9868-30a56ae0ac1b" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLoopTests" name="ImpossibleRequestDoesNotSilentlyReturnTree" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="SquareClosesExactlyOnePhysicalLoop" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="3215a759-5cbc-97f5-66c3-f1443319e825">
+      <ns0:Execution id="7f51256a-4ac0-4dd0-a018-baa2904440aa" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLoopTests" name="SquareClosesExactlyOnePhysicalLoop" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="OneHundredSeedsContainRealLoopsAndHeightChanges" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="f81df55a-afbf-0260-7c45-8b851b44308d">
+      <ns0:Execution id="60ce48bd-f95a-4332-a196-4a29cdc6e9d8" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLoopTests" name="OneHundredSeedsContainRealLoopsAndHeightChanges" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="LoopSeedIsReproducible" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="09c3853b-83f4-69a1-7a60-b70081644238">
+      <ns0:Execution id="bdc6f334-ba4d-433e-9d03-48f4c7d6f0f1" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLoopTests" name="LoopSeedIsReproducible" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="CycleRequestRequiresExplicitConnectorModule" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="03720b16-6f13-fe5a-3af2-53fce49ef3a4">
+      <ns0:Execution id="f9c1d266-43ed-4455-b7b5-9d5eb318be44" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonLoopTests" name="CycleRequestRequiresExplicitConnectorModule" />
+    </ns0:UnitTest>
+  </ns0:TestDefinitions>
+  <ns0:TestEntries>
+    <ns0:TestEntry testId="29bff684-bee0-23de-e4d4-ccb6ffe35a00" executionId="7163a785-098d-4ab1-be8e-df47baa32c22" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="4dfc6e05-f038-cb26-9be7-a1074995a6ea" executionId="a6ea2d6f-87f8-464b-81ac-9b3a7f0316c0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="07faffe3-a9e7-1fc8-b619-c54d070c20c8" executionId="625ca051-6d82-4639-871f-c9ad60d02c49" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="ccf10703-bb0c-d997-654c-471b21e78183" executionId="42a9e2dd-7528-4167-ac51-e051bb17414c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="f81df55a-afbf-0260-7c45-8b851b44308d" executionId="60ce48bd-f95a-4332-a196-4a29cdc6e9d8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="3215a759-5cbc-97f5-66c3-f1443319e825" executionId="7f51256a-4ac0-4dd0-a018-baa2904440aa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="03720b16-6f13-fe5a-3af2-53fce49ef3a4" executionId="f9c1d266-43ed-4455-b7b5-9d5eb318be44" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="09c3853b-83f4-69a1-7a60-b70081644238" executionId="bdc6f334-ba4d-433e-9d03-48f4c7d6f0f1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="2ea8d800-04b4-8aa8-9263-38236716e616" executionId="0d114691-f973-4817-a751-8b6759ae7002" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="652714b7-8705-bf5b-158d-1036995300cb" executionId="0979c66b-ee3d-4c7f-9868-30a56ae0ac1b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </ns0:TestEntries>
+  <ns0:TestLists>
+    <ns0:TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </ns0:TestLists>
+  <ns0:ResultSummary outcome="Failed">
+    <ns0:Counters total="10" executed="10" passed="0" failed="10" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <ns0:Output>
+      <ns0:StdOut>NUnit Adapter 6.3.0.0: Test execution started
+Running selected tests in /workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll
+   NUnit3TestExecutor discovered 10 of 10 NUnit test cases using Current Discovery mode, Non-Explicit run
+</ns0:StdOut>
+    </ns0:Output>
+  </ns0:ResultSummary>
+</ns0:TestRun>

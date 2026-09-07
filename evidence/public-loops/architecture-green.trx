@@ -1,0 +1,109 @@
+<ns0:TestRun xmlns:ns0="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" id="9a729cb4-fdc5-49b4-8757-9d6cc898d6a1" name="local-validation">
+  <ns0:Times creation="2026-09-07T15:53:09.2832260+09:00" queuing="2026-09-07T15:53:09.2832260+09:00" start="2026-09-07T15:53:08.9178240+09:00" finish="2026-09-07T15:53:09.2996610+09:00" />
+  <ns0:TestSettings name="default" id="d46b1fbd-b98f-4754-912e-fdb78b37bf44">
+    <ns0:Deployment runDeploymentRoot="local-validation" />
+  </ns0:TestSettings>
+  <ns0:Results>
+    <ns0:UnitTestResult executionId="1f200de5-d07b-4275-9ab8-49b5c542c48e" testId="bb174fa2-4f2d-317c-47d6-f0209edbe2b3" testName="WorkflowPreservesFailureAndUploadsResultsEvenWhenTestsFail" computerName="local-machine" duration="00:00:00.0003820" startTime="2026-09-07T15:53:09.2547960+09:00" endTime="2026-09-07T15:53:09.2551780+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1f200de5-d07b-4275-9ab8-49b5c542c48e" />
+    <ns0:UnitTestResult executionId="ead4472a-6874-49e1-997a-af1f26f25f1e" testId="cc44afbd-4cf3-2e20-3db2-299f7e2f7417" testName="DomainDoesNotDirectlyUseEngineIoNetworkOrWallClock" computerName="local-machine" duration="00:00:00.0055640" startTime="2026-09-07T15:53:09.2289400+09:00" endTime="2026-09-07T15:53:09.2345030+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ead4472a-6874-49e1-997a-af1f26f25f1e" />
+    <ns0:UnitTestResult executionId="c0a61b60-437b-4dc2-b81d-27cc9eb17ccc" testId="13a7d931-2113-c630-b6a4-62259a9ad327" testName="ImportTestsAreEditorOnlyAndReferenceOnlyTheRequiredPrecompiledAssemblies" computerName="local-machine" duration="00:00:00.0050690" startTime="2026-09-07T15:53:09.2567530+09:00" endTime="2026-09-07T15:53:09.2618210+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c0a61b60-437b-4dc2-b81d-27cc9eb17ccc" />
+    <ns0:UnitTestResult executionId="16ffed30-3484-4ef3-a3bc-76e071da8e9c" testId="9f180c45-3e91-3fc7-ccdb-689d3347eb97" testName="DomainAssemblyReferencesOnlyStandardAssemblies" computerName="local-machine" duration="00:00:00.0047700" startTime="2026-09-07T15:53:09.2234850+09:00" endTime="2026-09-07T15:53:09.2282190+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="16ffed30-3484-4ef3-a3bc-76e071da8e9c" />
+    <ns0:UnitTestResult executionId="caa9ce76-bd3e-4dbd-967b-d608adcbc927" testId="74aec3a8-6dd0-e900-9e6d-c1cc6c49b7ef" testName="EditorVersionIsPinnedToTheVerifiedDownloadMetadata" computerName="local-machine" duration="00:00:00.0004310" startTime="2026-09-07T15:53:09.2558650+09:00" endTime="2026-09-07T15:53:09.2562960+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="caa9ce76-bd3e-4dbd-967b-d608adcbc927" />
+    <ns0:UnitTestResult executionId="2ca4b7fd-9449-4a45-a8c4-16705e3ba29a" testId="3fd2ff77-bd6f-c689-50a7-65afd8701942" testName="EnginePackagesHaveFixedVersions" computerName="local-machine" duration="00:00:00.0004460" startTime="2026-09-07T15:53:09.2563020+09:00" endTime="2026-09-07T15:53:09.2567480+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2ca4b7fd-9449-4a45-a8c4-16705e3ba29a" />
+    <ns0:UnitTestResult executionId="95ec178f-a0a1-4822-9cff-b3b29c2316da" testId="c009bb38-0985-7a6e-11cf-137b6fe6d532" testName="WorkflowBuildsAndExecutesBothSuitesWithPinnedSdkAndLockedRestore" computerName="local-machine" duration="00:00:00.0009040" startTime="2026-09-07T15:53:09.2526180+09:00" endTime="2026-09-07T15:53:09.2535220+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="95ec178f-a0a1-4822-9cff-b3b29c2316da" />
+    <ns0:UnitTestResult executionId="af6ad897-b0c3-4283-8338-09ca9dbed8fc" testId="164f74bd-d226-edd7-bf54-1c857ee36e77" testName="EveryRuleIdIsMappedInTests(&quot;DungeonLayout&quot;,&quot;DungeonLayoutTests.cs|DungeonLoopTests.cs&quot;,&quot;MAP-&quot;)" computerName="local-machine" duration="00:00:00.0026830" startTime="2026-09-07T15:53:09.2487590+09:00" endTime="2026-09-07T15:53:09.2514420+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="af6ad897-b0c3-4283-8338-09ca9dbed8fc" />
+    <ns0:UnitTestResult executionId="0d4aea1a-ac4b-44b3-a899-a8b82494b9f0" testId="d6a883e8-9a91-dadc-ea3a-4b3cfae774c4" testName="DomainProjectHasOnlyPortableStandardLibraryDependencies" computerName="local-machine" duration="00:00:00.0011920" startTime="2026-09-07T15:53:09.2345260+09:00" endTime="2026-09-07T15:53:09.2357180+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0d4aea1a-ac4b-44b3-a899-a8b82494b9f0" />
+    <ns0:UnitTestResult executionId="539d8c5a-1b45-4cee-a8a6-f7249727afe0" testId="574fa511-12af-0799-7e60-aac2dadc3a79" testName="WorkflowRunsForPushPullRequestAndManualDispatchWithReadOnlyAccess" computerName="local-machine" duration="00:00:00.0005270" startTime="2026-09-07T15:53:09.2551830+09:00" endTime="2026-09-07T15:53:09.2557100+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="539d8c5a-1b45-4cee-a8a6-f7249727afe0" />
+    <ns0:UnitTestResult executionId="ee04bf5c-67fd-4926-a8db-4435e7b6dcdf" testId="5b64c388-bd46-f8d9-edb8-ce0a11415b13" testName="EveryProjectAndDomainModuleHasSpecification" computerName="local-machine" duration="00:00:00.0100690" startTime="2026-09-07T15:53:09.2357520+09:00" endTime="2026-09-07T15:53:09.2458200+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ee04bf5c-67fd-4926-a8db-4435e7b6dcdf" />
+    <ns0:UnitTestResult executionId="9f36f9ee-6525-4e8c-bc4a-f258d3b5a427" testId="3a544a23-ab08-83eb-2fc1-8e30939ddef0" testName="WorkflowPinsOfficialActionsAndBoundsExecution" computerName="local-machine" duration="00:00:00.0012420" startTime="2026-09-07T15:53:09.2535390+09:00" endTime="2026-09-07T15:53:09.2547810+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9f36f9ee-6525-4e8c-bc4a-f258d3b5a427" />
+    <ns0:UnitTestResult executionId="d72ff341-f209-4f27-a85c-84dabaa29027" testId="a9745783-a9b4-ed04-a5df-29b6f0f106df" testName="EveryRuleIdIsMappedInTests(&quot;BackpackLoad&quot;,&quot;BackpackLoadTests.cs&quot;,&quot;LOAD-&quot;)" computerName="local-machine" duration="00:00:00.0018870" startTime="2026-09-07T15:53:09.2458790+09:00" endTime="2026-09-07T15:53:09.2477650+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d72ff341-f209-4f27-a85c-84dabaa29027" />
+    <ns0:UnitTestResult executionId="1ad1c35f-6651-435c-b2a7-037ab1955dc3" testId="e9249b48-8c85-8c91-81aa-0db253815c4e" testName="EveryRuleIdIsMappedInTests(&quot;WorldClock&quot;,&quot;WorldClockTests.cs&quot;,&quot;CLOCK-&quot;)" computerName="local-machine" duration="00:00:00.0009560" startTime="2026-09-07T15:53:09.2477890+09:00" endTime="2026-09-07T15:53:09.2487450+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1ad1c35f-6651-435c-b2a7-037ab1955dc3" />
+  </ns0:Results>
+  <ns0:TestDefinitions>
+    <ns0:UnitTest name="ImportTestsAreEditorOnlyAndReferenceOnlyTheRequiredPrecompiledAssemblies" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/architecture.tests/bin/release/net10.0/architecture.tests.dll" id="13a7d931-2113-c630-b6a4-62259a9ad327">
+      <ns0:Execution id="c0a61b60-437b-4dc2-b81d-27cc9eb17ccc" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Architecture.Tests/bin/Release/net10.0/Architecture.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.ArchitectureTests.EngineProjectTests" name="ImportTestsAreEditorOnlyAndReferenceOnlyTheRequiredPrecompiledAssemblies" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="EnginePackagesHaveFixedVersions" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/architecture.tests/bin/release/net10.0/architecture.tests.dll" id="3fd2ff77-bd6f-c689-50a7-65afd8701942">
+      <ns0:Execution id="2ca4b7fd-9449-4a45-a8c4-16705e3ba29a" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Architecture.Tests/bin/Release/net10.0/Architecture.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.ArchitectureTests.EngineProjectTests" name="EnginePackagesHaveFixedVersions" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="EveryRuleIdIsMappedInTests(&quot;DungeonLayout&quot;,&quot;DungeonLayoutTests.cs|DungeonLoopTests.cs&quot;,&quot;MAP-&quot;)" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/architecture.tests/bin/release/net10.0/architecture.tests.dll" id="164f74bd-d226-edd7-bf54-1c857ee36e77">
+      <ns0:Execution id="af6ad897-b0c3-4283-8338-09ca9dbed8fc" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Architecture.Tests/bin/Release/net10.0/Architecture.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.ArchitectureTests.ArchitectureTests" name="EveryRuleIdIsMappedInTests(&quot;DungeonLayout&quot;,&quot;DungeonLayoutTests.cs|DungeonLoopTests.cs&quot;,&quot;MAP-&quot;)" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="EveryRuleIdIsMappedInTests(&quot;BackpackLoad&quot;,&quot;BackpackLoadTests.cs&quot;,&quot;LOAD-&quot;)" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/architecture.tests/bin/release/net10.0/architecture.tests.dll" id="a9745783-a9b4-ed04-a5df-29b6f0f106df">
+      <ns0:Execution id="d72ff341-f209-4f27-a85c-84dabaa29027" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Architecture.Tests/bin/Release/net10.0/Architecture.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.ArchitectureTests.ArchitectureTests" name="EveryRuleIdIsMappedInTests(&quot;BackpackLoad&quot;,&quot;BackpackLoadTests.cs&quot;,&quot;LOAD-&quot;)" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="EveryProjectAndDomainModuleHasSpecification" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/architecture.tests/bin/release/net10.0/architecture.tests.dll" id="5b64c388-bd46-f8d9-edb8-ce0a11415b13">
+      <ns0:Execution id="ee04bf5c-67fd-4926-a8db-4435e7b6dcdf" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Architecture.Tests/bin/Release/net10.0/Architecture.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.ArchitectureTests.ArchitectureTests" name="EveryProjectAndDomainModuleHasSpecification" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="WorkflowRunsForPushPullRequestAndManualDispatchWithReadOnlyAccess" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/architecture.tests/bin/release/net10.0/architecture.tests.dll" id="574fa511-12af-0799-7e60-aac2dadc3a79">
+      <ns0:Execution id="539d8c5a-1b45-4cee-a8a6-f7249727afe0" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Architecture.Tests/bin/Release/net10.0/Architecture.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.ArchitectureTests.CiWorkflowTests" name="WorkflowRunsForPushPullRequestAndManualDispatchWithReadOnlyAccess" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="EditorVersionIsPinnedToTheVerifiedDownloadMetadata" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/architecture.tests/bin/release/net10.0/architecture.tests.dll" id="74aec3a8-6dd0-e900-9e6d-c1cc6c49b7ef">
+      <ns0:Execution id="caa9ce76-bd3e-4dbd-967b-d608adcbc927" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Architecture.Tests/bin/Release/net10.0/Architecture.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.ArchitectureTests.EngineProjectTests" name="EditorVersionIsPinnedToTheVerifiedDownloadMetadata" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="DomainAssemblyReferencesOnlyStandardAssemblies" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/architecture.tests/bin/release/net10.0/architecture.tests.dll" id="9f180c45-3e91-3fc7-ccdb-689d3347eb97">
+      <ns0:Execution id="16ffed30-3484-4ef3-a3bc-76e071da8e9c" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Architecture.Tests/bin/Release/net10.0/Architecture.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.ArchitectureTests.ArchitectureTests" name="DomainAssemblyReferencesOnlyStandardAssemblies" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="WorkflowPinsOfficialActionsAndBoundsExecution" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/architecture.tests/bin/release/net10.0/architecture.tests.dll" id="3a544a23-ab08-83eb-2fc1-8e30939ddef0">
+      <ns0:Execution id="9f36f9ee-6525-4e8c-bc4a-f258d3b5a427" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Architecture.Tests/bin/Release/net10.0/Architecture.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.ArchitectureTests.CiWorkflowTests" name="WorkflowPinsOfficialActionsAndBoundsExecution" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="EveryRuleIdIsMappedInTests(&quot;WorldClock&quot;,&quot;WorldClockTests.cs&quot;,&quot;CLOCK-&quot;)" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/architecture.tests/bin/release/net10.0/architecture.tests.dll" id="e9249b48-8c85-8c91-81aa-0db253815c4e">
+      <ns0:Execution id="1ad1c35f-6651-435c-b2a7-037ab1955dc3" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Architecture.Tests/bin/Release/net10.0/Architecture.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.ArchitectureTests.ArchitectureTests" name="EveryRuleIdIsMappedInTests(&quot;WorldClock&quot;,&quot;WorldClockTests.cs&quot;,&quot;CLOCK-&quot;)" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="DomainDoesNotDirectlyUseEngineIoNetworkOrWallClock" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/architecture.tests/bin/release/net10.0/architecture.tests.dll" id="cc44afbd-4cf3-2e20-3db2-299f7e2f7417">
+      <ns0:Execution id="ead4472a-6874-49e1-997a-af1f26f25f1e" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Architecture.Tests/bin/Release/net10.0/Architecture.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.ArchitectureTests.ArchitectureTests" name="DomainDoesNotDirectlyUseEngineIoNetworkOrWallClock" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="WorkflowBuildsAndExecutesBothSuitesWithPinnedSdkAndLockedRestore" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/architecture.tests/bin/release/net10.0/architecture.tests.dll" id="c009bb38-0985-7a6e-11cf-137b6fe6d532">
+      <ns0:Execution id="95ec178f-a0a1-4822-9cff-b3b29c2316da" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Architecture.Tests/bin/Release/net10.0/Architecture.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.ArchitectureTests.CiWorkflowTests" name="WorkflowBuildsAndExecutesBothSuitesWithPinnedSdkAndLockedRestore" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="DomainProjectHasOnlyPortableStandardLibraryDependencies" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/architecture.tests/bin/release/net10.0/architecture.tests.dll" id="d6a883e8-9a91-dadc-ea3a-4b3cfae774c4">
+      <ns0:Execution id="0d4aea1a-ac4b-44b3-a899-a8b82494b9f0" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Architecture.Tests/bin/Release/net10.0/Architecture.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.ArchitectureTests.ArchitectureTests" name="DomainProjectHasOnlyPortableStandardLibraryDependencies" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="WorkflowPreservesFailureAndUploadsResultsEvenWhenTestsFail" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/architecture.tests/bin/release/net10.0/architecture.tests.dll" id="bb174fa2-4f2d-317c-47d6-f0209edbe2b3">
+      <ns0:Execution id="1f200de5-d07b-4275-9ab8-49b5c542c48e" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Architecture.Tests/bin/Release/net10.0/Architecture.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.ArchitectureTests.CiWorkflowTests" name="WorkflowPreservesFailureAndUploadsResultsEvenWhenTestsFail" />
+    </ns0:UnitTest>
+  </ns0:TestDefinitions>
+  <ns0:TestEntries>
+    <ns0:TestEntry testId="bb174fa2-4f2d-317c-47d6-f0209edbe2b3" executionId="1f200de5-d07b-4275-9ab8-49b5c542c48e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="cc44afbd-4cf3-2e20-3db2-299f7e2f7417" executionId="ead4472a-6874-49e1-997a-af1f26f25f1e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="13a7d931-2113-c630-b6a4-62259a9ad327" executionId="c0a61b60-437b-4dc2-b81d-27cc9eb17ccc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="9f180c45-3e91-3fc7-ccdb-689d3347eb97" executionId="16ffed30-3484-4ef3-a3bc-76e071da8e9c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="74aec3a8-6dd0-e900-9e6d-c1cc6c49b7ef" executionId="caa9ce76-bd3e-4dbd-967b-d608adcbc927" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="3fd2ff77-bd6f-c689-50a7-65afd8701942" executionId="2ca4b7fd-9449-4a45-a8c4-16705e3ba29a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="c009bb38-0985-7a6e-11cf-137b6fe6d532" executionId="95ec178f-a0a1-4822-9cff-b3b29c2316da" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="164f74bd-d226-edd7-bf54-1c857ee36e77" executionId="af6ad897-b0c3-4283-8338-09ca9dbed8fc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="d6a883e8-9a91-dadc-ea3a-4b3cfae774c4" executionId="0d4aea1a-ac4b-44b3-a899-a8b82494b9f0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="574fa511-12af-0799-7e60-aac2dadc3a79" executionId="539d8c5a-1b45-4cee-a8a6-f7249727afe0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="5b64c388-bd46-f8d9-edb8-ce0a11415b13" executionId="ee04bf5c-67fd-4926-a8db-4435e7b6dcdf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="3a544a23-ab08-83eb-2fc1-8e30939ddef0" executionId="9f36f9ee-6525-4e8c-bc4a-f258d3b5a427" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="a9745783-a9b4-ed04-a5df-29b6f0f106df" executionId="d72ff341-f209-4f27-a85c-84dabaa29027" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="e9249b48-8c85-8c91-81aa-0db253815c4e" executionId="1ad1c35f-6651-435c-b2a7-037ab1955dc3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </ns0:TestEntries>
+  <ns0:TestLists>
+    <ns0:TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </ns0:TestLists>
+  <ns0:ResultSummary outcome="Completed">
+    <ns0:Counters total="14" executed="14" passed="14" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <ns0:Output>
+      <ns0:StdOut>NUnit Adapter 6.3.0.0: Test execution started
+Running all tests in /workspace/lethal-dungeon/tests/Architecture.Tests/bin/Release/net10.0/Architecture.Tests.dll
+   NUnit3TestExecutor discovered 14 of 14 NUnit test cases using Current Discovery mode, Non-Explicit run
+</ns0:StdOut>
+    </ns0:Output>
+  </ns0:ResultSummary>
+</ns0:TestRun>

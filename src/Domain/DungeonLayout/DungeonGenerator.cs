@@ -7,13 +7,19 @@ namespace LethalDungeon.Domain.Dungeons
     public static class DungeonGenerator
     {
         public static GenerationResult Generate(RoomCatalog catalog, string rootModuleId, int targetRooms,
-            IRandomSource random, int maxAttempts = 3000, bool requireHeightChange = false)
+            IRandomSource random, int maxAttempts = 3000, bool requireHeightChange = false, int minimumCycles = 0, string? cycleModuleId = null)
         {
+            if (minimumCycles < 0 || minimumCycles > 8) throw new ArgumentOutOfRangeException(nameof(minimumCycles));
             if (catalog == null) throw new ArgumentNullException(nameof(catalog));
             if (random == null) throw new ArgumentNullException(nameof(random));
             if (targetRooms < 1 || targetRooms > 64) throw new ArgumentOutOfRangeException(nameof(targetRooms));
             if (maxAttempts < 1 || maxAttempts > 100000) throw new ArgumentOutOfRangeException(nameof(maxAttempts));
             catalog.Get(rootModuleId);
+            if (minimumCycles > 0)
+            {
+                if (string.IsNullOrWhiteSpace(cycleModuleId)) throw new ArgumentException("A connector module is required for loop growth.");
+                if (catalog.Get(cycleModuleId!).IsRootOnly) throw new ArgumentException("Connector module cannot be root-only.");
+            }
             var rooms = new List<PlacedRoom> { new PlacedRoom("room_000",rootModuleId,new GridPoint(0,0,0)) };
             var links = new List<DoorConnection>();
             int attempts = 0, backtracks = 0;
@@ -21,17 +27,18 @@ namespace LethalDungeon.Domain.Dungeons
             bool Search()
             {
                 if (rooms.Count == targetRooms)
-                    return !requireHeightChange || links.Select(c => {
+                    return links.Count-rooms.Count+1 >= minimumCycles && (!requireHeightChange || links.Select(c => {
                         var p = rooms.Single(r => r.InstanceId == c.FromRoom);
                         return LayoutGeometry.WorldSocket(catalog.Get(p.ModuleId),p,c.FromSocket).Position.Y;
-                    }).Distinct().Take(2).Count() == 2;
+                    }).Distinct().Take(2).Count() == 2);
+                bool needsLoops = links.Count-rooms.Count+1 < minimumCycles;
                 var used = new HashSet<(string,string)>(links.SelectMany(c => new[] { (c.FromRoom,c.FromSocket),(c.ToRoom,c.ToSocket) }));
                 var candidates = new List<(PlacedRoom Parent,DoorSocket From,RoomDefinition Child,DoorSocket To)>();
                 foreach (var parent in rooms)
                 foreach (var from in catalog.Get(parent.ModuleId).Sockets.OrderBy(s => s.Id,StringComparer.Ordinal))
                 {
                     if (used.Contains((parent.InstanceId,from.Id))) continue;
-                    foreach (var child in catalog.Rooms.Where(r => !r.IsRootOnly).OrderBy(r => r.Id,StringComparer.Ordinal))
+                    foreach (var child in catalog.Rooms.Where(r => !r.IsRootOnly && (!needsLoops || r.Id == cycleModuleId)).OrderBy(r => r.Id,StringComparer.Ordinal))
                     foreach (var to in child.Sockets.OrderBy(s => s.Id,StringComparer.Ordinal))
                         if (from.Width == to.Width && from.Height == to.Height && from.Kind == to.Kind) candidates.Add((parent,from,child,to));
                 }
@@ -41,6 +48,32 @@ namespace LethalDungeon.Domain.Dungeons
                     if (j < 0 || j > i) throw new InvalidOperationException("Random source returned an out-of-range index.");
                     var swap = candidates[i]; candidates[i] = candidates[j]; candidates[j] = swap;
                 }
+                if (needsLoops)
+                {
+                    // Stable sort retains randomized ties. Reward geometric opportunities to close a ring.
+                    var free = rooms.SelectMany(r => catalog.Get(r.ModuleId).Sockets.Where(s => !used.Contains((r.InstanceId,s.Id)))
+                        .Select(s => (Room:r.InstanceId,Socket:LayoutGeometry.WorldSocket(catalog.Get(r.ModuleId),r,s.Id)))).ToList();
+                    candidates = candidates.OrderByDescending(c => {
+                        var placed = LayoutGeometry.Attach(catalog.Get(c.Parent.ModuleId),c.Parent,c.From.Id,c.Child,c.To.Id,"candidate");
+                        return c.Child.Sockets.Where(s => s.Id != c.To.Id).Sum(s => {
+                            var socket=LayoutGeometry.WorldSocket(c.Child,placed,s.Id);
+                            return free.Count(f => f.Room != c.Parent.InstanceId && LoopConnections.Matches(socket,f.Socket));
+                        });
+                    }).ToList();
+                }
+                if (minimumCycles > 0 && requireHeightChange && rooms.Count >= targetRooms-2)
+                {
+                    var heights = new HashSet<int>(links.Select(c => {
+                        var r=rooms.Single(r => r.InstanceId==c.FromRoom);
+                        return LayoutGeometry.WorldSocket(catalog.Get(r.ModuleId),r,c.FromSocket).Position.Y;
+                    }));
+                    if (heights.Count == 1)
+                    {
+                        bool NewHeight(PlacedRoom r,string socket) => !heights.Contains(LayoutGeometry.WorldSocket(catalog.Get(r.ModuleId),r,socket).Position.Y);
+                        if (rooms.Count == targetRooms-1) candidates=candidates.Where(c => NewHeight(c.Parent,c.From.Id)).ToList();
+                        else candidates=candidates.OrderByDescending(c => NewHeight(c.Parent,c.From.Id) ? 2 : c.Child.Sockets.Any(s => s.Position.Y != c.To.Position.Y) ? 1 : 0).ToList();
+                    }
+                }
                 foreach (var candidate in candidates)
                 {
                     if (attempts >= maxAttempts) return false;
@@ -48,14 +81,29 @@ namespace LethalDungeon.Domain.Dungeons
                     string suffix = rooms.Count.ToString("000",System.Globalization.CultureInfo.InvariantCulture);
                     var child = LayoutGeometry.Attach(catalog.Get(candidate.Parent.ModuleId),candidate.Parent,candidate.From.Id,
                         candidate.Child,candidate.To.Id,"room_"+suffix);
+                    int oldLinkCount = links.Count;
                     rooms.Add(child);
                     links.Add(new DoorConnection("connection_"+suffix,candidate.Parent.InstanceId,candidate.From.Id,child.InstanceId,candidate.To.Id,"door_"+suffix));
                     if (LayoutValidator.Validate(catalog,Snapshot()).IsValid)
                     {
+                        // Apply one at a time: each new edge changes socket availability and graph distances.
+                        while (links.Count-rooms.Count+1 < minimumCycles && attempts < maxAttempts)
+                        {
+                            bool closed = false;
+                            foreach (var closure in LoopConnections.Find(catalog,Snapshot()))
+                            {
+                                if (attempts >= maxAttempts) break;
+                                attempts++;
+                                links.Add(closure);
+                                if (LayoutValidator.Validate(catalog,Snapshot()).IsValid) { closed=true;break; }
+                                links.RemoveAt(links.Count-1);
+                            }
+                            if (!closed) break;
+                        }
                         if (Search()) return true;
                         backtracks++;
                     }
-                    links.RemoveAt(links.Count-1); rooms.RemoveAt(rooms.Count-1);
+                    links.RemoveRange(oldLinkCount,links.Count-oldLinkCount); rooms.RemoveAt(rooms.Count-1);
                 }
                 return false;
             }
@@ -68,6 +116,13 @@ namespace LethalDungeon.Domain.Dungeons
 
     public static class PrototypeCatalog
     {
+        public static RoomCatalog CreateLoopReady()
+        {
+            var junction = new RoomDefinition("junction","四向连接房",new[] {new GridBox(new GridPoint(-8,0,-8),new GridPoint(8,8,8))},new[] {
+                new DoorSocket("north",new GridPoint(0,0,8),Direction.North),new DoorSocket("east",new GridPoint(8,0,0),Direction.East),
+                new DoorSocket("south",new GridPoint(0,0,-8),Direction.South),new DoorSocket("west",new GridPoint(-8,0,0),Direction.West)});
+            return new RoomCatalog("prototype-rooms-v0.2",Create().Rooms.Concat(new[] {junction}));
+        }
         public static RoomCatalog Create()
         {
             GridPoint P(int x,int y,int z) => new GridPoint(x,y,z);
