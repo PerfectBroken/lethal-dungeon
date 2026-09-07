@@ -107,3 +107,28 @@ DungeonGenerator.Generate新增可选initialLayout，验证已有清单后继续
 API界限：targetRooms为1～64，loopCount为1～4；目标过小或空间预算不足返回无部分结果的失败。BFS边界为已有占用外框各扩4格，失败允许重试新支线规划。扩展清单时保留原ID，新ID避开已有实例、连接及门实体ID。当前连接段使用8米连接房灰盒，不是最终窄走廊素材；跨层仅在后续支路，跨层长环未实现。
 
 最新证据：evidence/public-branches；110规则+14规范检查通过。预览脚本语法通过，浏览器视觉实测仍受此前安全策略限制；引擎、真实导航和微信真机未验证。
+
+## 种子决定大环数量 v1
+
+| ID | 规范 |
+|---|---|
+| MAP-017 | SeededDungeon.Resolve(uint worldSeed)确定性导出LoopCount（1～4）和LayoutSeed；环数与布局使用不同盐值的独立派生，后续布局消耗随机数不得改变环数。禁止使用运行时GetHashCode、真实时间或共享全局随机源 |
+| MAP-018 | 当前原型规则seed-rules-v1：环数1/2/3/4分别配置24/40/56/64个房间，保留已接受的长支线规则与跨层要求。此规模映射为技术验证默认值，不是最终难度、时长或微信性能定稿 |
+| MAP-019 | Generate记录原始种子、规则版本、派生环数、房间数、布局种子及实际成功的尝试序号/种子。最多5次确定性布局尝试，每次最多20000步，共享总预算（默认100000）；重试只能改变布局种子，不能改变环数/房间数。失败不返回部分布局；同种子、版本、预算得到同结果 |
+
+固定算法：Mix(x)依次执行x ^= x >> 16；x *= 0x7FEB352D；x ^= x >> 15；x *= 0x846CA68B；x ^= x >> 16，乘法按uint溢出截断。LoopCount = 1 + (Mix(worldSeed ^ 0x4C4F4F50) & 3)，LayoutSeed = Mix(worldSeed ^ 0x4C41594F)。第0次使用LayoutSeed，第i次(i=1～4)使用Mix(LayoutSeed ^ (uint)i * 0x9E3779B9)。种子0合法。
+
+SeededDungeon是推荐的自动入口；显式loopCount接口保留给测试和设计调参。服务端未来应记录完整Plan及实际清单，客户端仍按服务器清单搭建，不自行抽取环数。未来修改概率、房间数映射或派生算法须升级RuleVersion。
+
+
+调用示例：
+
+```csharp
+var result = SeededDungeon.Generate(worldSeed: 86);
+// result.Plan包含确定的环数、房间数、原始/布局种子与规则版本。
+// 成功布局位于result.Result.Layout.Manifest；服务端必须先检查Succeeded。
+```
+
+规则复现需同时固定RuleVersion、目录/生成器版本和maxAttempts；日志应保存调用预算与返回的Plan、AttemptIndex、ActualLayoutSeed及最终清单。总预算用尽返回BudgetExceeded，5种布局尝试均失败且尚有预算时返回LayoutVariantsExhausted。显式参数入口仍可用于设计测试，不改变自动入口规则。
+
+最新验证：新增15用例先全部有效Red，后全部通过。种子0～99分别生成1/2/3/4环24/24/26/26次；种子86在布局变体1成功，始终保持3环，总工作量最高20235步。每张结果复用长支线全图最短环检查，无四房间捷径。125规则+14规范检查通过，0跳过。证据见evidence/public-seeds。现有40房间双环预览保留作结构示例，不代表自动入口仍固定双环。

@@ -78,3 +78,11 @@ public-red是实际Red报告的脱敏副本：本机工程绝对路径替换为`
 - Release回归110个规则测试通过，0跳过（domain-green.trx）。规范检查首次发现测试注释缩写MAP-013/015没有完整列出MAP-015；补全文字映射后14个规范检查通过（architecture-green.trx），没有放宽检查。
 - 执行命令：dotnet test LethalDungeon.sln --no-restore -c Release --logger 'trx;LogFilePrefix=branches-final' --results-directory <本地报告目录>；修正文档映射后单独重跑Architecture.Tests。SDK与脱敏策略同前。
 - 新预览脚本通过node --check；未绕过此前浏览器URL安全策略，未声称完成浏览器视觉实测。真实素材、引擎导航、跨层长环、微信及云端CI没有新增验收结果。
+
+## 种子派生环数（2026-09-07）
+
+- 规范MAP-017～019先行，15个DungeonSeedTests在编译桩上全部有效Red，退出码1；证据public-seeds/seed-red.trx。
+- 实现独立加盐派生环数及布局种子，环数1～4，房间规模24/40/56/64。最多5种确定性布局变体共享预算，重试不会改变环数。未修改原地图算法或既有预期。
+- 种子0～99全部成功：1/2/3/4环分别24/24/26/26次；种子86重试一次后仍为3环，最大累计20235步。新批量用例复用既有长支线图结构检查，覆盖无小环捷径与真实空间连接。
+- 最终Release：125规则+14规范检查全部通过，0跳过，退出码0。报告public-seeds/domain-green.trx、architecture-green.trx；命令dotnet test LethalDungeon.sln --no-restore -c Release --logger 'trx;LogFilePrefix=seed-final' --results-directory <本地报告目录>。SDK及脱敏方式同前。
+- 房间规模映射是原型默认，不代表正式关卡难度、探索时长或微信性能定稿。未新增引擎、网络、真机或云端CI验收。

@@ -10,7 +10,7 @@ namespace LethalDungeon.Tests
     public class DungeonBranchLoopTests
     {
         // MAP-013, MAP-015: inspect the actual graph, not a reported cycle counter.
-        private static void Check(BranchLoopResult result)
+        internal static void Check(BranchLoopResult result)
         {
             Assert.That(result.Layout.Succeeded,Is.True,result.Layout.Failure);
             var map=result.Layout.Manifest!;

@@ -1,0 +1,346 @@
+<ns0:TestRun xmlns:ns0="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" id="8607ed2e-34b4-4959-9d8d-a166a8aa4931" name="local-validation">
+  <ns0:Times creation="2026-09-07T16:17:02.3300130+09:00" queuing="2026-09-07T16:17:02.3300130+09:00" start="2026-09-07T16:17:01.8959330+09:00" finish="2026-09-07T16:17:02.3462960+09:00" />
+  <ns0:TestSettings name="default" id="45e7a056-ff45-477f-a280-5ca8243a801b">
+    <ns0:Deployment runDeploymentRoot="local-validation" />
+  </ns0:TestSettings>
+  <ns0:Results>
+    <ns0:UnitTestResult executionId="cc2bb885-1690-45ac-9db5-a8a54bb9fca9" testId="78a9a989-456e-f6cb-825e-92ee5ab47ab8" testName="SeedRuleHasStableGoldenMapping(3,1,543629138)" computerName="local-machine" duration="00:00:00.0000530" startTime="2026-09-07T16:17:02.2933130+09:00" endTime="2026-09-07T16:17:02.2933660+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cc2bb885-1690-45ac-9db5-a8a54bb9fca9">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.SeededDungeon.Resolve(UInt32 worldSeed) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 25
+   at LethalDungeon.Tests.DungeonSeedTests.SeedRuleHasStableGoldenMapping(UInt32 seed, Int32 loops, UInt32 layout) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSeedTests.cs:line 20
+   at InvokeStub_DungeonSeedTests.SeedRuleHasStableGoldenMapping(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.Dungeons.SeededDungeon.Resolve(UInt32 worldSeed) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 25
+   at LethalDungeon.Tests.DungeonSeedTests.SeedRuleHasStableGoldenMapping(UInt32 seed, Int32 loops, UInt32 layout) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSeedTests.cs:line 20
+   at InvokeStub_DungeonSeedTests.SeedRuleHasStableGoldenMapping(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="5454d820-57b5-4093-a971-8b49d71381a9" testId="30f9a80c-99be-b175-0c19-aeec585e990e" testName="ExhaustionKeepsSeedPlanWithoutPartialMap" computerName="local-machine" duration="00:00:00.0078490" startTime="2026-09-07T16:17:02.2702260+09:00" endTime="2026-09-07T16:17:02.2780440+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5454d820-57b5-4093-a971-8b49d71381a9">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.SeededDungeon.Generate(UInt32 worldSeed, Int32 maxAttempts) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 26
+   at LethalDungeon.Tests.DungeonSeedTests.ExhaustionKeepsSeedPlanWithoutPartialMap() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSeedTests.cs:line 33
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.SeededDungeon.Generate(UInt32 worldSeed, Int32 maxAttempts) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 26
+   at LethalDungeon.Tests.DungeonSeedTests.ExhaustionKeepsSeedPlanWithoutPartialMap() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSeedTests.cs:line 33
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="6dee78da-624d-4ef1-9bbf-49b93f6e4973" testId="aa8952e6-4ded-3046-a7d3-f7c0f99e0dea" testName="SeedRuleHasStableGoldenMapping(2,2,3397078639)" computerName="local-machine" duration="00:00:00.0000690" startTime="2026-09-07T16:17:02.2932400+09:00" endTime="2026-09-07T16:17:02.2933090+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6dee78da-624d-4ef1-9bbf-49b93f6e4973">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.SeededDungeon.Resolve(UInt32 worldSeed) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 25
+   at LethalDungeon.Tests.DungeonSeedTests.SeedRuleHasStableGoldenMapping(UInt32 seed, Int32 loops, UInt32 layout) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSeedTests.cs:line 20
+   at InvokeStub_DungeonSeedTests.SeedRuleHasStableGoldenMapping(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.Dungeons.SeededDungeon.Resolve(UInt32 worldSeed) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 25
+   at LethalDungeon.Tests.DungeonSeedTests.SeedRuleHasStableGoldenMapping(UInt32 seed, Int32 loops, UInt32 layout) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSeedTests.cs:line 20
+   at InvokeStub_DungeonSeedTests.SeedRuleHasStableGoldenMapping(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="04c9a326-ef77-4d2a-968e-0b18daaae394" testId="47bdca46-de3a-52ae-af97-3bc948192248" testName="FullResultIsReproducible" computerName="local-machine" duration="00:00:00.0002860" startTime="2026-09-07T16:17:02.2787580+09:00" endTime="2026-09-07T16:17:02.2790440+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="04c9a326-ef77-4d2a-968e-0b18daaae394">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.SeededDungeon.Generate(UInt32 worldSeed, Int32 maxAttempts) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 26
+   at LethalDungeon.Tests.DungeonSeedTests.FullResultIsReproducible() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSeedTests.cs:line 39
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.SeededDungeon.Generate(UInt32 worldSeed, Int32 maxAttempts) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 26
+   at LethalDungeon.Tests.DungeonSeedTests.FullResultIsReproducible() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSeedTests.cs:line 39
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="7c11b196-67e9-4ab7-8aef-46e2dc23b3b4" testId="7a8ab3c2-44ea-55e8-0d16-9b06dcaec979" testName="RoomScaleMatchesSelectedLoopCount(3,24)" computerName="local-machine" duration="00:00:00.0001730" startTime="2026-09-07T16:17:02.2921210+09:00" endTime="2026-09-07T16:17:02.2922950+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7c11b196-67e9-4ab7-8aef-46e2dc23b3b4">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.SeededDungeon.Resolve(UInt32 worldSeed) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 25
+   at LethalDungeon.Tests.DungeonSeedTests.RoomScaleMatchesSelectedLoopCount(UInt32 seed, Int32 rooms) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSeedTests.cs:line 27
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.SeededDungeon.Resolve(UInt32 worldSeed) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 25
+   at LethalDungeon.Tests.DungeonSeedTests.RoomScaleMatchesSelectedLoopCount(UInt32 seed, Int32 rooms) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSeedTests.cs:line 27
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="f7d12dc1-ae1e-4686-ae9d-2d50f2bd44c9" testId="fd033443-b3b1-b481-0fbd-010fe2231fc9" testName="RoomScaleMatchesSelectedLoopCount(1,56)" computerName="local-machine" duration="00:00:00.0000540" startTime="2026-09-07T16:17:02.2924440+09:00" endTime="2026-09-07T16:17:02.2924970+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f7d12dc1-ae1e-4686-ae9d-2d50f2bd44c9">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.SeededDungeon.Resolve(UInt32 worldSeed) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 25
+   at LethalDungeon.Tests.DungeonSeedTests.RoomScaleMatchesSelectedLoopCount(UInt32 seed, Int32 rooms) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSeedTests.cs:line 27
+   at InvokeStub_DungeonSeedTests.RoomScaleMatchesSelectedLoopCount(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.Dungeons.SeededDungeon.Resolve(UInt32 worldSeed) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 25
+   at LethalDungeon.Tests.DungeonSeedTests.RoomScaleMatchesSelectedLoopCount(UInt32 seed, Int32 rooms) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSeedTests.cs:line 27
+   at InvokeStub_DungeonSeedTests.RoomScaleMatchesSelectedLoopCount(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="07dbf0f1-c02b-48ed-86fa-3a2095072118" testId="418ec0ad-4e79-fc80-e2c4-19e2b917f388" testName="SeedRuleHasStableGoldenMapping(uint.MinValue,2,521625886)" computerName="local-machine" duration="00:00:00.0003740" startTime="2026-09-07T16:17:02.2925690+09:00" endTime="2026-09-07T16:17:02.2929430+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="07dbf0f1-c02b-48ed-86fa-3a2095072118">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.SeededDungeon.Resolve(UInt32 worldSeed) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 25
+   at LethalDungeon.Tests.DungeonSeedTests.SeedRuleHasStableGoldenMapping(UInt32 seed, Int32 loops, UInt32 layout) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSeedTests.cs:line 20
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.SeededDungeon.Resolve(UInt32 worldSeed) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 25
+   at LethalDungeon.Tests.DungeonSeedTests.SeedRuleHasStableGoldenMapping(UInt32 seed, Int32 loops, UInt32 layout) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSeedTests.cs:line 20
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeDirectByRefWithFewArgs(Object obj, Span`1 copyOfArgs, BindingFlags invokeAttr)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="3a37daca-01a1-43d1-92f5-a7464e3c8105" testId="f0bb7086-c9f8-f75d-349a-a8e767b0720e" testName="InvalidBudgetRejected(0)" computerName="local-machine" duration="00:00:00.0110540" startTime="2026-09-07T16:17:02.2798640+09:00" endTime="2026-09-07T16:17:02.2909170+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3a37daca-01a1-43d1-92f5-a7464e3c8105">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentOutOfRangeException&gt;
+  But was:  &lt;System.NotImplementedException: The method or operation is not implemented.
+   at LethalDungeon.Domain.Dungeons.SeededDungeon.Generate(UInt32 worldSeed, Int32 maxAttempts) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 26
+   at LethalDungeon.Tests.DungeonSeedTests.&lt;&gt;c__DisplayClass2_0.&lt;InvalidBudgetRejected&gt;b__0() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSeedTests.cs:line 30
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, Action code, String message, Object[] args)&gt;
+</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Tests.DungeonSeedTests.InvalidBudgetRejected(Int32 budget) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSeedTests.cs:line 30
+
+1)    at LethalDungeon.Tests.DungeonSeedTests.InvalidBudgetRejected(Int32 budget) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSeedTests.cs:line 30
+
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="f328564f-8606-4813-9aac-9b4db8bf1a8a" testId="8acbbce1-a922-bf45-6609-d3f81a5ec3e9" testName="InvalidBudgetRejected(100001)" computerName="local-machine" duration="00:00:00.0004710" startTime="2026-09-07T16:17:02.2909510+09:00" endTime="2026-09-07T16:17:02.2914220+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f328564f-8606-4813-9aac-9b4db8bf1a8a">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentOutOfRangeException&gt;
+  But was:  &lt;System.NotImplementedException: The method or operation is not implemented.
+   at LethalDungeon.Domain.Dungeons.SeededDungeon.Generate(UInt32 worldSeed, Int32 maxAttempts) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 26
+   at LethalDungeon.Tests.DungeonSeedTests.&lt;&gt;c__DisplayClass2_0.&lt;InvalidBudgetRejected&gt;b__0() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSeedTests.cs:line 30
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, Action code, String message, Object[] args)&gt;
+</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Tests.DungeonSeedTests.InvalidBudgetRejected(Int32 budget) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSeedTests.cs:line 30
+   at InvokeStub_DungeonSeedTests.InvalidBudgetRejected(Object, Span`1)
+
+1)    at LethalDungeon.Tests.DungeonSeedTests.InvalidBudgetRejected(Int32 budget) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSeedTests.cs:line 30
+   at InvokeStub_DungeonSeedTests.InvalidBudgetRejected(Object, Span`1)
+
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="c1af8b85-cfb1-4d2d-98e8-c81bb74e6d89" testId="1358d641-b7ee-224e-f8e7-1b617e78224f" testName="RoomScaleMatchesSelectedLoopCount(uint.MinValue,40)" computerName="local-machine" duration="00:00:00.0001399" startTime="2026-09-07T16:17:02.2923000+09:00" endTime="2026-09-07T16:17:02.2924400+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c1af8b85-cfb1-4d2d-98e8-c81bb74e6d89">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.SeededDungeon.Resolve(UInt32 worldSeed) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 25
+   at LethalDungeon.Tests.DungeonSeedTests.RoomScaleMatchesSelectedLoopCount(UInt32 seed, Int32 rooms) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSeedTests.cs:line 27
+   at InvokeStub_DungeonSeedTests.RoomScaleMatchesSelectedLoopCount(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.Dungeons.SeededDungeon.Resolve(UInt32 worldSeed) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 25
+   at LethalDungeon.Tests.DungeonSeedTests.RoomScaleMatchesSelectedLoopCount(UInt32 seed, Int32 rooms) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSeedTests.cs:line 27
+   at InvokeStub_DungeonSeedTests.RoomScaleMatchesSelectedLoopCount(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="2f29582a-333e-40a6-969b-01a19ca982bd" testId="f5955af5-42b8-e7d4-64af-0e13bbea6451" testName="SeedRuleHasStableGoldenMapping(1,3,2679961916)" computerName="local-machine" duration="00:00:00.0002760" startTime="2026-09-07T16:17:02.2929570+09:00" endTime="2026-09-07T16:17:02.2932330+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2f29582a-333e-40a6-969b-01a19ca982bd">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.SeededDungeon.Resolve(UInt32 worldSeed) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 25
+   at LethalDungeon.Tests.DungeonSeedTests.SeedRuleHasStableGoldenMapping(UInt32 seed, Int32 loops, UInt32 layout) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSeedTests.cs:line 20
+   at InvokeStub_DungeonSeedTests.SeedRuleHasStableGoldenMapping(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.Dungeons.SeededDungeon.Resolve(UInt32 worldSeed) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 25
+   at LethalDungeon.Tests.DungeonSeedTests.SeedRuleHasStableGoldenMapping(UInt32 seed, Int32 loops, UInt32 layout) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSeedTests.cs:line 20
+   at InvokeStub_DungeonSeedTests.SeedRuleHasStableGoldenMapping(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="f9906939-817e-4d23-af7d-31d94547b9c7" testId="235dd92a-9b3a-fc0f-335c-1f0b1df297c1" testName="RoomScaleMatchesSelectedLoopCount(4,64)" computerName="local-machine" duration="00:00:00.0000440" startTime="2026-09-07T16:17:02.2925010+09:00" endTime="2026-09-07T16:17:02.2925450+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f9906939-817e-4d23-af7d-31d94547b9c7">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.SeededDungeon.Resolve(UInt32 worldSeed) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 25
+   at LethalDungeon.Tests.DungeonSeedTests.RoomScaleMatchesSelectedLoopCount(UInt32 seed, Int32 rooms) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSeedTests.cs:line 27
+   at InvokeStub_DungeonSeedTests.RoomScaleMatchesSelectedLoopCount(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.Dungeons.SeededDungeon.Resolve(UInt32 worldSeed) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 25
+   at LethalDungeon.Tests.DungeonSeedTests.RoomScaleMatchesSelectedLoopCount(UInt32 seed, Int32 rooms) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSeedTests.cs:line 27
+   at InvokeStub_DungeonSeedTests.RoomScaleMatchesSelectedLoopCount(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="4342c7e8-30d0-4179-824c-a8c3022b6a5f" testId="ad717d24-5104-eaa5-eba1-14e8b5f4aea1" testName="HundredSeedsGenerateTheirSelectedLoopCounts" computerName="local-machine" duration="00:00:00.0007890" startTime="2026-09-07T16:17:02.2790540+09:00" endTime="2026-09-07T16:17:02.2798430+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4342c7e8-30d0-4179-824c-a8c3022b6a5f">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.SeededDungeon.Generate(UInt32 worldSeed, Int32 maxAttempts) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 26
+   at LethalDungeon.Tests.DungeonSeedTests.HundredSeedsGenerateTheirSelectedLoopCounts() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSeedTests.cs:line 47
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.Domain.Dungeons.SeededDungeon.Generate(UInt32 worldSeed, Int32 maxAttempts) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 26
+   at LethalDungeon.Tests.DungeonSeedTests.HundredSeedsGenerateTheirSelectedLoopCounts() in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSeedTests.cs:line 47
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="81748049-2cc0-409b-9635-e1aad7d0af43" testId="bf364881-7fe8-85f2-3159-a2d3a2ca7c3b" testName="SeedRuleHasStableGoldenMapping(uint.MaxValue,1,306079645)" computerName="local-machine" duration="00:00:00.0000440" startTime="2026-09-07T16:17:02.2934180+09:00" endTime="2026-09-07T16:17:02.2934630+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="81748049-2cc0-409b-9635-e1aad7d0af43">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.SeededDungeon.Resolve(UInt32 worldSeed) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 25
+   at LethalDungeon.Tests.DungeonSeedTests.SeedRuleHasStableGoldenMapping(UInt32 seed, Int32 loops, UInt32 layout) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSeedTests.cs:line 20
+   at InvokeStub_DungeonSeedTests.SeedRuleHasStableGoldenMapping(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.Dungeons.SeededDungeon.Resolve(UInt32 worldSeed) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 25
+   at LethalDungeon.Tests.DungeonSeedTests.SeedRuleHasStableGoldenMapping(UInt32 seed, Int32 loops, UInt32 layout) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSeedTests.cs:line 20
+   at InvokeStub_DungeonSeedTests.SeedRuleHasStableGoldenMapping(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+    <ns0:UnitTestResult executionId="636786cb-ed41-411d-84ac-9c626d767e42" testId="65cf01ee-d0c6-31e8-5dbf-bd2e0d9105f1" testName="SeedRuleHasStableGoldenMapping(4,4,488595076)" computerName="local-machine" duration="00:00:00.0000460" startTime="2026-09-07T16:17:02.2933690+09:00" endTime="2026-09-07T16:17:02.2934150+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="636786cb-ed41-411d-84ac-9c626d767e42">
+      <ns0:Output>
+        <ns0:ErrorInfo>
+          <ns0:Message>System.NotImplementedException : The method or operation is not implemented.</ns0:Message>
+          <ns0:StackTrace>   at LethalDungeon.Domain.Dungeons.SeededDungeon.Resolve(UInt32 worldSeed) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 25
+   at LethalDungeon.Tests.DungeonSeedTests.SeedRuleHasStableGoldenMapping(UInt32 seed, Int32 loops, UInt32 layout) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSeedTests.cs:line 20
+   at InvokeStub_DungeonSeedTests.SeedRuleHasStableGoldenMapping(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+1)    at LethalDungeon.Domain.Dungeons.SeededDungeon.Resolve(UInt32 worldSeed) in /workspace/lethal-dungeon/src/Domain/DungeonLayout/SeededDungeon.cs:line 25
+   at LethalDungeon.Tests.DungeonSeedTests.SeedRuleHasStableGoldenMapping(UInt32 seed, Int32 loops, UInt32 layout) in /workspace/lethal-dungeon/tests/Domain.Tests/DungeonSeedTests.cs:line 20
+   at InvokeStub_DungeonSeedTests.SeedRuleHasStableGoldenMapping(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithFewArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+</ns0:StackTrace>
+        </ns0:ErrorInfo>
+      </ns0:Output>
+    </ns0:UnitTestResult>
+  </ns0:Results>
+  <ns0:TestDefinitions>
+    <ns0:UnitTest name="SeedRuleHasStableGoldenMapping(2,2,3397078639)" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="aa8952e6-4ded-3046-a7d3-f7c0f99e0dea">
+      <ns0:Execution id="6dee78da-624d-4ef1-9bbf-49b93f6e4973" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonSeedTests" name="SeedRuleHasStableGoldenMapping(2,2,3397078639)" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="HundredSeedsGenerateTheirSelectedLoopCounts" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="ad717d24-5104-eaa5-eba1-14e8b5f4aea1">
+      <ns0:Execution id="4342c7e8-30d0-4179-824c-a8c3022b6a5f" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonSeedTests" name="HundredSeedsGenerateTheirSelectedLoopCounts" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="FullResultIsReproducible" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="47bdca46-de3a-52ae-af97-3bc948192248">
+      <ns0:Execution id="04c9a326-ef77-4d2a-968e-0b18daaae394" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonSeedTests" name="FullResultIsReproducible" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="SeedRuleHasStableGoldenMapping(3,1,543629138)" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="78a9a989-456e-f6cb-825e-92ee5ab47ab8">
+      <ns0:Execution id="cc2bb885-1690-45ac-9db5-a8a54bb9fca9" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonSeedTests" name="SeedRuleHasStableGoldenMapping(3,1,543629138)" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="InvalidBudgetRejected(0)" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="f0bb7086-c9f8-f75d-349a-a8e767b0720e">
+      <ns0:Execution id="3a37daca-01a1-43d1-92f5-a7464e3c8105" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonSeedTests" name="InvalidBudgetRejected(0)" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="RoomScaleMatchesSelectedLoopCount(4,64)" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="235dd92a-9b3a-fc0f-335c-1f0b1df297c1">
+      <ns0:Execution id="f9906939-817e-4d23-af7d-31d94547b9c7" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonSeedTests" name="RoomScaleMatchesSelectedLoopCount(4,64)" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="RoomScaleMatchesSelectedLoopCount(uint.MinValue,40)" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="1358d641-b7ee-224e-f8e7-1b617e78224f">
+      <ns0:Execution id="c1af8b85-cfb1-4d2d-98e8-c81bb74e6d89" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonSeedTests" name="RoomScaleMatchesSelectedLoopCount(uint.MinValue,40)" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="RoomScaleMatchesSelectedLoopCount(1,56)" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="fd033443-b3b1-b481-0fbd-010fe2231fc9">
+      <ns0:Execution id="f7d12dc1-ae1e-4686-ae9d-2d50f2bd44c9" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonSeedTests" name="RoomScaleMatchesSelectedLoopCount(1,56)" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="SeedRuleHasStableGoldenMapping(1,3,2679961916)" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="f5955af5-42b8-e7d4-64af-0e13bbea6451">
+      <ns0:Execution id="2f29582a-333e-40a6-969b-01a19ca982bd" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonSeedTests" name="SeedRuleHasStableGoldenMapping(1,3,2679961916)" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="SeedRuleHasStableGoldenMapping(uint.MaxValue,1,306079645)" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="bf364881-7fe8-85f2-3159-a2d3a2ca7c3b">
+      <ns0:Execution id="81748049-2cc0-409b-9635-e1aad7d0af43" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonSeedTests" name="SeedRuleHasStableGoldenMapping(uint.MaxValue,1,306079645)" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="RoomScaleMatchesSelectedLoopCount(3,24)" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="7a8ab3c2-44ea-55e8-0d16-9b06dcaec979">
+      <ns0:Execution id="7c11b196-67e9-4ab7-8aef-46e2dc23b3b4" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonSeedTests" name="RoomScaleMatchesSelectedLoopCount(3,24)" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="SeedRuleHasStableGoldenMapping(4,4,488595076)" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="65cf01ee-d0c6-31e8-5dbf-bd2e0d9105f1">
+      <ns0:Execution id="636786cb-ed41-411d-84ac-9c626d767e42" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonSeedTests" name="SeedRuleHasStableGoldenMapping(4,4,488595076)" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="SeedRuleHasStableGoldenMapping(uint.MinValue,2,521625886)" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="418ec0ad-4e79-fc80-e2c4-19e2b917f388">
+      <ns0:Execution id="07dbf0f1-c02b-48ed-86fa-3a2095072118" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonSeedTests" name="SeedRuleHasStableGoldenMapping(uint.MinValue,2,521625886)" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="ExhaustionKeepsSeedPlanWithoutPartialMap" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="30f9a80c-99be-b175-0c19-aeec585e990e">
+      <ns0:Execution id="5454d820-57b5-4093-a971-8b49d71381a9" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonSeedTests" name="ExhaustionKeepsSeedPlanWithoutPartialMap" />
+    </ns0:UnitTest>
+    <ns0:UnitTest name="InvalidBudgetRejected(100001)" storage="/users/local-user/documents/codex/2026-09-07/wo/outputs/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="8acbbce1-a922-bf45-6609-d3f81a5ec3e9">
+      <ns0:Execution id="f328564f-8606-4813-9aac-9b4db8bf1a8a" />
+      <ns0:TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.DungeonSeedTests" name="InvalidBudgetRejected(100001)" />
+    </ns0:UnitTest>
+  </ns0:TestDefinitions>
+  <ns0:TestEntries>
+    <ns0:TestEntry testId="78a9a989-456e-f6cb-825e-92ee5ab47ab8" executionId="cc2bb885-1690-45ac-9db5-a8a54bb9fca9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="30f9a80c-99be-b175-0c19-aeec585e990e" executionId="5454d820-57b5-4093-a971-8b49d71381a9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="aa8952e6-4ded-3046-a7d3-f7c0f99e0dea" executionId="6dee78da-624d-4ef1-9bbf-49b93f6e4973" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="47bdca46-de3a-52ae-af97-3bc948192248" executionId="04c9a326-ef77-4d2a-968e-0b18daaae394" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="7a8ab3c2-44ea-55e8-0d16-9b06dcaec979" executionId="7c11b196-67e9-4ab7-8aef-46e2dc23b3b4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="fd033443-b3b1-b481-0fbd-010fe2231fc9" executionId="f7d12dc1-ae1e-4686-ae9d-2d50f2bd44c9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="418ec0ad-4e79-fc80-e2c4-19e2b917f388" executionId="07dbf0f1-c02b-48ed-86fa-3a2095072118" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="f0bb7086-c9f8-f75d-349a-a8e767b0720e" executionId="3a37daca-01a1-43d1-92f5-a7464e3c8105" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="8acbbce1-a922-bf45-6609-d3f81a5ec3e9" executionId="f328564f-8606-4813-9aac-9b4db8bf1a8a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="1358d641-b7ee-224e-f8e7-1b617e78224f" executionId="c1af8b85-cfb1-4d2d-98e8-c81bb74e6d89" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="f5955af5-42b8-e7d4-64af-0e13bbea6451" executionId="2f29582a-333e-40a6-969b-01a19ca982bd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="235dd92a-9b3a-fc0f-335c-1f0b1df297c1" executionId="f9906939-817e-4d23-af7d-31d94547b9c7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="ad717d24-5104-eaa5-eba1-14e8b5f4aea1" executionId="4342c7e8-30d0-4179-824c-a8c3022b6a5f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="bf364881-7fe8-85f2-3159-a2d3a2ca7c3b" executionId="81748049-2cc0-409b-9635-e1aad7d0af43" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestEntry testId="65cf01ee-d0c6-31e8-5dbf-bd2e0d9105f1" executionId="636786cb-ed41-411d-84ac-9c626d767e42" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </ns0:TestEntries>
+  <ns0:TestLists>
+    <ns0:TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <ns0:TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </ns0:TestLists>
+  <ns0:ResultSummary outcome="Failed">
+    <ns0:Counters total="15" executed="15" passed="0" failed="15" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <ns0:Output>
+      <ns0:StdOut>NUnit Adapter 6.3.0.0: Test execution started
+Running selected tests in /workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll
+   NUnit3TestExecutor discovered 15 of 15 NUnit test cases using Current Discovery mode, Non-Explicit run
+</ns0:StdOut>
+    </ns0:Output>
+  </ns0:ResultSummary>
+</ns0:TestRun>
