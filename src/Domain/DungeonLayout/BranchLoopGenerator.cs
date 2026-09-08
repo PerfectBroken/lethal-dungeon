@@ -29,8 +29,8 @@ namespace LethalDungeon.Domain.Dungeons
         public static BranchLoopResult Generate(IRandomSource random,int targetRooms=40,int loopCount=2,int maxAttempts=10000,bool requireHeightChange=true,ExplorationBranchOptions? exploration=null,bool spatialMainPaths=false,bool flatGridOnly=false)
         {
             if(random==null)throw new ArgumentNullException(nameof(random));
-            if(targetRooms<1||targetRooms>(exploration==null?64:128))throw new ArgumentOutOfRangeException(nameof(targetRooms));
-            if(loopCount<1||loopCount>4)throw new ArgumentOutOfRangeException(nameof(loopCount));
+            if(targetRooms<1||targetRooms>(flatGridOnly?512:exploration==null?64:128))throw new ArgumentOutOfRangeException(nameof(targetRooms));
+            if(loopCount<1||loopCount>(flatGridOnly?12:4))throw new ArgumentOutOfRangeException(nameof(loopCount));
             if(maxAttempts<1||maxAttempts>100000)throw new ArgumentOutOfRangeException(nameof(maxAttempts));
             var catalog=spatialMainPaths?PrototypeCatalog.CreateSpatial():PrototypeCatalog.CreateLoopReady();int attempts=0,retries=0;
             var rooms=new List<PlacedRoom>{new PlacedRoom("room_000","entry",new GridPoint(0,0,0))};

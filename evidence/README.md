@@ -111,3 +111,11 @@ public-red是实际Red报告的脱敏副本：本机工程绝对路径替换为`
 - 100种子全部通过，最大18222次尝试；种子5真实输出104格、90实例、93门、4跨层环、8保障支路、9非入口死路，4个L型坡道/1个平层L房。检查每格唯一覆盖、合并前后外连边相符、所有必接门、旋转、连通、三维几何、环数与支路末端。
 - Release全量167规则/配置+14规范检查通过，0跳过。public-configured/domain-green.trx、architecture-green.trx；命令dotnet test LethalDungeon.sln --no-restore -c Release --logger trx --results-directory <本地报告目录>。报告仅脱敏个人路径和机器标识。新增项目从既有本地缓存源还原，SDK和依赖保持固定。
 - 预览按真实清单与覆盖映射绘制，60种离线脚本状态检查通过，不是浏览器视觉实测；未绕过此前安全策略。真实预制件、团结导航、网络和微信尚未验证。
+
+## 1～12环扩展（2026-09-08）
+
+- MAP-033～036规范、选项/Plan接口及21例测试先行，全部有效Red（many-loops-red.trx）。支持固定环数或种子范围抽取；新默认v0.7，旧int预算重载仍为v0.6，原断言未降低。
+- 初次批量验证中12环种子4消耗300000步失败，另补独立回归记录有效Red（crowded-red.trx）。单份格子尝试从100000收紧为20000，让剩余预算用于新布局重试；保留默认300000及1～1000000可配置总上限，不降低目标环数。
+- 22新例最终通过。1～12每档10种子，共120张地图全部通过完整几何、连通、覆盖与外部边保留、跨层、环数及每环两条2～4格保障支路；最大66945次尝试。样例docs/examples/many-loop-layouts.json。
+- Release全量189规则/配置+14规范检查通过，0跳过，退出码0，public-many-loops/domain-green.trx及architecture-green.trx。命令dotnet test LethalDungeon.sln --no-restore -c Release --logger trx --results-directory <本地报告目录>。公开报告仅脱敏路径与机器标识。
+- 12环预览使用实际结果，156种离线状态检查通过，覆盖两种宽度、全图及12个单环、三种视角与格子显隐；未进行浏览器视觉实测。未绕过此前安全策略。没有新增引擎、导航、微信或云端CI验收。

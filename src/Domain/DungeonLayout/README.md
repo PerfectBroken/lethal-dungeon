@@ -182,3 +182,33 @@ v3清单版本spatial-main-paths-v0.5，目录prototype-spatial-v0.3。高度是
 结果：17个新用例先有效Red，后全部通过；100种子全部通过，无重复覆盖/漏格、所有必接门实际使用、完整几何/连通和环数不变，最大18222次尝试。Release总计167规则/配置测试+14规范检查通过，0跳过。种子5：104格合并90实例，93条门连接、4个跨层大环、8条保障支路、9个非入口死路；采用4个L型坡道、1个平层L房、3个直坡道及1个直楼梯。实际实例底面位于0/4/8/12米，坡道内部平台还含2米增量。
 
 使用：先由CatalogJson.RoomCatalogJson.Parse(jsonText)导入，再调用ConfiguredDungeon.Generate(catalog,worldSeed)。Layout.Manifest是客户端搭建清单；Coverage为实例覆盖格子列表，GridLoops/GridBranches为格子阶段轨迹。资源键及模块revision保存在catalog.Patterns中，客户端资源尚未创建。保存原始JSON/目录版本、种子和预算用于复现，不能仅凭目录名称判断内容相同。
+
+## 1～12环生成 v0.7
+
+| ID | 规范 |
+|---|---|
+| MAP-033 | DungeonGenerationOptions指定MinLoops/MaxLoops（1～12且min≤max）和MaxAttempts（1～1000000，默认300000）。范围相同表示固定环数；新默认范围1～12。ConfiguredDungeon.Generate(catalog,seed,options)为新入口；显式int maxAttempts重载保留v0.6以复现旧地图 |
+| MAP-034 | ResolvePlan独立派生环数：min+Mix(seed XOR 0x4C4F4F50) % (max-min+1)，Mix保持既有算法；格子预算8+32×环数（40～392）。Plan记录原种子、范围、环数、格子数、总预算和版本；布局重试不得重抽环数 |
+| MAP-035 | 扩展仅作用于配置驱动格子路径，旧非格子BranchLoopGenerator仍限4环。新模式保持每环跨层、至少两条2～4格保障支路、长环与拓扑保留。必须完成全部目标环，失败不得降级环数或返回部分清单 |
+| MAP-036 | configured-grid-v0.7同JSON、种子、选项结果可复现。最多10份布局尝试，单份格子构造最多20000步，候选匹配共用配置总预算；1～12各档多种子检查最终环数、空间、覆盖与支路。统计格子与实例分开，规模增长不代表已满足微信性能与12分钟节奏 |
+
+新模式的格子预算多预留每环8格，缓解大图中跨层模板和探索支路争用；仅格子模式放宽到512格/12环，普通原型接口限制保留。配置JSON格式和13种素材定义不变。
+
+用法：
+
+```csharp
+// 默认：由种子决定1～12环。
+var automatic = ConfiguredDungeon.Generate(catalog, 5u);
+// 固定12环。
+var fixedTwelve = ConfiguredDungeon.Generate(catalog, 5u,
+    new DungeonGenerationOptions(minLoops: 12, maxLoops: 12));
+// 在6～8环之间抽取，同时指定新模式总预算。
+var ranged = ConfiguredDungeon.Generate(catalog, 5u,
+    new DungeonGenerationOptions(minLoops: 6, maxLoops: 8, maxAttempts: 300000));
+// 明确保留旧configured-grid-v0.6入口：int预算重载仍为1～4环。
+var legacy = ConfiguredDungeon.Generate(catalog, 5u, maxAttempts: 100000);
+```
+
+新模式预算必须在DungeonGenerationOptions中设置，不能误用旧int重载。返回Plan在失败时仍记录原计划环数和格子预算；成功失败都不因重试改变环数。默认方法行为升级为v0.7，旧v0.6固定断言通过显式int重载继续验收。
+
+验证：新增21例先全部有效Red，另将12环种子4的预算耗尽补为独立回归用例并记录Red。通过将单份格子尝试限制为20000步，保留后续重试机会；默认300000总预算及全部断言保持。22新例最终通过，每档1～12环各10种子共120张布局成功，最大66945次尝试；全量189+14=203项检查通过，0跳过。种子5的6/8/12环分别200/264/392格、177/228/343实例，保障支路12/16/24条。12环实例底面分布0/4/8/12/16米，39个非入口死路。真实输出docs/examples/many-loop-layouts.json，证据evidence/public-many-loops。

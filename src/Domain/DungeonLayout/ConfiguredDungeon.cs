@@ -31,16 +31,28 @@ namespace LethalDungeon.Domain.Dungeons
     }
     public sealed class ConfiguredDungeonResult
     {
+        public ConfiguredGenerationPlan? Plan {get;}
         public GenerationResult Layout {get;}
         public DungeonManifest? Grid {get;}
         public ReadOnlyCollection<RoomCoverage> Coverage {get;}
         public ReadOnlyCollection<BranchLoopTrace> GridLoops {get;}
         public ReadOnlyCollection<ExplorationBranchTrace> GridBranches {get;}
-        public ConfiguredDungeonResult(GenerationResult layout,DungeonManifest? grid=null,IEnumerable<RoomCoverage>? coverage=null,IEnumerable<BranchLoopTrace>? loops=null,IEnumerable<ExplorationBranchTrace>? branches=null)
-        {Layout=layout;Grid=grid;Coverage=(coverage??Array.Empty<RoomCoverage>()).ToList().AsReadOnly();GridLoops=(loops??Array.Empty<BranchLoopTrace>()).ToList().AsReadOnly();GridBranches=(branches??Array.Empty<ExplorationBranchTrace>()).ToList().AsReadOnly();}
+        public ConfiguredDungeonResult(GenerationResult layout,DungeonManifest? grid=null,IEnumerable<RoomCoverage>? coverage=null,IEnumerable<BranchLoopTrace>? loops=null,IEnumerable<ExplorationBranchTrace>? branches=null,ConfiguredGenerationPlan? plan=null)
+        {Plan=plan;Layout=layout;Grid=grid;Coverage=(coverage??Array.Empty<RoomCoverage>()).ToList().AsReadOnly();GridLoops=(loops??Array.Empty<BranchLoopTrace>()).ToList().AsReadOnly();GridBranches=(branches??Array.Empty<ExplorationBranchTrace>()).ToList().AsReadOnly();}
     }
     public static class ConfiguredDungeon
     {
-        public static ConfiguredDungeonResult Generate(ConfiguredRoomCatalog catalog,uint seed,int maxAttempts=100000)=>GridRoomMatcher.Generate(catalog,seed,maxAttempts);
+        public static ConfiguredGenerationPlan ResolvePlan(uint seed,DungeonGenerationOptions? options=null)
+        {
+            options=options??new DungeonGenerationOptions();uint value=seed^0x4C4F4F50u;
+            unchecked {value^=value>>16;value*=0x7FEB352Du;value^=value>>15;value*=0x846CA68Bu;value^=value>>16;}
+            return new ConfiguredGenerationPlan(seed,options,options.MinLoops+(int)(value%(uint)(options.MaxLoops-options.MinLoops+1)));
+        }
+        public static ConfiguredDungeonResult Generate(ConfiguredRoomCatalog catalog,uint seed,DungeonGenerationOptions? options=null)
+        {
+            var plan=ResolvePlan(seed,options);var result=GridRoomMatcher.Generate(catalog,seed,plan.MaxAttempts,plan);
+            return new ConfiguredDungeonResult(result.Layout,result.Grid,result.Coverage,result.GridLoops,result.GridBranches,plan);
+        }
+        public static ConfiguredDungeonResult Generate(ConfiguredRoomCatalog catalog,uint seed,int maxAttempts)=>GridRoomMatcher.Generate(catalog,seed,maxAttempts);
     }
 }

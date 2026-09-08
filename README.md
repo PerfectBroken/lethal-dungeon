@@ -1,6 +1,6 @@
 # 《致命地下城》规范与测试工程
 
-当前进度：背包负重倍率、探险时钟与三维模块布局核心已完成Green实现。167个规则测试和14个规范/配置检查全部通过，0跳过；原始Red记录保留。CI已上传，云端运行被GitHub账号账单锁阻止；团结验证工程已准备，编辑器与真机尚未运行。
+当前进度：背包负重倍率、探险时钟与三维模块布局核心已完成Green实现。189个规则测试和14个规范/配置检查全部通过，0跳过；原始Red记录保留。CI已上传，云端运行被GitHub账号账单锁阻止；团结验证工程已准备，编辑器与真机尚未运行。
 
 ## 规范与模块
 
@@ -49,3 +49,7 @@ dotnet test tests/Domain.Tests/Domain.Tests.csproj --no-restore --logger 'trx;Lo
 ## JSON驱动的地图预览入口
 
 [正式基础目录](docs/examples/base-rooms.json)包含13种模块及格子匹配模板。[CatalogJson](src/CatalogJson/README.md)将JSON文本导入，ConfiguredDungeon.Generate接收导入目录与种子，生成实际房间清单及格子覆盖映射。种子5的[实际输出](docs/examples/configured-layouts.json)为104格→90模块、4个跨层环；运行ConfiguredDungeonTests可重新导出该样例。此入口独立于旧版SeededDungeon，未接入团结素材。
+
+## 1～12个大环
+
+配置驱动入口现在默认由种子抽取1～12环。固定12环：`ConfiguredDungeon.Generate(catalog, 5u, new DungeonGenerationOptions(12, 12))`；指定范围使用minLoops/maxLoops。新模式40～392格，实际房间数由JSON模板合并决定。[6/8/12环样例](docs/examples/many-loop-layouts.json)由测试实际导出，120张分档样例全部通过。旧int预算重载保留1～4环的v0.6行为；新模式预算通过选项设置。

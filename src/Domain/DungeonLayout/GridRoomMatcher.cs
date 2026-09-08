@@ -13,10 +13,10 @@ namespace LethalDungeon.Domain.Dungeons
    internal string[] Cells=Array.Empty<string>();
    internal Dictionary<(string Inside,string Outside),string> Ports=new Dictionary<(string,string),string>();
   }
-  internal static ConfiguredDungeonResult Generate(ConfiguredRoomCatalog catalog,uint seed,int maximum)
+  internal static ConfiguredDungeonResult Generate(ConfiguredRoomCatalog catalog,uint seed,int maximum,ConfiguredGenerationPlan? request=null)
   {
    if(catalog==null)throw new ArgumentNullException(nameof(catalog));
-   if(maximum<1||maximum>100000)throw new ArgumentOutOfRangeException(nameof(maximum));
+   if(maximum<1||maximum>(request==null?100000:1000000))throw new ArgumentOutOfRangeException(nameof(maximum));
    string lastFailure="Unknown";int attempts=0;bool Spend(){if(attempts>=maximum)return false;attempts++;return true;}
    ConfiguredDungeonResult Fail(string reason)=>new ConfiguredDungeonResult(new GenerationResult(null,reason,attempts,0));
    // Coverage of all nonempty horizontal masks is checked by capabilities, never by ID.
@@ -25,11 +25,11 @@ namespace LethalDungeon.Domain.Dungeons
    if(Enumerable.Range(1,15).Any(mask=>!masks.Contains(mask)))return Fail("MissingFallback");
    var transitions=catalog.Patterns.Where(p=>p.Cells.Select(c=>c.Y).Distinct().Count()>1).ToArray();
    if(transitions.Length==0)return Fail("MissingTransition");
-   var plan=SeededDungeon.Resolve(seed);var random=new XorShiftRandom(plan.LayoutSeed);
+   var plan=SeededDungeon.Resolve(seed);int loopCount=request?.LoopCount??plan.LoopCount,targetCells=request?.TargetCells??plan.TargetRooms;string version=request?.RuleVersion??"configured-grid-v0.6";var random=new XorShiftRandom(plan.LayoutSeed);
    var ordered=catalog.Patterns.OrderBy(p=>p.Room.Id,StringComparer.Ordinal).ToArray();
    for(int variant=0;variant<10&&attempts<maximum;variant++)
    {
-    var raw=BranchLoopGenerator.Generate(random,plan.TargetRooms,plan.LoopCount,Math.Min(20000,maximum-attempts),false,new ExplorationBranchOptions(),false,true);
+    var raw=BranchLoopGenerator.Generate(random,targetCells,loopCount,Math.Min(20000,maximum-attempts),false,new ExplorationBranchOptions(),false,true);
     attempts+=raw.Layout.Attempts;if(!raw.Layout.Succeeded){lastFailure="Grid:"+raw.Layout.Failure;continue;}
     var original=raw.Layout.Manifest!;var nodes=original.Rooms.ToDictionary(r=>r.InstanceId,r=>r.Position);
     var edges=original.Connections;var adjacent=nodes.Keys.ToDictionary(id=>id,id=>edges.Where(e=>e.FromRoom==id||e.ToRoom==id).Select(e=>e.FromRoom==id?e.ToRoom:e.FromRoom).ToArray());
@@ -104,10 +104,10 @@ namespace LethalDungeon.Domain.Dungeons
     var connections=new List<DoorConnection>();
     foreach(var edge in edges){int a=owner[edge.FromRoom],b=owner[edge.ToRoom];if(a==b)continue;connections.Add(new DoorConnection(edge.Id,placements[a].InstanceId,selected[a].Ports[(edge.FromRoom,edge.ToRoom)],placements[b].InstanceId,selected[b].Ports[(edge.ToRoom,edge.FromRoom)],edge.DoorId));}
     if(!Spend())continue;
-    var map=new DungeonManifest(catalog.Geometry.Version,placements,connections,"configured-grid-v0.6");
+    var map=new DungeonManifest(catalog.Geometry.Version,placements,connections,version);
     var validation=LayoutValidator.Validate(catalog.Geometry,map);if(!validation.IsValid){lastFailure=string.Join(",",validation.Errors.Take(3));continue;}
-    if(map.Connections.Count-map.Rooms.Count+1!=plan.LoopCount)throw new InvalidOperationException("Template contraction changed cycle rank.");
-    var grid=new DungeonManifest("abstract-grid-v1",original.Rooms.Select(r=>new PlacedRoom(r.InstanceId,"cell",nodes[r.InstanceId])),edges,"configured-grid-v0.6");
+    if(map.Connections.Count-map.Rooms.Count+1!=loopCount)throw new InvalidOperationException("Template contraction changed cycle rank.");
+    var grid=new DungeonManifest("abstract-grid-v1",original.Rooms.Select(r=>new PlacedRoom(r.InstanceId,"cell",nodes[r.InstanceId])),edges,version);
     return new ConfiguredDungeonResult(new GenerationResult(map,string.Empty,attempts,variant),grid,selected.Select((c,i)=>new RoomCoverage(placements[i].InstanceId,c.Cells)),raw.Loops,raw.ExplorationBranches);
    }
    return Fail(attempts>=maximum?"BudgetExceeded":"NoTemplateLayout:"+lastFailure);

@@ -15,3 +15,5 @@ exploration-layouts.json：seed-rules-v2种子4、5的实际生成结果，包�
 spatial-layouts.json：seed-rules-v3种子4、5的实际生成清单与目录，每个大环都通过主路楼梯和坡道跨层。种子5房间底面位于0/4/8米，104房间、4环、8条保障支路、14个非入口死路。旧exploration-layouts.json保留作为v2历史平面主路结果。
 
 base-rooms.json：可导入的13模块正式配置（room-catalog-v1），含匹配格子、内部树边和socketCells映射。configured-layouts.json：从该JSON实际生成的种子5结果，包含目录、104格拓扑、90模块清单、逐实例覆盖关系和格子环/支路轨迹。计数不得混淆格子与实例。
+
+many-loop-layouts.json：配置驱动v0.7的种子5固定6、8、12环实际输出，包含Plan（范围、环数、格子预算、总预算、版本）、格子拓扑、覆盖映射和实际模块清单。12环为392格→343模块，所有模块均来自base-rooms.json。历史configured-layouts.json保持v0.6，不替换。
