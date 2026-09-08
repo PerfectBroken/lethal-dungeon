@@ -26,7 +26,7 @@ namespace LethalDungeon.Domain.Dungeons
     {
         private static readonly GridPoint[] Steps = {new GridPoint(0,0,1),new GridPoint(1,0,0),new GridPoint(0,0,-1),new GridPoint(-1,0,0)};
         private static GridPoint Add(GridPoint a,GridPoint b) => new GridPoint(a.X+b.X,0,a.Z+b.Z);
-        public static BranchLoopResult Generate(IRandomSource random,int targetRooms=40,int loopCount=2,int maxAttempts=10000,bool requireHeightChange=true,ExplorationBranchOptions? exploration=null,bool spatialMainPaths=false)
+        public static BranchLoopResult Generate(IRandomSource random,int targetRooms=40,int loopCount=2,int maxAttempts=10000,bool requireHeightChange=true,ExplorationBranchOptions? exploration=null,bool spatialMainPaths=false,bool flatGridOnly=false)
         {
             if(random==null)throw new ArgumentNullException(nameof(random));
             if(targetRooms<1||targetRooms>(exploration==null?64:128))throw new ArgumentOutOfRangeException(nameof(targetRooms));
@@ -47,13 +47,15 @@ namespace LethalDungeon.Domain.Dungeons
             BranchLoopResult Fail()=>new BranchLoopResult(new GenerationResult(null,attempts>=maxAttempts?"BudgetExceeded":"NoLayout",attempts,retries),Array.Empty<BranchLoopTrace>());
             List<GridPoint>? Walk(GridPoint fork,int length,HashSet<GridPoint> occupied)
             {
-                var path=new List<GridPoint>();var current=fork;
+                var path=new List<GridPoint>();var current=fork;var lastStep=new GridPoint(0,0,0);
                 for(int i=0;i<length;i++){
                     bool found=false;
-                    foreach(var step in Shuffle(Steps)){
+                    var directions=Shuffle(Steps);
+                    if(flatGridOnly && i>0 && i%3!=0)directions=directions.OrderByDescending(d=>d.Equals(lastStep)).ToList();
+                    foreach(var step in directions){
                         if(!Spend())return null;var next=Add(current,step);
                         if(occupied.Contains(next)||Steps.Count(d=>occupied.Contains(Add(next,d)))>1)continue;
-                        occupied.Add(next);path.Add(next);current=next;found=true;break;
+                        occupied.Add(next);path.Add(next);current=next;lastStep=step;found=true;break;
                     }
                     if(!found)return null;
                 }return path;
@@ -85,7 +87,7 @@ namespace LethalDungeon.Domain.Dungeons
                 rooms.Add(placed);cells.Add(cell,id);
                 links.Add(new DoorConnection("connection_"+suffix,parentId,socket.Id,id,opposite,"door_"+suffix));return id;
             }
-            if(exploration!=null && 1+loopCount*12+branchReserve+(requireHeightChange?2:0)>targetRooms)return Fail();
+            if(exploration!=null && 1+loopCount*(flatGridOnly?16:12)+branchReserve+(requireHeightChange?2:0)>targetRooms)return Fail();
             while(traces.Count<loopCount){
                 bool built=false;
                 // Each attempt plans two independent leaf branches and a bridge before mutating the layout.
@@ -105,11 +107,11 @@ namespace LethalDungeon.Domain.Dungeons
                     }
                     if(forks.Count==0)return Fail();
                     var fork=forks[Next(forks.Count)];occupied.Add(fork.Cell);
-                    var a=Walk(fork.Cell,4+Next(3),occupied);if(a==null){retries++;continue;}
-                    var b=Walk(fork.Cell,4+Next(3),occupied);if(b==null){retries++;continue;}
+                    var a=Walk(fork.Cell,(flatGridOnly?6:4+Next(3)),occupied);if(a==null){retries++;continue;}
+                    var b=Walk(fork.Cell,(flatGridOnly?6:4+Next(3)),occupied);if(b==null){retries++;continue;}
                     var bridge=Route(a.Last(),b.Last(),occupied);
                     int remainingLoops=loopCount-traces.Count-1;
-                    int reserve=branchReserve+(requireHeightChange?2:0)+remainingLoops*12;
+                    int reserve=branchReserve+(requireHeightChange?2:0)+remainingLoops*(flatGridOnly?16:12);
                     if(bridge==null||bridge.Count<2||rooms.Count+1+a.Count+b.Count+bridge.Count>targetRooms-reserve){retries++;continue;}
                     int placements=1+a.Count+b.Count+bridge.Count;
                     if(maxAttempts-attempts<placements+1){while(Spend()){}return Fail();}
@@ -158,6 +160,18 @@ namespace LethalDungeon.Domain.Dungeons
                 if(!built)return Fail();
             }
             if(attempts>=maxAttempts)return Fail();
+            if(flatGridOnly) {
+                var protectedIds=new HashSet<string>(branches.SelectMany(b=>b.Rooms));
+                var ringIds=new HashSet<string>(traces.SelectMany(t=>t.BranchA.Concat(t.BranchB).Concat(t.Bridge).Append(t.ForkRoom)));
+                while(rooms.Count<targetRooms) {
+                    if(!Spend())return Fail();
+                    var candidates=cells.Where(p=>p.Value!="room_000"&&!protectedIds.Contains(p.Value)).SelectMany(p=>Steps.Select(d=>(Cell:Add(p.Key,d),Parent:p.Value))).Where(p=>!cells.ContainsKey(p.Cell)).ToArray();
+                    if(candidates.Length==0)return Fail();
+                    var outside=candidates.Where(c=>!ringIds.Contains(c.Parent)).ToArray();if(outside.Length>0)candidates=outside;
+                    var choice=candidates[Next(candidates.Length)];Append(choice.Cell,choice.Parent);
+                }
+                return new BranchLoopResult(new GenerationResult(Snapshot(),string.Empty,attempts,retries),traces,branches);
+            }
             var expanded=DungeonGenerator.Generate(catalog,"entry",targetRooms,random,maxAttempts-attempts,requireHeightChange,loopCount,"junction",Snapshot(),branches.SelectMany(b=>b.Rooms),exploration==null?64:128);
             attempts+=expanded.Attempts;retries+=expanded.Backtracks;
             if(!expanded.Succeeded)return Fail();

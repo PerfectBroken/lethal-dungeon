@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="ecce0f9e-0f7e-4d2e-a049-72bfe2325a72" name="local-validation" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2026-09-08T11:55:25.9828080+09:00" queuing="2026-09-08T11:55:25.9828080+09:00" start="2026-09-08T11:55:25.6064820+09:00" finish="2026-09-08T11:55:25.9982510+09:00" />
+  <TestSettings name="default" id="bb725552-5fb2-4cda-87cd-c59d50dc0371">
+    <Deployment runDeploymentRoot="local-validation" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="18049384-f5fe-4ac4-893f-ed1ba6faf485" testId="53591b13-90e3-3c05-31a5-9c5a5cb84096" testName="RemovingOptionalLargeRoomsUsesFallback" computerName="local-machine" duration="00:00:00.0006120" startTime="2026-09-08T11:55:25.9597700+09:00" endTime="2026-09-08T11:55:25.9603820+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="18049384-f5fe-4ac4-893f-ed1ba6faf485">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : The method or operation is not implemented.</Message>
+          <StackTrace>   at LethalDungeon.CatalogJson.RoomCatalogJson.Parse(String json) in /workspace/lethal-dungeon/src/CatalogJson/RoomCatalogJson.cs:line 6
+   at LethalDungeon.Tests.ConfiguredDungeonTests.RemovingOptionalLargeRoomsUsesFallback() in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 38
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.CatalogJson.RoomCatalogJson.Parse(String json) in /workspace/lethal-dungeon/src/CatalogJson/RoomCatalogJson.cs:line 6
+   at LethalDungeon.Tests.ConfiguredDungeonTests.RemovingOptionalLargeRoomsUsesFallback() in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 38
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7c10a2aa-1df7-4172-98b5-77c538cfa292" testId="eb905191-e49e-9c8d-9b80-80d780c58974" testName="RejectsUnsupportedConfiguration(&quot;groups&quot;)" computerName="local-machine" duration="00:00:00.0003850" startTime="2026-09-08T11:55:25.9583730+09:00" endTime="2026-09-08T11:55:25.9587580+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7c10a2aa-1df7-4172-98b5-77c538cfa292">
+      <Output>
+        <ErrorInfo>
+          <Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentException&gt;
+  But was:  &lt;System.NotImplementedException: The method or operation is not implemented.
+   at LethalDungeon.CatalogJson.RoomCatalogJson.Parse(String json) in /workspace/lethal-dungeon/src/CatalogJson/RoomCatalogJson.cs:line 6
+   at LethalDungeon.Tests.ConfiguredDungeonTests.&lt;&gt;c__DisplayClass3_0.&lt;RejectsUnsupportedConfiguration&gt;b__0() in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 20
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, Action code, String message, Object[] args)&gt;
+</Message>
+          <StackTrace>   at LethalDungeon.Tests.ConfiguredDungeonTests.RejectsUnsupportedConfiguration(String kind) in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 20
+   at InvokeStub_ConfiguredDungeonTests.RejectsUnsupportedConfiguration(Object, Span`1)
+
+1)    at LethalDungeon.Tests.ConfiguredDungeonTests.RejectsUnsupportedConfiguration(String kind) in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 20
+   at InvokeStub_ConfiguredDungeonTests.RejectsUnsupportedConfiguration(Object, Span`1)
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3941b78f-6a66-43f4-bfc4-ae218b253bb1" testId="df1adc4a-5112-80b3-3175-27da094ce1bb" testName="RejectsUnsupportedConfiguration(&quot;template&quot;)" computerName="local-machine" duration="00:00:00.0004120" startTime="2026-09-08T11:55:25.9571530+09:00" endTime="2026-09-08T11:55:25.9575650+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3941b78f-6a66-43f4-bfc4-ae218b253bb1">
+      <Output>
+        <ErrorInfo>
+          <Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentException&gt;
+  But was:  &lt;System.NotImplementedException: The method or operation is not implemented.
+   at LethalDungeon.CatalogJson.RoomCatalogJson.Parse(String json) in /workspace/lethal-dungeon/src/CatalogJson/RoomCatalogJson.cs:line 6
+   at LethalDungeon.Tests.ConfiguredDungeonTests.&lt;&gt;c__DisplayClass3_0.&lt;RejectsUnsupportedConfiguration&gt;b__0() in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 20
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, Action code, String message, Object[] args)&gt;
+</Message>
+          <StackTrace>   at LethalDungeon.Tests.ConfiguredDungeonTests.RejectsUnsupportedConfiguration(String kind) in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 20
+   at InvokeStub_ConfiguredDungeonTests.RejectsUnsupportedConfiguration(Object, Span`1)
+
+1)    at LethalDungeon.Tests.ConfiguredDungeonTests.RejectsUnsupportedConfiguration(String kind) in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 20
+   at InvokeStub_ConfiguredDungeonTests.RejectsUnsupportedConfiguration(Object, Span`1)
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0d7a74cd-e686-4404-a207-327fae894c62" testId="b6c75277-113b-49f5-3a92-5d0dde2537fa" testName="SameJsonAndSeedReproduce" computerName="local-machine" duration="00:00:00.0001670" startTime="2026-09-08T11:55:25.9603860+09:00" endTime="2026-09-08T11:55:25.9605530+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0d7a74cd-e686-4404-a207-327fae894c62">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : The method or operation is not implemented.</Message>
+          <StackTrace>   at LethalDungeon.CatalogJson.RoomCatalogJson.Parse(String json) in /workspace/lethal-dungeon/src/CatalogJson/RoomCatalogJson.cs:line 6
+   at LethalDungeon.Tests.ConfiguredDungeonTests.SameJsonAndSeedReproduce() in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 41
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.CatalogJson.RoomCatalogJson.Parse(String json) in /workspace/lethal-dungeon/src/CatalogJson/RoomCatalogJson.cs:line 6
+   at LethalDungeon.Tests.ConfiguredDungeonTests.SameJsonAndSeedReproduce() in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 41
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="31d01f5b-f846-4983-9861-0d4f78441e04" testId="dc31b6a9-4a3f-75e1-ef95-20ea12271da1" testName="RejectsUnsupportedConfiguration(&quot;unit&quot;)" computerName="local-machine" duration="00:00:00.0003840" startTime="2026-09-08T11:55:25.9587610+09:00" endTime="2026-09-08T11:55:25.9591440+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="31d01f5b-f846-4983-9861-0d4f78441e04">
+      <Output>
+        <ErrorInfo>
+          <Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentException&gt;
+  But was:  &lt;System.NotImplementedException: The method or operation is not implemented.
+   at LethalDungeon.CatalogJson.RoomCatalogJson.Parse(String json) in /workspace/lethal-dungeon/src/CatalogJson/RoomCatalogJson.cs:line 6
+   at LethalDungeon.Tests.ConfiguredDungeonTests.&lt;&gt;c__DisplayClass3_0.&lt;RejectsUnsupportedConfiguration&gt;b__0() in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 20
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, Action code, String message, Object[] args)&gt;
+</Message>
+          <StackTrace>   at LethalDungeon.Tests.ConfiguredDungeonTests.RejectsUnsupportedConfiguration(String kind) in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 20
+   at InvokeStub_ConfiguredDungeonTests.RejectsUnsupportedConfiguration(Object, Span`1)
+
+1)    at LethalDungeon.Tests.ConfiguredDungeonTests.RejectsUnsupportedConfiguration(String kind) in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 20
+   at InvokeStub_ConfiguredDungeonTests.RejectsUnsupportedConfiguration(Object, Span`1)
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="33408264-7efa-4b40-be9f-16ce2af2d5f5" testId="7838d732-1a91-7331-12b8-a10413aa1bd7" testName="ImportsThirteenConfiguredModules" computerName="local-machine" duration="00:00:00.0003080" startTime="2026-09-08T11:55:25.9401500+09:00" endTime="2026-09-08T11:55:25.9404570+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="33408264-7efa-4b40-be9f-16ce2af2d5f5">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : The method or operation is not implemented.</Message>
+          <StackTrace>   at LethalDungeon.CatalogJson.RoomCatalogJson.Parse(String json) in /workspace/lethal-dungeon/src/CatalogJson/RoomCatalogJson.cs:line 6
+   at LethalDungeon.Tests.ConfiguredDungeonTests.ImportsThirteenConfiguredModules() in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 16
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.CatalogJson.RoomCatalogJson.Parse(String json) in /workspace/lethal-dungeon/src/CatalogJson/RoomCatalogJson.cs:line 6
+   at LethalDungeon.Tests.ConfiguredDungeonTests.ImportsThirteenConfiguredModules() in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 16
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="679f4263-cdcd-44f7-b673-97e251c04ffd" testId="b0d320a5-5d6e-a3bb-ea4f-857bbb30f6c6" testName="RejectsUnsupportedConfiguration(&quot;rotation&quot;)" computerName="local-machine" duration="00:00:00.0033950" startTime="2026-09-08T11:55:25.9532290+09:00" endTime="2026-09-08T11:55:25.9566240+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="679f4263-cdcd-44f7-b673-97e251c04ffd">
+      <Output>
+        <ErrorInfo>
+          <Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentException&gt;
+  But was:  &lt;System.NotImplementedException: The method or operation is not implemented.
+   at LethalDungeon.CatalogJson.RoomCatalogJson.Parse(String json) in /workspace/lethal-dungeon/src/CatalogJson/RoomCatalogJson.cs:line 6
+   at LethalDungeon.Tests.ConfiguredDungeonTests.&lt;&gt;c__DisplayClass3_0.&lt;RejectsUnsupportedConfiguration&gt;b__0() in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 20
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, Action code, String message, Object[] args)&gt;
+</Message>
+          <StackTrace>   at LethalDungeon.Tests.ConfiguredDungeonTests.RejectsUnsupportedConfiguration(String kind) in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 20
+   at InvokeStub_ConfiguredDungeonTests.RejectsUnsupportedConfiguration(Object, Span`1)
+
+1)    at LethalDungeon.Tests.ConfiguredDungeonTests.RejectsUnsupportedConfiguration(String kind) in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 20
+   at InvokeStub_ConfiguredDungeonTests.RejectsUnsupportedConfiguration(Object, Span`1)
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6c3dc47e-df48-4516-b76a-ce9829d72e02" testId="b9491dfc-b0b3-3378-3324-6b3a07e0d230" testName="BudgetCannotReturnPartialMap" computerName="local-machine" duration="00:00:00.0071710" startTime="2026-09-08T11:55:25.9315390+09:00" endTime="2026-09-08T11:55:25.9386800+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6c3dc47e-df48-4516-b76a-ce9829d72e02">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : The method or operation is not implemented.</Message>
+          <StackTrace>   at LethalDungeon.CatalogJson.RoomCatalogJson.Parse(String json) in /workspace/lethal-dungeon/src/CatalogJson/RoomCatalogJson.cs:line 6
+   at LethalDungeon.Tests.ConfiguredDungeonTests.BudgetCannotReturnPartialMap() in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 40
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.CatalogJson.RoomCatalogJson.Parse(String json) in /workspace/lethal-dungeon/src/CatalogJson/RoomCatalogJson.cs:line 6
+   at LethalDungeon.Tests.ConfiguredDungeonTests.BudgetCannotReturnPartialMap() in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 40
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="387aa0a0-1bfa-4c1b-b49d-9bb681da81b3" testId="c0f119d9-e64e-fb27-6591-5c078db57746" testName="RejectsUnsupportedConfiguration(&quot;required&quot;)" computerName="local-machine" duration="00:00:00.0004020" startTime="2026-09-08T11:55:25.9579680+09:00" endTime="2026-09-08T11:55:25.9583700+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="387aa0a0-1bfa-4c1b-b49d-9bb681da81b3">
+      <Output>
+        <ErrorInfo>
+          <Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentException&gt;
+  But was:  &lt;System.NotImplementedException: The method or operation is not implemented.
+   at LethalDungeon.CatalogJson.RoomCatalogJson.Parse(String json) in /workspace/lethal-dungeon/src/CatalogJson/RoomCatalogJson.cs:line 6
+   at LethalDungeon.Tests.ConfiguredDungeonTests.&lt;&gt;c__DisplayClass3_0.&lt;RejectsUnsupportedConfiguration&gt;b__0() in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 20
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, Action code, String message, Object[] args)&gt;
+</Message>
+          <StackTrace>   at LethalDungeon.Tests.ConfiguredDungeonTests.RejectsUnsupportedConfiguration(String kind) in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 20
+   at InvokeStub_ConfiguredDungeonTests.RejectsUnsupportedConfiguration(Object, Span`1)
+
+1)    at LethalDungeon.Tests.ConfiguredDungeonTests.RejectsUnsupportedConfiguration(String kind) in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 20
+   at InvokeStub_ConfiguredDungeonTests.RejectsUnsupportedConfiguration(Object, Span`1)
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ab3ceac9-3fc7-4108-bedb-2ea38a9bd184" testId="f23a265c-e9d7-f506-ca50-9c460ccadbf7" testName="ComplexTemplatesAndLSlopesAreUsed" computerName="local-machine" duration="00:00:00.0003990" startTime="2026-09-08T11:55:25.9393570+09:00" endTime="2026-09-08T11:55:25.9397560+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ab3ceac9-3fc7-4108-bedb-2ea38a9bd184">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : The method or operation is not implemented.</Message>
+          <StackTrace>   at LethalDungeon.CatalogJson.RoomCatalogJson.Parse(String json) in /workspace/lethal-dungeon/src/CatalogJson/RoomCatalogJson.cs:line 6
+   at LethalDungeon.Tests.ConfiguredDungeonTests.ComplexTemplatesAndLSlopesAreUsed() in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 37
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.CatalogJson.RoomCatalogJson.Parse(String json) in /workspace/lethal-dungeon/src/CatalogJson/RoomCatalogJson.cs:line 6
+   at LethalDungeon.Tests.ConfiguredDungeonTests.ComplexTemplatesAndLSlopesAreUsed() in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 37
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6d289cd8-06e0-4a91-a1b9-4ff970b5eb9d" testId="d651a633-a9ed-011a-76a6-72b89ac0aaf3" testName="MissingFallbackFailsWithoutHiddenRooms" computerName="local-machine" duration="00:00:00.0008460" startTime="2026-09-08T11:55:25.9419890+09:00" endTime="2026-09-08T11:55:25.9428350+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6d289cd8-06e0-4a91-a1b9-4ff970b5eb9d">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : The method or operation is not implemented.</Message>
+          <StackTrace>   at LethalDungeon.CatalogJson.RoomCatalogJson.Parse(String json) in /workspace/lethal-dungeon/src/CatalogJson/RoomCatalogJson.cs:line 6
+   at LethalDungeon.Tests.ConfiguredDungeonTests.MissingFallbackFailsWithoutHiddenRooms() in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 39
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.CatalogJson.RoomCatalogJson.Parse(String json) in /workspace/lethal-dungeon/src/CatalogJson/RoomCatalogJson.cs:line 6
+   at LethalDungeon.Tests.ConfiguredDungeonTests.MissingFallbackFailsWithoutHiddenRooms() in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 39
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7f2fc2c9-2301-440a-9715-ce1a58b89258" testId="06caf5b0-778a-8911-ff9e-29db2f397ce3" testName="RejectsDuplicateJsonKeys" computerName="local-machine" duration="00:00:00.0094000" startTime="2026-09-08T11:55:25.9428390+09:00" endTime="2026-09-08T11:55:25.9522380+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7f2fc2c9-2301-440a-9715-ce1a58b89258">
+      <Output>
+        <ErrorInfo>
+          <Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentException&gt;
+  But was:  &lt;System.NotImplementedException: The method or operation is not implemented.
+   at LethalDungeon.CatalogJson.RoomCatalogJson.Parse(String json) in /workspace/lethal-dungeon/src/CatalogJson/RoomCatalogJson.cs:line 6
+   at LethalDungeon.Tests.ConfiguredDungeonTests.&lt;&gt;c.&lt;RejectsDuplicateJsonKeys&gt;b__4_0() in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 22
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, Action code, String message, Object[] args)&gt;
+</Message>
+          <StackTrace>   at LethalDungeon.Tests.ConfiguredDungeonTests.RejectsDuplicateJsonKeys() in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 22
+
+1)    at LethalDungeon.Tests.ConfiguredDungeonTests.RejectsDuplicateJsonKeys() in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 22
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d093bb47-cfe2-4725-bf95-f0274b866099" testId="330728c3-b04e-d37d-4834-fb76faa248cc" testName="HundredConfiguredSeeds" computerName="local-machine" duration="00:00:00.0003800" startTime="2026-09-08T11:55:25.9397660+09:00" endTime="2026-09-08T11:55:25.9401460+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d093bb47-cfe2-4725-bf95-f0274b866099">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : The method or operation is not implemented.</Message>
+          <StackTrace>   at LethalDungeon.CatalogJson.RoomCatalogJson.Parse(String json) in /workspace/lethal-dungeon/src/CatalogJson/RoomCatalogJson.cs:line 6
+   at LethalDungeon.Tests.ConfiguredDungeonTests.HundredConfiguredSeeds() in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 42
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.CatalogJson.RoomCatalogJson.Parse(String json) in /workspace/lethal-dungeon/src/CatalogJson/RoomCatalogJson.cs:line 6
+   at LethalDungeon.Tests.ConfiguredDungeonTests.HundredConfiguredSeeds() in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 42
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="11670759-edbd-4fd0-bce2-907d40ec67cf" testId="7b11963f-38a4-9ea6-f77e-b766b70b5995" testName="JsonNamesDriveActualOutput" computerName="local-machine" duration="00:00:00.0015230" startTime="2026-09-08T11:55:25.9404610+09:00" endTime="2026-09-08T11:55:25.9419830+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="11670759-edbd-4fd0-bce2-907d40ec67cf">
+      <Output>
+        <ErrorInfo>
+          <Message>System.NotImplementedException : The method or operation is not implemented.</Message>
+          <StackTrace>   at LethalDungeon.CatalogJson.RoomCatalogJson.Parse(String json) in /workspace/lethal-dungeon/src/CatalogJson/RoomCatalogJson.cs:line 6
+   at LethalDungeon.Tests.ConfiguredDungeonTests.JsonNamesDriveActualOutput() in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 36
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.CatalogJson.RoomCatalogJson.Parse(String json) in /workspace/lethal-dungeon/src/CatalogJson/RoomCatalogJson.cs:line 6
+   at LethalDungeon.Tests.ConfiguredDungeonTests.JsonNamesDriveActualOutput() in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 36
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4c2f27c9-b6a9-44ec-b69b-b87dbc9182d6" testId="78af7614-a137-b31d-85f6-0187c5e43df4" testName="RejectsUnsupportedConfiguration(&quot;resource&quot;)" computerName="local-machine" duration="00:00:00.0003970" startTime="2026-09-08T11:55:25.9575680+09:00" endTime="2026-09-08T11:55:25.9579650+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4c2f27c9-b6a9-44ec-b69b-b87dbc9182d6">
+      <Output>
+        <ErrorInfo>
+          <Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentException&gt;
+  But was:  &lt;System.NotImplementedException: The method or operation is not implemented.
+   at LethalDungeon.CatalogJson.RoomCatalogJson.Parse(String json) in /workspace/lethal-dungeon/src/CatalogJson/RoomCatalogJson.cs:line 6
+   at LethalDungeon.Tests.ConfiguredDungeonTests.&lt;&gt;c__DisplayClass3_0.&lt;RejectsUnsupportedConfiguration&gt;b__0() in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 20
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, Action code, String message, Object[] args)&gt;
+</Message>
+          <StackTrace>   at LethalDungeon.Tests.ConfiguredDungeonTests.RejectsUnsupportedConfiguration(String kind) in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 20
+   at InvokeStub_ConfiguredDungeonTests.RejectsUnsupportedConfiguration(Object, Span`1)
+
+1)    at LethalDungeon.Tests.ConfiguredDungeonTests.RejectsUnsupportedConfiguration(String kind) in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 20
+   at InvokeStub_ConfiguredDungeonTests.RejectsUnsupportedConfiguration(Object, Span`1)
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="caee98f0-d293-49e0-9bb0-ceb13c9e7a7a" testId="c210f48c-3a76-c552-319b-851432af8aea" testName="RejectsUnsupportedConfiguration(&quot;version&quot;)" computerName="local-machine" duration="00:00:00.0008880" startTime="2026-09-08T11:55:25.9523030+09:00" endTime="2026-09-08T11:55:25.9531900+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="caee98f0-d293-49e0-9bb0-ceb13c9e7a7a">
+      <Output>
+        <ErrorInfo>
+          <Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentException&gt;
+  But was:  &lt;System.NotImplementedException: The method or operation is not implemented.
+   at LethalDungeon.CatalogJson.RoomCatalogJson.Parse(String json) in /workspace/lethal-dungeon/src/CatalogJson/RoomCatalogJson.cs:line 6
+   at LethalDungeon.Tests.ConfiguredDungeonTests.&lt;&gt;c__DisplayClass3_0.&lt;RejectsUnsupportedConfiguration&gt;b__0() in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 20
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, Action code, String message, Object[] args)&gt;
+</Message>
+          <StackTrace>   at LethalDungeon.Tests.ConfiguredDungeonTests.RejectsUnsupportedConfiguration(String kind) in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 20
+
+1)    at LethalDungeon.Tests.ConfiguredDungeonTests.RejectsUnsupportedConfiguration(String kind) in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 20
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="fb5ce59a-0293-4895-8be3-44ff46833467" testId="48102cfa-169e-8ae7-7c60-60d270c91635" testName="RejectsUnsupportedConfiguration(&quot;unknown&quot;)" computerName="local-machine" duration="00:00:00.0005130" startTime="2026-09-08T11:55:25.9566350+09:00" endTime="2026-09-08T11:55:25.9571480+09:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fb5ce59a-0293-4895-8be3-44ff46833467">
+      <Output>
+        <ErrorInfo>
+          <Message>  Assert.That(caughtException, expression)
+  Expected: &lt;System.ArgumentException&gt;
+  But was:  &lt;System.NotImplementedException: The method or operation is not implemented.
+   at LethalDungeon.CatalogJson.RoomCatalogJson.Parse(String json) in /workspace/lethal-dungeon/src/CatalogJson/RoomCatalogJson.cs:line 6
+   at LethalDungeon.Tests.ConfiguredDungeonTests.&lt;&gt;c__DisplayClass3_0.&lt;RejectsUnsupportedConfiguration&gt;b__0() in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 20
+   at NUnit.Framework.Assert.Throws(IResolveConstraint expression, Action code, String message, Object[] args)&gt;
+</Message>
+          <StackTrace>   at LethalDungeon.Tests.ConfiguredDungeonTests.RejectsUnsupportedConfiguration(String kind) in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 20
+   at InvokeStub_ConfiguredDungeonTests.RejectsUnsupportedConfiguration(Object, Span`1)
+
+1)    at LethalDungeon.Tests.ConfiguredDungeonTests.RejectsUnsupportedConfiguration(String kind) in /workspace/lethal-dungeon/tests/Domain.Tests/ConfiguredDungeonTests.cs:line 20
+   at InvokeStub_ConfiguredDungeonTests.RejectsUnsupportedConfiguration(Object, Span`1)
+
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="RejectsUnsupportedConfiguration(&quot;required&quot;)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="c0f119d9-e64e-fb27-6591-5c078db57746">
+      <Execution id="387aa0a0-1bfa-4c1b-b49d-9bb681da81b3" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.ConfiguredDungeonTests" name="RejectsUnsupportedConfiguration(&quot;required&quot;)" />
+    </UnitTest>
+    <UnitTest name="ImportsThirteenConfiguredModules" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="7838d732-1a91-7331-12b8-a10413aa1bd7">
+      <Execution id="33408264-7efa-4b40-be9f-16ce2af2d5f5" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.ConfiguredDungeonTests" name="ImportsThirteenConfiguredModules" />
+    </UnitTest>
+    <UnitTest name="RejectsUnsupportedConfiguration(&quot;groups&quot;)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="eb905191-e49e-9c8d-9b80-80d780c58974">
+      <Execution id="7c10a2aa-1df7-4172-98b5-77c538cfa292" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.ConfiguredDungeonTests" name="RejectsUnsupportedConfiguration(&quot;groups&quot;)" />
+    </UnitTest>
+    <UnitTest name="RemovingOptionalLargeRoomsUsesFallback" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="53591b13-90e3-3c05-31a5-9c5a5cb84096">
+      <Execution id="18049384-f5fe-4ac4-893f-ed1ba6faf485" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.ConfiguredDungeonTests" name="RemovingOptionalLargeRoomsUsesFallback" />
+    </UnitTest>
+    <UnitTest name="RejectsUnsupportedConfiguration(&quot;unknown&quot;)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="48102cfa-169e-8ae7-7c60-60d270c91635">
+      <Execution id="fb5ce59a-0293-4895-8be3-44ff46833467" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.ConfiguredDungeonTests" name="RejectsUnsupportedConfiguration(&quot;unknown&quot;)" />
+    </UnitTest>
+    <UnitTest name="RejectsUnsupportedConfiguration(&quot;unit&quot;)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="dc31b6a9-4a3f-75e1-ef95-20ea12271da1">
+      <Execution id="31d01f5b-f846-4983-9861-0d4f78441e04" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.ConfiguredDungeonTests" name="RejectsUnsupportedConfiguration(&quot;unit&quot;)" />
+    </UnitTest>
+    <UnitTest name="ComplexTemplatesAndLSlopesAreUsed" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="f23a265c-e9d7-f506-ca50-9c460ccadbf7">
+      <Execution id="ab3ceac9-3fc7-4108-bedb-2ea38a9bd184" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.ConfiguredDungeonTests" name="ComplexTemplatesAndLSlopesAreUsed" />
+    </UnitTest>
+    <UnitTest name="SameJsonAndSeedReproduce" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="b6c75277-113b-49f5-3a92-5d0dde2537fa">
+      <Execution id="0d7a74cd-e686-4404-a207-327fae894c62" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.ConfiguredDungeonTests" name="SameJsonAndSeedReproduce" />
+    </UnitTest>
+    <UnitTest name="RejectsDuplicateJsonKeys" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="06caf5b0-778a-8911-ff9e-29db2f397ce3">
+      <Execution id="7f2fc2c9-2301-440a-9715-ce1a58b89258" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.ConfiguredDungeonTests" name="RejectsDuplicateJsonKeys" />
+    </UnitTest>
+    <UnitTest name="RejectsUnsupportedConfiguration(&quot;version&quot;)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="c210f48c-3a76-c552-319b-851432af8aea">
+      <Execution id="caee98f0-d293-49e0-9bb0-ceb13c9e7a7a" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.ConfiguredDungeonTests" name="RejectsUnsupportedConfiguration(&quot;version&quot;)" />
+    </UnitTest>
+    <UnitTest name="BudgetCannotReturnPartialMap" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="b9491dfc-b0b3-3378-3324-6b3a07e0d230">
+      <Execution id="6c3dc47e-df48-4516-b76a-ce9829d72e02" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.ConfiguredDungeonTests" name="BudgetCannotReturnPartialMap" />
+    </UnitTest>
+    <UnitTest name="RejectsUnsupportedConfiguration(&quot;rotation&quot;)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="b0d320a5-5d6e-a3bb-ea4f-857bbb30f6c6">
+      <Execution id="679f4263-cdcd-44f7-b673-97e251c04ffd" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.ConfiguredDungeonTests" name="RejectsUnsupportedConfiguration(&quot;rotation&quot;)" />
+    </UnitTest>
+    <UnitTest name="RejectsUnsupportedConfiguration(&quot;template&quot;)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="df1adc4a-5112-80b3-3175-27da094ce1bb">
+      <Execution id="3941b78f-6a66-43f4-bfc4-ae218b253bb1" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.ConfiguredDungeonTests" name="RejectsUnsupportedConfiguration(&quot;template&quot;)" />
+    </UnitTest>
+    <UnitTest name="MissingFallbackFailsWithoutHiddenRooms" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="d651a633-a9ed-011a-76a6-72b89ac0aaf3">
+      <Execution id="6d289cd8-06e0-4a91-a1b9-4ff970b5eb9d" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.ConfiguredDungeonTests" name="MissingFallbackFailsWithoutHiddenRooms" />
+    </UnitTest>
+    <UnitTest name="JsonNamesDriveActualOutput" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="7b11963f-38a4-9ea6-f77e-b766b70b5995">
+      <Execution id="11670759-edbd-4fd0-bce2-907d40ec67cf" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.ConfiguredDungeonTests" name="JsonNamesDriveActualOutput" />
+    </UnitTest>
+    <UnitTest name="HundredConfiguredSeeds" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="330728c3-b04e-d37d-4834-fb76faa248cc">
+      <Execution id="d093bb47-cfe2-4725-bf95-f0274b866099" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.ConfiguredDungeonTests" name="HundredConfiguredSeeds" />
+    </UnitTest>
+    <UnitTest name="RejectsUnsupportedConfiguration(&quot;resource&quot;)" storage="/workspace/lethal-dungeon/tests/domain.tests/bin/release/net10.0/domain.tests.dll" id="78af7614-a137-b31d-85f6-0187c5e43df4">
+      <Execution id="4c2f27c9-b6a9-44ec-b69b-b87dbc9182d6" />
+      <TestMethod codeBase="/workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll" adapterTypeName="executor://nunit3testexecutor/" className="LethalDungeon.Tests.ConfiguredDungeonTests" name="RejectsUnsupportedConfiguration(&quot;resource&quot;)" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="53591b13-90e3-3c05-31a5-9c5a5cb84096" executionId="18049384-f5fe-4ac4-893f-ed1ba6faf485" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="eb905191-e49e-9c8d-9b80-80d780c58974" executionId="7c10a2aa-1df7-4172-98b5-77c538cfa292" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="df1adc4a-5112-80b3-3175-27da094ce1bb" executionId="3941b78f-6a66-43f4-bfc4-ae218b253bb1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b6c75277-113b-49f5-3a92-5d0dde2537fa" executionId="0d7a74cd-e686-4404-a207-327fae894c62" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dc31b6a9-4a3f-75e1-ef95-20ea12271da1" executionId="31d01f5b-f846-4983-9861-0d4f78441e04" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7838d732-1a91-7331-12b8-a10413aa1bd7" executionId="33408264-7efa-4b40-be9f-16ce2af2d5f5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b0d320a5-5d6e-a3bb-ea4f-857bbb30f6c6" executionId="679f4263-cdcd-44f7-b673-97e251c04ffd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b9491dfc-b0b3-3378-3324-6b3a07e0d230" executionId="6c3dc47e-df48-4516-b76a-ce9829d72e02" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c0f119d9-e64e-fb27-6591-5c078db57746" executionId="387aa0a0-1bfa-4c1b-b49d-9bb681da81b3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f23a265c-e9d7-f506-ca50-9c460ccadbf7" executionId="ab3ceac9-3fc7-4108-bedb-2ea38a9bd184" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d651a633-a9ed-011a-76a6-72b89ac0aaf3" executionId="6d289cd8-06e0-4a91-a1b9-4ff970b5eb9d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="06caf5b0-778a-8911-ff9e-29db2f397ce3" executionId="7f2fc2c9-2301-440a-9715-ce1a58b89258" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="330728c3-b04e-d37d-4834-fb76faa248cc" executionId="d093bb47-cfe2-4725-bf95-f0274b866099" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7b11963f-38a4-9ea6-f77e-b766b70b5995" executionId="11670759-edbd-4fd0-bce2-907d40ec67cf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="78af7614-a137-b31d-85f6-0187c5e43df4" executionId="4c2f27c9-b6a9-44ec-b69b-b87dbc9182d6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c210f48c-3a76-c552-319b-851432af8aea" executionId="caee98f0-d293-49e0-9bb0-ceb13c9e7a7a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="48102cfa-169e-8ae7-7c60-60d270c91635" executionId="fb5ce59a-0293-4895-8be3-44ff46833467" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="17" executed="17" passed="0" failed="17" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 6.3.0.0: Test execution started
+Running selected tests in /workspace/lethal-dungeon/tests/Domain.Tests/bin/Release/net10.0/Domain.Tests.dll
+   NUnit3TestExecutor discovered 17 of 17 NUnit test cases using Current Discovery mode, Non-Explicit run
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

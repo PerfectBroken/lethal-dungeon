@@ -1,6 +1,6 @@
 # 《致命地下城》规范与测试工程
 
-当前进度：背包负重倍率、探险时钟与三维模块布局核心已完成Green实现。150个规则测试和14个规范/配置检查全部通过，0跳过；原始Red记录保留。CI已上传，云端运行被GitHub账号账单锁阻止；团结验证工程已准备，编辑器与真机尚未运行。
+当前进度：背包负重倍率、探险时钟与三维模块布局核心已完成Green实现。167个规则测试和14个规范/配置检查全部通过，0跳过；原始Red记录保留。CI已上传，云端运行被GitHub账号账单锁阻止；团结验证工程已准备，编辑器与真机尚未运行。
 
 ## 规范与模块
 
@@ -45,3 +45,7 @@ dotnet test tests/Domain.Tests/Domain.Tests.csproj --no-restore --logger 'trx;Lo
 用户已授权按顺序推进基础规则、CI、团结/微信验证和灰盒闭环。财宝规则等待用户设计；世界绝对移动速度、人数屏障异常、撤离读条、经济结算、怪物及战斗细节仍需在对应模块前明确。12分钟到18:00，18分钟到午夜；不得改成12分钟强制结束。
 
 已准备团结验证工程与微信SDK配置，尚未验证引擎导入或真机。目标仓库为 https://github.com/PerfectBroken/lethal-dungeon 。CI已配置并触发，但GitHub账号账单锁阻止job启动，尚无远程测试通过结果。
+
+## JSON驱动的地图预览入口
+
+[正式基础目录](docs/examples/base-rooms.json)包含13种模块及格子匹配模板。[CatalogJson](src/CatalogJson/README.md)将JSON文本导入，ConfiguredDungeon.Generate接收导入目录与种子，生成实际房间清单及格子覆盖映射。种子5的[实际输出](docs/examples/configured-layouts.json)为104格→90模块、4个跨层环；运行ConfiguredDungeonTests可重新导出该样例。此入口独立于旧版SeededDungeon，未接入团结素材。

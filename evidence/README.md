@@ -102,3 +102,12 @@ public-red是实际Red报告的脱敏副本：本机工程绝对路径替换为`
 - 100种子成功，逐环至少两层各2间普通房、楼梯/坡道两端实际接通且高差4米、至少一条高层保障支路；长环与无短路、空间、全图连通通过。最大40873步，预算100000。示例docs/examples/spatial-layouts.json。
 - Release全量150规则+14规范检查通过，0跳过，退出码0；public-spatial/domain-green.trx、architecture-green.trx。执行dotnet test LethalDungeon.sln --no-restore -c Release --logger trx --results-directory <本地报告目录>。报告仅脱敏个人路径及主机标识。
 - 预览60种离线脚本状态检查通过：两种宽度、全图/单环、真实比例/高度×3/俯视、支路显隐；未进行浏览器视觉实测。没有绕过此前浏览器安全策略；引擎台阶、坡面通行、导航、微信真机及云端CI状态不变。
+
+## JSON目录与格子匹配（2026-09-08）
+
+- MAP-028～032与JSON-001～003规范、API和17个测试先行。修正编译桩缺少using及NUnit委托重载歧义后，17例全部因NotImplementedException有效Red；编译失败不算Red。报告public-configured/configured-red.trx。
+- 实现独立.NET 10 JSON适配器，Domain仍为netstandard2.1/C#9且仅标准库。JSON字段、版本、几何、树模板和接口严格验证；生成通过入参目录匹配，不引用硬编码素材ID。
+- 初始批量失败于升降候选不足及格子预算耗尽，保持测试断言和100000预算不变，调整新模式为每侧6格、连续三格方向偏好、优先环外填充、仅在对应环枚举升降候选，并最多10次格子重试。旧版入口保持原行为。诊断失败报告configured-diagnostic.trx保留。
+- 100种子全部通过，最大18222次尝试；种子5真实输出104格、90实例、93门、4跨层环、8保障支路、9非入口死路，4个L型坡道/1个平层L房。检查每格唯一覆盖、合并前后外连边相符、所有必接门、旋转、连通、三维几何、环数与支路末端。
+- Release全量167规则/配置+14规范检查通过，0跳过。public-configured/domain-green.trx、architecture-green.trx；命令dotnet test LethalDungeon.sln --no-restore -c Release --logger trx --results-directory <本地报告目录>。报告仅脱敏个人路径和机器标识。新增项目从既有本地缓存源还原，SDK和依赖保持固定。
+- 预览按真实清单与覆盖映射绘制，60种离线脚本状态检查通过，不是浏览器视觉实测；未绕过此前安全策略。真实预制件、团结导航、网络和微信尚未验证。

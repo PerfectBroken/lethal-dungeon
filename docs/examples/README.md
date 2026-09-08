@@ -13,3 +13,5 @@ branch-loop-layouts.json为最新长支线模式：6份40房间、2大环样例�
 exploration-layouts.json：seed-rules-v2种子4、5的实际生成结果，包含目录、Plan、最终Manifest、长环轨迹和ExplorationBranches。来自100种子测试导出，均为104房间/4环/8条保障支路；额外填充可能产生更多死路。
 
 spatial-layouts.json：seed-rules-v3种子4、5的实际生成清单与目录，每个大环都通过主路楼梯和坡道跨层。种子5房间底面位于0/4/8米，104房间、4环、8条保障支路、14个非入口死路。旧exploration-layouts.json保留作为v2历史平面主路结果。
+
+base-rooms.json：可导入的13模块正式配置（room-catalog-v1），含匹配格子、内部树边和socketCells映射。configured-layouts.json：从该JSON实际生成的种子5结果，包含目录、104格拓扑、90模块清单、逐实例覆盖关系和格子环/支路轨迹。计数不得混淆格子与实例。

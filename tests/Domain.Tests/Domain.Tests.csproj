@@ -13,5 +13,7 @@
     <PackageReference Include="NUnit" Version="4.6.1" />
     <PackageReference Include="NUnit3TestAdapter" Version="6.3.0" />
     <ProjectReference Include="../../src/Domain/Domain.csproj" />
+    <ProjectReference Include="../../src/CatalogJson/CatalogJson.csproj" />
+    <None Include="../../docs/examples/base-rooms.json" Link="base-rooms.json" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 </Project>

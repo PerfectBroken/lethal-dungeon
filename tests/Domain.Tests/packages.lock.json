@@ -98,6 +98,12 @@
           "Microsoft.TestPlatform.ObjectModel": "18.9.0"
         }
       },
+      "catalogjson": {
+        "type": "Project",
+        "dependencies": {
+          "LethalDungeon.Domain": "[1.0.0, )"
+        }
+      },
       "LethalDungeon.Domain": {
         "type": "Project"
       }
