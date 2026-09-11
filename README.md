@@ -53,3 +53,9 @@ dotnet test tests/Domain.Tests/Domain.Tests.csproj --no-restore --logger 'trx;Lo
 ## 1～12个大环
 
 配置驱动入口现在默认由种子抽取1～12环。固定12环：`ConfiguredDungeon.Generate(catalog, 5u, new DungeonGenerationOptions(12, 12))`；指定范围使用minLoops/maxLoops。新模式40～392格，实际房间数由JSON模板合并决定。[6/8/12环样例](docs/examples/many-loop-layouts.json)由测试实际导出，120张分档样例全部通过。旧int预算重载保留1～4环的v0.6行为；新模式预算通过选项设置。
+
+## 房间美术资产
+
+已验收的尽头房、直通房、左转房已正式归档至 [assets/rooms](assets/rooms/README.md)，以逻辑房型/美术变体组织一对多关系。[registry.json](assets/rooms/registry.json) 管理关联、目录版本及模型哈希。预览和测试见 [统一预览工具](tools/room-preview/README.md)。
+
+大型模型、纹理和图像使用 Git LFS；克隆后需 `git lfs install` 和 `git lfs pull`，随后 `npm ci`。源代码与规范由普通Git管理。仓库外旧预览目录只是历史副本。

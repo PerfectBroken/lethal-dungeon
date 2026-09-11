@@ -1,0 +1,136 @@
+TAP version 13
+# Subtest: ART011 self-contained textured GLB decodes and round-trips
+ok 1 - ART011 self-contained textured GLB decodes and round-trips
+  ---
+  duration_ms: 222.960125
+  type: 'test'
+  ...
+# Subtest: ART006/009 required modeled categories
+ok 2 - ART006/009 required modeled categories
+  ---
+  duration_ms: 1546.033166
+  type: 'test'
+  ...
+# Subtest: ART001 finite meshes within room envelope
+ok 3 - ART001 finite meshes within room envelope
+  ---
+  duration_ms: 1294.367083
+  type: 'test'
+  ...
+# Subtest: ART003 giant crag connects roof and stays short
+ok 4 - ART003 giant crag connects roof and stays short
+  ---
+  duration_ms: 1287.800042
+  type: 'test'
+  ...
+# Subtest: ART004 columns connect ground to ceiling
+ok 5 - ART004 columns connect ground to ceiling
+  ---
+  duration_ms: 1264.133333
+  type: 'test'
+  ...
+# Subtest: ART007 swept route avoids design obstacle envelopes
+ok 6 - ART007 swept route avoids design obstacle envelopes
+  ---
+  duration_ms: 1270.806958
+  type: 'test'
+  ...
+# Subtest: ART008 deterministic vertex positions
+ok 7 - ART008 deterministic vertex positions
+  ---
+  duration_ms: 2535.179334
+  type: 'test'
+  ...
+# Subtest: ART010/011 detailed rock and UV coordinates
+ok 8 - ART010/011 detailed rock and UV coordinates
+  ---
+  duration_ms: 1238.176375
+  type: 'test'
+  ...
+# Subtest: ART013 wall transition and floor rock geometry exist
+ok 9 - ART013 wall transition and floor rock geometry exist
+  ---
+  duration_ms: 1244.875375
+  type: 'test'
+  ...
+# Subtest: ART014 overhanging crown is at least twice the low stem width
+ok 10 - ART014 overhanging crown is at least twice the low stem width
+  ---
+  duration_ms: 1239.063542
+  type: 'test'
+  ...
+# Subtest: ART015 skull topology and lashings are modeled
+ok 11 - ART015 skull topology and lashings are modeled
+  ---
+  duration_ms: 1226.828292
+  type: 'test'
+  ...
+# Subtest: ART017 scanned skull retains attribution and source color variation
+ok 12 - ART017 scanned skull retains attribution and source color variation
+  ---
+  duration_ms: 1244.420958
+  type: 'test'
+  ...
+# Subtest: ART018/021 shelter faces east with an asymmetric roof
+ok 13 - ART018/021 shelter faces east with an asymmetric roof
+  ---
+  duration_ms: 1235.931708
+  type: 'test'
+  ...
+# Subtest: ART019 water drops terminate on roof before eave runoff
+ok 14 - ART019 water drops terminate on roof before eave runoff
+  ---
+  duration_ms: 1239.094666
+  type: 'test'
+  ...
+# Subtest: ART020 low goblin shelter and a dimensional sleeping pelt
+ok 15 - ART020 low goblin shelter and a dimensional sleeping pelt
+  ---
+  duration_ms: 1236.544458
+  type: 'test'
+  ...
+# Subtest: ART021 four corner post heights follow requested ratios
+ok 16 - ART021 four corner post heights follow requested ratios
+  ---
+  duration_ms: 1224.680541
+  type: 'test'
+  ...
+# Subtest: ART026 front eave fibers extend forward and droop
+ok 17 - ART026 front eave fibers extend forward and droop
+  ---
+  duration_ms: 1214.412209
+  type: 'test'
+  ...
+# Subtest: ART027 front eave fibers have both lateral directions
+ok 18 - ART027 front eave fibers have both lateral directions
+  ---
+  duration_ms: 1227.59675
+  type: 'test'
+  ...
+# Subtest: ART030 sleeping hide has substantial rumpled volume
+ok 19 - ART030 sleeping hide has substantial rumpled volume
+  ---
+  duration_ms: 1235.631
+  type: 'test'
+  ...
+# Subtest: ART031/032 triangular framing and scrap screening exist
+ok 20 - ART031/032 triangular framing and scrap screening exist
+  ---
+  duration_ms: 1227.690125
+  type: 'test'
+  ...
+# Subtest: ART034 left posts extend above their bearing points
+ok 21 - ART034 left posts extend above their bearing points
+  ---
+  duration_ms: 1225.055208
+  type: 'test'
+  ...
+1..21
+# tests 21
+# suites 0
+# pass 21
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 26549.918833

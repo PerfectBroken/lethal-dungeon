@@ -1,0 +1,210 @@
+TAP version 13
+# Subtest: ART011 self-contained textured GLB decodes and round-trips
+ok 1 - ART011 self-contained textured GLB decodes and round-trips
+  ---
+  duration_ms: 177.4075
+  type: 'test'
+  ...
+# Subtest: ART006/009 required modeled categories
+ok 2 - ART006/009 required modeled categories
+  ---
+  duration_ms: 1838.404458
+  type: 'test'
+  ...
+# Subtest: ART001 finite meshes within room envelope
+ok 3 - ART001 finite meshes within room envelope
+  ---
+  duration_ms: 1704.662083
+  type: 'test'
+  ...
+# Subtest: ART003 giant crag connects roof and stays short
+ok 4 - ART003 giant crag connects roof and stays short
+  ---
+  duration_ms: 1634.441958
+  type: 'test'
+  ...
+# Subtest: ART004 columns connect ground to ceiling
+ok 5 - ART004 columns connect ground to ceiling
+  ---
+  duration_ms: 1626.6865
+  type: 'test'
+  ...
+# Subtest: ART007 swept route avoids design obstacle envelopes
+ok 6 - ART007 swept route avoids design obstacle envelopes
+  ---
+  duration_ms: 1646.3955
+  type: 'test'
+  ...
+# Subtest: ART008 deterministic vertex positions
+ok 7 - ART008 deterministic vertex positions
+  ---
+  duration_ms: 3241.63175
+  type: 'test'
+  ...
+# Subtest: ART010/011 detailed rock and UV coordinates
+ok 8 - ART010/011 detailed rock and UV coordinates
+  ---
+  duration_ms: 1585.812208
+  type: 'test'
+  ...
+# Subtest: ART013 wall transition and floor rock geometry exist
+ok 9 - ART013 wall transition and floor rock geometry exist
+  ---
+  duration_ms: 1606.369792
+  type: 'test'
+  ...
+# Subtest: ART014 overhanging crown is at least twice the low stem width
+ok 10 - ART014 overhanging crown is at least twice the low stem width
+  ---
+  duration_ms: 1594.904208
+  type: 'test'
+  ...
+# Subtest: ART015 skull topology and lashings are modeled
+ok 11 - ART015 skull topology and lashings are modeled
+  ---
+  duration_ms: 1612.635625
+  type: 'test'
+  ...
+# Subtest: ART017 scanned skull retains attribution and source color variation
+ok 12 - ART017 scanned skull retains attribution and source color variation
+  ---
+  duration_ms: 1583.6725
+  type: 'test'
+  ...
+# Subtest: ART018/021 shelter faces east with an asymmetric roof
+ok 13 - ART018/021 shelter faces east with an asymmetric roof
+  ---
+  duration_ms: 1605.452042
+  type: 'test'
+  ...
+# Subtest: ART019 water drops terminate on roof before eave runoff
+ok 14 - ART019 water drops terminate on roof before eave runoff
+  ---
+  duration_ms: 1605.620209
+  type: 'test'
+  ...
+# Subtest: ART020 low goblin shelter and a dimensional sleeping pelt
+ok 15 - ART020 low goblin shelter and a dimensional sleeping pelt
+  ---
+  duration_ms: 1608.507792
+  type: 'test'
+  ...
+# Subtest: ART021 four corner post heights follow requested ratios
+ok 16 - ART021 four corner post heights follow requested ratios
+  ---
+  duration_ms: 1657.660959
+  type: 'test'
+  ...
+# Subtest: ART026 front eave fibers extend forward and droop
+ok 17 - ART026 front eave fibers extend forward and droop
+  ---
+  duration_ms: 1612.119125
+  type: 'test'
+  ...
+# Subtest: ART027 front eave fibers have both lateral directions
+ok 18 - ART027 front eave fibers have both lateral directions
+  ---
+  duration_ms: 1592.184458
+  type: 'test'
+  ...
+# Subtest: ART030 sleeping hide has substantial rumpled volume
+ok 19 - ART030 sleeping hide has substantial rumpled volume
+  ---
+  duration_ms: 1608.061333
+  type: 'test'
+  ...
+# Subtest: ART031/032 triangular framing and scrap screening exist
+ok 20 - ART031/032 triangular framing and scrap screening exist
+  ---
+  duration_ms: 1599.22575
+  type: 'test'
+  ...
+# Subtest: ART034 left posts extend above their bearing points
+ok 21 - ART034 left posts extend above their bearing points
+  ---
+  duration_ms: 1606.530584
+  type: 'test'
+  ...
+# Subtest: ART035 east posts lean outward at about 70 degrees to ground
+ok 22 - ART035 east posts lean outward at about 70 degrees to ground
+  ---
+  duration_ms: 1610.222584
+  type: 'test'
+  ...
+# Subtest: ART036 floor remains use varied attributed scan fragments and rest on ground
+ok 23 - ART036 floor remains use varied attributed scan fragments and rest on ground
+  ---
+  duration_ms: 1612.046958
+  type: 'test'
+  ...
+# Subtest: ART037 shared palette tints skull and wood separately
+ok 24 - ART037 shared palette tints skull and wood separately
+  ---
+  duration_ms: 1602.458208
+  type: 'test'
+  ...
+# Subtest: ART038/039 mineral envelopes clear wall blocks and wall ledges carry soil
+ok 25 - ART038/039 mineral envelopes clear wall blocks and wall ledges carry soil
+  ---
+  duration_ms: 1603.639334
+  type: 'test'
+  ...
+# Subtest: ART040 approved shelter bones and giant crag retain geometry
+ok 26 - ART040 approved shelter bones and giant crag retain geometry
+  ---
+  duration_ms: 1644.047791
+  type: 'test'
+  ...
+# Subtest: ART041 geological walls form continuous sheets with large shared fracture domains
+ok 27 - ART041 geological walls form continuous sheets with large shared fracture domains
+  ---
+  duration_ms: 1598.848292
+  type: 'test'
+  ...
+# Subtest: ART042 west wall uses continuous erosion without abrupt fracture steps
+ok 28 - ART042 west wall uses continuous erosion without abrupt fracture steps
+  ---
+  duration_ms: 1609.4255
+  type: 'test'
+  ...
+# Subtest: ART043/046 large fallen rocks and a fifth of ceiling tips emit varied drips
+ok 29 - ART043/046 large fallen rocks and a fifth of ceiling tips emit varied drips
+  ---
+  duration_ms: 1598.740542
+  type: 'test'
+  ...
+# Subtest: ART047 west wall visibly overhangs with multiple erosion scales
+not ok 30 - ART047 west wall visibly overhangs with multiple erosion scales
+  ---
+  duration_ms: 1579.59875
+  type: 'test'
+  location: '/Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/cave-room-preview/tests/model.test.mjs:34:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The expression evaluated to a falsy value:
+
+      assert.ok(w.topInset-w.bottomInset>.45)
+
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/cave-room-preview/tests/model.test.mjs:34:154)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..30
+# tests 30
+# suites 0
+# pass 29
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 48721.657542

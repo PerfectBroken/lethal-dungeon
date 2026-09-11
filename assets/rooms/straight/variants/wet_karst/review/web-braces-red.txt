@@ -1,0 +1,42 @@
+TAP version 13
+# Subtest: ST038 tethers cover four quadrants and carry outer cross braces
+not ok 1 - ST038 tethers cover four quadrants and carry outer cross braces
+  ---
+  duration_ms: 1.6055
+  type: 'test'
+  location: '/Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/straight-room-preview/tests/model.test.mjs:57:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly deep-equal:
+    + actual - expected
+
+    + Set(1) {
+    +   undefined
+    - Set(4) {
+    -   0,
+    -   1,
+    -   2,
+    -   3
+      }
+
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual:
+  operator: 'deepStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/straight-room-preview/tests/model.test.mjs:57:118)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.start (node:internal/test_runner/test:944:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 0
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2789.34975

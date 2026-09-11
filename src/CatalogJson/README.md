@@ -16,3 +16,9 @@ if (!result.Layout.Succeeded) { /* 根据Failure处理，不能开始探险 */ }
 ```
 
 17个新增用例及完整回归通过，证据evidence/public-configured。生成器不读取文件，调用方负责提供JSON文本；测试宿主负责实际文件读取和样例导出。适配器仍是服务端/工具.NET 10项目，非已验证的团结客户端组件。
+
+## 房间模型关联入口
+
+房型 ID、名称、资源键与美术变体的完整约定及文件位置统一记录在 [DungeonLayout 核心 README：房间配置与美术模型关联规则](../Domain/DungeonLayout/README.md#房间配置与美术模型关联规则)。正式配置为 `docs/examples/base-rooms.json`；首个模型身份配置位于仓库相邻目录 `../cave-room-preview/model/room-identity.json`。身份配置属于美术工具层，不向本模块的严格 JSON 格式追加变体字段。
+
+JSON-004 room-catalog-v2的socket必须包含tangentOffsets，旧v1保持旧字段规则。一个socket仍代表一条必连拓扑接口，offset是互斥候选位置，不能把每个候选误作一扇必开的门。配置坐标单位0.5m。

@@ -1,0 +1,40 @@
+TAP version 13
+# Subtest: ART038/039 mineral envelopes clear wall blocks and wall ledges carry soil
+not ok 1 - ART038/039 mineral envelopes clear wall blocks and wall ledges carry soil
+  ---
+  duration_ms: 1444.927917
+  type: 'test'
+  location: '/Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/cave-room-preview/tests/model.test.mjs:29:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The expression evaluated to a falsy value:
+
+      assert.ok(r.userData.wallSoilFaces>30)
+
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/cave-room-preview/tests/model.test.mjs:29:114)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.start (node:internal/test_runner/test:944:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)
+  ...
+# Subtest: ART040 approved shelter bones and giant crag retain geometry
+ok 2 - ART040 approved shelter bones and giant crag retain geometry
+  ---
+  duration_ms: 1282.561
+  type: 'test'
+  ...
+1..2
+# tests 2
+# suites 0
+# pass 1
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2813.979667

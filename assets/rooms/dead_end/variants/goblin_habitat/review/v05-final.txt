@@ -1,0 +1,94 @@
+TAP version 13
+# Subtest: ART011 self-contained textured GLB decodes and round-trips
+ok 1 - ART011 self-contained textured GLB decodes and round-trips
+  ---
+  duration_ms: 82.322291
+  type: 'test'
+  ...
+# Subtest: ART006/009 required modeled categories
+ok 2 - ART006/009 required modeled categories
+  ---
+  duration_ms: 1380.690375
+  type: 'test'
+  ...
+# Subtest: ART001 finite meshes within room envelope
+ok 3 - ART001 finite meshes within room envelope
+  ---
+  duration_ms: 1249.9325
+  type: 'test'
+  ...
+# Subtest: ART003 giant crag connects roof and stays short
+ok 4 - ART003 giant crag connects roof and stays short
+  ---
+  duration_ms: 1206.55825
+  type: 'test'
+  ...
+# Subtest: ART004 columns connect ground to ceiling
+ok 5 - ART004 columns connect ground to ceiling
+  ---
+  duration_ms: 1235.939125
+  type: 'test'
+  ...
+# Subtest: ART007 swept route avoids design obstacle envelopes
+ok 6 - ART007 swept route avoids design obstacle envelopes
+  ---
+  duration_ms: 1209.714834
+  type: 'test'
+  ...
+# Subtest: ART008 deterministic vertex positions
+ok 7 - ART008 deterministic vertex positions
+  ---
+  duration_ms: 2411.590209
+  type: 'test'
+  ...
+# Subtest: ART010/011 detailed rock and UV coordinates
+ok 8 - ART010/011 detailed rock and UV coordinates
+  ---
+  duration_ms: 1216.50425
+  type: 'test'
+  ...
+# Subtest: ART013 wall transition and floor rock geometry exist
+ok 9 - ART013 wall transition and floor rock geometry exist
+  ---
+  duration_ms: 1196.536917
+  type: 'test'
+  ...
+# Subtest: ART014 overhanging crown is at least twice the low stem width
+ok 10 - ART014 overhanging crown is at least twice the low stem width
+  ---
+  duration_ms: 1203.274833
+  type: 'test'
+  ...
+# Subtest: ART015 skull topology and lashings are modeled
+ok 11 - ART015 skull topology and lashings are modeled
+  ---
+  duration_ms: 1199.067917
+  type: 'test'
+  ...
+# Subtest: ART017 scanned skull retains attribution and source color variation
+ok 12 - ART017 scanned skull retains attribution and source color variation
+  ---
+  duration_ms: 1223.668417
+  type: 'test'
+  ...
+# Subtest: ART018 shelter faces east with a steep, thick roof
+ok 13 - ART018 shelter faces east with a steep, thick roof
+  ---
+  duration_ms: 1207.307833
+  type: 'test'
+  ...
+# Subtest: ART019 water drops terminate on roof before eave runoff
+ok 14 - ART019 water drops terminate on roof before eave runoff
+  ---
+  duration_ms: 1210.118209
+  type: 'test'
+  ...
+1..14
+# tests 14
+# suites 0
+# pass 14
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 17238.343917

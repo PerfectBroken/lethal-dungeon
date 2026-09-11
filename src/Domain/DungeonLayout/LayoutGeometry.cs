@@ -30,10 +30,13 @@ namespace LethalDungeon.Domain.Dungeons
                     new GridPoint(Math.Max(a.X,b.X),Math.Max(a.Y,b.Y),Math.Max(a.Z,b.Z)));
             }).ToList().AsReadOnly();
         }
+        public static GridPoint OffsetSocket(DoorSocket s,int offset) => new GridPoint(s.Position.X+((s.Facing==Direction.North||s.Facing==Direction.South)?offset:0),s.Position.Y,s.Position.Z+((s.Facing==Direction.East||s.Facing==Direction.West)?offset:0));
         public static DoorSocket WorldSocket(RoomDefinition definition, PlacedRoom room, string socketId)
         {
             var s = definition.Sockets.SingleOrDefault(p => p.Id == socketId) ?? throw new ArgumentException("Unknown socket: "+socketId);
-            return new DoorSocket(s.Id,Add(Rotate(s.Position,room.QuarterTurns),room.Position),
+            var offset=room.SocketOffsets.TryGetValue(socketId,out var value)?value:0;
+            if(!s.TangentOffsets.Contains(offset))throw new ArgumentException("Unconfigured socket offset.");
+            return new DoorSocket(s.Id,Add(Rotate(OffsetSocket(s,offset),room.QuarterTurns),room.Position),
                 (Direction)(((int)s.Facing+room.QuarterTurns)%4),s.Width,s.Height,s.Kind);
         }
         public static PlacedRoom Attach(RoomDefinition parentDefinition, PlacedRoom parent, string parentSocket,

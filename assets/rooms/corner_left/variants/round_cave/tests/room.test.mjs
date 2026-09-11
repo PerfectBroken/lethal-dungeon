@@ -1,0 +1,12 @@
+import test from 'node:test';import assert from 'node:assert/strict';import * as T from 'three';import {buildRoom} from '../source/room.mjs';
+const room=()=>{const r=buildRoom({details:false});r.updateMatrixWorld(true);return r};
+function hits(r,o,d,far=12){return new T.Raycaster(new T.Vector3(...o),new T.Vector3(...d),.01,far).intersectObject(r,true)}
+test('CL001 identity and metres envelope',()=>{const r=room();assert.equal(r.userData.roomIdentity.roomId,'corner_left');const b=new T.Box3().setFromObject(r);assert.ok(b.min.x>=-4.01&&b.max.x<=4.01&&b.min.z>=-4.01&&b.max.z<=4.01&&b.min.y>=-.01&&b.max.y<=4.01)});
+test('CL002 south and west passages open across width and height',()=>{const r=room();for(const h of [.3,1,2,2.8])for(const offset of [-.85,0,.85]){assert.equal(hits(r,[offset,h,-4.05],[0,0,1],3).length,0);assert.equal(hits(r,[-4.05,h,offset],[1,0,0],3).length,0)}});
+test('CL002 north/east fully sealed',()=>{const r=room();for(const h of [.5,1.6,2.5]){assert.ok(hits(r,[0,h,0],[0,0,1]).length);assert.ok(hits(r,[0,h,0],[1,0,0]).length)}});
+test('CL003 rock thickness along north east and roof',()=>{const r=room();for(const d of [[0,0,1],[1,0,0],[0,1,0]]){const a=hits(r,[0,1.4,0],d).map(h=>h.distance).filter((x,i,a)=>i===0||x-a[i-1]>.015);assert.ok(a.length>=2);assert.ok(a.at(-1)-a[0]>.2)}});
+test('CL004 continuous central walking space',()=>{const r=room();for(const [x,z]of [[0,-3],[0,-2],[0,-1],[0,0],[-1,0],[-2,0],[-3,0]]){assert.equal(hits(r,[x,1,z],[0,1,0],1).length,0);assert.ok(hits(r,[x,.6,z],[0,-1,0],.7).length)}});
+test('CL007 finite nondegenerate bounded mesh',()=>{const r=room();let n=0;r.traverse(o=>{if(!o.isMesh)return;const p=o.geometry.attributes.position;assert.ok([...p.array].every(Number.isFinite));n+=(o.geometry.index?.count??p.count)/3});assert.ok(n>1000&&n<300000)});
+test('CL007 deterministic',()=>{const a=room(),b=room();assert.deepEqual(a.children[0].geometry.attributes.position.array,b.children[0].geometry.attributes.position.array)});
+test('CL002 no unintended diagonal openings',()=>{const r=room();for(const angle of [Math.PI/4,Math.PI*3/4,Math.PI*5/4,Math.PI*7/4])assert.ok(hits(r,[0,1.6,0],[Math.sin(angle),0,Math.cos(angle)]).length)});
+test('CL004 walking rays hit actual upper floor rather than underside',()=>{const r=room();for(const [x,z]of [[0,-3.8],[0,-3],[0,0],[-3,0],[-3.8,0]]){const h=hits(r,[x,.65,z],[0,-1,0],.7);assert.ok(h.length);assert.equal(h[0].object.name,'floor');assert.ok(h[0].point.y>.1&&h[0].point.y<.24)}});

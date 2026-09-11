@@ -1,0 +1,2 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {buildRoom} from '../source/room.mjs';
+test('CL029 dripstone roots flare into the ceiling',()=>{const r=buildRoom({details:true}),g=r.getObjectByName('pendants').geometry.attributes.position;for(const p of r.userData.details.pendants){let spread=0;for(let i=0;i<g.count;i++){const d=Math.hypot(g.getX(i)-p.x,g.getZ(i)-p.z);if(d<.36&&Math.abs(g.getY(i)-p.roof)<.23)spread=Math.max(spread,d);}assert.ok(spread>p.width*1.8,'attachment must spread beyond shaft');}});

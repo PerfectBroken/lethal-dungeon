@@ -1,0 +1,54 @@
+npm notice run test
+npm notice run node --test tests/*.test.mjs
+TAP version 13
+# Subtest: CL001 identity and metres envelope
+ok 1 - CL001 identity and metres envelope
+  ---
+  duration_ms: 1844.841833
+  type: 'test'
+  ...
+# Subtest: CL002 south and west passages open across width and height
+ok 2 - CL002 south and west passages open across width and height
+  ---
+  duration_ms: 1919.679334
+  type: 'test'
+  ...
+# Subtest: CL002 north/east fully sealed
+ok 3 - CL002 north/east fully sealed
+  ---
+  duration_ms: 1791.855083
+  type: 'test'
+  ...
+# Subtest: CL003 rock thickness along north east and roof
+ok 4 - CL003 rock thickness along north east and roof
+  ---
+  duration_ms: 1770.910416
+  type: 'test'
+  ...
+# Subtest: CL004 continuous central walking space
+ok 5 - CL004 continuous central walking space
+  ---
+  duration_ms: 1818.385584
+  type: 'test'
+  ...
+# Subtest: CL007 finite nondegenerate bounded mesh
+ok 6 - CL007 finite nondegenerate bounded mesh
+  ---
+  duration_ms: 1779.106791
+  type: 'test'
+  ...
+# Subtest: CL007 deterministic
+ok 7 - CL007 deterministic
+  ---
+  duration_ms: 3500.081667
+  type: 'test'
+  ...
+1..7
+# tests 7
+# suites 0
+# pass 7
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 14498.569375

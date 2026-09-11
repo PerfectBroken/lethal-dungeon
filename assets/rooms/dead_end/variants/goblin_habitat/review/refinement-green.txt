@@ -1,0 +1,52 @@
+TAP version 13
+# Subtest: ART006/009 required modeled categories
+ok 1 - ART006/009 required modeled categories
+  ---
+  duration_ms: 406.731333
+  type: 'test'
+  ...
+# Subtest: ART001 finite meshes within room envelope
+ok 2 - ART001 finite meshes within room envelope
+  ---
+  duration_ms: 344.929917
+  type: 'test'
+  ...
+# Subtest: ART003 giant crag connects roof and stays short
+ok 3 - ART003 giant crag connects roof and stays short
+  ---
+  duration_ms: 304.665542
+  type: 'test'
+  ...
+# Subtest: ART004 columns connect ground to ceiling
+ok 4 - ART004 columns connect ground to ceiling
+  ---
+  duration_ms: 312.799125
+  type: 'test'
+  ...
+# Subtest: ART007 swept route avoids design obstacle envelopes
+ok 5 - ART007 swept route avoids design obstacle envelopes
+  ---
+  duration_ms: 301.638167
+  type: 'test'
+  ...
+# Subtest: ART008 deterministic vertex positions
+ok 6 - ART008 deterministic vertex positions
+  ---
+  duration_ms: 612.380666
+  type: 'test'
+  ...
+# Subtest: ART010/011 detailed rock and UV coordinates
+ok 7 - ART010/011 detailed rock and UV coordinates
+  ---
+  duration_ms: 294.852459
+  type: 'test'
+  ...
+1..7
+# tests 7
+# suites 0
+# pass 7
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2660.935792

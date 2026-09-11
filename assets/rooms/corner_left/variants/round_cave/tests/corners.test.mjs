@@ -1,0 +1,2 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {createField} from '../source/room.mjs';
+test('CL018 formerly square corner pockets become solid rock shoulders while central door bands stay clear',()=>{const f=createField({south:0,west:0});for(const [x,z]of [[-3.3,2.65],[-3.15,-3.15],[2.7,-3.2]])assert.ok(f(x,1.4,z)<0,`missing shoulder ${x},${z}`);for(const p of [[-3,1.5,0],[0,1.5,-3],[0,1.5,0]])assert.ok(f(...p)>0,'route blocked');});

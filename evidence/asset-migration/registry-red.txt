@@ -1,0 +1,29 @@
+TAP version 13
+# Subtest: ASSET-001–003 canonical assets retain identity, catalog compatibility and binary content
+not ok 1 - ASSET-001–003 canonical assets retain identity, catalog compatibility and binary content
+  ---
+  duration_ms: 0.608792
+  type: 'test'
+  location: '/Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/lethal-dungeon/tests/Assets.Tests/registry.test.mjs:3:1'
+  failureType: 'testCodeFailure'
+  error: "ENOENT: no such file or directory, open 'assets/rooms/registry.json'"
+  code: 'ENOENT'
+  stack: |-
+    Object.openSync (node:fs:560:18)
+    readFileSync (node:fs:444:35)
+    json (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/lethal-dungeon/tests/Assets.Tests/registry.test.mjs:2:45)
+    TestContext.<anonymous> (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/lethal-dungeon/tests/Assets.Tests/registry.test.mjs:3:117)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.start (node:internal/test_runner/test:944:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 0
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 48.350292

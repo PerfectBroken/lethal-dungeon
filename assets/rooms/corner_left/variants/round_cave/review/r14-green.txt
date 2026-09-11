@@ -1,0 +1,84 @@
+npm notice run test
+npm notice run node --test tests/*.test.mjs
+TAP version 13
+# Subtest: CL010 sparse rubble and pendant records, grounded and attached
+ok 1 - CL010 sparse rubble and pendant records, grounded and attached
+  ---
+  duration_ms: 3584.707125
+  type: 'test'
+  ...
+# Subtest: CL012 upper-left embedded rock projects from the north wall
+ok 2 - CL012 upper-left embedded rock projects from the north wall
+  ---
+  duration_ms: 2307.504208
+  type: 'test'
+  ...
+# Subtest: ROOM-ASSET-001–004 identity matches catalog and exported GLB
+ok 3 - ROOM-ASSET-001–004 identity matches catalog and exported GLB
+  ---
+  duration_ms: 19.454625
+  type: 'test'
+  ...
+# Subtest: CL001 identity and metres envelope
+ok 4 - CL001 identity and metres envelope
+  ---
+  duration_ms: 2435.382125
+  type: 'test'
+  ...
+# Subtest: CL002 south and west passages open across width and height
+ok 5 - CL002 south and west passages open across width and height
+  ---
+  duration_ms: 2449.48675
+  type: 'test'
+  ...
+# Subtest: CL002 north/east fully sealed
+ok 6 - CL002 north/east fully sealed
+  ---
+  duration_ms: 2364.105625
+  type: 'test'
+  ...
+# Subtest: CL003 rock thickness along north east and roof
+ok 7 - CL003 rock thickness along north east and roof
+  ---
+  duration_ms: 2319.737917
+  type: 'test'
+  ...
+# Subtest: CL004 continuous central walking space
+ok 8 - CL004 continuous central walking space
+  ---
+  duration_ms: 2409.195917
+  type: 'test'
+  ...
+# Subtest: CL007 finite nondegenerate bounded mesh
+ok 9 - CL007 finite nondegenerate bounded mesh
+  ---
+  duration_ms: 2333.472875
+  type: 'test'
+  ...
+# Subtest: CL007 deterministic
+ok 10 - CL007 deterministic
+  ---
+  duration_ms: 4600.361584
+  type: 'test'
+  ...
+# Subtest: CL002 no unintended diagonal openings
+ok 11 - CL002 no unintended diagonal openings
+  ---
+  duration_ms: 2327.624958
+  type: 'test'
+  ...
+# Subtest: CL004 walking rays hit actual upper floor rather than underside
+ok 12 - CL004 walking rays hit actual upper floor rather than underside
+  ---
+  duration_ms: 2340.251041
+  type: 'test'
+  ...
+1..12
+# tests 12
+# suites 0
+# pass 12
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 23673.80075

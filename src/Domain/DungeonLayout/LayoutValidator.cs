@@ -18,6 +18,8 @@ namespace LethalDungeon.Domain.Dungeons
             if (manifest.Rooms.Select(r => r.InstanceId).Distinct().Count() != manifest.Rooms.Count) errors.Add("DuplicateInstance");
             if (manifest.Rooms.Any(r => !catalog.Rooms.Any(d => d.Id == r.ModuleId))) errors.Add("UnknownModule");
             if (errors.Contains("DuplicateInstance") || errors.Contains("UnknownModule")) return new ValidationResult(errors);
+            foreach(var room in manifest.Rooms)foreach(var choice in room.SocketOffsets){var s=catalog.Get(room.ModuleId).Sockets.SingleOrDefault(s=>s.Id==choice.Key);if(s==null||!s.TangentOffsets.Contains(choice.Value))errors.Add("InvalidSocketOffset:"+room.InstanceId);}
+            if(errors.Any(e=>e.StartsWith("InvalidSocketOffset:")))return new ValidationResult(errors);
             var rooms = manifest.Rooms.ToDictionary(r => r.InstanceId);
             var boxes = rooms.ToDictionary(p => p.Key, p => LayoutGeometry.WorldBoxes(catalog.Get(p.Value.ModuleId), p.Value));
             for (int i = 0; i < manifest.Rooms.Count; i++)

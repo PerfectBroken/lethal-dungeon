@@ -1,0 +1,70 @@
+TAP version 13
+# Subtest: ART006/009 required modeled categories
+ok 1 - ART006/009 required modeled categories
+  ---
+  duration_ms: 1665.04525
+  type: 'test'
+  ...
+# Subtest: ART001 finite meshes within room envelope
+ok 2 - ART001 finite meshes within room envelope
+  ---
+  duration_ms: 1536.22425
+  type: 'test'
+  ...
+# Subtest: ART003 giant crag connects roof and stays short
+ok 3 - ART003 giant crag connects roof and stays short
+  ---
+  duration_ms: 1491.549333
+  type: 'test'
+  ...
+# Subtest: ART004 columns connect ground to ceiling
+ok 4 - ART004 columns connect ground to ceiling
+  ---
+  duration_ms: 1484.87825
+  type: 'test'
+  ...
+# Subtest: ART007 swept route avoids design obstacle envelopes
+ok 5 - ART007 swept route avoids design obstacle envelopes
+  ---
+  duration_ms: 1512.917584
+  type: 'test'
+  ...
+# Subtest: ART008 deterministic vertex positions
+ok 6 - ART008 deterministic vertex positions
+  ---
+  duration_ms: 2962.175167
+  type: 'test'
+  ...
+# Subtest: ART010/011 detailed rock and UV coordinates
+ok 7 - ART010/011 detailed rock and UV coordinates
+  ---
+  duration_ms: 1486.018125
+  type: 'test'
+  ...
+# Subtest: ART013 wall transition and floor rock geometry exist
+ok 8 - ART013 wall transition and floor rock geometry exist
+  ---
+  duration_ms: 1499.478417
+  type: 'test'
+  ...
+# Subtest: ART014 overhanging crown is at least twice the low stem width
+ok 9 - ART014 overhanging crown is at least twice the low stem width
+  ---
+  duration_ms: 1472.132
+  type: 'test'
+  ...
+# Subtest: ART015 skull topology and lashings are modeled
+ok 10 - ART015 skull topology and lashings are modeled
+  ---
+  duration_ms: 1491.896125
+  type: 'test'
+  ...
+1..10
+# tests 10
+# suites 0
+# pass 10
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 16686.930166

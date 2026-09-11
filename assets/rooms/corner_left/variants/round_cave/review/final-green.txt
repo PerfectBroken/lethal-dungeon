@@ -1,0 +1,78 @@
+npm notice run test
+npm notice run node --test tests/*.test.mjs
+TAP version 13
+# Subtest: CL010 sparse rubble and pendant records, grounded and attached
+ok 1 - CL010 sparse rubble and pendant records, grounded and attached
+  ---
+  duration_ms: 3332.406125
+  type: 'test'
+  ...
+# Subtest: ROOM-ASSET-001–004 identity matches catalog and exported GLB
+ok 2 - ROOM-ASSET-001–004 identity matches catalog and exported GLB
+  ---
+  duration_ms: 26.248958
+  type: 'test'
+  ...
+# Subtest: CL001 identity and metres envelope
+ok 3 - CL001 identity and metres envelope
+  ---
+  duration_ms: 2337.06875
+  type: 'test'
+  ...
+# Subtest: CL002 south and west passages open across width and height
+ok 4 - CL002 south and west passages open across width and height
+  ---
+  duration_ms: 2258.315834
+  type: 'test'
+  ...
+# Subtest: CL002 north/east fully sealed
+ok 5 - CL002 north/east fully sealed
+  ---
+  duration_ms: 2133.202166
+  type: 'test'
+  ...
+# Subtest: CL003 rock thickness along north east and roof
+ok 6 - CL003 rock thickness along north east and roof
+  ---
+  duration_ms: 2091.315084
+  type: 'test'
+  ...
+# Subtest: CL004 continuous central walking space
+ok 7 - CL004 continuous central walking space
+  ---
+  duration_ms: 2165.50475
+  type: 'test'
+  ...
+# Subtest: CL007 finite nondegenerate bounded mesh
+ok 8 - CL007 finite nondegenerate bounded mesh
+  ---
+  duration_ms: 2108.374042
+  type: 'test'
+  ...
+# Subtest: CL007 deterministic
+ok 9 - CL007 deterministic
+  ---
+  duration_ms: 4263.966584
+  type: 'test'
+  ...
+# Subtest: CL002 no unintended diagonal openings
+ok 10 - CL002 no unintended diagonal openings
+  ---
+  duration_ms: 2102.795333
+  type: 'test'
+  ...
+# Subtest: CL004 walking rays hit actual upper floor rather than underside
+ok 11 - CL004 walking rays hit actual upper floor rather than underside
+  ---
+  duration_ms: 2105.324667
+  type: 'test'
+  ...
+1..11
+# tests 11
+# suites 0
+# pass 11
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 21682.541334

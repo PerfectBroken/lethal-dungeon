@@ -1,0 +1,77 @@
+npm notice run test
+npm notice run node --test tests/*.test.mjs
+TAP version 13
+# Subtest: CL010 sparse rubble and pendant records, grounded and attached
+not ok 1 - CL010 sparse rubble and pendant records, grounded and attached
+  ---
+  duration_ms: 2221.230375
+  type: 'test'
+  location: '/Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/corner-left-room-preview/tests/details.test.mjs:2:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The expression evaluated to a falsy value:
+
+      assert.ok(d)
+
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/corner-left-room-preview/tests/details.test.mjs:2:170)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.start (node:internal/test_runner/test:944:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)
+  ...
+# Subtest: CL001 identity and metres envelope
+ok 2 - CL001 identity and metres envelope
+  ---
+  duration_ms: 2220.64325
+  type: 'test'
+  ...
+# Subtest: CL002 south and west passages open across width and height
+ok 3 - CL002 south and west passages open across width and height
+  ---
+  duration_ms: 2211.522042
+  type: 'test'
+  ...
+# Subtest: CL002 north/east fully sealed
+ok 4 - CL002 north/east fully sealed
+  ---
+  duration_ms: 2117.937959
+  type: 'test'
+  ...
+# Subtest: CL003 rock thickness along north east and roof
+ok 5 - CL003 rock thickness along north east and roof
+  ---
+  duration_ms: 2086.072708
+  type: 'test'
+  ...
+# Subtest: CL004 continuous central walking space
+ok 6 - CL004 continuous central walking space
+  ---
+  duration_ms: 2184.826125
+  type: 'test'
+  ...
+# Subtest: CL007 finite nondegenerate bounded mesh
+ok 7 - CL007 finite nondegenerate bounded mesh
+  ---
+  duration_ms: 2122.162417
+  type: 'test'
+  ...
+# Subtest: CL007 deterministic
+ok 8 - CL007 deterministic
+  ---
+  duration_ms: 4121.934416
+  type: 'test'
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 7
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 17160.155125

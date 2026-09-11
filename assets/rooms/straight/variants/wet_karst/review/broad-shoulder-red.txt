@@ -1,0 +1,202 @@
+npm notice run test
+npm notice run node --test tests/*.test.mjs
+TAP version 13
+# Subtest: ST005/006 GLB embeds images and matches identity
+ok 1 - ST005/006 GLB embeds images and matches identity
+  ---
+  duration_ms: 28.724084
+  type: 'test'
+  ...
+# Subtest: ST025 exported rock faces share baked PBR, not a preview-only shader
+ok 2 - ST025 exported rock faces share baked PBR, not a preview-only shader
+  ---
+  duration_ms: 22.569708
+  type: 'test'
+  ...
+# Subtest: ST025 atlas UV origin matches GLB top-row texture convention
+ok 3 - ST025 atlas UV origin matches GLB top-row texture convention
+  ---
+  duration_ms: 14.57175
+  type: 'test'
+  ...
+# Subtest: ST001/006 catalog identity and occupied bounds
+ok 4 - ST001/006 catalog identity and occupied bounds
+  ---
+  duration_ms: 3.895542
+  type: 'test'
+  ...
+# Subtest: ST002 actual meshes leave doorway and player route clear
+ok 5 - ST002 actual meshes leave doorway and player route clear
+  ---
+  duration_ms: 91.80825
+  type: 'test'
+  ...
+# Subtest: ST003/004 water lies above basin, and drips reach it
+ok 6 - ST003/004 water lies above basin, and drips reach it
+  ---
+  duration_ms: 2.333208
+  type: 'test'
+  ...
+# Subtest: ST005/007 finite geometry and deterministic generation
+ok 7 - ST005/007 finite geometry and deterministic generation
+  ---
+  duration_ms: 2190.953458
+  type: 'test'
+  ...
+# Subtest: ST003 drip paths are not blocked before the water surface
+ok 8 - ST003 drip paths are not blocked before the water surface
+  ---
+  duration_ms: 72.456083
+  type: 'test'
+  ...
+# Subtest: ST010 long west buttress has a real lower alcove
+ok 9 - ST010 long west buttress has a real lower alcove
+  ---
+  duration_ms: 9.688208
+  type: 'test'
+  ...
+# Subtest: ST011 talus has multiple fracture families and clustered placements
+ok 10 - ST011 talus has multiple fracture families and clustered placements
+  ---
+  duration_ms: 0.196833
+  type: 'test'
+  ...
+# Subtest: ST012 buttress has solid thickness across its height and length
+ok 11 - ST012 buttress has solid thickness across its height and length
+  ---
+  duration_ms: 31.36175
+  type: 'test'
+  ...
+# Subtest: ST013 west rock narrows into the west wall toward the north rear
+ok 12 - ST013 west rock narrows into the west wall toward the north rear
+  ---
+  duration_ms: 9.527791
+  type: 'test'
+  ...
+# Subtest: ST014 alcove opens south and terminates in real rock to the north
+ok 13 - ST014 alcove opens south and terminates in real rock to the north
+  ---
+  duration_ms: 54.042333
+  type: 'test'
+  ...
+# Subtest: ST022 skeleton stays inside the recessed west opening
+ok 14 - ST022 skeleton stays inside the recessed west opening
+  ---
+  duration_ms: 0.155833
+  type: 'test'
+  ...
+# Subtest: ST015 deep skeleton is not buried under talus or mineral growth
+ok 15 - ST015 deep skeleton is not buried under talus or mineral growth
+  ---
+  duration_ms: 817.179375
+  type: 'test'
+  ...
+# Subtest: ST016 rock foot is grounded and crown rises toward the rear
+ok 16 - ST016 rock foot is grounded and crown rises toward the rear
+  ---
+  duration_ms: 18.407833
+  type: 'test'
+  ...
+# Subtest: ST018 inner west wall has a closed back surface
+ok 17 - ST018 inner west wall has a closed back surface
+  ---
+  duration_ms: 11.286792
+  type: 'test'
+  ...
+# Subtest: ST019 only three short stalagmites remain outside the front rock foot
+ok 18 - ST019 only three short stalagmites remain outside the front rock foot
+  ---
+  duration_ms: 0.098459
+  type: 'test'
+  ...
+# Subtest: ST020 talus uses detailed eroded geometry
+ok 19 - ST020 talus uses detailed eroded geometry
+  ---
+  duration_ms: 0.100959
+  type: 'test'
+  ...
+# Subtest: ST021 rock thickness varies visibly along its length and height
+ok 20 - ST021 rock thickness varies visibly along its length and height
+  ---
+  duration_ms: 28.018458
+  type: 'test'
+  ...
+# Subtest: ST022 front aligns with far pond bank and body matches alcove width
+ok 21 - ST022 front aligns with far pond bank and body matches alcove width
+  ---
+  duration_ms: 13.934291
+  type: 'test'
+  ...
+# Subtest: ST022 skeleton can be discovered on entering from left half of doorway
+ok 22 - ST022 skeleton can be discovered on entering from left half of doorway
+  ---
+  duration_ms: 887.59525
+  type: 'test'
+  ...
+# Subtest: ST023 front fracture UV has usable two-dimensional area
+ok 23 - ST023 front fracture UV has usable two-dimensional area
+  ---
+  duration_ms: 6.954875
+  type: 'test'
+  ...
+# Subtest: ST024 stalagmite full envelope clears main rock
+ok 24 - ST024 stalagmite full envelope clears main rock
+  ---
+  duration_ms: 15.84675
+  type: 'test'
+  ...
+# Subtest: ST025 main rock has no separate fracture material
+ok 25 - ST025 main rock has no separate fracture material
+  ---
+  duration_ms: 0.055917
+  type: 'test'
+  ...
+# Subtest: ST026 foot minerals are not arranged in a straight row
+ok 26 - ST026 foot minerals are not arranged in a straight row
+  ---
+  duration_ms: 0.052625
+  type: 'test'
+  ...
+# Subtest: ST027 front crown includes a gentle outward bow
+ok 27 - ST027 front crown includes a gentle outward bow
+  ---
+  duration_ms: 0.05375
+  type: 'test'
+  ...
+# Subtest: ST027 inner/front/outer shoulders turn continuously around a convex nose
+ok 28 - ST027 inner/front/outer shoulders turn continuously around a convex nose
+  ---
+  duration_ms: 9.362542
+  type: 'test'
+  ...
+# Subtest: ST029 both oblique shoulders occupy visible surface area
+not ok 29 - ST029 both oblique shoulders occupy visible surface area
+  ---
+  duration_ms: 18.613333
+  type: 'test'
+  location: '/Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/straight-room-preview/tests/model.test.mjs:41:1'
+  failureType: 'testCodeFailure'
+  error: 'narrow bevel instead of broad shoulders: 0.4931429160547843,1.2639741087537186'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/straight-room-preview/tests/model.test.mjs:41:523)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..29
+# tests 29
+# suites 0
+# pass 28
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 6819.730792

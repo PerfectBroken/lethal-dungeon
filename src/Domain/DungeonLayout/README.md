@@ -212,3 +212,60 @@ var legacy = ConfiguredDungeon.Generate(catalog, 5u, maxAttempts: 100000);
 新模式预算必须在DungeonGenerationOptions中设置，不能误用旧int重载。返回Plan在失败时仍记录原计划环数和格子预算；成功失败都不因重试改变环数。默认方法行为升级为v0.7，旧v0.6固定断言通过显式int重载继续验收。
 
 验证：新增21例先全部有效Red，另将12环种子4的预算耗尽补为独立回归用例并记录Red。通过将单份格子尝试限制为20000步，保留后续重试机会；默认300000总预算及全部断言保持。22新例最终通过，每档1～12环各10种子共120张布局成功，最大66945次尝试；全量189+14=203项检查通过，0跳过。种子5的6/8/12环分别200/264/392格、177/228/343实例，保障支路12/16/24条。12环实例底面分布0/4/8/12/16米，39个非入口死路。真实输出docs/examples/many-loop-layouts.json，证据evidence/public-many-loops。
+
+
+## 房间配置与美术模型关联规则
+
+第三房资产登记（2026-09-09）：`corner_left`（左转角房）→ `round_cave`（圆腔石洞），目标 `dungeon/base/corner_left`。配置目录 `base-rooms-v1`、房型revision 1、资产0.1。相对游戏仓库的目录 `../corner-left-room-preview/`；唯一身份编辑来源 `model/room-identity.json`，导出元数据 `public/models/model-info.json`，模型 `public/models/corner-left-round-cave.glb`。米制、北+Z、8×8×4米，南/西示例接口；关联测试 `tests/identity.test.mjs`，实际美术审阅 `evidence/REVIEW.md`。内部85分、待用户验收，不代表随机门适配或团结引擎集成完成。
+
+本节是房间模型身份关联的核心约定。新增房型美术、改名、导出或接入客户端前必须读取。
+
+- **ROOM-ASSET-001：配置 ID 是关联主键。** 模型的 `roomId` 对应目录 `rooms[].id`，`roomName` 必须与 `rooms[].name` 一致；禁止只按中文标题、文件名、制作顺序或 GLB 节点名猜测房型。`prefabKey` 对应同条配置的逻辑资源键。
+- **ROOM-ASSET-002：房型与美术变体分开。** 同一房型可制作多个 `variantId`，`variantName` 只描述美术用途。同一房型内变体 ID 必须唯一；以 `(roomId, variantId)` 标识资产系列，以 `assetVersion` 区分制作版本。`catalogVersion`、`roomRevision` 分别记录配置目录版本和房型 revision，不能用模型版本替代。
+- **ROOM-ASSET-003：关联信息随模型保存。** 资产目录的 `model/room-identity.json` 是该资产身份的唯一编辑来源；导出时同步写入 `public/models/model-info.json.roomIdentity` 和 GLB 根节点 `extras.roomIdentity`。压缩分片也须更新，避免构建还原成旧模型。保留旧文件名不影响身份，禁止改名时丢失关联。
+- **ROOM-ASSET-004：先核对，再交付。** 创建或调整关联时校验房型存在、名称/资源键/revision/目录版本一致，以及身份文件、导出元数据和压缩产物一致；发现不一致先修正，不以修改正式房型定义来掩盖模型不匹配。
+- **ROOM-ASSET-005：身份关联不等于可直接拼接。** 客户端接入仍须验证单位、坐标系、原点、占用包络、真实门位及净空。当前哥布林资产以米制、北 -Z 制作，而正式目录每单位 0.5 米、北 +Z；南侧偏移门仅为审阅实例，尚不满足目录居中 south socket 的直接拼接契约。适配必须明确实现并验证，不能因 ID 相同就视为完成。
+
+### 配置与模型保存位置
+
+以下路径以游戏仓库 `outputs/lethal-dungeon/` 为基准，使用相对路径便于工程整体迁移：
+
+| 内容 | 位置与用途 |
+|---|---|
+| 正式房间配置（主来源） | [docs/examples/base-rooms.json](../../../docs/examples/base-rooms.json)；生成器使用的房型列表 |
+| 旧配置草案 | `../base-room-catalog/base-rooms.json`；历史/展示副本，不作为身份判断主来源 |
+| 已认可尽头房资产目录 | `../cave-room-preview/`；独立审阅项目，尚未集成团结工程 |
+| 该资产的身份配置 | [model/room-identity.json](../../../../cave-room-preview/model/room-identity.json) |
+| 完整带纹理模型 | `../cave-room-preview/public/models/dead-end-cave.glb` |
+| 导出模型信息 | `../cave-room-preview/public/models/model-info.json` |
+| 建模源文件 / 压缩模型 | `../cave-room-preview/model/room.mjs` / `../cave-room-preview/model/packed/` |
+| 关联验证 | `../cave-room-preview/tests/identity.test.mjs`；在该预览目录运行 `node --test tests/identity.test.mjs` |
+
+当前映射：`dead_end`（**尽头房**）→ `goblin_habitat`（**哥布林栖居洞穴**），模型 `0.26`，配置目录 `base-rooms-v1`、房型 revision `1`、目标 `prefabKey = dungeon/base/dead_end`。此资源键是目标约定，尚无已完成的团结 Prefab。
+
+下一房间须先在正式列表定位其 ID，再在新资产目录保存自己的身份配置，并更新本节资产位置登记；不得覆盖已认可房间。当前变体关联是美术工具元数据，不向严格的房间配置 JSON 擅自添加未知字段，也不引入 Domain 的文件读取依赖。
+
+基础房型逐间制作的任务总数、当前阶段与验收状态统一维护在 [基础房间美术进度](../../../docs/05-基础房间美术进度.md)，每次完成阶段或切换房型必须更新。
+
+
+### 第二房资产登记
+`straight`（直通房）→ `wet_karst`（潮湿溶蚀洞穴），目标 `dungeon/base/straight`，房型revision 1，模型版本0.14。相对游戏仓库的资产目录为 `../straight-room-preview/`；身份配置 `model/room-identity.json`；完整模型 `public/models/straight-wet-karst.glb`；元数据 `public/models/model-info.json`。使用北+Z、米制，保留南北标准接口；身份和通路已由工具测试，仍非团结Prefab/导航验收。GLB内含材质和滴水参数，动态效果由预览实现。
+
+2026-09-09：直通房左岩壁R20/0.13获用户85分；R21/0.14保留几何，略压暗材质并补骸骨后碎石，细节待审阅，整房仍在制作。
+
+当前直通房资产0.15/R22：修复室内洞顶条带状接缝，连续拱落顶面；身份仍为straight/wet_karst，整房制作中。
+
+## 2026-09-10 随机门位复核（当前能力边界）
+用户要求沿墙候选门位随机，当前未实现。基础目录corner_left仅south=(0,0,-8)、west=(-8,0,0)，每单位0.5米，即(0,0,-4)m和(-4,0,0)m，且两门必连。四向旋转只改变房间朝向，不是门沿墙偏移。
+主入口的PatternValidation.cs明确要求socket must be centred on template cell face，GridRoomMatcher依赖此模板接口契约；CatalogJson要求全部接口必接。因此不能只向JSON加几个偏移门位。
+圆腔美术field也写死南/西中央喉道，没有读取选中门位。圆腔形状可保留，但适配需要：在稳定格子拓扑上定义可选接口组及相邻两侧一致的偏移；更新解析/匹配/校验和清单；按选中接口封开岩壳及连接短通道；验证所有候选组合的完整通路、2×3米门洞、1米净空、巨石遮挡及可复现性。不允许独立随机两侧造成错位。若偏移范围绕不过现有主体，应限制经验证的候选范围或调整局部岩壳，不能承诺圆周任意打洞。
+这是复核结论和后续适配约束，本轮没有修改主生成器或配置语义。不能再以ID关联、旋转、固定示例洞口宣称随机门已完成。
+
+## MAP-037 随机门位（替代上节固定门限制）
+保留格子拓扑和接口中心作为锚点；socket新增tangentOffsets（0.5米单位，本地南北墙沿+X、东西墙沿+Z）。选项必须有限、互异、含0且每个门洞在占用边界合法。两端候选变换到世界后取相同位置的交集，用独立种子随机源逐连接选一次；实例SocketOffsets保存实际选择，WorldSocket与校验共同消费。未声明偏移保持[0]。不移动实例或改变环数。v2配置启用，旧配置保持原输出行为；未知门ID、未配置偏移拒绝。
+
+实现状态：base-rooms.json现为room-catalog-v2/base-rooms-v2，旧目录归档base-rooms-v1.json供旧美术和历史样例使用。格子中心约束仍作为锚点存在，tangentOffsets是其上的互斥偏移；不是放宽成任意错位接口。GeneratorVersion维持拓扑版本，DoorSelectionVersion=socket-offsets-v1单独标识选门算法。未声明偏移的旧配置仍选0，不改变旧拓扑/连接位置。新字段会出现在序列化对象中，不承诺JSON字节不变。第三房0.5读取v2与实例SocketOffsets，前两房v1已认可美术尚待适配。演示清单docs/examples/random-door-layout.json；九组合模型证据../corner-left-room-preview/evidence。
+
+## 房间美术资产关联（正式归档入口）
+
+逻辑房型与美术变体是一对多：正式规则见仓库 assets/rooms/README.md，唯一关联配置 assets/rooms/registry.json。路径为 assets/rooms/<roomId>/variants/<variantId>，每个变体 identity.json 记录目录版本。此前本文或历史审阅记录中的 outputs/*-room-preview 路径只作历史定位，禁止作为生产依赖。Domain 不读取这些资产或执行文件IO，运行时通过上层传入已解析数据；美术变体选择和团结门位装配尚未集成。

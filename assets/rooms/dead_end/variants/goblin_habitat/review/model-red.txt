@@ -1,0 +1,122 @@
+TAP version 13
+# Subtest: ART006/009 required modeled categories
+not ok 1 - ART006/009 required modeled categories
+  ---
+  duration_ms: 0.423458
+  type: 'test'
+  location: '/Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/cave-room-preview/tests/model.test.mjs:6:1'
+  failureType: 'testCodeFailure'
+  error: 'ART model not implemented'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    buildRoom (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/cave-room-preview/model/room.mjs:3:37)
+    TestContext.<anonymous> (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/cave-room-preview/tests/model.test.mjs:6:60)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.start (node:internal/test_runner/test:944:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)
+  ...
+# Subtest: ART001 finite meshes within room envelope
+not ok 2 - ART001 finite meshes within room envelope
+  ---
+  duration_ms: 0.092542
+  type: 'test'
+  location: '/Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/cave-room-preview/tests/model.test.mjs:7:1'
+  failureType: 'testCodeFailure'
+  error: 'ART model not implemented'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    buildRoom (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/cave-room-preview/model/room.mjs:3:37)
+    TestContext.<anonymous> (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/cave-room-preview/tests/model.test.mjs:7:63)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+# Subtest: ART003 giant crag connects roof and stays short
+not ok 3 - ART003 giant crag connects roof and stays short
+  ---
+  duration_ms: 0.068375
+  type: 'test'
+  location: '/Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/cave-room-preview/tests/model.test.mjs:8:1'
+  failureType: 'testCodeFailure'
+  error: 'ART model not implemented'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    buildRoom (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/cave-room-preview/model/room.mjs:3:37)
+    TestContext.<anonymous> (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/cave-room-preview/tests/model.test.mjs:8:69)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: ART004 columns connect ground to ceiling
+not ok 4 - ART004 columns connect ground to ceiling
+  ---
+  duration_ms: 0.1085
+  type: 'test'
+  location: '/Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/cave-room-preview/tests/model.test.mjs:9:1'
+  failureType: 'testCodeFailure'
+  error: 'ART model not implemented'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    buildRoom (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/cave-room-preview/model/room.mjs:3:37)
+    TestContext.<anonymous> (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/cave-room-preview/tests/model.test.mjs:9:93)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: ART007 swept route avoids design obstacle envelopes
+not ok 5 - ART007 swept route avoids design obstacle envelopes
+  ---
+  duration_ms: 0.070541
+  type: 'test'
+  location: '/Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/cave-room-preview/tests/model.test.mjs:10:1'
+  failureType: 'testCodeFailure'
+  error: 'ART model not implemented'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    buildRoom (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/cave-room-preview/model/room.mjs:3:37)
+    TestContext.<anonymous> (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/cave-room-preview/tests/model.test.mjs:10:65)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: ART008 deterministic vertex positions
+not ok 6 - ART008 deterministic vertex positions
+  ---
+  duration_ms: 0.043292
+  type: 'test'
+  location: '/Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/cave-room-preview/tests/model.test.mjs:11:1'
+  failureType: 'testCodeFailure'
+  error: 'ART model not implemented'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    buildRoom (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/cave-room-preview/model/room.mjs:3:37)
+    TestContext.<anonymous> (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/cave-room-preview/tests/model.test.mjs:11:59)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..6
+# tests 6
+# suites 0
+# pass 0
+# fail 6
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 63.951791

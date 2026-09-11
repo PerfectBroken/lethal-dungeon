@@ -1,0 +1,78 @@
+npm notice run test
+npm notice run node --test tests/*.test.mjs
+TAP version 13
+# Subtest: ST005/006 GLB embeds images and matches identity
+ok 1 - ST005/006 GLB embeds images and matches identity
+  ---
+  duration_ms: 7.811958
+  type: 'test'
+  ...
+# Subtest: ST001/006 catalog identity and occupied bounds
+ok 2 - ST001/006 catalog identity and occupied bounds
+  ---
+  duration_ms: 4.72725
+  type: 'test'
+  ...
+# Subtest: ST002 actual meshes leave doorway and player route clear
+ok 3 - ST002 actual meshes leave doorway and player route clear
+  ---
+  duration_ms: 98.471583
+  type: 'test'
+  ...
+# Subtest: ST003/004 water lies above basin, and drips reach it
+ok 4 - ST003/004 water lies above basin, and drips reach it
+  ---
+  duration_ms: 2.6965
+  type: 'test'
+  ...
+# Subtest: ST005/007 finite geometry and deterministic generation
+ok 5 - ST005/007 finite geometry and deterministic generation
+  ---
+  duration_ms: 1887.025041
+  type: 'test'
+  ...
+# Subtest: ST003 drip paths are not blocked before the water surface
+ok 6 - ST003 drip paths are not blocked before the water surface
+  ---
+  duration_ms: 68.641
+  type: 'test'
+  ...
+# Subtest: ST010 long west buttress has a real lower alcove
+ok 7 - ST010 long west buttress has a real lower alcove
+  ---
+  duration_ms: 9.981875
+  type: 'test'
+  ...
+# Subtest: ST011 talus has multiple fracture families and clustered placements
+ok 8 - ST011 talus has multiple fracture families and clustered placements
+  ---
+  duration_ms: 0.159667
+  type: 'test'
+  ...
+# Subtest: ST012 buttress has solid thickness across its height and length
+ok 9 - ST012 buttress has solid thickness across its height and length
+  ---
+  duration_ms: 30.988542
+  type: 'test'
+  ...
+# Subtest: ST013 west rock curls left toward the front rather than forming a straight slab
+ok 10 - ST013 west rock curls left toward the front rather than forming a straight slab
+  ---
+  duration_ms: 9.0905
+  type: 'test'
+  ...
+# Subtest: ST013 curved front rock retains a low alcove opening
+ok 11 - ST013 curved front rock retains a low alcove opening
+  ---
+  duration_ms: 3.086166
+  type: 'test'
+  ...
+1..11
+# tests 11
+# suites 0
+# pass 11
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 4241.858875

@@ -1,0 +1,37 @@
+{
+  "assetVersion": "0.6",
+  "modelIteration": "R28",
+  "status": "user-approved",
+  "selfScore": null,
+  "selfScoreIsSubjective": true,
+  "objectSelfScores": {
+    "doorWall": {
+      "score": 80,
+      "subjective": true,
+      "scope": "R22门旁墙，门旁墙对照与西侧洞口视角",
+      "breakdown": {
+        "主轮廓": 34,
+        "表面层理": 21,
+        "顶底衔接": 16,
+        "同房一致性": 9
+      },
+      "limitations": "表面仍偏柔软，细碎岩层断面不及概念图；非整房评分，待用户审阅"
+    }
+  },
+  "userApproved": true,
+  "userScore": 95,
+  "record": "evidence/REVIEW.md",
+  "previousVersionFeedback": {
+    "assetVersion": "0.1",
+    "userScore": 60,
+    "rejectedSelfScore": 85
+  },
+  "approvedBaseline": {
+    "modelIteration": "R24",
+    "userScore": 85,
+    "path": "approved/r24"
+  },
+  "approvedAt": "2026-09-11",
+  "approvalScope": "R28整体美术定稿，不包含引擎运行时与性能验收",
+  "acceptanceNote": "用户认可95分；地面碎石观感尚有不足，但明确本房间就此定稿，不继续调整。"
+}

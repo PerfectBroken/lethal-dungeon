@@ -1,0 +1,10 @@
+{
+  "catalogVersion": "base-rooms-v1",
+  "roomId": "dead_end",
+  "roomName": "尽头房",
+  "roomRevision": 1,
+  "prefabKey": "dungeon/base/dead_end",
+  "variantId": "goblin_habitat",
+  "variantName": "哥布林栖居洞穴",
+  "assetVersion": "0.26"
+}

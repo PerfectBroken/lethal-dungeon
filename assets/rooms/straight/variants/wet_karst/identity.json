@@ -1,0 +1,10 @@
+{
+  "catalogVersion": "base-rooms-v1",
+  "roomId": "straight",
+  "roomName": "直通房",
+  "roomRevision": 1,
+  "prefabKey": "dungeon/base/straight",
+  "variantId": "wet_karst",
+  "variantName": "潮湿溶蚀洞穴",
+  "assetVersion": "0.20"
+}

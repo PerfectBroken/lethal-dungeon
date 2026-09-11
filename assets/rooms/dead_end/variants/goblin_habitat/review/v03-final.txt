@@ -1,0 +1,76 @@
+TAP version 13
+# Subtest: ART011 self-contained textured GLB decodes and round-trips
+ok 1 - ART011 self-contained textured GLB decodes and round-trips
+  ---
+  duration_ms: 124.182708
+  type: 'test'
+  ...
+# Subtest: ART006/009 required modeled categories
+ok 2 - ART006/009 required modeled categories
+  ---
+  duration_ms: 1732.25275
+  type: 'test'
+  ...
+# Subtest: ART001 finite meshes within room envelope
+ok 3 - ART001 finite meshes within room envelope
+  ---
+  duration_ms: 1555.346541
+  type: 'test'
+  ...
+# Subtest: ART003 giant crag connects roof and stays short
+ok 4 - ART003 giant crag connects roof and stays short
+  ---
+  duration_ms: 1493.732333
+  type: 'test'
+  ...
+# Subtest: ART004 columns connect ground to ceiling
+ok 5 - ART004 columns connect ground to ceiling
+  ---
+  duration_ms: 1490.92025
+  type: 'test'
+  ...
+# Subtest: ART007 swept route avoids design obstacle envelopes
+ok 6 - ART007 swept route avoids design obstacle envelopes
+  ---
+  duration_ms: 1491.069083
+  type: 'test'
+  ...
+# Subtest: ART008 deterministic vertex positions
+ok 7 - ART008 deterministic vertex positions
+  ---
+  duration_ms: 2965.754
+  type: 'test'
+  ...
+# Subtest: ART010/011 detailed rock and UV coordinates
+ok 8 - ART010/011 detailed rock and UV coordinates
+  ---
+  duration_ms: 1470.076167
+  type: 'test'
+  ...
+# Subtest: ART013 wall transition and floor rock geometry exist
+ok 9 - ART013 wall transition and floor rock geometry exist
+  ---
+  duration_ms: 1477.514833
+  type: 'test'
+  ...
+# Subtest: ART014 overhanging crown is at least twice the low stem width
+ok 10 - ART014 overhanging crown is at least twice the low stem width
+  ---
+  duration_ms: 1497.912
+  type: 'test'
+  ...
+# Subtest: ART015 skull topology and lashings are modeled
+ok 11 - ART015 skull topology and lashings are modeled
+  ---
+  duration_ms: 1492.071541
+  type: 'test'
+  ...
+1..11
+# tests 11
+# suites 0
+# pass 11
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 16762.026042

@@ -104,6 +104,18 @@ namespace LethalDungeon.Domain.Dungeons
     var connections=new List<DoorConnection>();
     foreach(var edge in edges){int a=owner[edge.FromRoom],b=owner[edge.ToRoom];if(a==b)continue;connections.Add(new DoorConnection(edge.Id,placements[a].InstanceId,selected[a].Ports[(edge.FromRoom,edge.ToRoom)],placements[b].InstanceId,selected[b].Ports[(edge.ToRoom,edge.FromRoom)],edge.DoorId));}
     if(!Spend())continue;
+    var offsets=placements.Select(_=>new Dictionary<string,int>()).ToArray();
+    var doorRandom=new XorShiftRandom(seed^0x444F4F52u);
+    foreach(var link in connections){
+     int ai=Array.FindIndex(placements,r=>r.InstanceId==link.FromRoom),bi=Array.FindIndex(placements,r=>r.InstanceId==link.ToRoom);
+     var a=placements[ai];var b=placements[bi];var sa=catalog.Geometry.Get(a.ModuleId).Sockets.Single(s=>s.Id==link.FromSocket);var sb=catalog.Geometry.Get(b.ModuleId).Sockets.Single(s=>s.Id==link.ToSocket);
+     var common=(from av in sa.TangentOffsets from bv in sb.TangentOffsets
+      where LayoutGeometry.Add(LayoutGeometry.Rotate(LayoutGeometry.OffsetSocket(sa,av),a.QuarterTurns),a.Position).Equals(LayoutGeometry.Add(LayoutGeometry.Rotate(LayoutGeometry.OffsetSocket(sb,bv),b.QuarterTurns),b.Position))
+      select (A:av,B:bv)).ToArray();
+     if(common.Length==0)throw new InvalidOperationException("No common door candidate.");
+     var chosen=common[doorRandom.Next(common.Length)];if(chosen.A!=0)offsets[ai].Add(sa.Id,chosen.A);if(chosen.B!=0)offsets[bi].Add(sb.Id,chosen.B);
+    }
+    placements=placements.Select((r,i)=>new PlacedRoom(r.InstanceId,r.ModuleId,r.Position,r.QuarterTurns,offsets[i])).ToArray();
     var map=new DungeonManifest(catalog.Geometry.Version,placements,connections,version);
     var validation=LayoutValidator.Validate(catalog.Geometry,map);if(!validation.IsValid){lastFailure=string.Join(",",validation.Errors.Take(3));continue;}
     if(map.Connections.Count-map.Rooms.Count+1!=loopCount)throw new InvalidOperationException("Template contraction changed cycle rank.");

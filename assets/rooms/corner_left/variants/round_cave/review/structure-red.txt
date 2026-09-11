@@ -1,0 +1,150 @@
+npm notice run test
+npm notice run node --test tests/*.test.mjs
+TAP version 13
+# Subtest: CL001 identity and metres envelope
+not ok 1 - CL001 identity and metres envelope
+  ---
+  duration_ms: 0.470583
+  type: 'test'
+  location: '/Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/corner-left-room-preview/tests/room.test.mjs:4:1'
+  failureType: 'testCodeFailure'
+  error: 'NotImplemented: CL001-CL004'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    buildRoom (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/corner-left-room-preview/model/room.mjs:1:35)
+    room (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/corner-left-room-preview/tests/room.test.mjs:2:25)
+    TestContext.<anonymous> (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/corner-left-room-preview/tests/room.test.mjs:4:56)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.start (node:internal/test_runner/test:944:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)
+  ...
+# Subtest: CL002 south and west passages open across width and height
+not ok 2 - CL002 south and west passages open across width and height
+  ---
+  duration_ms: 0.119375
+  type: 'test'
+  location: '/Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/corner-left-room-preview/tests/room.test.mjs:5:1'
+  failureType: 'testCodeFailure'
+  error: 'NotImplemented: CL001-CL004'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    buildRoom (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/corner-left-room-preview/model/room.mjs:1:35)
+    room (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/corner-left-room-preview/tests/room.test.mjs:2:25)
+    TestContext.<anonymous> (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/corner-left-room-preview/tests/room.test.mjs:5:80)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+# Subtest: CL002 north/east fully sealed
+not ok 3 - CL002 north/east fully sealed
+  ---
+  duration_ms: 0.051459
+  type: 'test'
+  location: '/Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/corner-left-room-preview/tests/room.test.mjs:6:1'
+  failureType: 'testCodeFailure'
+  error: 'NotImplemented: CL001-CL004'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    buildRoom (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/corner-left-room-preview/model/room.mjs:1:35)
+    room (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/corner-left-room-preview/tests/room.test.mjs:2:25)
+    TestContext.<anonymous> (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/corner-left-room-preview/tests/room.test.mjs:6:51)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: CL003 rock thickness along north east and roof
+not ok 4 - CL003 rock thickness along north east and roof
+  ---
+  duration_ms: 0.055916
+  type: 'test'
+  location: '/Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/corner-left-room-preview/tests/room.test.mjs:7:1'
+  failureType: 'testCodeFailure'
+  error: 'NotImplemented: CL001-CL004'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    buildRoom (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/corner-left-room-preview/model/room.mjs:1:35)
+    room (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/corner-left-room-preview/tests/room.test.mjs:2:25)
+    TestContext.<anonymous> (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/corner-left-room-preview/tests/room.test.mjs:7:68)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: CL004 continuous central walking space
+not ok 5 - CL004 continuous central walking space
+  ---
+  duration_ms: 0.061708
+  type: 'test'
+  location: '/Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/corner-left-room-preview/tests/room.test.mjs:8:1'
+  failureType: 'testCodeFailure'
+  error: 'NotImplemented: CL001-CL004'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    buildRoom (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/corner-left-room-preview/model/room.mjs:1:35)
+    room (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/corner-left-room-preview/tests/room.test.mjs:2:25)
+    TestContext.<anonymous> (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/corner-left-room-preview/tests/room.test.mjs:8:60)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: CL007 finite nondegenerate bounded mesh
+not ok 6 - CL007 finite nondegenerate bounded mesh
+  ---
+  duration_ms: 0.047
+  type: 'test'
+  location: '/Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/corner-left-room-preview/tests/room.test.mjs:9:1'
+  failureType: 'testCodeFailure'
+  error: 'NotImplemented: CL001-CL004'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    buildRoom (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/corner-left-room-preview/model/room.mjs:1:35)
+    room (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/corner-left-room-preview/tests/room.test.mjs:2:25)
+    TestContext.<anonymous> (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/corner-left-room-preview/tests/room.test.mjs:9:61)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: CL007 deterministic
+not ok 7 - CL007 deterministic
+  ---
+  duration_ms: 0.099041
+  type: 'test'
+  location: '/Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/corner-left-room-preview/tests/room.test.mjs:10:1'
+  failureType: 'testCodeFailure'
+  error: 'NotImplemented: CL001-CL004'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    buildRoom (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/corner-left-room-preview/model/room.mjs:1:35)
+    room (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/corner-left-room-preview/tests/room.test.mjs:2:25)
+    TestContext.<anonymous> (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/corner-left-room-preview/tests/room.test.mjs:10:41)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..7
+# tests 7
+# suites 0
+# pass 0
+# fail 7
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 72.497541

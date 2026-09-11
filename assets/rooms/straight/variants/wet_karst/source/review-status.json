@@ -1,0 +1,32 @@
+{
+  "assetVersion": "0.20",
+  "status": "cobweb-user-approved",
+  "selfScore": null,
+  "previousVersionUserScore": 40,
+  "previousSelfScore": 81,
+  "previousSelfScoreRejected": true,
+  "userApproved": false,
+  "record": "evidence/REVIEW.md",
+  "lastUserReviewedVersion": "0.13",
+  "lastUserScore": 85,
+  "leftWallSelfScore": null,
+  "scoreScope": "left buttress only",
+  "leftWallUserScore": 85,
+  "leftWallUserApproved": true,
+  "leftWallUserReviewedVersion": "0.13",
+  "detailSelfScores": {
+    "innerWestWall": 80,
+    "frontStalagmites": 80,
+    "talus": 80
+  },
+  "detailReviewRecord": "evidence/left-details-review.md",
+  "currentLeftWallUserApproved": false,
+  "currentReviewRecord": "evidence/web-braces-review.md",
+  "structureSelfScore": null,
+  "latestFeedbackVersion": "0.20",
+  "latestFeedback": "用户明确对R27蜘蛛网给95分；仅蛛网单体认可，不扩展整房。",
+  "webUserScore": 95,
+  "webUserApproved": true,
+  "webUserReviewedVersion": "0.20",
+  "webScoreScope": "spider web only"
+}

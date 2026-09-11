@@ -1,0 +1,218 @@
+TAP version 13
+# Subtest: ART011 self-contained textured GLB decodes and round-trips
+ok 1 - ART011 self-contained textured GLB decodes and round-trips
+  ---
+  duration_ms: 249.485333
+  type: 'test'
+  ...
+# Subtest: ART006/009 required modeled categories
+ok 2 - ART006/009 required modeled categories
+  ---
+  duration_ms: 4276.07375
+  type: 'test'
+  ...
+# Subtest: ART001 finite meshes within room envelope
+ok 3 - ART001 finite meshes within room envelope
+  ---
+  duration_ms: 4241.692625
+  type: 'test'
+  ...
+# Subtest: ART003 giant crag connects roof and stays short
+ok 4 - ART003 giant crag connects roof and stays short
+  ---
+  duration_ms: 4170.346291
+  type: 'test'
+  ...
+# Subtest: ART004 columns connect ground to ceiling
+ok 5 - ART004 columns connect ground to ceiling
+  ---
+  duration_ms: 4145.832709
+  type: 'test'
+  ...
+# Subtest: ART007 swept route avoids design obstacle envelopes
+not ok 6 - ART007 swept route avoids design obstacle envelopes
+  ---
+  duration_ms: 4142.233125
+  type: 'test'
+  location: '/Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/cave-room-preview/tests/model.test.mjs:10:1'
+  failureType: 'testCodeFailure'
+  error: 'back column at -0.58,-1.595'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/cave-room-preview/tests/model.test.mjs:10:352)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: ART008 deterministic vertex positions
+ok 7 - ART008 deterministic vertex positions
+  ---
+  duration_ms: 8406.99925
+  type: 'test'
+  ...
+# Subtest: ART010/011 detailed rock and UV coordinates
+ok 8 - ART010/011 detailed rock and UV coordinates
+  ---
+  duration_ms: 4168.896666
+  type: 'test'
+  ...
+# Subtest: ART013 wall transition and floor rock geometry exist
+ok 9 - ART013 wall transition and floor rock geometry exist
+  ---
+  duration_ms: 4059.179542
+  type: 'test'
+  ...
+# Subtest: ART014 overhanging crown is at least twice the low stem width
+ok 10 - ART014 overhanging crown is at least twice the low stem width
+  ---
+  duration_ms: 4050.059125
+  type: 'test'
+  ...
+# Subtest: ART015 skull topology and lashings are modeled
+ok 11 - ART015 skull topology and lashings are modeled
+  ---
+  duration_ms: 4066.144541
+  type: 'test'
+  ...
+# Subtest: ART017 scanned skull retains attribution and source color variation
+ok 12 - ART017 scanned skull retains attribution and source color variation
+  ---
+  duration_ms: 4073.097
+  type: 'test'
+  ...
+# Subtest: ART018/021 shelter faces east with an asymmetric roof
+ok 13 - ART018/021 shelter faces east with an asymmetric roof
+  ---
+  duration_ms: 4063.858208
+  type: 'test'
+  ...
+# Subtest: ART019 water drops terminate on roof before eave runoff
+ok 14 - ART019 water drops terminate on roof before eave runoff
+  ---
+  duration_ms: 4082.240917
+  type: 'test'
+  ...
+# Subtest: ART020 low goblin shelter and a dimensional sleeping pelt
+ok 15 - ART020 low goblin shelter and a dimensional sleeping pelt
+  ---
+  duration_ms: 4076.167208
+  type: 'test'
+  ...
+# Subtest: ART021 four corner post heights follow requested ratios
+ok 16 - ART021 four corner post heights follow requested ratios
+  ---
+  duration_ms: 4074.099334
+  type: 'test'
+  ...
+# Subtest: ART026 front eave fibers extend forward and droop
+ok 17 - ART026 front eave fibers extend forward and droop
+  ---
+  duration_ms: 4076.108417
+  type: 'test'
+  ...
+# Subtest: ART027 front eave fibers have both lateral directions
+ok 18 - ART027 front eave fibers have both lateral directions
+  ---
+  duration_ms: 4051.683542
+  type: 'test'
+  ...
+# Subtest: ART030 sleeping hide has substantial rumpled volume
+ok 19 - ART030 sleeping hide has substantial rumpled volume
+  ---
+  duration_ms: 4060.855625
+  type: 'test'
+  ...
+# Subtest: ART031/032 triangular framing and scrap screening exist
+ok 20 - ART031/032 triangular framing and scrap screening exist
+  ---
+  duration_ms: 4058.128292
+  type: 'test'
+  ...
+# Subtest: ART034 left posts extend above their bearing points
+ok 21 - ART034 left posts extend above their bearing points
+  ---
+  duration_ms: 4058.637333
+  type: 'test'
+  ...
+# Subtest: ART035 east posts lean outward at about 70 degrees to ground
+ok 22 - ART035 east posts lean outward at about 70 degrees to ground
+  ---
+  duration_ms: 4053.827417
+  type: 'test'
+  ...
+# Subtest: ART036 floor remains use varied attributed scan fragments and rest on ground
+ok 23 - ART036 floor remains use varied attributed scan fragments and rest on ground
+  ---
+  duration_ms: 4053.638625
+  type: 'test'
+  ...
+# Subtest: ART037 shared palette tints skull and wood separately
+ok 24 - ART037 shared palette tints skull and wood separately
+  ---
+  duration_ms: 4067.874458
+  type: 'test'
+  ...
+# Subtest: ART038/039 mineral envelopes clear wall blocks and wall ledges carry soil
+ok 25 - ART038/039 mineral envelopes clear wall blocks and wall ledges carry soil
+  ---
+  duration_ms: 4201.036
+  type: 'test'
+  ...
+# Subtest: ART040 approved shelter bones and giant crag retain geometry
+ok 26 - ART040 approved shelter bones and giant crag retain geometry
+  ---
+  duration_ms: 4141.534208
+  type: 'test'
+  ...
+# Subtest: ART041 geological walls form continuous sheets with large shared fracture domains
+ok 27 - ART041 geological walls form continuous sheets with large shared fracture domains
+  ---
+  duration_ms: 4103.762917
+  type: 'test'
+  ...
+# Subtest: ART042 west wall uses continuous erosion without abrupt fracture steps
+ok 28 - ART042 west wall uses continuous erosion without abrupt fracture steps
+  ---
+  duration_ms: 4171.785041
+  type: 'test'
+  ...
+# Subtest: ART043/046 large fallen rocks and a fifth of ceiling tips emit varied drips
+ok 29 - ART043/046 large fallen rocks and a fifth of ceiling tips emit varied drips
+  ---
+  duration_ms: 4140.549041
+  type: 'test'
+  ...
+# Subtest: ART047 west wall visibly overhangs with multiple erosion scales
+ok 30 - ART047 west wall visibly overhangs with multiple erosion scales
+  ---
+  duration_ms: 4113.40325
+  type: 'test'
+  ...
+# Subtest: ART048/049 three differently sized formations and pools under ground drips
+ok 31 - ART048/049 three differently sized formations and pools under ground drips
+  ---
+  duration_ms: 4111.105041
+  type: 'test'
+  ...
+# Subtest: ART050 mineral groups have asymmetric satellite formations and boulders sit by walls
+ok 32 - ART050 mineral groups have asymmetric satellite formations and boulders sit by walls
+  ---
+  duration_ms: 4123.229542
+  type: 'test'
+  ...
+1..32
+# tests 32
+# suites 0
+# pass 31
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 131781.141083

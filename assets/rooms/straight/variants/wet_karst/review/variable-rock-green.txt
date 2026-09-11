@@ -1,0 +1,120 @@
+npm notice run test
+npm notice run node --test tests/*.test.mjs
+TAP version 13
+# Subtest: ST005/006 GLB embeds images and matches identity
+ok 1 - ST005/006 GLB embeds images and matches identity
+  ---
+  duration_ms: 8.183917
+  type: 'test'
+  ...
+# Subtest: ST001/006 catalog identity and occupied bounds
+ok 2 - ST001/006 catalog identity and occupied bounds
+  ---
+  duration_ms: 3.151459
+  type: 'test'
+  ...
+# Subtest: ST002 actual meshes leave doorway and player route clear
+ok 3 - ST002 actual meshes leave doorway and player route clear
+  ---
+  duration_ms: 90.43825
+  type: 'test'
+  ...
+# Subtest: ST003/004 water lies above basin, and drips reach it
+ok 4 - ST003/004 water lies above basin, and drips reach it
+  ---
+  duration_ms: 1.885708
+  type: 'test'
+  ...
+# Subtest: ST005/007 finite geometry and deterministic generation
+ok 5 - ST005/007 finite geometry and deterministic generation
+  ---
+  duration_ms: 2037.511625
+  type: 'test'
+  ...
+# Subtest: ST003 drip paths are not blocked before the water surface
+ok 6 - ST003 drip paths are not blocked before the water surface
+  ---
+  duration_ms: 81.427333
+  type: 'test'
+  ...
+# Subtest: ST010 long west buttress has a real lower alcove
+ok 7 - ST010 long west buttress has a real lower alcove
+  ---
+  duration_ms: 11.269667
+  type: 'test'
+  ...
+# Subtest: ST011 talus has multiple fracture families and clustered placements
+ok 8 - ST011 talus has multiple fracture families and clustered placements
+  ---
+  duration_ms: 0.147125
+  type: 'test'
+  ...
+# Subtest: ST012 buttress has solid thickness across its height and length
+ok 9 - ST012 buttress has solid thickness across its height and length
+  ---
+  duration_ms: 35.238417
+  type: 'test'
+  ...
+# Subtest: ST013 west rock narrows into the west wall toward the north rear
+ok 10 - ST013 west rock narrows into the west wall toward the north rear
+  ---
+  duration_ms: 11.600792
+  type: 'test'
+  ...
+# Subtest: ST014 alcove opens south and terminates in real rock to the north
+ok 11 - ST014 alcove opens south and terminates in real rock to the north
+  ---
+  duration_ms: 57.135125
+  type: 'test'
+  ...
+# Subtest: ST015 skeleton remains in the deep northern alcove
+ok 12 - ST015 skeleton remains in the deep northern alcove
+  ---
+  duration_ms: 0.245959
+  type: 'test'
+  ...
+# Subtest: ST015 deep skeleton is not buried under talus or mineral growth
+ok 13 - ST015 deep skeleton is not buried under talus or mineral growth
+  ---
+  duration_ms: 832.280542
+  type: 'test'
+  ...
+# Subtest: ST016 rock foot is grounded and crown rises toward the rear
+ok 14 - ST016 rock foot is grounded and crown rises toward the rear
+  ---
+  duration_ms: 18.369208
+  type: 'test'
+  ...
+# Subtest: ST018 inner west wall has a closed back surface
+ok 15 - ST018 inner west wall has a closed back surface
+  ---
+  duration_ms: 11.551083
+  type: 'test'
+  ...
+# Subtest: ST019 only three short stalagmites remain outside the front rock foot
+ok 16 - ST019 only three short stalagmites remain outside the front rock foot
+  ---
+  duration_ms: 9.750041
+  type: 'test'
+  ...
+# Subtest: ST020 talus uses detailed eroded geometry
+ok 17 - ST020 talus uses detailed eroded geometry
+  ---
+  duration_ms: 0.188792
+  type: 'test'
+  ...
+# Subtest: ST021 rock thickness varies visibly along its length and height
+ok 18 - ST021 rock thickness varies visibly along its length and height
+  ---
+  duration_ms: 29.670542
+  type: 'test'
+  ...
+1..18
+# tests 18
+# suites 0
+# pass 18
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 5512.492083

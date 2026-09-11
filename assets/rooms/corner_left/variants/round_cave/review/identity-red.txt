@@ -1,0 +1,26 @@
+TAP version 13
+# Subtest: ROOM-ASSET-001–004 identity matches catalog and exported GLB
+not ok 1 - ROOM-ASSET-001–004 identity matches catalog and exported GLB
+  ---
+  duration_ms: 2.166666
+  type: 'test'
+  location: '/Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/corner-left-room-preview/tests/identity.test.mjs:2:1'
+  failureType: 'testCodeFailure'
+  error: "ENOENT: no such file or directory, open 'model/room-identity.json'"
+  code: 'ENOENT'
+  stack: |-
+    async open (node:internal/fs/promises:639:25)
+    async readFile (node:internal/fs/promises:1252:14)
+    async TestContext.<anonymous> (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/corner-left-room-preview/tests/identity.test.mjs:2:105)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 0
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 51.723667

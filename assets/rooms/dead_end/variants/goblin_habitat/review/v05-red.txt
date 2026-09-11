@@ -1,0 +1,136 @@
+TAP version 13
+# Subtest: ART006/009 required modeled categories
+ok 1 - ART006/009 required modeled categories
+  ---
+  duration_ms: 1277.373292
+  type: 'test'
+  ...
+# Subtest: ART001 finite meshes within room envelope
+ok 2 - ART001 finite meshes within room envelope
+  ---
+  duration_ms: 1164.7865
+  type: 'test'
+  ...
+# Subtest: ART003 giant crag connects roof and stays short
+ok 3 - ART003 giant crag connects roof and stays short
+  ---
+  duration_ms: 1147.109375
+  type: 'test'
+  ...
+# Subtest: ART004 columns connect ground to ceiling
+ok 4 - ART004 columns connect ground to ceiling
+  ---
+  duration_ms: 1142.10475
+  type: 'test'
+  ...
+# Subtest: ART007 swept route avoids design obstacle envelopes
+ok 5 - ART007 swept route avoids design obstacle envelopes
+  ---
+  duration_ms: 1145.630875
+  type: 'test'
+  ...
+# Subtest: ART008 deterministic vertex positions
+ok 6 - ART008 deterministic vertex positions
+  ---
+  duration_ms: 2277.339584
+  type: 'test'
+  ...
+# Subtest: ART010/011 detailed rock and UV coordinates
+ok 7 - ART010/011 detailed rock and UV coordinates
+  ---
+  duration_ms: 1140.870542
+  type: 'test'
+  ...
+# Subtest: ART013 wall transition and floor rock geometry exist
+ok 8 - ART013 wall transition and floor rock geometry exist
+  ---
+  duration_ms: 1135.27475
+  type: 'test'
+  ...
+# Subtest: ART014 overhanging crown is at least twice the low stem width
+ok 9 - ART014 overhanging crown is at least twice the low stem width
+  ---
+  duration_ms: 1133.099583
+  type: 'test'
+  ...
+# Subtest: ART015 skull topology and lashings are modeled
+ok 10 - ART015 skull topology and lashings are modeled
+  ---
+  duration_ms: 1137.116958
+  type: 'test'
+  ...
+# Subtest: ART017 scanned skull retains attribution and source color variation
+ok 11 - ART017 scanned skull retains attribution and source color variation
+  ---
+  duration_ms: 1152.717875
+  type: 'test'
+  ...
+# Subtest: ART018 shelter faces east with a steep, thick roof
+not ok 12 - ART018 shelter faces east with a steep, thick roof
+  ---
+  duration_ms: 1149.540875
+  type: 'test'
+  location: '/Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/cave-room-preview/tests/model.test.mjs:17:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly deep-equal:
+    + actual - expected
+
+    + undefined
+    - [
+    -   1,
+    -   0,
+    -   0
+    - ]
+
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+    0: 1
+    1: 0
+    2: 0
+  operator: 'deepStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/cave-room-preview/tests/model.test.mjs:17:91)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: ART019 water drops terminate on roof before eave runoff
+not ok 13 - ART019 water drops terminate on roof before eave runoff
+  ---
+  duration_ms: 1144.388666
+  type: 'test'
+  location: '/Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/cave-room-preview/tests/model.test.mjs:18:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The expression evaluated to a falsy value:
+
+      assert.ok(d?.length>=4)
+
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/cave-room-preview/tests/model.test.mjs:18:111)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..13
+# tests 13
+# suites 0
+# pass 11
+# fail 2
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 16242.529791

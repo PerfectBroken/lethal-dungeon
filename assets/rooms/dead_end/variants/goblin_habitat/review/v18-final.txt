@@ -1,0 +1,148 @@
+TAP version 13
+# Subtest: ART011 self-contained textured GLB decodes and round-trips
+ok 1 - ART011 self-contained textured GLB decodes and round-trips
+  ---
+  duration_ms: 133.556333
+  type: 'test'
+  ...
+# Subtest: ART006/009 required modeled categories
+ok 2 - ART006/009 required modeled categories
+  ---
+  duration_ms: 1508.710375
+  type: 'test'
+  ...
+# Subtest: ART001 finite meshes within room envelope
+ok 3 - ART001 finite meshes within room envelope
+  ---
+  duration_ms: 1409.361042
+  type: 'test'
+  ...
+# Subtest: ART003 giant crag connects roof and stays short
+ok 4 - ART003 giant crag connects roof and stays short
+  ---
+  duration_ms: 1334.687333
+  type: 'test'
+  ...
+# Subtest: ART004 columns connect ground to ceiling
+ok 5 - ART004 columns connect ground to ceiling
+  ---
+  duration_ms: 1314.445708
+  type: 'test'
+  ...
+# Subtest: ART007 swept route avoids design obstacle envelopes
+ok 6 - ART007 swept route avoids design obstacle envelopes
+  ---
+  duration_ms: 1402.399583
+  type: 'test'
+  ...
+# Subtest: ART008 deterministic vertex positions
+ok 7 - ART008 deterministic vertex positions
+  ---
+  duration_ms: 2643.215584
+  type: 'test'
+  ...
+# Subtest: ART010/011 detailed rock and UV coordinates
+ok 8 - ART010/011 detailed rock and UV coordinates
+  ---
+  duration_ms: 1303.884375
+  type: 'test'
+  ...
+# Subtest: ART013 wall transition and floor rock geometry exist
+ok 9 - ART013 wall transition and floor rock geometry exist
+  ---
+  duration_ms: 1289.489166
+  type: 'test'
+  ...
+# Subtest: ART014 overhanging crown is at least twice the low stem width
+ok 10 - ART014 overhanging crown is at least twice the low stem width
+  ---
+  duration_ms: 1284.60025
+  type: 'test'
+  ...
+# Subtest: ART015 skull topology and lashings are modeled
+ok 11 - ART015 skull topology and lashings are modeled
+  ---
+  duration_ms: 1289.308959
+  type: 'test'
+  ...
+# Subtest: ART017 scanned skull retains attribution and source color variation
+ok 12 - ART017 scanned skull retains attribution and source color variation
+  ---
+  duration_ms: 1295.630917
+  type: 'test'
+  ...
+# Subtest: ART018/021 shelter faces east with an asymmetric roof
+ok 13 - ART018/021 shelter faces east with an asymmetric roof
+  ---
+  duration_ms: 1277.379292
+  type: 'test'
+  ...
+# Subtest: ART019 water drops terminate on roof before eave runoff
+ok 14 - ART019 water drops terminate on roof before eave runoff
+  ---
+  duration_ms: 1291.992125
+  type: 'test'
+  ...
+# Subtest: ART020 low goblin shelter and a dimensional sleeping pelt
+ok 15 - ART020 low goblin shelter and a dimensional sleeping pelt
+  ---
+  duration_ms: 1326.840084
+  type: 'test'
+  ...
+# Subtest: ART021 four corner post heights follow requested ratios
+ok 16 - ART021 four corner post heights follow requested ratios
+  ---
+  duration_ms: 1318.7765
+  type: 'test'
+  ...
+# Subtest: ART026 front eave fibers extend forward and droop
+ok 17 - ART026 front eave fibers extend forward and droop
+  ---
+  duration_ms: 1360.814208
+  type: 'test'
+  ...
+# Subtest: ART027 front eave fibers have both lateral directions
+ok 18 - ART027 front eave fibers have both lateral directions
+  ---
+  duration_ms: 1376.952417
+  type: 'test'
+  ...
+# Subtest: ART030 sleeping hide has substantial rumpled volume
+ok 19 - ART030 sleeping hide has substantial rumpled volume
+  ---
+  duration_ms: 1331.188083
+  type: 'test'
+  ...
+# Subtest: ART031/032 triangular framing and scrap screening exist
+ok 20 - ART031/032 triangular framing and scrap screening exist
+  ---
+  duration_ms: 1286.683625
+  type: 'test'
+  ...
+# Subtest: ART034 left posts extend above their bearing points
+ok 21 - ART034 left posts extend above their bearing points
+  ---
+  duration_ms: 1288.387125
+  type: 'test'
+  ...
+# Subtest: ART035 east posts lean outward at about 70 degrees to ground
+ok 22 - ART035 east posts lean outward at about 70 degrees to ground
+  ---
+  duration_ms: 1297.209291
+  type: 'test'
+  ...
+# Subtest: ART036 floor remains use varied attributed scan fragments and rest on ground
+ok 23 - ART036 floor remains use varied attributed scan fragments and rest on ground
+  ---
+  duration_ms: 1293.597791
+  type: 'test'
+  ...
+1..23
+# tests 23
+# suites 0
+# pass 23
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 30620.011125

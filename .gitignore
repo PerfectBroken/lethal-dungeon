@@ -17,3 +17,9 @@ engine/**/UserSettings/
 engine/**/Builds/
 engine/Validation/Assets/Plugins/Domain/*.dll
 engine/Validation/Assets/Plugins/Domain/*.pdb
+
+.idea/
+**/node_modules/
+**/dist/
+.work/
+**/.wrangler/

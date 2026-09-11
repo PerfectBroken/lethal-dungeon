@@ -1,0 +1,5 @@
+import * as T from 'three';import {createField} from './model/room.mjs?v=28';
+// Inspection-only section cap, not part of the exported room asset.
+export function makeCutawayCap(doors){const field=createField(doors);const vs=[],y=1.645,step=.125;
+function triangle(points){let poly=points.map(p=>({p,v:field(...p)})),clipped=[];for(let i=0;i<3;i++){const a=poly[i],b=poly[(i+1)%3];if(a.v<=0)clipped.push(a.p);if((a.v<0)!==(b.v<0)){const t=a.v/(a.v-b.v);clipped.push(a.p.map((x,k)=>x+(b.p[k]-x)*t))}}for(let i=1;i<clipped.length-1;i++)vs.push(...clipped[0],...clipped[i],...clipped[i+1])}
+for(let x=-4;x<4;x+=step)for(let z=-4;z<4;z+=step){const a=[x,y,z],b=[x+step,y,z],c=[x+step,y,z+step],d=[x,y,z+step];triangle([a,b,c]);triangle([a,c,d])}const g=new T.BufferGeometry();g.setAttribute('position',new T.Float32BufferAttribute(vs,3));g.computeVertexNormals();const m=new T.Mesh(g,new T.MeshStandardMaterial({color:0x383329,roughness:1,side:T.DoubleSide}));m.name='inspectionSectionCap';m.visible=false;return m}

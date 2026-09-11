@@ -1,0 +1,6 @@
+  Domain -> /Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/lethal-dungeon/src/Domain/bin/Debug/netstandard2.1/LethalDungeon.Domain.dll
+  Architecture.Tests -> /Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/lethal-dungeon/tests/Architecture.Tests/bin/Debug/net10.0/Architecture.Tests.dll
+Test run for /Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/lethal-dungeon/tests/Architecture.Tests/bin/Debug/net10.0/Architecture.Tests.dll (.NETCoreApp,Version=v10.0)
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, Passed:    14, Skipped:     0, Total:    14, Duration: 52 ms - Architecture.Tests.dll (net10.0)

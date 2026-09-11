@@ -1,0 +1,58 @@
+TAP version 13
+# Subtest: ART001 finite meshes within room envelope
+ok 1 - ART001 finite meshes within room envelope
+  ---
+  duration_ms: 1819.436833
+  type: 'test'
+  ...
+# Subtest: ART007 swept route avoids design obstacle envelopes
+ok 2 - ART007 swept route avoids design obstacle envelopes
+  ---
+  duration_ms: 1697.345916
+  type: 'test'
+  ...
+# Subtest: ART038/039 mineral envelopes clear wall blocks and wall ledges carry soil
+ok 3 - ART038/039 mineral envelopes clear wall blocks and wall ledges carry soil
+  ---
+  duration_ms: 1670.353583
+  type: 'test'
+  ...
+# Subtest: ART040 approved shelter bones and giant crag retain geometry
+ok 4 - ART040 approved shelter bones and giant crag retain geometry
+  ---
+  duration_ms: 1650.856084
+  type: 'test'
+  ...
+# Subtest: ART041 geological walls form continuous sheets with large shared fracture domains
+ok 5 - ART041 geological walls form continuous sheets with large shared fracture domains
+  ---
+  duration_ms: 1639.24775
+  type: 'test'
+  ...
+# Subtest: ART042 west wall uses continuous erosion without abrupt fracture steps
+ok 6 - ART042 west wall uses continuous erosion without abrupt fracture steps
+  ---
+  duration_ms: 1643.659708
+  type: 'test'
+  ...
+# Subtest: ART043/046 large fallen rocks and a fifth of ceiling tips emit varied drips
+ok 7 - ART043/046 large fallen rocks and a fifth of ceiling tips emit varied drips
+  ---
+  duration_ms: 1650.080542
+  type: 'test'
+  ...
+# Subtest: ART047 west wall visibly overhangs with multiple erosion scales
+ok 8 - ART047 west wall visibly overhangs with multiple erosion scales
+  ---
+  duration_ms: 1651.832375
+  type: 'test'
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 8
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 13519.005959

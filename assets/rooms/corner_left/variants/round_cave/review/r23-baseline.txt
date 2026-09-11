@@ -1,0 +1,22 @@
+TAP version 13
+# Subtest: CL019 north wall has readable geometric bedding, not texture-only relief
+ok 1 - CL019 north wall has readable geometric bedding, not texture-only relief
+  ---
+  duration_ms: 11.116833
+  type: 'test'
+  ...
+# Subtest: CL024 bedding also varies across the north face horizontally
+ok 2 - CL024 bedding also varies across the north face horizontally
+  ---
+  duration_ms: 10.42875
+  type: 'test'
+  ...
+1..2
+# tests 2
+# suites 0
+# pass 2
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 113.182875

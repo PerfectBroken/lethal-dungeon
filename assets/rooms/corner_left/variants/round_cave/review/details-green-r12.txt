@@ -1,0 +1,16 @@
+TAP version 13
+# Subtest: CL010 sparse rubble and pendant records, grounded and attached
+ok 1 - CL010 sparse rubble and pendant records, grounded and attached
+  ---
+  duration_ms: 3226.656167
+  type: 'test'
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 1
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 3315.302209

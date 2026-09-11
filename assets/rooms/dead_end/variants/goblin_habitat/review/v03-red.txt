@@ -1,0 +1,128 @@
+TAP version 13
+# Subtest: ART006/009 required modeled categories
+ok 1 - ART006/009 required modeled categories
+  ---
+  duration_ms: 820.575125
+  type: 'test'
+  ...
+# Subtest: ART001 finite meshes within room envelope
+ok 2 - ART001 finite meshes within room envelope
+  ---
+  duration_ms: 729.438375
+  type: 'test'
+  ...
+# Subtest: ART003 giant crag connects roof and stays short
+ok 3 - ART003 giant crag connects roof and stays short
+  ---
+  duration_ms: 704.140791
+  type: 'test'
+  ...
+# Subtest: ART004 columns connect ground to ceiling
+ok 4 - ART004 columns connect ground to ceiling
+  ---
+  duration_ms: 701.162541
+  type: 'test'
+  ...
+# Subtest: ART007 swept route avoids design obstacle envelopes
+ok 5 - ART007 swept route avoids design obstacle envelopes
+  ---
+  duration_ms: 702.6245
+  type: 'test'
+  ...
+# Subtest: ART008 deterministic vertex positions
+ok 6 - ART008 deterministic vertex positions
+  ---
+  duration_ms: 1389.277167
+  type: 'test'
+  ...
+# Subtest: ART010/011 detailed rock and UV coordinates
+ok 7 - ART010/011 detailed rock and UV coordinates
+  ---
+  duration_ms: 711.72025
+  type: 'test'
+  ...
+# Subtest: ART013 wall transition and floor rock geometry exist
+not ok 8 - ART013 wall transition and floor rock geometry exist
+  ---
+  duration_ms: 694.42375
+  type: 'test'
+  location: '/Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/cave-room-preview/tests/model.test.mjs:13:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The expression evaluated to a falsy value:
+
+      assert.ok(r.getObjectByName(n))
+
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/cave-room-preview/tests/model.test.mjs:13:130)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: ART014 overhanging crown is at least twice the low stem width
+not ok 9 - ART014 overhanging crown is at least twice the low stem width
+  ---
+  duration_ms: 698.850708
+  type: 'test'
+  location: '/Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/cave-room-preview/tests/model.test.mjs:14:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The expression evaluated to a falsy value:
+
+      assert.ok(Math.max(...h)-Math.min(...h)>(Math.max(...l)-Math.min(...l))*2.0)
+
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/cave-room-preview/tests/model.test.mjs:14:266)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: ART015 skull topology and lashings are modeled
+not ok 10 - ART015 skull topology and lashings are modeled
+  ---
+  duration_ms: 708.259584
+  type: 'test'
+  location: '/Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/cave-room-preview/tests/model.test.mjs:15:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The expression evaluated to a falsy value:
+
+      assert.ok(r.getObjectByName('skull'))
+
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/cave-room-preview/tests/model.test.mjs:15:87)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..10
+# tests 10
+# suites 0
+# pass 7
+# fail 3
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 7943.178167

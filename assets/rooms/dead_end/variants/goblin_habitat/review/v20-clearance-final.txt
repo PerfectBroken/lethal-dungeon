@@ -1,0 +1,34 @@
+TAP version 13
+# Subtest: ART001 finite meshes within room envelope
+ok 1 - ART001 finite meshes within room envelope
+  ---
+  duration_ms: 1540.863042
+  type: 'test'
+  ...
+# Subtest: ART007 swept route avoids design obstacle envelopes
+ok 2 - ART007 swept route avoids design obstacle envelopes
+  ---
+  duration_ms: 1339.369917
+  type: 'test'
+  ...
+# Subtest: ART038/039 mineral envelopes clear wall blocks and wall ledges carry soil
+ok 3 - ART038/039 mineral envelopes clear wall blocks and wall ledges carry soil
+  ---
+  duration_ms: 1340.063375
+  type: 'test'
+  ...
+# Subtest: ART040 approved shelter bones and giant crag retain geometry
+ok 4 - ART040 approved shelter bones and giant crag retain geometry
+  ---
+  duration_ms: 1332.00175
+  type: 'test'
+  ...
+1..4
+# tests 4
+# suites 0
+# pass 4
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 5642.2215

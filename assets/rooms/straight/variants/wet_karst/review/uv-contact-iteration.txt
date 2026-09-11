@@ -1,0 +1,144 @@
+npm notice run test
+npm notice run node --test tests/*.test.mjs
+TAP version 13
+# Subtest: ST005/006 GLB embeds images and matches identity
+ok 1 - ST005/006 GLB embeds images and matches identity
+  ---
+  duration_ms: 8.384541
+  type: 'test'
+  ...
+# Subtest: ST001/006 catalog identity and occupied bounds
+ok 2 - ST001/006 catalog identity and occupied bounds
+  ---
+  duration_ms: 3.1075
+  type: 'test'
+  ...
+# Subtest: ST002 actual meshes leave doorway and player route clear
+ok 3 - ST002 actual meshes leave doorway and player route clear
+  ---
+  duration_ms: 92.122667
+  type: 'test'
+  ...
+# Subtest: ST003/004 water lies above basin, and drips reach it
+ok 4 - ST003/004 water lies above basin, and drips reach it
+  ---
+  duration_ms: 2.240916
+  type: 'test'
+  ...
+# Subtest: ST005/007 finite geometry and deterministic generation
+ok 5 - ST005/007 finite geometry and deterministic generation
+  ---
+  duration_ms: 1945.026
+  type: 'test'
+  ...
+# Subtest: ST003 drip paths are not blocked before the water surface
+ok 6 - ST003 drip paths are not blocked before the water surface
+  ---
+  duration_ms: 73.256708
+  type: 'test'
+  ...
+# Subtest: ST010 long west buttress has a real lower alcove
+ok 7 - ST010 long west buttress has a real lower alcove
+  ---
+  duration_ms: 11.598583
+  type: 'test'
+  ...
+# Subtest: ST011 talus has multiple fracture families and clustered placements
+ok 8 - ST011 talus has multiple fracture families and clustered placements
+  ---
+  duration_ms: 0.219959
+  type: 'test'
+  ...
+# Subtest: ST012 buttress has solid thickness across its height and length
+ok 9 - ST012 buttress has solid thickness across its height and length
+  ---
+  duration_ms: 36.434708
+  type: 'test'
+  ...
+# Subtest: ST013 west rock narrows into the west wall toward the north rear
+ok 10 - ST013 west rock narrows into the west wall toward the north rear
+  ---
+  duration_ms: 10.308375
+  type: 'test'
+  ...
+# Subtest: ST014 alcove opens south and terminates in real rock to the north
+ok 11 - ST014 alcove opens south and terminates in real rock to the north
+  ---
+  duration_ms: 53.513333
+  type: 'test'
+  ...
+# Subtest: ST022 skeleton stays inside the recessed west opening
+ok 12 - ST022 skeleton stays inside the recessed west opening
+  ---
+  duration_ms: 0.241167
+  type: 'test'
+  ...
+# Subtest: ST015 deep skeleton is not buried under talus or mineral growth
+ok 13 - ST015 deep skeleton is not buried under talus or mineral growth
+  ---
+  duration_ms: 827.735958
+  type: 'test'
+  ...
+# Subtest: ST016 rock foot is grounded and crown rises toward the rear
+ok 14 - ST016 rock foot is grounded and crown rises toward the rear
+  ---
+  duration_ms: 18.180959
+  type: 'test'
+  ...
+# Subtest: ST018 inner west wall has a closed back surface
+ok 15 - ST018 inner west wall has a closed back surface
+  ---
+  duration_ms: 11.222542
+  type: 'test'
+  ...
+# Subtest: ST019 only three short stalagmites remain outside the front rock foot
+ok 16 - ST019 only three short stalagmites remain outside the front rock foot
+  ---
+  duration_ms: 0.103417
+  type: 'test'
+  ...
+# Subtest: ST020 talus uses detailed eroded geometry
+ok 17 - ST020 talus uses detailed eroded geometry
+  ---
+  duration_ms: 0.1145
+  type: 'test'
+  ...
+# Subtest: ST021 rock thickness varies visibly along its length and height
+ok 18 - ST021 rock thickness varies visibly along its length and height
+  ---
+  duration_ms: 28.794666
+  type: 'test'
+  ...
+# Subtest: ST022 front aligns with far pond bank and body matches alcove width
+ok 19 - ST022 front aligns with far pond bank and body matches alcove width
+  ---
+  duration_ms: 14.630167
+  type: 'test'
+  ...
+# Subtest: ST022 skeleton can be discovered on entering from left half of doorway
+ok 20 - ST022 skeleton can be discovered on entering from left half of doorway
+  ---
+  duration_ms: 896.300333
+  type: 'test'
+  ...
+# Subtest: ST023 front fracture UV has usable two-dimensional area
+ok 21 - ST023 front fracture UV has usable two-dimensional area
+  ---
+  duration_ms: 7.389458
+  type: 'test'
+  ...
+# Subtest: ST024 stalagmite full envelope clears main rock
+ok 22 - ST024 stalagmite full envelope clears main rock
+  ---
+  duration_ms: 12.6285
+  type: 'test'
+  ...
+1..22
+# tests 22
+# suites 0
+# pass 22
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 6295.721625

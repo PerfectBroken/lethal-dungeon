@@ -1,0 +1,120 @@
+TAP version 13
+# Subtest: ART006/009 required modeled categories
+ok 1 - ART006/009 required modeled categories
+  ---
+  duration_ms: 1358.0235
+  type: 'test'
+  ...
+# Subtest: ART001 finite meshes within room envelope
+ok 2 - ART001 finite meshes within room envelope
+  ---
+  duration_ms: 1225.214583
+  type: 'test'
+  ...
+# Subtest: ART003 giant crag connects roof and stays short
+ok 3 - ART003 giant crag connects roof and stays short
+  ---
+  duration_ms: 1181.800667
+  type: 'test'
+  ...
+# Subtest: ART004 columns connect ground to ceiling
+ok 4 - ART004 columns connect ground to ceiling
+  ---
+  duration_ms: 1200.680625
+  type: 'test'
+  ...
+# Subtest: ART007 swept route avoids design obstacle envelopes
+ok 5 - ART007 swept route avoids design obstacle envelopes
+  ---
+  duration_ms: 1163.193666
+  type: 'test'
+  ...
+# Subtest: ART008 deterministic vertex positions
+ok 6 - ART008 deterministic vertex positions
+  ---
+  duration_ms: 2332.935834
+  type: 'test'
+  ...
+# Subtest: ART010/011 detailed rock and UV coordinates
+ok 7 - ART010/011 detailed rock and UV coordinates
+  ---
+  duration_ms: 1167.629208
+  type: 'test'
+  ...
+# Subtest: ART013 wall transition and floor rock geometry exist
+ok 8 - ART013 wall transition and floor rock geometry exist
+  ---
+  duration_ms: 1164.814833
+  type: 'test'
+  ...
+# Subtest: ART014 overhanging crown is at least twice the low stem width
+ok 9 - ART014 overhanging crown is at least twice the low stem width
+  ---
+  duration_ms: 1169.187375
+  type: 'test'
+  ...
+# Subtest: ART015 skull topology and lashings are modeled
+ok 10 - ART015 skull topology and lashings are modeled
+  ---
+  duration_ms: 1166.090084
+  type: 'test'
+  ...
+# Subtest: ART017 scanned skull retains attribution and source color variation
+ok 11 - ART017 scanned skull retains attribution and source color variation
+  ---
+  duration_ms: 1173.297333
+  type: 'test'
+  ...
+# Subtest: ART018/021 shelter faces east with an asymmetric roof
+ok 12 - ART018/021 shelter faces east with an asymmetric roof
+  ---
+  duration_ms: 1163.334333
+  type: 'test'
+  ...
+# Subtest: ART019 water drops terminate on roof before eave runoff
+ok 13 - ART019 water drops terminate on roof before eave runoff
+  ---
+  duration_ms: 1169.158125
+  type: 'test'
+  ...
+# Subtest: ART020 low goblin shelter and a dimensional sleeping pelt
+ok 14 - ART020 low goblin shelter and a dimensional sleeping pelt
+  ---
+  duration_ms: 1165.947958
+  type: 'test'
+  ...
+# Subtest: ART021 four corner post heights follow requested ratios
+not ok 15 - ART021 four corner post heights follow requested ratios
+  ---
+  duration_ms: 1152.588708
+  type: 'test'
+  location: '/Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/cave-room-preview/tests/model.test.mjs:20:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The expression evaluated to a falsy value:
+
+      assert.ok(Math.abs(heights[i]-h)<.002)
+
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/cave-room-preview/tests/model.test.mjs:20:234)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..15
+# tests 15
+# suites 0
+# pass 14
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 19060.725625

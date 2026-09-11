@@ -1,0 +1,1382 @@
+{
+  "schemaVersion": "room-catalog-v1",
+  "catalogVersion": "base-rooms-v1",
+  "metresPerUnit": 0.5,
+  "coordinateSystem": {
+    "up": "Y",
+    "north": "+Z",
+    "east": "+X",
+    "rotation": "clockwise viewed from above; (x,y,z) -> (z,y,-x) at 90 degrees"
+  },
+  "grid": {
+    "horizontalCellUnits": 16,
+    "floorHeightUnits": 8
+  },
+  "socketDefaults": {
+    "clearanceDepthUnits": 2,
+    "unusedSocket": "sealed"
+  },
+  "rooms": [
+    {
+      "id": "dead_end",
+      "name": "尽头房",
+      "revision": 1,
+      "prefabKey": "dungeon/base/dead_end",
+      "kind": "room",
+      "allowedRotations": [
+        0,
+        90,
+        180,
+        270
+      ],
+      "occupancy": [
+        {
+          "min": [
+            -8,
+            0,
+            -8
+          ],
+          "max": [
+            8,
+            8,
+            8
+          ]
+        }
+      ],
+      "sockets": [
+        {
+          "id": "south",
+          "position": [
+            0,
+            0,
+            -8
+          ],
+          "facing": "south",
+          "size": [
+            4,
+            6
+          ],
+          "connectionType": "standard"
+        }
+      ],
+      "traversalGroups": [
+        {
+          "id": "main",
+          "sockets": [
+            "south"
+          ]
+        }
+      ],
+      "connectionPolicy": {
+        "requiredSockets": [
+          "south"
+        ]
+      },
+      "matching": {
+        "cells": [
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "edges": [],
+        "socketCells": {
+          "south": 0
+        }
+      }
+    },
+    {
+      "id": "straight",
+      "name": "直通房",
+      "revision": 1,
+      "prefabKey": "dungeon/base/straight",
+      "kind": "room",
+      "allowedRotations": [
+        0,
+        90,
+        180,
+        270
+      ],
+      "occupancy": [
+        {
+          "min": [
+            -8,
+            0,
+            -8
+          ],
+          "max": [
+            8,
+            8,
+            8
+          ]
+        }
+      ],
+      "sockets": [
+        {
+          "id": "south",
+          "position": [
+            0,
+            0,
+            -8
+          ],
+          "facing": "south",
+          "size": [
+            4,
+            6
+          ],
+          "connectionType": "standard"
+        },
+        {
+          "id": "north",
+          "position": [
+            0,
+            0,
+            8
+          ],
+          "facing": "north",
+          "size": [
+            4,
+            6
+          ],
+          "connectionType": "standard"
+        }
+      ],
+      "traversalGroups": [
+        {
+          "id": "main",
+          "sockets": [
+            "south",
+            "north"
+          ]
+        }
+      ],
+      "connectionPolicy": {
+        "requiredSockets": [
+          "south",
+          "north"
+        ]
+      },
+      "matching": {
+        "cells": [
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "edges": [],
+        "socketCells": {
+          "south": 0,
+          "north": 0
+        }
+      }
+    },
+    {
+      "id": "corner_left",
+      "name": "左转角房",
+      "revision": 1,
+      "prefabKey": "dungeon/base/corner_left",
+      "kind": "room",
+      "allowedRotations": [
+        0,
+        90,
+        180,
+        270
+      ],
+      "occupancy": [
+        {
+          "min": [
+            -8,
+            0,
+            -8
+          ],
+          "max": [
+            8,
+            8,
+            8
+          ]
+        }
+      ],
+      "sockets": [
+        {
+          "id": "south",
+          "position": [
+            0,
+            0,
+            -8
+          ],
+          "facing": "south",
+          "size": [
+            4,
+            6
+          ],
+          "connectionType": "standard"
+        },
+        {
+          "id": "west",
+          "position": [
+            -8,
+            0,
+            0
+          ],
+          "facing": "west",
+          "size": [
+            4,
+            6
+          ],
+          "connectionType": "standard"
+        }
+      ],
+      "traversalGroups": [
+        {
+          "id": "main",
+          "sockets": [
+            "south",
+            "west"
+          ]
+        }
+      ],
+      "connectionPolicy": {
+        "requiredSockets": [
+          "south",
+          "west"
+        ]
+      },
+      "matching": {
+        "cells": [
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "edges": [],
+        "socketCells": {
+          "south": 0,
+          "west": 0
+        }
+      }
+    },
+    {
+      "id": "corner_right",
+      "name": "右转角房",
+      "revision": 1,
+      "prefabKey": "dungeon/base/corner_right",
+      "kind": "room",
+      "allowedRotations": [
+        0,
+        90,
+        180,
+        270
+      ],
+      "occupancy": [
+        {
+          "min": [
+            -8,
+            0,
+            -8
+          ],
+          "max": [
+            8,
+            8,
+            8
+          ]
+        }
+      ],
+      "sockets": [
+        {
+          "id": "south",
+          "position": [
+            0,
+            0,
+            -8
+          ],
+          "facing": "south",
+          "size": [
+            4,
+            6
+          ],
+          "connectionType": "standard"
+        },
+        {
+          "id": "east",
+          "position": [
+            8,
+            0,
+            0
+          ],
+          "facing": "east",
+          "size": [
+            4,
+            6
+          ],
+          "connectionType": "standard"
+        }
+      ],
+      "traversalGroups": [
+        {
+          "id": "main",
+          "sockets": [
+            "south",
+            "east"
+          ]
+        }
+      ],
+      "connectionPolicy": {
+        "requiredSockets": [
+          "south",
+          "east"
+        ]
+      },
+      "matching": {
+        "cells": [
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "edges": [],
+        "socketCells": {
+          "south": 0,
+          "east": 0
+        }
+      }
+    },
+    {
+      "id": "tee_left",
+      "name": "左三岔房",
+      "revision": 1,
+      "prefabKey": "dungeon/base/tee_left",
+      "kind": "room",
+      "allowedRotations": [
+        0,
+        90,
+        180,
+        270
+      ],
+      "occupancy": [
+        {
+          "min": [
+            -8,
+            0,
+            -8
+          ],
+          "max": [
+            8,
+            8,
+            8
+          ]
+        }
+      ],
+      "sockets": [
+        {
+          "id": "south",
+          "position": [
+            0,
+            0,
+            -8
+          ],
+          "facing": "south",
+          "size": [
+            4,
+            6
+          ],
+          "connectionType": "standard"
+        },
+        {
+          "id": "north",
+          "position": [
+            0,
+            0,
+            8
+          ],
+          "facing": "north",
+          "size": [
+            4,
+            6
+          ],
+          "connectionType": "standard"
+        },
+        {
+          "id": "west",
+          "position": [
+            -8,
+            0,
+            0
+          ],
+          "facing": "west",
+          "size": [
+            4,
+            6
+          ],
+          "connectionType": "standard"
+        }
+      ],
+      "traversalGroups": [
+        {
+          "id": "main",
+          "sockets": [
+            "south",
+            "north",
+            "west"
+          ]
+        }
+      ],
+      "connectionPolicy": {
+        "requiredSockets": [
+          "south",
+          "north",
+          "west"
+        ]
+      },
+      "matching": {
+        "cells": [
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "edges": [],
+        "socketCells": {
+          "south": 0,
+          "north": 0,
+          "west": 0
+        }
+      }
+    },
+    {
+      "id": "tee_right",
+      "name": "右三岔房",
+      "revision": 1,
+      "prefabKey": "dungeon/base/tee_right",
+      "kind": "room",
+      "allowedRotations": [
+        0,
+        90,
+        180,
+        270
+      ],
+      "occupancy": [
+        {
+          "min": [
+            -8,
+            0,
+            -8
+          ],
+          "max": [
+            8,
+            8,
+            8
+          ]
+        }
+      ],
+      "sockets": [
+        {
+          "id": "south",
+          "position": [
+            0,
+            0,
+            -8
+          ],
+          "facing": "south",
+          "size": [
+            4,
+            6
+          ],
+          "connectionType": "standard"
+        },
+        {
+          "id": "north",
+          "position": [
+            0,
+            0,
+            8
+          ],
+          "facing": "north",
+          "size": [
+            4,
+            6
+          ],
+          "connectionType": "standard"
+        },
+        {
+          "id": "east",
+          "position": [
+            8,
+            0,
+            0
+          ],
+          "facing": "east",
+          "size": [
+            4,
+            6
+          ],
+          "connectionType": "standard"
+        }
+      ],
+      "traversalGroups": [
+        {
+          "id": "main",
+          "sockets": [
+            "south",
+            "north",
+            "east"
+          ]
+        }
+      ],
+      "connectionPolicy": {
+        "requiredSockets": [
+          "south",
+          "north",
+          "east"
+        ]
+      },
+      "matching": {
+        "cells": [
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "edges": [],
+        "socketCells": {
+          "south": 0,
+          "north": 0,
+          "east": 0
+        }
+      }
+    },
+    {
+      "id": "cross",
+      "name": "四通房",
+      "revision": 1,
+      "prefabKey": "dungeon/base/cross",
+      "kind": "room",
+      "allowedRotations": [
+        0,
+        90,
+        180,
+        270
+      ],
+      "occupancy": [
+        {
+          "min": [
+            -8,
+            0,
+            -8
+          ],
+          "max": [
+            8,
+            8,
+            8
+          ]
+        }
+      ],
+      "sockets": [
+        {
+          "id": "south",
+          "position": [
+            0,
+            0,
+            -8
+          ],
+          "facing": "south",
+          "size": [
+            4,
+            6
+          ],
+          "connectionType": "standard"
+        },
+        {
+          "id": "north",
+          "position": [
+            0,
+            0,
+            8
+          ],
+          "facing": "north",
+          "size": [
+            4,
+            6
+          ],
+          "connectionType": "standard"
+        },
+        {
+          "id": "west",
+          "position": [
+            -8,
+            0,
+            0
+          ],
+          "facing": "west",
+          "size": [
+            4,
+            6
+          ],
+          "connectionType": "standard"
+        },
+        {
+          "id": "east",
+          "position": [
+            8,
+            0,
+            0
+          ],
+          "facing": "east",
+          "size": [
+            4,
+            6
+          ],
+          "connectionType": "standard"
+        }
+      ],
+      "traversalGroups": [
+        {
+          "id": "main",
+          "sockets": [
+            "south",
+            "north",
+            "west",
+            "east"
+          ]
+        }
+      ],
+      "connectionPolicy": {
+        "requiredSockets": [
+          "south",
+          "north",
+          "west",
+          "east"
+        ]
+      },
+      "matching": {
+        "cells": [
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "edges": [],
+        "socketCells": {
+          "south": 0,
+          "north": 0,
+          "west": 0,
+          "east": 0
+        }
+      }
+    },
+    {
+      "id": "stairs_straight",
+      "name": "直楼梯",
+      "revision": 1,
+      "prefabKey": "dungeon/base/stairs_straight",
+      "kind": "stairs",
+      "allowedRotations": [
+        0,
+        90,
+        180,
+        270
+      ],
+      "occupancy": [
+        {
+          "min": [
+            -8,
+            0,
+            -16
+          ],
+          "max": [
+            8,
+            16,
+            16
+          ]
+        }
+      ],
+      "sockets": [
+        {
+          "id": "lower",
+          "position": [
+            0,
+            0,
+            -16
+          ],
+          "facing": "south",
+          "size": [
+            4,
+            6
+          ],
+          "connectionType": "standard"
+        },
+        {
+          "id": "upper",
+          "position": [
+            0,
+            8,
+            16
+          ],
+          "facing": "north",
+          "size": [
+            4,
+            6
+          ],
+          "connectionType": "standard"
+        }
+      ],
+      "traversalGroups": [
+        {
+          "id": "main",
+          "sockets": [
+            "lower",
+            "upper"
+          ]
+        }
+      ],
+      "connectionPolicy": {
+        "requiredSockets": [
+          "lower",
+          "upper"
+        ]
+      },
+      "matching": {
+        "cells": [
+          [
+            0,
+            0,
+            -8
+          ],
+          [
+            0,
+            8,
+            8
+          ]
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "socketCells": {
+          "lower": 0,
+          "upper": 1
+        }
+      }
+    },
+    {
+      "id": "ramp_straight",
+      "name": "直坡道",
+      "revision": 1,
+      "prefabKey": "dungeon/base/ramp_straight",
+      "kind": "ramp",
+      "allowedRotations": [
+        0,
+        90,
+        180,
+        270
+      ],
+      "occupancy": [
+        {
+          "min": [
+            -8,
+            0,
+            -16
+          ],
+          "max": [
+            8,
+            16,
+            16
+          ]
+        }
+      ],
+      "sockets": [
+        {
+          "id": "lower",
+          "position": [
+            0,
+            0,
+            -16
+          ],
+          "facing": "south",
+          "size": [
+            4,
+            6
+          ],
+          "connectionType": "standard"
+        },
+        {
+          "id": "upper",
+          "position": [
+            0,
+            8,
+            16
+          ],
+          "facing": "north",
+          "size": [
+            4,
+            6
+          ],
+          "connectionType": "standard"
+        }
+      ],
+      "traversalGroups": [
+        {
+          "id": "main",
+          "sockets": [
+            "lower",
+            "upper"
+          ]
+        }
+      ],
+      "connectionPolicy": {
+        "requiredSockets": [
+          "lower",
+          "upper"
+        ]
+      },
+      "matching": {
+        "cells": [
+          [
+            0,
+            0,
+            -8
+          ],
+          [
+            0,
+            8,
+            8
+          ]
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "socketCells": {
+          "lower": 0,
+          "upper": 1
+        }
+      }
+    },
+    {
+      "id": "room_l_left",
+      "name": "左L型房间",
+      "revision": 1,
+      "prefabKey": "dungeon/base/room_l_left",
+      "kind": "room",
+      "allowedRotations": [
+        0,
+        90,
+        180,
+        270
+      ],
+      "occupancy": [
+        {
+          "min": [
+            -8,
+            0,
+            -8
+          ],
+          "max": [
+            8,
+            8,
+            8
+          ]
+        },
+        {
+          "min": [
+            -8,
+            0,
+            8
+          ],
+          "max": [
+            8,
+            8,
+            24
+          ]
+        },
+        {
+          "min": [
+            -24,
+            0,
+            8
+          ],
+          "max": [
+            -8,
+            8,
+            24
+          ]
+        }
+      ],
+      "sockets": [
+        {
+          "id": "south",
+          "position": [
+            0,
+            0,
+            -8
+          ],
+          "facing": "south",
+          "size": [
+            4,
+            6
+          ],
+          "connectionType": "standard"
+        },
+        {
+          "id": "exit",
+          "position": [
+            -24,
+            0,
+            16
+          ],
+          "facing": "west",
+          "size": [
+            4,
+            6
+          ],
+          "connectionType": "standard"
+        }
+      ],
+      "traversalGroups": [
+        {
+          "id": "main",
+          "sockets": [
+            "south",
+            "exit"
+          ]
+        }
+      ],
+      "connectionPolicy": {
+        "requiredSockets": [
+          "south",
+          "exit"
+        ]
+      },
+      "matching": {
+        "cells": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            16
+          ],
+          [
+            -16,
+            0,
+            16
+          ]
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "socketCells": {
+          "south": 0,
+          "exit": 2
+        }
+      }
+    },
+    {
+      "id": "room_l_right",
+      "name": "右L型房间",
+      "revision": 1,
+      "prefabKey": "dungeon/base/room_l_right",
+      "kind": "room",
+      "allowedRotations": [
+        0,
+        90,
+        180,
+        270
+      ],
+      "occupancy": [
+        {
+          "min": [
+            -8,
+            0,
+            -8
+          ],
+          "max": [
+            8,
+            8,
+            8
+          ]
+        },
+        {
+          "min": [
+            -8,
+            0,
+            8
+          ],
+          "max": [
+            8,
+            8,
+            24
+          ]
+        },
+        {
+          "min": [
+            8,
+            0,
+            8
+          ],
+          "max": [
+            24,
+            8,
+            24
+          ]
+        }
+      ],
+      "sockets": [
+        {
+          "id": "south",
+          "position": [
+            0,
+            0,
+            -8
+          ],
+          "facing": "south",
+          "size": [
+            4,
+            6
+          ],
+          "connectionType": "standard"
+        },
+        {
+          "id": "exit",
+          "position": [
+            24,
+            0,
+            16
+          ],
+          "facing": "east",
+          "size": [
+            4,
+            6
+          ],
+          "connectionType": "standard"
+        }
+      ],
+      "traversalGroups": [
+        {
+          "id": "main",
+          "sockets": [
+            "south",
+            "exit"
+          ]
+        }
+      ],
+      "connectionPolicy": {
+        "requiredSockets": [
+          "south",
+          "exit"
+        ]
+      },
+      "matching": {
+        "cells": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            16
+          ],
+          [
+            16,
+            0,
+            16
+          ]
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "socketCells": {
+          "south": 0,
+          "exit": 2
+        }
+      }
+    },
+    {
+      "id": "ramp_l_left",
+      "name": "左转L型坡道",
+      "revision": 1,
+      "prefabKey": "dungeon/base/ramp_l_left",
+      "kind": "ramp",
+      "allowedRotations": [
+        0,
+        90,
+        180,
+        270
+      ],
+      "occupancy": [
+        {
+          "min": [
+            -8,
+            0,
+            -8
+          ],
+          "max": [
+            8,
+            12,
+            8
+          ]
+        },
+        {
+          "min": [
+            -8,
+            4,
+            8
+          ],
+          "max": [
+            8,
+            12,
+            24
+          ]
+        },
+        {
+          "min": [
+            -24,
+            4,
+            8
+          ],
+          "max": [
+            -8,
+            16,
+            24
+          ]
+        }
+      ],
+      "sockets": [
+        {
+          "id": "lower",
+          "position": [
+            0,
+            0,
+            -8
+          ],
+          "facing": "south",
+          "size": [
+            4,
+            6
+          ],
+          "connectionType": "standard"
+        },
+        {
+          "id": "upper",
+          "position": [
+            -24,
+            8,
+            16
+          ],
+          "facing": "west",
+          "size": [
+            4,
+            6
+          ],
+          "connectionType": "standard"
+        }
+      ],
+      "traversalGroups": [
+        {
+          "id": "main",
+          "sockets": [
+            "lower",
+            "upper"
+          ]
+        }
+      ],
+      "connectionPolicy": {
+        "requiredSockets": [
+          "lower",
+          "upper"
+        ]
+      },
+      "matching": {
+        "cells": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            4,
+            16
+          ],
+          [
+            -16,
+            8,
+            16
+          ]
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "socketCells": {
+          "lower": 0,
+          "upper": 2
+        }
+      }
+    },
+    {
+      "id": "ramp_l_right",
+      "name": "右转L型坡道",
+      "revision": 1,
+      "prefabKey": "dungeon/base/ramp_l_right",
+      "kind": "ramp",
+      "allowedRotations": [
+        0,
+        90,
+        180,
+        270
+      ],
+      "occupancy": [
+        {
+          "min": [
+            -8,
+            0,
+            -8
+          ],
+          "max": [
+            8,
+            12,
+            8
+          ]
+        },
+        {
+          "min": [
+            -8,
+            4,
+            8
+          ],
+          "max": [
+            8,
+            12,
+            24
+          ]
+        },
+        {
+          "min": [
+            8,
+            4,
+            8
+          ],
+          "max": [
+            24,
+            16,
+            24
+          ]
+        }
+      ],
+      "sockets": [
+        {
+          "id": "lower",
+          "position": [
+            0,
+            0,
+            -8
+          ],
+          "facing": "south",
+          "size": [
+            4,
+            6
+          ],
+          "connectionType": "standard"
+        },
+        {
+          "id": "upper",
+          "position": [
+            24,
+            8,
+            16
+          ],
+          "facing": "east",
+          "size": [
+            4,
+            6
+          ],
+          "connectionType": "standard"
+        }
+      ],
+      "traversalGroups": [
+        {
+          "id": "main",
+          "sockets": [
+            "lower",
+            "upper"
+          ]
+        }
+      ],
+      "connectionPolicy": {
+        "requiredSockets": [
+          "lower",
+          "upper"
+        ]
+      },
+      "matching": {
+        "cells": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            4,
+            16
+          ],
+          [
+            16,
+            8,
+            16
+          ]
+        ],
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "socketCells": {
+          "lower": 0,
+          "upper": 2
+        }
+      }
+    }
+  ]
+}

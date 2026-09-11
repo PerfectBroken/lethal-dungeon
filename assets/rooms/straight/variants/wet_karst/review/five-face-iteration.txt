@@ -1,0 +1,210 @@
+npm notice run test
+npm notice run node --test tests/*.test.mjs
+TAP version 13
+# Subtest: ST005/006 GLB embeds images and matches identity
+ok 1 - ST005/006 GLB embeds images and matches identity
+  ---
+  duration_ms: 15.171916
+  type: 'test'
+  ...
+# Subtest: ST025 exported rock faces share baked PBR, not a preview-only shader
+ok 2 - ST025 exported rock faces share baked PBR, not a preview-only shader
+  ---
+  duration_ms: 12.425458
+  type: 'test'
+  ...
+# Subtest: ST025 atlas UV origin matches GLB top-row texture convention
+ok 3 - ST025 atlas UV origin matches GLB top-row texture convention
+  ---
+  duration_ms: 15.759375
+  type: 'test'
+  ...
+# Subtest: ST001/006 catalog identity and occupied bounds
+ok 4 - ST001/006 catalog identity and occupied bounds
+  ---
+  duration_ms: 3.366167
+  type: 'test'
+  ...
+# Subtest: ST002 actual meshes leave doorway and player route clear
+ok 5 - ST002 actual meshes leave doorway and player route clear
+  ---
+  duration_ms: 105.381583
+  type: 'test'
+  ...
+# Subtest: ST003/004 water lies above basin, and drips reach it
+ok 6 - ST003/004 water lies above basin, and drips reach it
+  ---
+  duration_ms: 2.541416
+  type: 'test'
+  ...
+# Subtest: ST005/007 finite geometry and deterministic generation
+ok 7 - ST005/007 finite geometry and deterministic generation
+  ---
+  duration_ms: 2194.105333
+  type: 'test'
+  ...
+# Subtest: ST003 drip paths are not blocked before the water surface
+ok 8 - ST003 drip paths are not blocked before the water surface
+  ---
+  duration_ms: 74.021333
+  type: 'test'
+  ...
+# Subtest: ST010 long west buttress has a real lower alcove
+ok 9 - ST010 long west buttress has a real lower alcove
+  ---
+  duration_ms: 9.534708
+  type: 'test'
+  ...
+# Subtest: ST011 talus has multiple fracture families and clustered placements
+ok 10 - ST011 talus has multiple fracture families and clustered placements
+  ---
+  duration_ms: 0.207833
+  type: 'test'
+  ...
+# Subtest: ST012 buttress has solid thickness across its height and length
+ok 11 - ST012 buttress has solid thickness across its height and length
+  ---
+  duration_ms: 33.8705
+  type: 'test'
+  ...
+# Subtest: ST013 west rock narrows into the west wall toward the north rear
+ok 12 - ST013 west rock narrows into the west wall toward the north rear
+  ---
+  duration_ms: 9.93575
+  type: 'test'
+  ...
+# Subtest: ST014 alcove opens south and terminates in real rock to the north
+ok 13 - ST014 alcove opens south and terminates in real rock to the north
+  ---
+  duration_ms: 55.646375
+  type: 'test'
+  ...
+# Subtest: ST022 skeleton stays inside the recessed west opening
+ok 14 - ST022 skeleton stays inside the recessed west opening
+  ---
+  duration_ms: 0.21925
+  type: 'test'
+  ...
+# Subtest: ST015 deep skeleton is not buried under talus or mineral growth
+ok 15 - ST015 deep skeleton is not buried under talus or mineral growth
+  ---
+  duration_ms: 832.2955
+  type: 'test'
+  ...
+# Subtest: ST016 rock foot is grounded and crown rises toward the rear
+ok 16 - ST016 rock foot is grounded and crown rises toward the rear
+  ---
+  duration_ms: 17.582416
+  type: 'test'
+  ...
+# Subtest: ST018 inner west wall has a closed back surface
+ok 17 - ST018 inner west wall has a closed back surface
+  ---
+  duration_ms: 11.564708
+  type: 'test'
+  ...
+# Subtest: ST019 only three short stalagmites remain outside the front rock foot
+not ok 18 - ST019 only three short stalagmites remain outside the front rock foot
+  ---
+  duration_ms: 0.689292
+  type: 'test'
+  location: '/Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/straight-room-preview/tests/model.test.mjs:23:1'
+  failureType: 'testCodeFailure'
+  error: 'stalagmite full radius must be in front of rock'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/straight-room-preview/tests/model.test.mjs:23:278)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: ST020 talus uses detailed eroded geometry
+ok 19 - ST020 talus uses detailed eroded geometry
+  ---
+  duration_ms: 0.13825
+  type: 'test'
+  ...
+# Subtest: ST021 rock thickness varies visibly along its length and height
+ok 20 - ST021 rock thickness varies visibly along its length and height
+  ---
+  duration_ms: 28.150417
+  type: 'test'
+  ...
+# Subtest: ST022 front aligns with far pond bank and body matches alcove width
+ok 21 - ST022 front aligns with far pond bank and body matches alcove width
+  ---
+  duration_ms: 14.255458
+  type: 'test'
+  ...
+# Subtest: ST022 skeleton can be discovered on entering from left half of doorway
+ok 22 - ST022 skeleton can be discovered on entering from left half of doorway
+  ---
+  duration_ms: 905.37975
+  type: 'test'
+  ...
+# Subtest: ST023 front fracture UV has usable two-dimensional area
+ok 23 - ST023 front fracture UV has usable two-dimensional area
+  ---
+  duration_ms: 6.770042
+  type: 'test'
+  ...
+# Subtest: ST024 stalagmite full envelope clears main rock
+not ok 24 - ST024 stalagmite full envelope clears main rock
+  ---
+  duration_ms: 10.353625
+  type: 'test'
+  location: '/Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/straight-room-preview/tests/model.test.mjs:32:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    rock intersects stalagmite radius/lean envelope
+
+    1 !== 0
+
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 0
+  actual: 1
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/straight-room-preview/tests/model.test.mjs:32:319)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: ST025 main rock has no separate fracture material
+ok 25 - ST025 main rock has no separate fracture material
+  ---
+  duration_ms: 0.093084
+  type: 'test'
+  ...
+# Subtest: ST026 foot minerals are not arranged in a straight row
+ok 26 - ST026 foot minerals are not arranged in a straight row
+  ---
+  duration_ms: 0.054458
+  type: 'test'
+  ...
+# Subtest: ST027 front crown includes a gentle outward bow
+ok 27 - ST027 front crown includes a gentle outward bow
+  ---
+  duration_ms: 0.062708
+  type: 'test'
+  ...
+1..27
+# tests 27
+# suites 0
+# pass 25
+# fail 2
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 6830.6255

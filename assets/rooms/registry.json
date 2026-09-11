@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "variants": [
+    {
+      "roomId": "dead_end",
+      "variantId": "goblin_habitat",
+      "path": "assets/rooms/dead_end/variants/goblin_habitat",
+      "resourceKey": "dungeon/rooms/dead_end/goblin_habitat",
+      "catalogPath": "docs/examples/base-rooms-v1.json",
+      "model": "model/dead-end-cave.glb",
+      "acceptedRevision": "V0.26",
+      "runtimeDoorAssembly": "not-integrated",
+      "artifacts": [
+        {
+          "path": "model/dead-end-cave.glb",
+          "sha256": "05df2bece70f4c5d3a0c4854debcc10bfc5c6032c65eb7be9aa01224af5d0ed4"
+        }
+      ]
+    },
+    {
+      "roomId": "straight",
+      "variantId": "wet_karst",
+      "path": "assets/rooms/straight/variants/wet_karst",
+      "resourceKey": "dungeon/rooms/straight/wet_karst",
+      "catalogPath": "docs/examples/base-rooms-v1.json",
+      "model": "model/straight-wet-karst-closed-walls.glb",
+      "acceptedRevision": "R27",
+      "runtimeDoorAssembly": "not-integrated",
+      "artifacts": [
+        {
+          "path": "model/straight-wet-karst-closed-walls.glb",
+          "sha256": "7580062fbb385ae3936ae37e59dfb88375f7a26ab06ace111da3571fe5eae1d8"
+        },
+        {
+          "path": "model/straight-wet-karst.glb",
+          "sha256": "5cb941184a88ad0fcf5514a11df20d1b871b83961f08494488f4807282440f31"
+        }
+      ]
+    },
+    {
+      "roomId": "corner_left",
+      "variantId": "round_cave",
+      "path": "assets/rooms/corner_left/variants/round_cave",
+      "resourceKey": "dungeon/rooms/corner_left/round_cave",
+      "catalogPath": "docs/examples/base-rooms.json",
+      "model": "model/corner-left-round-cave.glb",
+      "acceptedRevision": "R28",
+      "runtimeDoorAssembly": "not-integrated",
+      "artifacts": [
+        {
+          "path": "model/corner-left-round-cave.glb",
+          "sha256": "8b6dd30cb1377ec74df3dc11fabe186b32b13d5f4b5672822be5bb8a5c0de3e6"
+        }
+      ]
+    }
+  ]
+}

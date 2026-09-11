@@ -1,0 +1,138 @@
+npm notice run test
+npm notice run node --test tests/*.test.mjs
+TAP version 13
+# Subtest: CL018 formerly square corner pockets become solid rock shoulders while central door bands stay clear
+ok 1 - CL018 formerly square corner pockets become solid rock shoulders while central door bands stay clear
+  ---
+  duration_ms: 4.028708
+  type: 'test'
+  ...
+# Subtest: CL010 sparse rubble and pendant records, grounded and attached
+ok 2 - CL010 sparse rubble and pendant records, grounded and attached
+  ---
+  duration_ms: 12351.774166
+  type: 'test'
+  ...
+# Subtest: CL012 upper-left embedded rock projects from the north wall
+ok 3 - CL012 upper-left embedded rock projects from the north wall
+  ---
+  duration_ms: 7941.697125
+  type: 'test'
+  ...
+# Subtest: CL014 dripstone tips stay vertically below their attachment axes
+ok 4 - CL014 dripstone tips stay vertically below their attachment axes
+  ---
+  duration_ms: 11659.276334
+  type: 'test'
+  ...
+# Subtest: CL017 all nine candidate combinations have real open throats and clear paths
+ok 5 - CL017 all nine candidate combinations have real open throats and clear paths
+  ---
+  duration_ms: 104141.632333
+  type: 'test'
+  ...
+# Subtest: CL017 closed candidates are solid, invalid selection rejected
+ok 6 - CL017 closed candidates are solid, invalid selection rejected
+  ---
+  duration_ms: 6344.493792
+  type: 'test'
+  ...
+# Subtest: ROOM-ASSET-001–004 identity matches catalog and exported GLB
+ok 7 - ROOM-ASSET-001–004 identity matches catalog and exported GLB
+  ---
+  duration_ms: 62.307542
+  type: 'test'
+  ...
+# Subtest: CL026 fine rubble and layered dripstone geometry
+ok 8 - CL026 fine rubble and layered dripstone geometry
+  ---
+  duration_ms: 12261.6735
+  type: 'test'
+  ...
+# Subtest: CL001 identity and metres envelope
+ok 9 - CL001 identity and metres envelope
+  ---
+  duration_ms: 8308.858292
+  type: 'test'
+  ...
+# Subtest: CL002 south and west passages open across width and height
+ok 10 - CL002 south and west passages open across width and height
+  ---
+  duration_ms: 8197.005167
+  type: 'test'
+  ...
+# Subtest: CL002 north/east fully sealed
+ok 11 - CL002 north/east fully sealed
+  ---
+  duration_ms: 7951.38425
+  type: 'test'
+  ...
+# Subtest: CL003 rock thickness along north east and roof
+ok 12 - CL003 rock thickness along north east and roof
+  ---
+  duration_ms: 7854.742292
+  type: 'test'
+  ...
+# Subtest: CL004 continuous central walking space
+ok 13 - CL004 continuous central walking space
+  ---
+  duration_ms: 7845.318167
+  type: 'test'
+  ...
+# Subtest: CL007 finite nondegenerate bounded mesh
+ok 14 - CL007 finite nondegenerate bounded mesh
+  ---
+  duration_ms: 7890.520583
+  type: 'test'
+  ...
+# Subtest: CL007 deterministic
+ok 15 - CL007 deterministic
+  ---
+  duration_ms: 15671.23675
+  type: 'test'
+  ...
+# Subtest: CL002 no unintended diagonal openings
+ok 16 - CL002 no unintended diagonal openings
+  ---
+  duration_ms: 7835.8725
+  type: 'test'
+  ...
+# Subtest: CL004 walking rays hit actual upper floor rather than underside
+ok 17 - CL004 walking rays hit actual upper floor rather than underside
+  ---
+  duration_ms: 7884.024667
+  type: 'test'
+  ...
+# Subtest: CL019 north wall has readable geometric bedding, not texture-only relief
+ok 18 - CL019 north wall has readable geometric bedding, not texture-only relief
+  ---
+  duration_ms: 19.1615
+  type: 'test'
+  ...
+# Subtest: CL024 bedding also varies across the north face horizontally
+ok 19 - CL024 bedding also varies across the north face horizontally
+  ---
+  duration_ms: 14.391917
+  type: 'test'
+  ...
+# Subtest: CL020 west wall beside doorway has volumetric relief
+ok 20 - CL020 west wall beside doorway has volumetric relief
+  ---
+  duration_ms: 16.890292
+  type: 'test'
+  ...
+# Subtest: CL021 door-capable wall has cave-scale profile variation
+ok 21 - CL021 door-capable wall has cave-scale profile variation
+  ---
+  duration_ms: 6.182042
+  type: 'test'
+  ...
+1..21
+# tests 21
+# suites 0
+# pass 21
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 110642.673

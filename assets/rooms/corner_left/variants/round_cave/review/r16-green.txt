@@ -1,0 +1,90 @@
+npm notice run test
+npm notice run node --test tests/*.test.mjs
+TAP version 13
+# Subtest: CL010 sparse rubble and pendant records, grounded and attached
+ok 1 - CL010 sparse rubble and pendant records, grounded and attached
+  ---
+  duration_ms: 3520.044333
+  type: 'test'
+  ...
+# Subtest: CL012 upper-left embedded rock projects from the north wall
+ok 2 - CL012 upper-left embedded rock projects from the north wall
+  ---
+  duration_ms: 2286.882041
+  type: 'test'
+  ...
+# Subtest: CL014 dripstone tips stay vertically below their attachment axes
+ok 3 - CL014 dripstone tips stay vertically below their attachment axes
+  ---
+  duration_ms: 3284.713791
+  type: 'test'
+  ...
+# Subtest: ROOM-ASSET-001–004 identity matches catalog and exported GLB
+ok 4 - ROOM-ASSET-001–004 identity matches catalog and exported GLB
+  ---
+  duration_ms: 20.071041
+  type: 'test'
+  ...
+# Subtest: CL001 identity and metres envelope
+ok 5 - CL001 identity and metres envelope
+  ---
+  duration_ms: 2334.273917
+  type: 'test'
+  ...
+# Subtest: CL002 south and west passages open across width and height
+ok 6 - CL002 south and west passages open across width and height
+  ---
+  duration_ms: 2407.52975
+  type: 'test'
+  ...
+# Subtest: CL002 north/east fully sealed
+ok 7 - CL002 north/east fully sealed
+  ---
+  duration_ms: 2310.444417
+  type: 'test'
+  ...
+# Subtest: CL003 rock thickness along north east and roof
+ok 8 - CL003 rock thickness along north east and roof
+  ---
+  duration_ms: 2281.831334
+  type: 'test'
+  ...
+# Subtest: CL004 continuous central walking space
+ok 9 - CL004 continuous central walking space
+  ---
+  duration_ms: 2354.488458
+  type: 'test'
+  ...
+# Subtest: CL007 finite nondegenerate bounded mesh
+ok 10 - CL007 finite nondegenerate bounded mesh
+  ---
+  duration_ms: 2387.709375
+  type: 'test'
+  ...
+# Subtest: CL007 deterministic
+ok 11 - CL007 deterministic
+  ---
+  duration_ms: 4579.764125
+  type: 'test'
+  ...
+# Subtest: CL002 no unintended diagonal openings
+ok 12 - CL002 no unintended diagonal openings
+  ---
+  duration_ms: 2330.408958
+  type: 'test'
+  ...
+# Subtest: CL004 walking rays hit actual upper floor rather than underside
+ok 13 - CL004 walking rays hit actual upper floor rather than underside
+  ---
+  duration_ms: 2413.097292
+  type: 'test'
+  ...
+1..13
+# tests 13
+# suites 0
+# pass 13
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 23497.862291

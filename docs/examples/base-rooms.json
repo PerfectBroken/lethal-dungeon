@@ -1,6 +1,6 @@
 {
-  "schemaVersion": "room-catalog-v1",
-  "catalogVersion": "base-rooms-v1",
+  "schemaVersion": "room-catalog-v2",
+  "catalogVersion": "base-rooms-v2",
   "metresPerUnit": 0.5,
   "coordinateSystem": {
     "up": "Y",
@@ -20,7 +20,7 @@
     {
       "id": "dead_end",
       "name": "尽头房",
-      "revision": 1,
+      "revision": 2,
       "prefabKey": "dungeon/base/dead_end",
       "kind": "room",
       "allowedRotations": [
@@ -56,7 +56,12 @@
             4,
             6
           ],
-          "connectionType": "standard"
+          "connectionType": "standard",
+          "tangentOffsets": [
+            -2,
+            0,
+            2
+          ]
         }
       ],
       "traversalGroups": [
@@ -89,7 +94,7 @@
     {
       "id": "straight",
       "name": "直通房",
-      "revision": 1,
+      "revision": 2,
       "prefabKey": "dungeon/base/straight",
       "kind": "room",
       "allowedRotations": [
@@ -125,7 +130,12 @@
             4,
             6
           ],
-          "connectionType": "standard"
+          "connectionType": "standard",
+          "tangentOffsets": [
+            -2,
+            0,
+            2
+          ]
         },
         {
           "id": "north",
@@ -139,7 +149,12 @@
             4,
             6
           ],
-          "connectionType": "standard"
+          "connectionType": "standard",
+          "tangentOffsets": [
+            -2,
+            0,
+            2
+          ]
         }
       ],
       "traversalGroups": [
@@ -175,7 +190,7 @@
     {
       "id": "corner_left",
       "name": "左转角房",
-      "revision": 1,
+      "revision": 2,
       "prefabKey": "dungeon/base/corner_left",
       "kind": "room",
       "allowedRotations": [
@@ -211,7 +226,12 @@
             4,
             6
           ],
-          "connectionType": "standard"
+          "connectionType": "standard",
+          "tangentOffsets": [
+            -2,
+            0,
+            2
+          ]
         },
         {
           "id": "west",
@@ -225,7 +245,12 @@
             4,
             6
           ],
-          "connectionType": "standard"
+          "connectionType": "standard",
+          "tangentOffsets": [
+            -2,
+            0,
+            2
+          ]
         }
       ],
       "traversalGroups": [
@@ -261,7 +286,7 @@
     {
       "id": "corner_right",
       "name": "右转角房",
-      "revision": 1,
+      "revision": 2,
       "prefabKey": "dungeon/base/corner_right",
       "kind": "room",
       "allowedRotations": [
@@ -297,7 +322,12 @@
             4,
             6
           ],
-          "connectionType": "standard"
+          "connectionType": "standard",
+          "tangentOffsets": [
+            -2,
+            0,
+            2
+          ]
         },
         {
           "id": "east",
@@ -311,7 +341,12 @@
             4,
             6
           ],
-          "connectionType": "standard"
+          "connectionType": "standard",
+          "tangentOffsets": [
+            -2,
+            0,
+            2
+          ]
         }
       ],
       "traversalGroups": [
@@ -347,7 +382,7 @@
     {
       "id": "tee_left",
       "name": "左三岔房",
-      "revision": 1,
+      "revision": 2,
       "prefabKey": "dungeon/base/tee_left",
       "kind": "room",
       "allowedRotations": [
@@ -383,7 +418,12 @@
             4,
             6
           ],
-          "connectionType": "standard"
+          "connectionType": "standard",
+          "tangentOffsets": [
+            -2,
+            0,
+            2
+          ]
         },
         {
           "id": "north",
@@ -397,7 +437,12 @@
             4,
             6
           ],
-          "connectionType": "standard"
+          "connectionType": "standard",
+          "tangentOffsets": [
+            -2,
+            0,
+            2
+          ]
         },
         {
           "id": "west",
@@ -411,7 +456,12 @@
             4,
             6
           ],
-          "connectionType": "standard"
+          "connectionType": "standard",
+          "tangentOffsets": [
+            -2,
+            0,
+            2
+          ]
         }
       ],
       "traversalGroups": [
@@ -450,7 +500,7 @@
     {
       "id": "tee_right",
       "name": "右三岔房",
-      "revision": 1,
+      "revision": 2,
       "prefabKey": "dungeon/base/tee_right",
       "kind": "room",
       "allowedRotations": [
@@ -486,7 +536,12 @@
             4,
             6
           ],
-          "connectionType": "standard"
+          "connectionType": "standard",
+          "tangentOffsets": [
+            -2,
+            0,
+            2
+          ]
         },
         {
           "id": "north",
@@ -500,7 +555,12 @@
             4,
             6
           ],
-          "connectionType": "standard"
+          "connectionType": "standard",
+          "tangentOffsets": [
+            -2,
+            0,
+            2
+          ]
         },
         {
           "id": "east",
@@ -514,7 +574,12 @@
             4,
             6
           ],
-          "connectionType": "standard"
+          "connectionType": "standard",
+          "tangentOffsets": [
+            -2,
+            0,
+            2
+          ]
         }
       ],
       "traversalGroups": [
@@ -553,7 +618,7 @@
     {
       "id": "cross",
       "name": "四通房",
-      "revision": 1,
+      "revision": 2,
       "prefabKey": "dungeon/base/cross",
       "kind": "room",
       "allowedRotations": [
@@ -589,7 +654,12 @@
             4,
             6
           ],
-          "connectionType": "standard"
+          "connectionType": "standard",
+          "tangentOffsets": [
+            -2,
+            0,
+            2
+          ]
         },
         {
           "id": "north",
@@ -603,7 +673,12 @@
             4,
             6
           ],
-          "connectionType": "standard"
+          "connectionType": "standard",
+          "tangentOffsets": [
+            -2,
+            0,
+            2
+          ]
         },
         {
           "id": "west",
@@ -617,7 +692,12 @@
             4,
             6
           ],
-          "connectionType": "standard"
+          "connectionType": "standard",
+          "tangentOffsets": [
+            -2,
+            0,
+            2
+          ]
         },
         {
           "id": "east",
@@ -631,7 +711,12 @@
             4,
             6
           ],
-          "connectionType": "standard"
+          "connectionType": "standard",
+          "tangentOffsets": [
+            -2,
+            0,
+            2
+          ]
         }
       ],
       "traversalGroups": [
@@ -709,7 +794,10 @@
             4,
             6
           ],
-          "connectionType": "standard"
+          "connectionType": "standard",
+          "tangentOffsets": [
+            0
+          ]
         },
         {
           "id": "upper",
@@ -723,7 +811,10 @@
             4,
             6
           ],
-          "connectionType": "standard"
+          "connectionType": "standard",
+          "tangentOffsets": [
+            0
+          ]
         }
       ],
       "traversalGroups": [
@@ -805,7 +896,10 @@
             4,
             6
           ],
-          "connectionType": "standard"
+          "connectionType": "standard",
+          "tangentOffsets": [
+            0
+          ]
         },
         {
           "id": "upper",
@@ -819,7 +913,10 @@
             4,
             6
           ],
-          "connectionType": "standard"
+          "connectionType": "standard",
+          "tangentOffsets": [
+            0
+          ]
         }
       ],
       "traversalGroups": [
@@ -925,7 +1022,10 @@
             4,
             6
           ],
-          "connectionType": "standard"
+          "connectionType": "standard",
+          "tangentOffsets": [
+            0
+          ]
         },
         {
           "id": "exit",
@@ -939,7 +1039,10 @@
             4,
             6
           ],
-          "connectionType": "standard"
+          "connectionType": "standard",
+          "tangentOffsets": [
+            0
+          ]
         }
       ],
       "traversalGroups": [
@@ -1054,7 +1157,10 @@
             4,
             6
           ],
-          "connectionType": "standard"
+          "connectionType": "standard",
+          "tangentOffsets": [
+            0
+          ]
         },
         {
           "id": "exit",
@@ -1068,7 +1174,10 @@
             4,
             6
           ],
-          "connectionType": "standard"
+          "connectionType": "standard",
+          "tangentOffsets": [
+            0
+          ]
         }
       ],
       "traversalGroups": [
@@ -1183,7 +1292,10 @@
             4,
             6
           ],
-          "connectionType": "standard"
+          "connectionType": "standard",
+          "tangentOffsets": [
+            0
+          ]
         },
         {
           "id": "upper",
@@ -1197,7 +1309,10 @@
             4,
             6
           ],
-          "connectionType": "standard"
+          "connectionType": "standard",
+          "tangentOffsets": [
+            0
+          ]
         }
       ],
       "traversalGroups": [
@@ -1312,7 +1427,10 @@
             4,
             6
           ],
-          "connectionType": "standard"
+          "connectionType": "standard",
+          "tangentOffsets": [
+            0
+          ]
         },
         {
           "id": "upper",
@@ -1326,7 +1444,10 @@
             4,
             6
           ],
-          "connectionType": "standard"
+          "connectionType": "standard",
+          "tangentOffsets": [
+            0
+          ]
         }
       ],
       "traversalGroups": [

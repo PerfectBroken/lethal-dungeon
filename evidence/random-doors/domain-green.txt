@@ -1,0 +1,7 @@
+  Domain -> /Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/lethal-dungeon/src/Domain/bin/Debug/netstandard2.1/LethalDungeon.Domain.dll
+  CatalogJson -> /Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/lethal-dungeon/src/CatalogJson/bin/Debug/net10.0/CatalogJson.dll
+  Domain.Tests -> /Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll
+Test run for /Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll (.NETCoreApp,Version=v10.0)
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, Passed:   195, Skipped:     0, Total:   195, Duration: 39 s - Domain.Tests.dll (net10.0)

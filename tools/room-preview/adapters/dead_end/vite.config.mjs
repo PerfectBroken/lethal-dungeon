@@ -1,0 +1,1 @@
+import {defineConfig} from 'vite';import react from '@vitejs/plugin-react';import tailwind from '@tailwindcss/postcss';import path from 'node:path';export default defineConfig({cacheDir:".vite-cache",plugins:[react()],resolve:{alias:{'@':path.resolve(import.meta.dirname)}},css:{postcss:{plugins:[tailwind()]}},server:{fs:{allow:[path.resolve(import.meta.dirname,'../../..')]}}});

@@ -1,0 +1,21 @@
+  Domain -> /Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/lethal-dungeon/src/Domain/bin/Debug/netstandard2.1/LethalDungeon.Domain.dll
+  CatalogJson -> /Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/lethal-dungeon/src/CatalogJson/bin/Debug/net10.0/CatalogJson.dll
+  Domain.Tests -> /Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll
+Test run for /Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/lethal-dungeon/tests/Domain.Tests/bin/Debug/net10.0/Domain.Tests.dll (.NETCoreApp,Version=v10.0)
+A total of 1 test files matched the specified pattern.
+  Failed ConfiguredOffsetsProduceAlignedNoncentralDoors [12 ms]
+  Error Message:
+   System.ArgumentException : Unsupported schema or units.
+  ParamName: <null>
+  Stack Trace:
+     at LethalDungeon.CatalogJson.RoomCatalogJson.Parse(String json) in /Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/lethal-dungeon/src/CatalogJson/RoomCatalogJson.cs:line 20
+   at LethalDungeon.Tests.RandomDoorTests.ConfiguredOffsetsProduceAlignedNoncentralDoors() in /Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/lethal-dungeon/tests/Domain.Tests/RandomDoorTests.cs:line 5
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+1)    at LethalDungeon.CatalogJson.RoomCatalogJson.Parse(String json) in /Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/lethal-dungeon/src/CatalogJson/RoomCatalogJson.cs:line 20
+   at LethalDungeon.Tests.RandomDoorTests.ConfiguredOffsetsProduceAlignedNoncentralDoors() in /Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/lethal-dungeon/tests/Domain.Tests/RandomDoorTests.cs:line 5
+   at System.Reflection.MethodBaseInvoker.InterpretedInvoke_Method(Object obj, IntPtr* args)
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+
+
+Failed!  - Failed:     1, Passed:     0, Skipped:     0, Total:     1, Duration: 12 ms - Domain.Tests.dll (net10.0)

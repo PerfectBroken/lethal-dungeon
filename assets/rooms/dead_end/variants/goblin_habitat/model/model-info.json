@@ -1,0 +1,21 @@
+{
+  "name": "dead_end_cave_v1",
+  "triangles": 234393,
+  "meshes": 17,
+  "bytes": 24200368,
+  "units": "metres",
+  "bounds": "8 x 8 x 4",
+  "stage": "refined review model v0.26",
+  "collision": "design envelopes only; engine validation pending",
+  "textures": 12,
+  "roomIdentity": {
+    "catalogVersion": "base-rooms-v1",
+    "roomId": "dead_end",
+    "roomName": "尽头房",
+    "roomRevision": 1,
+    "prefabKey": "dungeon/base/dead_end",
+    "variantId": "goblin_habitat",
+    "variantName": "哥布林栖居洞穴",
+    "assetVersion": "0.26"
+  }
+}

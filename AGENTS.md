@@ -11,3 +11,9 @@
 - 执行结果如实保存在evidence；没有运行的检查不得标记通过。
 - 编译用桩可以抛NotImplementedException；Green之前不得加入业务实现。
 - 本规范是项目AI Harness约束，不代表某个外部框架。
+
+- 房间美术先读 `docs/06-房间逐物体验收流程.md`：主要物体逐个建模、实际渲染对照和评分，当前单体达到80分才开始下一个；记录进度，保护已认可物体。
+
+## 正式项目目录与房间资产
+
+所有正式代码、文档、模型、概念图和源素材必须在本仓库内管理。房间规范入口 assets/rooms/README.md，关联配置 assets/rooms/registry.json；按 roomId/variants/variantId 支持一对多。禁止继续修改 outputs 中历史独立预览目录。预览统一 tools/room-preview，临时文件只放忽略的 .work。模型修改先规范和测试，再实现、运行渲染并逐物体验收，保留身份及门位约束。

@@ -1,0 +1,144 @@
+npm notice run test
+npm notice run node --test tests/*.test.mjs
+TAP version 13
+# Subtest: CL029 dripstone roots flare into the ceiling
+ok 1 - CL029 dripstone roots flare into the ceiling
+  ---
+  duration_ms: 13859.123833
+  type: 'test'
+  ...
+# Subtest: CL018 formerly square corner pockets become solid rock shoulders while central door bands stay clear
+ok 2 - CL018 formerly square corner pockets become solid rock shoulders while central door bands stay clear
+  ---
+  duration_ms: 3.916834
+  type: 'test'
+  ...
+# Subtest: CL010 sparse rubble and pendant records, grounded and attached
+ok 3 - CL010 sparse rubble and pendant records, grounded and attached
+  ---
+  duration_ms: 14355.363417
+  type: 'test'
+  ...
+# Subtest: CL012 upper-left embedded rock projects from the north wall
+ok 4 - CL012 upper-left embedded rock projects from the north wall
+  ---
+  duration_ms: 8111.898125
+  type: 'test'
+  ...
+# Subtest: CL014 dripstone tips stay vertically below their attachment axes
+ok 5 - CL014 dripstone tips stay vertically below their attachment axes
+  ---
+  duration_ms: 12748.951542
+  type: 'test'
+  ...
+# Subtest: CL017 all nine candidate combinations have real open throats and clear paths
+ok 6 - CL017 all nine candidate combinations have real open throats and clear paths
+  ---
+  duration_ms: 117087.714834
+  type: 'test'
+  ...
+# Subtest: CL017 closed candidates are solid, invalid selection rejected
+ok 7 - CL017 closed candidates are solid, invalid selection rejected
+  ---
+  duration_ms: 6375.318041
+  type: 'test'
+  ...
+# Subtest: ROOM-ASSET-001–004 identity matches catalog and exported GLB
+ok 8 - ROOM-ASSET-001–004 identity matches catalog and exported GLB
+  ---
+  duration_ms: 129.876584
+  type: 'test'
+  ...
+# Subtest: CL026 fine rubble and layered dripstone geometry
+ok 9 - CL026 fine rubble and layered dripstone geometry
+  ---
+  duration_ms: 14249.864416
+  type: 'test'
+  ...
+# Subtest: CL001 identity and metres envelope
+ok 10 - CL001 identity and metres envelope
+  ---
+  duration_ms: 9130.855625
+  type: 'test'
+  ...
+# Subtest: CL002 south and west passages open across width and height
+ok 11 - CL002 south and west passages open across width and height
+  ---
+  duration_ms: 8700.582209
+  type: 'test'
+  ...
+# Subtest: CL002 north/east fully sealed
+ok 12 - CL002 north/east fully sealed
+  ---
+  duration_ms: 8066.680333
+  type: 'test'
+  ...
+# Subtest: CL003 rock thickness along north east and roof
+ok 13 - CL003 rock thickness along north east and roof
+  ---
+  duration_ms: 7936.690167
+  type: 'test'
+  ...
+# Subtest: CL004 continuous central walking space
+ok 14 - CL004 continuous central walking space
+  ---
+  duration_ms: 8006.897333
+  type: 'test'
+  ...
+# Subtest: CL007 finite nondegenerate bounded mesh
+ok 15 - CL007 finite nondegenerate bounded mesh
+  ---
+  duration_ms: 7852.953792
+  type: 'test'
+  ...
+# Subtest: CL007 deterministic
+ok 16 - CL007 deterministic
+  ---
+  duration_ms: 15736.312625
+  type: 'test'
+  ...
+# Subtest: CL002 no unintended diagonal openings
+ok 17 - CL002 no unintended diagonal openings
+  ---
+  duration_ms: 7852.107875
+  type: 'test'
+  ...
+# Subtest: CL004 walking rays hit actual upper floor rather than underside
+ok 18 - CL004 walking rays hit actual upper floor rather than underside
+  ---
+  duration_ms: 7836.625041
+  type: 'test'
+  ...
+# Subtest: CL019 north wall has readable geometric bedding, not texture-only relief
+ok 19 - CL019 north wall has readable geometric bedding, not texture-only relief
+  ---
+  duration_ms: 24.924875
+  type: 'test'
+  ...
+# Subtest: CL024 bedding also varies across the north face horizontally
+ok 20 - CL024 bedding also varies across the north face horizontally
+  ---
+  duration_ms: 16.366834
+  type: 'test'
+  ...
+# Subtest: CL020 west wall beside doorway has volumetric relief
+ok 21 - CL020 west wall beside doorway has volumetric relief
+  ---
+  duration_ms: 19.312041
+  type: 'test'
+  ...
+# Subtest: CL021 door-capable wall has cave-scale profile variation
+ok 22 - CL021 door-capable wall has cave-scale profile variation
+  ---
+  duration_ms: 6.17825
+  type: 'test'
+  ...
+1..22
+# tests 22
+# suites 0
+# pass 22
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 123652.27325

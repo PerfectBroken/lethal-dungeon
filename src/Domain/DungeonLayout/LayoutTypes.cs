@@ -36,11 +36,15 @@ namespace LethalDungeon.Domain.Dungeons
         public int Width { get; }
         public int Height { get; }
         public string Kind { get; }
-        public DoorSocket(string id, GridPoint position, Direction facing, int width = 4, int height = 6, string kind = "standard")
+        public ReadOnlyCollection<int> TangentOffsets { get; }
+        public DoorSocket(string id, GridPoint position, Direction facing, int width = 4, int height = 6, string kind = "standard", IEnumerable<int>? tangentOffsets = null)
         {
             if (string.IsNullOrWhiteSpace(id) || string.IsNullOrWhiteSpace(kind) ||
                 (int)facing < 0 || (int)facing > 3 || width <= 0 || width > 128 || width % 2 != 0 || height <= 0 || height > 128)
                 throw new ArgumentException("Invalid socket ID, direction, aperture or kind.");
+            var offsets=(tangentOffsets??new[]{0}).ToArray();
+            if(offsets.Length<1||offsets.Length>9||offsets.Distinct().Count()!=offsets.Length||!offsets.Contains(0)||offsets.Any(v=>Math.Abs((long)v)>6))throw new ArgumentException("Invalid tangent offsets.");
+            TangentOffsets=Array.AsReadOnly(offsets);
             Id = id; Position = position; Facing = facing; Width = width; Height = height; Kind = kind;
         }
     }
@@ -75,8 +79,10 @@ namespace LethalDungeon.Domain.Dungeons
                     throw new ArgumentException("Module requires bounded occupancy boxes.");
                 if (room.Sockets.Any(s => s == null) || room.Sockets.Select(s => s.Id).Distinct(StringComparer.Ordinal).Count() != room.Sockets.Count)
                     throw new ArgumentException("Socket IDs must be unique within a module.");
-                foreach (var socket in room.Sockets)
+                foreach (var source in room.Sockets)
+                foreach(var shift in source.TangentOffsets)
                 {
+                    var socket=new DoorSocket(source.Id,LayoutGeometry.OffsetSocket(source,shift),source.Facing,source.Width,source.Height,source.Kind);
                     if (!Local(socket.Position)) throw new ArgumentException("Socket is outside the local coordinate limit.");
                     var normal = LayoutGeometry.Normal(socket.Facing);
                     bool alongX = socket.Facing == Direction.North || socket.Facing == Direction.South;
@@ -107,12 +113,14 @@ namespace LethalDungeon.Domain.Dungeons
         public string ModuleId { get; }
         public GridPoint Position { get; }
         public int QuarterTurns { get; }
-        public PlacedRoom(string instanceId, string moduleId, GridPoint position, int quarterTurns = 0)
+        public IReadOnlyDictionary<string,int> SocketOffsets { get; }
+        public PlacedRoom(string instanceId, string moduleId, GridPoint position, int quarterTurns = 0, IDictionary<string,int>? socketOffsets = null)
         {
             if (string.IsNullOrWhiteSpace(instanceId) || string.IsNullOrWhiteSpace(moduleId)) throw new ArgumentException("Instance and module IDs are required.");
             if (quarterTurns < 0 || quarterTurns > 3) throw new ArgumentOutOfRangeException(nameof(quarterTurns));
             if (Math.Abs((long)position.X)>1000000 || Math.Abs((long)position.Y)>1000000 || Math.Abs((long)position.Z)>1000000)
                 throw new ArgumentOutOfRangeException(nameof(position));
+            SocketOffsets=new ReadOnlyDictionary<string,int>(new Dictionary<string,int>(socketOffsets??new Dictionary<string,int>()));
             InstanceId = instanceId; ModuleId = moduleId; Position = position; QuarterTurns = quarterTurns;
         }
     }
@@ -135,6 +143,7 @@ namespace LethalDungeon.Domain.Dungeons
     public sealed class DungeonManifest
     {
         public string GeneratorVersion { get; }
+        public string DoorSelectionVersion => "socket-offsets-v1";
         public string ContentVersion { get; }
         public decimal MetresPerUnit => 0.5m;
         public ReadOnlyCollection<PlacedRoom> Rooms { get; }

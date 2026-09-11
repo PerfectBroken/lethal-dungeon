@@ -1,0 +1,16 @@
+npm notice run model
+npm notice run node model/export.mjs --details
+geometry [
+  [ 'rock', 35327 ],
+  [ 'ceiling', 18118 ],
+  [ 'floor', 19626 ],
+  [ 'shell', 30238 ],
+  [ 'rubble', 16000 ],
+  [ 'pendants', 1960 ]
+]
+baked {
+  size: 4096,
+  triangles: 73071,
+  method: 'continuous spherical cavity / planar floor atlas with world-space PBR rasterization'
+}
+saved 36341784

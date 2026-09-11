@@ -1,0 +1,10 @@
+{
+  "catalogVersion": "base-rooms-v2",
+  "roomId": "corner_left",
+  "roomName": "左转角房",
+  "roomRevision": 2,
+  "prefabKey": "dungeon/base/corner_left",
+  "variantId": "round_cave",
+  "variantName": "圆腔石洞",
+  "assetVersion": "0.6"
+}

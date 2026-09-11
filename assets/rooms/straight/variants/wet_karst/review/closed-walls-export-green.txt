@@ -1,0 +1,40 @@
+TAP version 13
+# Subtest: ST005/006 GLB embeds images and matches identity
+ok 1 - ST005/006 GLB embeds images and matches identity
+  ---
+  duration_ms: 28.759791
+  type: 'test'
+  ...
+# Subtest: ST025 exported rock faces share baked PBR, not a preview-only shader
+ok 2 - ST025 exported rock faces share baked PBR, not a preview-only shader
+  ---
+  duration_ms: 14.52175
+  type: 'test'
+  ...
+# Subtest: ST025 atlas UV origin matches GLB top-row texture convention
+ok 3 - ST025 atlas UV origin matches GLB top-row texture convention
+  ---
+  duration_ms: 21.386208
+  type: 'test'
+  ...
+# Subtest: ST030 exported buttress has a gentle darker material factor
+ok 4 - ST030 exported buttress has a gentle darker material factor
+  ---
+  duration_ms: 13.736
+  type: 'test'
+  ...
+# Subtest: ST032 closed-wall GLB is explicitly marked and keeps rock texture bindings
+ok 5 - ST032 closed-wall GLB is explicitly marked and keeps rock texture bindings
+  ---
+  duration_ms: 17.770042
+  type: 'test'
+  ...
+1..5
+# tests 5
+# suites 0
+# pass 5
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 184.211959

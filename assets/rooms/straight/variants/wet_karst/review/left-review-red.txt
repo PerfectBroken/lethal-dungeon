@@ -1,0 +1,128 @@
+npm notice run test
+npm notice run node --test tests/*.test.mjs
+TAP version 13
+# Subtest: ST005/006 GLB embeds images and matches identity
+ok 1 - ST005/006 GLB embeds images and matches identity
+  ---
+  duration_ms: 10.682625
+  type: 'test'
+  ...
+# Subtest: ST001/006 catalog identity and occupied bounds
+ok 2 - ST001/006 catalog identity and occupied bounds
+  ---
+  duration_ms: 4.843834
+  type: 'test'
+  ...
+# Subtest: ST002 actual meshes leave doorway and player route clear
+ok 3 - ST002 actual meshes leave doorway and player route clear
+  ---
+  duration_ms: 90.735375
+  type: 'test'
+  ...
+# Subtest: ST003/004 water lies above basin, and drips reach it
+ok 4 - ST003/004 water lies above basin, and drips reach it
+  ---
+  duration_ms: 2.572416
+  type: 'test'
+  ...
+# Subtest: ST005/007 finite geometry and deterministic generation
+ok 5 - ST005/007 finite geometry and deterministic generation
+  ---
+  duration_ms: 1828.821375
+  type: 'test'
+  ...
+# Subtest: ST003 drip paths are not blocked before the water surface
+ok 6 - ST003 drip paths are not blocked before the water surface
+  ---
+  duration_ms: 68.094584
+  type: 'test'
+  ...
+# Subtest: ST010 long west buttress has a real lower alcove
+ok 7 - ST010 long west buttress has a real lower alcove
+  ---
+  duration_ms: 10.30075
+  type: 'test'
+  ...
+# Subtest: ST011 talus has multiple fracture families and clustered placements
+ok 8 - ST011 talus has multiple fracture families and clustered placements
+  ---
+  duration_ms: 0.179958
+  type: 'test'
+  ...
+# Subtest: ST012 buttress has solid thickness across its height and length
+not ok 9 - ST012 buttress has solid thickness across its height and length
+  ---
+  duration_ms: 4.871084
+  type: 'test'
+  location: '/Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/straight-room-preview/tests/model.test.mjs:11:1'
+  failureType: 'testCodeFailure'
+  error: 'open sheet at y=0.5,z=-1.5'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/straight-room-preview/tests/model.test.mjs:11:348)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: ST013 west rock narrows into the west wall toward the north rear
+ok 10 - ST013 west rock narrows into the west wall toward the north rear
+  ---
+  duration_ms: 13.354459
+  type: 'test'
+  ...
+# Subtest: ST014 alcove opens south and terminates in real rock to the north
+ok 11 - ST014 alcove opens south and terminates in real rock to the north
+  ---
+  duration_ms: 45.575583
+  type: 'test'
+  ...
+# Subtest: ST015 skeleton remains in the deep northern alcove
+ok 12 - ST015 skeleton remains in the deep northern alcove
+  ---
+  duration_ms: 0.200583
+  type: 'test'
+  ...
+# Subtest: ST015 deep skeleton is not buried under talus or mineral growth
+ok 13 - ST015 deep skeleton is not buried under talus or mineral growth
+  ---
+  duration_ms: 758.757125
+  type: 'test'
+  ...
+# Subtest: ST016 rock foot is grounded and crown rises toward the rear
+not ok 14 - ST016 rock foot is grounded and crown rises toward the rear
+  ---
+  duration_ms: 3.077583
+  type: 'test'
+  location: '/Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/straight-room-preview/tests/model.test.mjs:20:1'
+  failureType: 'testCodeFailure'
+  error: 'floating rock base at -2'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: 0
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (file:///Users/guoxun/Documents/Codex/2026-09-07/wo/outputs/straight-room-preview/tests/model.test.mjs:20:251)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..14
+# tests 14
+# suites 0
+# pass 12
+# fail 2
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 4882.076583

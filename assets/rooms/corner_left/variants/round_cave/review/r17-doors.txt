@@ -1,0 +1,22 @@
+TAP version 13
+# Subtest: CL017 all nine candidate combinations have real open throats and clear paths
+ok 1 - CL017 all nine candidate combinations have real open throats and clear paths
+  ---
+  duration_ms: 50366.075792
+  type: 'test'
+  ...
+# Subtest: CL017 closed candidates are solid, invalid selection rejected
+ok 2 - CL017 closed candidates are solid, invalid selection rejected
+  ---
+  duration_ms: 4089.374958
+  type: 'test'
+  ...
+1..2
+# tests 2
+# suites 0
+# pass 2
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 54540.40225
